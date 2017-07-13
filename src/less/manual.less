@@ -1,0 +1,298 @@
+@sidebar-width: 300px;
+@sidebar-alternative-width : 360px;
+@header-height: 84px;
+
+html, body {
+  margin : 0;
+  padding : 0;
+  height : 100%;
+  min-height : 100%;
+  height : auto;
+}
+
+.container {
+  padding : 40px;
+}
+
+.after,
+.before {
+  content : '';
+  width : 100%;
+  height : 100%;
+  display : block;
+  position : absolute;
+  top : 0;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  pointer-events : none;
+}
+
+.before {
+  z-index : -1;
+}
+.after {
+  z-index : 1;
+}
+
+.list {
+  padding : 0;
+  margin : 0;
+  padding-left : 1.3rem;
+}
+
+code[class*=language-] {
+  max-width : 100%;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/**
+ * Base
+ */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow : auto;
+  color : #222;
+}
+
+header, nav, aside#sidebar, main, footer, content {
+  display : block;
+  box-sizing : border-box;
+  position : relative;
+}
+
+h1 {
+  color : #000;
+  font-size : 2em;
+}
+
+h2 {
+  background-color : #fafafa;
+  border : 1px solid #e8e8e8;
+  padding : .5em;
+  font-size : 1.5em;
+  font-weight : normal;
+}
+
+h3 {
+  font-size : 1.2em;
+}
+
+content > hr {
+  background-color : transparent;
+  border : 0 none;
+  height : 2em;
+}
+
+a {
+  text-decoration : none;
+}
+
+table {
+  width : 100%;
+  border-collapse : collapse;
+  font-size : 1em;
+}
+  th, td {
+    padding : 4px;
+  }
+  thead {
+    text-align : left;
+    font-weight : normal;
+  }
+  tbody tr td {
+    border-bottom : 1px solid #e8e8e8;
+  }
+  tbody tr:nth-child(2n+1) td {
+    background-color : #fafafa;
+  }
+
+table.reference {
+  width : 600px;
+  border : 1px solid #e8e8e8;
+}
+  table.reference tr {
+    border : 0 none;
+  }
+  table.reference tr:nth-child(1) td {
+    border-bottom : 1px solid #e8e8e8;
+  }
+  table.reference td:nth-child(1) {
+    background-color : #fafafa;
+    width : 200px;
+  }
+  table.reference td:nth-child(1) {
+    font-weight : bold;
+  }
+  table.reference td:nth-child(2) {
+    background-color : transparent;
+  }
+
+/**
+ * Header
+ */
+header {
+  text-align : right;
+}
+  header:before {
+    &:extend(.before);
+    background : url('/images/header.png') no-repeat 50% 50%;
+  }
+  header > nav {
+    padding : 20px;
+  }
+    header > nav > a {
+      display : inline-block;
+      vertical-align : middle;
+      color : #fff;
+      position : relative;
+      padding : 10px;
+      padding-left : 20px;
+      padding-right : 20px;
+      margin-left : .9em;
+    }
+      header > nav > a:before {
+        &:extend(.before);
+        background-color : #fff;
+        opacity : .2;
+        border-radius : 2px;
+      }
+      header > nav > a:hover:before {
+        opacity : .4;
+      }
+
+    header > nav > form {
+      display : inline-block;
+      vertical-align : middle;
+      position : relative;
+      margin-left : .9em;
+      margin-right : 2em;
+      width : 16em;
+    }
+
+    header > nav > form > input {
+      outline : none;
+      margin : 0;
+      padding : 0;
+      height : 100%;
+      width : 100%;
+      padding : 10px;
+      padding-left : 20px;
+      padding-right : 20px;
+      box-sizing : border-box;
+      border : 0 none;
+      background-color : #fff;
+      border-radius : 2px;
+      font-size : inherit;
+    }
+
+    header > nav > a.active {
+      font-weight : bold;
+    }
+      header > nav > a.active:before {
+        opacity : .4;
+      }
+
+#Logo {
+  position : absolute;
+  width : @sidebar-width;
+  left : 0;
+  top : 0;
+  bottom : 0;
+  background : url('/images/logo.png') no-repeat 50% 50%;
+  background-size : auto 80%;
+}
+  #Logo:before {
+    &:extend(.before);
+    background-color : #fafafa;
+    border-right : 1px solid #e8e8e8;
+    box-sizing : border-box;
+    opacity : .1;
+  }
+
+/**
+ * Wrapper
+ */
+main {
+  min-height : 100vh;
+  display : flex;
+}
+
+/**
+ * Sidebar
+ */
+aside#sidebar {
+  flex: 0 0 @sidebar-width;
+  width : @sidebar-width;
+  background-color : #fafafa;
+  border-right : 1px solid #e8e8e8;
+  &:extend(.container);
+}
+  aside#sidebar > nav {
+  }
+    aside#sidebar > nav a {
+      text-decoration : none;
+      display : inline-block;
+    }
+
+    aside#sidebar > nav > ol {
+      &:extend(.list);
+      padding-left : 1em;
+    }
+      aside#sidebar > nav > ol > li {
+        padding-bottom : .4em;
+      }
+      aside#sidebar > nav > ol ul > li {
+        padding-bottom : .4em;
+      }
+      aside#sidebar > nav > ol ul {
+        &:extend(.list);
+        padding-top : .4em;
+      }
+/**
+ * Content
+ */
+content {
+  &:extend(.container);
+  flex : 1 1 auto;
+  min-height : 100%;
+  padding-bottom : 100px;
+}
+
+/**
+ * Footer
+ */
+footer {
+  &:extend(.container);
+  text-align : center;
+  font-size : 70%;
+}
+
+/**
+ * Documentation pages
+ */
+body#documentation {
+  #Logo {
+    width : @sidebar-alternative-width;
+  }
+  aside#sidebar {
+    flex: 0 0 @sidebar-alternative-width;
+    width : @sidebar-alternative-width;
+  }
+}
+
+.manual_build_grunt table td:nth-child(1) {
+  width : 200px;
+}
+
+.manual_build_cli table td:nth-child(1) {
+  width : 200px;
+}
+.manual_build_cli table td:nth-child(2) {
+  width : 500px;
+}
