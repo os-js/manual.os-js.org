@@ -25,7 +25,7 @@ handlebars.registerHelper('pathClass', function(str) {
 var i = Metalsmith(__dirname)
   .metadata({
     sitename: "OS.js",
-    siteurl: "https://os.js.org/",
+    siteurl: "https://manual.os-js.org/",
     description: "OS.js"
   })
   .source('./src')
@@ -45,7 +45,7 @@ var i = Metalsmith(__dirname)
     engine: 'handlebars'
   }))
   .use(sitemap({
-    hostname: "https://www.os-js.org",
+    hostname: "https://manual.os-js.org",
     omitIndex: true
   }));
 
