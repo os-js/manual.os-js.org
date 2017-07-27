@@ -1,0 +1,7 @@
+.*swp
+*.swo
+node_modules
+build/*
+OS.js
+src/installer.ps1
+src/installer

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+
+    <title>{{ title }} - OS.js v2.1 Manual</title>
+    <meta name="description" content="OS.js Manual - {{ description }}" />
+    <meta name="keywords" content="OS.js,Documentation,Client,Server,API,Tutorial,Tutorials,Manual,Manuals" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism-tomorrow.min.css">
+    <link href="/css/manual.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon-precomposed" href="/favicon.png" />
+    <link rel="author" href="https://plus.google.com/101576798387217383063" />
+    <link rel="publisher" href="https://plus.google.com/101576798387217383063" />
+    <link rel="canonical" href="https://www.os-js.org/{{ this.path }}" />
+  </head>
+  <body class="{{pathClass this.path}}">
+    <header>
+      <div id="Logo"></div>
+      <nav>
+        <form method="get" action="https://www.google.com/search" id="Search">
+          <input type="text" name="q" id="SearchQuery" placeholder="Search with Google" />
+        </form>
+
+        <a href="/">Home</a>
+        <a href="/manual" {{#startsWith "manual" this.path}}class="active"{{/startsWith}}>Manual</a>
+        <a href="/doc" {{#startsWith "doc" this.path}}class="active"{{/startsWith}}>Documentation</a>
+      </nav>
+    </header>
+
+    <main>
+      <aside id="sidebar">
+        <nav>
+          <ol>
+            <li>
+              <a href="/">Introduction</a>
+            </li>
+
+            <li>
+              <a href="/community">Community</a>
+            </li>
+
+            <li>
+              <a href="/installation">Installation</a>
+            </li>
+
+            <li>
+              <span>Development</span>
+              <ul>
+                <li><a href="/development/#environment">Environment</a></li>
+                <li><a href="/development/#contributing">Contributing</a></li>
+                <li><a href="/development/#style-guide">Style guide</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span>Concepts</span>
+              <ul>
+                <li><a href="/concepts/#build-system">Build system</a></li>
+                <li><a href="/concepts/#configuration-system">Configuration system</a></li>
+                <li><a href="/concepts/#client">Client</a></li>
+                <li><a href="/concepts/#server">Server</a></li>
+                <li><a href="/concepts/#modules">Modules</a></li>
+                <li><a href="/concepts/#packages">Packages</a></li>
+                <li><a href="/concepts/#overlays">Overlays</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span>Configuration</span>
+              <ul>
+                <li><a href="/configuration/">General</a></li>
+                <li><a href="/configuration/#mountpoints">Mountpoints</a></li>
+                <li><a href="/configuration/#webpack">Webpack</a></li>
+                <li><a href="/configuration/#reverse-proxy">Reverse-Proxy</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span>Modules</span>
+              <ul>
+                <li><a href="/modules/connection">Connection</a></li>
+                <li><a href="/modules/authenticator">Authenticator</a></li>
+                <li><a href="/modules/storage">Storage</a></li>
+                <li><a href="/modules/middleware">Middleware</a></li>
+                <li><a href="/modules/service">Service</a></li>
+                <li><a href="/modules/transport">Transport</a></li>
+                <li><a href="/modules/themes">Themes</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <span>Packages</span>
+              <ul>
+                <li><a href="/packages">Introduction</a></li>
+                <li><a href="/packages/scheme">Using Scheme</a></li>
+                <!--
+                <li><a href="/packages/vue">Using Vue</a></li>
+                <li><a href="/packages/react">Using React</a></li>
+                -->
+                <li><a href="/packages/iframe">Using IFrame</a></li>
+              </ul>
+            </li>
+
+          </ol>
+
+        </nav>
+      </aside>
+
+      <content>
+        {{{ contents }}}
+
+        <footer>
+          <div class="adddshere">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- https://os.js.org (RESPONSIVE) -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6145716264521226"
+                 data-ad-slot="9888011596"
+                 data-ad-format="auto"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+
+          <p>OS.js &copy; Anders Evenrud 2011-2016</p>
+          <p>Hosting by Github</p>
+          <p>Generated with Metalsmith</p>
+        </footer>
+      </content>
+    </main>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  if ( window.location.hostname === 'os.js.org' ) {
+    ga('create', 'UA-46087265-1', 'auto');
+  } else {
+    ga('create', 'UA-90971004-3', 'auto');
+  }
+  ga('send', 'pageview');
+
+    </script>
+
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'os-js/OS.js'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+    <script>
+document.getElementById('Search').onsubmit = function(ev) {
+  ev.preventDefault();
+
+  var v = document.getElementById('SearchQuery').value;
+  var q = 'site:os.js.org ' + encodeURIComponent(String(v));
+  window.location = 'https://google.com/search?q=' + q;
+
+  return false;
+};
+    </script>
+
+  </body>
+</html>
