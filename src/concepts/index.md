@@ -39,7 +39,9 @@ Both the server and client can be extended via modules. These come in several ty
 * **Authenticator** Handles authentication
 * **Storage** Handles settings and general storage
 * **Middleware** For endpoints
+* **Service** A service running alongside server
 * **VFS Transport** For filesystem interactions
+* **Themes** Visual stylings etc
 
 You can find more information about these in the menu.
 

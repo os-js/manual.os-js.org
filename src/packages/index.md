@@ -43,7 +43,7 @@ The package is generated with a metadata file along with the normal sources. Thi
 | preload               | An array of static resources to load (see below)          | Yes      |                     |             |
 | depends               | An array of dependent packages to load first              | No       |                     |             |
 | uses                  | An array of package names that autoload this package      | No       |                     | Extension   |
-| spawn                 | A path to a node script to spawn on load                  | No       |                     | Extension   |
+| spawn                 | A path to a node script to spawn on load                  | No       |                     |             |
 
 
 ## Development
