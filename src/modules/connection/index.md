@@ -12,7 +12,7 @@ Please note that these are only applicable to the Node server.
 ## HTTP
 
 ```bash
-$ node osjs config:set --name=server.http.mode --value=http
+$ node osjs config:set --name=connection --value=http
 $ node osjs build:config
 ```
 
@@ -24,7 +24,7 @@ Create your certificates and place them in `src/server/` (as ex "server.key" and
 
 ```bash
 $ npm install spdy
-$ node osjs config:set --name=server.http.mode --value=http2
+$ node osjs config:set --name=connection --value=http2
 $ node osjs config:set --name=server.http.cert.name --value=server
 $ node osjs build:config
 ```
