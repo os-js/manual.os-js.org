@@ -11,7 +11,7 @@ To update your changes, run:
 
 ```bash
 $ node osjs build:config
-$ node osjs build:core
+$ node osjs build:themes
 ```
 
 ## Styles
