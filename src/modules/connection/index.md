@@ -35,3 +35,33 @@ $ node osjs build:config
 $ node osjs config:set --name=connection --value=ws
 $ node osjs build:config
 ```
+
+## Sessions
+
+You can use any session manager supported by [Express session](https://github.com/expressjs/session).
+
+Simply install if via npm and reconfigure:
+
+```bash
+$ node osjs config:set --name=server.http.session.module --value=some-session-module
+```
+
+If your module requires custom settings, you can add this to the configuration tree:
+
+```json
+{
+"server": {
+  "http": {
+    "session": {
+      "options": {
+        "some-session-module": {
+
+            // Your settings here
+
+        }
+      }
+    }
+  }
+}
+
+```
