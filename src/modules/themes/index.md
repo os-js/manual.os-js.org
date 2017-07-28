@@ -17,25 +17,25 @@ $ node osjs build:themes
 ## Styles
 
 ```bash
-$ cp -r src/client/themes/styles/default src/client/themes/styles/mytheme
-$ edit src/client/themes/styles/mytheme/metadata.json
-$ edit src/client/themes/styles/mytheme/style.less
+$ cp -r src/themes/styles/default src/themes/styles/mytheme
+$ edit src/themes/styles/mytheme/metadata.json
+$ edit src/themes/styles/mytheme/style.less
 $ node osjs config:add --name=themes.styles --value=mytheme
 ```
 
 ## Icons
 
 ```bash
-$ cp -r src/client/themes/icons/default src/client/themes/icons/mytheme
-$ edit src/client/themes/icons/mytheme/metadata.json
+$ cp -r src/themes/icons/default src/themes/icons/mytheme
+$ edit src/themes/icons/mytheme/metadata.json
 $ node osjs config:add --name=themes.icons --value=mytheme
 ```
 
 ## Sounds
 
 ```bash
-$ cp -r src/client/themes/sounds/default src/client/themes/sound/mytheme
-$ edit src/client/themes/sound/mytheme/metadata.json
+$ cp -r src/themes/sounds/default src/themes/sound/mytheme
+$ edit src/themes/sound/mytheme/metadata.json
 $ node osjs config:add --name=themes.sounds --value=mytheme
 ```
 
@@ -44,7 +44,7 @@ $ node osjs config:add --name=themes.sounds --value=mytheme
 See the included font theme for an example on how to set up.
 
 ```bash
-$ cp -r src/client/themes/fonts/Karla src/client/themes/fonts/MyTheme
+$ cp -r src/themes/fonts/Karla src/themes/fonts/MyTheme
 $ node osjs config:add --name=themes.fonts --value=MyTheme
 ```
 
