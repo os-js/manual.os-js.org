@@ -51,3 +51,7 @@ $ node osjs generate:config --type=lighttpd --env=prod
 # Nginx
 $ node osjs generate:config --type=nginx --env=prod
 ```
+
+## Standalone builds
+
+If you want to build OS.js completely standalone (to run from ex `file://`), simply use the `--standalone` flag when building and the `dist` directory is directly ready for usage.
