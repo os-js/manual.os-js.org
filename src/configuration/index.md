@@ -93,39 +93,21 @@ $ node osjs config:set --name=server.http.session.secret --value=$(cat /dev/uran
 ### Add permission to API endpoint
 
 ```bash
-$ ndoe osjs config:add --name=server.api.groups --key=methodname --value=groupname
+$ node osjs config:add --name=server.api.groups --key=methodname --value=groupname
 ```
 
 ### Add permission group to VFS mountpoint
 
 ```bash
-$ ndoe osjs config:add --name=server.vfs.groups --key=mountname --value=groupname
+$ node osjs config:add --name=server.vfs.groups --key=mountname --value=groupname
 ```
 
-## Mountpoints
+### Add a mountpoint
 
 To add the mountpoint `data:///` pointing to `/tmp`.
 
-```json
-{
-  "client": {
-    "VFS": {
-      "Mountpoints": {
-        "data": {
-          "transport": "osjs",
-          "description": "My data"
-        }
-      }
-    }
-  },
-  "server": {
-    "vfs": {
-      "mounts": {
-        "data": "/tmp"
-      }
-    }
-  }
-}
+```bash
+$ node osjs config:mount --name=data --description="My Data" --path=/data
 ```
 
 ## Webpack
