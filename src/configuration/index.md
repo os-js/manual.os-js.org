@@ -114,11 +114,43 @@ $ node osjs config:mount --name=data --description="My Data" --path=/data
 
 ### Core builds
 
-Look at `src/conf/500-build.json` for the base webpack configuration tree. This is loaded into `webpack.config.js` with some modifications.
+Look at `src/conf/500-build.json` for the base webpack configuration tree.
+
+This is loaded into `src/client/webpack.config.js` with some modifications.
+
+This also applies to the theme build in `src/themes/webpack.config.js`.
+
+```javascript
+module.exports = new Promise((resolve, reject) => {
+  osjs.webpack.createCoreConfiguration().then((result) => {
+
+    // result.config - Webpack configuration
+    // result.settings - OS.js settings tree
+    // result.options - Options from launcher
+
+    resolve(result.config);
+  }).catch(reject);
+});
+```
 
 ### Package builds
 
 Packages have their own `webpack.config.js`, but does not inherit any of the configuration mentioned above.
+
+```javascript
+module.exports = new Promise((resolve, reject) => {
+  const metadataFile = path.join(__dirname, 'metadata.json');
+
+  osjs.webpack.createPackageConfiguration(metadataFile).then((result) => {
+
+    // result.config - Webpack configuration
+    // result.settings - OS.js settings tree
+    // result.options - Options from launcher
+
+    resolve(result.config);
+  }).catch(reject);
+});
+```
 
 ## Reverse-Proxy
 
