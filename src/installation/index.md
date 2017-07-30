@@ -22,6 +22,8 @@ $ node osjs build
 $ node osjs run
 ```
 
+That's it! You should now have a running server. Simply open `http://localhost:8000` to give it a go.
+
 Add `--debug` to the osjs commands to run with extended development support.
 
 ## Upgrading
@@ -34,15 +36,58 @@ $ node osjs build
 
 *Remember to restart the server afterwards*.
 
-## Using a Webserver
+## Reverse-Proxy
 
-OS.js ships with an internal HTTP server for node (see [reverse-proxy](/configuration/#reverse-proxy)), but if you're planning on using the PHP server you need to configure your webserver.
+For best performance and reliability, you should run a reverse-proxy in front of the node server:
 
-To generate a sample configuration, run:
+### nginx
 
 ```bash
-# Apache
+server {
+    listen 80;
+
+    server_name osjs.local;
+
+    location / { # Leading slash!
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_pass http://localhost:8000/; # The leading slash!
+        proxy_redirect off; # Also note this
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+```
+
+### apache
+
+```bash
+$ sudo a2enmod proxy
+$ sudo a2enmod proxy_http
+```
+
+```bash
+<VirtualHost *:80>
+  ServerName osjs.domain.no
+  ProxyPass / http://localhost:8000/
+</VirtualHost>
+```
+
+## Using a Webserver
+
+If you want to use the PHP server you'll need to configure your webserver. To generate a sample configuration, run:
+
+```bash
+# Apache htaccess (Required if you want to use apache)
 $ node osjs generate:config --type=htaccess --env=prod
+
+# Apache vhost
 $ node osjs generate:config --type=apache --env=prod
 
 # Lighttpd
@@ -52,6 +97,20 @@ $ node osjs generate:config --type=lighttpd --env=prod
 $ node osjs generate:config --type=nginx --env=prod
 ```
 
+
 ## Standalone builds
 
 If you want to build OS.js completely standalone (to run from ex `file://`), simply use the `--standalone` flag when building and the `dist` directory is directly ready for usage.
+
+## Webhosts
+
+If you own a c-panel instance (or similar with PHP) and don't have direct access to the filesystem or shell (or simply no Node support), you can copy the installation over to your public root and run via `/OS.js/dist`.
+
+If you want to serve the installation within a custom path, like ex. `/osjs/` you'll have to manually do some operations before copying:
+
+```bash
+$ node osjs config:set --name=server.vfs.mounts.home --value="%SROOT%/vfs/home/%USERNAME%"
+$ node osjs build:config
+$ cp -r src/server/php dist/server
+$ edit dist/api.php
+```
