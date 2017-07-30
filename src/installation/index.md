@@ -3,7 +3,7 @@ title: Installation
 layout: layout.html
 ---
 
-# Preparation
+# Installation
 
 To install **OS.js** you need these dependencies installed:
 
