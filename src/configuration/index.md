@@ -28,10 +28,10 @@ $ node osjs config:set --name=foo --value=bar --out=src/config/910-something.jso
 
 # You can also add and remove from arrays
 $ node osjs config:add --name=foo --value=jazz
-$ node osjs config:add --name=foo --key=bar --value=jazz
-
-# ...or objects (key)
 $ node osjs config:remove --name=foo --value=jazz
+
+# ...or objects
+$ node osjs config:add --name=foo --key=bar --value=jazz
 $ node osjs config:remove --name=foo --key=bar
 ```
 
