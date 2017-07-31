@@ -11,7 +11,7 @@ OS.js has a small, but excellent community. You can join in on discussions or ju
 
 - Main chat: https://gitter.im/os-js/OS.js
 - Topics: https://gitter.im/os-js/topics/
-- Forums: http://community.os.js.org/
+- Forums: http://discourse.os-js.org/
 - Reddit: https://www.reddit.com/r/osjs/
 - Github: https://github.com/os-js
 
