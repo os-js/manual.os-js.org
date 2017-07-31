@@ -1,9 +1,9 @@
 ---
-title: Themes
+title: Themes Guide
 layout: layout.html
 ---
 
-# Themes
+# Themes Guide
 
 Below are some basic instructions on how to add your own themes. It is highly recommended that you use an overlay instead of adding/modifying the main source-code.
 

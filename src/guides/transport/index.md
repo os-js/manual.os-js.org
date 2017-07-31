@@ -1,17 +1,13 @@
 ---
-title: VFS Transport
+title: VFS Transport Guide
 layout: layout.html
 ---
 
-# VFS Transport
+# VFS Transport Guide
 
 A VFS Transport handles requests for filesystem interactions.
 
-* [Make your own](#make-your-own)
-
-## Make your own
-
-### Client
+## Client
 
 ```javascript
 export default class MyTransport extends OSjsTransport {
@@ -21,7 +17,7 @@ export default class MyTransport extends OSjsTransport {
 }
 ```
 
-### Server
+## Server
 
 ```javascript
 function createReadStream(http, path) {

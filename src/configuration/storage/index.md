@@ -10,7 +10,6 @@ The `Storage` module handles all user settings and sessions etc.
 * [Demo](#demo)
 * [System](#system)
 * [Database](#database)
-* [Make your own](#make-your-own)
 
 ## Demo
 
@@ -63,26 +62,4 @@ You can also just use the database settings from the `Authentication Module`
 $ node osjs config:set --name=storage --value=database
 $ node osjs config:set --name=server.modules.storage.database --value="%server.modules.auth.database%"
 $ node osjs build:config
-```
-
-## Make your own
-
-These classes are written in ES6. Look at the API Documentation for methods, etc.
-
-### Client
-
-```javascript
-class MyStorage extends Storage {
-  saveSettings() {}
-  saveSession() {}
-}
-```
-
-### Server
-
-```javascript
-class MyStorage extends Storage {
-  setSettings() {}
-  getSettings() {}
-}
 ```

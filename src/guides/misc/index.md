@@ -1,9 +1,9 @@
 ---
-title: Misc
+title: Misc Modules Guide
 layout: layout.html
 ---
 
-# Misc
+# Misc Modules Guide
 
 This page documents other modules in OS.js.
 

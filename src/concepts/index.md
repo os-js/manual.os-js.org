@@ -36,11 +36,11 @@ A HTTP server to host the client files is a available in two flavors: Node (Expr
 Both the server and client can be extended via modules. These come in several types:
 
 * **Connection** Establishes connection and handles requests
-* **Authenticator** Handles authentication
-* **Storage** Handles settings and general storage
-* **Middleware** For endpoints
+* **Authenticator** Handles authentication, user groups and other user things
+* **Storage** Handles settings and general storage (like sessions and settings)
+* **Middleware** Handles HTTP requests on the server
 * **Service** A service running alongside server
-* **VFS Transport** For filesystem interactions
+* **VFS Transport** For manipulating files from a certain source or filesystem
 * **Themes** Visual stylings etc
 
 You can find more information about these in the menu.

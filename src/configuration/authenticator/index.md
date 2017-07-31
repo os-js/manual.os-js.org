@@ -10,7 +10,6 @@ The `Authenticator` handles authentication, groups and blacklists etc. for users
 * [Demo](#demo)
 * [PAM and Shadow](#pam-and-shadow)
 * [Database](#database)
-* [Make your own](#make-your-own)
 
 ## Demo
 
@@ -158,28 +157,3 @@ $ mkdir vfs/home/anders
 ```
 
 **NOTE:** Remember to restart the server to reload configuration changes.
-
-## Make your own
-
-These classes are written in ES6. Look at the API Documentation for methods, etc.
-
-### Client
-
-```javascript
-class MyAuthenticator extends Authenticator {
-  login() {}
-  logout() {}
-}
-```
-
-### Server
-
-```javascript
-class MyAuthenticator extends Authenticator {
-  login() {}
-  logout() {}
-  getGroups() {}
-  getBlacklist() {}
-}
-```
-

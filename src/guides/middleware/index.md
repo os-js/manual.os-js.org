@@ -1,17 +1,15 @@
 ---
-title: Middleware
+title: Middleware Guide
 layout: layout.html
 ---
 
-# Middleware
+# Middleware Guide
 
 The `Middleware` allows you to hook into the HTTP server to handle requests.
 
 The middleware uses **Express**.
 
-* [Make your own](#make-your-own)
-
-## Make your own
+## Server
 
 ```javascript
 

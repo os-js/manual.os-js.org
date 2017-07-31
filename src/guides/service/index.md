@@ -1,15 +1,13 @@
 ---
-title: Service
+title: Service Guide
 layout: layout.html
 ---
 
-# Service
+# Service Guide
 
 A `Service` allows you to run things alongside the server or do general operations when it starts.
 
-* [Make your own](#make-your-own)
-
-## Make your own
+## Server
 
 ```javascript
 
