@@ -7,17 +7,18 @@ layout: layout.html
 
 This page documents other modules in OS.js.
 
-## Common Client Modules
+## Dialogs
+
+Just extend the `core/dialog` class and put it into `window.OSjs.Dialogs`. You can do this in your package or using a preload (see [configuration](/configuration/#adding-preloads).
 
 ```javascript
-/*
- * Raise an error
- */
-OSjs.error('title', 'description', 'message', new Error('exception here if available'));
+class SomeCoolDialog extends Dialog {}
 
-/*
- * Creating dialogs
- */
+OSjs.Dialogs.DialogName = SomeCoolDialog;
+```
+
+To create a new dialog:
+```javascript
 import Dialog from 'core/dialog';
 
 Dialog.create('DialogName', {foo: 'bar'}, (ev, btn, result) => {
@@ -25,19 +26,13 @@ Dialog.create('DialogName', {foo: 'bar'}, (ev, btn, result) => {
   // btn = Button used to close dialog
   // result =  Any result the dialog generated
 });
+```
 
-/*
- * Adding Windows
- */
-application._addWindow(win);
-window._addChild(win);
+## Menu
 
-import WindowManager from 'core/windowmanager';
-WindowManager.instance.addWindow(win);
+To create a menu:
 
-/*
- * Creating menus
- */
+```javascript
 import * as Menu from 'gui/menu';
 
 Menu.create([{
@@ -49,22 +44,47 @@ Menu.create([{
     title: 'Submenu item'
   }]
 }], ev); // Or {x, y}
+```
 
-/*
- * Launching processes
- */
+## Process
 
+```javascript
 import Process from 'core/process';
 
+// Launch with name
 Process.create('PackageClassName', {foo: 'bar'}); // Promise
 
+// Launch with array
 Process.createFromArray(['PackageClassName']); // Promise
 
+// Launch from file (guesses what application will be used)
 Process.createFromFile(new FileMetadata('home://my-file.txt', 'text/plain'));
+```
 
-/*
- * GUIElement instance methods
- */
+## Windows
+
+```javascript
+import Window from 'core/window';
+import WindowManager from 'core/windowmanager';
+
+// Create a window
+const win = new Window();
+
+// And add it via one of three ways:
+application._addWindow(win);
+window._addChild(win);
+WindowManager.instance.addWindow(win);
+```
+
+## Error Handler
+
+```javascript
+OSjs.error('title', 'description', 'message', new Error('exception here if available'));
+```
+
+## GUI Element
+
+```javascript
 
 // DOM Manipulation and events
 guiElement
