@@ -36,16 +36,14 @@ Now, in your generated `webpack.config.js`, set up the babel options:
 // ...
 ```
 
-## Set up window
+## Set up application
 
-Now, you'll have to modify the window's init method:
+Make your component:
 
-``` javascript
-// Import required dependencies
+```javascript
+// components/App.jsx
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-// Root component
 export default class App extends React.Component {
   render() {
     return (
@@ -55,13 +53,21 @@ export default class App extends React.Component {
   }
 }
 
-// Window instance
+```
+
+Then set up the window:
+
+``` javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App.jsx';
+
 class ApplicationUsingReactWindow extends Window {
 
   init(wmRef, app) {
     const root = super.init(...arguments);
 
-    ReactDOM.render(<App />, root);
+    ReactDOM.render(React.createElement(App), root);
 
     return root;
   }
