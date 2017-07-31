@@ -31,7 +31,7 @@ Now, in your generated `webpack.config.js`, set up the babel options:
   osjs.webpack.createPackageConfiguration(metadataFile).then((result) => {
     const webpackConfig = result.config;
 
-    webpackConfig.module.loader.push({
+    webpackConfig.module.loaders.push({
       test: /\.vue$/,
       loader: 'vue-loader',
       options: {
