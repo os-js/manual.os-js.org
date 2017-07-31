@@ -42,58 +42,7 @@ The `Scheme` file is the default provided way to build User Interfaces. This is 
 
 GUI Elements are comprised of regular HTML, JavaScript and CSS.
 
-### Common element methods
-
-```js
-/* DOM Manipulation and events */
-.show()
-.hide()
-.empty()
-.remove()
-.append()
-.appendHTML()
-.querySelector()
-.querySelectorAll()
-.css('key' /*[, 'value'*/)
-.on('name', function() {} /*, useCapture*/)
-
-/* Attributes and values */
-.set('key', 'value');
-.get('key');
-
-/* Inputs and views */
-.focus()
-.blur()
-
-/* Data (like dropdowns and views) */
-.clear();
-.add('entry');
-.add(['entry', 'entry']);
-.remove('id' /*, 'key'*/);
-.patch(['entry', 'entry'])
-```
-
-### Creating elements programatically
-
-```js
-//
-// Normal
-//
-const guiElement = GUIElement.create('gui-element-name', {
-  parameter: 'value'
-});
-parentElement.append(guiElement);
-
-//
-// Via DOM element
-//
-const guiElement = GUIElement.createFromNode(el);
-
-//
-// Using HTML
-//
-parentElement.appendHTML('<gui-element-name></gui-element-name>', optionalWinReference);
-```
+For methods see [Misc modules](/modules/misc/).
 
 ### Elements
 
