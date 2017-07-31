@@ -22,9 +22,7 @@ $ node osjs build
 $ node osjs run
 ```
 
-That's it! You should now have a running server. Simply open `http://localhost:8000` to give it a go.
-
-Add `--debug` to the osjs commands to run with extended development support.
+**That's it!** You should now have a running server. Simply open `http://localhost:8000` to give it a go.
 
 ## Upgrading
 
