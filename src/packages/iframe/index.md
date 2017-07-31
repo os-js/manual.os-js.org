@@ -5,12 +5,8 @@ layout: layout.html
 
 # Using Iframe
 
-By default the application expects you to have a `data/` directory with all your files in it (`index.html` and so on).
+Be default this application comes with a `data/` directory for you to host the files. But this can also be changed to a remote URL by modifying the application source.
 
-## Bi-directional communication
+It also comes with a file named `osjs.js` that allows you to communicate with OS.js via messaging.
 
-You can communicate between OS.js and your IFrame application using the browser APIs and some helper methods.
-
-- [API](https://gist.github.com/andersevenrud/ff8b7c48b6a3cf9c823f51c7ff02705f)
-- [Application Example](https://gist.github.com/andersevenrud/a5296a51fb55540375e0f88a3a34784c)
-- [Markup Example](https://gist.github.com/andersevenrud/6209484db09267c01ca5545c75271948)
+This package is compiled just like a normal `Application`.
