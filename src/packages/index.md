@@ -44,7 +44,7 @@ The package is generated with a metadata file along with the normal sources. Thi
 | depends               | An array of dependent packages to load first              | No       |                     |             |
 | uses                  | An array of package names that autoload this package      | No       |                     | Extension   |
 | spawn                 | A path to a node script to spawn on load                  | No       |                     |             |
-
+| build.copy            | An array of filenames to copy into the package dist       | No       |                     |             |
 
 ## Development
 
