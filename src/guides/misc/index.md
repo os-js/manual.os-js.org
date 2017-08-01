@@ -61,8 +61,8 @@ Process.createFromArray(['PackageClassName']); // Promise
 Process.createFromFile(new FileMetadata('home://my-file.txt', 'text/plain'));
 
 // Broadcast a message
-API.message('foo', {bar: 'baz'})
-API.message('foo', {bar: 'baz'}, {source: app}); // To prevent signaling a certain process
+Process.message('foo', {bar: 'baz'})
+Process.message('foo', {bar: 'baz'}, {source: app}); // To prevent signaling a certain process
 ```
 
 ## Applications
