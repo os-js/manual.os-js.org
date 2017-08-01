@@ -17,6 +17,10 @@ To install **OS.js** you need these dependencies installed:
 ```bash
 $ git clone https://github.com/os-js/OS.js.git
 $ cd OS.js
+
+# NOTICE: This version is not yet in master, run this to switch:
+$ git checkout upcoming/v2.1.0
+
 $ npm install
 $ node osjs build
 $ node osjs run
