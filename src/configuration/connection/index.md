@@ -23,7 +23,7 @@ Create your certificates and place them in `src/server/` (as ex "server.key" and
 *If you run behind a proxy you should manage this there instead.*
 
 ```bash
-$ npm install spdy
+$ npm install --no-save spdy
 $ node osjs config:set --name=connection --value=http2
 $ node osjs config:set --name=server.http.cert.name --value=server
 $ node osjs build:config

@@ -33,13 +33,13 @@ Log in via the system (`PAM` or `Shadow`) authentication system. **This is only 
 $ sudo apt-get install libpam0g-dev
 
 # PAM dependencies (you need PAM development package on your system)
-$ npm install nan@1.1.0
-$ npm install authenticate-pam
-$ npm install userid
+$ npm install --no-save nan@1.1.0
+$ npm install --no-save authenticate-pam
+$ npm install --no-save userid
 
 # Shadow dependencies
-$ npm install git+https://github.com/andersevenrud/passwd-linux
-$ npm install userid
+$ npm install --no-save git+https://github.com/andersevenrud/passwd-linux
+$ npm install --no-save userid
 
 # Set up groups
 $ mkdir /etc/osjs
@@ -100,7 +100,7 @@ This is just a simple database backend that allows you to store your users (and 
 
 ```bash
 # Install dependencies
-$ npm install sqlite3 bcrypt
+$ npm install --no-save sqlite3 bcrypt
 
 # Set up configuration
 $ node osjs config:set --name=authenticator --value=database
@@ -121,7 +121,7 @@ $ mkdir vfs/home/anders
 
 ```bash
 # Install node dependencies
-$ npm install mysql bcrypt
+$ npm install --no-save mysql bcrypt
 
 # If you are on PHP 5.5 or below (and you actually use the PHP backend):
 $ cd src/server/php
