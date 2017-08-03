@@ -55,11 +55,3 @@ $ node osjs config:set --name=server.modules.storage.database.mysql.password --v
 $ node osjs config:set --name=server.modules.storage.database.mysql.database --value=osjs
 $ node osjs build:config
 ```
-
-You can also just use the database settings from the `Authentication Module`
-
-```bash
-$ node osjs config:set --name=storage --value=database
-$ node osjs config:set --name=server.modules.storage.database --value="%server.modules.auth.database%"
-$ node osjs build:config
-```
