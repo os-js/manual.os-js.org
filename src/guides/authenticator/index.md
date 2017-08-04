@@ -22,7 +22,7 @@ class MyAuthenticator extends Authenticator {
 class MyAuthenticator extends Authenticator {
   login() {}
   logout() {}
-  getGroups() {}
+  getUser() {}
   getBlacklist() {}
 }
 ```
