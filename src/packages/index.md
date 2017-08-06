@@ -45,6 +45,9 @@ The package is generated with a metadata file along with the normal sources. Thi
 | uses                  | An array of package names that autoload this package      | No       |                     | Extension   |
 | spawn                 | A path to a node script to spawn on load                  | No       |                     |             |
 | build.copy            | An array of filenames to copy into the package dist       | No       |                     |             |
+| main.node             | A string that resolves the entry point for node           | Yes      | server/main.js      |             |
+| main.php              | A string that resolves the entry point for PHP            | Yes      | server/main.php     |             |
+| main.webpack          | An array of strings that is used for webpack entries      | Yes      | main.js,main.css    |             |
 
 ## Development
 
