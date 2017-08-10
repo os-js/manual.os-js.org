@@ -49,9 +49,35 @@ The package is generated with a metadata file along with the normal sources. Thi
 | main.php              | A string that resolves the entry point for PHP            | Yes      | server/main.php     |             |
 | main.webpack          | An array of strings that is used for webpack entries      | Yes      | main.js,main.css    |             |
 
+## Installation
+
+Usually installing of a package is done like this:
+
+```bash
+$ mkdir src/packages/myrepo
+$ git clone http://github.com/user/mypackage.git src/packages/myrepo/mypackage
+$ node osjs config:add --name=repositories --value=myrepo
+$ node osjs build:manifest
+$ node osjs build:package --name=myrepo/mypackage
+```
+
+You can also use the provided helper scripts:
+
+```bash
+# Install a repository with many packages
+$ ./bin/add-package-repository.sh myrepo http://github.com/user/myrepo.git
+
+# Or just a single package as described above:
+$ ./bin/add-package.sh myrepo http://github.com/user/mypackage.git
+```
+
+For more information on commands see [configuration](/configuration).
+
 ## Development
 
 Packages are built with **Webpack** and is written in ES6, so you have a lot of flexibility.
+
+You can watch your package with: `node osjs watch --package=myrepo/mypackage`.
 
 ## Building
 
