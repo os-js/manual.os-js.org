@@ -68,7 +68,7 @@ You can also use the provided helper scripts:
 $ ./bin/add-package-repository.sh myrepo http://github.com/user/myrepo.git
 
 # Or just a single package as described above:
-$ ./bin/add-package.sh myrepo http://github.com/user/mypackage.git
+$ ./bin/add-package.sh myrepo mypackage http://github.com/user/mypackage.git
 ```
 
 For more information on commands see [configuration](/configuration).
