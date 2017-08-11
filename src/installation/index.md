@@ -28,11 +28,11 @@ $ node osjs run
 
 **That's it!** You should now have a running server. Simply open `http://localhost:8000` to give it a go.
 
-*Optionally*.
+*Optionally change host and or port*.
 ```bash
 # If you have multiple interfaces you can choose which one to bind.
 # 0.0.0.0 may be changed to your IP address of choice.
-$ node osjs run --hostname=0.0.0.0
+$ node osjs run --hostname=0.0.0.0 --port=N
 ```
 
 ## Upgrading
