@@ -30,7 +30,7 @@ Now, in your generated `webpack.config.js`, set up the babel options:
 // ...
   osjs.webpack.createPackageConfiguration(metadataFile, {
     babelOptions: {
-      presets: ['react']
+      presets: ['es2015', 'react']
     }
   })
 // ...
