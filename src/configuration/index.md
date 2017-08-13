@@ -102,14 +102,6 @@ $ node osjs config:add --name=server.api.groups --key=methodname --value=groupna
 $ node osjs config:add --name=server.vfs.groups --key=mountname --value=groupname
 ```
 
-### Add a mountpoint
-
-To add the mountpoint `data:///` pointing to `/tmp`.
-
-```bash
-$ node osjs config:mount --name=data --description="My Data" --path=/data
-```
-
 ## Webpack
 
 ### Core builds
