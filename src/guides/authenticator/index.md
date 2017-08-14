@@ -14,19 +14,23 @@ In this example we just use a dummy user.
 ```javascript
 class MyAuthenticator extends Authenticator {
   login(data) {
-    return Promise.resolve({
-      userData: data.user, // id, username, groups and so on
-      userSettings: data.settings // a tree with settings
-    });
+    // If you don't need to modify the login request,
+    // just let the base class handle it.
+
+    return super.login(...arguments); // => Promise
   }
 
   logout() {
-    return Promise.resolve(true);
+    // If you don't need to modify the logout request,
+    // just let the base class handle it.
+
+    return super.logout(...arguments); // => Promise
   }
 
   onCreateUI() {
     // You can construct your login GUI here, but in this example
     // we just short-circuit it to perform a login with given credentials
+
     return this.onLoginRequest({
       username: 'example',
       password: 'example'
