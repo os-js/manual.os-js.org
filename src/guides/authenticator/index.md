@@ -13,6 +13,7 @@ These classes are written in ES6. Look at the API Documentation for methods, etc
 class MyAuthenticator extends Authenticator {
   login(data) {}
   logout() {}
+  onCreateUI() {}
 }
 ```
 
