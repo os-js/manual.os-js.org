@@ -11,7 +11,7 @@ These classes are written in ES6. Look at the API Documentation for methods, etc
 
 ```javascript
 class MyAuthenticator extends Authenticator {
-  login() {}
+  login(data) {}
   logout() {}
 }
 ```
@@ -20,9 +20,9 @@ class MyAuthenticator extends Authenticator {
 
 ```javascript
 class MyAuthenticator extends Authenticator {
-  login() {}
+  login(data) {}
   logout() {}
-  getUser() {}
+  getUserFromRequest(http) {}
   getBlacklist() {}
 }
 ```
