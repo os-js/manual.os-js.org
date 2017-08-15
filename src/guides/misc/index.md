@@ -65,9 +65,17 @@ Process.message('foo', {bar: 'baz'})
 Process.message('foo', {bar: 'baz'}, {source: app}); // To prevent signaling a certain process
 ```
 
+```javascript
+// Get a launch argument from `.create()`
+proc._getArgument('foo') // => 'bar'
+
+// Listen to a given broadcast message
+proc._on('foo', (obj) => {}) // => obj = {bar: 'baz'}
+```
+
 ## Applications
 
-To subscribe to events:
+To subscribe to events (and also broadcast messages):
 
 ```javascript
 application._on('event', () => ...);
