@@ -58,7 +58,7 @@ Process.create('PackageClassName', {foo: 'bar'}); // Promise
 Process.createFromArray(['PackageClassName']); // Promise
 
 // Launch from file (guesses what application will be used)
-Process.createFromFile(new FileMetadata('home://my-file.txt', 'text/plain'));
+Process.createFromFile(new FileMetadata('home:///my-file.txt', 'text/plain'));
 
 // Broadcast a message
 Process.message('foo', {bar: 'baz'})
