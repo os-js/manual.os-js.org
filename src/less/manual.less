@@ -1,39 +1,9 @@
+@import 'src/less/common/vars';
+@import 'src/less/common/reset';
 
-html, body {
-  margin : 0;
-  padding : 0;
-  height : 100%;
-  min-height : 100%;
-  height : auto;
-}
-
-.after,
-.before {
-  content : '';
-  width : 100%;
-  height : 100%;
-  display : block;
-  position : absolute;
-  top : 0;
-  left : 0;
-  right : 0;
-  bottom : 0;
-  pointer-events : none;
-}
-
-.before {
-  z-index : -1;
-}
-.after {
-  z-index : 1;
-}
-
-.list {
-  padding : 0;
-  margin : 0;
-  padding-left : 1.3rem;
-}
-
+/**
+ * Markdown
+ */
 code[class*=language-] {
   max-width : 100%;
   white-space: -moz-pre-wrap;
@@ -41,24 +11,12 @@ code[class*=language-] {
   white-space: -o-pre-wrap;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-family: 'Source Code Pro', monospace;
+  font-family: @osjs-pre-font-family;
 }
 
 /**
- * Base
+ * Headers
  */
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  overflow : auto;
-  color : #222;
-}
-
-header, nav, aside#sidebar, main, footer, content {
-  display : block;
-  box-sizing : border-box;
-  position : relative;
-}
-
 h1 {
   color : #000;
   font-size : 2.5em;
@@ -68,42 +26,27 @@ h1 {
 
 h2 {
   font-size : 1.5em;
-  padding-bottom: .5em;
-  margin-top : 2em;
+  padding-bottom: (@osjs-base-padding / 2);
+  margin-top : (@osjs-base-padding * 2);
 }
 
 h3 {
   font-size : 1.2em;
 }
 
-content > hr {
-  background-color : transparent;
-  border : 0 none;
-  height : 2em;
-}
+/**
+ * Tables
+ */
 
-a {
-  text-decoration : none;
+th, td {
+  padding : (@osjs-base-padding / 5);
 }
-
-table {
-  width : 100%;
-  border-collapse : collapse;
-  font-size : 1em;
+tbody tr td {
+  border-bottom : 1px solid #e8e8e8;
 }
-  th, td {
-    padding : 4px;
-  }
-  thead {
-    text-align : left;
-    font-weight : normal;
-  }
-  tbody tr td {
-    border-bottom : 1px solid #e8e8e8;
-  }
-  tbody tr:nth-child(2n+1) td {
-    background-color : #fafafa;
-  }
+tbody tr:nth-child(2n+1) td {
+  background-color : #fafafa;
+}
 
 table.reference {
   width : 600px;
@@ -126,75 +69,46 @@ table.reference {
     background-color : transparent;
   }
 
-/**
- * Header
- */
-header {
-  font-size : 2em;
-  font-weight : bold;
-  color : #fff;
-  background-color : #572a79;
-  padding : 1em;
-}
+@import 'src/less/common/layout';
 
 /**
- * Wrapper
+ * Layout
  */
-main {
-  min-height : 100vh;
-  display : flex;
-}
+body {
+  & > main {
+    & > aside {
+      & > nav {
+        & > ol {
+          margin : 0;
+          padding : 0;
+          padding-left : @osjs-base-padding;
 
-/**
- * Sidebar
- */
-aside#sidebar {
-  flex: 0 0 auto;
-  margin-right : 2em;
-  padding : 2em;
-  background-color : #fafafa;
-}
-  aside#sidebar > nav {
+          li {
+
+            & > span {
+              font-weight : bold;
+            }
+
+            & > a {
+              text-decoration : none;
+              color : #000;
+              display : inline-block;
+            }
+
+            li {
+              margin-bottom : (@osjs-base-padding / 2);
+            }
+          }
+
+          ul {
+            margin : 0;
+            padding : 0;
+            padding-left : (@osjs-base-padding * 1.3);
+            padding-top : @osjs-base-padding;
+            padding-bottom : @osjs-base-padding;
+          }
+        }
+      }
+    }
   }
-    aside#sidebar > nav a {
-      text-decoration : none;
-      color : #000;
-      display : inline-block;
-    }
-
-    aside#sidebar > nav > ol {
-      &:extend(.list);
-      padding-left : 1em;
-    }
-      aside#sidebar > nav > ol > li {
-        padding-bottom : 1em;
-      }
-        aside#sidebar > nav > ol > li li {
-          margin-bottom : .5em;
-        }
-        aside#sidebar > nav > ol > li > a,
-        aside#sidebar > nav > ol > li > span {
-          font-weight : bold;
-        }
-      aside#sidebar > nav > ol ul {
-        &:extend(.list);
-        padding-top : 1em;
-      }
-/**
- * Content
- */
-content {
-  flex : 1 1 auto;
-  min-height : 100%;
-  padding : 2em;
-  padding-bottom : 10em;
 }
-
-/**
- * Footer
- */
-footer {
-  text-align : center;
-  font-size : 70%;
-}
-

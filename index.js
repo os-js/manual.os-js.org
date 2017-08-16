@@ -60,6 +60,7 @@ if ( process.argv[2] === '--watch' ) {
 }
 
 i.build(function(err) {
+  console.log(err || 'done');
   if (err) throw err;
 });
 
