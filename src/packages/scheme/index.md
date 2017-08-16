@@ -70,7 +70,7 @@ A container with vertical (rows) that you can shrink/expand, also make content e
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-vbox">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -89,7 +89,7 @@ A container with horizontal (columns) that you can shrink/expand, also make cont
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-hbox">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -108,7 +108,7 @@ A container with horizontal (columns) that you can shrink/expand, also make cont
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-paned-view">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -127,7 +127,7 @@ A tabbed container.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-tabs">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -144,7 +144,7 @@ A container for holding buttons, etc.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.toolbar">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -161,7 +161,7 @@ Works like a toolbar, but is made for holding buttons with user-defined position
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.button-bar">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -181,7 +181,7 @@ A normal image.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-image">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -197,7 +197,7 @@ A paintable image (no actual painting included)
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-canvas">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -213,7 +213,7 @@ Play sounds or music.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-audio">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -229,7 +229,7 @@ Display a video.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-video">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -245,7 +245,7 @@ Display a iframe.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-iframe">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -267,7 +267,7 @@ Display a normal text label.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-label">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -285,7 +285,7 @@ A button made for clicking!
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-button">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -303,7 +303,7 @@ A button, but works more like a light-switch.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-switch">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -321,7 +321,7 @@ A radio button.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-radio">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -339,7 +339,7 @@ A checbox.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-checkbox">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -357,7 +357,7 @@ A dropdown input.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-select">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -375,7 +375,7 @@ A selectable list.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-select-list">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -393,7 +393,7 @@ A slider for giving a variable input.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-slider">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -411,7 +411,7 @@ A text entry box.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-text">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -429,7 +429,7 @@ A password entry box.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-password">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -447,7 +447,7 @@ A big text entry area.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-textarea">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -462,7 +462,7 @@ A big text entry area, with support for HTML.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-richtext">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -484,7 +484,11 @@ A view with tree display (nested).
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-tree-view">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/dataview.js~UIDataView.html">Overview</a></td>
+    </tr>
+    <tr>
+      <td>Special Events</td>
+      <td>`activate` and `select`</td>
     </tr>
   </tbody>
 </table>
@@ -502,7 +506,11 @@ A view with icon display.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-icon-view">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/dataview.js~UIDataView.html">Overview</a></td>
+    </tr>
+    <tr>
+      <td>Special Events</td>
+      <td>`activate` and `select`</td>
     </tr>
   </tbody>
 </table>
@@ -520,7 +528,11 @@ A view with list display.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-list-view">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/dataview.js~UIDataView.html">Overview</a></td>
+    </tr>
+    <tr>
+      <td>Special Events</td>
+      <td>`activate` and `select`</td>
     </tr>
   </tbody>
 </table>
@@ -535,7 +547,11 @@ A combination of all views above, with direct connection to the VFS. For file br
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-file-view">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/dataview.js~UIDataView.html">Overview</a></td>
+    </tr>
+    <tr>
+      <td>Special Events</td>
+      <td>`activate` and `select`</td>
     </tr>
   </tbody>
 </table>
@@ -557,7 +573,7 @@ A box for showing progress.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-progress-bar">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -575,7 +591,7 @@ A box for selecting colors from a palette.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-color-swatch">Overview</a></td>
+      <tt><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -593,7 +609,11 @@ A bar for showing menus with.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-menu-bar">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
+    </tr>
+    <tr>
+      <td>Special Events</td>
+      <td>`select`</td>
     </tr>
   </tbody>
 </table>
@@ -612,7 +632,11 @@ A menu box.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-menu">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
+    </tr>
+    <tr>
+      <td>Special Events</td>
+      <td>`select`</td>
     </tr>
   </tbody>
 </table>
@@ -627,7 +651,7 @@ A bar for showing statuses.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-statusbar">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -642,7 +666,7 @@ Creates a button for uploading files.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-file-upload">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -660,7 +684,7 @@ A textbox with an attached button designed for bringing up dialogs to set values
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-input-modal">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
@@ -678,7 +702,7 @@ A button, but instead of text shows the color assigned.
     </tr>
     <tr>
       <td>API Reference</td>
-      <td><a href="/doc/client/OSjs.GUI.Elements.html#.gui-color-box">Overview</a></td>
+      <td><a href="https://api.os-js.org/client/class/javascript/gui/element.js~GUIElement.html">Overview</a></td>
     </tr>
   </tbody>
 </table>
