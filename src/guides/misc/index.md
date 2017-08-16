@@ -71,6 +71,9 @@ proc._getArgument('foo') // => 'bar'
 
 // Listen to a given broadcast message
 proc._on('foo', (obj) => {}) // => obj = {bar: 'baz'}
+
+// Get an URL to a resource in package
+proc._getResource('something.txt') // => /packages/repo/PackageName/something.txt
 ```
 
 ## Applications
