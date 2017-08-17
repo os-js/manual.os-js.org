@@ -49,14 +49,14 @@ Brief overview over source folders:
 
 ## Contributing
 
-Follow normal Github workflow:
+Follow normal [Github workflow](https://guides.github.com/introduction/flow/):
 
 - Make a github account
 - Fork OS.js on Github to your account
 - Clone the newly created repository
 - Create a new branch
 - Do work, commit and push
-- Then open a pull-request on Github
+- Then open a pull-request on Github (use the `development` branch)
 
 The patch will then be reviewed and finally merged when given the OK.
 
