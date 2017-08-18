@@ -21,13 +21,19 @@ You can manipulate the settings by changing the supplied files, adding your own,
 
 Please note that Arrays are not merged together.
 
+For more information [look in the configuration manual](/configuration).
+
 ## Client
 
 The client is the main application that runs in a browser environment.
 
+It's built using Webpack and ES6, so everything is separated into individual modules.
+
+The "client" contains all core APIs, and the main graphical environment (window manager and desktop) is in a separate package which is launched upon boot (by default the "default/CoreWM" package).
+
 ## Server
 
-A HTTP server to host the client files is a available in two flavors: Node (Express) and PHP.
+A HTTP server to host the client files and server APIs. Is a available in two flavors: Node (Express) and PHP.
 
 **Please note that the PHP server is missing some features and might be moved into a separate project**.
 
@@ -58,8 +64,14 @@ All packages has a metadata file (`metadata.json`) that contains information abo
 
 The package metadata files are built into a final *manifest file* that the client uses to populate its Package Manager.
 
+For more information [look in the packages manual](/packages).
+
 ## Overlays
 
 Instead of making changes to the base repository, you can very easily add overlays to include your own code and packages, etc.
 
 An overlay is organized just like in `src/` and will be loaded into the build/configuration system automatically once added.
+
+An example overlay [is available on Github](https://github.com/andersevenrud/osjs-example-overlay).
+
+For more information on configuration [look in the configuration manual](/configuration/#adding-overlays).
