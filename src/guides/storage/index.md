@@ -7,14 +7,23 @@ layout: layout.html
 
 These classes are written in ES6. Look at the API Documentation for methods, etc.
 
-This is a **Node Server Service**, not a *Service Package* (which is client-side).
-
 ## Client
 
 ```javascript
 class MyStorage extends Storage {
-  saveSettings() {}
-  saveSession() {}
+  saveSettings(pool, storage) {
+    // If you don't need to modify the request,
+    // just let the base class handle it.
+
+    return super.saveSettings(...arguments); // => Promise
+  }
+
+  saveSession() {
+    // If you don't need to modify the session,
+    // just let the base class handle it.
+
+    return super.saveSession(...arguments); // => Promise
+  }
 }
 ```
 
@@ -22,8 +31,13 @@ class MyStorage extends Storage {
 
 ```javascript
 class MyStorage extends Storage {
-  setSettings() {}
-  getSettings() {}
+  setSettings(user, settings) {
+    return Promise.resolve(true);
+  }
+
+  getSettings(user) {
+    return Promise.resolve({});
+  }
 }
 ```
 
