@@ -7,6 +7,8 @@ layout: layout.html
 
 This VFS is configured via `src/conf`. Below are some guides on how to set up different mountpoints:
 
+**Note that third party services using OAuth creates popup windows (new tabs), so the client has to allow these**
+
 ## Adding a mountpoint
 
 To add the mountpoint `data:///` pointing to `/tmp`.
