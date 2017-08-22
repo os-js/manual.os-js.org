@@ -86,6 +86,8 @@ You can watch your package with: `node osjs watch --package=myrepo/mypackage`.
 
 Look at [development pages](/development) for more information.
 
+To reload your package in the client, run `OSjs.require('core/process').reload('ApplicationSomething')` where the name is your `className` definition.
+
 ## Building
 
 To make OS.js recognize your package, you first have to run `node osjs build:manifest` to add it to the global manifest. You also have to run this command whenever you change your metadata file.
