@@ -40,3 +40,15 @@ $ node osjs config:set --name=client.WindowsLiveAPI.ClientId --value=YOUR_CLIENT
 $ node osjs config:set --name=client.VFS.Mountpoints.onedrive.enabled --value=true
 $ node osjs build:config
 ```
+
+## Enabling DropBox
+
+First you have to create [API Credentials](https://www.dropbox.com/login?cont=https%3A%2F%2Fwww.dropbox.com%2Fdevelopers%2Fapps) to allow OS.js access.
+
+Set your redirect URL to `http://your-host/dropbox-oauth.html`.
+
+```bash
+$ node osjs config:set --name=client.DropboxAPI.ClientId --value=YOUR_CLIENT_ID
+$ node osjs config:set --name=client.VFS.Mountpoints.dropbox.enabled --value=true
+$ node osjs build:config
+```
