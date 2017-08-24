@@ -34,7 +34,7 @@ $ node osjs build:config
 
 Stores user data in a database.
 
-**See the [Authenticators](/modules/authenticator/#database) documentation on how to set up the database and its users.**
+**See the [Authenticators](/configuration/authenticator/#database) documentation on how to set up the database and its users.**
 
 ### Sqlite
 

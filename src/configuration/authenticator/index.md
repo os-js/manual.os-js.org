@@ -24,7 +24,7 @@ $ node osjs build:config
 
 Log in via the system (`PAM` or `Shadow`) authentication system. **This is only available for Linux and Node**.
 
-**Also set up the [System storage](/manual/storage/modules/#system) module for this to work as intended.**
+**Also set up the [System storage](/configuration/storage/#system) module for this to work as intended.**
 
 ### Setup:
 
@@ -94,7 +94,7 @@ This is an example file for `blacklist.json`
 
 This is just a simple database backend that allows you to store your users (and settings etc.).
 
-**Also set up the [Database Storage](/modules/storage/#database) module for this to work as intended.**
+**Also set up the [Database Storage](/configuration/storage/#database) module for this to work as intended.**
 
 ### Sqlite
 

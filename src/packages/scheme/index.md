@@ -42,7 +42,7 @@ The `Scheme` file is the default provided way to build User Interfaces. This is 
 
 GUI Elements are comprised of regular HTML, JavaScript and CSS.
 
-For methods see [Misc modules](/modules/misc/).
+For methods see [Misc modules](/guides/misc/).
 
 ### Elements
 
