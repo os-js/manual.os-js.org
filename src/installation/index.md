@@ -28,8 +28,7 @@ $ node osjs run
 *Optionally change host and or port*.
 ```bash
 # If you have multiple interfaces you can choose which one to bind.
-# 0.0.0.0 may be changed to your IP address of choice. By default OS.js binds to the
-# system defined default interface.
+# 0.0.0.0 may be changed to your IP address of choice.
 $ node osjs run --hostname=0.0.0.0 --port=8080
 ```
 
