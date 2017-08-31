@@ -32,8 +32,6 @@ $ node osjs run
 $ node osjs run --hostname=0.0.0.0 --port=8080
 ```
 
-**If you can't reach the server try to change the bound hostname as described above.**
-
 ## Upgrading
 
 ```bash
