@@ -16,7 +16,7 @@ Other documentation you might find interesting:
 - [2.1 Migration guide](https://community.os-js.org/t/update-version-bump-2-1-0/142)
 - [Changelogs and update announcements](https://community.os-js.org/)
 
-**If you're looking for a manual for v2.0.0 it is on [github in markdown format](https://github.com/os-js/legacy-manual)**
+**This manual is for v2.1. If you're looking for a manual for v2.0 it is on [github in markdown format](https://github.com/os-js/legacy-manual)**
 
 ## What is this ?
 
