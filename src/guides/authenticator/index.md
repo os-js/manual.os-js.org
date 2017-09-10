@@ -27,11 +27,11 @@ class MyAuthenticator extends Authenticator {
     return super.logout(...arguments); // => Promise
   }
 
-  onCreateUI() {
+  createUI() {
     // You can construct your login GUI here, but in this example
     // we just short-circuit it to perform a login with given credentials
 
-    return this.onLoginRequest({
+    return this.requestLogin({
       username: 'example',
       password: 'example'
     });

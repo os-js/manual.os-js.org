@@ -84,9 +84,9 @@ Packages are built with **Webpack** and is written in ES6, so you have a lot of 
 
 You can watch your package with: `node osjs watch --package=myrepo/mypackage`.
 
-Look at [development pages](/development) for more information.
+To reload your package in the client, run `OSjs.require('core/process').reload('ApplicationSomething')` where the name is your `className` definition (in the developer tools in your browser).
 
-To reload your package in the client, run `OSjs.require('core/process').reload('ApplicationSomething')` where the name is your `className` definition.
+Look at [development pages](/development) for more information.
 
 ## Building
 

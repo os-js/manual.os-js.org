@@ -28,6 +28,10 @@ $ node osjs watch --debug --package=repo/name
 
 If you want to use `node-supervisor` to automatically restart the server upon changes, use `./bin/start.sh --debug` (or `./bin/win-start.cmd --debug`) instead of `node osjs run --debug`.
 
+You can also start the server with `--reload` flag. This will make server automatically reload your package server scripts upon change.
+
+See [packages manual](/packages/#development) for more information about package development.
+
 ## Files, Modules and Layouts
 
 All of the sources are located in `src/` with exception of the following modules:
