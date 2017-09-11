@@ -18,7 +18,6 @@ This module only saves the data in the *Browser* using `LocalStorage`.
 ```bash
 $ node osjs config:set --name=storage --value=demo
 $ node osjs build:config
-
 ```
 
 ## System
@@ -34,7 +33,7 @@ $ node osjs build:config
 
 Stores user data in a database.
 
-**See the [Authenticators](/configuration/authenticator/#database) documentation on how to set up the database and its users.**
+**See the [Database Authenticator](/configuration/authenticator/database/) documentation on how to set up the database and its users.**
 
 ### Sqlite
 

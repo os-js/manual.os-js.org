@@ -10,6 +10,7 @@ const ignore = require('metalsmith-ignore');
 const watch = require('metalsmith-watch');
 const metalsmithPrism = require('metalsmith-prism');
 const sitemap = require('metalsmith-sitemap');
+const mdinclude = require('metalsmith-mdinclude');
 
 const handlebars = require('handlebars');
 handlebars.registerHelper('startsWith', function(prefix, str, options) {
@@ -31,6 +32,7 @@ var i = Metalsmith(__dirname)
   .source('./src')
   .destination('./build')
   .clean(true)
+  .use(mdinclude())
   .use(less())
   .use(markdown({langPrefix: 'language-'}))
   .use(metalsmithPrism())
