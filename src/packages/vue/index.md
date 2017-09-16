@@ -16,10 +16,7 @@ Run `npm init` in your package directory.
 Then proceed to install the required dependencies:
 
 ```
-$ npm install --save-dev webpack
-$ npm install --save-dev vue-loader
-$ npm install --save-dev vue-template-compiler
-$ npm install --save-dev vue
+$ npm install --save-dev vue-loader vue-template-compiler vue
 ```
 
 ## Set up webpack

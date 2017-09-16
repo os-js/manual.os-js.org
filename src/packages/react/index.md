@@ -16,10 +16,7 @@ Run `npm init` in your package directory.
 Then proceed to install the required dependencies:
 
 ```
-$ npm install --save-dev webpack
-$ npm install --save-dev babel-preset-react
-$ npm install --save-dev react
-$ npm install --save-dev react-dom
+$ npm install --save-dev babel-preset-react react react-dom
 ```
 
 ## Set up webpack
