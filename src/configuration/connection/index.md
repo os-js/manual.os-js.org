@@ -36,6 +36,8 @@ $ node osjs config:set --name=connection --value=ws
 $ node osjs build:config
 ```
 
+**Note**: You can combine HTTP2 and WS: `node osjs config:set --name=connection=http2+ws`
+
 ## Sessions
 
 You can use any session manager supported by [Express session](https://github.com/expressjs/session).
