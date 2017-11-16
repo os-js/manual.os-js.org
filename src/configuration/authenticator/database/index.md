@@ -15,6 +15,7 @@ To create a new user after you've set up:
 
 ```bash
 $ node bin/add-user.js add anders admin
+$ node bin/add-user.js pwd anders
 $ mkdir vfs/home/anders
 ```
 
