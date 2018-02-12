@@ -92,29 +92,9 @@ class ApplicationUsingReactWindow extends Window {
 }
 ```
 
-## Set up broadcasting between two applications that cannot directly communicate with each other using the default eventBus
+## To communicate between Vue components in separate applications, you'll need to set up a Vue event bus and use OS.js built-in event handling and broadcasting.
 
-Note: To explain this clearly, we have the "broadcaster" application as AppA, and the "receiver/listener" application as AppB.
-
-In AppA's main.js add: 
-
-``` javascript
-const Process = OSjs.require('core/process');
-... 
-    const vue = new Vue({
-      el: container,
-      render: h => h(App), 
-      methods: {
-        broadcast(n, args) {
-          Process.message(n, args, {source: app});
-        }
-      }
-    });
-```
-Above, we're adding the OSJS Process so it's accessible to the Vue instance declared. In the Vue instance, we add the method `broadcast` that will be called by the child component(s). The method will then make use of OSJS's broadcasting system and notify other packages/applications.
-
-Now, let's say you want to have the event be triggered by a button click: 
-
+In the component you wish to broadcast events over OS.js:
 ``` javascript
   methods: {
     clickAction(m) {
@@ -122,22 +102,7 @@ Now, let's say you want to have the event be triggered by a button click:
     }
   }
 ```
-The button press calls `clickAction` and submits an object *m*. This method now calls the root Vue object and uses its "global" `broadcast` method.
-
-The event has been sent out at this point. Now, for AppB to receive the event; we need to register one or more events. Having this inside the main.js file of AppB we can separate OSJS concerns from VueJS.
-
-``` javascript
-    /**
-     * Register events
-     */
-    ["highlight-node-event"].forEach(n =>
-      app._on(n, (...args) => {
-        vue.$emit(n, ...args);
-      })
-    );
-```
-Here *app* is the OSJS instance of AppB, which will send an `$emit` call within the root Vue component. Finally, in the child component where the event is to be captured we add: 
-
+In the component you wish to receive events from OS.js:
 ``` javascript
   mounted() {
     this.$root.$on("highlight-node-event", id => {
@@ -149,8 +114,32 @@ Here *app* is the OSJS instance of AppB, which will send an `$emit` call within 
     });
   },
 ```
-Above, we check to see if the object passed in matches up with the local this.model's _key property. If true, then the node to highlight is lit up using the computed check.
+In your OS.js application you can proxy events:
+``` javascript
+  const Process = OSjs.require('core/process');
+  ... 
+  const vue = new Vue({
+    el: container,
+    render: h => h(App), 
+    methods: {
+      broadcast(n, args) {
+        // send message out
+        Process.message(n, args, {source: app});
+      }
+    }
+  });
+```
 
+``` javascript
+    /**
+     * Register events
+     */
+    ["highlight-node-event"].forEach(n =>
+      app._on(n, (...args) => {
+        vue.$emit(n, ...args);
+      })
+    );
+```
 
 
 
