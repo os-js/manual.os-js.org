@@ -92,4 +92,35 @@ class ApplicationUsingReactWindow extends Window {
 }
 ```
 
+If you want to have events between VueJS instances that reside in *separate* OSjs packages/applications then...
+In the "broadcasting" VueJS instance, you will need to include the OSjs application `app` instace (main.js):
+```
+    new Vue({
+      el: container,
+      render: h => h(App),
+      data() {
+        return {
+          app
+        }
+      }
+    });
+```
+Still in the "broadcasting" instance, in the VueJS code: 
+```
+const Process = OSjs.require('core/process');
+...
+  methods: {
+    notifyOtherApp(m) {
+      Process.message('highlight-node-event', {'id': m._id});
+    }
+  }
+```
+
+Then in the receiving VueJS instance (notice you're using $root here):
+```
+  mounted() {
+    this.$root.app._on('highlight-node-event', (id) => {this.highlight = id});
+  }
+```
+
 **That's it!** You now have a hello world application :)
