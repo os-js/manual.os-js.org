@@ -1,14 +1,14 @@
 {
-  "name": "os.js.org",
-  "version": "2.0.0",
-  "description": "os.js.org sources",
+  "name": "osjs-manual",
+  "version": "1.0.0",
+  "description": "OS.js Manual",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/os-js/os.js.org.git"
+    "url": "git+https://github.com/os-js/manual.os-js.org.git"
   },
   "keywords": [
     "os.js"
@@ -32,6 +32,7 @@
     "metalsmith-sitemap": "^1.2.0",
     "metalsmith-watch": "^1.0.3",
     "metalsmith-mdinclude": "^0.1.0",
-    "node-fs-extra": "^0.8.1"
+    "node-fs-extra": "^0.8.1",
+    "gitbook-plugin-ga": "^2.0.0"
   }
 }
