@@ -4,7 +4,15 @@ A Service Provider registers services that provide features for OS.js.
 
 These are loaded on startup on both the client and server.
 
-## Creation
+## Usage
+
+To create an instance of a service provided:
+
+```javascript
+core.make('service-name', ...args);
+```
+
+## Custom Service Provider
 
 This is the service provider interface:
 
@@ -35,10 +43,3 @@ To register a singleton:
 core.singleton('service-name', () => new SomeClass({foo: 'bar'}));
 ```
 
-## Usage
-
-To create an instance of a service provided:
-
-```javascript
-core.make('service-name', ...args);
-```

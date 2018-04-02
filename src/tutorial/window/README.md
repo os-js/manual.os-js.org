@@ -1,5 +1,9 @@
 # Window
 
+Windows are floating containers that you can use to render any content. See [GUI](tutorial/gui/README.md) tutorial on how to design content using OS.js GUI libraries.
+
+## Usage
+
 To create a new `Window` instance:
 
 ```javascript

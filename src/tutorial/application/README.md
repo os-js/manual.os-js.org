@@ -1,7 +1,8 @@
 # Application
 
-
 You can use the [official example package](https://github.com/os-js/osjs-example-package) as a bolilerplate for your project.
+
+## Usage
 
 To create a new `Application` instance:
 
@@ -30,6 +31,9 @@ The `metadata.json` file describes your application and contains a list of files
 
   // What category this application belongs to
   "category": null,
+
+  // A filename to icon
+  "icon": null,
 
   // The server script to load (if any)
   "server": "server.js",
@@ -75,6 +79,8 @@ win.on('event-name', (...args) => console.log(...args));
 
 You can set up your own HTTP routes using the internal APIs:
 
+> Application endpoints are resolved as `/packages/{name}/{endpoint}`
+
 ### Client
 
 Create the endpoint URL, then use the `request()` method:
@@ -87,7 +93,7 @@ console.log(response);
 
 ### Server
 
-In your server script, create a matching endpoint and use Express:
+In your server script, create a matching endpoint with Express:
 
 ```javascript
 const endpoint = proc.resource('/hello-world');
@@ -100,9 +106,11 @@ core.app.post(endpoint, (req, res) => {
 
 You can also spawn websockets on the internal server and bind it to your application:
 
+> Application endpoints are resolved as `/packages/{name}/{endpoint}`
+
 ### Client
 
-Returns an instance of `ApplicationSocket`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events.
+Create an instance of `ApplicationSocket` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
 
 ```javascript
 const ws = proc.socket(); // Defaults to '/socket'
@@ -110,7 +118,7 @@ const ws = proc.socket(); // Defaults to '/socket'
 
 ### Server
 
-You can also create WebSocket connections with the `proc.socket()` method. By default the endpoint is `/packages/{name}/{path}` and the bindings are defined in your applications server script:
+In your server script, create a matching endpoint with Express:
 
 ```javascript
 const endpoint = proc.resource('/socket');

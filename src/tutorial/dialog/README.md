@@ -1,5 +1,8 @@
 # Dialog
 
+Dialogs are [Window](tutorial/window/README.md)s with pre-defined templates and actions.
+
+## Usage
 
 To create a dialog use the provided service:
 
@@ -12,12 +15,30 @@ core.make('osjs/dialog', name, args, (btn, value) => {
 });
 ```
 
+## Custom Dialogs
+
 The default Dialog Service provider allows you to add (or override) dialogs:
 
 ```javascript
 import {Dialog} from '@osjs/dialogs';
-class MyDialog extends Dialog {}
 
+class MyDialog extends Dialog {
+  constructor(core, args, callback) {
+    super(core, Object.assign({
+      foo: 'My custom argument default'
+    }, args), callback)
+  }
+
+  render() {
+    super.render(($content) => {
+      const el = document.createTextNode(this.args.foo);
+      $content.appendChild(el);
+    });
+  }
+}
+```
+
+```javascript
 osjs.register(DialogServiceProvider, {
   args: {
     registry: {

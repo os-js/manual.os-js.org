@@ -1,5 +1,9 @@
 # VFS
 
+The Virtual Filesystem (VFS) provides methods to use and manipulate local (or remote) filesystems.
+
+## Usage
+
 To use the Virtual Filesystem, make the provided service:
 
 ```javascript
