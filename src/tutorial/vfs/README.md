@@ -9,7 +9,7 @@ To use the Virtual Filesystem, make the provided service:
 ```javascript
 const vfs = core.make('osjs/vfs');
 
-const list = vfs.readdir('/');
+const list = await vfs.readdir('/');
 console.log(list);
 ```
 
