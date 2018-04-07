@@ -35,9 +35,11 @@ To upgrade, use `npm update` or manually update dependencies defined in the `pac
 
 If you have applications installed with `git` you'll have to manually update these.
 
-## Applications
+## Packages
 
-You can install using `npm` or `git`. After you've downloaded the application simply rebuild with:
+Packages comes in two types: *Application* and *Theme*.
+
+You can install using `npm` or `git`. After you've installed the package, rebuild your dist:
 
 ```
 npm run build:manifest
@@ -46,7 +48,13 @@ npm run build:dist
 
 ### Using git
 
-Clone directly into `src/packages`. Make sure to run `npm install` inside the target to install dependencies (if required).
+Use the provided script:
+
+```
+npm install:package -- https://somewhere/package.git
+```
+
+Or manually clone directly into `src/packages`. Make sure to run `npm install` inside the target to install dependencies (if required).
 
 ### Using npm
 

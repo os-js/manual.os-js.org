@@ -16,7 +16,7 @@
 * [Installation](install/README.md)
   * [Setup](install/README.md#setup)
   * [Upgrade](install/README.md#upgrade)
-  * [Applications](install/README.md#applications)
+  * [Packages](install/README.md#packages)
   * [Service Providers](install/README.md#service-provider)
 * [Configure](config/README.md)
   * [Client](config/README.md#client)
