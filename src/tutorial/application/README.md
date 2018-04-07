@@ -79,7 +79,7 @@ win.on('event-name', (...args) => console.log(...args));
 
 You can set up your own HTTP routes using the internal APIs:
 
-> Application endpoints are resolved as `/packages/{name}/{endpoint}`
+> Application endpoints are resolved as `/apps/{name}/{endpoint}`
 
 ### Client
 
@@ -106,7 +106,7 @@ core.app.post(endpoint, (req, res) => {
 
 You can also spawn websockets on the internal server and bind it to your application:
 
-> Application endpoints are resolved as `/packages/{name}/{endpoint}`
+> Application endpoints are resolved as `/apps/{name}/{endpoint}`
 
 ### Client
 
