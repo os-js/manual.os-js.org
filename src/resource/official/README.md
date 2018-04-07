@@ -16,14 +16,14 @@
 
 ## Applications
 
-* https://github.com/os-js/osjs-xterm-package
-* https://github.com/os-js/osjs-textpad-package
-* https://github.com/os-js/osjs-filemanager-package
-* https://github.com/os-js/osjs-preview-package
-* https://github.com/os-js/osjs-musicplayer-package
-* https://github.com/os-js/osjs-htmlviewer-package
-* https://github.com/os-js/osjs-pdfreader-package
-* https://github.com/os-js/osjs-xpra-package
+* https://github.com/os-js/osjs-xterm-application
+* https://github.com/os-js/osjs-textpad-application
+* https://github.com/os-js/osjs-filemanager-application
+* https://github.com/os-js/osjs-preview-application
+* https://github.com/os-js/osjs-musicplayer-application
+* https://github.com/os-js/osjs-htmlviewer-application
+* https://github.com/os-js/osjs-pdfreader-application
+* https://github.com/os-js/osjs-xpra-application
 
 ## Themes
 
