@@ -16,6 +16,13 @@ cd OS.js
 npm install
 ```
 
+Install themes and packages:
+
+```
+npm run install:package -- https://github.com/os-js/osjs-standard-theme.git
+npm run install:package -- https://github.com/os-js/osjs-example-application.git
+```
+
 Then proceed with building:
 
 ```
