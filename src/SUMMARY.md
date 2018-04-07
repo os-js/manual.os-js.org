@@ -38,4 +38,5 @@
 
 ### Guides
 
+* [CLI](guide/cli/README.md)
 * [Migration](guide/migrate/README.md)
