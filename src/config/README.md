@@ -4,11 +4,34 @@ You can find the configuration files (by default) in `src/conf/` directory.
 
 ## Client
 
-TODO. See defaults: https://github.com/os-js/osjs-core/blob/master/src/core.js#L34
+| Key             | Default value | Description                                              |
+| --------------- | ------------- | -------------------------------------------------------- |
+| development     | `true`        | Enable development mode                                  |
+| standalone      | `false`       | Enable standalone mode                                   |
+| public          | `<auto>`      | Root public path for resolving urls                      |
+| theme           | `Standard`    | Default theme metadata name                              |
+| login.username  | `demo`        | Default login username                                   |
+| login.password  | `demo`        | Default login password                                   |
+| ws.protocol     | `<auto>`      | WebSocket protocol                                       |
+| ws.port         | `<auto>`      | WebSocket port                                           |
+| ws.hostname     | `<auto>`      | WebSocket hostname                                       |
+| ws.path         | `<auto>`      | WebSocket path                                           |
 
 ## Server
 
-TODO. See defaults: https://github.com/os-js/osjs-server/blob/master/src/server.js#L41
+| Key                         | Default value | Description                                             |
+| --------------------------- | ------------- | ------------------------------------------------------- |
+| logging                     | `true`        | Log HTTP requests                                       |
+| index                       | `index.html`  | Index HTML file                                         |
+| hostname                    | `localhost`   | Server hostname                                         |
+| port                        | `8000`        | Server port                                             |
+| public                      | `/dist`       | The dist directory                                      |
+| morgan                      | `tiny`        | Morgan logging mode                                     |
+| ws.port                     | `<auto>`      | WebSocket port (defaults to upgrade)                    |
+| session.secret              | `osjs`        | HTTP Session secret                                     |
+| session.resave              | `false`       | HTTP Session resave option                              |
+| session.saveUninitialized   | `false`       | HTTP Save uninitialzed sessions                         |
+| session.cookie.secure       | `<auto>`      | HTTP Secure cookie                                      |
 
 ## Webpack
 
