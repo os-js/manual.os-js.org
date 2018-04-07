@@ -57,12 +57,6 @@ win.on('event-name', (...args) => console.log(...args));
 * `raise => (win)` - On "un-minimize"
 * `restore => (win)` On "un-maximize"
 
-If you want to close your application when the window is destructed:
-
-```javascript
-win.on('destroy', () => proc.destroy());
-```
-
 ## Media Queries
 
 You can assign local media queries to a window using attributes. By default OS.js provides:

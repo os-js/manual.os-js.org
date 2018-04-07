@@ -63,6 +63,20 @@ The `metadata.json` file describes your application and contains a list of files
 }
 ```
 
+## Windows
+
+To create a new `Window` instance:
+
+```javascript
+const win = proc.createWindow({title: 'My Window'})
+```
+
+If you want to close your application when the window is destructed:
+
+```javascript
+win.on('destroy', () => proc.destroy());
+```
+
 ## Events
 
 You can listen on events with:
