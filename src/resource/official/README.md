@@ -12,7 +12,7 @@
 ## Examples
 
 * https://github.com/os-js/osjs-example-provider
-* https://github.com/os-js/osjs-example-package
+* https://github.com/os-js/osjs-example-application
 
 ## Applications
 

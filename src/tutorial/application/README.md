@@ -1,6 +1,6 @@
 # Application
 
-You can use the [official example package](https://github.com/os-js/osjs-example-package) as a bolilerplate for your project.
+You can use the [official example package](https://github.com/os-js/osjs-example-application) as a bolilerplate for your project.
 
 ## Usage
 
