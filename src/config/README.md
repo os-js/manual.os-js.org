@@ -46,3 +46,92 @@ It consists of a basic setup with:
 * `html-webpack-plugin`
 
 You can easily make your own or use your existing project configuration (if you want to embed OS.js).
+
+This is the base template used for the core, themes and applications:
+
+```javascript
+{
+  mode: 'development',
+  devtool: 'source-map',
+  context: '<auto>',
+  entry: {/* ... */},
+  plugins: [
+    new ExtractTextPlugin('[name].css'),
+    new CopyWebpackPlugin(/* ... */)
+  ],
+  optimization: {
+    minimize: false,
+    splitChunks: false
+    runtimeChunk: false
+  },
+  output: {
+    path: '<auto>',
+    sourceMapFilename: '[file].map',
+    filename: '[name].js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif|webp)$/,
+        use: [
+          {
+            loader: require.resolve('file-loader'),
+            options: {}
+          }
+        ]
+      },
+      {
+        test: /\.s?css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: {
+            loader: require.resolve('style-loader')
+          },
+          use: [
+            {
+              loader: require.resolve('css-loader'),
+              options: {
+                minimize: false,
+                sourceMap: true,
+              }
+            },
+            {
+              loader: require.resolve('sass-loader'),
+              options: {
+                minimize: false,
+                sourceMap: true,
+                includePaths: ['<auto>']
+              }
+            }
+          ]
+        })
+      },
+      {
+        test: /\.js$/,
+        exclude: ['<auto>']
+        include: ['<auto>']
+        use: {
+          loader: require.resolve('babel-loader'),
+          options: '<auto>'
+        }
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        include: /typeface/,
+        use: {
+          loader: require.resolve('file-loader'),
+          options: {
+            name: 'fonts/[name].[ext]'
+          }
+        }
+      },
+      {
+        test: /\.svg$/,
+        exclude: /typeface/,
+        use: {
+          loader: require.resolve('file-loader')
+        }
+      }
+    ]
+  }
+};
+```
