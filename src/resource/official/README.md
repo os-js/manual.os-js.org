@@ -8,7 +8,6 @@
 * https://github.com/os-js/osjs-server
 * https://github.com/os-js/osjs-cli
 * https://github.com/os-js/osjs-panels
-* https://github.com/os-js/osjs-standard-theme
 
 ## Examples
 
@@ -25,6 +24,10 @@
 * https://github.com/os-js/osjs-htmlviewer-package
 * https://github.com/os-js/osjs-pdfreader-package
 * https://github.com/os-js/osjs-xpra-package
+
+## Themes
+
+* https://github.com/os-js/osjs-standard-theme
 
 ## Providers
 
