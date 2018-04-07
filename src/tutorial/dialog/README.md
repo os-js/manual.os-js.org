@@ -39,6 +39,7 @@ class MyDialog extends Dialog {
 ```
 
 ```javascript
+// Static
 osjs.register(DialogServiceProvider, {
   args: {
     registry: {
@@ -46,4 +47,7 @@ osjs.register(DialogServiceProvider, {
     }
   }
 });
+
+// Runtime
+osjs.make('osjs/dialogs').register('my-dialog', MyDialog);
 ```

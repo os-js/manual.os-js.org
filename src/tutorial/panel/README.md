@@ -21,6 +21,7 @@ class MyPanelItem extends PanelItem {
 ```
 
 ```javascript
+// Static
 osjs.register(PanelServiceProvider, {
   args: {
     registry: {
@@ -28,4 +29,7 @@ osjs.register(PanelServiceProvider, {
     }
   }
 });
+
+// Runtime
+osjs.make('osjs/panels').register('my-panel-item', MyPanelItem);
 ```
