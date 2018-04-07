@@ -111,7 +111,13 @@ This is the base template used for the core, themes and applications:
         include: ['<auto>']
         use: {
           loader: require.resolve('babel-loader'),
-          options: '<auto>'
+          options: {
+            cacheDirectory: true,
+            presets: ['@babel/preset-env'],
+            plugins: [
+              '@babel/transform-runtime'
+            ]
+          }
         }
       },
       {
