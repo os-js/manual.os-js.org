@@ -45,8 +45,6 @@ It consists of a basic setup with:
 * `copy-webpack-plugin`
 * `html-webpack-plugin`
 
-You can easily make your own or use your existing project configuration (if you want to embed OS.js).
-
 This is the base template used for the core, themes and applications:
 
 ```javascript
