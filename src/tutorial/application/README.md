@@ -82,7 +82,7 @@ win.on('destroy', () => proc.destroy());
 You can listen on events with:
 
 ```javascript
-win.on('event-name', (...args) => console.log(...args));
+proc.on('event-name', (...args) => console.log(...args));
 ```
 
 * `destroy => ()`
