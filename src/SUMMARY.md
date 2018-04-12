@@ -30,6 +30,7 @@
 * [Window](tutorial/window/README.md)
 * [Dialog](tutorial/dialog/README.md)
 * [Notification](tutorial/notification/README.md)
+* [Tray](tutorial/tray/README.md)
 * [GUI](tutorial/gui/README.md)
 * [VFS](tutorial/vfs/README.md)
 * [Bus](tutorial/bus/README.md)
