@@ -17,5 +17,5 @@ const entry = core.make('osjs/tray', {
 If you're using this in a application, you probably want to destroy it when the user quits the application:
 
 ```javascript
-proc.on('destroy', () => tray.destroy());
+proc.on('destroy', () => entry.destroy());
 ```
