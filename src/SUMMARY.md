@@ -22,6 +22,10 @@
   * [Client](config/README.md#client)
   * [Server](config/README.md#server)
   * [Webpack](config/README.md#webpack)
+* [Development](development/README.md)
+  * [Introduction](development/README.md#introduction)
+  * [Environment](development/README.md#environment)
+  * [Contributing](development/README.md#contributing)
 
 ### Tutorials
 
