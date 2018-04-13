@@ -57,6 +57,27 @@ win.on('event-name', (...args) => console.log(...args));
 * `raise => (win)` - On "un-minimize"
 * `restore => (win)` On "un-maximize"
 
+## Methods
+
+Common methods:
+
+```javascript
+win.blur(); // Un-focus
+win.focus(); // Focus
+win.minimize(); // Minimize
+win.maximize(); // Maximize
+win.raise(); // Un-minimize
+win.restore(); // Un-maximize
+win.gravitate(string); // Gravitate toward direction
+win.resizeFit(node); // Resize to fit given DOM container
+win.setIcon(string); // Sets icon
+win.setTitle(string); // Sets title
+win.setPosition({top, left}); // Sets position
+win.setDimension({width, height}); // Sets dimension
+win.setZindex(number); // Sets z-index
+win.setNextZindex(); // Sets next z-index (move to top)
+```
+
 ## Media Queries
 
 You can assign local media queries to a window using attributes. By default OS.js provides:
