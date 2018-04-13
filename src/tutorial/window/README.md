@@ -62,6 +62,8 @@ win.on('event-name', (...args) => console.log(...args));
 Common methods:
 
 ```javascript
+win.close(); // Close
+win.destroy(); // Destroy ("force close")
 win.blur(); // Un-focus
 win.focus(); // Focus
 win.minimize(); // Minimize
