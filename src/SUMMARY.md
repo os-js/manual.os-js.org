@@ -13,16 +13,17 @@
 
 ### Getting Started
 
-* [Installation](install/README.md)
+* Installation
+  * [Requirements](install/README.md#requirements)
   * [Setup](install/README.md#setup)
   * [Upgrade](install/README.md#upgrade)
   * [Packages](install/README.md#packages)
   * [Service Providers](install/README.md#service-provider)
-* [Configure](config/README.md)
+* Configure
   * [Client](config/README.md#client)
   * [Server](config/README.md#server)
   * [Webpack](config/README.md#webpack)
-* [Development](development/README.md)
+* Development
   * [Introduction](development/README.md#introduction)
   * [Environment](development/README.md#environment)
   * [Contributing](development/README.md#contributing)
@@ -44,4 +45,5 @@
 ### Guides
 
 * [CLI](guide/cli/README.md)
+* [Embedding](guide/embed/README.md)
 * [Migration](guide/migrate/README.md)
