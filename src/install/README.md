@@ -4,11 +4,11 @@ Installation is done in a few simple steps and only takes a couple of minutes.
 
 ## Requirements
 
-The only dependency is `node 8` or later.
+The only dependency is `node 8` or later (and `git` is recommended).
 
 ## Setup
 
-Clone the base repository and install node modules:
+Clone the base repository (or download latest release) and install node modules:
 
 ```
 git clone -b v3 --single-branch https://github.com/os-js/OS.js.git
