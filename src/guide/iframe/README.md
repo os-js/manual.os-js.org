@@ -24,23 +24,34 @@ When this format is detected, the recipient process with `pid` will be discovere
 proc.on('message', args => console.log(args)); // 'OS.js'
 ```
 
+Which would be provided with the following code in the iframe:
+
+```javascript
+top.postMessage({
+  pid: 0,
+  data: "OS.js"
+});
+```
+
 ## Usage
 
 Works like a [regular application](tutorial/application/README.md), except you need to add some custom message handling.
 
 You can use an external source, but in this example it is assumed that you use the provided `data/index.html` file.
 
+> To establish communication, you have to create an initial handshake to establish what process ID you're working with.
+
 ### Embedding
 
 In the `index.js` file:
 
 ```javascript
-win.render(($content, win) => {
-  // Creates a new iframe dom element
+const createIframe = (src, cb) => {
   const iframe = document.createElement('iframe');
   iframe.style.width = '100%';
   iframe.style.height = '100%';
   iframe.setAttribute('border', '0');
+
   iframe.addEventListener('load', () => {
     const ref = iframe.contentWindow;
 
@@ -56,29 +67,34 @@ win.render(($content, win) => {
       console.warn('[Application', 'Iframe sent', args);
     });
 
+    cb(sendMessage);
+  });
+
+  // Finally set the source and attach
+  iframe.src = src;
+
+  return iframe;
+};
+
+win.render($content => {
+  // Get path to iframe content
+  const src = proc.resource('/data/index.html');
+
+  // Create DOM element
+  const iframe = createIframe(src, send => {
     // Send the process ID to our iframe to establish communication
-    sendMessage({
+    send({
       method: 'init',
       args: [proc.pid]
     });
   });
 
-  // Finally set the source and attach
-  iframe.src = proc.resource('/data/index.html');
-
+  // Attach
   $content.appendChild(iframe);
 });
 ```
 
-Which has to be added to  `webpack.js`:
-
-```javascript
-  copy: [
-    {from: path.resolve(__dirname, 'data'), to: 'data'}
-  ],
-```
-
-And finally your `data/index.html` file:
+Then a file for your iframe content `data/index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -138,4 +154,12 @@ And finally your `data/index.html` file:
     </script>
   </body>
 </html>
+```
+
+Which has to be added to  `webpack.js`:
+
+```javascript
+  copy: [
+    {from: path.resolve(__dirname, 'data'), to: 'data'}
+  ],
 ```
