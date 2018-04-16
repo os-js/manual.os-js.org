@@ -41,12 +41,14 @@ You can use an external source, but in this example it is assumed that you use t
 
 > To establish communication, you have to create an initial handshake to establish what process ID you're working with.
 
-### Embedding
+In this example we will establish the initial handshake and send/recieve the 'yo' message.
+
+### Application
 
 In the `index.js` file:
 
 ```javascript
-const createIframe = (src, cb) => {
+const createIframe = (bus, proc, win, cb) => {
   const iframe = document.createElement('iframe');
   iframe.style.width = '100%';
   iframe.style.height = '100%';
@@ -59,29 +61,36 @@ const createIframe = (src, cb) => {
     win.on('focus', () => ref.focus());
     win.on('blur', () => ref.blur());
 
+    // Create message sending wrapper
     const sendMessage = msg => ref.postMessage(msg, window.location.href);
 
     // After connection is established, this handler will process
     // all events coming from iframe.
-    proc.on('message', (args) => {
-      console.warn('[Application', 'Iframe sent', args);
+    proc.on('message', data => {
+      console.warn('[Application', 'Iframe sent', data);
+      bus.emit(data.method, sendMessage, ...data.args);
     });
 
     cb(sendMessage);
   });
 
-  // Finally set the source and attach
-  iframe.src = src;
-
   return iframe;
 };
 
 win.render($content => {
+  // Create a new bus for our messaging
+  const bus = core.make('osjs/event-handler', 'MyIframeApplicationWindow');
+
   // Get path to iframe content
   const src = proc.resource('/data/index.html');
 
   // Create DOM element
-  const iframe = createIframe(src, send => {
+  const iframe = createIframe(bus, proc, win, send => {
+    bus.on('yo', (send, args) => send({
+      method: 'yo',
+      args: ['MyIframeApplication says hello']
+    }));
+
     // Send the process ID to our iframe to establish communication
     send({
       method: 'init',
@@ -89,10 +98,15 @@ win.render($content => {
     });
   });
 
+  // Finally set the source and attach
+  iframe.src = src;
+
   // Attach
   $content.appendChild(iframe);
 });
 ```
+
+### Iframe
 
 Then a file for your iframe content `data/index.html`:
 
@@ -141,7 +155,14 @@ Then a file for your iframe content `data/index.html`:
 
         output.appendChild(document.createTextNode('OS.js said hello!'));
         console.warn('[Iframe] OS.js sent init method from application', message.args, processId);
-        postMessage('Yo!');
+        postMessage({method: 'yo', args: [1, 2, 3]});
+        break;
+
+      // After communication is establised, the OS.js process
+      // will emit this event.
+      case 'yo':
+        var text = message.args[0];
+        output.appendChild(document.createTextNode(text));
         break;
 
       // Anything else will just be logged to console
@@ -155,6 +176,8 @@ Then a file for your iframe content `data/index.html`:
   </body>
 </html>
 ```
+
+### Webpack
 
 Which has to be added to  `webpack.js`:
 
