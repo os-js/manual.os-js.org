@@ -13,7 +13,7 @@ To communicate between an OS.js application and external iframe source, the glob
 ```json
 {
   "pid": 0,
-  "data": "OS.js"
+  "args": "OS.js"
 }
 ```
 
@@ -29,7 +29,7 @@ Which would be provided with the following code in the iframe:
 ```javascript
 top.postMessage({
   pid: 0,
-  data: "OS.js"
+  args: "OS.js"
 });
 ```
 
@@ -117,12 +117,12 @@ Then a file for your iframe content `data/index.html`:
 
   /**
    * OS.js expects you to send a message with the format:
-   * {pid, data}
+   * {pid, args}
    */
   function postMessage() {
     top.postMessage({
       pid: processId,
-      data: Array.prototype.slice.call(arguments)
+      args: Array.prototype.slice.call(arguments)
     }, '*');
   }
 
