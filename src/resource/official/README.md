@@ -13,6 +13,7 @@
 
 * https://github.com/os-js/osjs-example-provider
 * https://github.com/os-js/osjs-example-application
+* https://github.com/os-js/osjs-example-iframe-application
 
 ## Applications
 
