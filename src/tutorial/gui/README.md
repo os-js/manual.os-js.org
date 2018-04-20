@@ -12,19 +12,24 @@ import {h, app} from 'hyperapp';
 
 const createView = (state, actions) => h('div', {}, [
   h('div', {}, String(state.counter)),
-  h('button', {type: 'button', onclick: () => actions.increment()}, 'Increment counter'})
+  h('button', {type: 'button', onclick: () => actions.increment()}, 'Increment counter')
 ]);
 
 const createApp = (proc, win, $content) => {
   app({
     counter: 0
   }, {
-    increment: () => state => {counter: state.counter + 1}
+    increment: () => state => ({counter: state.counter + 1})
   }, createView, $content);
 };
 
 // ...
 win.render($content => createApp(proc, win, $content));
+
+// Or if you've chained your calls when creating the window:
+
+proc.createWindow(/* ... */)
+  .render(($content, win) => createApp(proc, win, $content));
 // ...
 ```
 
