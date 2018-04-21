@@ -4,18 +4,20 @@ You can find the configuration files (by default) in `src/conf/` directory.
 
 ## Client
 
-| Key             | Default value | Description                                              |
-| --------------- | ------------- | -------------------------------------------------------- |
-| development     | `true`        | Enable development mode                                  |
-| standalone      | `false`       | Enable standalone mode                                   |
-| public          | `<auto>`      | Root public path for resolving urls                      |
-| theme           | `Standard`    | Default theme metadata name                              |
-| login.username  | `demo`        | Default login username                                   |
-| login.password  | `demo`        | Default login password                                   |
-| ws.protocol     | `<auto>`      | WebSocket protocol                                       |
-| ws.port         | `<auto>`      | WebSocket port                                           |
-| ws.hostname     | `<auto>`      | WebSocket hostname                                       |
-| ws.path         | `<auto>`      | WebSocket path                                           |
+| Key                 | Default value | Description                                              |
+| ------------------- | ------------- | -------------------------------------------------------- |
+| development         | `true`        | Enable development mode                                  |
+| standalone          | `false`       | Enable standalone mode                                   |
+| public              | `<auto>`      | Root public path for resolving urls                      |
+| theme               | `Standard`    | Default theme metadata name                              |
+| login.username      | `demo`        | Default login username                                   |
+| login.password      | `demo`        | Default login password                                   |
+| ws.protocol         | `<auto>`      | WebSocket protocol                                       |
+| ws.port             | `<auto>`      | WebSocket port                                           |
+| ws.hostname         | `<auto>`      | WebSocket hostname                                       |
+| ws.path             | `<auto>`      | WebSocket path                                           |
+| vfs.defaultPath     | `osjs:/`      | Default and fallback path for VFS                        |
+| vfs.mountpoints     | Array         | See [filesystem guide](guide/filesystem/README.md)       |
 
 ## Server
 
@@ -32,6 +34,7 @@ You can find the configuration files (by default) in `src/conf/` directory.
 | session.resave              | `false`       | HTTP Session resave option                              |
 | session.saveUninitialized   | `false`       | HTTP Save uninitialzed sessions                         |
 | session.cookie.secure       | `<auto>`      | HTTP Secure cookie                                      |
+| vfs.mountpoints             | Array         | See [filesystem guide](guide/filesystem/README.md)      |
 
 ## Webpack
 
