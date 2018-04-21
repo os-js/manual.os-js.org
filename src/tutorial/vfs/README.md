@@ -9,7 +9,7 @@ To use the Virtual Filesystem, make the provided service:
 ```javascript
 const vfs = core.make('osjs/vfs');
 
-const list = await vfs.readdir('/');
+const list = await vfs.readdir('osjs:/');
 console.log(list);
 ```
 
@@ -18,30 +18,10 @@ console.log(list);
 * `readdir` - Reads given directory
 * `readfile` - Reads given file
 * `writefile` - Writes to given file
+* `copy` - Copy given file/directory
 * `rename` - Rename or move given file/directory
 * `mkdir` - Creates given directory
 * `unlink` - Removes given file/directory
 * `exists` - Checks if given path exists
 * `stat` - Get the stat of given file/directory
 * `url` - Create a URL to resource
-
-## Mountpoints
-
-See [configuration](config/README.md) for how to set up default filesystem mountpoints.
-
-You can also add and modify these on runtime:
-
-```javascript
-const fs = core.make('osjs/fs');
-
-// Register
-fs.register({
-  name: 'custom'
-});
-
-// Mount
-fs.mount('custom');
-
-// Unmount
-fs.unmount('custom');
-```
