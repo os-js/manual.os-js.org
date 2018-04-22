@@ -2,7 +2,7 @@
 
 ## Modules
 
-* https://github.com/os-js/osjs-core
+* https://github.com/os-js/osjs-client
 * https://github.com/os-js/osjs-gui
 * https://github.com/os-js/osjs-dialogs
 * https://github.com/os-js/osjs-server

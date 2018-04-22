@@ -20,8 +20,8 @@ Assuming you've already installed OS.js, this is how you set up linking:
 
 ```bash
 # Somewhere in your project folder
-git clone https://github.com/os-js/osjs-core
-cd osjs-core
+git clone https://github.com/os-js/osjs-client
+cd osjs-client
 npm link
 
 # In your OS.js installation

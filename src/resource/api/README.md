@@ -1,6 +1,6 @@
 # API Resources
 
-* [osjs-core](osjs-core/)
+* [osjs-client](osjs-client/)
 * [osjs-gui](osjs-gui/)
 * [osjs-dialogs](osjs-dialogs/)
 * [osjs-panels](osjs-panels/)
