@@ -47,5 +47,6 @@
 * [CLI](guide/cli/README.md)
 * [Embedding](guide/embed/README.md)
 * [Migration](guide/migrate/README.md)
+* [Authentication](guide/auth/README.md)
 * [Filesystem](guide/filesystem/README.md)
 * [IFrame Application](guide/iframe/README.md)
