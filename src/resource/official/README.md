@@ -30,5 +30,10 @@
 
 * https://github.com/os-js/osjs-standard-theme
 
+## Authentication
+
+* https://github.com/os-js/osjs-sqlite-auth
+* https://github.com/os-js/osjs-pam-auth
+
 ## Providers
 
