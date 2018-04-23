@@ -1,7 +1,7 @@
 # API Resources
 
-* [osjs-client](osjs-client/)
-* [osjs-gui](osjs-gui/)
-* [osjs-dialogs](osjs-dialogs/)
-* [osjs-panels](osjs-panels/)
-* [osjs-server](osjs-server/)
+* [osjs-client](https://manual.os-js.org/v3/api/osjs-client/)
+* [osjs-gui](https://manual.os-js.org/v3/api/osjs-gui/)
+* [osjs-dialogs](https://manual.os-js.org/v3/api/osjs-dialogs/)
+* [osjs-panels](https://manual.os-js.org/v3/api/osjs-panels/)
+* [osjs-server](https://manual.os-js.org/v3/api/osjs-server/)
