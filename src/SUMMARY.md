@@ -44,6 +44,7 @@
 ### Guides
 
 * [CLI](guide/cli/README.md)
+* [Deployment](guide/deploy/README.md)
 * [Embedding](guide/embed/README.md)
 * [Migration](guide/migrate/README.md)
 * [Authentication](guide/auth/README.md)
