@@ -2,6 +2,7 @@
 
 # API Documentation
 
+* [osjs-common](https://manual.os-js.org/v3/api/osjs-common/)
 * [osjs-client](https://manual.os-js.org/v3/api/osjs-client/)
 * [osjs-gui](https://manual.os-js.org/v3/api/osjs-gui/)
 * [osjs-dialogs](https://manual.os-js.org/v3/api/osjs-dialogs/)
@@ -13,6 +14,7 @@
 * https://github.com/os-js/osjs-client
 * https://github.com/os-js/osjs-gui
 * https://github.com/os-js/osjs-dialogs
+* https://github.com/os-js/osjs-common
 * https://github.com/os-js/osjs-server
 * https://github.com/os-js/osjs-cli
 * https://github.com/os-js/osjs-panels
