@@ -17,8 +17,13 @@ core.make('service-name', ...args);
 This is the service provider interface:
 
 ```javascript
-class ServiceProvider {
-  constructor(core) { this.core = core;  }
+import {ServiceProvider} from '@osjs/common';
+
+class ServiceProvider extends ServiceProvider {
+  constructor(core, options = {}) {
+    this.core = core;
+    this.options = options;
+  }
   async init() {} // Register your services here
   start() {} // Anything you want to do after successfully booting
   destroy() {}
