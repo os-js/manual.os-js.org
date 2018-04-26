@@ -48,5 +48,6 @@
 * [Embedding](guide/embed/README.md)
 * [Migration](guide/migrate/README.md)
 * [Authentication](guide/auth/README.md)
+* [Settings](guide/settings/README.md)
 * [Filesystem](guide/filesystem/README.md)
 * [IFrame Application](guide/iframe/README.md)

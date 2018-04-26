@@ -21,15 +21,4 @@ const instance = new Core(config, {
     }
   }
 });
-
-// client
-// NOTE: This is usually only provided if the login UI has been modified
-// from the default one.
-const osjs = new Core(config, {
-  registerDefault: {
-    auth: {
-      class: ClassReference
-    }
-  }
-});
 ```
