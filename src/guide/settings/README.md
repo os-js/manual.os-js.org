@@ -36,6 +36,6 @@ const osjs = new Core(config, {
 
 ## Default Configuration
 
-The default settings are located in `user.settings` (see `@osjs/client/src/config.js`).
+The default settings are located in `settings.defaults` (see `@osjs/client/src/config.js`).
 
 You can override these settings. Make sure to bump the `__revision__` value to make sure new settings are migrated.
