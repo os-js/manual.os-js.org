@@ -14,13 +14,14 @@ import {Settings} from '@osjs/client';
 export default class MySettings extends Settings {
 
   async save() {
-    // see this.settings
-    return false;
+    const fn = (settings) => Promise.resolve(true);
+    return this._save(fn);
   }
 
   async load() {
-    // set this.settings
-    return false;
+    const settings = {};
+    const fn = () => Promise.resolve(settings);
+    return this._load(fn);
   }
 }
 ```

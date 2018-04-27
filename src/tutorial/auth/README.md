@@ -13,11 +13,13 @@ import {Auth} from '@osjs/client';
 
 export default class MyAuth extends Auth {
   async login(values) {
-    return {username: 'hello'};
+    const fn = () => Promise.resolve({username: 'hello'});
+    return this._login(fn);
   }
 
   async logout(reload = true) {
-    return true;
+    const fn = () => Promise.resolve(true);
+    return this._login(fn);
   }
 }
 ```
