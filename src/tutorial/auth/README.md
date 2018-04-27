@@ -19,7 +19,7 @@ export default class MyAuth extends Auth {
 
   async logout(reload = true) {
     const fn = () => Promise.resolve(true);
-    return this._login(fn);
+    return this._logout(fn, reload);
   }
 }
 ```
