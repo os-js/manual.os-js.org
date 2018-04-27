@@ -2,7 +2,7 @@
 
 A Service Provider registers services that provide features for OS.js.
 
-These are loaded on startup on both the client and server.
+> Service Providers have the same interface and initialization/startup procedure in both client and server.
 
 ## Usage
 
@@ -20,10 +20,13 @@ This is the service provider interface:
 import {ServiceProvider} from '@osjs/common';
 
 class ServiceProvider extends ServiceProvider {
+  /*
   constructor(core, options = {}) {
     this.core = core;
     this.options = options;
   }
+  */
+
   async init() {} // Register your services here
   start() {} // Anything you want to do after successfully booting
   destroy() {}
