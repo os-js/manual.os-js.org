@@ -1,5 +1,15 @@
 {% extends template.self %}
 
+{% block head %}
+  {{ super() }}
+
+  <style type="text/css">
+.page-wrapper {
+  padding-bottom: 200px;
+}
+  </style>
+{% endblock %}
+
 {% block book_body %}
   {{ super() }}
 
