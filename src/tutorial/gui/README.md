@@ -46,3 +46,27 @@ const createView = (state, actions) => h('div', {}, [
 ]);
 ```
 
+## JSX
+
+You can also use JSX syntax instead of the programatic approach.
+
+In your `webpack.js` file:
+
+```
+module.exports = (options, {createWebpack}) => createWebpack(__dirname, {
+  jsx: {
+    pragma: 'h'
+  }
+});
+```
+
+and then in your source:
+
+```javascript
+const createView = (state, actions) => (
+  <div>
+    <div>{state.counter}</div>
+    <button type="button" onclick={() => actions.increment()}>Increment counter</button>
+  </div>
+);
+```
