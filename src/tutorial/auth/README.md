@@ -1,9 +1,6 @@
 # Auth
 
-The `Auth` class handles authentication requests. Two adapters are provided by default:
-
-* `server` (default)
-* `localStorage`
+The `Auth` adapter handles authentication requests.
 
 See [guide](/guide/auth/README.md) on how to use this in your distribution.
 

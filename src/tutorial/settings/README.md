@@ -1,9 +1,6 @@
 # Settings
 
-The `Settings` class handles settings requests. Two dapters are provided by default:
-
-* `server` (default)
-* `localStorage`
+The `Settings` adapter handles settings requests.
 
 See [guide](/guide/settings/README.md) on how to use this in your distribution.
 

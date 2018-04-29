@@ -2,7 +2,10 @@
 
 OS.js provides options for customizing the settings storage.
 
-> By default a "null" handler is user, which just saves the settings into the browser local storage.
+Two dapters are provided by default:
+
+* `server`
+* `localStorage` (default)
 
 ## Configuring adapter
 
@@ -20,6 +23,7 @@ const osjs = new Core(config, {
     }
   }
 });
+```
 
 ### Server
 

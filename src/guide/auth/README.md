@@ -2,7 +2,10 @@
 
 OS.js provides options for customizing the authentication procedure.
 
-> By default a "null" handler is user, which does not actually authenticate, but allows for OS.js to work.
+Two adapters are provided by default:
+
+* `server` (default)
+* `localStorage`
 
 ## Configuring adapter
 
