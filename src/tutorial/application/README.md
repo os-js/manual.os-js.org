@@ -2,9 +2,9 @@
 
 You can use the [official example package](https://github.com/os-js/osjs-example-application) as a bolilerplate for your project.
 
-## Usage
+## Creation
 
-To create a new `Application` instance:
+Typically `index.js`:
 
 ```javascript
 // 'MyApplication' is the unique name of your application
@@ -135,8 +135,17 @@ const ws = proc.socket(); // Defaults to '/socket'
 In your server script, create a matching endpoint with Express:
 
 ```javascript
-const endpoint = proc.resource('/socket');
-core.app.ws(endpoint, (ws, req) => {
-  // Spawned
-});
+module.exports = (core, proc) => {
+
+  const init = async () => {
+    const endpoint = proc.resource('/socket');
+    core.app.ws(endpoint, (ws, req) => {
+      // Spawned
+    });
+  };
+  const start = () => {};
+  const destroy = () => {};
+
+  return {init, start, destroy};
+};
 ```
