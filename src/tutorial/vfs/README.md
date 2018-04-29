@@ -25,3 +25,17 @@ console.log(list);
 * `exists` - Checks if given path exists
 * `stat` - Get the stat of given file/directory
 * `url` - Create a URL to resource
+
+## Custom Adapter
+
+You can make your own Adapter for the methods above by creating a simple object:
+
+```
+const adapter = (core) => {
+  return {
+    readdir: async(path, options) => {
+      return Promise.resolve([]);
+    }
+  };
+};
+```
