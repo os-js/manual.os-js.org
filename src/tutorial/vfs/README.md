@@ -30,12 +30,24 @@ console.log(list);
 
 You can make your own Adapter for the methods above by creating a simple object:
 
-```
+### Client
+
+```javascript
 const adapter = (core) => {
   return {
-    readdir: async(path, options) => {
+    readdir: (path, options) => {
       return Promise.resolve([]);
     }
   };
 };
+```
+
+### Server
+
+```javascript
+module.exports = (core, vfs) => ({
+  readdir: (path) => {
+    return Promise.resolve([]);
+  }
+});
 ```

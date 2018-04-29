@@ -28,7 +28,7 @@ To make OS.js available via port `80/http` (or `443/https`) you have to configur
 
 Create a new virtual host file or replace the default one provided by your OS:
 
-```
+```nginx
 server {
     listen 80;
     server_name osjs.test;
@@ -55,7 +55,7 @@ Create a new virtual host file or replace the default one provided by your OS:
 
 > Requires the modules `rewrite` `proxy` and `http_proxy`
 
-```
+```apache
 <VirtualHost *:80>
   ServerName osjs.test
   ProxyPass / http://localhost:8000/

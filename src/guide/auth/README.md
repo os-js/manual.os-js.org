@@ -4,20 +4,19 @@ OS.js provides options for customizing the authentication procedure.
 
 > By default a "null" handler is user, which does not actually authenticate, but allows for OS.js to work.
 
-## Changing
+## Configuring adapter
 
-See [official resource list](/resource/official/README.md) for provided methods.
-
-To use a handler, simply change the options passed on to the authentication provider:
+See [official resource list](/resource/official/README.md) for provided adapters.
 
 > The README file of the module should provide more spesific exaples.
 
+### Server
+
 ```javascript
-// server
 const instance = new Core(config, {
   registerDefault: {
     auth: {
-      adapter: 'server' // or function
+      adapter: fn
     }
   }
 });

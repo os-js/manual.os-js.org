@@ -22,21 +22,11 @@ You can add mountpoints by updating your configuration files:
 
 > Note that the `name` must match in both configurations
 
-```javascript
-// server
-{
-  vfs: {
-    mountpoints: [{
-      name: 'temp',
-      adapter: 'system', // You can leave this out as 'system' is default
-      attributes: {
-        root: '/tmp'
-      }
-    }]
-  }
-}
+*Note you'll have to rebuild and reload server afterwards*
 
-// client
+#### Client
+
+```javascript
 {
   vfs: {
     mountpoints: [{
@@ -48,4 +38,18 @@ You can add mountpoints by updating your configuration files:
 }
 ```
 
-*Note you'll have to rebuild and reload server afterwards*
+#### Server
+
+```javascript
+{
+  vfs: {
+    mountpoints: [{
+      name: 'temp',
+      adapter: 'system', // You can leave this out as 'system' is default
+      attributes: {
+        root: '/tmp'
+      }
+    }]
+  }
+}
+```

@@ -1,14 +1,17 @@
 # Settings
 
-The `Settings` class handles settings requests. By default a `LocalStorageSettings` and `ServerSettings` module is provided, but you can make your own.
+The `Settings` class handles settings requests. Two dapters are provided by default:
+
+* `server` (default)
+* `localStorage`
 
 See [guide](/guide/settings/README.md) on how to use this in your distribution.
 
-## Custom Settings Adapter
+## Custom Adapter
 
 ### Client
 
-```
+```javascript
 const myAdapter = (core, options) => ({
   save: values => Promise.resolve(true),
   load: () => Promise.resolve(true)
@@ -19,7 +22,7 @@ export default myAdapter;
 
 ### Server
 
-```
+```javascript
 module.exports = (core, options) => ({
   save: (req, res) => Promise.resolve(true),
   load: (req, res) => Promis.resolve({})
