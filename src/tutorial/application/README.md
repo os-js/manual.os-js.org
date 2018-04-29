@@ -16,8 +16,31 @@ OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metad
     metadata: {} // Metadata JSON
   });
 
+  // Create your windows etc here
+
   return proc;
 });
+```
+
+And `server.js` for the server:
+
+```javascript
+module.exports = (core, proc) => {
+
+  const init = async () => {
+    // Register your routes etc here
+  };
+
+  const start = () => {
+    // Any arbitrary stuff here
+  };
+
+  const destroy = () => {
+    // Stop your stuff when server goes down
+  };
+
+  return {init, start, destroy};
+};
 ```
 
 ## Metadata
@@ -135,17 +158,8 @@ const ws = proc.socket(); // Defaults to '/socket'
 In your server script, create a matching endpoint with Express:
 
 ```javascript
-module.exports = (core, proc) => {
-
-  const init = async () => {
-    const endpoint = proc.resource('/socket');
-    core.app.ws(endpoint, (ws, req) => {
-      // Spawned
-    });
-  };
-  const start = () => {};
-  const destroy = () => {};
-
-  return {init, start, destroy};
-};
+const endpoint = proc.resource('/socket');
+core.app.ws(endpoint, (ws, req) => {
+  // Spawned
+});
 ```
