@@ -9,38 +9,19 @@ See [guide](/guide/settings/README.md) on how to use this in your distribution.
 ### Client
 
 ```
-import {Settings} from '@osjs/client';
+const myAdapter = (core, options) => ({
+  save: values => Promise.resolve(true),
+  load: () => Promise.resolve(true)
+});
 
-export default class MySettings extends Settings {
-
-  async save() {
-    const fn = (settings) => Promise.resolve(true);
-    return this._save(fn);
-  }
-
-  async load() {
-    const settings = {};
-    const fn = () => Promise.resolve(settings);
-    return this._load(fn);
-  }
-}
+export default myAdapter;
 ```
 
 ### Server
 
 ```
-const {Settings} = require('@osjs/server');
-
-class MySettings extends Settings {
-  async save(req, res) {
-    // req.body has all given parameters
-    return res.json(true);
-  }
-
-  async load(req, res) {
-    return res.json({});
-  }
-}
-
-module.exports = MySettings;
+module.exports = (core, options) => ({
+  save: (req, res) => Promise.resolve(true),
+  load: (req, res) => Promis.resolve({})
+});
 ```

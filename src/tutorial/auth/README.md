@@ -9,47 +9,19 @@ See [guide](/guide/auth/README.md) on how to use this in your distribution.
 ### Client
 
 ```
-import {Auth} from '@osjs/client';
+const myAdapter = (core, options) => ({
+  login: values => Promise.resolve(values),
+  logout: () => Promise.resolve(true)
+});
 
-export default class MyAuth extends Auth {
-  async login(values) {
-    const fn = () => Promise.resolve({username: 'hello'});
-    return this._login(fn);
-  }
-
-  async logout(reload = true) {
-    const fn = () => Promise.resolve(true);
-    return this._logout(fn, reload);
-  }
-}
+export default myAdapter;
 ```
 
 ### Server
 
 ```
-const {Auth} = require('@osjs/server');
-
-class MyAuth extends Auth {
-  async login(req, res) {
-    const {username} = req.body;
-
-    req.session.username = username;
-
-    res.json({
-      user: {username}
-    });
-  }
-
-  async logout(req, res) {
-    try {
-      req.session.destroy();
-    } catch (e) {
-      console.warn(e);
-    }
-
-    res.json({});
-  }
-}
-
-module.exports = MyAuth;
+module.exports = (core, options) => ({
+  login: (req, res) => Promise.resolve(req.body),
+  logout: (req, res) => Promis.resolve(true)
+});
 ```

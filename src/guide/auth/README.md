@@ -17,7 +17,7 @@ To use a handler, simply change the options passed on to the authentication prov
 const instance = new Core(config, {
   registerDefault: {
     auth: {
-      class: ClassReference
+      adapter: 'server' // or function
     }
   }
 });

@@ -17,7 +17,7 @@ To use a handler, simply change the options passed on to the settings provider:
 const instance = new Core(config, {
   registerDefault: {
     settings: {
-      class: ClassReference
+      adapter: fn()
     }
   }
 });
@@ -28,7 +28,7 @@ import {ServerSettings} from '@osjs/client';
 const osjs = new Core(config, {
   registerDefault: {
     settings: {
-      class: ServerSettings
+      adapter: 'server'
     }
   }
 });
