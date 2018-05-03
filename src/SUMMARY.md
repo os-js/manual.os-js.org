@@ -53,3 +53,4 @@
 * [Settings](guide/settings/README.md)
 * [Filesystem](guide/filesystem/README.md)
 * [IFrame Application](guide/iframe/README.md)
+* [Frameworks](guide/framework/README.md)
