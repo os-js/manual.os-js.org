@@ -10,7 +10,7 @@ Use the provided `.eslintrc` and `.csslintrc` files to keep consistent code styl
 
 Using the required tools (above) you can set up a development enviroment in a couple of minutes.
 
-You can set `development` configuration entry in `src/conf/client.js` to enable some extra features inside the client.
+You can set `development` configuration entry in configuration to enable extra development features, like automatic reloading of your applications when builds are run.
 
 ### Modules
 
