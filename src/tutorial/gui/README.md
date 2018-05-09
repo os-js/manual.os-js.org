@@ -7,6 +7,8 @@ OS.js uses [Hyperapp](https://hyperapp.js.org/) for its GUI components by defaul
 
 ## Basic Example
 
+![Basic Example](example-1.png)
+
 ```javascript
 import {h, app} from 'hyperapp';
 
@@ -34,6 +36,8 @@ proc.createWindow(/* ... */)
 ```
 
 ## Using Components
+
+![Basic Example](example-2.png)
 
 Use the provided GUI module:
 

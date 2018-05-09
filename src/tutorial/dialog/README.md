@@ -2,6 +2,8 @@
 
 Dialogs are [Window](tutorial/window/README.md)s with pre-defined templates and actions.
 
+![Example](example.png)
+
 ## Usage
 
 To create a dialog use the provided service:

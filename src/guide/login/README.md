@@ -4,6 +4,8 @@ You can customize the login screen both visually and functionally.
 
 You can also override it entirely by providing your own handler.
 
+![Login Screen Example](example.png)
+
 ## Basics
 
 In your client configuration you can override certain aspects of the login:

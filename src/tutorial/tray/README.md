@@ -2,6 +2,8 @@
 
 You can place entries into the Tray which appears in the panel.
 
+![Example](example.png)
+
 ## Usage
 
 You can spawn a tray entry using:
