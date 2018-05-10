@@ -40,105 +40,30 @@ You can find the configuration files (by default) in `src/conf/` directory.
 
 The module `osjs-cli` builds a Webpack configuration for you.
 
-It consists of a basic setup with:
+The `createWebpack()` method used returns a Webpack configuration tree that you can further modify.
 
-* `sass-loader`
-* `babel-loader`
-* `file-loader`
-* `copy-webpack-plugin`
-* `html-webpack-plugin`
+> It's recommended to use `require.resolve` when defining plugins and presets for webpack and babel.
 
-This is the base template used for the core, themes and applications:
-
-```javascript
-{
-  mode: 'development',
-  devtool: 'source-map',
-  context: '<auto>',
-  entry: {/* ... */},
-  plugins: [
-    new ExtractTextPlugin('[name].css'),
-    new CopyWebpackPlugin(/* ... */)
-  ],
-  optimization: {
-    minimize: false,
-    splitChunks: false
-    runtimeChunk: false
-  },
-  output: {
-    path: '<auto>',
-    sourceMapFilename: '[file].map',
-    filename: '[name].js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif|webp)$/,
-        use: [
-          {
-            loader: require.resolve('file-loader'),
-            options: {}
-          }
-        ]
-      },
-      {
-        test: /\.s?css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: {
-            loader: require.resolve('style-loader')
-          },
-          use: [
-            {
-              loader: require.resolve('css-loader'),
-              options: {
-                minimize: false,
-                sourceMap: true,
-              }
-            },
-            {
-              loader: require.resolve('sass-loader'),
-              options: {
-                minimize: false,
-                sourceMap: true,
-                includePaths: ['<auto>']
-              }
-            }
-          ]
-        })
-      },
-      {
-        test: /\.js$/,
-        exclude: ['<auto>']
-        include: ['<auto>']
-        use: {
-          loader: require.resolve('babel-loader'),
-          options: {
-            cacheDirectory: true,
-            presets: ['@babel/preset-env'],
-            plugins: [
-              '@babel/transform-runtime'
-            ]
-          }
-        }
-      },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        include: /typeface/,
-        use: {
-          loader: require.resolve('file-loader'),
-          options: {
-            name: 'fonts/[name].[ext]'
-          }
-        }
-      },
-      {
-        test: /\.svg$/,
-        exclude: /typeface/,
-        use: {
-          loader: require.resolve('file-loader')
-        }
-      }
-    ]
-  }
-};
-```
+| Key                         | Default value      | Description                                             |
+| --------------------------- | ------------------ | ------------------------------------------------------- |
+| mode                        | `development`      | Compile mode                                            |
+| context                     | `<auto>`           | Context                                                 |
+| splitChunks                 | `false`            | Split chunks                                            |
+| runtimeChunk                | `false`            | Split runtime chunk                                     |
+| minimize                    | `<auto>`           | Minimizes bundles                                       |
+| sourceMap                   | `<auto>`           | Provide sourcemap for bundles                           |
+| devtool                     | `source-map`       | Sourcemap generation type                               |
+| outputPath                  | `<auto>`           | Bundle output path                                      |
+| entry                       | Object/Array       | Entry definitions                                       |
+| plugins                     | Array              | Plugin definitions                                      |
+| rules                       | Array              | Rule definitions                                        |
+| jsx                         | `false`            | Provide [JSX](https://www.npmjs.com/package/babel-plugin-transform-react-jsx) support |
+| define                      | Object             | Add [definitions](https://webpack.js.org/plugins/define-plugin/) |
+| copy                        | Array              | [Copy](https://github.com/webpack-contrib/copy-webpack-plugin) files |
+| html                        | Object             | Provide [HTML](https://github.com/jantimon/html-webpack-plugin) for bundle |
+| html.template               | `<auto>`           | Template filename                                       |
+| html.title                  | `OS.js`            | Title                                                   |
+| babel                       | Object             | Babel rc object                                         |
+| babel.cacheDirectory        | `true`             | Babel cache                                             |
+| babel.plugins               | Array              | Babel plugins                                           |
+| babel.presets               | Array              | Babel presets                                           |
