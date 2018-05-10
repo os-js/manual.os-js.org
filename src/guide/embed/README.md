@@ -12,10 +12,7 @@ const init = () => {
     root: document.body,
 
     // What node to place dynamically loaded scripts etc.
-    resourceRoot: document.querySelector('head'),
-
-    // Defaults
-    registerDefault: true
+    resourceRoot: document.querySelector('head')
   });
 
   // ...

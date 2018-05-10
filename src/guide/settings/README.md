@@ -16,11 +16,9 @@ See [official resource list](/resource/official/README.md) for provided adapter.
 ### Client
 
 ```javascript
-const osjs = new Core(config, {
-  registerDefault: {
-    settings: {
-      adapter: 'server'
-    }
+core.register(SettingsServiceProvider, {
+  args: {
+    adapter: 'server'
   }
 });
 ```
@@ -28,11 +26,9 @@ const osjs = new Core(config, {
 ### Server
 
 ```javascript
-const instance = new Core(config, {
-  registerDefault: {
-    settings: {
-      adapter: fn
-    }
+core.register(SettingsServiceProvider, {
+  args: {
+    adapter: fn
   }
 });
 ```

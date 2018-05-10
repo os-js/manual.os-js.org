@@ -16,11 +16,9 @@ See [official resource list](/resource/official/README.md) for provided adapters
 ### Server
 
 ```javascript
-const instance = new Core(config, {
-  registerDefault: {
-    auth: {
-      adapter: fn
-    }
+core.register(AuthServiceProvider, {
+  args: {
+    adapter: fn
   }
 });
 ```
