@@ -15,16 +15,16 @@ console.log(list);
 
 ## Methods
 
-* `readdir` - Reads given directory
-* `readfile` - Reads given file
-* `writefile` - Writes to given file
-* `copy` - Copy given file/directory
-* `rename` - Rename or move given file/directory
-* `mkdir` - Creates given directory
-* `unlink` - Removes given file/directory
-* `exists` - Checks if given path exists
-* `stat` - Get the stat of given file/directory
-* `url` - Create a URL to resource
+* `readdir(file)` - Reads given directory
+* `readfile(file)` - Reads given file
+* `writefile(file, data)` - Writes to given file
+* `copy(src, dst)` - Copy given file/directory
+* `rename(src, dst)` - Rename or move given file/directory
+* `mkdir(file)` - Creates given directory
+* `unlink(file)` - Removes given file/directory
+* `exists(file)` - Checks if given path exists
+* `stat(file)` - Get the stat of given file/directory
+* `url(file)` - Create a URL to resource
 
 ## Custom Adapter
 
