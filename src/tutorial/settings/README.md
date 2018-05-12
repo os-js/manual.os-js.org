@@ -4,6 +4,24 @@ The `Settings` adapter handles settings requests.
 
 See [guide](/guide/settings/README.md) on how to use this in your distribution.
 
+## Usage
+
+```
+const settings = core.make('osjs/settings');
+
+// Saves all settings
+settings.save();
+
+// Loads all settings
+settings.load();
+
+// Gets a settings object from a namespace
+settings.get('some/namespace');
+
+// Sets a settings object to a namespace
+settings.set('some/namespace', {key: 'value'})
+```
+
 ## Custom Adapter
 
 ### Client
