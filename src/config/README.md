@@ -21,20 +21,24 @@ You can find the configuration files (by default) in `src/conf/` directory.
 
 ## Server
 
-| Key                         | Default value | Description                                             |
-| --------------------------- | ------------- | ------------------------------------------------------- |
-| logging                     | `true`        | Log HTTP requests                                       |
-| index                       | `index.html`  | Index HTML file                                         |
-| hostname                    | `localhost`   | Server hostname                                         |
-| port                        | `8000`        | Server port                                             |
-| public                      | `/dist`       | The dist directory                                      |
-| morgan                      | `tiny`        | Morgan logging mode                                     |
-| ws.port                     | `<auto>`      | WebSocket port (defaults to upgrade)                    |
-| session.secret              | `osjs`        | HTTP Session secret                                     |
-| session.resave              | `false`       | HTTP Session resave option                              |
-| session.saveUninitialized   | `false`       | HTTP Save uninitialzed sessions                         |
-| session.cookie.secure       | `<auto>`      | HTTP Secure cookie                                      |
-| vfs.mountpoints             | Array         | See [filesystem guide](guide/filesystem/README.md)      |
+| Key                         | Default value | Description                                                       |
+| --------------------------- | ------------- | ----------------------------------------------------------------- |
+| logging                     | `true`        | Log HTTP requests                                                 |
+| index                       | `index.html`  | Index HTML file                                                   |
+| hostname                    | `localhost`   | Server hostname                                                   |
+| port                        | `8000`        | Server port                                                       |
+| public                      | `/dist`       | The dist directory                                                |
+| morgan                      | `tiny`        | Morgan logging mode                                               |
+| ws.port                     | `<auto>`      | WebSocket port (defaults to upgrade)                              |
+| session.secret              | `osjs`        | HTTP Session secret                                               |
+| session.resave              | `false`       | HTTP Session resave option                                        |
+| session.saveUninitialized   | `false`       | HTTP Save uninitialzed sessions                                   |
+| session.cookie.secure       | `<auto>`      | HTTP Secure cookie                                                |
+| vfs.mountpoints             | Array         | See [filesystem guide](guide/filesystem/README.md)                |
+| proxy[]                     | Array         |                                                                   |
+| proxy[].source              | String|RegExp | Proxy source                                                      |
+| proxy[].destination         | String        | Proxy destination                                                 |
+| proxy[].options             | Object        | Proxy [options](https://github.com/villadora/express-http-proxy)  |
 
 ## Webpack
 
