@@ -85,7 +85,7 @@ Then rebuild with `npm run build:dist`.
 
 ### Server
 
-Add the provider to your `src/client/index.js` file:
+Add the provider to your `src/server/index.js` file:
 
 ```javascript
 const SomeProvider = require('some-provider')
