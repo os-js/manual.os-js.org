@@ -25,7 +25,6 @@ npm run build:dist -- --core
 npm run build:dist -- --application=MyApplication
 
 # Builds a set of application applications
-npm run build:dist -- --applications=*
 npm run build:dist -- --applications=MyApplication,MyOtherApplication
 
 # Builds only applications

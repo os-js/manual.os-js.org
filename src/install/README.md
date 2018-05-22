@@ -69,15 +69,28 @@ Make a symlink in `src/packages` to the installed application in `node_modules/`
 
 ## Service Providers
 
-Install using `npm` and add the provider to your `src/client/index.js` file:
+Install using `npm` then update your entry files:
+
+### Client
+
+Add the provider to your `src/client/index.js` file:
 
 ```javascript
 import SomeProvider from 'some-provider';
 
-// ...
 osjs.register(SomeProvider);
-// ...
-
 ```
 
 Then rebuild with `npm run build:dist`.
+
+### Server
+
+Add the provider to your `src/client/index.js` file:
+
+```javascript
+const SomeProvider = require('some-provider')
+
+osjs.register(SomeProvider);
+```
+
+Then restart your server.

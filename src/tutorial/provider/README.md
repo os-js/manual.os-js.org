@@ -33,7 +33,7 @@ class ServiceProvider extends ServiceProvider {
 }
 ```
 
-See [installing a service provider](install/README.md#service-provider).
+See [installing a service provider](/install/README.md#service-providers).
 
 ### Register: Factory
 
