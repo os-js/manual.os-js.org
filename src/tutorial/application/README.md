@@ -55,6 +55,9 @@ The `metadata.json` file describes your application and contains a list of files
   // What category this application belongs to
   "category": null,
 
+  // Only allow one instance of this application
+  "singular": false,
+
   // A filename to icon
   "icon": null,
 
@@ -86,6 +89,10 @@ The `metadata.json` file describes your application and contains a list of files
 }
 ```
 
+> Available categories by default are: development, science, games, graphics, network, multimedia, office, system, utilities and other
+
+> Singleton applications will receive the `attention` event when another instance is dropped from launching.
+
 ## Windows
 
 To create a new `Window` instance:
@@ -111,6 +118,7 @@ proc.on('event-name', (...args) => console.log(...args));
 * `destroy => ()`
 * `create-window => (win, proc)`
 * `destroy-window => (win, proc)`
+* `attention => (args, options)`
 
 ## HTTP Requests
 
