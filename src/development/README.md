@@ -25,7 +25,7 @@ cd osjs-client
 npm link
 
 # In your OS.js installation
-npm link @osjs/core
+npm link @osjs/client
 ```
 
 > Please note that linking also applies to any OS.js dependencies inside these modules, so you'll have to repeat this process there as well.
