@@ -56,7 +56,7 @@ The `metadata.json` file describes your application and contains a list of files
   "category": null,
 
   // Only allow one instance of this application
-  "singular": false,
+  "singleton": false,
 
   // A filename to icon
   "icon": null,
