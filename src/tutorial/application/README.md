@@ -55,6 +55,9 @@ The `metadata.json` file describes your application and contains a list of files
   // What category this application belongs to
   "category": null,
 
+  // Automatically start on boot
+  "autostart": false,
+
   // Only allow one instance of this application
   "singleton": false,
 
