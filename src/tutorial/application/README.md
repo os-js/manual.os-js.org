@@ -61,6 +61,10 @@ The `metadata.json` file describes your application and contains a list of files
   // Only allow one instance of this application
   "singleton": false,
 
+  // Hide from launch menus, etc.
+  // Useful in combination with autostart and/or singleton
+  "hidden": false,
+
   // A filename to icon
   "icon": null,
 
