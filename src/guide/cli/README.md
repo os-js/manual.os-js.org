@@ -36,3 +36,18 @@ npm run build:dist -- --themes
 # Install a package
 npm run install:package -- https://site/repo.git
 ```
+
+## Custom Tasks
+
+You can add custom tasks via `src/cli/index.js`.
+
+An example:
+
+```javascript
+
+const mod = cli => ({
+  'mytask': ({args}) => console.log('Called my task with arguments', args)
+});
+
+module.exports = [mod];
+```
