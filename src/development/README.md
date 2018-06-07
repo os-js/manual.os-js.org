@@ -16,6 +16,8 @@ You can set `development` configuration entry in configuration to enable extra d
 
 To develop on the npm module sources, you'll have to the `npm link` feature.
 
+> NOTE: Windows users might have to apply `{symlinks:false}` to the webpack (`createWebpack()`) configuration files. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled.
+
 Assuming you've already installed OS.js, this is how you set up linking:
 
 ```bash
