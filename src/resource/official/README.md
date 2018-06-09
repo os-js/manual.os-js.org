@@ -18,6 +18,7 @@
 * https://github.com/os-js/osjs-server
 * https://github.com/os-js/osjs-cli
 * https://github.com/os-js/osjs-panels
+* https://github.com/os-js/osjs-widgets
 
 ## Examples
 
