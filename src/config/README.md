@@ -4,6 +4,8 @@ You can find the configuration files (by default) in `src/conf/` directory.
 
 > NOTE: This list is not complete. See `src/config.js` in `@osjs/client` and `@osjs/server` for more information.
 
+> NOTE: `NODE_ENV=production` will disable any development features that are enabled by default.
+
 ## Client
 
 | Key                     | Default value | Description                                              |
