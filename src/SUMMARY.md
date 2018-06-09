@@ -42,6 +42,7 @@
 * [Theme](tutorial/theme/README.md)
 * [Auth](tutorial/auth/README.md)
 * [Settings](tutorial/settings/README.md)
+* [Localization](tutorial/locale/README.md)
 
 ### Guides
 
@@ -49,6 +50,7 @@
 * [Deployment](guide/deploy/README.md)
 * [Embedding](guide/embed/README.md)
 * [Migration](guide/migrate/README.md)
+* [Translation](guide/translate/README.md)
 * [Authentication](guide/auth/README.md)
 * [Settings](guide/settings/README.md)
 * [Filesystem](guide/filesystem/README.md)
