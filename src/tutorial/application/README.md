@@ -122,10 +122,10 @@ You can listen on events with:
 proc.on('event-name', (...args) => console.log(...args));
 ```
 
-* `destroy => ()`
-* `create-window => (win, proc)`
-* `destroy-window => (win, proc)`
-* `attention => (args, options)`
+* `destroy => ()` - When destroyed
+* `create-window => (win, proc)` - When window is created
+* `destroy-window => (win, proc)` - When window is destroyed
+* `attention => (args, options)` - Signal when a new instance of a singleton application is launched
 
 ## HTTP Requests
 
