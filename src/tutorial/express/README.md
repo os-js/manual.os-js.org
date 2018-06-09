@@ -38,4 +38,4 @@ You can access the session via `req.session`.
 
 ## Applications
 
-See [Application tutorial](tutorial/application/README.md) on how to attach your applications to the server.
+See [Application tutorial](/tutorial/application/README.md) on how to attach your applications to the server.
