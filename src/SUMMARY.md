@@ -43,6 +43,7 @@
 * [Auth](tutorial/auth/README.md)
 * [Settings](tutorial/settings/README.md)
 * [Localization](tutorial/locale/README.md)
+* [Express](tutorial/express/README.md)
 
 ### Guides
 
