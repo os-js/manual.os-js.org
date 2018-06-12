@@ -17,6 +17,13 @@ core.make('osjs/dialog', name, args, (btn, value) => {
 });
 ```
 
+You can also provide custom window options:
+
+```javascript
+const options = {parent: <parent>, attributes: {modal: true}};
+core.make('osjs/dialog', name, args, options, cb);
+```
+
 ## Custom Dialogs
 
 The default Dialog Service provider allows you to add (or override) dialogs:
@@ -31,8 +38,8 @@ class MyDialog extends Dialog {
     }, args), callback)
   }
 
-  render() {
-    super.render(($content) => {
+  render(options) {
+    super.render(options, ($content) => {
       const el = document.createTextNode(this.args.foo);
       $content.appendChild(el);
     });
