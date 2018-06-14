@@ -10,7 +10,9 @@ All commands are provided via `npm` scipts:
 * `build:dist` - Builds core and all packages
 * `watch:dist` - Same as build, but watches for changes
 * `serve` - Starts the server
-* `install:package` - Installs a package
+* `package:install` - Installs a git package
+* `package:upgrade` - Upgrades git packages
+* `package:discover` - Discovers and links npm pakages
 
 ## Examples
 
@@ -35,12 +37,18 @@ npm run build:dist -- --themes
 
 # Install a package via git
 npm run package:install -- https://site/repo.git
+npm run build:manifest
+npm run build:dist
 
 # Upgrades git packages
 npm run package:upgrade
+npm run build:manifest
+npm run build:dist
 
-# Links npm installed packages
+# Set up npm based packages
 npm run package:discover
+npm run build:manifest
+npm run build:dist
 ```
 
 ## Custom Tasks
