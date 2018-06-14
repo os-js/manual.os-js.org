@@ -32,6 +32,8 @@ routeAuthenticated('GET', '/ping', respond);
 routeAuthenticated('GET', '/ping', respond, ['admin']);
 ```
 
+> NOTE: If you want to add routes in the `index.js` distro file, use the `.on('init')` event on the core instance.
+
 ## Sessions
 
 You can access the session via `req.session`.
