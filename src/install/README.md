@@ -19,8 +19,8 @@ npm install
 Install themes and packages:
 
 ```
-npm run install:package -- https://github.com/os-js/osjs-standard-theme.git
-npm run install:package -- https://github.com/os-js/osjs-example-application.git
+npm run package:install -- https://github.com/os-js/osjs-standard-theme.git
+npm run package:install -- https://github.com/os-js/osjs-example-application.git
 ```
 
 Then proceed with building:
@@ -40,32 +40,27 @@ npm run serve
 
 To upgrade, use `npm update` or manually update dependencies defined in the `package.json` file.
 
-If you have applications installed with `git` you'll have to manually update these.
+You can list outdated modules with `npm outdated`.
 
 ## Packages
 
 Packages comes in two types: *Application* and *Theme*.
 
-You can install using `npm` or `git`. After you've installed the package, rebuild your dist:
+You can install using `npm` or `git`. After you've installed or upgraded a package run `npm run build:manifest` to update metadata and `npm run build:dist` to rebuild bundles.
 
-```
-npm run build:manifest
-npm run build:dist
-```
+> NOTE: Some packages requires to restart the server process.
 
-### Using git
+### Install using git
 
-Use the provided script:
+Run `npm package:install -- https://somewhere/package.git` to automatically clone and install dependencies.
 
-```
-npm install:package -- https://somewhere/package.git
-```
+To upgrade packages installed via git, run `npm run package:upgrade`.
 
-Or manually clone directly into `src/packages`. Make sure to run `npm install` inside the target to install dependencies (if required).
+### Install using npm
 
-### Using npm
+Run `npm run package:discover` to automatically link any packages intalled via npm.
 
-Make a symlink in `src/packages` to the installed application in `node_modules/`.
+To upgrade packages installed via npm, run `npm update`.
 
 ## Service Providers
 
