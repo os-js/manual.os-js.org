@@ -41,6 +41,7 @@ win.render($content => $content.appendChild(
 ## Attributes
 
 * `gravity => string` - Where to place the window (ex: `center`)
+* `modal => boolean` - If a parent is provided it will be disabled until this window  closes
 * `ontop => boolean` - Place on-top of all other windows
 * `resizable => boolean` - Set if window can be resized
 * `focusable => boolean` - Set if window can be focused
