@@ -33,8 +33,14 @@ npm run build:dist -- --applications
 # Builds only themes
 npm run build:dist -- --themes
 
-# Install a package
-npm run install:package -- https://site/repo.git
+# Install a package via git
+npm run package:install -- https://site/repo.git
+
+# Upgrades git packages
+npm run package:upgrade
+
+# Links npm installed packages
+npm run package:discover
 ```
 
 ## Custom Tasks
