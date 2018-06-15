@@ -1,6 +1,6 @@
 # Configuration
 
-You can find the configuration files (by default) in `src/conf/` directory.
+You can find the configuration files (by default) in `src/client/config.js`, `src/server/config.js` and `src/client/webpack.config.js`.
 
 > NOTE: This list is not complete. See `src/config.js` in `@osjs/client` and `@osjs/server` for more information.
 
