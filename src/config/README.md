@@ -6,6 +6,8 @@ You can find the configuration files (by default) in `src/client/config.js`, `sr
 
 > NOTE: `NODE_ENV=production` will disable any development features that are enabled by default.
 
+> You can manage your configurations via [CLI](../guide/cli/README.md#configuration) just like in v2, but is now available in a separate module.
+
 ## Client
 
 | Key                     | Default value | Description                                              |

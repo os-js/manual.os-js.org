@@ -14,6 +14,8 @@ All commands are provided via `npm` scipts:
 * `package:upgrade` - Upgrades git packages
 * `package:discover` - Discovers and links npm pakages
 
+> You can also use `npx osjs-cli <task>`. Note, when using this drop the `--` from your commands.
+
 ## Examples
 
 ```
@@ -50,6 +52,12 @@ npm run package:discover
 npm run build:manifest
 npm run build:dist
 ```
+
+## Configuration
+
+You can manage your configurations via [JSON](https://github.com/os-js/osjs-json-config-cli) just like in v2, but is now available in a separate module.
+
+For more information, see the link provided above.
 
 ## Custom Tasks
 
