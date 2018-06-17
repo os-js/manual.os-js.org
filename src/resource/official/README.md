@@ -46,5 +46,9 @@
 * https://github.com/os-js/osjs-sqlite-auth
 * https://github.com/os-js/osjs-pam-auth
 
+## CLI
+
+* https://github.com/os-js/osjs-json-config-cli
+
 ## Providers
 
