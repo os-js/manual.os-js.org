@@ -4,8 +4,8 @@ OS.js provides options for customizing the settings storage.
 
 Two dapters are provided by default:
 
-* `server`
-* `localStorage` (default)
+* `localStorage` (in-browser, default)
+* `server` (via server)
 
 ## Configuring adapter
 
@@ -33,6 +33,24 @@ core.register(SettingsServiceProvider, {
 });
 ```
 
-## Configuring defaults
+## Storing on filesystem
 
-The default settings are located in `@osjs/client/src/config.js`.
+You can use the provided 'fs' adapter to store settings on a filesystem:
+
+> Settings are stored in `home:/.osjs/settings.json` by default.
+
+```javascript
+// client
+core.register(SettingsServiceProvider, {
+  args: {
+    adapter: 'server'
+  }
+});
+
+// server
+core.register(SettingsServiceProvider, {
+  args: {
+    adapter: 'fs',
+  }
+});
+```
