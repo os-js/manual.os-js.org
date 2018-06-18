@@ -22,3 +22,9 @@ core.register(AuthServiceProvider, {
   }
 });
 ```
+
+## Blacklisting applications
+
+If you return an array of application names in the property `blacklist` from the login, you can hide applicaions from a user.
+
+This can be configured via the authentication adapter you're using.
