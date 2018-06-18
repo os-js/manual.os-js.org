@@ -71,6 +71,9 @@ The `metadata.json` file describes your application and contains a list of files
   // The server script to load (if any)
   "server": "server.js",
 
+  // Lock down to users with given groups
+  "groups": [],
+
   // A map of localized titles
   "title": {
     "en_EN": "My Application"
