@@ -53,3 +53,32 @@ You can add mountpoints by updating your configuration files:
   }
 }
 ```
+
+### Assigning Groups
+
+You can lock down mountpoints and VFS methods with groups.
+
+Example configuration (server):
+
+```json
+{
+  vfs: {
+    mountpoints: [{
+      name: 'osjs',
+      attributes: {
+        root: '{root}/dist',
+        groups: [
+          // Only allow users with the 'admin' group
+          'admin',
+
+          // Or, alternativelly do the same, but only for the 'readdir'
+          // endpoint
+          {
+            readdir: 'admin'
+          }
+        ]
+      }
+    }]
+  }
+}
+```
