@@ -6,7 +6,7 @@ See [guide](/guide/auth/README.md) on how to use this in your distribution.
 
 ## User Information
 
-You can get the user information from `core.user` in the client and `req.session.user` in the server.
+You can get the user information from `core.make('osjs/auth').user()` in the client and `req.session.user` in the server.
 
 ## Custom Adapter
 
