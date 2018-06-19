@@ -2,5 +2,12 @@
   "root": "src/",
   "author": "Anders Evenrud <andersevenrud@gmail.com>",
   "language": "en",
-  "title": "OS.js"
+  "title": "OS.js",
+  "plugins": ["sitemap"],
+  "pluginsConfig": {
+    "sitemap": {
+      "hostname": "https://manual.os-js.org",
+      "path": "/v3"
+    }
+  }
 }

@@ -33,6 +33,7 @@
     "metalsmith-watch": "^1.0.3",
     "metalsmith-mdinclude": "^0.1.0",
     "node-fs-extra": "^0.8.1",
-    "gitbook-plugin-ga": "^2.0.0"
+    "gitbook-plugin-ga": "^2.0.0",
+    "gitbook-plugin-sitemap": "https://github.com/andersevenrud/plugin-sitemap.git#master"
   }
 }
