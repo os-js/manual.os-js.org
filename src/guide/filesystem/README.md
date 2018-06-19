@@ -74,7 +74,7 @@ Example configuration (server):
           // Or, alternativelly do the same, but only for the 'readdir'
           // endpoint
           {
-            readdir: 'admin'
+            readdir: ['admin']
           }
         ]
       }
