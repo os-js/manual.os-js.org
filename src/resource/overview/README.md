@@ -10,7 +10,7 @@ Building is done with [Webpack](https://webpack.js.org/). See [configuration art
 
 ## Client
 
-The client is written in vanilla JavaScript (ES2015+) and Sass (CSS) and split up into several [modules](resource/official/README.md) which are bundled together.
+The client is written in vanilla JavaScript (ES2015+) and Sass (CSS) and split up into several [modules](../official/README.md) which are bundled together.
 
 Runs in any modern browser (IE10+) including mobile.
 
@@ -24,7 +24,7 @@ A WebSocket server is also created to allow for more flexible communication betw
 
 ## Service Providers
 
-[Service Providers](tutorial/provider/README.md) registers services (features) in the core that can be used anywhere in the codebase.
+[Service Providers](../../tutorial/provider/README.md) registers services (features) in the core that can be used anywhere in the codebase.
 
 All standard features comes in providers which makes it easy to swap out for custom or third party alternatives.
 
@@ -36,11 +36,11 @@ An application consists of three parts:
 
 #### Metadata
 
-The [metadata](tutorial/application/README.md#metadata) file contains information that describes your application, what files to load (from webpack output, etc) and other information related to how it interacts with the underlying system(s).
+The [metadata](../../tutorial/application/README.md#metadata) file contains information that describes your application, what files to load (from webpack output, etc) and other information related to how it interacts with the underlying system(s).
 
 #### Client script
 
-Client scripts are bundled with Webpack via the build system. Upon launch, the files defined in metadata is loaded, where the main bundle [registers](tutorial/application/README.md) the application.
+Client scripts are bundled with Webpack via the build system. Upon launch, the files defined in metadata is loaded, where the main bundle [registers](../../tutorial/application/README.md) the application.
 
 After a successful registration your code is executed. This is where you create your windows, UIs, communications, etc.
 

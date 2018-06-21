@@ -35,7 +35,7 @@ top.postMessage({
 
 ## Usage
 
-Works like a [regular application](tutorial/application/README.md), except you need to add some custom message handling.
+Works like a [regular application](../../tutorial/application/README.md), except you need to add some custom message handling.
 
 You can use an external source, but in this example it is assumed that you use the provided `data/index.html` file.
 

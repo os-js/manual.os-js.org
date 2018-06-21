@@ -1,6 +1,6 @@
 # Dialog
 
-Dialogs are [Window](tutorial/window/README.md)s with pre-defined templates and actions.
+Dialogs are [Window](../window/README.md)s with pre-defined templates and actions.
 
 ![Example](example.png)
 

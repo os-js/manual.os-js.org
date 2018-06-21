@@ -1,6 +1,6 @@
 # Window
 
-Windows are floating containers that you can use to render any content. See [GUI](tutorial/gui/README.md) tutorial on how to design content using OS.js GUI libraries.
+Windows are floating containers that you can use to render any content. See [GUI](../gui/README.md) tutorial on how to design content using OS.js GUI libraries.
 
 ![Example](example.png)
 
