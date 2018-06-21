@@ -21,7 +21,7 @@ settings.load();
 settings.get('some/namespace');
 
 // Sets a settings object to a namespace
-settings.set('some/namespace', {key: 'value'})
+settings.set('some/namespace', 'key', 'value')
 ```
 
 ### Application
