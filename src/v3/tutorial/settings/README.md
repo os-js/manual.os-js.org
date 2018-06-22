@@ -55,8 +55,15 @@ An application is given the namespace `osjs/application/{name}`.
 
 ```javascript
 const myAdapter = (core, options) => ({
-  save: values => Promise.resolve(true),
-  load: () => Promise.resolve(true)
+  save: values => {
+    // Create your own request here with 'values' settings
+    return Promise.resolve(true);
+  },
+
+  load: () => {
+    // Create your own request here and return settings
+    return Promise.resolve({})
+  }
 });
 
 export default myAdapter;
@@ -66,7 +73,13 @@ export default myAdapter;
 
 ```javascript
 module.exports = (core, options) => ({
-  save: (req, res) => Promise.resolve(true),
-  load: (req, res) => Promis.resolve({})
+  save: (req, res) => {
+    // req.body has all settings from client
+    return Promise.resolve(true);
+  },
+  load: (req, res) => {
+    // return all settings for user here
+    return Promis.resolve({});
+  }
 });
 ```

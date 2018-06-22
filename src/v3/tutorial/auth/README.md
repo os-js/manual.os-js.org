@@ -34,18 +34,18 @@ In this example we only allow the user `anders` with the password `evenrud`.
 
 ```javascript
 module.exports = (core, options) => ({
-  login: async (req, res) => {
+  login: (req, res) => {
     const {username, password} = req.body;
 
     if (username === 'anders' && password === 'evenrud') {
-      return {id: 666, username, groups: ['admin']};
+      return Promise.resolve({id: 666, username, groups: ['admin']});
     }
 
-    return false;
+    return Promise.resolve(false);
   },
 
-  logout: async (req, res) => {
-    return true;
+  logout: (req, res) => {
+    return Promise.resolve(true);
   }
 });
 ```
