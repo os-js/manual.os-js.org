@@ -35,7 +35,7 @@ const createButton = (label, callback) => {
 
 // Renders window with a button to spawn another window.
 // Listens for the 'greet' event on the window that is proxied via our bus
-const mainWindow = bus => ($content, win, props) => {
+const mainWindow = bus => props => ($content, win) => {
   const button = createButton('Create a new Window', () => {
     bus.emit('create-window', 'other', {
       title: 'New Window'
@@ -53,7 +53,7 @@ const mainWindow = bus => ($content, win, props) => {
 
 // Renders another window with a button to signal 'kill-application'
 // and another for 'greet-main-window'.
-const otherWindow = bus => ($content, win, props) => {
+const otherWindow = bus => props => ($content, win) => {
   // Custom properties passed on
   console.log(props.foo); // => "bar"
 
@@ -78,8 +78,6 @@ const windowFactory = (proc, bus) => {
   };
 
   return (name, options = {}, props = {}) => {
-    const renderer = windows[name];
-
     // Assign some static options to our main window
     if (name === 'main') {
       Object.assign(options, {
@@ -88,8 +86,10 @@ const windowFactory = (proc, bus) => {
       });
     }
 
+    const renderer = windows[name](props);
+
     proc.createWindow(options)
-      .render(($content, win) => renderer($content, win, props));
+      .render(renderer);
   };
 };
 
