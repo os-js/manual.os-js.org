@@ -13,11 +13,13 @@ bus.on('greet', (who) => console.log(`Hello ${who}!`));
 bus.emit('greeet', 'world');
 ```
 
-## Example
+## Advanced Example
 
-Here's an example using a factory-style approach for creating windows that share a Bus.
+In this example, we'll set up a sentralized event bus that handles our application features.
 
-You can use this for inter-window-commication or just a sentralized event handler:
+This bus will also proxy events to windows and handle inter-window-communication.
+
+It also uses a window factory to share the bus:
 
 ![Example](example.png)
 
@@ -33,10 +35,12 @@ const createButton = (label, callback) => {
 
 // Renders window with a button to spawn another window.
 // Listens for the 'greet' event on the window that is proxied via our bus
-const mainWindow = bus => ($content, win) => {
+const mainWindow = bus => ($content, win, props) => {
   const button = createButton('Create a new Window', () => {
     bus.emit('create-window', 'other', {
       title: 'New Window'
+    }, {
+      foo: 'bar'
     });
   });
 
@@ -49,7 +53,10 @@ const mainWindow = bus => ($content, win) => {
 
 // Renders another window with a button to signal 'kill-application'
 // and another for 'greet-main-window'.
-const otherWindow = bus => ($content, win) => {
+const otherWindow = bus => ($content, win, props) => {
+  // Custom properties passed on
+  console.log(props.foo); // => "bar"
+
   const button1 = createButton('Kill application', () => {
     bus.emit('kill-application');
   });
@@ -70,11 +77,19 @@ const windowFactory = (proc, bus) => {
     other: otherWindow(bus)
   };
 
-  return (name, options) => {
+  return (name, options = {}, props = {}) => {
     const renderer = windows[name];
 
+    // Assign some static options to our main window
+    if (name === 'main') {
+      Object.assign(options, {
+        id: 'MainWindow',
+        title: 'Main Window'
+      });
+    }
+
     proc.createWindow(options)
-      .render(renderer);
+      .render(($content, win) => renderer($content, win, props));
   };
 };
 
@@ -102,15 +117,12 @@ const register = (core, args, options, metadata) => {
   });
 
   // Signal for creating another window by name
-  bus.on('create-window', (name, options) => {
-    factory(name, options);
+  bus.on('create-window', (name, options, props) => {
+    factory(name, options, props);
   });
 
   // Immediately emit a create window event to spawn main window
-  bus.emit('create-window', 'main', {
-    id: 'MainWindow',
-    title: 'Main Window'
-  });
+  bus.emit('create-window', 'main');
 
   // We want to remove our bus when application is destroyed
   proc.on('destroy', () => bus.destroy());
