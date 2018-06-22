@@ -15,17 +15,13 @@ See [official resource list](/resource/official/README.md) for provided adapters
 
 ### Client
 
-You can redirect all authentication requests to the server or a custom adapter:
+You can set up a custom client adapter to modify the requests etc.:
 
 ```javascript
 import customAdapter from 'custom-adapter';
 
 core.register(AuthServiceProvider, {
   args: {
-    // Redirect to server
-    adapter: 'server',
-
-    // Custom adapter
     adapter: customAdapter
   }
 });
