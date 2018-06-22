@@ -15,3 +15,15 @@
 * v2: Uses `metalsmith`
 
 Live pages: https://manual.os-js.org/
+
+## Usage
+
+```
+// Build v3
+npx gitbook build
+
+// Build v2
+node index.js
+```
+
+You can now serve `_book/` or `_metalsmith/`.
