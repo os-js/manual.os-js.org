@@ -27,5 +27,5 @@ $ sudo apt-get install libpam-1g-dev
 * On some systems you might have to install `authenticate-pam` with `npm install -g` or else you might get a *Error in service module* upon request.
 * Also, on some systems you might have to run OS.js server as a privileged user, or with adjusted SELinux rules.
 
-#include "src/configuration/authenticator/_pamshadow.md"
+#include "configuration/authenticator/_pamshadow.md"
 

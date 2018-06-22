@@ -23,14 +23,14 @@ handlebars.registerHelper('pathClass', function(str) {
   return str.replace(/[^A-z0-9]/g, '_');
 });
 
-var i = Metalsmith(__dirname)
+var i = Metalsmith(_path.resolve(__dirname, 'src/v2'))
   .metadata({
     sitename: "OS.js",
     siteurl: "https://manual.os-js.org/",
     description: "OS.js"
   })
-  .source('./src')
-  .destination('./build')
+  .source(_path.resolve(__dirname, 'src/v2/metalsmith'))
+  .destination(_path.resolve(__dirname, '_metalsmith'))
   .clean(true)
   .use(mdinclude())
   .use(less())
@@ -50,16 +50,6 @@ var i = Metalsmith(__dirname)
     hostname: "https://manual.os-js.org",
     omitIndex: true
   }));
-
-if ( process.argv[2] === '--watch' ) {
-  i.use(watch({
-    paths: {
-      "${source}/**/*": true,
-      "layouts/**/*": "**/*"
-    },
-    livereload: true,
-  }));
-}
 
 i.build(function(err) {
   console.log(err || 'done');

@@ -6,3 +6,4 @@ OS.js
 src/installer.ps1
 src/installer
 _book
+_metalsmith

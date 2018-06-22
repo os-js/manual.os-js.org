@@ -19,4 +19,4 @@ In your OS.js installation directory:
 $ npm install --no-save git+https://github.com/andersevenrud/passwd-linux userid
 ```
 
-#include "src/configuration/authenticator/_pamshadow.md"
+#include "configuration/authenticator/_pamshadow.md"

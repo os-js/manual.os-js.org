@@ -1,5 +1,5 @@
 {
-  "root": "src/",
+  "root": "src/v3",
   "author": "Anders Evenrud <andersevenrud@gmail.com>",
   "language": "en",
   "title": "OS.js",
