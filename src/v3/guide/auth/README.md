@@ -13,12 +13,33 @@ See [official resource list](/resource/official/README.md) for provided adapters
 
 > The README file of the module should provide more spesific exaples.
 
+### Client
+
+You can redirect all authentication requests to the server or a custom adapter:
+
+```javascript
+import customAdapter from 'custom-adapter';
+
+core.register(AuthServiceProvider, {
+  args: {
+    // Redirect to server
+    adapter: 'server',
+
+    // Custom adapter
+    adapter: customAdapter
+  }
+});
+```
+
+
 ### Server
 
 ```javascript
+const customAdapter = require('custom-adapter');
+
 core.register(AuthServiceProvider, {
   args: {
-    adapter: fn
+    adapter: customAdapter
   }
 });
 ```

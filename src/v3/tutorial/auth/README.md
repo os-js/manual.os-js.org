@@ -14,8 +14,15 @@ You can get the user information from `core.make('osjs/auth').user()` in the cli
 
 ```javascript
 const myAdapter = (core, options) => ({
-  login: values => Promise.resolve(values),
-  logout: () => Promise.resolve(true)
+  login: values => {
+    // You can transform the form values from login here if you want
+    return Promise.resolve(values);
+  },
+
+  logout: () => {
+    // And perform special operations on logout
+    return Promise.resolve(true);
+  }
 });
 
 export default myAdapter;
@@ -23,9 +30,22 @@ export default myAdapter;
 
 ### Server
 
+In this example we only allow the user `anders` with the password `evenrud`.
+
 ```javascript
 module.exports = (core, options) => ({
-  login: (req, res) => Promise.resolve(req.body),
-  logout: (req, res) => Promis.resolve(true)
+  login: async (req, res) => {
+    const {username, password} = req.body;
+
+    if (username === 'anders' && password === 'evenrud') {
+      return {id: 666, username, groups: ['admin']};
+    }
+
+    return false;
+  },
+
+  logout: async (req, res) => {
+    return true;
+  }
 });
 ```
