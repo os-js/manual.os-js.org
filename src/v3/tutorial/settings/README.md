@@ -38,7 +38,7 @@ An application is given the namespace `osjs/application/{name}`.
   const proc = core.make('name', {options});
 
   // Get a setting
-  console.log(proc.settings.foo); => "bar"
+  console.log(proc.settings.foo); // => "bar"
 
   // Set a setting
   proc.settings.foo = 'baz';
