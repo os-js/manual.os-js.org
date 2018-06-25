@@ -13,7 +13,7 @@ You can get the user information from `core.make('osjs/auth').user()` in the cli
 ### Client
 
 ```javascript
-const myAdapter = (core, options) => ({
+const myAdapter = (core, config) => ({
   login: values => {
     // You can transform the form values from login here if you want
     return Promise.resolve(values);
@@ -32,8 +32,10 @@ export default myAdapter;
 
 In this example we only allow the user `anders` with the password `evenrud`.
 
+> Please note that the OS.js client expects to receive an JSON object with at least `{id, username}`.
+
 ```javascript
-module.exports = (core, options) => ({
+module.exports = (core, config) => ({
   login: (req, res) => {
     const {username, password} = req.body;
 
@@ -49,3 +51,18 @@ module.exports = (core, options) => ({
   }
 });
 ```
+
+### Configuration
+
+The `config` parameter is passed on from your service provider registration:
+
+```
+core.register(AuthServiceProvider, {
+  args: {
+    adapter: customAdapter
+    config: { /* Your configuration here */}
+  }
+});
+```
+
+If you have sensitive information in your configuration, consider using [dotenv](https://github.com/motdotla/dotenv).
