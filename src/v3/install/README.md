@@ -36,6 +36,8 @@ And finally start the server:
 npm run serve
 ```
 
+Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing this on a remote server.
+
 > NOTE: Do not use "sudo" for any of these commands.
 
 ## Upgrade
