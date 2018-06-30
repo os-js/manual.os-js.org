@@ -58,3 +58,4 @@
 * [IFrame Application](guide/iframe/README.md)
 * [Frameworks](guide/framework/README.md)
 * [Customizing Login](guide/login/README.md)
+* [Remote Debugging](guide/remotedebug/README.md)
