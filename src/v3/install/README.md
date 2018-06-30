@@ -36,6 +36,8 @@ And finally start the server:
 npm run serve
 ```
 
+> NOTE: Do not use "sudo" for any of these commands.
+
 ## Upgrade
 
 To upgrade, use `npm update` or manually update dependencies defined in the `package.json` file.
