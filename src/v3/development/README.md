@@ -12,11 +12,22 @@ Using the required tools (above) you can set up a development enviroment in a co
 
 You can set `development` configuration entry in configuration to enable extra development features, like automatic reloading of your applications when builds are run.
 
-### Modules
+## Naming
 
-To develop on the npm module sources, you'll have to the `npm link` feature.
+OS.js has a format for naming different modules etc.:
 
-> NOTE: Windows users might have to apply `{symlinks:false}` to the webpack (`createWebpack()`) configuration files. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled.
+* `osjs-<project>-application` - Application package
+* `osjs-<project>-provider` -  Service Provider module
+* `osjs-<project>-adapter` - Adapters used ex. in a service provider
+* `osjs-<project>-theme` - Theme package
+* `osjs-<project>-cli` - CLI Plugin
+* `osjs-<project>` - Core modules
+
+Official packages are scoped with `@osjs/<project>-<suffix>`.
+
+### Module
+
+With the `npm link` feature you can replace the different modules of OS.js with local source-code. If you for example want to make changes to the `@osjs/client` you can check out its sources, run the linking and then make any changes you may want.
 
 Assuming you've already installed OS.js, this is how you set up linking:
 
@@ -30,15 +41,37 @@ npm link
 npm link @osjs/client
 ```
 
-> Please note that linking also applies to any OS.js dependencies inside these modules, so you'll have to repeat this process there as well.
+> Notes:
+> 1. Windows users might have to apply `{symlinks:false}` to the webpack (`createWebpack()`) configuration files. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled.
+> 2. Note that the linking only applies to the package, not its dependencies. To also change the packages dependencies, you have to link these as well.
+> 3. It is recommended that you set up npm to install global packages as your own [system user](https://docs.npmjs.com/files/npmrc#files) to avoid using root.
 
-You can now run `npm watch:dist` to automatically rebuild changes.
+You can now run `npm watch:dist` to automatically rebuild changes, or alternatively manually run `npm build:dist`.
 
 ### Packages
 
-It's recommended that you use `git` to develop packages (applications and themes).
+OS.js packages (applications and themes) are set up in `src/packages/`. Usually packages are installed via the [CLI](../guide/CLI/README.md) but you can freely create or place folders in here manually.
 
-Simply clone your repositories into `src/packages`, run `npm run build:manifest` to make packages visible to client and `npm run watch:dist` to automatically rebuild changes.
+For an example [see the provided application example](https://github.com/os-js/osjs-example-application).
+
+Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run build:manifest` to update the global package manifest.
+
+```bash
+# Check out the example
+git clone https://github.com/os-js/osjs-example-application.git src/packages/MyApplication
+
+# Set your own name and title, etc.
+edit src/packages/MyApplication/metadata.json
+edit src/packages/MyApplication/index.js
+
+# Update global manifest
+npm run build:manifest
+```
+
+> Notes:
+> 1. Package name **must be unique**.
+
+You can now run `npm run watch:dist` to automatically watch and rebuild changes, or alternatively manually run `npm build:dist` (or `npm run build:dist -- --application=PackageName`).
 
 ### Server
 
