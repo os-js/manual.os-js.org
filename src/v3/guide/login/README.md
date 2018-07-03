@@ -82,3 +82,28 @@ By default the login container uses the DOM id `#osjs-login`, which you can over
 ```
 
 You can now add your own styles to `src/client/index.scss`.
+
+## Logo
+
+You can also add a logo via configuration and customize via css:
+
+![Login Logo Example](example2.png)
+
+```json
+{
+  auth: {
+    ui: {
+      logo: {
+        position: 'top', // top, bottom, left, right
+        src: require('../logo.png')
+      }
+    }
+  }
+}
+```
+
+```css
+.osjs-login-logo {
+ /* Your style here */
+}
+```
