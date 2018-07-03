@@ -23,7 +23,7 @@ You can find the configuration files (by default) in `src/client/config.js`, `sr
 | ws.hostname             | `<auto>`      | WebSocket hostname                                       |
 | ws.path                 | `<auto>`      | WebSocket path                                           |
 | vfs.defaultPath         | `osjs:/`      | Default and fallback path for VFS                        |
-| vfs.mountpoints         | Array         | See [filesystem guide](guide/filesystem/README.md)       |
+| vfs.mountpoints         | Array         | See [filesystem guide](../guide/filesystem/README.md)    |
 | auth.login.ui           | Object        | See customize login                                      |
 | auth.login.username     | String        | Default login username                                   |
 | auth.login.password     | String        | Default login password                                   |
@@ -46,7 +46,7 @@ You can find the configuration files (by default) in `src/client/config.js`, `sr
 | session.resave              | `false`             | HTTP Session resave option                                        |
 | session.saveUninitialized   | `false`             | HTTP Save uninitialzed sessions                                   |
 | session.cookie.secure       | `<auto>`            | HTTP Secure cookie                                                |
-| vfs.mountpoints             | Array               | See [filesystem guide](guide/filesystem/README.md)                |
+| vfs.mountpoints             | Array               | See [filesystem guide](../guide/filesystem/README.md)             |
 | proxy[]                     | Array               |                                                                   |
 | proxy[].source              | `String or RegExp`  | Proxy source                                                      |
 | proxy[].destination         | String              | Proxy destination                                                 |
