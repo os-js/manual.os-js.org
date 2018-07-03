@@ -2,6 +2,8 @@
 
 You can use the [official example package](https://github.com/os-js/osjs-example-application) as a bolilerplate for your project.
 
+To generate a new package using the example via CLI run `npm run package:create`.
+
 ## Creation
 
 Typically `index.js`:
