@@ -52,3 +52,4 @@
 
 ## Providers
 
+* https://github.com/andersevenrud/osjs-pm2-provider
