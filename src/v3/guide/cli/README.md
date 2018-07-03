@@ -13,6 +13,7 @@ All commands are provided via `npm` scipts:
 * `package:install` - Installs a git package
 * `package:upgrade` - Upgrades git packages
 * `package:discover` - Discovers and links npm pakages
+* `package:create` - Create a new package
 
 > You can also use `npx osjs-cli <task>`. Note, when using this drop the `--` from your commands.
 
@@ -36,6 +37,9 @@ npm run build:dist -- --applications
 
 # Builds only themes
 npm run build:dist -- --themes
+
+# Create a new package
+npm run package:create
 
 # Install a package via git
 npm run package:install -- https://site/repo.git
