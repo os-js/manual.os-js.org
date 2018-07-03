@@ -15,16 +15,42 @@ console.log(list);
 
 ## Methods
 
-* `readdir(file)` - Reads given directory
-* `readfile(file)` - Reads given file
-* `writefile(file, data)` - Writes to given file
-* `copy(src, dst)` - Copy given file/directory
-* `rename(src, dst)` - Rename or move given file/directory
-* `mkdir(file)` - Creates given directory
-* `unlink(file)` - Removes given file/directory
-* `exists(file)` - Checks if given path exists
-* `stat(file)` - Get the stat of given file/directory
-* `url(file)` - Create a URL to resource
+* `readdir(file) => stat[]` - Reads given directory (see [stat](#stat))
+* `readfile(file, type) => *type` - Reads given file (see [encoding](#encoding))
+* `writefile(file, data) => boolean` - Writes to given file
+* `copy(src, dst) => boolean` - Copy given file/directory
+* `rename(src, dst) => boolean` - Rename or move given file/directory
+* `mkdir(file) => boolean` - Creates given directory
+* `unlink(file) => boolean` - Removes given file/directory
+* `exists(file) => boolean` - Checks if given path exists
+* `stat(file) => stat` - Get the stat of given file/directory (see [stat](#stat))
+* `url(file) => string` - Create a URL to resource
+
+## Stat
+
+The VFS responds with file statistics in some cases, containing:
+
+```json
+{
+  "isDirectory": boolean,
+  "isFile": boolean,
+  "mime": string,
+  "size": integer,
+  "path": string,
+  "filename": string,
+  "stat": {
+    /* See https://nodejs.org/api/fs.html#fs_class_fs_stats */
+  }
+}
+```
+
+## Encoding
+
+By default, files are read as `ArrayBuffer`, but you can specify any of these types:
+
+* `string` - A `UTF-8` encoded string
+* `uri` - A `base64` encoded resource link
+* `blob` - A `Blob`
 
 ## Custom Adapter
 
