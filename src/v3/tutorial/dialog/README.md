@@ -26,6 +26,8 @@ core.make('osjs/dialog', name, args, options, cb);
 
 ## Custom Dialogs
 
+### Extension
+
 The default Dialog Service provider allows you to add (or override) dialogs:
 
 ```javascript
@@ -60,3 +62,63 @@ osjs.register(DialogServiceProvider, {
 // Runtime
 osjs.make('osjs/dialogs').register('my-dialog', MyDialog);
 ```
+
+### Programatic
+
+You can also use the `CustomDialog` instance to make your own programatically:
+
+```javascript
+// Options
+const options = {
+  buttons: ['ok', 'cancel'],
+  window: {
+    title: 'My Dialog',
+    dimension: {width: 400, height: 400}
+  }
+};
+
+// Get the value for button callback
+const callbackValue = dialog => 'My value';
+
+// Same as demonstrated in Usage
+const callbackButton = (button, value) => {};
+
+// The window.render() callback
+const callbackRender = ($content, dialogWindow, dialog) => {};
+
+core.make('osjs/dialogs')
+  .create(options, callbackValue, callbackButton);
+  .render(callbackRender);
+```
+
+## Dialog GUI
+
+By default OS.js uses Hyperapp for the dialog GUI, but you can use whatever you want in the render callback.
+
+The buttons will be created for you based on the options you provided:
+
+```javascript
+// Render method
+$content => {
+  app({
+    // state
+  }, {
+    // actions
+  }, (state, actions) => {
+    // For programatic usage, replace 'this' with 'dialog'
+    return this.createView([
+      // your virtual dom here
+    ]);
+  }, $content);
+}
+```
+
+Available buttons are:
+
+* `ok`
+* `cancel`
+* `close`
+* `yes`
+* `no`
+
+You can add your own by giving strings not found in the list above.
