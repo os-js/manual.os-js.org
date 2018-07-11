@@ -32,6 +32,7 @@
 * https://github.com/os-js/osjs-textpad-application
 * https://github.com/os-js/osjs-draw-application
 * https://github.com/os-js/osjs-ace-application
+* https://github.com/os-js/osjs-strophejs-application
 * https://github.com/os-js/osjs-filemanager-application
 * https://github.com/os-js/osjs-preview-application
 * https://github.com/os-js/osjs-musicplayer-application
