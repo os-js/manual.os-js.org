@@ -55,4 +55,5 @@
 
 ## Providers
 
+* https://github.com/os-js/osjs-gapi-provider
 * https://github.com/andersevenrud/osjs-pm2-provider
