@@ -11,9 +11,8 @@ You can spawn a tray entry using:
 ```javascript
 const entry = core.make('osjs/tray').create({
   title: 'My Tray Icon',
-  icon: 'icon.src',
-  onclick: (ev) => console.log('Clicked!')
-})
+  icon: 'icon.src'
+}, ev => console.log('clicked'))
 ```
 
 If you're using this in a application, you probably want to destroy it when the user quits the application:
