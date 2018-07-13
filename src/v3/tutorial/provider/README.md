@@ -19,7 +19,8 @@ This is the service provider interface:
 ```javascript
 import {ServiceProvider} from '@osjs/common';
 
-class ServiceProvider extends ServiceProvider {
+class ServiceProvider extends ServiceProvider
+{
   /*
   constructor(core, options = {}) {
     this.core = core;
@@ -27,8 +28,18 @@ class ServiceProvider extends ServiceProvider {
   }
   */
 
-  async init() {} // Register your services here
-  start() {} // Anything you want to do after successfully booting
+  /* The list of registered services */
+  provides() {
+    return [];
+  }
+
+  /* Initialize your services */
+  async init() {}
+
+  /* Start your services */
+  start() {}
+
+  /* Clean up */
   destroy() {}
 }
 ```
