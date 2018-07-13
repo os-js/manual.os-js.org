@@ -26,6 +26,32 @@ console.log(list);
 * `stat(file) => stat` - Get the stat of given file/directory (see [stat](#stat))
 * `url(file) => string` - Create a URL to resource
 
+## File argument
+
+All VFS metods accepts either a `string` or a **[Stat](#stat)** `Object`.
+The internal API will always try to convert a `string` to a `Stat` (via resolution),
+but on filesystems that does not have a traditional file structure (ex. Google Drive);
+this *might* not work, so it is recomended that you use the `Object` signature whenever possible.
+
+> NOTE: All official applications and libraries use the object approach and is compatible with all filesystems.
+> If you're an application developer you should take this into consideration.
+
+```javascript
+// Ex
+.readdir('osjs:/')
+
+// Vs
+.readdir({path: 'osjs:/'})
+```
+
+On a non-traditional filesystem, this might look like:
+
+```javascript
+.readdir({path: 'custom-mountpoint:/', id: 'some-unique-resource-id'})
+```
+
+A File `Object` consists of the [Stat](#stat) described below.
+
 ## Stat
 
 The VFS responds with file statistics in some cases, containing:
@@ -38,7 +64,9 @@ The VFS responds with file statistics in some cases, containing:
   "size": integer,
   "path": string,
   "filename": string,
-  "stat": {
+  "id": string?,
+  "parent_id": string?,
+  "stat": object? {
     /* See https://nodejs.org/api/fs.html#fs_class_fs_stats */
   }
 }
