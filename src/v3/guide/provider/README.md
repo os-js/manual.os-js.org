@@ -1,0 +1,43 @@
+# Provider Guide
+
+OS.js provides options for customizing the settings storage.
+
+## Setup
+
+> Please note, on `node` you should use `require` instead of `import/export`.
+
+```javascript
+import provider from 'some-provider';
+
+core.register(provider);
+```
+
+### Configuring
+
+You can pass on arguments to the constructor of the Service Provider.
+
+> This is the *second* argument in the `constructor()`.
+
+```javascript
+core.register(provider, {
+  args: {
+    foo: 'bar'
+  }
+});
+```
+
+### Load Order
+
+By default any provider without any load order defined will be loaded at random (`Promise.all()`).
+
+To set a spesific order, you can either set dependencies or the `before` attribute:
+
+```javascript
+core.register(provider, {
+  // Makes sure these provider services has been loaded first
+  depends: ['osjs/code'],
+
+  // Load this provider before the user has logged in
+  before: true
+});
+```

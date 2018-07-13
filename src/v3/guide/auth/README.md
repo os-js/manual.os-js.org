@@ -13,6 +13,8 @@ See [official resource list](/resource/official/README.md) for provided adapters
 
 > The README file of the module should provide more spesific exaples.
 
+> See [provider guide](../provider/README.md) for more information about provider setup.
+
 ### Client
 
 You can set up a custom client adapter to modify the requests etc.:

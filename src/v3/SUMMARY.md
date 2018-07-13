@@ -49,6 +49,7 @@
 
 * [CLI](guide/cli/README.md)
 * [Deployment](guide/deploy/README.md)
+* [Provider](guide/embed/README.md)
 * [Embedding](guide/embed/README.md)
 * [Migration](guide/migrate/README.md)
 * [Translation](guide/translate/README.md)

@@ -74,6 +74,8 @@ Install using `npm` then update your entry files:
 
 Add the provider to your `src/client/index.js` file:
 
+> See [provider guide](../guide/provider/README.md) for more information about provider setup.
+
 ```javascript
 import SomeProvider from 'some-provider';
 
