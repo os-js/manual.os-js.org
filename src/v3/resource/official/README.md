@@ -49,6 +49,10 @@
 * https://github.com/os-js/osjs-sqlite-auth
 * https://github.com/os-js/osjs-pam-auth
 
+## Filesystem
+
+* https://github.com/os-js/osjs-gdrive-adapter
+
 ## CLI
 
 * https://github.com/os-js/osjs-json-config-cli
@@ -56,4 +60,3 @@
 ## Providers
 
 * https://github.com/os-js/osjs-gapi-provider
-* https://github.com/andersevenrud/osjs-pm2-provider
