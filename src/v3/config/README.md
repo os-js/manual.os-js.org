@@ -84,3 +84,18 @@ The `createWebpack()` method used returns a Webpack configuration tree that you 
 | babel.cacheDirectory        | `true`             | Babel cache                                             |
 | babel.plugins               | Array              | Babel plugins                                           |
 | babel.presets               | Array              | Babel presets                                           |
+
+# Caveats
+
+By default all of your settings are *merged* into the default configuration from the libraries.
+In some cases you might want to force certain entries in the tree to override completely.
+
+You can do this by providing the following option in your bootstrap file:
+
+```javascript
+const osjs = new Core(config, {
+  // 'ws' will *always* be read from your 'config' instead of the
+  // internal one, including *every* sub-item(s).
+  omit: ['ws']
+});
+```
