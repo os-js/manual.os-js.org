@@ -10,6 +10,8 @@ The only dependency is `node 8` or later (and `git` is recommended).
 
 Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing this on a remote server.
 
+When you're done, OS.js is set up by default to run on [http://localhost:8000](http://localhost:8000).
+
 > NOTE: Do not use "sudo" for any of these commands.
 
 Clone the base repository (or download latest release) and install node modules:
