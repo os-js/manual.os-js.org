@@ -17,6 +17,8 @@ All commands are provided via `npm` scipts:
 
 > You can also use `npx osjs-cli <task>`. Note, when using this drop the `--` from your commands.
 
+> If you're using `docker-compose` simply prepend this to perform the commands inside the image: `docker-compose exec osjs ...`.
+
 ## Examples
 
 ```

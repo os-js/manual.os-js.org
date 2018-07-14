@@ -8,37 +8,49 @@ The only dependency is `node 8` or later (and `git` is recommended).
 
 ## Setup
 
+Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing this on a remote server.
+
+> NOTE: Do not use "sudo" for any of these commands.
+
 Clone the base repository (or download latest release) and install node modules:
 
-```
+```bash
 git clone -b v3 --single-branch https://github.com/os-js/OS.js.git
 cd OS.js
 npm install
 ```
 
+### Manual Setup
+
 Install themes and packages:
 
-```
+```bash
 npm run package:install -- https://github.com/os-js/osjs-standard-theme.git
 npm run package:install -- https://github.com/os-js/osjs-example-application.git
 ```
 
 Then proceed with building:
 
-```
+```bash
 npm run build:manifest
 npm run build:dist
 ```
 
 And finally start the server:
 
-```
+```bash
 npm run serve
 ```
 
-Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing this on a remote server.
+### Docker Setup
 
-> NOTE: Do not use "sudo" for any of these commands.
+A Docker setup is also provided, which is set up by default to perform the above steps.
+
+```bash
+cp .env.example .env
+edit .env
+docker-compose up
+```
 
 ## Upgrade
 
