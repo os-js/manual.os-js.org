@@ -96,6 +96,9 @@ You can do this by providing the following option in your bootstrap file:
 const osjs = new Core(config, {
   // 'ws' will *always* be read from your 'config' instead of the
   // internal one, including *every* sub-item(s).
-  omit: ['ws']
+  omit: ['ws'],
+
+  // You can resolve via the dot notation
+  omit: ['ws.port']
 });
 ```
