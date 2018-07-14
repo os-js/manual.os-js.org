@@ -21,7 +21,7 @@ All commands are provided via `npm` scipts:
 
 ## Examples
 
-```
+```bash
 # Build everything
 npm run build:dist
 

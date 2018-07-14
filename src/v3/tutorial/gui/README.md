@@ -56,7 +56,7 @@ You can also use JSX syntax instead of the programatic approach.
 
 In your `webpack.js` file:
 
-```
+```javascript
 module.exports = (options, {createWebpack}) => createWebpack(__dirname, {
   jsx: {
     pragma: 'h'

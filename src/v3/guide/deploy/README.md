@@ -28,7 +28,7 @@ In your client and server configurations, make sure to disable development mode:
 
 To optimize for production, use the node environmental variable:
 
-```
+```bash
 NODE_ENV=production npm run build:dist
 ```
 

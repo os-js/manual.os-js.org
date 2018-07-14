@@ -6,7 +6,7 @@ You can use software like [weinre](http://people.apache.org/~pmuellr/weinre/docs
 
 ## Install weinre
 
-```
+```bash
 # Install
 npm -g install weinre
 
@@ -20,7 +20,7 @@ You can now access http://localhost:8001
 
 In your `src/client/index.ejs` file:
 
-```
+```html
   <body>
     <script src="http://1.2.3.4:8001/target/target-script-min.js#osjs"></script>
   </body>

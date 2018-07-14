@@ -8,7 +8,7 @@ You can use React (or any other) framework for building UI in your applications.
 
 Install these dependencies (inside the application source folder):
 
-```
+```bash
 npm install --save-dev @babel/core @babel/preset-react react react-dom
 ```
 
@@ -51,7 +51,7 @@ Another alternative is Vue. This guide sets up single-file-component support as 
 
 Install these dependencies (inside the application source folder):
 
-```
+```bash
 npm install --save-dev babel-preset-vue vue vue-loader vue-template-compiler webpack
 ```
 
@@ -90,7 +90,7 @@ module.exports = (options, {createWebpack}) => {
 
 And finally in your `index.js` file (assuming you have your base component named `App.vue`):
 
-```
+```javascript
 import Vue from 'vue';
 import App from './App.vue';
 

@@ -56,7 +56,7 @@ module.exports = (core, config) => ({
 
 The `config` parameter is passed on from your service provider registration:
 
-```
+```javascript
 core.register(AuthServiceProvider, {
   args: {
     adapter: customAdapter
