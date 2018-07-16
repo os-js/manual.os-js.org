@@ -59,6 +59,18 @@ npm run build:manifest
 npm run build:dist
 ```
 
+## Server Arguments
+
+The server accepts a set of arguments that *overrides* configuration files.
+
+> NOTE: If you start the server with `npm`, you have to do `npm run serve -- --arg=value`
+
+* `--logging=boolean` Enable http logging (same as config `logging`)
+* `--morgan=string` Morgan logging options (same as config `morgan`)
+* `--port=integer` HTTP Server port (same as config `port`)
+* `--development=boolean` Development mode (same as config `development`)
+* `--secret=string` Session secret (same as config `session.options.secret`)
+
 ## Configuration
 
 You can manage your configurations via [JSON](https://github.com/os-js/osjs-json-config-cli) just like in v2, but is now available in a separate module.
