@@ -40,6 +40,7 @@
 * [VFS](tutorial/vfs/README.md)
 * [Bus](tutorial/bus/README.md)
 * [Panel Item](tutorial/panel/README.md)
+* [Widget](tutorial/widget/README.md)
 * [Theme](tutorial/theme/README.md)
 * [Auth](tutorial/auth/README.md)
 * [Settings](tutorial/settings/README.md)

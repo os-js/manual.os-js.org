@@ -20,6 +20,8 @@ class MyPanelItem extends PanelItem {
 }
 ```
 
+## Registration
+
 ```javascript
 // Static
 osjs.register(PanelServiceProvider, {
