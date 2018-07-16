@@ -92,7 +92,7 @@ export default class MyWidget extends Widget {
     };
 
     // Values are passed down to the 'options' object
-    const value = dialog => dialog.getValues();
+    const value = dialog => dialog.app.getValues();
 
     // Use the internal dialog helper
     this._createDialog({
