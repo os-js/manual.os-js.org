@@ -4,7 +4,7 @@ Widgets floats on the bottom layer of the Desktop.
 
 ## Custom Widget
 
-```
+```javascript
 import {Panel} from '@osjs/panels';
 
 export default class MyWidget extends Widget {
@@ -61,6 +61,45 @@ export default class MyWidget extends Widget {
       onclick: () => console.log('Hello!')
     }];
   }
+}
+```
+
+### Attaching a dialog
+
+```javascript
+import {h, app} from 'hyperapp';
+import {TextField} from '@osjs/gui';
+
+export default class MyWidget extends Widget {
+
+  someMethod() {
+    // Renders dialog contents. By default OS.js uses Hyperapp,
+    // but you're not restriced to use this.
+    const render = ($content, dialogWindow, dialog) => {
+      dialog.app = app({
+        myText: this.options.myText
+      }, {
+        setText: myText => state => ({myText}),
+        getValues: () => state => state
+      }, (state, actions) => {
+        return dialog.createView([
+          h(TextField, {
+            value: state.myText,
+            oninput: (ev, value) => actions.setText(value)
+          })
+        ]);
+      }, $content);
+    };
+
+    // Values are passed down to the 'options' object
+    const value = dialog => dialog.getValues();
+
+    // Use the internal dialog helper
+    this._createDialog({
+      title: 'Some Title'
+    }, render, value);
+  }
+
 }
 ```
 
