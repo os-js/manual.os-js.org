@@ -4,7 +4,15 @@
 
 For development you need `git`, `node` and `npm` (see installation requirements).
 
-Use the provided `.eslintrc` and `.csslintrc` files to keep consistent code styles.
+## Testing
+
+Use the provided `.eslintrc` and `.stylelint` files to keep consistent code styles.
+
+All official packages provides running one or more of these tasks:
+
+* `npm run eslint` - ESLint pass
+* `npm run stylelint` - Stylelint pass
+* `npm run test` - Jest unit tests
 
 ## Environment
 
@@ -87,7 +95,8 @@ This is the basic workflow for making submissions:
 
 * [Fork](https://help.github.com/articles/fork-a-repo/) the repository you want to make changes to
 * Clone repository
-* **Create a new branch** (from up-to-date `master`)
+* *Create a new branch* (from up-to-date `master`)
+* **Test your work** (see above)
 * Commit your work
 * Create a [pull request](https://help.github.com/articles/about-pull-requests/)
 
