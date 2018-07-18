@@ -4,4 +4,5 @@ If you want to submit your contribution, contact me by email or join the [gitter
 
 ## Providers
 
+* https://github.com/andersevenrud/osjs-dbus-provider
 * https://github.com/andersevenrud/osjs-pm2-provider
