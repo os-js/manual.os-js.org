@@ -62,3 +62,39 @@ To register a singleton:
 core.singleton('service-name', () => new SomeClass({foo: 'bar'}));
 ```
 
+## Basic example
+
+Register a singleton in form of an object with a method that opens `alert()`:
+
+```javascript
+// src/client/myprovider.js
+import {ServiceProvider} from '@osjs/common';
+
+export class MyApiServiceProvider extends ServiceProvider
+{
+  provides() {
+    return ['namespace/api'];
+  }
+
+  async init() {
+    this.core.singleton('namespace/api', () => ({
+      greet: name => alert(`Hello ${name}!`)
+    }));
+  }
+}
+
+// src/client/index.js
+import {MyApiServiceProvider} from './myprovider.js';
+
+// ...
+osjs.register(MyApiServiceProvider);
+// ...
+```
+
+You can test this by entering the following in your browser developer console:
+
+```javascript
+OSjs.make('namespace/api').greet('World');
+```
+
+and you should see a browser alert box.
