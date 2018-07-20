@@ -98,14 +98,14 @@ All components uses Flexbox and supports the following props:
 
 ### Containers
 
-| Name                | Description                       | Custom Props                                      |
-| ------------------- | --------------------------------- | ------------------------------------------------- |
-| Box                 | Flexbox container (padded)        | *See above*                                       |
-| BoxContainer        | Flexbox container (simple)        | *See above*                                       |
-| Toolbar             | Flexbox container (spaced)        | *See above*                                       |
-| Menubar             | Toolbar, except for menus         |                                                   |
-| Tabs                | Tabbed container(s)               | `{labels: [String,...]}`                          |
-| Panes               | Resizable container(s)            | `{orientation: String, sizes: Array[Number,...]}` |
+| Name                | Description                                   | Custom Props                                      |
+| ------------------- | --------------------------------------------- | ------------------------------------------------- |
+| Box                 | Flexbox container (padded)                    | *See above*                                       |
+| BoxContainer        | Flexbox container (simple, like a `div`)      | *See above*                                       |
+| Toolbar             | Flexbox container (spaced)                    | *See above*                                       |
+| Menubar             | Toolbar, except for menus                     |                                                   |
+| Tabs                | Tabbed container(s)                           | `{labels: [String,...]}`                          |
+| Panes               | Resizable container(s)                        | `{orientation: String, sizes: Array[Number,...]}` |
 
 ### Fields
 
@@ -140,3 +140,91 @@ oninput: (event, value) => {}
 | Progressbar         | A progressbar with label           | `{value: Number}`      |
 | Image               | `<img />` element                  |                        |
 | Video               | `<video />` element                |                        |
+
+## Component Examples
+
+### Basic Layout
+
+A simple three-row layout:
+
+```javascript
+h(Box, {grow: 1, shrink: 1}, [
+  h(BoxContainer, {}, 'Row 1'),
+  h(BoxContainer, {}, 'Row 2'),
+  h(BoxContainer, {}, 'Row 3')
+])
+```
+
+### Basic Layout, continued
+
+Same as above, but contained within an outer `Box` with a `Menubar` and `Statusbar`
+
+```javascript
+h(Box, {grow: 1, shrink: 1}, [
+  h(Menubar, {}, [
+    h(MenubarItem, {onclick: () => alert('clicked')}, 'Menubar Item')
+  ]),
+  h(Box, {grow: 1}, [
+    h(BoxContainer, {}, 'Row 1'),
+    h(BoxContainer, {}, 'Row 2'),
+    h(BoxContainer, {}, 'Row 3')
+  ]),
+  h(Statusbar, {}, 'Some status here')
+])
+```
+
+### Using Inputs
+
+Reactive value for inputs:
+
+```javascript
+app({
+  myfield: 'Initial value'
+}, {
+  setValue: myfield => () => ({myfield})
+}, (state, actions) => {
+  return h(Box, {}, [
+    h(TextField, {
+      value: state.myfield,
+
+      // All input comonents put in a second argument containing the value for certain input events
+      oninput: (ev, value) => actions.setValue(value)
+    })
+  ]);
+}, document.body);
+```
+
+### Using ListView
+
+Certain components, like ListView needs some context and works a little bit different:
+
+```javascript
+import {listView} from '@osjs/gui'; // Lower-case l
+
+const initialRows = [{
+  columns: [1, 2, 3],
+  data: {foo: 'bar'}
+}];
+
+app({
+  mylistview: listView.state({
+    // Set up the initial state
+    columns: ['A', 'B', 'C'],
+    rows: initialRows
+ }),
+}, {
+  // Register callback actions
+  mylistview: listView.actions({
+    select: ({data, index, ev}) => console.log('Selected', data, index, ev),
+    activate: ({data, index, ev}) => console.log('Activated', data, index, ev),
+    contextmenu: ({data, index, ev}) => console.log('Menu', data, index, ev)
+ }),
+}, (state, actions) => {
+  // Creates a new component based on the state and actions created
+  const MyListView = listView.component(state.mylistview, actions.mylistview);
+
+  h(Box, {grow: 1, shrink: 1}, [
+    h(MyListView, {box: {grow: 1, shrink: 1}})
+  ])
+}, document.body);
+```
