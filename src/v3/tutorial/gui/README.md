@@ -5,7 +5,7 @@ OS.js uses [Hyperapp](https://hyperapp.js.org/) for its GUI components by defaul
 *This does not mean that you are restricted to usage of Hyperapp. You can use React, Vue or anything you like.*
 
 
-## Basic Example
+## Basic Usage
 
 ![Basic Example](example-1.png)
 
@@ -73,6 +73,36 @@ const createView = (state, actions) => (
     <button type="button" onclick={() => actions.increment()}>Increment counter</button>
   </div>
 );
+```
+
+## Contextmenu
+
+You can create (context) menus via the GUI provider:
+
+```javascript
+core.make('osjs/contextmenu').show({
+  position: Event || Element || Object,
+
+  menu: [{
+    label: 'Some label',
+    onclick: ev => console.log('Clicked')
+  }, {
+    label: 'Sub items',
+    items: [{
+      label: 'Sub item'
+      onclick: ev => console.log('Clicked sub item')
+    }, {
+      label: 'Check item 1'
+      checked: true,
+      onclick: ev => console.log('Clicked sub item')
+    }, {
+      label: 'Check item 2'
+      checked: true,
+      onclick: ev => console.log('Clicked sub item')
+    }]
+  }]
+
+});
 ```
 
 ## Components
