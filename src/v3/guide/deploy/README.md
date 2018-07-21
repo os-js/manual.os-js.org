@@ -116,3 +116,39 @@ To set the session store, update your configuration:
 The OS.js server is *stateless*, so you can scale this over many instances as long as you share the [session](#session) data.
 
 This can be achieved using Redis or any non-local session storage module (default is local filesystem).
+
+## Running separately
+
+You can also run the client and server separately (even physically), with some extra configuration.
+
+> Note that if you're hosting on different hostnames, you have to set up CORS. [Example for nginx](https://enable-cors.org/server_nginx.html).
+
+Serve the `dist/` directory where your client is, and on the server, just run with the normal `npm run serve` command or methods described above.
+
+In this example we configure:
+
+* **Client** http://my-awesome-most.com/osjs
+* **Server** http://some-other-host.com/osjs/server
+
+```javascript
+// src/client/config.js
+// By default all of these settings are detected with the URL youre using to visit OS.js
+
+{
+  // HTTP Requests
+  http: {
+    hostname: 'some-other-host.com',
+    port: null,
+    path: '/osjs/server'
+  },
+
+  // WebSocket requests
+  ws: {
+    hostname: 'some-other-host.com',
+    port: null,
+    path: '/osjs/server'
+  },
+}
+```
+
+By default the HTTP protocol of the client is used, but it can be overridden with ex. `protocol: 'https:'`.
