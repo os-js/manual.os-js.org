@@ -52,6 +52,7 @@
 ## Filesystem
 
 * https://github.com/os-js/osjs-gdrive-adapter
+* https://github.com/os-js/osjs-webdav-adapter
 
 ## CLI
 
