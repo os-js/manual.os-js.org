@@ -2,6 +2,12 @@
 
 OS.js provides options for customizing the settings storage.
 
+## Installation
+
+```
+npm install --save some-provider
+```
+
 ## Setup
 
 > Please note, on `node` you should use `require` instead of `import/export`.
