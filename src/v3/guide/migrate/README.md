@@ -46,7 +46,6 @@ npm link
 // In OS.js root directory
 npm link <your-package-name>
 npm package:discover
-npm build:manifest
 ```
 
 Congratulations. You've migrated your application :)

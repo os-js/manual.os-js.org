@@ -9,7 +9,6 @@ All commands are provided via `npm` scipts:
 * `build` - Builds core and all packages
 * `watch` - Same as build, but watches for changes
 * `serve` - Starts the server
-* `build:manifest` - Builds package manifest (exposed to the client)
 * `package:discover` - Discovers and links npm pakages
 * `package:create` - Create a new package
 

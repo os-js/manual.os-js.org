@@ -33,11 +33,8 @@ npm install
 npm install --save @osjs/standard-theme
 npm install --save @osjs/example-application
 
-# Link your npm installed packages
+# Discover and link installed packages
 npm run package:discover
-
-# Create package manifest
-npm run build:manifest
 ```
 
 Then proceed with building:

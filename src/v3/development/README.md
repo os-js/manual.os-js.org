@@ -65,7 +65,7 @@ npm link @osjs/client
 
 Packages work as above. They come in form of a npm package that you either install or link.
 
-Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run build:manifest` to update the global package manifest.
+Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run package:discover` to update the global package manifest.
 
 ```bash
 # Check out the example
@@ -85,7 +85,6 @@ npm link
 cd ../../
 
 npm run package:discover
-npm run build:manifest
 ```
 
 > Notes:
