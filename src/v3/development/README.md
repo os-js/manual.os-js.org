@@ -57,7 +57,7 @@ npm link @osjs/client
 ```
 
 > Notes:
-> 1. Windows users might have to apply `{symlinks:false}` to the webpack (`createWebpack()`) configuration files. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled.
+> 1. Windows users might have to apply `{resolve: {symlinks:false}}` to the Webpack configuration. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled.
 > 2. Note that the linking only applies to the package, not its dependencies. To also change the packages dependencies, you have to link these as well.
 > 3. It is recommended that you set up npm to install global packages as your own [system user](https://docs.npmjs.com/files/npmrc#files) to avoid using root.
 
@@ -90,6 +90,7 @@ npm run build:manifest
 
 > Notes:
 > 1. Package name **must be unique**.
+> 2. You can use `npm run package:create` to create a new package from a wizard instead of cloning manually.
 
 ### Server
 
