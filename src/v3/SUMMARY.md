@@ -21,7 +21,6 @@
 * Configure
   * [Client](config/README.md#client)
   * [Server](config/README.md#server)
-  * [Webpack](config/README.md#webpack)
   * [Caveats](config/README.md#caveats)
 * Development
   * [Introduction](development/README.md#introduction)

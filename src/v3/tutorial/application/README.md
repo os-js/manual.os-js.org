@@ -95,8 +95,8 @@ The `metadata.json` file describes your application and contains a list of files
 
   // Load these files when launching (usually generated with Webpack)
   "files": [
-    "index.js",
-    "index.css"
+    "main.js",
+    "main.css"
   ]
 }
 ```

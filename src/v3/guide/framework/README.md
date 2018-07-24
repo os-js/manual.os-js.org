@@ -12,17 +12,17 @@ Install these dependencies (inside the application source folder):
 npm install --save-dev @babel/core @babel/preset-react react react-dom
 ```
 
-Then, add the following to your `webpack.js` file:
+Then, add the following to your `.babelrc` file:
 
-```javascript
-module.exports = (options, {createWebpack}) => createWebpack(__dirname, {
-  babel: {
-    presets: [
-      require.resolve('@babel/preset-react')
-    ]
-  },
-  // ... the rest of your file here ...
-});
+```json
+{
+  "presets": [
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ]
+}
 ```
 
 And finally in your `index.js` file:
@@ -55,36 +55,38 @@ Install these dependencies (inside the application source folder):
 npm install --save-dev babel-preset-vue vue vue-loader vue-template-compiler webpack
 ```
 
-Then, add the following to your `webpack.js` file:
+Then, add the following to your `.babelrc` file:
+
+```json
+{
+  "presets": [
+    "babel-preset-vue"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ]
+}
+```
+
+Then, add the following to your `webpack.config.js` file:
 
 ```javascript
 const {VueLoaderPlugin} = require('vue-loader');
-module.exports = (options, {createWebpack}) => {
-  const config = createWebpack(__dirname, {
-    outputPath: path.resolve(options.dist.packages, metadata.name),
-    babel: {
-      presets: [
-        require.resolve('babel-preset-vue')
-      ]
-    },
-    plugins: [
-      new VueLoaderPlugin()
-    ],
+module.exports = {
+  plugins: [
+    new VueLoaderPlugin()
+  ],
+  resolve: {
+    alias: {
+       'vue$': 'vue/dist/vue.esm.js'
+     }
+  },
+  module: {
     rules: [{
       test: /\.vue$/,
       loader: 'vue-loader',
-    }],
-    entry: {
-      index: [
-        path.resolve(__dirname, 'index.js'),
-        path.resolve(__dirname, 'index.scss')
-      ]
-    }
-  });
-  config.resolve.alias = {
-    'vue$': 'vue/dist/vue.esm.js'
-  };
-  return config;
+    }]
+  }
 };
 ```
 

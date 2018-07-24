@@ -14,6 +14,13 @@ All official packages provides running one or more of these tasks:
 * `npm run stylelint` - Stylelint pass
 * `npm run test` - Jest unit tests
 
+## Building
+
+All official packages provides running one or more of these tasks:
+
+* `npm run build` Build changes once
+* `npm run watch` Watch and build changes automatically
+
 ## Environment
 
 Using the required tools (above) you can set up a development enviroment in a couple of minutes.
@@ -54,32 +61,35 @@ npm link @osjs/client
 > 2. Note that the linking only applies to the package, not its dependencies. To also change the packages dependencies, you have to link these as well.
 > 3. It is recommended that you set up npm to install global packages as your own [system user](https://docs.npmjs.com/files/npmrc#files) to avoid using root.
 
-You can now run `npm watch:dist` to automatically rebuild changes, or alternatively manually run `npm build:dist`.
-
 ### Packages
 
-OS.js packages (applications and themes) are set up in `src/packages/`. Usually packages are installed via the [CLI](../guide/CLI/README.md) but you can freely create or place folders in here manually.
-
-For an example [see the provided application example](https://github.com/os-js/osjs-example-application).
+Packages work as above. They come in form of a npm package that you either install or link.
 
 Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run build:manifest` to update the global package manifest.
 
 ```bash
 # Check out the example
-git clone https://github.com/os-js/osjs-example-application.git src/packages/MyApplication
+git clone https://github.com/os-js/osjs-example-application.git src/osjs-example-application
+cd src/osjs-example-application
 
-# Set your own name and title, etc.
-edit src/packages/MyApplication/metadata.json
-edit src/packages/MyApplication/index.js
+# Make changes
+edit metadata.json
+edit index.js
 
-# Update global manifest
+# Build
+npm run build
+
+# Link (you only need to do this once)
+npm link
+
+cd ../../
+
+npm run package:discover
 npm run build:manifest
 ```
 
 > Notes:
 > 1. Package name **must be unique**.
-
-You can now run `npm run watch:dist` to automatically watch and rebuild changes, or alternatively manually run `npm build:dist` (or `npm run build:dist -- --application=PackageName`).
 
 ### Server
 

@@ -1,6 +1,6 @@
 # Configuration
 
-You can find the configuration files (by default) in `src/client/config.js`, `src/server/config.js` and `src/client/webpack.config.js`.
+You can find the configuration files (by default) in `src/client/config.js` and `src/server/config.js`.
 
 > NOTE: This list is not complete. See `src/config.js` in `@osjs/client` and `@osjs/server` for more information.
 
@@ -51,39 +51,6 @@ You can find the configuration files (by default) in `src/client/config.js`, `sr
 | proxy[].source              | `String or RegExp`  | Proxy source                                                      |
 | proxy[].destination         | String              | Proxy destination                                                 |
 | proxy[].options             | Object              | Proxy [options](https://github.com/villadora/express-http-proxy)  |
-
-## Webpack
-
-The module `osjs-cli` builds a Webpack configuration for you.
-
-The `createWebpack()` method used returns a Webpack configuration tree that you can further modify.
-
-> It's recommended to use `require.resolve` when defining plugins and presets for webpack and babel.
-
-| Key                         | Default value      | Description                                             |
-| --------------------------- | ------------------ | ------------------------------------------------------- |
-| mode                        | `development`      | Compile mode                                            |
-| context                     | `<auto>`           | Context                                                 |
-| splitChunks                 | `false`            | Split chunks                                            |
-| runtimeChunk                | `false`            | Split runtime chunk                                     |
-| minimize                    | `<auto>`           | Minimizes bundles                                       |
-| sourceMap                   | `true`             | Provide sourcemap for bundles                           |
-| devtool                     | `source-map`       | Sourcemap generation type                               |
-| outputPath                  | `<auto>`           | Bundle output path                                      |
-| symlinks                    | `true`             | Resolve symlinks                                        |
-| entry                       | Object/Array       | Entry definitions                                       |
-| plugins                     | Array              | Plugin definitions                                      |
-| rules                       | Array              | Rule definitions                                        |
-| jsx                         | `false`            | Provide [JSX](https://www.npmjs.com/package/babel-plugin-transform-react-jsx) support |
-| define                      | Object             | Add [definitions](https://webpack.js.org/plugins/define-plugin/) |
-| copy                        | Array              | [Copy](https://github.com/webpack-contrib/copy-webpack-plugin) files |
-| html                        | Object             | Provide [HTML](https://github.com/jantimon/html-webpack-plugin) for bundle |
-| html.template               | `<auto>`           | Template filename                                       |
-| html.title                  | `OS.js`            | Title                                                   |
-| babel                       | Object             | Babel rc object                                         |
-| babel.cacheDirectory        | `true`             | Babel cache                                             |
-| babel.plugins               | Array              | Babel plugins                                           |
-| babel.presets               | Array              | Babel presets                                           |
 
 # Caveats
 
