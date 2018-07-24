@@ -54,14 +54,22 @@ const createView = (state, actions) => h('div', {}, [
 
 You can also use JSX syntax instead of the programatic approach.
 
-In your `webpack.js` file:
+First: `npm install --save-dev @babel/plugin-transform-react-jsx`
 
-```javascript
-module.exports = (options, {createWebpack}) => createWebpack(__dirname, {
-  jsx: {
-    pragma: 'h'
-  }
-});
+Then in your `.babelrc` file:
+
+```json
+{
+  "presets": [
+    "@babel/preset-env",
+    ["@babel/plugin-transform-react-jsx", {
+      "pragma": "h"
+    }]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ]
+}
 ```
 
 and then in your source:
