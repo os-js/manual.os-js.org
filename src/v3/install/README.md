@@ -19,18 +19,24 @@ Clone the base repository (or download latest release) and install node modules:
 ```bash
 git clone -b v3 --single-branch https://github.com/os-js/OS.js.git
 cd OS.js
-npm install
 ```
 
 ### Manual Setup
 
-Install themes and packages:
+Install dependencies:
 
 ```bash
-npm install --save @osjs/standard-theme
-npm install --save @osjs/filemanager-application
+# Install base dependencies
+npm install
 
+# Install a selection of themes and applications
+npm install --save @osjs/standard-theme
+npm install --save @osjs/example-application
+
+# Link your npm installed packages
 npm run package:discover
+
+# Create package manifest
 npm run build:manifest
 ```
 
