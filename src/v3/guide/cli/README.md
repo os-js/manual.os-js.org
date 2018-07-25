@@ -9,10 +9,10 @@ All commands are provided via `npm` scipts:
 * `build` - Builds core and all packages
 * `watch` - Same as build, but watches for changes
 * `serve` - Starts the server
-* `package:discover` - Discovers and links npm pakages
+* `package:discover` - Discovers linked and installed npm packages
 * `package:create` - Create a new package
 
-> You can also use `npx osjs-cli <task>`. Note, when using this drop the `--` from your commands.
+> You can also use `npx osjs-cli <task>`.
 
 > If you're using `docker-compose` simply prepend this to perform the commands inside the image: `docker-compose exec osjs ...`.
 
