@@ -79,7 +79,7 @@ cd src/osjs-example-application
 edit metadata.json
 edit index.js
 
-# Build source changes
+# Build source changes (or you can run `npm run watch` in the background)
 npm run build
 
 # Link your npm package just as with a Module
