@@ -16,7 +16,6 @@ All commands are provided via `npm` scipts:
 
 > If you're using `docker-compose` simply prepend this to perform the commands inside the image: `docker-compose exec osjs ...`.
 
-
 ## Server Arguments
 
 The server accepts a set of arguments that *overrides* configuration files.

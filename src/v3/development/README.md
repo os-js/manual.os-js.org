@@ -6,6 +6,15 @@ For development you need `git`, `node` and `npm` (see installation requirements)
 
 > Note: **It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
+## Docker
+
+If you're using Docker, you do your work normally on the local filesystem, but when performing commands and tasks related to building and dependency management, you have to run them within the context of the container:
+
+```
+# Watch for changes
+docker-compose exec osjs npm run watch
+```
+
 ## Testing
 
 Use the provided `.eslintrc` and `.stylelint` files to keep consistent code styles.
