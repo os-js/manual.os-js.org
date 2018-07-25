@@ -77,9 +77,9 @@ npm link @osjs/client
 
 ### Packages
 
-Packages work as above. They come in form of a npm package that you either install or link.
+You can use `npm run package:create` to create a new package from a wizard.
 
-Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run package:discover` to update the global package manifest.
+Packages work in the same way as general modules, except there's an extra CLI command you have to run:
 
 ```bash
 #
@@ -108,8 +108,8 @@ npm run package:discover
 ```
 
 > Notes:
-> 1. Package name **must be unique**.
-> 2. You can use `npm run package:create` to create a new package from a wizard instead of cloning manually.
+> 1. Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run package:discover` to update the global package manifest.
+> 2. Package name **must be unique**.
 > 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
 
 ### Server
