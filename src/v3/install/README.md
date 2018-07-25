@@ -33,7 +33,7 @@ npm install
 npm install --save @osjs/standard-theme
 npm install --save @osjs/example-application
 
-# Discover and link installed packages
+# Discover installed packages
 npm run package:discover
 ```
 
