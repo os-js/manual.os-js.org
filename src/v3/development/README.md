@@ -49,14 +49,25 @@ With the `npm link` feature you can replace the different modules of OS.js with 
 Assuming you've already installed OS.js, this is an example of how you set up linking:
 
 ```bash
+#
+# Somewhere in your filesystem (or use src/ directory)
+#
+
 # First check out the code of package @osjs/client
 git clone https://github.com/os-js/osjs-client
 cd osjs-client
 
+# Build source changes (or you can run `npm run watch` in the background)
+npm run build
+
 # Then register the package in npm
 npm link
 
-# Finally in your OS.js root subscribe to the npm registered package
+#
+# In your OS.js root directory
+#
+
+# Subscribe to the npm registered package
 npm link @osjs/client
 ```
 
@@ -71,13 +82,13 @@ Packages work as above. They come in form of a npm package that you either insta
 Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run package:discover` to update the global package manifest.
 
 ```bash
-# Check out the @osjs/example-application package
-git clone https://github.com/os-js/osjs-example-application.git src/osjs-example-application
-cd src/osjs-example-application
+#
+# Somewhere in your filesystem (or use src/ directory)
+#
 
-# Make changes
-edit metadata.json
-edit index.js
+# Check out the @osjs/example-application package
+git clone https://github.com/os-js/osjs-example-application.git
+cd osjs-example-application
 
 # Build source changes (or you can run `npm run watch` in the background)
 npm run build
@@ -85,13 +96,14 @@ npm run build
 # Link your npm package just as with a Module
 npm link
 
-# Go back to the OS.js root directory
-cd ../../
+#
+# In your OS.js root directory
+#
 
 # Subscribe to the npm registered package
 npm link @osjs/example-application
 
-# Then discover installed and linked packages
+# Finally, discover installed and linked packages
 npm run package:discover
 ```
 
