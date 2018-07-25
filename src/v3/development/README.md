@@ -4,6 +4,8 @@
 
 For development you need `git`, `node` and `npm` (see installation requirements).
 
+> Note: **It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
+
 ## Testing
 
 Use the provided `.eslintrc` and `.stylelint` files to keep consistent code styles.
@@ -44,22 +46,23 @@ Official packages are scoped with `@osjs/<project>-<suffix>`.
 
 With the `npm link` feature you can replace the different modules of OS.js with local source-code. If you for example want to make changes to the `@osjs/client` you can check out its sources, run the linking and then make any changes you may want.
 
-Assuming you've already installed OS.js, this is how you set up linking:
+Assuming you've already installed OS.js, this is an example of how you set up linking:
 
 ```bash
-# Somewhere in your project folder
+# First check out the code of package @osjs/client
 git clone https://github.com/os-js/osjs-client
 cd osjs-client
+
+# Then register the package in npm
 npm link
 
-# In your OS.js installation
+# Finally in your OS.js root subscribe to the npm registered package
 npm link @osjs/client
 ```
 
 > Notes:
-> 1. Windows users might have to apply `{resolve: {symlinks:false}}` to the Webpack configuration. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled.
+> 1. Windows users might have to apply `{resolve: {symlinks:false}}` to the Webpack configuration. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled if nested deeply.
 > 2. Note that the linking only applies to the package, not its dependencies. To also change the packages dependencies, you have to link these as well.
-> 3. It is recommended that you set up npm to install global packages as your own [system user](https://docs.npmjs.com/files/npmrc#files) to avoid using root.
 
 ### Packages
 
@@ -76,20 +79,21 @@ cd src/osjs-example-application
 edit metadata.json
 edit index.js
 
-# Build
+# Build source changes
 npm run build
 
-# Link (you only need to do this once)
+# Link your npm package just as with a Module
 npm link
 
+# Go back to the OS.js root directory and discover installed and linked packages
 cd ../../
-
 npm run package:discover
 ```
 
 > Notes:
 > 1. Package name **must be unique**.
 > 2. You can use `npm run package:create` to create a new package from a wizard instead of cloning manually.
+> 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
 
 ### Server
 
