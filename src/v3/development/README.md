@@ -71,7 +71,7 @@ Packages work as above. They come in form of a npm package that you either insta
 Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run package:discover` to update the global package manifest.
 
 ```bash
-# Check out the example
+# Check out the @osjs/example-application package
 git clone https://github.com/os-js/osjs-example-application.git src/osjs-example-application
 cd src/osjs-example-application
 
@@ -85,8 +85,13 @@ npm run build
 # Link your npm package just as with a Module
 npm link
 
-# Go back to the OS.js root directory and discover installed and linked packages
+# Go back to the OS.js root directory
 cd ../../
+
+# Subscribe to the npm registered package
+npm link @osjs/example-application
+
+# Then discover installed and linked packages
 npm run package:discover
 ```
 
