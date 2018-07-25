@@ -57,7 +57,7 @@ Assuming you've already installed OS.js, this is an example of how you set up li
 git clone https://github.com/os-js/osjs-client
 cd osjs-client
 
-# Build source changes (or you can run `npm run watch` in the background)
+# Build source (or `npm run watch` in while developing to automatically rebuild)
 npm run build
 
 # Then register the package in npm
@@ -90,7 +90,7 @@ Packages work in the same way as general modules, except there's an extra CLI co
 git clone https://github.com/os-js/osjs-example-application.git
 cd osjs-example-application
 
-# Build source changes (or you can run `npm run watch` in the background)
+# Build source (or `npm run watch` in while developing to automatically rebuild)
 npm run build
 
 # Link your npm package just as with a Module
@@ -132,3 +132,11 @@ This is the basic workflow for making submissions:
 * Create a [pull request](https://help.github.com/articles/about-pull-requests/)
 
 It is important to write [good commit messages](https://github.com/erlang/otp/wiki/writing-good-commit-messages), having a clean git history and using the provided linter configurations. This saves a lot of time when reviewing the work and things gets merged faster.
+
+## Publishing
+
+It is recommended that you distribute your modules and packages in a compiled form. The official npm packages does this and delivers the files in a `dist/` directory.
+
+Using `NODE_ENV=production` is recommended to avoid bloat and allow for proper tree-shaking, etc.
+
+You can distribute the sources in addition, but it all depends on the target (ES vs commonjs etc).
