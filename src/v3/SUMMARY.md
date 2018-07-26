@@ -24,6 +24,7 @@
   * [Introduction](development/README.md#introduction)
   * [Environment](development/README.md#environment)
   * [Contributing](development/README.md#contributing)
+  * [Publishing](development/README.md#publishing)
 
 ### Tutorials
 
