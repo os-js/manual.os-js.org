@@ -181,7 +181,9 @@ This is a typical setup of `package.json` that distributes only the runtime file
     "dist/",
     "server.js",
     "metadata.json"
-  ]
+  ],
+  "main": "dist/main.js",
+  "styles": "dist/main.css"
 }
 ```
 
