@@ -88,6 +88,16 @@ npm link @osjs/client
 
 You can use `npm run package:create` to create a new package from a wizard.
 
+Packages require a special entry in the `package.json` file in order for discovery to work:
+
+```json
+{
+  "osjs": {
+    "type": "package"
+  }
+}
+```
+
 Packages work in the same way as general modules, except there's an extra CLI command you have to run:
 
 ```bash
