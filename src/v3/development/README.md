@@ -177,13 +177,16 @@ This is a typical setup of `package.json` that distributes only the runtime file
     "stylelint": "stylelint index.scss src/**/*.scss",
     "prepublishOnly": "npm run test && npm run eslint && npm run stylelint && rm ./dist/* && NODE_ENV=production npm run build"
   },
+
   "files": [
     "dist/",
     "server.js",
     "metadata.json"
   ],
+
+  // These are not required for packages
   "main": "dist/main.js",
-  "styles": "dist/main.css"
+  "style": "dist/main.css"
 }
 ```
 

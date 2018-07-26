@@ -4,6 +4,8 @@ You can use the [official example package](https://github.com/os-js/osjs-example
 
 To generate a new package using the example via CLI run `npm run package:create`.
 
+> The created package will have a basic Babel, SASS and eslint/stylelint setup.
+
 ## Creation
 
 Typically `index.js`:
