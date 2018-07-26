@@ -130,6 +130,7 @@ npm run package:discover
 > 1. Each time you add/remove (or change the `metadata.json`) a package you need to run `npm run package:discover` to update the global package manifest.
 > 2. Package name **must be unique**.
 > 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
+> 4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
 
 ### Server
 
