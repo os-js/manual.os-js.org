@@ -37,6 +37,7 @@
 * [GUI](tutorial/gui/README.md)
 * [VFS](tutorial/vfs/README.md)
 * [Bus](tutorial/bus/README.md)
+* [Clipboard](tutorial/clipboard/README.md)
 * [Panel Item](tutorial/panel/README.md)
 * [Widget](tutorial/widget/README.md)
 * [Theme](tutorial/theme/README.md)
