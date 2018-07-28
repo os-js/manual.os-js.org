@@ -74,7 +74,11 @@ win.on('event-name', (...args) => console.log(...args));
 * `minimize => (win)` - On minimize
 * `maximize => (win)` - On maximize
 * `raise => (win)` - On "un-minimize"
-* `restore => (win)` On "un-maximize"
+* `restore => (win)` - On "un-maximize"
+* `dragenter => (win, ev)` - On "drag enter"
+* `dragover => (win, ev)` - On "drag over"
+* `dragleave => (win, ev)` - On "drag leave"
+* `drop => (win, ev, data, files)` - On "drop"
 
 ## Methods
 
