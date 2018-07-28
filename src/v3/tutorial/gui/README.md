@@ -88,7 +88,7 @@ const createView = (state, actions) => (
 You can create (context) menus via the GUI provider:
 
 ```javascript
-core.make('osjs/contextmenu').show({
+core.make('osjs/contextmenu', {
   position: Event || Element || Object,
 
   menu: [{

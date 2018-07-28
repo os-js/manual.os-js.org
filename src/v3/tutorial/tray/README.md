@@ -9,12 +9,12 @@ You can place entries into the Tray which appears in the panel.
 You can spawn a tray entry using:
 
 ```javascript
-const entry = core.make('osjs/tray').create({
+const entry = core.make('osjs/tray', {
   title: 'My Tray Icon',
   icon: 'icon.src',
   onclick: ev => console.log('clicked'),
   oncontextmenu: ev => console.log('contextmenu')
-})
+});
 ```
 
 If you're using this in a application, you probably want to destroy it when the user quits the application:
