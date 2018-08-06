@@ -23,7 +23,7 @@ const win = core.make('osjs/window', options)
 * `id` A unique identifier
 * `title` The title
 * `parent` Parent window instance
-* `position` An object with `top/left` for position
+* `position` An object with `top/left` for position or a string like `center` / `topleft`
 * `dimension` An object with `width/height` for dimension
 * `attributes` A set of attributes
 * `state` Default state
