@@ -2,25 +2,23 @@
 
 Installation is done in a few simple steps and only takes a couple of minutes.
 
-## Requirements
-
-The only dependency is `node 8` or later (and `git` is recommended).
-
 ## Demo
 
-You can run a demo using docker without checkout out any source-code:
+You can run a demo using Docker without checkout out any source-code:
 
 ```bash
 docker run -p 8000:8000 osjs/osjs-v3:demo
 ```
 
-## Setup
+## Requirements
 
-Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing this on a remote server.
+The only dependency is `node 8` or later (and `git` is recommended).
 
-*When you're done, OS.js is set up by default to run on [http://localhost:8000](http://localhost:8000).*
+## Installation
 
-> NOTE: Do not use "sudo" or an administrator user for the setup procedure.
+Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing in a production environment.
+
+> **Do not use "sudo" or an administrator user for the setup procedure.** This might lead to permission and security issues.
 
 Clone the base repository (or download a compressed version of latest release):
 
@@ -51,6 +49,8 @@ npm run build
 npm run serve
 ```
 
+Now open [http://localhost:8000](http://localhost:8000) in your browser to launch OS.js.
+
 ### Docker Setup
 
 A Docker setup is also provided (mainly aimed at development). It performs all the necessary steps for you, including installation of some default packages:
@@ -59,6 +59,8 @@ A Docker setup is also provided (mainly aimed at development). It performs all t
 cp .env.example .env
 docker-compose up
 ```
+
+Now open [http://localhost:8000](http://localhost:8000) in your browser to launch OS.js.
 
 ## Upgrade
 
