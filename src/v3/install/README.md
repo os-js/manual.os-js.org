@@ -34,7 +34,7 @@ cd OS.js
 Install dependencies:
 
 ```bash
-# Install base dependencies
+# Install dependencies
 npm install
 
 # Install a selection of themes and applications
@@ -43,27 +43,20 @@ npm install --save @osjs/example-application
 
 # Discover installed packages
 npm run package:discover
-```
 
-Then proceed with building:
-
-```bash
+# Build the distribution
 npm run build
-```
 
-And finally start the server:
-
-```bash
+# And finally start the server
 npm run serve
 ```
 
 ### Docker Setup
 
-A Docker setup is also provided, which is set up by default to perform the above steps.
+A Docker setup is also provided (mainly aimed at development). It performs all the necessary steps for you, including installation of some default packages:
 
 ```bash
 cp .env.example .env
-edit .env
 docker-compose up
 ```
 
