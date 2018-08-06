@@ -14,7 +14,7 @@ docker run -p 8000:8000 osjs/osjs-v3:demo
 
 The only dependency is `node 8` or later (and `git` is recommended).
 
-## Installation
+## Setup
 
 Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing in a production environment.
 

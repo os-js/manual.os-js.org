@@ -15,7 +15,7 @@
 * Installation
   * [Demo](install/README.md#demo)
   * [Requirements](install/README.md#requirements)
-  * [Installation](install/README.md#installation)
+  * [Setup](install/README.md#setup)
   * [Upgrade](install/README.md#upgrade)
 * Configure
   * [Client](config/README.md#client)
