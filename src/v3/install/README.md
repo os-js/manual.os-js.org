@@ -44,7 +44,7 @@ npm install --save @osjs/example-application
 # Discover installed packages
 npm run package:discover
 
-# Build the distribution
+# Build the client bundle
 npm run build
 
 # And finally start the server
