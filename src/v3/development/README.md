@@ -46,6 +46,7 @@ OS.js has a format for naming different modules etc.:
 * `osjs-<project>-provider` -  Service Provider module
 * `osjs-<project>-adapter` - Adapters used ex. in a service provider
 * `osjs-<project>-theme` - Theme package
+* `osjs-<project>-icons` - Icons package
 * `osjs-<project>-cli` - CLI Plugin
 * `osjs-<project>` - Core modules
 
