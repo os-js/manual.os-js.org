@@ -43,6 +43,7 @@
 ## Themes
 
 * https://github.com/os-js/osjs-standard-theme
+* https://github.com/os-js/osjs-gnome-icons
 
 ## Authentication
 
