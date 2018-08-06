@@ -18,11 +18,11 @@ docker run -p 8000:8000 osjs/osjs-v3:demo
 
 Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing this on a remote server.
 
-When you're done, OS.js is set up by default to run on [http://localhost:8000](http://localhost:8000).
+*When you're done, OS.js is set up by default to run on [http://localhost:8000](http://localhost:8000).*
 
-> NOTE: Do not use "sudo" for any of these commands.
+> NOTE: Do not use "sudo" or an administrator user for the setup procedure.
 
-Clone the base repository (or download latest release) and install node modules:
+Clone the base repository (or download a compressed version of latest release):
 
 ```bash
 git clone -b v3 --single-branch https://github.com/os-js/OS.js.git
