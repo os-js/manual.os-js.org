@@ -1,4 +1,4 @@
-# Clipboard
+# Clipboard Tutorial
 
 The client provides a primitieve clipboard:
 

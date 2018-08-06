@@ -1,4 +1,4 @@
-# Customizing Login
+# Customizing Login Guide
 
 You can customize the login screen both visually and functionally.
 

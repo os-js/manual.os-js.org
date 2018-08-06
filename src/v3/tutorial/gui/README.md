@@ -1,4 +1,4 @@
-# GUI
+# GUI Tutorial
 
 OS.js uses [Hyperapp](https://hyperapp.js.org/) for its GUI components by default.
 

@@ -1,4 +1,4 @@
-# Deployment guide
+# Deployment Guide
 
 Follow the regular installation guide to set up your OS.js installation.
 

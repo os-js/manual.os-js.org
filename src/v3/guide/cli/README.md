@@ -1,4 +1,4 @@
-# CLI
+# CLI guide
 
 OS.js comes with a Node CLI utility that provides commands to manage your installation.
 

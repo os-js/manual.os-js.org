@@ -1,4 +1,4 @@
-# Auth
+# Auth Tutorial
 
 The `Auth` adapter handles authentication requests.
 

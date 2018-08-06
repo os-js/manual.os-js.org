@@ -1,4 +1,4 @@
-# Locale
+# Locale Tutorial
 
 The provided localization functions will use the user's locale settings or fall back to the default configuration.
 

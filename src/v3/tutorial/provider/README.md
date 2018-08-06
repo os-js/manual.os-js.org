@@ -1,4 +1,4 @@
-# Service Provider
+# Service Provider Tutorial
 
 A Service Provider registers services that provide features for OS.js.
 

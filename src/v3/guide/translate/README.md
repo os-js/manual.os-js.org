@@ -1,4 +1,4 @@
-# Translate
+# Translation Guide
 
 You can create or modify the translations in OS.js by following this guide.
 

@@ -1,4 +1,4 @@
-# Notification
+# Notification Tutorial
 
 Notifications are popup messages that can display a brief message.
 

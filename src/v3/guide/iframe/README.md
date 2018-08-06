@@ -1,4 +1,4 @@
-# IFrame Application
+# IFrame Application Guide
 
 You can use the [official example iframe package](https://github.com/os-js/osjs-example-iframe-application) as a bolilerplate for your project.
 

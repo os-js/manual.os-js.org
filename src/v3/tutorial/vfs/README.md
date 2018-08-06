@@ -1,4 +1,4 @@
-# VFS
+# VFS Tutorial
 
 The Virtual Filesystem (VFS) provides methods to use and manipulate local (or remote) filesystems.
 

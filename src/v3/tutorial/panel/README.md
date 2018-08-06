@@ -1,4 +1,4 @@
-# Panel Item
+# Panel Item Tutorial
 
 Panel Items are containers placed inside a Panel.
 

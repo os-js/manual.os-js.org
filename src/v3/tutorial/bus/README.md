@@ -1,4 +1,4 @@
-# Bus
+# Bus Tutorial
 
 A bus (event handler/event dispatcher) provides methods to assign and emit events.
 

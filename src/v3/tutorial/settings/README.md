@@ -1,4 +1,4 @@
-# Settings
+# Settings Tutorial
 
 The `Settings` adapter handles settings requests.
 

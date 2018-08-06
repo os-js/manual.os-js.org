@@ -1,4 +1,4 @@
-# Dialog
+# Dialog Tutorial
 
 Dialogs are [Window](../window/README.md)s with pre-defined templates and actions.
 

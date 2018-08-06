@@ -1,4 +1,4 @@
-# Window
+# Window Tutorial
 
 Windows are floating containers that you can use to render any content. See [GUI](../gui/README.md) tutorial on how to design content using OS.js GUI libraries.
 
