@@ -10,7 +10,7 @@ Building is done with [Webpack](https://webpack.js.org/). See [configuration art
 
 ## Client
 
-The client is written in vanilla JavaScript (ES2015+) and Sass (CSS) and split up into several [modules](../official/README.md) which are bundled together.
+The client is written in ES6+ and SASS CSS and split up into several [modules](../official/README.md) which are bundled together.
 
 Runs in any modern browser (IE10+) including mobile.
 
@@ -52,7 +52,7 @@ This script has the same interface as a Service Provider (init/start/destroy).
 
 ### Themes
 
-A theme behaves much like an Application with exception of not having a server-side script.
+Themes are built just like Applications and consists of two types: Styles and Icons.
 
 ## Startup procedure
 
