@@ -31,7 +31,7 @@ cd OS.js
 
 ### Manual Setup
 
-Install dependencies:
+To install locally you have to run a couple of commands to set up your distribution:
 
 ```bash
 # Install dependencies
