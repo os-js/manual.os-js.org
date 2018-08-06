@@ -2,6 +2,14 @@
 
 Installation is done in a few simple steps and only takes a couple of minutes.
 
+## Requirements
+
+The only dependency is `node 8` or later and `git` is recommended.
+
+A node Docker setup is also provided so you don't need to have node installed locally (or want to have an isolated environment).
+
+Runs in any modern web browser (minimum target is IE10+).
+
 ## Demo
 
 You can run a demo using Docker without checkout out any source-code:
@@ -9,10 +17,6 @@ You can run a demo using Docker without checkout out any source-code:
 ```bash
 docker run -p 8000:8000 osjs/osjs-v3:demo
 ```
-
-## Requirements
-
-The only dependency is `node 8` or later (and `git` is recommended).
 
 ## Setup
 

@@ -13,8 +13,8 @@
 ### Getting Started
 
 * Installation
-  * [Demo](install/README.md#demo)
   * [Requirements](install/README.md#requirements)
+  * [Demo](install/README.md#demo)
   * [Setup](install/README.md#setup)
   * [Upgrade](install/README.md#upgrade)
 * Configure
