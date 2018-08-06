@@ -30,7 +30,7 @@ Install dependencies:
 npm install
 
 # Install a selection of themes and applications
-npm install --save @osjs/standard-theme
+# The default setup only comes with the theme(s)
 npm install --save @osjs/example-application
 
 # Discover installed packages
