@@ -6,6 +6,14 @@ Installation is done in a few simple steps and only takes a couple of minutes.
 
 The only dependency is `node 8` or later (and `git` is recommended).
 
+## Demo
+
+You can run a demo using docker without checkout out any source-code:
+
+```bash
+docker run -p 8000:8000 osjs/osjs-v3:demo
+```
+
 ## Setup
 
 Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing this on a remote server.
