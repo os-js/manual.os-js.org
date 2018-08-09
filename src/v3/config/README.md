@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Configuration Manual
+---
+
 # Configuration
 
 You can find the configuration files (by default) in `src/client/config.js` and `src/server/config.js`.

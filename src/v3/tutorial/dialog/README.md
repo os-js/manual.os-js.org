@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Dialog Tutorial
+---
+
 # Dialog Tutorial
 
 Dialogs are [Window](../window/README.md)s with pre-defined templates and actions.

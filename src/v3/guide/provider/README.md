@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Service Provider Guide
+---
+
 # Service Provider Guide
 
 OS.js provides options for customizing the settings storage.

@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Migraion Guide
+---
+
 # Migration Guide
 
 ## 3.0.0 - July 24th 2018

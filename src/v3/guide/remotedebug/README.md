@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Remote Debugging Guide
+---
+
 # Remote Debugging Guide
 
 You can use software like [weinre](http://people.apache.org/~pmuellr/weinre/docs/latest/) to get access to a web developer console on remote devices, which this guide will walk you through setting up:

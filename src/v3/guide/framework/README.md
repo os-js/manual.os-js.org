@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Frameworks Guide
+---
+
 # Frameworks Guide
 
 > Please note that mixing UI frameworks is not recommended. So, if you've set up your application with JSX for Hyperapp, this might conflict.

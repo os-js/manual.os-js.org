@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Filesystem Guide
+---
+
 # Filesystem Guide
 
 OS.js uses an URI for filesystem paths.

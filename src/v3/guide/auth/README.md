@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Authentication Guide
+---
+
 # Authentication Guide
 
 OS.js provides options for customizing the authentication procedure.

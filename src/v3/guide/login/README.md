@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Login Guide
+---
+
 # Customizing Login Guide
 
 You can customize the login screen both visually and functionally.

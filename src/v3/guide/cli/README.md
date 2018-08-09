@@ -1,3 +1,7 @@
+---
+description: OS.js v3 CLI Guide
+---
+
 # CLI guide
 
 OS.js comes with a Node CLI utility that provides commands to manage your installation.

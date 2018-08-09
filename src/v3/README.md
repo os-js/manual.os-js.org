@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Manual Introduction
+---
+
 # Introduction
 
 **OS.js** is a desktop environment that runs in a browser.

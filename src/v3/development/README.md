@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Development Manual
+---
+
 # Development
 
 ## Introduction

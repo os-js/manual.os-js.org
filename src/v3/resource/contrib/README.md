@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Contributed Resources
+---
+
 # Contributed Resources
 
 If you want to submit your contribution, contact me by email or join the [gitter](https://gitter.im/os-js/OS.js) chatroom.

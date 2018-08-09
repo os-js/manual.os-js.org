@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Bus Tutorial
+---
+
 # Bus Tutorial
 
 A bus (event handler/event dispatcher) provides methods to assign and emit events.

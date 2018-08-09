@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Service Provider Tutorial
+---
+
 # Service Provider Tutorial
 
 A Service Provider registers services that provide features for OS.js.

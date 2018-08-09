@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Installation Manual
+---
+
 # Installation
 
 Installation is done in a few simple steps and only takes a couple of minutes.

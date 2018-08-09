@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Panel Tutorial
+---
+
 # Panel Item Tutorial
 
 Panel Items are containers placed inside a Panel.

@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Widget Tutorial
+---
+
 # Widget Tutorial
 
 Widgets floats on the bottom layer of the Desktop.

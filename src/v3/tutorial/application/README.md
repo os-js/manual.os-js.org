@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Application Tutorial
+---
+
 # Application Tutorial
 
 You can use the [official example package](https://github.com/os-js/osjs-example-application) as a bolilerplate for your project.

@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Embedding Guide
+---
+
 # Embedding Guide
 
 It is possible to select which DOM nodes to use for spawning the OS.js client.

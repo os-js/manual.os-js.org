@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Notification Tutorial
+---
+
 # Notification Tutorial
 
 Notifications are popup messages that can display a brief message.

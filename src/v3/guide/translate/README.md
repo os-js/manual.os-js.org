@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Translation Guide
+---
+
 # Translation Guide
 
 You can create or modify the translations in OS.js by following this guide.

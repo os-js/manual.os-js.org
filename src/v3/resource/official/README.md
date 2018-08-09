@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Official Resources
+---
+
 # Official Resources
 
 # API Documentation

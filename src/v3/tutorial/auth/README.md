@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Authentication Tutorial
+---
+
 # Auth Tutorial
 
 The `Auth` adapter handles authentication requests.

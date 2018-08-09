@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Deployment Guide
+---
+
 # Deployment Guide
 
 Follow the regular installation guide to set up your OS.js installation.

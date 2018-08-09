@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Settings Guide
+---
+
 # Settings Guide
 
 OS.js provides options for customizing the settings storage.

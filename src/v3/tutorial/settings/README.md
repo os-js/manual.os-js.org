@@ -1,3 +1,7 @@
+---
+description: OS.js v3 Settings Tutorial
+---
+
 # Settings Tutorial
 
 The `Settings` adapter handles settings requests.
