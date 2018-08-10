@@ -181,6 +181,33 @@ core.app.ws(endpoint, (ws, req) => {
 });
 ```
 
+## Settings
+
+Applications also supports settings storage:
+
+```javascript
+// Sets a setting
+proc.settings.foo = 'Custom setting';
+
+// Gets a setting
+console.log(proc.settings.foo)
+
+// Saves settings
+proc.saveSettings() // Promise
+
+// Set default settings
+const proc = core.make('osjs/application', {
+  args,
+  metadata,
+  options: Object.assign({}, options, {
+    settings: {
+      foo: 'Default setting'
+    }
+  })
+});
+
+```
+
 ## Launch Arguments
 
 When an application is launched, it might contain arguments:
