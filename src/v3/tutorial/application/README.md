@@ -234,7 +234,7 @@ OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metad
   const proc = core.make('osjs/application', {args, options, metadata});
 
   // Arguments launched with your application, including session:
-  console.log(proc.session); // Only set if the application was saved and restored
+  console.log(proc.args.session); // Only set if the application was saved and restored
 
   // Sets an argument that will be loaded on restore
   proc.args.session = 'hello session!';
