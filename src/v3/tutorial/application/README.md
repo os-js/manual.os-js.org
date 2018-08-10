@@ -18,11 +18,7 @@ Typically `index.js`:
 // 'MyApplication' is the unique name of your application
 // This is also defined in your metadata file
 OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
-  const proc = core.make('osjs/application', {
-    args: {}, // Launch arguments (argv)
-    options: {}, // Launch options
-    metadata: {} // Metadata JSON
-  });
+  const proc = core.make('osjs/application', {args, options, metadata});
 
   // Create your windows etc here
 
@@ -33,22 +29,17 @@ OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metad
 And `server.js` for the server:
 
 ```javascript
-module.exports = (core, proc) => {
-
-  const init = async () => {
+module.exports = (core, proc) => ({
+  init: async () => {
     // Register your routes etc here
-  };
-
-  const start = () => {
+  },
+  start: () => {
     // Any arbitrary stuff here
-  };
-
-  const destroy = () => {
+  },
+  destroy: () => {
     // Stop your stuff when server goes down
-  };
-
-  return {init, start, destroy};
-};
+  }
+});
 ```
 
 ## Metadata
@@ -187,5 +178,43 @@ In your server script, create a matching endpoint with Express:
 const endpoint = proc.resource('/socket');
 core.app.ws(endpoint, (ws, req) => {
   // Spawned
+});
+```
+
+## Launch Arguments
+
+When an application is launched, it might contain arguments:
+
+```javascript
+// Launch application with arguments
+core.run('MyApplication', {
+  foo: 'My custom argument'
+})
+
+// Retrieve arguments in application
+OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+  const proc = core.make('osjs/application', {args, options, metadata});
+
+  console.log(proc.args); // 'foo' will be set
+
+  return proc;
+});
+```
+
+### Session
+
+The `args` property is stored in the session, so you can use this to save your application state whenever the user logs out:
+
+```javascript
+OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+  const proc = core.make('osjs/application', {args, options, metadata});
+
+  // Arguments launched with your application, including session:
+  console.log(proc.session); // Only set if the application was saved and restored
+
+  // Sets an argument that will be loaded on restore
+  proc.args.session = 'hello session!';
+
+  return proc;
 });
 ```
