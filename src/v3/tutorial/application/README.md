@@ -183,7 +183,7 @@ core.app.ws(endpoint, (ws, req) => {
 
 ## Settings
 
-Applications also supports settings storage:
+Applications also supports [settings](/tutorial/settings/README.md) storage:
 
 ```javascript
 // Sets a setting
@@ -196,16 +196,13 @@ console.log(proc.settings.foo)
 proc.saveSettings() // Promise
 
 // Set default settings
-const proc = core.make('osjs/application', {
-  args,
-  metadata,
-  options: Object.assign({}, options, {
-    settings: {
-      foo: 'Default setting'
-    }
-  })
-});
+OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+  options.settings = {
+    foo: 'Default setting'
+  };
 
+  // ...
+});
 ```
 
 ## Launch Arguments
