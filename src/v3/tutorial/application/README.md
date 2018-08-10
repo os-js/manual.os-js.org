@@ -4,11 +4,11 @@ description: OS.js v3 Application Tutorial
 
 # Application Tutorial
 
-You can use the [official example package](https://github.com/os-js/osjs-example-application) as a bolilerplate for your project.
+You can use the [official example package](https://github.com/os-js/osjs-example-application) as a boilerplate for your project.
 
 To generate a new package using the example via CLI run `npm run package:create`.
 
-> The created package will have a basic Babel, SASS and eslint/stylelint setup.
+> The created package will have a basic Babel, SASS and ESLint/Stylelint setup.
 
 ## Creation
 
@@ -158,7 +158,7 @@ core.app.post(endpoint, (req, res) => {
 
 ## WebSockets
 
-You can also spawn websockets on the internal server and bind it to your application:
+You can also spawn WebSockets on the internal server and bind it to your application:
 
 > Application endpoints are resolved as `/apps/{name}/{endpoint}`
 

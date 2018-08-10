@@ -19,7 +19,7 @@ bus.emit('greeet', 'world');
 
 ## Advanced Example
 
-In this example, we'll set up a sentralized event bus that handles our application features.
+In this example, we'll set up a centralized event bus that handles our application features.
 
 This bus will also proxy events to windows and handle inter-window-communication.
 

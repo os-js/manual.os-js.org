@@ -67,9 +67,9 @@ osjs.register(DialogServiceProvider, {
 osjs.make('osjs/dialogs').register('my-dialog', MyDialog);
 ```
 
-### Programatic
+### Programmatic
 
-You can also use the `CustomDialog` instance to make your own programatically:
+You can also use the `CustomDialog` instance to make your own programmatically:
 
 ```javascript
 // Options

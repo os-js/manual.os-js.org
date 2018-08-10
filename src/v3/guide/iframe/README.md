@@ -4,15 +4,15 @@ description: OS.js v3 IFrame Guide
 
 # IFrame Application Guide
 
-You can use the [official example iframe package](https://github.com/os-js/osjs-example-iframe-application) as a bolilerplate for your project.
+You can use the [official example IFrame package](https://github.com/os-js/osjs-example-iframe-application) as a boilerplate for your project.
 
 This example includes bi-directional communication and is what will be used in this example.
 
-> If you don't need bi-directional communication, you can skip everything except for the iframe creation in the `render()` method and webpack configuration (assuming you're providing source locally).
+> If you don't need bi-directional communication, you can skip everything except for the IFrame creation in the `render()` method and webpack configuration (assuming you're providing source locally).
 
 ## Overview
 
-To communicate between an OS.js application and external iframe source, the global `message` event is handled in the core and expects data in this format:
+To communicate between an OS.js application and external IFrame source, the global `message` event is handled in the core and expects data in this format:
 
 ```json
 {
@@ -28,7 +28,7 @@ When this format is detected, the recipient process with `pid` will be discovere
 proc.on('message', args => console.log(args)); // 'OS.js'
 ```
 
-Which would be provided with the following code in the iframe:
+Which would be provided with the following code in the IFrame:
 
 ```javascript
 top.postMessage({
@@ -45,7 +45,7 @@ You can use an external source, but in this example it is assumed that you use t
 
 > To establish communication, you have to create an initial handshake to establish what process ID you're working with.
 
-In this example we will establish the initial handshake and send/recieve the 'yo' message.
+In this example we will establish the initial handshake and send/receive the 'yo' message.
 
 ### Application
 
@@ -110,9 +110,9 @@ win.render($content => {
 });
 ```
 
-### Iframe
+### IFrame
 
-Then a file for your iframe content `data/index.html`:
+Then a file for your IFrame content `data/index.html`:
 
 ```html
 <!DOCTYPE html>

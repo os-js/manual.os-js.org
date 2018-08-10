@@ -89,7 +89,7 @@ You can now add your own styles to `src/client/index.scss`.
 
 ## Logo
 
-You can also add a logo via configuration and customize via css:
+You can also add a logo via configuration and customize via CSS:
 
 ![Login Logo Example](example2.png)
 

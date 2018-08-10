@@ -40,7 +40,7 @@ core.register(provider, {
 
 By default any provider without any load order defined will be loaded at random (`Promise.all()`).
 
-To set a spesific order, you can either set dependencies or the `before` attribute:
+To set a specific order, you can either set dependencies or the `before` attribute:
 
 ```javascript
 core.register(provider, {

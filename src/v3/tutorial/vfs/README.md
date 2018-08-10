@@ -33,10 +33,10 @@ console.log(list);
 
 ## File argument
 
-All VFS metods accepts either a `string` or a **[Stat](#stat)** `Object`.
+All VFS methods accepts either a `string` or a **[Stat](#stat)** `Object`.
 The internal API will always try to convert a `string` to a `Stat` (via resolution),
 but on filesystems that does not have a traditional file structure (ex. Google Drive);
-this *might* not work, so it is recomended that you use the `Object` signature whenever possible.
+this *might* not work, so it is recommended that you use the `Object` signature whenever possible.
 
 > NOTE: All official applications and libraries use the object approach and is compatible with all filesystems.
 > If you're an application developer you should take this into consideration.

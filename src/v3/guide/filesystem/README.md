@@ -10,7 +10,7 @@ OS.js uses an URI for filesystem paths.
 
 ## Adapters
 
-A *Adapter* is a module that makes the acual requests on behalf of OS.js APIs.
+A *Adapter* is a module that makes the actual requests on behalf of OS.js APIs.
 
 An example is the included `system` which uses the APIs provided by the server, which uses the underlying node `fs` module to provide a filesystem via the underlying OS.
 

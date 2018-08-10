@@ -14,7 +14,7 @@ You can retrieve the Express server and all other related instances via the `cor
 
 * `app` - The Express `express()` instance
 * `session` - The Express session
-* `ws` - The Express websocket
+* `ws` - The Express WebSocket
 * `httpServer` - The `http.Server` instance
 
 ## Routes

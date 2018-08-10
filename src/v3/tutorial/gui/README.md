@@ -56,7 +56,7 @@ const createView = (state, actions) => h('div', {}, [
 
 ### JSX
 
-You can also use JSX syntax instead of the programatic approach.
+You can also use JSX syntax instead of the programmatic approach.
 
 First: `npm install --save-dev @babel/plugin-transform-react-jsx`
 
@@ -147,7 +147,7 @@ All components uses Flexbox and supports the following props:
 | Toolbar             | Flexbox container (spaced)                    | *See above*                                       |
 | Menubar             | Toolbar, except for menus                     |                                                   |
 | Tabs                | Tabbed container(s)                           | `{labels: [String,...]}`                          |
-| Panes               | Resizable container(s)                        | `{orientation: String, sizes: Array[Number,...]}` |
+| Panes               | Resizeable container(s)                        | `{orientation: String, sizes: Array[Number,...]}` |
 
 ### Fields
 

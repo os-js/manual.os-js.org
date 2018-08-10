@@ -47,8 +47,8 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 | morgan                      | `tiny`              | Morgan logging mode                                               |
 | ws.port                     | `<auto>`            | WebSocket port (defaults to upgrade)                              |
 | session.secret              | `osjs`              | HTTP Session secret                                               |
-| session.resave              | `false`             | HTTP Session resave option                                        |
-| session.saveUninitialized   | `false`             | HTTP Save uninitialzed sessions                                   |
+| session.resave              | `false`             | HTTP Session re-save option                                        |
+| session.saveUninitialized   | `false`             | HTTP Save uninitialized sessions                                   |
 | session.cookie.secure       | `<auto>`            | HTTP Secure cookie                                                |
 | vfs.mountpoints             | Array               | See [filesystem guide](../guide/filesystem/README.md)             |
 | proxy[]                     | Array               |                                                                   |

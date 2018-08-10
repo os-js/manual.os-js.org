@@ -14,7 +14,7 @@ Building is done with [Webpack](https://webpack.js.org/). See [configuration art
 
 ## Client
 
-The client is written in ES6+ and SASS CSS and split up into several [modules](../official/README.md) which are bundled together.
+The client is written in ES6+ and Sass CSS and split up into several [modules](../official/README.md) which are bundled together.
 
 Runs in any modern browser (IE10+) including mobile.
 
@@ -66,6 +66,6 @@ When the core `.start()` method is called, this is what happens in order:
 2. Authentication takes place (login prompt)
 3. Service Providers are started
 4. Package Manager loads manifest
-5. Connection to server is established (websocket)
+5. Connection to server is established (WebSocket)
 6. Reload session if available
 

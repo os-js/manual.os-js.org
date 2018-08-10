@@ -6,7 +6,7 @@ description: OS.js v3 Settings Guide
 
 OS.js provides options for customizing the settings storage.
 
-Two dapters are provided by default:
+Two adapters are provided by default:
 
 * `localStorage` (in-browser, default)
 * `server` (via server)
@@ -15,7 +15,7 @@ Two dapters are provided by default:
 
 See [official resource list](/resource/official/README.md) for provided adapter.
 
-> The README file of the module should provide more spesific exaples.
+> The README file of the module should provide more specific examples.
 
 > See [provider guide](../provider/README.md) for more information about provider setup.
 

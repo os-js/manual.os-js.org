@@ -38,7 +38,7 @@ All official packages provides running one or more of these tasks:
 
 ## Environment
 
-Using the required tools (above) you can set up a development enviroment in a couple of minutes.
+Using the required tools (above) you can set up a development environment in a couple of minutes.
 
 You can set `development` configuration entry in configuration to enable extra development features, like automatic reloading of your applications when builds are run.
 
@@ -139,13 +139,13 @@ npm run package:discover
 
 ### Server
 
-You can launch the server with [Nodemon](http://nodemon.io/) to automatically reload upon changes as the `npm run watch` tasks does not apply here.
+You can launch the server with [nodemon](http://nodemon.io/) to automatically reload upon changes as the `npm run watch` tasks does not apply here.
 
 ## Contributing
 
 Using the documentation above, you have everything you need to make changes.
 
-> To submitt changes into the official repositories need a [Github](https://github.com) account.
+> To submit changes into the official repositories need a [github](https://github.com) account.
 
 This is the basic workflow for making submissions:
 
@@ -203,5 +203,5 @@ You can run `tar tvf $(npm pack)` to confirm what files are published before act
 
 You can also distribute via git, where everything in the npm section above still applies.
 
-A disadvantage using git for deployment is that you have to create a spesific branch to avoid users downloading unwanted files and sources.
+A disadvantage using git for deployment is that you have to create a specific branch to avoid users downloading unwanted files and sources.
 

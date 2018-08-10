@@ -8,7 +8,7 @@ OS.js comes with a Node CLI utility that provides commands to manage your instal
 
 ## Commands
 
-All commands are provided via `npm` scipts:
+All commands are provided via `npm` scripts:
 
 * `build` - Builds core and all packages
 * `watch` - Same as build, but watches for changes

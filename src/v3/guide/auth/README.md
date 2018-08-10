@@ -15,7 +15,7 @@ Two adapters are provided by default:
 
 See [official resource list](/resource/official/README.md) for provided adapters.
 
-> The README file of the module should provide more spesific exaples.
+> The README file of the module should provide more specific examples.
 
 > See [provider guide](../provider/README.md) for more information about provider setup.
 
@@ -48,6 +48,6 @@ core.register(AuthServiceProvider, {
 
 ## Blacklisting applications
 
-If you return an array of application names in the property `blacklist` from the login, you can hide applicaions from a user.
+If you return an array of application names in the property `blacklist` from the login, you can hide applications from a user.
 
 This can be configured via the authentication adapter you're using.
