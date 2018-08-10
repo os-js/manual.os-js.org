@@ -21,16 +21,12 @@ core.make('service-name', ...args);
 This is the service provider interface:
 
 ```javascript
-import {ServiceProvider} from '@osjs/common';
-
-class ServiceProvider extends ServiceProvider
+class ServiceProvider
 {
-  /*
   constructor(core, options = {}) {
     this.core = core;
     this.options = options;
   }
-  */
 
   /* The list of registered services */
   provides() {
@@ -72,7 +68,8 @@ Register a singleton in form of an object with a method that opens `alert()`:
 
 ```javascript
 // src/client/myprovider.js
-import {ServiceProvider} from '@osjs/common';
+
+import {ServiceProvider} from '@osjs/common'; // Optional: Use the official base class
 
 export class MyApiServiceProvider extends ServiceProvider
 {
