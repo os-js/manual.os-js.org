@@ -209,6 +209,8 @@ OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metad
 
 When an application is launched, it might contain arguments:
 
+> NOTE: If your application was launched with a file associated to an assigned MIME, the `file` property will be added automatically to the `args` object.
+
 ```javascript
 // Launch application with arguments
 core.run('MyApplication', {
