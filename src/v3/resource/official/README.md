@@ -54,6 +54,10 @@ description: OS.js v3 Official Resources
 * https://github.com/os-js/osjs-sqlite-auth
 * https://github.com/os-js/osjs-pam-auth
 
+## Settings
+
+* https://github.com/os-js/osjs-database-settings
+
 ## Filesystem
 
 * https://github.com/os-js/osjs-gdrive-adapter
