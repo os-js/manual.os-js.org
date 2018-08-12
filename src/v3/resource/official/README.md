@@ -51,6 +51,7 @@ description: OS.js v3 Official Resources
 
 ## Authentication
 
+* https://github.com/os-js/osjs-database-auth
 * https://github.com/os-js/osjs-sqlite-auth
 * https://github.com/os-js/osjs-pam-auth
 
