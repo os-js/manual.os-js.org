@@ -102,6 +102,18 @@ The `metadata.json` file describes your application and contains a list of files
 
 > Singleton applications will receive the `attention` event when another instance is dropped from launching.
 
+## npm
+
+Please note that your `package.json` file that your application is published with contains this section for the package discovery to work:
+
+```json
+{
+  "osjs": {
+    "type": "package"
+  }
+}
+```
+
 ## Windows
 
 To create a new `Window` instance:
