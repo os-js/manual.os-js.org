@@ -8,7 +8,7 @@ description: OS.js v3 Manual Introduction
 
 Can be installed on all platform and runs in any modern web browser (IE10+).
 
-> NOTE: **This the v3 manual, if you're looking for the legacy v2 manual [follow this link](/v2/).**
+> NOTE: **This the v3 manual, if you're looking for the legacy v2 manual [follow this link](https://manual.os-js.org/v2/).**
 
 ![ScreenShot](https://www.os-js.org/screenshot.png)
 
@@ -23,3 +23,5 @@ Can be installed on all platform and runs in any modern web browser (IE10+).
 
 * [Join the community chatrooms](https://gitter.im/os-js/OS.js)
 * [Join the community forums](https://community.os-js.org/)
+* [Github repository](https://github.com/os-js/OS.js)
+* [Github organization](https://github.com/os-js)
