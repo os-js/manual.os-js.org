@@ -25,5 +25,5 @@ Can be installed on all platform and runs in any modern web browser (IE10+).
 
 * [Join the community chatrooms](https://gitter.im/os-js/OS.js)
 * [Join the community forums](https://community.os-js.org/)
-* [Github repository](https://github.com/os-js/OS.js)
+* [Github repository](https://github.com/os-js/OS.js/tree/v3/)
 * [Github organization](https://github.com/os-js)
