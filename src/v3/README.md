@@ -10,6 +10,8 @@ Can be installed on all platform and runs in any modern web browser (IE10+).
 
 > NOTE: **This the v3 manual, if you're looking for the legacy v2 manual [follow this link](https://manual.os-js.org/v2/).**
 
+> NOTE: **v3 is scheduled for release this summer/fall. See the [TODO](https://gist.github.com/andersevenrud/ebfc22ef75c6686cc2d9a6e1191a8405) list for current goal. This version is fully usable with only some quality of life features missing.
+
 ![ScreenShot](https://www.os-js.org/screenshot.png)
 
 ---
