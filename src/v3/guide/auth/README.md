@@ -11,7 +11,7 @@ Two adapters are provided by default:
 * `server` (default)
 * `localStorage`
 
-> NOTE: By default the client is set up to log in with the `demo` account. To disable this behavior, modify your `src/client/config.js` file. See [configuration article](../configuration/README.md) for more information.
+> NOTE: By default the client is set up to log in with the `demo` account. To disable this behavior, modify your `src/client/config.js` file. See [configuration article](../config/README.md) for more information.
 
 ## Configuring adapter
 
