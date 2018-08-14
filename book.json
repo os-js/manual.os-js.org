@@ -3,11 +3,18 @@
   "author": "Anders Evenrud <andersevenrud@gmail.com>",
   "language": "en",
   "title": "OS.js",
-  "plugins": ["sitemap"],
+  "plugins": ["sitemap", "adsense"],
   "pluginsConfig": {
     "sitemap": {
       "hostname": "https://manual.os-js.org",
       "path": "/v3"
+    },
+    "adsense": {
+      "client": "ca-pub-6145716264521226",
+      "slot": "9888011596",
+      "format": "auto",
+      "element": ".page-inner section",
+      "position": "bottom"
     }
   }
 }
