@@ -2,7 +2,7 @@
 description: OS.js v3 Manual Introduction
 ---
 
-# Introduction
+# OS.js Manual
 
 **OS.js** is a desktop environment that runs in a browser with fully-fledged window manager, application APIs, GUI toolkit, filesystem abstractions and much more.
 
