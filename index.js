@@ -47,7 +47,7 @@ var i = Metalsmith(_path.resolve(__dirname, 'src/v2'))
     engine: 'handlebars'
   }))
   .use(sitemap({
-    hostname: "https://manual.os-js.org",
+    hostname: "https://manual.os-js.org/v2",
     omitIndex: true
   }));
 

@@ -42,7 +42,7 @@ The `Scheme` file is the default provided way to build User Interfaces. This is 
 
 GUI Elements are comprised of regular HTML, JavaScript and CSS.
 
-For methods see [Misc modules](/guides/misc/).
+For methods see [Misc modules](/v2/guides/misc/).
 
 ### Elements
 
@@ -60,7 +60,7 @@ Elements are speparated into these categories:
 
 A container with vertical (rows) that you can shrink/expand, also make content expand or fill.
 
-![gui-vbox](/images/gui/gui-vbox.png)
+![gui-vbox](/v2/images/gui/gui-vbox.png)
 
 <table class="reference">
   <tbody>
@@ -79,7 +79,7 @@ A container with vertical (rows) that you can shrink/expand, also make content e
 
 A container with horizontal (columns) that you can shrink/expand, also make content expand or fill.
 
-![gui-hbox](/images/gui/gui-hbox.png)
+![gui-hbox](/v2/images/gui/gui-hbox.png)
 
 <table class="reference">
   <tbody>
@@ -98,7 +98,7 @@ A container with horizontal (columns) that you can shrink/expand, also make cont
 
 A container with horizontal (columns) that you can shrink/expand, also make content expand or fill.
 
-![gui-paned-view](/images/gui/gui-paned-view.png)
+![gui-paned-view](/v2/images/gui/gui-paned-view.png)
 
 <table class="reference">
   <tbody>
@@ -117,7 +117,7 @@ A container with horizontal (columns) that you can shrink/expand, also make cont
 
 A tabbed container.
 
-![gui-tabs](/images/gui/gui-tabs.png)
+![gui-tabs](/v2/images/gui/gui-tabs.png)
 
 <table class="reference">
   <tbody>
@@ -257,7 +257,7 @@ Display a iframe.
 ##### gui-label
 Display a normal text label.
 
-![gui-label](/images/gui/gui-label.png)
+![gui-label](/v2/images/gui/gui-label.png)
 
 <table class="reference">
   <tbody>
@@ -275,7 +275,7 @@ Display a normal text label.
 ##### gui-button
 A button made for clicking!
 
-![gui-button](/images/gui/gui-button.png)
+![gui-button](/v2/images/gui/gui-button.png)
 
 <table class="reference">
   <tbody>
@@ -293,7 +293,7 @@ A button made for clicking!
 ##### gui-switch
 A button, but works more like a light-switch.
 
-![gui-switch](/images/gui/gui-switch.png)
+![gui-switch](/v2/images/gui/gui-switch.png)
 
 <table class="reference">
   <tbody>
@@ -311,7 +311,7 @@ A button, but works more like a light-switch.
 ##### gui-radio
 A radio button.
 
-![gui-radio](/images/gui/gui-radio.png)
+![gui-radio](/v2/images/gui/gui-radio.png)
 
 <table class="reference">
   <tbody>
@@ -329,7 +329,7 @@ A radio button.
 ##### gui-checkbox
 A checbox.
 
-![gui-checkbox](/images/gui/gui-checkbox.png)
+![gui-checkbox](/v2/images/gui/gui-checkbox.png)
 
 <table class="reference">
   <tbody>
@@ -347,7 +347,7 @@ A checbox.
 ##### gui-select
 A dropdown input.
 
-![gui-select](/images/gui/gui-select.png)
+![gui-select](/v2/images/gui/gui-select.png)
 
 <table class="reference">
   <tbody>
@@ -365,7 +365,7 @@ A dropdown input.
 ##### gui-select-list
 A selectable list.
 
-![gui-select-list](/images/gui/gui-select-list.png)
+![gui-select-list](/v2/images/gui/gui-select-list.png)
 
 <table class="reference">
   <tbody>
@@ -383,7 +383,7 @@ A selectable list.
 ##### gui-slider
 A slider for giving a variable input.
 
-![gui-slider](/images/gui/gui-slider.png)
+![gui-slider](/v2/images/gui/gui-slider.png)
 
 <table class="reference">
   <tbody>
@@ -401,7 +401,7 @@ A slider for giving a variable input.
 ##### gui-text
 A text entry box.
 
-![gui-text](/images/gui/gui-text.png)
+![gui-text](/v2/images/gui/gui-text.png)
 
 <table class="reference">
   <tbody>
@@ -419,7 +419,7 @@ A text entry box.
 ##### gui-password
 A password entry box.
 
-![gui-password](/images/gui/gui-password.png)
+![gui-password](/v2/images/gui/gui-password.png)
 
 <table class="reference">
   <tbody>
@@ -437,7 +437,7 @@ A password entry box.
 ##### gui-textarea
 A big text entry area.
 
-![gui-textarea](/images/gui/gui-textarea.png)
+![gui-textarea](/v2/images/gui/gui-textarea.png)
 
 <table class="reference">
   <tbody>
@@ -474,7 +474,7 @@ A big text entry area, with support for HTML.
 ##### gui-tree-view
 A view with tree display (nested).
 
-![gui-tree-view](/images/gui/gui-tree-view.png)
+![gui-tree-view](/v2/images/gui/gui-tree-view.png)
 
 <table class="reference">
   <tbody>
@@ -496,7 +496,7 @@ A view with tree display (nested).
 ##### gui-icon-view
 A view with icon display.
 
-![gui-icon-view](/images/gui/gui-icon-view.png)
+![gui-icon-view](/v2/images/gui/gui-icon-view.png)
 
 <table class="reference">
   <tbody>
@@ -518,7 +518,7 @@ A view with icon display.
 ##### gui-list-view
 A view with list display.
 
-![gui-list-view](/images/gui/gui-list-view.png)
+![gui-list-view](/v2/images/gui/gui-list-view.png)
 
 <table class="reference">
   <tbody>
@@ -563,7 +563,7 @@ A combination of all views above, with direct connection to the VFS. For file br
 ##### gui-progressbar
 A box for showing progress.
 
-![gui-progress](/images/gui/gui-progress.png)
+![gui-progress](/v2/images/gui/gui-progress.png)
 
 <table class="reference">
   <tbody>
@@ -581,7 +581,7 @@ A box for showing progress.
 ##### gui-color-swatch
 A box for selecting colors from a palette.
 
-![gui-color-swatch](/images/gui/gui-color-swatch.png)
+![gui-color-swatch](/v2/images/gui/gui-color-swatch.png)
 
 <table class="reference">
   <tbody>
@@ -599,7 +599,7 @@ A box for selecting colors from a palette.
 ##### gui-menu-bar
 A bar for showing menus with.
 
-![gui-menu-bar](/images/gui/gui-menu-bar.png)
+![gui-menu-bar](/v2/images/gui/gui-menu-bar.png)
 
 <table class="reference">
   <tbody>
@@ -674,7 +674,7 @@ Creates a button for uploading files.
 ##### gui-input-modal
 A textbox with an attached button designed for bringing up dialogs to set values.
 
-![gui-input-modal](/images/gui/gui-input-modal.png)
+![gui-input-modal](/v2/images/gui/gui-input-modal.png)
 
 <table class="reference">
   <tbody>
@@ -692,7 +692,7 @@ A textbox with an attached button designed for bringing up dialogs to set values
 ##### gui-color-box
 A button, but instead of text shows the color assigned.
 
-![gui-color-box](/images/gui/gui-color-box.png)
+![gui-color-box](/v2/images/gui/gui-color-box.png)
 
 <table class="reference">
   <tbody>

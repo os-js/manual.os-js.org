@@ -19,7 +19,7 @@ If it does not bind to what you expect, you can launch the server with `--hostna
 
 ### Q: How do I add login for users ?
 
-You need to set up [Authentication](/configuration/authenticator/).
+You need to set up [Authentication](/v2/configuration/authenticator/).
 
 ### Q: How do I install a package ?
 
@@ -27,7 +27,7 @@ To install a package you have to download it and place it inside a "repository" 
 
 After it has been placed into one of these repositories, it has to be added to the global manifest and then built.
 
-You can read more about it [in this article](/packages/).
+You can read more about it [in this article](/v2/packages/).
 
 ### Q: Why aren't my packages showing up in the client ?
 
