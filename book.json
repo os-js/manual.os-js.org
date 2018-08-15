@@ -3,7 +3,7 @@
   "author": "Anders Evenrud <andersevenrud@gmail.com>",
   "language": "en",
   "title": "OS.js",
-  "plugins": ["sitemap", "adsense"],
+  "plugins": ["sitemap", "adsense", "alerts", "edit-link"],
   "pluginsConfig": {
     "sitemap": {
       "hostname": "https://manual.os-js.org",
@@ -15,6 +15,10 @@
       "format": "auto",
       "element": ".page-inner section",
       "position": "top"
+    },
+    "edit-link": {
+      "base": "https://github.com/os-js/manual.os-js.org/edit/master/src/v3",
+      "label": "Edit this page"
     }
   }
 }
