@@ -4,6 +4,8 @@ description: OS.js v3 Application Tutorial
 
 # Application Tutorial
 
+This tutorial will show you how to create an application and use some of the functionalities.
+
 You can use the [official example package](https://github.com/os-js/osjs-example-application) as a boilerplate for your project.
 
 To generate a new package using the example via CLI run `npm run package:create`.

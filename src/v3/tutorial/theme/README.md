@@ -4,6 +4,8 @@ description: OS.js v3 Theme Tutorial
 
 # Theme Tutorial
 
+This tutorial will demonstrate how to create your own theme(s).
+
 A theme consists of a set of icons and styles. It is installed as a package (just as applications).
 
 ## Usage

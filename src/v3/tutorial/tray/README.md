@@ -4,7 +4,7 @@ description: OS.js v3 Tray Tutorial
 
 # Tray Tutorial
 
-You can place entries into the Tray which appears in the panel.
+This tutorial demonstrates how to create and manage tray icons.
 
 ![Example](example.png)
 

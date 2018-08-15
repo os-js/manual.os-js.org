@@ -4,7 +4,9 @@ description: OS.js v3 Widget Tutorial
 
 # Widget Tutorial
 
-Widgets floats on the bottom layer of the Desktop.
+This tutorial shows you how to create and register your own widgets.
+
+> Widgets floats on the bottom layer of the Desktop.
 
 ## Custom Widget
 

@@ -4,7 +4,7 @@ description: OS.js v3 Express Tutorial
 
 # Express Tutorial
 
-The OS.js server runs on Express.
+The OS.js server runs on Express and this turial shows you how access the APIs.
 
 > NOTE: A body-parser middleware is used by default to decode both JSON and urlencoded data.
 

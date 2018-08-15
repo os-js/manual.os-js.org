@@ -4,9 +4,11 @@ description: OS.js v3 Panel Tutorial
 
 # Panel Item Tutorial
 
-Panel Items are containers placed inside a Panel.
+This tutorial shows you how to create and register your own panel items.
 
-> OS.js uses [Hyperapp](https://hyperapp.js.org/) for its panel items by default.
+> Panel Items are containers placed inside a Panel.
+
+OS.js uses [Hyperapp](https://hyperapp.js.org/) for its panel items by default.
 
 ## Custom Panel Item
 

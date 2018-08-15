@@ -4,6 +4,8 @@ description: OS.js v3 Dialog Tutorial
 
 # Dialog Tutorial
 
+This tutorial will show you how to both create and implement dialogs.
+
 Dialogs are [Window](../window/README.md)s with pre-defined templates and actions.
 
 ![Example](example.png)

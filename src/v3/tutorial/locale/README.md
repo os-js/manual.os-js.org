@@ -4,6 +4,8 @@ description: OS.js v3 Locale Tutorial
 
 # Locale Tutorial
 
+This tutorial explains how to use the localization APIs.
+
 The provided localization functions will use the user's locale settings or fall back to the default configuration.
 
 ## Strings

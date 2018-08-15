@@ -4,7 +4,9 @@ description: OS.js v3 Settings Tutorial
 
 # Settings Tutorial
 
-The `Settings` adapter handles settings requests.
+This tutorial will show you how to manage settings, and how to create your own settings adapter.
+
+> The `Settings` adapter handles settings requests.
 
 See [guide](/guide/settings/README.md) on how to use this in your distribution.
 

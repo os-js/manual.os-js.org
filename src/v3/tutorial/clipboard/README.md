@@ -4,7 +4,9 @@ description: OS.js v3 Clipboard Tutorial
 
 # Clipboard Tutorial
 
-The client provides a primitive clipboard:
+This tutorial shows you how to interact with the clipboard.
+
+## Usage
 
 ```javascript
 const clipboard = core.make('osjs/clipboard');

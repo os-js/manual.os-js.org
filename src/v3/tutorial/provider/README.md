@@ -4,6 +4,8 @@ description: OS.js v3 Service Provider Tutorial
 
 # Service Provider Tutorial
 
+This tutorial will explain how to create and use a service provider.
+
 A Service Provider registers services that provide features for OS.js.
 
 > Service Providers have the same interface and initialization/startup procedure in both client and server.

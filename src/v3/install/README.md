@@ -26,7 +26,7 @@ docker run -p 8000:8000 osjs/osjs-v3:demo
 
 Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing in a production environment.
 
-> **Do not use "sudo" or an administrator user for the setup procedure.** This might lead to permission and security issues.
+> **[warning] Do not use "sudo" or an administrator user for the setup procedure.**
 
 Clone the base repository (or download a compressed version of latest release):
 

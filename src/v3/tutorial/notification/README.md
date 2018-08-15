@@ -4,7 +4,9 @@ description: OS.js v3 Notification Tutorial
 
 # Notification Tutorial
 
-Notifications are popup messages that can display a brief message.
+This tutorial demonstrates how to create a new notification.
+
+> Notifications are popup messages that can display a brief message.
 
 ![Example](example.png)
 

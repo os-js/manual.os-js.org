@@ -8,7 +8,7 @@ description: OS.js v3 Development Manual
 
 For development you need `git`, `node` and `npm` (see installation requirements).
 
-> Note: **It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
+> **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
 ## Docker
 
@@ -145,7 +145,7 @@ You can launch the server with [nodemon](http://nodemon.io/) to automatically re
 
 Using the documentation above, you have everything you need to make changes.
 
-> To submit changes into the official repositories need a [github](https://github.com) account.
+> [info] To submit changes into the official repositories need a [github](https://github.com) account.
 
 This is the basic workflow for making submissions:
 

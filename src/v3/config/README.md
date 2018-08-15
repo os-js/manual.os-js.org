@@ -6,11 +6,11 @@ description: OS.js v3 Configuration Manual
 
 You can find the configuration files (by default) in `src/client/config.js` and `src/server/config.js`.
 
-> NOTE: This list is not complete. See `src/config.js` in `@osjs/client` and `@osjs/server` for more information.
+> [info] This list is not complete. See `src/config.js` in `@osjs/client` and `@osjs/server` for more information.
 
-> NOTE: `NODE_ENV=production` will disable any development features that are enabled by default.
+<!-- -->
 
-> You can manage your configurations via [CLI](../guide/cli/README.md#configuration) just like in v2, but is now available in a separate module.
+> [info] Using `NODE_ENV=production` will disable any development features that are enabled by default.
 
 ## Client
 

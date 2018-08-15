@@ -4,7 +4,9 @@ description: OS.js v3 Authentication Tutorial
 
 # Auth Tutorial
 
-The `Auth` adapter handles authentication requests.
+This tutorial will show you how to create your own authentication adapter.
+
+> The `Auth` adapter handles authentication requests.
 
 See [guide](/guide/auth/README.md) on how to use this in your distribution.
 
