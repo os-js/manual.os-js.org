@@ -28,6 +28,19 @@ Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan 
 
 > **[warning] Do not use "sudo" or an administrator user for the setup procedure.**
 
+By default the following packages  are installed by default:
+
+- `@osjs/standard-theme`
+- `@osjs/gnome-icons`
+- `@osjs/calculator-application`
+- `@osjs/draw-application`
+- `@osjs/htmlviewer-application`
+- `@osjs/musicplayer-application`
+- `@osjs/preview-application`
+- `@osjs/textpad-application`
+
+For a list of packages, see the [official resource list](https://manual.os-js.org/v3/resource/official/).
+
 Clone the base repository (or download a compressed version of latest release):
 
 ```bash
@@ -43,8 +56,7 @@ To install locally you have to run a couple of commands to set up your distribut
 # Install dependencies
 npm install
 
-# Install a selection of themes and applications
-# The default setup only comes with the theme(s)
+# Optionally install extra packages:
 npm install --save @osjs/example-application
 
 # Discover installed packages
@@ -61,7 +73,7 @@ Now open [http://localhost:8000](http://localhost:8000) in your browser to launc
 
 ### Docker Setup
 
-A Docker setup is also provided (mainly aimed at development). It performs all the necessary steps for you, including installation of some default packages:
+A Docker setup is also provided (mainly aimed at development). It performs all the necessary steps for you:
 
 ```bash
 cp .env.example .env
