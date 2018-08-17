@@ -6,7 +6,7 @@ description: OS.js v3 Configuration Manual
 
 You can find the configuration files (by default) in `src/client/config.js` and `src/server/config.js`.
 
-> [info] This list is not complete. See `src/config.js` in `@osjs/client` and `@osjs/server` for more information.
+> [info] This list is not complete. See [src/config.js](https://github.com/os-js/osjs-client/blob/master/src/config.js) in `@osjs/client` and [src/config.js](https://github.com/os-js/osjs-server/blob/master/src/config.js) `@osjs/server` for advanced settings.
 
 <!-- -->
 
@@ -14,47 +14,69 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 
 ## Client
 
-| Key                     | Default value | Description                                              |
-| ----------------------- | ------------- | -------------------------------------------------------- |
-| development             | `true`        | Enable development mode                                  |
-| standalone              | `false`       | Enable standalone mode                                   |
-| public                  | `<auto>`      | Root public path for resolving urls                      |
-| theme                   | `Standard`    | Default theme metadata name                              |
-| login.username          | `demo`        | Default login username                                   |
-| login.password          | `demo`        | Default login password                                   |
-| ws.protocol             | `<auto>`      | WebSocket protocol                                       |
-| ws.port                 | `<auto>`      | WebSocket port                                           |
-| ws.hostname             | `<auto>`      | WebSocket hostname                                       |
-| ws.path                 | `<auto>`      | WebSocket path                                           |
-| vfs.defaultPath         | `osjs:/`      | Default and fallback path for VFS                        |
-| vfs.mountpoints         | Array         | See [filesystem guide](../guide/filesystem/README.md)    |
-| auth.ui                 | Object        | See customize login                                      |
-| auth.login.username     | String        | Default login username                                   |
-| auth.login.password     | String        | Default login password                                   |
-| desktop                 | Object        | Default desktop settings                                 |
-| locale                  | Object        | Default locale settings                                  |
-| application.categories  | Object        | Default application categories                           |
+| Key                             | Default value | Description                                              |
+| ------------------------------- | ------------- | -------------------------------------------------------- |
+| development                     | `<auto>`      | Enable development mode                                  |
+| standalone                      | `false`       | Enable standalone mode                                   |
+| public                          | `<auto>`      | Root public path for resolving urls                      |
+| theme                           | `Standard`    | Default theme metadata name                              |
+| login.username                  | `demo`        | Default login username                                   |
+| login.password                  | `demo`        | Default login password                                   |
+| ws.protocol                     | `<auto>`      | WebSocket protocol                                       |
+| ws.port                         | `<auto>`      | WebSocket port                                           |
+| ws.hostname                     | `<auto>`      | WebSocket hostname                                       |
+| ws.path                         | `<auto>`      | WebSocket path                                           |
+| auth.login.username             | `demo`        | Default login username                                   |
+| auth.login.password             | `demo`        | Default login password                                   |
+| desktop.settings.font           | `Roboto`      | Standard font name                                       |
+| desktop.settings.theme          | `Standard`    | Standard style theme                                     |
+| desktop.settings.icons          | `Gnome`       | Standard icon theme                                      |
+| desktop.settings.background.src | `require(...)`| Standard wallpaper                                       |
+| locale.language                 | `en_EN`       | Default language                                         |
+| vfs.defaultPath                 | `osjs:/`      | Default and fallback path for VFS                        |
+
+### Filesystems
+
+See [filesystem guide](../guide/filesystem/README.md)
 
 ## Server
 
-| Key                         | Default value       | Description                                                       |
-| --------------------------- | ------------------- | ----------------------------------------------------------------- |
-| logging                     | `true`              | Log HTTP requests                                                 |
-| index                       | `index.html`        | Index HTML file                                                   |
-| hostname                    | `localhost`         | Server hostname                                                   |
-| port                        | `8000`              | Server port                                                       |
-| public                      | `/dist`             | The dist directory                                                |
-| morgan                      | `tiny`              | Morgan logging mode                                               |
-| ws.port                     | `<auto>`            | WebSocket port (defaults to upgrade)                              |
-| session.secret              | `osjs`              | HTTP Session secret                                               |
-| session.resave              | `false`             | HTTP Session re-save option                                        |
-| session.saveUninitialized   | `false`             | HTTP Save uninitialized sessions                                   |
-| session.cookie.secure       | `<auto>`            | HTTP Secure cookie                                                |
-| vfs.mountpoints             | Array               | See [filesystem guide](../guide/filesystem/README.md)             |
-| proxy[]                     | Array               |                                                                   |
-| proxy[].source              | `String or RegExp`  | Proxy source                                                      |
-| proxy[].destination         | String              | Proxy destination                                                 |
-| proxy[].options             | Object              | Proxy [options](https://github.com/villadora/express-http-proxy)  |
+| Key                                 | Default value       | Description                                                       |
+| ----------------------------------- | ------------------- | ----------------------------------------------------------------- |
+| development                         | `<auto>`            | Enable development mode                                           |
+| logging                             | `true`              | Log HTTP requests                                                 |
+| index                               | `index.html`        | Index HTML file                                                   |
+| hostname                            | `localhost`         | Server hostname                                                   |
+| port                                | `8000`              | Server port                                                       |
+| public                              | `/dist`             | The dist directory                                                |
+| morgan                              | `tiny`              | Morgan logging mode                                               |
+| ws.port                             | `<auto>`            | WebSocket port (defaults to upgrade)                              |
+| session.store.module                | `connect-loki`      | HTTP Session storage                                              |
+| session.options.name                | `osjs.sid`          | HTTP Session cookie name                                          |
+| session.options.secret              | `osjs`              | HTTP Session secret                                               |
+| session.options.resave              | `false`             | HTTP Session re-save option                                       |
+| session.options.saveUninitialized   | `false`             | HTTP Save uninitialized sessions                                  |
+| session.options.cookie.secure       | `<auto>`            | HTTP Secure cookie                                                |
+| session.options.cookie.maxAge       | `<auto>`            | HTTP cookie lifetime                                              |
+
+### Proxies
+
+You can add proxies via the configuration. See [express-http-proxy](https://github.com/villadora/express-http-proxy) for options.
+
+```javascript
+{
+  proxy: [{
+    source: String | RegExp,
+    destination: String,
+    options: {}
+  }]
+}
+
+```
+
+### Filesystems
+
+See [filesystem guide](../guide/filesystem/README.md)
 
 # Caveats
 
