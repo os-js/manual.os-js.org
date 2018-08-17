@@ -18,22 +18,14 @@ This is the general checklist for setting up OS.js in a production environment:
 4. Set up a [reverse-proxy](#reverse-proxy).
 5. Use a process manager like [PM2](http://pm2.keymetrics.io/) to manage your server processes.
 
-## Configuration
+## Building
 
-In your client and server configurations, make sure to disable development mode:
-
-```json
-{
-  "development": false
-}
-```
-
-## Optimization
-
-To optimize for production, use the node environmental variable:
+To optimize builds and remove debugging (logging and functionality), make sure to use the node environmental variable:
 
 ```bash
 NODE_ENV=production npm run build
+
+NODE_ENV=production npm run serve
 ```
 
 ## Reverse Proxy
