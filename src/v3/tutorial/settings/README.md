@@ -32,10 +32,10 @@ settings.set('some/namespace', 'key', 'value')
 
 ### Application
 
-An application is given the namespace `osjs/application/{name}`.
+An application is given the namespace `osjs/application/{name}` (where the name is taken from your application):
 
 ```javascript
-.register('name', ({options}) => {
+OSjs.make('osjs/packages').register('name', (core, args, options, metadata) => {
   // Default settings
   options.settings = {
     foo: 'bar'
@@ -52,6 +52,8 @@ An application is given the namespace `osjs/application/{name}`.
   // Save settings
   proc.saveSettings()
     .then(() => console.log('done'));
+
+  return proc;
 };
 ```
 
