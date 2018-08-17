@@ -19,7 +19,6 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 | development                     | `<auto>`      | Enable development mode                                  |
 | standalone                      | `false`       | Enable standalone mode                                   |
 | public                          | `<auto>`      | Root public path for resolving urls                      |
-| theme                           | `Standard`    | Default theme metadata name                              |
 | login.username                  | `demo`        | Default login username                                   |
 | login.password                  | `demo`        | Default login password                                   |
 | ws.protocol                     | `<auto>`      | WebSocket protocol                                       |
