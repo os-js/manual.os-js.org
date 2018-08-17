@@ -28,7 +28,7 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 | ws.path                 | `<auto>`      | WebSocket path                                           |
 | vfs.defaultPath         | `osjs:/`      | Default and fallback path for VFS                        |
 | vfs.mountpoints         | Array         | See [filesystem guide](../guide/filesystem/README.md)    |
-| auth.login.ui           | Object        | See customize login                                      |
+| auth.ui                 | Object        | See customize login                                      |
 | auth.login.username     | String        | Default login username                                   |
 | auth.login.password     | String        | Default login password                                   |
 | desktop                 | Object        | Default desktop settings                                 |
