@@ -14,7 +14,7 @@ This is the general checklist for setting up OS.js in a production environment:
 
 1. Set a [session secret](#session).
 2. Disable [development mode](#configuration).
-3. Make an [optimized](#optimization) build.
+3. Make an [optimized](#building) build.
 4. Set up a [reverse-proxy](#reverse-proxy).
 5. Use a process manager like [PM2](http://pm2.keymetrics.io/) to manage your server processes.
 
