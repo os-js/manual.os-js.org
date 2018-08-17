@@ -72,6 +72,6 @@ Now open [http://localhost:8000](http://localhost:8000) in your browser to launc
 
 ## Upgrade
 
-To upgrade, use `npm update` or manually update dependencies defined in the `package.json` file.
+To upgrade, use `npm update` or `npm install package@version` to manually update a selection of packages.
 
-You can list outdated modules with `npm outdated`.
+You can list outdated packages with `npm outdated`.
