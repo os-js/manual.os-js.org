@@ -71,7 +71,7 @@ win.on('event-name', (...args) => console.log(...args));
 
 * `moved => (position, win)` - After movement completes
 * `resized => (dimension, win)` - After resize completes
-* `destroy => ()` - Destroyed
+* `destroy => (win)` - Destroyed
 * `init => (win)` - On init
 * `render => (win)` - On render
 * `close => (win)` - On close
@@ -85,6 +85,9 @@ win.on('event-name', (...args) => console.log(...args));
 * `dragover => (win, ev)` - On "drag over"
 * `dragleave => (win, ev)` - On "drag leave"
 * `drop => (win, ev, data, files)` - On "drop"
+* `keypress => (win, ev)` - On "keypress"
+* `keydown => (win, ev)` - On "keydown"
+* `keyup => (win, ev)` - On "keyup"
 
 ## Methods
 
