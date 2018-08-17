@@ -28,19 +28,6 @@ Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan 
 
 > **[warning] Do not use "sudo" or an administrator user for the setup procedure.**
 
-By default the following packages  are installed by default:
-
-- `@osjs/standard-theme`
-- `@osjs/gnome-icons`
-- `@osjs/calculator-application`
-- `@osjs/draw-application`
-- `@osjs/htmlviewer-application`
-- `@osjs/musicplayer-application`
-- `@osjs/preview-application`
-- `@osjs/textpad-application`
-
-For a list of packages, see the [official resource list](https://manual.os-js.org/v3/resource/official/).
-
 Clone the base repository (or download a compressed version of latest release):
 
 ```bash
@@ -57,6 +44,7 @@ To install locally you have to run a couple of commands to set up your distribut
 npm install
 
 # Optionally install extra packages:
+# For a list of packages see https://manual.os-js.org/v3/resource/official/
 npm install --save @osjs/example-application
 
 # Discover installed packages
