@@ -6,7 +6,7 @@ description: OS.js v3 Manual Introduction
 
 **OS.js** is a desktop environment that runs in a browser with fully-fledged window manager, application APIs, GUI toolkit, filesystem abstractions and much more.
 
-Can be installed on all platform and runs in any modern web browser (IE10+).
+Can be installed on all platform and runs in any modern web browser.
 
 > **This the v3 manual, if you're looking for the legacy v2 manual [follow this link](https://manual.os-js.org/v2/).**
 

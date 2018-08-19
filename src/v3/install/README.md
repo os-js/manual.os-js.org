@@ -12,7 +12,7 @@ The only dependency is `node 8` or later and `git` is recommended.
 
 A node Docker setup is also provided so you don't need to have node installed locally (or want to have an isolated environment).
 
-Runs in any modern web browser (minimum target is IE10+).
+Runs in any modern web browser.
 
 ## Demo
 
