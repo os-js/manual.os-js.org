@@ -20,11 +20,8 @@
     <link rel="canonical" href="https://manual.os-js.org/{{ this.path }}" />
   </head>
   <body class="{{pathClass this.path}}">
-    <header style="display:flex;align-items:center;">
-      <div style="flex:1 1">OS.js Manual</div>
-      <div style="float: right;">
-        <a style="color:#fff;font-size: 14px" href="/v3/">Go here for the v3 Manual</a>
-      </div>
+    <header>
+      <div>OS.js Manual</div>
     </header>
 
     <main>
@@ -106,6 +103,10 @@
       </aside>
 
       <content>
+        <div style="padding:1em;margin-bottom:2em;background-color:#e6e6e6;font-size:1.5em;font-weight:bold">
+          OS.js v2 will soon be deprecated.
+          Head over to <a href="https://manual.os-js.org/v3">https://manual.os-js.org/v3</a> for the latest v3 manual.
+        </div>
         {{{ contents }}}
       </content>
     </main>
