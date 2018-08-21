@@ -4,6 +4,30 @@ description: OS.js v3 Migraion Guide
 
 # Migration Guide
 
+## 3.0.0 - August 21st 2018
+
+This is just a recommendation. Since `@osjs/client@3.0.0-alpha.63` and `@osjs/cli@3.0.0-alpha.40` the metadata is no longer mutated and you can safely import and pass your own metadata file directly.
+
+Notice that the first parameter in `register()` now refers to the metadata directly and the fourth parameter (`metadata`) in the callback can now be removed because you import your own.
+
+```javascript
+// From
+OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+  const proc = core.make('osjs/application', {args, options, metadata});
+
+  return proc;
+});
+
+// To
+import metadata from './metadata.json';
+
+OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
+  const proc = core.make('osjs/application', {args, options, metadata});
+
+  return proc;
+});
+```
+
 ## 3.0.0 - July 24th 2018
 
 Some breaking changes were made to how base and packages are built.
