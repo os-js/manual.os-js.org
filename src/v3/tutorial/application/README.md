@@ -50,6 +50,8 @@ The `metadata.json` file describes your application and contains a list of files
 
 ```json
 {
+  "type": "application",
+
   // The unique name
   "name": "MyApplication",
 
