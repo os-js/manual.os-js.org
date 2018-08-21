@@ -35,9 +35,9 @@ settings.set('some/namespace', 'key', 'value')
 An application is given the namespace `osjs/application/{name}` (where the name is taken from your application metadata):
 
 ```javascript
-import metadata from './metadata.json';
+import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
+OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
   // Default settings
   options.settings = {
     foo: 'bar'

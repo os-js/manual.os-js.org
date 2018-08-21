@@ -17,9 +17,9 @@ To generate a new package using the example via CLI run `npm run package:create`
 Typically `index.js`:
 
 ```javascript
-import metadata from './metadata.json';
+import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
+OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   // Create your windows etc here
@@ -212,9 +212,9 @@ console.log(proc.settings.foo)
 proc.saveSettings() // Promise
 
 // Set default settings
-import metadata from './metadata.json';
+import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
+OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
   options.settings = {
     foo: 'Default setting'
   };
@@ -236,9 +236,9 @@ core.run('MyApplication', {
 })
 
 // Retrieve arguments in application
-import metadata from './metadata.json';
+import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
+OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   console.log(proc.args); // 'foo' will be set
@@ -252,9 +252,9 @@ OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
 The `args` property is stored in the session, so you can use this to save your application state whenever the user logs out:
 
 ```javascript
-import metadata from './metadata.json';
+import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
+OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   // Arguments launched with your application, including session:
