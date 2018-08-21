@@ -32,16 +32,18 @@ settings.set('some/namespace', 'key', 'value')
 
 ### Application
 
-An application is given the namespace `osjs/application/{name}` (where the name is taken from your application):
+An application is given the namespace `osjs/application/{name}` (where the name is taken from your application metadata):
 
 ```javascript
-OSjs.make('osjs/packages').register('name', (core, args, options, metadata) => {
+import metadata from './metadata.json';
+
+OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
   // Default settings
   options.settings = {
     foo: 'bar'
   };
 
-  const proc = core.make('name', {options});
+  const proc = core.make('name', {options, args, metadata});
 
   // Get a setting
   console.log(proc.settings.foo); // => "bar"

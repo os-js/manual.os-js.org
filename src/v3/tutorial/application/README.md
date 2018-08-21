@@ -17,9 +17,9 @@ To generate a new package using the example via CLI run `npm run package:create`
 Typically `index.js`:
 
 ```javascript
-// 'MyApplication' is the unique name of your application
-// This is also defined in your metadata file
-OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+import metadata from './metadata.json';
+
+OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   // Create your windows etc here
@@ -210,7 +210,9 @@ console.log(proc.settings.foo)
 proc.saveSettings() // Promise
 
 // Set default settings
-OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+import metadata from './metadata.json';
+
+OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
   options.settings = {
     foo: 'Default setting'
   };
@@ -232,7 +234,9 @@ core.run('MyApplication', {
 })
 
 // Retrieve arguments in application
-OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+import metadata from './metadata.json';
+
+OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   console.log(proc.args); // 'foo' will be set
@@ -246,7 +250,9 @@ OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metad
 The `args` property is stored in the session, so you can use this to save your application state whenever the user logs out:
 
 ```javascript
-OSjs.make('osjs/packages').register('MyApplication', (core, args, options, metadata) => {
+import metadata from './metadata.json';
+
+OSjs.make('osjs/packages').register(metadata.name, (core, args, options) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   // Arguments launched with your application, including session:
