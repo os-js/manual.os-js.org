@@ -73,6 +73,9 @@ Assuming you've already installed OS.js, this is an example of how you set up li
 git clone https://github.com/os-js/osjs-client
 cd osjs-client
 
+# Install required dependencies
+npm install
+
 # Build source (or `npm run watch` in while developing to automatically rebuild)
 npm run build
 
@@ -115,6 +118,9 @@ Packages work in the same way as general modules, except there's an extra CLI co
 # Check out the @osjs/example-application package
 git clone https://github.com/os-js/osjs-example-application.git
 cd osjs-example-application
+
+# Install required dependencies
+npm install
 
 # Build source (or `npm run watch` in while developing to automatically rebuild)
 npm run build
