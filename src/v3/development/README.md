@@ -10,6 +10,10 @@ For development you need `git`, `node` and `npm` (see installation requirements)
 
 > **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
+## Webpack
+
+OS.js uses [Webpack](https://webpack.js.org/) for building and bundling by default with Babel and Sass CSS.
+
 ## Docker
 
 If you're using Docker, you do your work normally on the local filesystem, but when performing commands and tasks related to building and dependency management, you have to run them within the context of the container:
