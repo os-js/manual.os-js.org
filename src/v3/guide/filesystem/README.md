@@ -14,12 +14,6 @@ A *Adapter* is a module that makes the actual requests on behalf of OS.js APIs.
 
 An example is the included `system` which uses the APIs provided by the server, which uses the underlying node `fs` module to provide a filesystem via the underlying OS.
 
-## Mountpoints
-
-A mountpoint is an object that defines a name, label and which adapter to use. You can have several mountpoints using the same adapter, but resolves to different locations.
-
-An example would be the provided `osjs` mountpoint that resolves to `{root}/dist` (where "root" is the OS.js path) via the `system` adapter.
-
 ### Adding Adapters
 
 You can add custom adapters via the VFS service provider:
@@ -51,6 +45,12 @@ osjs.register(VFSServiceProvider, {
   }
 });
 ```
+
+## Mountpoints
+
+A mountpoint is an object that defines a name, label and which adapter to use. You can have several mountpoints using the same adapter, but resolves to different locations.
+
+An example would be the provided `osjs` mountpoint that resolves to `{root}/dist` (where "root" is the OS.js path) via the `system` adapter.
 
 ### Adding Mountpoints
 
