@@ -20,6 +20,38 @@ A mountpoint is an object that defines a name, label and which adapter to use. Y
 
 An example would be the provided `osjs` mountpoint that resolves to `{root}/dist` (where "root" is the OS.js path) via the `system` adapter.
 
+### Adding Adapters
+
+You can add custom adapters via the VFS service provider:
+
+#### Client
+
+```javascript
+import customAdapter from 'custom-adapter';
+
+osjs.register(VFSServiceProvider, {
+  args: {
+    adapters: {
+      custom: customAdapter
+    }
+  }
+});
+```
+
+#### Server
+
+```javascript
+const customAdapter = require('custom-adapter');
+
+osjs.register(VFSServiceProvider, {
+  args: {
+    adapters: {
+      webdav: customAdapter
+    }
+  }
+});
+```
+
 ### Adding Mountpoints
 
 You can add mountpoints by updating your configuration files:
