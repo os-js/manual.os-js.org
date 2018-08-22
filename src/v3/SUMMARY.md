@@ -39,6 +39,7 @@
   * [WebSockets](tutorial/application/README.md#websockets)
   * [Settings](tutorial/application/README.md#settings)
   * [Launch Arguments](tutorial/application/README.md#launch-arguments)
+  * [Session](tutorial/application/README.md#session)
 * [Theme](tutorial/theme/README.md)
   * [Creation](tutorial/theme/README.md#creation)
   * [Metadata](tutorial/theme/README.md#metadata)

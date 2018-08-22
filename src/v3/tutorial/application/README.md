@@ -249,9 +249,9 @@ OSjs.make('osjs/packages').register(applicationName, (core, args, options, metad
 });
 ```
 
-### Session
+## Session
 
-The `args` property is stored in the session, so you can use this to save your application state whenever the user logs out:
+The `args` property (see above) is stored in the session, so you can use this to save your application state whenever the user logs out:
 
 ```javascript
 import {name as applicationName} from './metadata.json';
@@ -268,3 +268,13 @@ OSjs.make('osjs/packages').register(applicationName, (core, args, options, metad
   return proc;
 });
 ```
+
+### Session storage
+
+Sessions are normally only saved when a user logs out, but you can force this action:
+
+```javascript
+core.make('osjs/session').save(); // Promise
+```
+
+> Sessions are stored via the `Settings` API.
