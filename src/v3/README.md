@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Manual Introduction
+description: OS.js v3 Manual - Resources, Instructions, Tutorials and Guides.
 ---
 
 # OS.js Manual
