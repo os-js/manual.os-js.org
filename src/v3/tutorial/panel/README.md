@@ -26,7 +26,7 @@ class MyPanelItem extends PanelItem {
 }
 ```
 
-## Registration
+### Registration
 
 ```javascript
 // Static

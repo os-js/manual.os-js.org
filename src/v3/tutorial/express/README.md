@@ -8,7 +8,7 @@ The OS.js server runs on Express and this turial shows you how access the APIs.
 
 > NOTE: A body-parser middleware is used by default to decode both JSON and urlencoded data.
 
-## Direct access
+## Usage
 
 You can retrieve the Express server and all other related instances via the `core` class injected into all methods.
 

@@ -32,14 +32,16 @@ core.register(SettingsServiceProvider, {
 ### Server
 
 ```javascript
+const customAdapter = require('custom-adapter');
+
 core.register(SettingsServiceProvider, {
   args: {
-    adapter: fn
+    adapter: customAdapter
   }
 });
 ```
 
-## Storing on filesystem
+### Storing on filesystem
 
 You can use the provided 'fs' adapter to store settings on a filesystem:
 
@@ -60,3 +62,18 @@ core.register(SettingsServiceProvider, {
   }
 });
 ```
+
+## Configure adapter settings
+
+The `config` parameter is passed on from your service provider registration:
+
+```javascript
+core.register(SettingsServiceProvider, {
+  args: {
+    adapter: customAdapter
+    config: { /* Your configuration here */}
+  }
+});
+```
+
+If you have sensitive information in your configuration, consider using [dotenv](https://github.com/motdotla/dotenv).

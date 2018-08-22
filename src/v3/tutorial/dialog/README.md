@@ -30,9 +30,7 @@ const options = {parent: <parent>, attributes: {modal: true}};
 core.make('osjs/dialog', name, args, options, cb);
 ```
 
-## Custom Dialogs
-
-### Extension
+## Custom Dialog
 
 The default Dialog Service provider allows you to add (or override) dialogs:
 
@@ -55,6 +53,8 @@ class MyDialog extends Dialog {
 }
 ```
 
+### Registration
+
 ```javascript
 // Static
 osjs.register(DialogServiceProvider, {
@@ -69,7 +69,7 @@ osjs.register(DialogServiceProvider, {
 osjs.make('osjs/dialogs').register('my-dialog', MyDialog);
 ```
 
-### Programmatic
+## Programmatic
 
 You can also use the `CustomDialog` instance to make your own programmatically:
 
@@ -97,7 +97,7 @@ core.make('osjs/dialogs')
   .render(callbackRender);
 ```
 
-## Dialog GUI
+## GUI
 
 By default OS.js uses Hyperapp for the dialog GUI, but you can use whatever you want in the render callback.
 

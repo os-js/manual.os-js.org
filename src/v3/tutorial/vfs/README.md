@@ -33,7 +33,7 @@ console.log(list);
 * `stat(file) => stat` - Get the stat of given file/directory (see [stat](#stat))
 * `url(file) => string` - Create a URL to resource
 
-## File argument
+### File argument
 
 All VFS methods accepts either a `string` or a **[Stat](#stat)** `Object`.
 The internal API will always try to convert a `string` to a `Stat` (via resolution),
@@ -87,9 +87,11 @@ By default, files are read as `ArrayBuffer`, but you can specify any of these ty
 * `uri` - A `base64` encoded resource link
 * `blob` - A `Blob`
 
-## Custom Adapter
+## Custom VFS Adapter
 
 You can make your own Adapter for the methods above by creating a simple object:
+
+To set up your adapter see the [VFS guide](/guide/filesystem/README.md).
 
 ### Client
 

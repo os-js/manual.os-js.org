@@ -8,9 +8,11 @@ This tutorial explains how to use the localization APIs.
 
 The provided localization functions will use the user's locale settings or fall back to the default configuration.
 
-## Strings
+## Usage
 
-### Client
+### Strings
+
+#### Core
 
 To get translations from the OS.js client:
 
@@ -21,7 +23,7 @@ const translated = translate('foo', 1, 2, 3);
 console.log(translated);
 ```
 
-### Custom
+#### Custom
 
 Or create your own:
 
@@ -38,7 +40,7 @@ const translated = translate('hello', 'World');
 console.log(translated); // => "Hello World"
 ```
 
-## Date and Time
+### Date and Time
 
 You can also get formatted date and time:
 

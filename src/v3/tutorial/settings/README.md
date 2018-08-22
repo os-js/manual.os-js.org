@@ -8,8 +8,6 @@ This tutorial will show you how to manage settings, and how to create your own s
 
 > The `Settings` adapter handles settings requests.
 
-See [guide](/guide/settings/README.md) on how to use this in your distribution.
-
 ## Usage
 
 ### Global
@@ -59,7 +57,9 @@ OSjs.make('osjs/packages').register(applicationName, (core, args, options, metad
 };
 ```
 
-## Custom Adapter
+## Custom Settings Adapter
+
+To set up your adapter, see the [settings guide](/guide/settings/README.md).
 
 ### Client
 

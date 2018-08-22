@@ -48,7 +48,7 @@ class ServiceProvider
 
 See [service provider guide](../../guide/provider/README.md) for more info.
 
-### Register: Factory
+### Instance factory
 
 To register a factory:
 
@@ -56,7 +56,7 @@ To register a factory:
 core.instance('service-name', (...args) => new SomeClass(...args));
 ```
 
-### Register: Singletons
+### Singleton factory
 
 To register a singleton:
 

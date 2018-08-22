@@ -48,6 +48,21 @@ core.register(AuthServiceProvider, {
 });
 ```
 
+## Configure adapter settings
+
+The `config` parameter is passed on from your service provider registration:
+
+```javascript
+core.register(AuthServiceProvider, {
+  args: {
+    adapter: customAdapter
+    config: { /* Your configuration here */}
+  }
+});
+```
+
+If you have sensitive information in your configuration, consider using [dotenv](https://github.com/motdotla/dotenv).
+
 ## Blacklisting applications
 
 If you return an array of application names in the property `blacklist` from the login, you can hide applications from a user.

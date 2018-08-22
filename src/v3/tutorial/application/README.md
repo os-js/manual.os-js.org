@@ -6,43 +6,13 @@ description: OS.js v3 Application Tutorial
 
 This tutorial will show you how to create an application and use some of the functionalities.
 
+## Creation
+
 You can use the [official example package](https://github.com/os-js/osjs-example-application) as a boilerplate for your project.
 
 To generate a new package using the example via CLI run `npm run package:create`.
 
 > The created package will have a basic Babel, SASS and ESLint/Stylelint setup.
-
-## Creation
-
-Typically `index.js`:
-
-```javascript
-import {name as applicationName} from './metadata.json';
-
-OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
-  const proc = core.make('osjs/application', {args, options, metadata});
-
-  // Create your windows etc here
-
-  return proc;
-});
-```
-
-And `server.js` for the server:
-
-```javascript
-module.exports = (core, proc) => ({
-  init: async () => {
-    // Register your routes etc here
-  },
-  start: () => {
-    // Any arbitrary stuff here
-  },
-  destroy: () => {
-    // Stop your stuff when server goes down
-  }
-});
-```
 
 ## Metadata
 
@@ -106,7 +76,7 @@ The `metadata.json` file describes your application and contains a list of files
 
 > Singleton applications will receive the `attention` event when another instance is dropped from launching.
 
-## npm
+### npm
 
 Please note that your `package.json` file that your application is published with contains this section for the package discovery to work:
 
@@ -116,6 +86,38 @@ Please note that your `package.json` file that your application is published wit
     "type": "package"
   }
 }
+```
+
+## Basic Example
+
+Typically `index.js`:
+
+```javascript
+import {name as applicationName} from './metadata.json';
+
+OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
+  const proc = core.make('osjs/application', {args, options, metadata});
+
+  // Create your windows etc here
+
+  return proc;
+});
+```
+
+And `server.js` for the server:
+
+```javascript
+module.exports = (core, proc) => ({
+  init: async () => {
+    // Register your routes etc here
+  },
+  start: () => {
+    // Any arbitrary stuff here
+  },
+  destroy: () => {
+    // Stop your stuff when server goes down
+  }
+});
 ```
 
 ## Windows

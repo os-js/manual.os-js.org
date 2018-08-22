@@ -8,7 +8,9 @@ description: OS.js v3 Manual Introduction
 
 Can be installed on all platform and runs in any modern web browser.
 
-> **This the v3 manual, if you're looking for the legacy v2 manual [follow this link](https://manual.os-js.org/v2/).**
+This manual contains instructions, developer information, general resources, tutorials and guides.
+
+> **If you're looking for the legacy v2 manual [follow this link](https://manual.os-js.org/v2/).**
 
 > v3 is scheduled for release this summer/fall. See the [TODO](https://gist.github.com/andersevenrud/ebfc22ef75c6686cc2d9a6e1191a8405) list for current goal. This version is fully usable with only some quality of life features missing.
 

@@ -24,6 +24,16 @@ const win = proc.createWindow(options)
 const win = core.make('osjs/window', options)
 ```
 
+## Render
+
+Use the provided render method to put content into your Window:
+
+```javascript
+win.render($content => $content.appendChild(
+  document.createTextNode('Hello World!')
+));
+```
+
 ## Options
 
 * `id` A unique identifier
@@ -33,16 +43,6 @@ const win = core.make('osjs/window', options)
 * `dimension` An object with `width/height` for dimension
 * `attributes` A set of attributes
 * `state` Default state
-
-## Render window
-
-Use the provided render method to put content into your Window:
-
-```javascript
-win.render($content => $content.appendChild(
-  document.createTextNode('Hello World!')
-));
-```
 
 ## Attributes
 

@@ -6,13 +6,15 @@ description: OS.js v3 Theme Tutorial
 
 This tutorial will demonstrate how to create your own theme(s).
 
-A theme consists of a set of icons and styles. It is installed as a package (just as applications).
+## Creation
 
-## Usage
+A theme consists of a set of icons and styles. It is installed as a package (just as applications).
 
 Use the [official standard theme](https://github.com/os-js/osjs-standard-theme) or [official standard icons](https://github.com/os-js/osjs-gnome-icons) as a base or as a template.
 
 > Please note that if you're making a copy of the standard theme, all the scripts and dependencies must remain intact from the original `package.json` file.
+
+> You can use the standard theme(s) as your base and customize it to your linking, just like `@osjs/standard-dark-theme`
 
 ## Metadata
 
@@ -38,7 +40,7 @@ The `metadata.json` file describes your theme:
 }
 ```
 
-## npm
+### npm
 
 Please note that your `package.json` file that your application is published with contains this section for the package discovery to work:
 
@@ -49,3 +51,15 @@ Please note that your `package.json` file that your application is published wit
   }
 }
 ```
+
+## Styles
+
+The `@osjs/client`, `@osjs/gui` etc. libraries comes with the base styles for basic layout but does not contain any actual colors, effects, etc.
+
+All of the relevant elements have their own classes prefixed with `osjs-`.
+
+The `@osjs/standard-theme` package is a good starting place if you want to make your own styles.
+
+## Icons
+
+The icons follow the [GNOME Icon naming spec](https://developer.gnome.org/icon-naming-spec/) and are by default in `48x48` png format.

@@ -8,13 +8,13 @@ This tutorial will show you how to create your own authentication adapter.
 
 > The `Auth` adapter handles authentication requests.
 
-See [guide](/guide/auth/README.md) on how to use this in your distribution.
-
 ## User Information
 
 You can get the user information from `core.make('osjs/auth').user()` in the client and `req.session.user` in the server.
 
-## Custom Adapter
+## Custom Authentication Adapter
+
+To set up your adapter, see the [authentication guide](/guide/auth/README.md).
 
 ### Client
 
@@ -57,18 +57,3 @@ module.exports = (core, config) => ({
   }
 });
 ```
-
-### Configuration
-
-The `config` parameter is passed on from your service provider registration:
-
-```javascript
-core.register(AuthServiceProvider, {
-  args: {
-    adapter: customAdapter
-    config: { /* Your configuration here */}
-  }
-});
-```
-
-If you have sensitive information in your configuration, consider using [dotenv](https://github.com/motdotla/dotenv).

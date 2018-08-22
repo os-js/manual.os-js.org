@@ -109,7 +109,7 @@ export default class MyWidget extends Widget {
 }
 ```
 
-## Registration
+### Registration
 
 ```javascript
 import {WidgetServiceProvider} from '@osjs/widgets';
