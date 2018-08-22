@@ -147,6 +147,16 @@ proc.on('event-name', (...args) => console.log(...args));
 * `destroy-window => (win, proc)` - When window is destroyed
 * `attention => (args, options)` - Signal when a new instance of a singleton application is launched
 
+## Resources
+
+You can get an URL to any resource bundled with your application using the resource method:
+
+> Application resources are resolved as `/apps/{name}/{resource}`
+
+```javascript
+const url = proc.resource('/image.png');
+```
+
 ## HTTP Requests
 
 You can set up your own HTTP routes using the internal APIs:

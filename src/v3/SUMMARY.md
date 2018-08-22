@@ -35,6 +35,7 @@
   * [Basic Example](tutorial/application/README.md#basic-example)
   * [Windows](tutorial/application/README.md#windows)
   * [Events](tutorial/application/README.md#events)
+  * [Resources](tutorial/application/README.md#resources)
   * [HTTP Requests](tutorial/application/README.md#http-requests)
   * [WebSockets](tutorial/application/README.md#websockets)
   * [Settings](tutorial/application/README.md#settings)
