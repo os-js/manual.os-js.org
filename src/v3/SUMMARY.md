@@ -112,7 +112,7 @@
   * [Scaling](guide/deploy/README.md#scaling)
 * [Frameworks](guide/framework/README.md)
   * [React](guide/framework/README.md#react)
-  * [Vue](guide/framework/README.md#react#vue)
+  * [Vue](guide/framework/README.md#vue)
 * Modules
   * [Service Provider](guide/provider/README.md)
   * [Authentication](guide/auth/README.md)
