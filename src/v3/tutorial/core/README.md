@@ -62,6 +62,7 @@ const user = core.getUser();
 
 #### Events
 
+* `init => ()` - Main init
 * `osjs/core:start => ()` - Core start
 * `osjs/core:started => ()` - Core started
 * `osjs/core:connect => ()` - Connection established
@@ -104,3 +105,8 @@ core.broadcast('event-name', {foo: 'bar'}, ws => {
   return true;
 });
 ```
+#### Events
+
+* `init => ()` - Main init
+* `osjs/core:start => ()` - Core start
+* `osjs/core:started => ()` - Core started
