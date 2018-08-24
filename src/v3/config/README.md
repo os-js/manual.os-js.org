@@ -27,6 +27,7 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 | ws.path                         | `<auto>`      | WebSocket path                                           |
 | auth.login.username             | `demo`        | Default login username                                   |
 | auth.login.password             | `demo`        | Default login password                                   |
+| search.enabled                  | `true`        | Enable searching feature                                 |
 | desktop.settings.font           | `Roboto`      | Standard font name                                       |
 | desktop.settings.theme          | `Standard`    | Standard style theme                                     |
 | desktop.settings.icons          | `Gnome`       | Standard icon theme                                      |
