@@ -46,20 +46,20 @@ win.render($content => $content.appendChild(
 
 ## Attributes
 
-* `gravity => string` - Where to place the window (ex: `center`)
-* `modal => boolean` - If a parent is provided it will be disabled until this window  closes
-* `ontop => boolean` - Place on-top of all other windows
-* `resizable => boolean` - Set if window can be resized
-* `focusable => boolean` - Set if window can be focused
-* `maximizable => boolean` - Set if window can be minimized
-* `minimizable => boolean` - Set if window can be maximized
-* `sessionable => boolean` - Set if window can be saved in session
-* `closeable => boolean` - Set if window can be closed
-* `header => boolean` - Header visibility
-* `controls => boolean` - Header controls visibility (min/max/close buttons)
-* `position => object` - Default position object with `top/left`
-* `minDimension => object` - Minimum dimension object with `width/height`
-* `maxDimension => object` - Maximum dimension object with `width/height`
+* `gravity: string` - Where to place the window (ex: `center`)
+* `modal: boolean` - If a parent is provided it will be disabled until this window  closes
+* `ontop: boolean` - Place on-top of all other windows
+* `resizable: boolean` - Set if window can be resized
+* `focusable: boolean` - Set if window can be focused
+* `maximizable: boolean` - Set if window can be minimized
+* `minimizable: boolean` - Set if window can be maximized
+* `sessionable: boolean` - Set if window can be saved in session
+* `closeable: boolean` - Set if window can be closed
+* `header: boolean` - Header visibility
+* `controls: boolean` - Header controls visibility (min/max/close buttons)
+* `position: object` - Default position object with `top/left`
+* `minDimension: object` - Minimum dimension object with `width/height`
+* `maxDimension: object` - Maximum dimension object with `width/height`
 
 ## Events
 
