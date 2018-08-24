@@ -87,14 +87,15 @@
 * [Authentication](tutorial/auth/README.md)
   * [User Information](tutorial/auth/README.md#user-information)
   * [Custom Authentication Adapter](tutorial/auth/README.md#custom-authentication-adapter)
-* [Panel Item](tutorial/panel/README.md)
-* [Widget](tutorial/widget/README.md)
-* [Localization](tutorial/locale/README.md)
-* [Notification](tutorial/notification/README.md)
-* [Tray](tutorial/tray/README.md)
-* [Bus](tutorial/bus/README.md)
-* [Clipboard](tutorial/clipboard/README.md)
-* [Core](tutorial/core/README.md)
+* Misc
+  * [Panel Item](tutorial/panel/README.md)
+  * [Widget](tutorial/widget/README.md)
+  * [Localization](tutorial/locale/README.md)
+  * [Notification](tutorial/notification/README.md)
+  * [Tray](tutorial/tray/README.md)
+  * [Bus](tutorial/bus/README.md)
+  * [Clipboard](tutorial/clipboard/README.md)
+  * [Core](tutorial/core/README.md)
 
 ### Guides
 
