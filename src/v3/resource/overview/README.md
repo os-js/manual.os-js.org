@@ -57,15 +57,3 @@ This script has the same interface as a Service Provider (init/start/destroy).
 ### Themes
 
 Themes are built just like Applications and consists of two types: Styles and Icons.
-
-## Startup procedure
-
-When the core `.start()` method is called, this is what happens in order:
-
-1. Service Providers are initialized
-2. Authentication takes place (login prompt)
-3. Service Providers are started
-4. Package Manager loads manifest
-5. Connection to server is established (WebSocket)
-6. Reload session if available
-
