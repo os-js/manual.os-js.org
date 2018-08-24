@@ -10,13 +10,11 @@ description: OS.js v3 Overview
 
 ## Build System
 
-Building is done with [Webpack](https://webpack.js.org/). See [configuration article](config/README.md#webpack) for what loaders and plugins are used.
+Building is done with [Webpack](https://webpack.js.org/). Each module and package has its own setup, but is generally done in the same way using standard Webpack plugins and loaders.
 
 ## Client
 
 The client is written in ES6+ and Sass CSS and split up into several [modules](../official/README.md) which are bundled together.
-
-Runs in any modern browser (IE10+) including mobile.
 
 ## Server
 
