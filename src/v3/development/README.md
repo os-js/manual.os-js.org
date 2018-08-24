@@ -10,11 +10,11 @@ For development you need `git`, `node` and `npm` (see installation requirements)
 
 > **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
-## Webpack
+### Webpack
 
 OS.js uses [Webpack](https://webpack.js.org/) for building and bundling by default with Babel and Sass CSS.
 
-## Docker
+### Docker
 
 If you're using Docker, you do your work normally on the local filesystem, but when performing commands and tasks related to building and dependency management, you have to run them within the context of the container:
 
@@ -23,7 +23,7 @@ If you're using Docker, you do your work normally on the local filesystem, but w
 docker-compose exec osjs npm run watch
 ```
 
-## Testing
+### Testing
 
 Use the provided `.eslintrc` and `.stylelint` files to keep consistent code styles.
 
@@ -40,11 +40,17 @@ All official packages provides running one or more of these tasks:
 * `npm run build` Build changes once
 * `npm run watch` Watch and build changes automatically
 
-## Environment
+### Environment
 
 Using the required tools (above) you can set up a development environment in a couple of minutes.
 
-You can set `development` configuration entry in configuration to enable extra development features, like automatic reloading of your applications when builds are run.
+Make sure to set the `NODE_ENV=production` environmental variable if you're compiling for a production environment.
+
+By default the configurations are set to development mode, which will reload your applications and stylesheets whenever the distribution is rebuilt.
+
+### Server
+
+You can launch the server with [nodemon](http://nodemon.io/) to automatically reload upon changes as the `npm run watch` tasks does not apply here.
 
 ## Naming
 
@@ -61,6 +67,8 @@ OS.js has a format for naming different modules etc.:
 * `osjs-<project>` - Core modules
 
 Official packages are scoped with `@osjs/<project>-<suffix>`.
+
+## Setup
 
 ### Module
 
@@ -148,10 +156,6 @@ npm run package:discover
 > 2. Package name **must be unique**.
 > 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
 > 4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
-
-### Server
-
-You can launch the server with [nodemon](http://nodemon.io/) to automatically reload upon changes as the `npm run watch` tasks does not apply here.
 
 ## Contributing
 

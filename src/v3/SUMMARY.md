@@ -23,7 +23,9 @@
   * [Caveats](config/README.md#caveats)
 * Development
   * [Introduction](development/README.md#introduction)
-  * [Environment](development/README.md#environment)
+  * [Building](development/README.md#building)
+  * [Naming](development/README.md#naming)
+  * [Setup](development/README.md#setup)
   * [Contributing](development/README.md#contributing)
   * [Publishing](development/README.md#publishing)
 
