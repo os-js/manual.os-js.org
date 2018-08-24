@@ -60,6 +60,34 @@ core.open({path: 'home://image.png', mime: 'image/png'});
 const user = core.getUser();
 ```
 
+#### Events
+
+* `osjs/core:start => ()` - Core start
+* `osjs/core:started => ()` - Core started
+* `osjs/core:connect => ()` - Connection established
+* `osjs/core:disconnect => ()` - Connection lost
+* `osjs/core:destroy => ()` - Core destroy
+* `osjs/application:launch => (name, args, options)` - Application pre-launch
+* `osjs/application:launched => (name, app)` - Application launched
+* `osjs/application:create => (app)` - Application create
+* `osjs/application:destroy => (app)` - Application destroy
+* `osjs/window:create => (win)` - Window create
+* `osjs/window:render => (win)` - Window render
+* `osjs/window:change => (win, key, value)` - Window changed
+* `osjs/window:transitionend => (ev, win)` - Window transition ended
+* `osjs/desktop:transform => (rect)` - Desktop transformed
+* `osjs/locale:change => (name)` - Locale changed
+* `osjs/fs:mount => ()` - Filesystem mounted
+* `osjs/fs:unmount => ()` - Filesystem unmounted
+* `osjs/settings:save => ()` - Settings saved
+* `osjs/settings:load => ()` - Settings loaded
+* `osjs/vfs:* => (...args)` - VFS Method call
+* `osjs/tray:create => (entry)` - Tray entry created
+* `osjs/tray:remove => (entry)` - Tray entry removed
+* `osjs/tray:update => (entries)` - Tray entry updated
+* `osjs/notification:create => (notif)` - Notification created
+* `osjs/notification:destroy => (notif)` - Notification destroyed
+
 ### Server
 
 The server also has some extra methods:
