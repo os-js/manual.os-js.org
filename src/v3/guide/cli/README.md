@@ -32,12 +32,6 @@ The server accepts a set of arguments that *overrides* configuration files.
 * `--development=boolean` Development mode (same as config `development`)
 * `--secret=string` Session secret (same as config `session.options.secret`)
 
-## Configuration
-
-You can manage your configurations via [JSON](https://github.com/os-js/osjs-json-config-cli) just like in v2, but is now available in a separate module.
-
-For more information, see the link provided above.
-
 ## Custom Tasks
 
 You can add custom tasks via `src/cli/index.js`.

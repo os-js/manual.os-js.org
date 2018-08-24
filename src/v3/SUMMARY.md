@@ -103,7 +103,6 @@
 * [CLI](guide/cli/README.md)
   * [Commands](guide/cli/README.md#ommands)
   * [Server Arguments](guide/cli/README.md#server-arguments)
-  * [Configuration](guide/cli/README.md#configuration)
   * [Custom Taks](guide/cli/README.md#custom-tasks)
 * [Deployment](guide/deploy/README.md)
   * [Checklist](guide/deploy/README.md#checklist)
