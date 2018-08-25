@@ -4,6 +4,20 @@ description: OS.js v3 Migraion Guide
 
 # Migration Guide
 
+## 3.0.0 - August 26th 2018
+
+Please update your `src/cli/index.js` file:
+
+```javascript
+// From
+module.exports = [task];
+
+// To
+module.exports = {
+  tasks: [task]
+};
+```
+
 ## 3.0.0 - July 24th 2018
 
 Some breaking changes were made to how base and packages are built.
