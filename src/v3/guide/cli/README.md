@@ -39,10 +39,27 @@ You can add custom tasks via `src/cli/index.js`.
 An example:
 
 ```javascript
-
 const mod = cli => ({
   'mytask': ({args}) => console.log('Called my task with arguments', args)
 });
 
-module.exports = [mod];
+module.exports = {
+  tasks: [mod]
+};
+```
+
+## Custom package discovery paths
+
+You can also add custom package discovery paths for `npm run package:discover` so you don't have to use npm.
+
+> NOTE: Packages still require the `package.json` file.
+
+```javascript
+const path = require('path');
+
+module.exports = {
+  discover: [
+    path.resolve(__dirname, '../packages') // OS.js/src/packages
+  ]
+};
 ```
