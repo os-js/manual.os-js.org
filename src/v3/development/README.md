@@ -70,6 +70,11 @@ Official packages are scoped with `@osjs/<project>-<suffix>`.
 
 ## Setup
 
+Since the OS.js sources are split up into several libraries (and repositories) the standard way to work with development is to use the `npm link` feature.
+
+You don't have to use the npm linking features if you plan on having your distribution sources as a mono-repository. Service providers, core modules etc. can be set up within your repository directly, but to set up package discovery paths, see [CLI Guide](/guide/cli/README.md#custom-package-discovery-paths).
+
+
 ### Module
 
 With the `npm link` feature you can replace the different modules of OS.js with local source-code. If you for example want to make changes to the `@osjs/client` you can check out its sources, run the linking and then make any changes you may want.
