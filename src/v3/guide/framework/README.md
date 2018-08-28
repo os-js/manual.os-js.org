@@ -132,6 +132,8 @@ Update your `src/client/index.ejs` file to load the libraries:
 
 then use `copy-webpack-plugin` in your `webpack.config.js` file:
 
+> [info] If you use external resources, skip this step.
+
 ```javascript
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
@@ -153,12 +155,17 @@ In your `metadata.json` file, define the resources to use from Webpack:
   "files": [
     "main.js",
     "library.js",
-    "library.css"
+    "library.css",
+
+    // Or an external resource
+    "https://foo.bar/jazz.js"
   ]
 }
 ```
 
 then use `copy-webpack-plugin` in your `webpack.config.js` file:
+
+> [info] If you use external resources, skip this step.
 
 ```javascript
 const CopyWebpackPlugin = require('copy-webpack-plugin');
