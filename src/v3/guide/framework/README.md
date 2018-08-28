@@ -113,7 +113,7 @@ proc.createWindow({})
 
 To load generic libraries etc. into OS.js you have two alternatives.
 
-> [warning] Please note that using libraries optimized for bundling is recomended, as some of these might pollute the global namespaces and/or styles.
+> [warning] Please note that using libraries optimized for bundling is recomended, as some libraries might pollute the global namespaces and/or styles.
 
 ### Global
 
