@@ -127,6 +127,9 @@ Update your `src/client/index.ejs` file to load the libraries:
 </head>
 <body>
   <script src="library.js"></script>
+
+  <!-- Or an external resource -->
+  <script src="https://foo.bar/jazz.js"></script>
 </body>
 ```
 
