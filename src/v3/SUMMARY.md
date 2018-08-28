@@ -113,6 +113,7 @@
 * [Frameworks](guide/framework/README.md)
   * [React](guide/framework/README.md#react)
   * [Vue](guide/framework/README.md#vue)
+  * [Misc](guide/framework/README.md#misc)
 * Modules
   * [Service Provider](guide/provider/README.md)
   * [Authentication](guide/auth/README.md)

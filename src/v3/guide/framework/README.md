@@ -108,3 +108,66 @@ proc.createWindow({})
     });
   });
 ```
+
+## Misc
+
+To load generic libraries etc. into OS.js you have two alternatives.
+
+> [warning] Please note that using libraries optimized for bundling is recomended, as some of these might pollute the global namespaces and/or styles.
+
+### Global
+
+If you're planning to share libraries across several applications, etc. this is the recommended way.
+
+Update your `src/client/index.ejs` file to load the libraries:
+
+```html
+<head>
+  <link rel="stylesheet" type="text/css" href="library.css" />
+</head>
+<body>
+  <script src="library.js"></script>
+</body>
+```
+
+then use `copy-webpack-plugin` in your `webpack.config.js` file:
+
+```javascript
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+module.exports = {
+  plugins: [
+    new CopyWebpackPlugin([
+      {from: 'foo/bar/library.js': to: 'library.js'},
+      {from: 'foo/bar/library.css': to: 'library.css'}
+    ])
+  ]
+};
+```
+
+### Package
+
+In your `metadata.json` file, define the resources to use from Webpack:
+
+```json
+{
+  "files": [
+    "main.js",
+    "library.js",
+    "library.css"
+  ]
+}
+```
+
+then use `copy-webpack-plugin` in your `webpack.config.js` file:
+
+```javascript
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+module.exports = {
+  plugins: [
+    new CopyWebpackPlugin([
+      {from: 'foo/bar/library.js': to: 'library.js'},
+      {from: 'foo/bar/library.css': to: 'library.css'}
+    ])
+  ]
+};
+```
