@@ -180,8 +180,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   plugins: [
     new CopyWebpackPlugin([
-      {from: 'foo/bar/library.js': to: 'library.js'},
-      {from: 'foo/bar/library.css': to: 'library.css'}
+      {from: 'foo/bar/library.js', to: 'library.js'},
+      {from: 'foo/bar/library.css', to: 'library.css'}
     ])
   ]
 };
