@@ -192,7 +192,7 @@ You can also spawn WebSockets on the internal server and bind it to your applica
 
 ### Client
 
-Create an instance of `ApplicationSocket` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
+Create an instance of `Websokcet` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
 
 ```javascript
 const ws = proc.socket(); // Defaults to '/socket'
@@ -212,6 +212,10 @@ In your server script, create a matching endpoint with Express:
 const endpoint = proc.resource('/socket');
 core.app.ws(endpoint, (ws, req) => {
   // Spawned
+  ws.on('message', msg => console.log(msg)); // Message
+  ws.on('close', () => console.log('closed')); // Closed
+  ws.send('data'); // Sends data
+  ws.close(); // Cloese socket
 });
 ```
 
