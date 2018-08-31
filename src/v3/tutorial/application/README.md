@@ -196,6 +196,12 @@ Create an instance of `ApplicationSocket` with `socket()`, which is just a wrapp
 
 ```javascript
 const ws = proc.socket(); // Defaults to '/socket'
+
+ws.on('message', ev => console.log('got data', ev.data));
+ws.on('close', () => console.log('closed'));
+ws.on('error', ev => console.log('error', err));
+ws.send('data'); // Sends data
+ws.close(); // Closes socket
 ```
 
 ### Server
