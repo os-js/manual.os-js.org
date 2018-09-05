@@ -28,7 +28,7 @@ A WebSocket server is also created to allow for more flexible communication betw
 
 [Service Providers](../../tutorial/provider/README.md) registers services (features) in the core that can be used anywhere in the codebase.
 
-All standard features comes in providers which makes it easy to swap out for custom or third party alternatives.
+You can read more about the standard provided services in the [Core Tutorial](../../tutorial/core/README.md);
 
 ## Packages
 

@@ -76,7 +76,7 @@ OSjs.run();
 OSjs.url();
 ```
 
-#### Events
+#### Client Events
 
 * `init => ()` - Main init
 * `osjs/core:start => ()` - Core start
@@ -105,7 +105,7 @@ OSjs.url();
 * `osjs/notification:create => (notif)` - Notification created
 * `osjs/notification:destroy => (notif)` - Notification destroyed
 
-#### Services
+#### Client Services
 
 These are the default provided services and their signatures:
 
