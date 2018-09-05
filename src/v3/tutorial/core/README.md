@@ -107,18 +107,20 @@ OSjs.url();
 
 #### Services
 
-* `osjs/application => (data)` - Creates a new [Application](../application/README.md) instance
-* `osjs/window => (options)` - Creates a new [Window](../window/README.md) instance
-* `osjs/event-handler => (name)` - Creates a new [EventHandler](../bus/README.md) instance
-* `osjs/websocket => (...args)` - Creates a new [WebSocket](../application/README.md#websockets) instance
-* `osjs/notification => ()` - Creates a new [Notification](../notification/README.md) entry
-* `osjs/tray => (options)` - Creates a new [Tray](../tray/README.md) entry
+These are the default provided services and their signatures:
+
+* `osjs/application => (data)` - Creates a new [Application](../application/README.md) [instance](https://manual.os-js.org/v3/api/osjs-client/class/src/application.js~Application.html)
+* `osjs/window => (options)` - Creates a new [Window](../window/README.md) [instance](https://manual.os-js.org/v3/api/osjs-client/class/src/window.js~Window.html)
+* `osjs/event-handler => (name)` - Creates a new [EventHandler](../bus/README.md) [instance](https://manual.os-js.org/v3/api/osjs-common/class/src/event-handler.js~EventHandler.html)
+* `osjs/websocket => (...args)` - Creates a new [WebSocket](../application/README.md#websockets) [instance](https://manual.os-js.org/v3/api/osjs-client/class/src/websocket.js~Websocket.html)
+* `osjs/notification => (options?)` - Creates a new [Notification](../notification/README.md) entry
+* `osjs/tray => (options?)` - Creates a new [Tray](../tray/README.md) entry
 * `osjs/clipboard => ()` - APIs for performing [Clipboard](../clipboard/README.md)
 * `osjs/settings => ()` - APIs for [Settings](../settings/README.md)
 * `osjs/vfs => ()` - APIs for [VFS](../vfs/README.md)
 * `osjs/locale => ()` - APIs for handling [Localization](../locale/README.md)
 * `osjs/auth => ()` - APIs for [Authentication](../auth/README.md)
-* `osjs/contextmenu => ()` - APIs for [Context Menus](../gui/README.md#contextmenu)
+* `osjs/contextmenu => (options?)` - APIs for [Context Menus](../gui/README.md#contextmenu)
 * `osjs/dialog => (name, ...args)` - APIs for [Dialogs](../dialog/README.md#usage)
 * `osjs/dialogs => ()` - APIs for [Custom Dialogs](../dialog/README.md#custom-dialog)
 * `osjs/packages => ()` - APIs for Package Management
