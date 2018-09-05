@@ -44,6 +44,7 @@
   * [Launch Arguments](tutorial/application/README.md#launch-arguments)
   * [Session](tutorial/application/README.md#session)
 * [Theme](tutorial/theme/README.md)
+  * [Usage](tutorial/theme/README.md#usage)
   * [Creation](tutorial/theme/README.md#creation)
   * [Metadata](tutorial/theme/README.md#metadata)
   * [Styles](tutorial/theme/README.md#styles)

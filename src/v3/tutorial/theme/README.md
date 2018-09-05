@@ -6,6 +6,16 @@ description: OS.js v3 Theme Tutorial
 
 This tutorial will demonstrate how to create your own theme(s).
 
+## Usage
+
+The theme authentication service provides some API methods:
+
+```javascript
+const theme = core.make('osjs/theme');
+theme.resource('file'); // Gets an URI to a theme resource (current theme)
+theme.icon('name'); // Gets an URI to a icon theme image (current theme)
+```
+
 ## Creation
 
 A theme consists of a set of icons and styles. It is installed as a package (just as applications).
