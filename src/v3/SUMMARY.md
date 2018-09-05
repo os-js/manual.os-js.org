@@ -26,7 +26,7 @@
   * [Building](development/README.md#building)
   * [Naming](development/README.md#naming)
   * [Setup](development/README.md#setup)
-  * [Development](development/README.md#development)
+  * [Next steps](development/README.md#next-steps)
   * [Contributing](development/README.md#contributing)
   * [Publishing](development/README.md#publishing)
 

@@ -162,7 +162,7 @@ npm run package:discover
 > 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
 > 4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
 
-## Development
+## Next steps
 
 Now that you have your package set up, look at the Tutorial section in the menu on how to proceed with implementing features.
 
