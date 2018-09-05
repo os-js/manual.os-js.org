@@ -125,8 +125,8 @@ These are the default provided services and their signatures:
 * `osjs/dialogs => ()` - APIs for [Custom Dialogs](../dialog/README.md#custom-dialog)
 * `osjs/dnd => ()` - APIs for performing [Drag-and-Drop](../tutorial/dnd/README.md) operations
 * `osjs/theme => ()` - APIs for [Themes](../tutorial/theme/README.md#usage)
-* `osjs/packages => ()` - APIs for Package Management
-* `osjs/session => ()` - APIs for performing Session
+* `osjs/packages => ()` - APIs for [Package Management](https://manual.os-js.org/v3/api/osjs-client/class/src/packages.js~Packages.html)
+* `osjs/session => ()` - APIs for [Session](https://manual.os-js.org/v3/api/osjs-client/class/src/session.js~Session.html)
 * `osjs/desktop => ()` - APIs for desktop
 * `osjs/panels => ()`- APIs for panels
 
