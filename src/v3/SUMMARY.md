@@ -96,6 +96,7 @@
   * [Tray](tutorial/tray/README.md)
   * [Bus](tutorial/bus/README.md)
   * [Clipboard](tutorial/clipboard/README.md)
+  * [Drag-and-Drop](tutorial/dnd/README.md)
   * [Core](tutorial/core/README.md)
 
 ### Guides

@@ -123,10 +123,9 @@ These are the default provided services and their signatures:
 * `osjs/contextmenu => (options?)` - APIs for [Context Menus](../gui/README.md#contextmenu)
 * `osjs/dialog => (name, ...args)` - APIs for [Dialogs](../dialog/README.md#usage)
 * `osjs/dialogs => ()` - APIs for [Custom Dialogs](../dialog/README.md#custom-dialog)
+* `osjs/dnd => ()` - APIs for performing [Drag-and-Drop](../tutorial/dnd/README.md) operations
 * `osjs/packages => ()` - APIs for Package Management
 * `osjs/session => ()` - APIs for performing Session
-* `osjs/dnd => ()` - APIs for performing Drag-and-Drop operations
-* `osjs/dom => ()` - APIs for performing DOM operations and manipulation
 * `osjs/desktop => ()` - APIs for desktop
 * `osjs/theme => ()` - APIs for themes
 * `osjs/panels => ()`- APIs for panels
