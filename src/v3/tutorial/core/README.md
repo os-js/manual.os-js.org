@@ -60,6 +60,22 @@ core.open({path: 'home://image.png', mime: 'image/png'});
 const user = core.getUser();
 ```
 
+#### Global 'OSjs' namespace
+
+The window global `OSjs` also lets you reach some of the core functionality.
+
+```javascript
+OSjs.getApplications(); // Get a list of running applications (session data)
+OSjs.getWindows(); // Gets a list of all windows (session data)
+OSjs.make(); // Same as above (but some services are restricted)
+
+// These are the same as above
+OSjs.open();
+OSjs.request();
+OSjs.run();
+OSjs.url();
+```
+
 #### Events
 
 * `init => ()` - Main init
@@ -88,6 +104,36 @@ const user = core.getUser();
 * `osjs/tray:update => (entries)` - Tray entry updated
 * `osjs/notification:create => (notif)` - Notification created
 * `osjs/notification:destroy => (notif)` - Notification destroyed
+
+#### Services
+
+* `osjs/application => (data)` - Creates a new [Application](../application/README.md) instance
+* `osjs/window => (options)` - Creates a new [Window](../window/README.md) instance
+* `osjs/event-handler => (name)` - Creates a new [EventHandler](../bus/README.md) instance
+* `osjs/websocket => (...args)` - Creates a new [WebSocket](../application/README.md#websockets) instance
+* `osjs/notification => ()` - Creates a new [Notification](../notification/README.md) entry
+* `osjs/tray => (options)` - Creates a new [Tray](../tray/README.md) entry
+* `osjs/clipboard => ()` - APIs for performing [Clipboard](../clipboard/README.md)
+* `osjs/settings => ()` - APIs for [Settings](../settings/README.md)
+* `osjs/vfs => ()` - APIs for [VFS](../vfs/README.md)
+* `osjs/locale => ()` - APIs for handling [Localization](../locale/README.md)
+* `osjs/auth => ()` - APIs for [Authentication](../auth/README.md)
+* `osjs/contextmenu => ()` - APIs for [Context Menus](../gui/README.md#contextmenu)
+* `osjs/dialog => (name, ...args)` - APIs for [Dialogs](../dialog/README.md#usage)
+* `osjs/dialogs => ()` - APIs for [Custom Dialogs](../dialog/README.md#custom-dialog)
+* `osjs/packages => ()` - APIs for Package Management
+* `osjs/session => ()` - APIs for performing Session
+* `osjs/dnd => ()` - APIs for performing Drag-and-Drop operations
+* `osjs/dom => ()` - APIs for performing DOM operations and manipulation
+* `osjs/desktop => ()` - APIs for desktop
+* `osjs/theme => ()` - APIs for themes
+* `osjs/panels => ()`- APIs for panels
+
+Example:
+
+```javascript
+core.make('osjs/settings').save();
+```
 
 ### Server
 

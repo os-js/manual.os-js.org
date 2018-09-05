@@ -117,9 +117,10 @@ core.make('osjs/contextmenu', {
       onclick: ev => console.log('Clicked sub item')
     }]
   }]
-
 });
 ```
+
+You can also forcefully hide an open menu with `core.make('osjs/contextmenu').hide()`.
 
 ## Components
 

@@ -8,6 +8,18 @@ This tutorial will show you how to create your own authentication adapter.
 
 > The `Auth` adapter handles authentication requests.
 
+## Usage
+
+The client authentication service provides some API methods:
+
+```javascript
+const auth = core.make('osjs/auth');
+auth.user(); // Get user information
+auth.show(fn); // Shows the authentication dialog (internal usage only)
+auth.login({username, password}); // Log in a user
+auth.logout(reload?); // Log out current user
+```
+
 ## User Information
 
 You can get the user information from `core.make('osjs/auth').user()` in the client and `req.session.user` in the server.

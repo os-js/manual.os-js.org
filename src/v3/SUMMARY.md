@@ -85,6 +85,7 @@
   * [Usage](tutorial/settings/README.md#usage)
   * [Custom Settings Adapter](tutorial/settings/README.md#custom-settings-adapter)
 * [Authentication](tutorial/auth/README.md)
+  * [Usage](tutorial/auth/README.md#usage)
   * [User Information](tutorial/auth/README.md#user-information)
   * [Custom Authentication Adapter](tutorial/auth/README.md#custom-authentication-adapter)
 * Misc
