@@ -8,50 +8,64 @@ description: OS.js v3 Overview
 
 *Simplified diagram of components and their relation.*
 
-## Build System
+## Source-code
 
-Building is done with [Webpack](https://webpack.js.org/). Each module and package has its own setup, but is generally done in the same way using standard Webpack plugins and loaders.
+All of the source is written in [ES6+](http://es6-features.org/).
+
+Client-side scripts are transpiled with [Babel](https://babeljs.io/) and bundled with [Webpack](https://webpack.js.org/).
+
+If you're not familiar with ES6 modules, you should read about the [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) and [`export`](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export) statements.
+
+The server-side scripts runs on node v8.x+, but uses `require` instead of `import/export`.
 
 ## Client
 
-The client is written in ES6+ and Sass CSS and split up into several [modules](../official/README.md) which are bundled together.
+The client runs in any modern browser. The bundles are compiled down to ES5 whenever possible.
+
+Most of the features in the client are provided by [service providers](../../guide/provider/README.md).
+
+See the [official resources](../official/README.md) for modules.
+
+You can read more about the standard provided services in the [Core Tutorial](../../tutorial/core/README.md#client-services);
 
 ## Server
 
-The server runs Node (v8.x or later) on [Express](https://expressjs.com/) and by default only serves static files.
+The server runs on [Node.js](https://nodejs.org/) (v8.x or later) on [Express](https://expressjs.com/).
 
-Service Providers and Applications can hook into the startup procedure to add Middleware, Routes and other functionality not related to the HTTP Server.
+Most of the features in the client are provided by [service providers](../../guide/provider/README.md).
 
-A WebSocket server is also created to allow for more flexible communication between the client and server.
-
-## Service Providers
-
-[Service Providers](../../tutorial/provider/README.md) registers services (features) in the core that can be used anywhere in the codebase.
-
-You can read more about the standard provided services in the [Core Tutorial](../../tutorial/core/README.md);
+See the [official resources](../official/README.md) for modules.
 
 ## Packages
 
-### Applications
+Packages are divided into several types: [`application`](../../tutorial/application/README.md), [`theme`](../../tutorial/theme/README.md#styles) and [`icons`](../../tutorial/theme/README.md#icons). All of these types are set-up and built in the same way, so to keep this article brief it will focus on *applications*.
 
-An application consists of three parts:
+By default a `server.js` script is provided (customizable) so that you can use to establish communication between the server and your client via [HTTP](../../tutorial/application/README.md#http-requests) or [WebSockets](../../tutorial/application/README.md#websockets).
 
-#### Metadata
+The `index.js` and `index.scss` are the entry points for the [bundling process](#source-code) and [`metadata.json`](#metadata).
 
-The [metadata](../../tutorial/application/README.md#metadata) file contains information that describes your application, what files to load (from webpack output, etc) and other information related to how it interacts with the underlying system(s).
+See [development](../../development/README.md) for more information about development processes.
 
-#### Client script
+![Package Diagram](package.png)
 
-Client scripts are bundled with Webpack via the build system. Upon launch, the files defined in metadata is loaded, where the main bundle [registers](../../tutorial/application/README.md) the application.
+### Webpack
 
-After a successful registration your code is executed. This is where you create your windows, UIs, communications, etc.
+Webpack configuration is defined in `webpack.config.js`, which is used when compiling the application.
 
-#### Server script
+By default the `index.js` and `index.scss` files are set up as entry-points in this configuration, which will create bundled output in the `dist/` folder. The output is usually named `main.js` and `main.css` (and any resources imported `{dir/}{hash}.{extension}`), the former of which are defined in the `metadata.json` file.
 
-The server script loads when the server boots. Here you can run background tasks, set up HTTP or WebSocket requests to your client script(s), etc.
+### Metadata
 
-This script has the same interface as a Service Provider (init/start/destroy).
+The [`metadata.json`](../../tutorial/application/README.md#metadata) file describes your application.
 
-### Themes
+Using the `files` array in this file you can add what resources to load when OS.js launched the application. This usually consists of the `main.js` and `main.css` files produced by [Webpack](#webpack).
 
-Themes are built just like Applications and consists of two types: Styles and Icons.
+## Modules
+
+Modules come in several forms: [service provider](../../guide/provider/README.md), [cli task](../../guide/cli/README.md#custom-task), [authentication adapter](../../guide/auth/README.md), [settings adapter](../../guide/settings/README.md), [filesystem adapter](../../guide/filesystem/README.md).
+
+Client modules are bundles with Webpack, just like the packages.
+
+See the [official resources](../official/README.md) for modules.
+
+See [development](../../development/README.md) for more information about development processes.
