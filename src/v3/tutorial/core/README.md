@@ -151,6 +151,15 @@ core.broadcast('event-name', {foo: 'bar'}, ws => {
 
   return true;
 });
+
+// Express server
+const app = core.app;
+
+// WebSocket server
+const ws = core.ws;
+
+// Session server
+const session = core.session;
 ```
 #### Events
 
