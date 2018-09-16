@@ -114,6 +114,8 @@ npm link @osjs/client
 
 You can use `npm run package:create` to create a new package from a wizard.
 
+To set up package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
+
 Packages require a special entry in the `package.json` file in order for discovery to work:
 
 ```json
