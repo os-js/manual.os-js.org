@@ -70,12 +70,11 @@ Official packages are scoped with `@osjs/<project>-<suffix>`.
 
 ## Setup
 
-Since the OS.js sources are split up into several libraries (and repositories) the standard way to work with development is to use the `npm link` feature.
+Since the OS.js sources are split up into several libraries (and repositories) the standard way to work with development for internal modules is to use the `npm link` feature.
 
-You don't have to use the npm linking features if you plan on having your distribution sources as a mono-repository. Service providers, core modules etc. can be set up within your repository directly, but to set up package discovery paths, see [CLI Guide](/guide/cli/README.md#custom-package-discovery-paths).
+You don't have to use npm if you're developing your own custom modules or packages. The `OS.js` repository is just a basic distribution template, so you can use this as you see fit. You can place your sources in the `src/` directory or use git submodules, etc.
 
-
-### Module
+### Linking
 
 With the `npm link` feature you can replace the different modules of OS.js with local source-code. If you for example want to make changes to the `@osjs/client` you can check out its sources, run the linking and then make any changes you may want.
 
@@ -125,39 +124,25 @@ Packages require a special entry in the `package.json` file in order for discove
 }
 ```
 
-Packages work in the same way as general modules, except there's an extra CLI command you have to run:
+In this example we clone the example application repository instead of creating a new one:
 
 ```bash
-#
-# Somewhere in your filesystem (or use src/ directory)
-#
-
-# Check out the @osjs/example-application package
-git clone https://github.com/os-js/osjs-example-application.git
-cd osjs-example-application
-
-# Install required dependencies
+# In your OS.js root folder
+git clone https://github.com/os-js/osjs-example-application.git src/packages/Example
+cd src/packages/Example
 npm install
-
-# Build source (or `npm run watch` in while developing to automatically rebuild)
 npm run build
+```
 
-# Link your npm package just as with a Module
-npm link
+Then run the discovery command:
 
-#
-# In your OS.js root directory
-#
-
-# Subscribe to the npm registered package
-npm link @osjs/example-application
-
-# Finally, discover installed and linked packages
+```bash
+# In your OS.js root folder
 npm run package:discover
 ```
 
 > Notes:
-> 1. Each time you add/remove a package you need to run `npm run package:discover` to update the global package manifest.
+> 1. Each time you add/remove (or modify the metadata) a package you need to run `npm run package:discover` to update the global package manifest.
 > 2. Package name **must be unique**.
 > 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
 > 4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
