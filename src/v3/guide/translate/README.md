@@ -25,3 +25,17 @@ To expose the language to the client, add this to `osjs-client/src/locale/index.
 ```javascript
 export * from './language';
 ```
+
+## Configuration
+
+Finally you have to add the language to the configuration file in `osjs-client/src/config.js`:
+
+```json
+{
+  languages: {
+    en_EN: 'English',
+    nb_NO: 'Norwegian, Norsk (bokmål)',
+    lang_LANG: 'Language Name, Native name (variant)'
+  },
+}
+```
