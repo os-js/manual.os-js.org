@@ -32,6 +32,7 @@ description: OS.js v3 Official Resources
 
 ## Applications
 
+* https://github.com/os-js/osjs-settings-application
 * https://github.com/os-js/osjs-xterm-application
 * https://github.com/os-js/osjs-textpad-application
 * https://github.com/os-js/osjs-draw-application
