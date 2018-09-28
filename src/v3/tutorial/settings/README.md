@@ -61,6 +61,8 @@ OSjs.make('osjs/packages').register(applicationName, (core, args, options, metad
 
 To set up your adapter, see the [settings guide](/guide/settings/README.md).
 
+To generate a new adapter using the example via CLI run `npm run make:settings`.
+
 ### Client
 
 ```javascript

@@ -14,7 +14,12 @@ All commands are provided via `npm` scripts:
 * `watch` - Same as build, but watches for changes
 * `serve` - Starts the server
 * `package:discover` - Discovers linked and installed npm packages
-* `package:create` - Create a new package
+* `package:create` - Create a new package (**deprecated**)
+* `make:application` - Create a new application package
+* `make:provider` -  Create a new service provider
+* `make:auth` - Create a new authentication adapter
+* `make:settings` - Create a new settings adapter
+* `make:vfs` - Create a new VFS adapter
 
 > You can also use `npx osjs-cli <task>`.
 

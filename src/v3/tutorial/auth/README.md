@@ -28,6 +28,8 @@ You can get the user information from `core.make('osjs/auth').user()` in the cli
 
 To set up your adapter, see the [authentication guide](/guide/auth/README.md).
 
+To generate a new adapter using the example via CLI run `npm run make:auth`.
+
 ### Client
 
 ```javascript

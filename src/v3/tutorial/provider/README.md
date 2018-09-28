@@ -48,6 +48,8 @@ class ServiceProvider
 
 See [service provider guide](../../guide/provider/README.md) for more info.
 
+To generate a new provider using the example via CLI run `npm run make:provider`.
+
 ### Instance factory
 
 To register a factory:

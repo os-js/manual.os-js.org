@@ -93,6 +93,8 @@ You can make your own Adapter for the methods above by creating a simple object:
 
 To set up your adapter see the [VFS guide](/guide/filesystem/README.md).
 
+To generate a new adapter using the example via CLI run `npm run make:vfs`.
+
 ### Client
 
 ```javascript
