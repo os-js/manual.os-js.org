@@ -19,7 +19,7 @@ Runs in any modern web browser.
 You can run a demo using Docker without checkout out any source-code:
 
 ```bash
-docker run -p 8000:8000 osjs/osjs-v3:demo
+docker run -p 8000:8000 osjs/osjs:v3
 ```
 
 ## Setup
