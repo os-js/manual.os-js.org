@@ -45,7 +45,23 @@ An example:
 
 ```javascript
 const mod = cli => ({
-  'mytask': ({args}) => console.log('Called my task with arguments', args)
+  // Basic callback
+  mytask: ({logger, options, args}) => {
+    console.log('Called my task with arguments', args)
+    return Promise.resolve(true);
+  },
+
+  // Can also be an object for more features
+  myothertask' {
+    description: 'Task description in help readout',
+    help: 'Optional info to show on --help for this command',
+    options: {
+      '-foo': 'Some description'
+    },
+    action: ({logger, options, args}) => {
+      return Promise.resolve(true);
+    }
+  }
 });
 
 module.exports = {
