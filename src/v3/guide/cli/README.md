@@ -8,7 +8,9 @@ OS.js comes with a Node CLI utility that provides commands to manage your instal
 
 ## Commands
 
-All commands are provided via `npm` scripts:
+You can use the CLI with `npx osjs-cli <task>`, but for your convenience, you can also run `npm run <task>`.
+
+These are the available default tasks:
 
 * `build` - Builds core and all packages
 * `watch` - Same as build, but watches for changes
@@ -20,8 +22,6 @@ All commands are provided via `npm` scripts:
 * `make:auth` - Create a new authentication adapter
 * `make:settings` - Create a new settings adapter
 * `make:vfs` - Create a new VFS adapter
-
-> You can also use `npx osjs-cli <task>`.
 
 > If you're using `docker-compose` simply prepend this to perform the commands inside the image: `docker-compose exec osjs ...`.
 
@@ -52,7 +52,7 @@ const mod = cli => ({
   },
 
   // Can also be an object for more features
-  myothertask' {
+  myothertask: {
     description: 'Task description in help readout',
     help: 'Optional info to show on --help for this command',
     options: {
