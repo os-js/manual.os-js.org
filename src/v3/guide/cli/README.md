@@ -12,9 +12,6 @@ You can use the CLI with `npx osjs-cli <task>`, but for your convenience, you ca
 
 These are the available default tasks:
 
-* `build` - Builds core and all packages
-* `watch` - Same as build, but watches for changes
-* `serve` - Starts the server
 * `package:discover` - Discovers linked and installed npm packages
 * `package:create` - Create a new package (**deprecated**)
 * `make:application` - Create a new application package
@@ -22,6 +19,12 @@ These are the available default tasks:
 * `make:auth` - Create a new authentication adapter
 * `make:settings` - Create a new settings adapter
 * `make:vfs` - Create a new VFS adapter
+
+And the following scripts are provided via `npm run` only:
+
+* `build` - Builds core and all packages
+* `watch` - Same as build, but watches for changes
+* `serve` - Starts the server
 
 > If you're using `docker-compose` simply prepend this to perform the commands inside the image: `docker-compose exec osjs ...`.
 
