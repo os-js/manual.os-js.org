@@ -111,6 +111,7 @@
 * [Deployment](guide/deploy/README.md)
   * [Checklist](guide/deploy/README.md#checklist)
   * [Bulding](guide/deploy/README.md#building)
+  * [Legacy Browsers](guide/deploy/README.md#legacy-browsers)
   * [Reverse Proxy](guide/deploy/README.md#reverse-proxy)
   * [Session](guide/deploy/README.md#session)
   * [Scaling](guide/deploy/README.md#scaling)

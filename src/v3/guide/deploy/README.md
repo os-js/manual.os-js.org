@@ -28,6 +28,30 @@ NODE_ENV=production npm run build
 NODE_ENV=production npm run serve
 ```
 
+## Legacy Browsers
+
+To support browsers like IE10 and upward, you have to install the following dependencies:
+
+```bash
+npm install --save-dev @babel/polyill element-remove whatwg-fetch
+```
+
+Then modify your `webpack.config.js` entry:
+
+```javascript
+module.exports = {
+   entry: {
+     osjs: [
+      '@babel/polyfill',
+      'whatwg-fetch',
+      'element-remove',
+       path.resolve(__dirname, 'src/client/index.js'),
+       path.resolve(__dirname, 'src/client/index.scss')
+     ]
+  }
+};
+```
+
 ## Reverse Proxy
 
 To make OS.js available via port `80/http` (or for SSL `443/https`) you have to configure a webserver as a reverse-proxy.
