@@ -160,7 +160,7 @@ You can add your own styles in `src/client/index.scss`:
 
 ### Configure
 
-In your client bootstrap script, update the authentication service provider:
+In your client bootstrap script (`src/client/config.js`), update the authentication service provider:
 
 ```javascript
 import MyCustomLogin from './custom-login.js';
