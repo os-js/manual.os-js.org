@@ -6,13 +6,13 @@ description: OS.js v3 Login Guide
 
 You can customize the login screen both visually and functionally.
 
-You can also override it entirely by providing your own handler.
+You can also [replace it entirely](#replace) by providing your own adapter.
 
 ![Login Screen Example](example.png)
 
 ## Basics
 
-In your client configuration you can override certain aspects of the login:
+In your client configuration (`src/client/config.js`) you can override certain aspects of the login:
 
 ```json
 {
@@ -110,4 +110,65 @@ You can also add a logo via configuration and customize via CSS:
 .osjs-login-logo {
  /* Your style here */
 }
+```
+
+## Replace
+
+You can also replace the default UI with your own:
+
+### Adapter
+
+Extend the default adapter in for example `src/client/custom-login.js`:
+
+```javascript
+import {Login} from '@osjs/client';
+
+export default class MyCustomLogin extends Login {
+  render() {
+    // Set a custom class name
+    this.$container.className = 'my-custom-login';
+
+    // Add your HTML content
+    this.$container.innerHTML = 'Put your content here';
+
+    // Bind the events
+    this.on('login:start', () => console.log('Currently trying to log in...'));
+    this.on('login:stop', () => console.log('Login was aborted or stopped'));
+    this.on('login:error', err => console.error('An error occured while logging in', err));
+
+    // To submit a login form (ex when you press a button):
+    /*
+    this.emit('login:post', {
+      username: 'foo',
+      password: 'bar'
+    });
+    */
+  }
+}
+```
+
+
+You can add your own styles in `src/client/index.scss`:
+
+```css
+.my-custom-login {
+  background: #fff;
+  color: #000;
+}
+```
+
+
+### Configure
+
+In your client bootstrap script, update the authentication service provider:
+
+```javascript
+import MyCustomLogin from './custom-login.js';
+
+osjs.register(AuthServiceProvider, {
+  before: true,
+  args: {
+    login: (core, options) => new MyCustomLogin(core, options)
+  }
+});
 ```
