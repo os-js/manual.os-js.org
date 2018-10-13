@@ -26,9 +26,7 @@ This article will walk you through the development process of OS.js modules and 
 
 ## Introduction
 
-For development you need `git`, `node` and `npm`.
-
-*Before beginning you should familiarize yourself with the following technologies:*
+Before beginning read the [overview article](../resource/overview/README.md). You also need to familiarize yourself with the following technologies:
 
 * [ES6](https://github.com/lukehoban/es6features)
 * [Sass CSS](https://sass-lang.com/)
@@ -37,31 +35,6 @@ For development you need `git`, `node` and `npm`.
 * [Nodejs](https://nodejs.org/en/)
 * [npm](https://docs.npmjs.com/)
 * [git](https://git-scm.com/)
-
-> Please note that the `OS.js/` directory you check out with `git` (or extracted via archive) is just a distribution template. You can change this as you see fit, because all of the actual OS.js codebase is provided separately with `npm` packages.
-
-This is the standard layout for an OS.js distribution source:
-
-```text
-webpack.config.js        Webpack building configuration
-package.json             Dependency definitions
-node_modules/            Dependencies (npm package)
-dist/                    Build output
-vfs/                     Filesystem storage
-src/                     Sources
-    packages/            Custom packages directory
-    client/
-        index.js         Client bootstrap script
-        index.ejs        Base HTML template
-        index.scss       Base CSS template
-        config.js        Configuration(s)
-        favicon.png      Favicon
-    server/
-        index.js         Server bootstrap script
-        config.js        Configuration(s)
-    cli/
-        index.js         CLI bootstrap script
-```
 
 ### Webpack
 
