@@ -4,11 +4,41 @@ description: OS.js v3 Development Manual
 
 # Development
 
+This article will walk you through the development process of OS.js modules and packages.
+
+1. [Introduction](#introduction)
+    1. [Webpack](#webpack)
+    2. [Docker](#docker)
+    3. [Testing](#testing)
+2. [Bulding](#building)
+    1. [Environment](#environment)
+    2. [Server](#server)
+3. [Naming](#naming)
+4. [Modules](#modules)
+    1. [Replacement](#replacement)
+    2. [Linking](#linking)
+5. [Packages](#packages)
+    1. [Next steps](#next-steps)
+6. [Contributing](#contributing)
+7. [Publishing](#publishing)
+    1. [npm](#npm)
+    2. [git](#git)
+
 ## Introduction
 
-For development you need `git`, `node` and `npm` (see installation requirements).
+For development you need `git`, `node` and `npm`.
 
-> **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
+*Before beginning you should familiarize yourself with the following technologies:*
+
+* [ES6](https://github.com/lukehoban/es6features)
+* [Sass CSS](https://sass-lang.com/)
+* [Webpack](https://webpack.js.org/)
+* [Babel](https://babeljs.io/)
+* [Nodejs](https://nodejs.org/en/)
+* [npm](https://docs.npmjs.com/)
+* [git](https://git-scm.com/)
+
+> Please note that the `OS.js/` directory you check out with `git` (or extracted via archive) is just a distribution template. You can change this as you see fit, because all of the actual OS.js codebase is provided separately with `npm` packages.
 
 ### Webpack
 
@@ -68,13 +98,24 @@ OS.js has a format for naming different modules etc.:
 
 Official packages are scoped with `@osjs/<project>-<suffix>`.
 
-## Setup
+## Modules
 
-Since the OS.js sources are split up into several libraries (and repositories) the standard way to work with development for internal modules is to use the `npm link` feature.
+The OS.js client and server are split up into several modules provided by `npm packages` (see `package.json`).
 
-You don't have to use npm if you're developing your own custom modules or packages.
+You can place your own modules inside the `src/` if you don't want to work with npm.
 
-The `OS.js` repository is just a basic distribution template, so you can use this as you see fit. You can place your sources in the `src/` directory or use git submodules, etc.
+To make your own module(s), you can use the CLI Wizard:
+
+* `npm run make:provider` - See [Service Provider Tutorial](../tutorial/provider/README.md)
+* `npm run make:auth` - See [Authentication Tutorial](../tutorial/auth/README.md)
+* `npm run make:settings` - See [Settings Tutorial](../tutorial/settings/README.md)
+* `npm run make:vfs` - See [VFS Tutorial](../tutorial/vfs/README.md)
+
+
+If you want to modify the official modules (which are installed via `npm`) you have two choices which are explained in detail below:
+
+1. Replace the module by checking out local source-code
+2. Override module with local source-code using `npm link`
 
 ### Replacement
 
@@ -101,6 +142,8 @@ import {/* some code here */} from '../osjs-client/index.js';
 ### Linking
 
 With the `npm link` feature you can replace the different modules of OS.js with local source-code. If you for example want to make changes to the `@osjs/client` you can check out its sources, run the linking and then make any changes you may want.
+
+> **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
 Assuming you've already installed OS.js, this is an example of how you set up linking:
 
@@ -135,9 +178,13 @@ npm link @osjs/client
 > 2. Note that the linking only applies to the package, not its dependencies. To also change the packages dependencies, you have to link these as well.
 > 3. Running `npm install` after linking **will remove the links**
 
-### Packages
+## Packages
 
-You can use `npm run package:create` to create a new package from a wizard.
+You can use `npm run make:application` to create a new [application package](../tutorial/application/README.md) package from a wizard.
+
+*Themes are not covered in this section. See tutorials in menu.*
+
+The standard official packages are provided via *npm packages*, but the directory `src/pacakges` is also included (this is where the package wizard places the files).
 
 To set up package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
 
@@ -174,7 +221,7 @@ npm run package:discover
 > 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
 > 4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
 
-## Next steps
+### Next steps
 
 Now that you have your package set up, look at the Tutorial section in the menu on how to proceed with implementing features.
 
