@@ -72,7 +72,31 @@ Official packages are scoped with `@osjs/<project>-<suffix>`.
 
 Since the OS.js sources are split up into several libraries (and repositories) the standard way to work with development for internal modules is to use the `npm link` feature.
 
-You don't have to use npm if you're developing your own custom modules or packages. The `OS.js` repository is just a basic distribution template, so you can use this as you see fit. You can place your sources in the `src/` directory or use git submodules, etc.
+You don't have to use npm if you're developing your own custom modules or packages.
+
+The `OS.js` repository is just a basic distribution template, so you can use this as you see fit. You can place your sources in the `src/` directory or use git submodules, etc.
+
+### Replacement
+
+If you don't want to use and manage the libraries with `npm link` you can modify your bootstrap scripts.
+
+Example:
+
+```bash
+# In your OS.js installation
+cd src/
+git clone https://github.com/os-js/osjs-client
+cd osjs-client
+npm install
+```
+
+```javascript
+// In `src/client/index.js` replace this:
+import {/* some code here */} from '@osjs/client';
+
+// With:
+import {/* some code here */} from '../osjs-client/index.js';
+```
 
 ### Linking
 
@@ -109,6 +133,7 @@ npm link @osjs/client
 > Notes:
 > 1. Windows users might have to apply `{resolve: {symlinks:false}}` to the Webpack configuration. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled if nested deeply.
 > 2. Note that the linking only applies to the package, not its dependencies. To also change the packages dependencies, you have to link these as well.
+> 3. Running `npm install` after linking **will remove the links**
 
 ### Packages
 
