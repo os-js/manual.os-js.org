@@ -119,7 +119,7 @@ If you want to modify the official modules (which are installed via `npm`) you h
 
 ### Replacement
 
-If you don't want to use and manage the libraries with `npm link` you can modify your bootstrap scripts.
+Your first option is to simply replace the `import` statements in your bootstrap scripts.
 
 Example:
 
@@ -141,7 +141,7 @@ import {/* some code here */} from '../osjs-client/index.js';
 
 ### Linking
 
-With the `npm link` feature you can replace the different modules of OS.js with local source-code. If you for example want to make changes to the `@osjs/client` you can check out its sources, run the linking and then make any changes you may want.
+With the `npm link` feature you *override* the paths in `node_modules/` and link them to the actual source-code instead of the distributed builds.
 
 > **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
@@ -174,8 +174,7 @@ npm link @osjs/client
 ```
 
 > Notes:
-> 1. Windows users might have to apply `{resolve: {symlinks:false}}` to the Webpack configuration. Some users have reported some dependencies fail to resolve properly with symlink resolution enabled if nested deeply.
-> 2. Note that the linking only applies to the package, not its dependencies. To also change the packages dependencies, you have to link these as well.
+> 2. Using `npm link` will not link its dependencies. You have to do this yourself or use a monorepo uitlity to automate the process.
 > 3. Running `npm install` after linking **will remove the links**
 
 ## Packages
@@ -187,6 +186,8 @@ You can use `npm run make:application` to create a new [application package](../
 The standard official packages are provided via *npm packages*, but the directory `src/pacakges` is also included (this is where the package wizard places the files).
 
 To set up package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
+
+> Packages installed in `node_modules/` always have the lowest priority, and discovery paths are prioritized by their order. This way you can replace officially installed packages without removing them from `package.json`.
 
 Packages require a special entry in the `package.json` file in order for discovery to work:
 
