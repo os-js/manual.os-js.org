@@ -65,7 +65,18 @@ src/                     Sources
 
 ### Webpack
 
-OS.js uses [Webpack](https://webpack.js.org/) for building and bundling by default with Babel and Sass CSS.
+OS.js uses Webpack 4 for building and bundling by default with Babel 7 and Sass CSS.
+
+These are some of the plugins and loaders used throughout codebases:
+
+* [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
+* [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin)
+* [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
+* [optimize-css-assets-webpack-plugin](https://github.com/NMFR/optimize-css-assets-webpack-plugin)
+* [babel-loader](https://github.com/babel/babel-loader)
+* [file-loader](https://github.com/webpack-contrib/file-loader)
+* [sass-loader](https://github.com/webpack-contrib/sass-loader)
+* [css-loader](https://github.com/webpack-contrib/css-loader)
 
 ### Docker
 
@@ -93,6 +104,8 @@ All official packages provides running one or more of these tasks:
 * `npm run build` Build changes once
 * `npm run watch` Watch and build changes automatically
 
+As described above, building is done using [Webpack](#webpack).
+
 ### Environment
 
 Using the required tools (above) you can set up a development environment in a couple of minutes.
@@ -107,7 +120,7 @@ You can launch the server with [nodemon](http://nodemon.io/) to automatically re
 
 ## Naming
 
-OS.js has a format for naming different modules etc.:
+OS.js has a format for naming projects:
 
 * `osjs-<project>-application` - Application package
 * `osjs-<project>-provider` -  Service Provider module
@@ -116,10 +129,11 @@ OS.js has a format for naming different modules etc.:
 * `osjs-<project>-adapter` - VFS Adapters
 * `osjs-<project>-theme` - Theme package
 * `osjs-<project>-icons` - Icons package
+* `osjs-<project>-sounds` - Sounds package
 * `osjs-<project>-cli` - CLI Plugin
 * `osjs-<project>` - Core modules
 
-Official packages are scoped with `@osjs/<project>-<suffix>`.
+Official projects are scoped with `@osjs/<project>-<suffix>`.
 
 ## Modules
 
