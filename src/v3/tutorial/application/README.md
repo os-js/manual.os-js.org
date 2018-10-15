@@ -8,11 +8,13 @@ This tutorial will show you how to create an application and use some of the fun
 
 ## Creation
 
-You can use the [official example package](https://github.com/os-js/osjs-example-application) as a boilerplate for your project.
-
 To generate a new package using the example via CLI run `npm run make:application`.
 
 > The created package will have a basic Babel, SASS and ESLint/Stylelint setup.
+
+<!-- -->
+
+> For general information about development see [development article](../../development/README.md).
 
 ## Metadata
 

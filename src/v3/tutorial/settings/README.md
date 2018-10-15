@@ -63,6 +63,8 @@ To set up your adapter, see the [settings guide](/guide/settings/README.md).
 
 To generate a new adapter using the example via CLI run `npm run make:settings`.
 
+> For general information about development see [development article](../../development/README.md).
+
 ### Client
 
 ```javascript

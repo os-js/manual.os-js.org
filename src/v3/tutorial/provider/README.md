@@ -50,6 +50,8 @@ See [service provider guide](../../guide/provider/README.md) for more info.
 
 To generate a new provider using the example via CLI run `npm run make:provider`.
 
+> For general information about development see [development article](../../development/README.md).
+
 ### Instance factory
 
 To register a factory:

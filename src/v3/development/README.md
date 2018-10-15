@@ -26,7 +26,7 @@ This article will walk you through the development process of OS.js modules and 
 
 ## Introduction
 
-Before beginning read the [overview article](../resource/overview/README.md). You also need to familiarize yourself with the following technologies:
+**Before beginning read the [overview article](../resource/overview/README.md).** You also need to familiarize yourself with the following technologies:
 
 * [ES6](https://github.com/lukehoban/es6features)
 * [Sass CSS](https://sass-lang.com/)
@@ -189,40 +189,24 @@ npm link @osjs/client
 
 ## Packages
 
-You can use `npm run make:application` to create a new [application package](../tutorial/application/README.md) package from a wizard.
-
-*Themes are not covered in this section. See tutorials in menu.*
-
-The standard official packages are provided via *npm packages*, but the directory `src/pacakges` is also included (this is where the package wizard places the files).
-
-To set up package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
+By default, the packages provided by the OS.js repository are installed via `npm` (`node_modules/`), but the directory `src/packages` can also be used. To set up custom package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
 
 > Packages installed in `node_modules/` always have the lowest priority, and discovery paths are prioritized by their order. This way you can replace officially installed packages without removing them from `package.json`.
 
-Packages require a special entry in the `package.json` file in order for discovery to work:
+Run `npm run make:application` to create a new [application package](../tutorial/application/README.md) package from a wizard using the standard template:
 
-```json
-{
-  "osjs": {
-    "type": "package"
-  }
-}
-```
-
-In this example we clone the example application repository instead of creating a new one:
+> *Theme templates currently not provided, use the theme repositories a starting point.* Note that you have to manually install the dependencies and build the package afterwards.
 
 ```bash
 # In your OS.js root folder
-git clone https://github.com/os-js/osjs-example-application.git src/packages/Example
-cd src/packages/Example
+npm run make:application
+
+# Then enter the new package directory
+cd src/packages/MyApplication
 npm install
 npm run build
-```
 
-Then run the discovery command:
-
-```bash
-# In your OS.js root folder
+# Then in the OS.js root folder run the package discovery command
 npm run package:discover
 ```
 
@@ -238,11 +222,10 @@ Now that you have your package set up, look at the Tutorial section in the menu 
 
 If you're developing an application, these are the relevant articles in order:
 
-1. [Overview](../resource/overview/README.md)
-2. [Core Tutorial](../tutorial/core/README.md)
-3. [Application Tutorial](../tutorial/application/README.md)
-4. [Window Tutorial](../tutorial/window/README.md)
-4. [GUI Tutorial](../tutorial/gui/README.md)
+1. [Core Tutorial](../tutorial/core/README.md)
+2. [Application Tutorial](../tutorial/application/README.md)
+3. [Window Tutorial](../tutorial/window/README.md)
+3. [GUI Tutorial](../tutorial/gui/README.md)
 
 ## Contributing
 

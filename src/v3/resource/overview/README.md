@@ -70,11 +70,17 @@ Most of the features in the client are provided by [service providers](../../gui
 
 See the [official resources](../official/README.md) for modules.
 
+## Building
+
+Webpack configurations are defined in `webpack.config.js` in the root directory of all client-side modules and packages.
+
+Usually a `index.js` and `index.scss` file are set up as entry-points in this configuration, which will create bundled output in the `dist/` folder.
+
+The output is usually named `main.js` and `main.css` (and any resources imported `{dir/}{hash}.{extension}`).
+
 ## Modules
 
 Modules come in several forms: [service provider](../../guide/provider/README.md), [cli task](../../guide/cli/README.md#custom-task), [authentication adapter](../../guide/auth/README.md), [settings adapter](../../guide/settings/README.md), [filesystem adapter](../../guide/filesystem/README.md).
-
-Client modules are bundles with Webpack, just like the [packages](#packages).
 
 See the [official resources](../official/README.md) for modules.
 
@@ -82,20 +88,9 @@ See the [official resources](../official/README.md) for modules.
 
 Packages are divided into several types: [`application`](../../tutorial/application/README.md), [`theme`](../../tutorial/theme/README.md#styles) and [`icons`](../../tutorial/theme/README.md#icons). All of these types are set-up and built in the same way, so to keep this article brief it will focus on *applications*.
 
-By default a `server.js` script is provided (customizable) so that you can use to establish communication between the server and your client via [HTTP](../../tutorial/application/README.md#http-requests) or [WebSockets](../../tutorial/application/README.md#websockets).
-
-The `index.js` and `index.scss` are the entry points for the [bundling process](#source-code) and [`metadata.json`](#metadata).
+A simple diagram of how package files are built and consumed:
 
 ![Package Diagram](package.png)
 
-### Building
+See the [official resources](../official/README.md) for packages.
 
-Webpack configuration is defined in `webpack.config.js`, which is used when compiling the application.
-
-By default the `index.js` and `index.scss` files are set up as entry-points in this configuration, which will create bundled output in the `dist/` folder. The output is usually named `main.js` and `main.css` (and any resources imported `{dir/}{hash}.{extension}`), the former of which are defined in the `metadata.json` file.
-
-### Metadata
-
-The [`metadata.json`](../../tutorial/application/README.md#metadata) file describes your application.
-
-Using the `files` array in this file you can add what resources to load when OS.js launched the application. This usually consists of the `main.js` and `main.css` files produced by [Webpack](#webpack).

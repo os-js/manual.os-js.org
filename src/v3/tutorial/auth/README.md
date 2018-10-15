@@ -30,6 +30,8 @@ To set up your adapter, see the [authentication guide](/guide/auth/README.md).
 
 To generate a new adapter using the example via CLI run `npm run make:auth`.
 
+> For general information about development see [development article](../../development/README.md).
+
 ### Client
 
 ```javascript

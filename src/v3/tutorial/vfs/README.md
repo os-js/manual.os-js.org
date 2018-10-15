@@ -95,6 +95,8 @@ To set up your adapter see the [VFS guide](/guide/filesystem/README.md).
 
 To generate a new adapter using the example via CLI run `npm run make:vfs`.
 
+> For general information about development see [development article](../../development/README.md).
+
 ### Client
 
 ```javascript
