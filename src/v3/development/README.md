@@ -198,15 +198,7 @@ Run `npm run make:application` to create a new [application package](../tutorial
 > *Theme templates currently not provided, use the theme repositories a starting point.* Note that you have to manually install the dependencies and build the package afterwards.
 
 ```bash
-# In your OS.js root folder
 npm run make:application
-
-# Then enter the new package directory
-cd src/packages/MyApplication
-npm install
-npm run build
-
-# Then in the OS.js root folder run the package discovery command
 npm run package:discover
 ```
 
