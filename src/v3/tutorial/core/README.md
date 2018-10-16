@@ -65,9 +65,8 @@ const user = core.getUser();
 The window global `OSjs` also lets you reach some of the core functionality.
 
 ```javascript
-OSjs.getApplications(); // Get a list of running applications (session data)
-OSjs.getWindows(); // Gets a list of all windows (session data)
-OSjs.make(); // Same as above (but some services are restricted)
+// Same as above (but some services are restricted)
+OSjs.make();
 
 // These are the same as above
 OSjs.open();
