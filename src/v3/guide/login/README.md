@@ -116,6 +116,8 @@ You can also add a logo via configuration and customize via CSS:
 
 You can also replace the default UI with your own:
 
+> Note that you can use your `src/client/index.html` file to add HTML content instead of programatically adding via DOM.
+
 ### Adapter
 
 Extend the default adapter in for example `src/client/custom-login.js`:
