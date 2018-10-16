@@ -183,9 +183,10 @@ npm link
 npm link @osjs/client
 ```
 
-> Notes:
-> 2. Using `npm link` will not link its dependencies. You have to do this yourself or use a monorepo uitlity to automate the process.
-> 3. Running `npm install` after linking **will remove the links**
+*Notes*:
+
+1. Using `npm link` will not link its dependencies. You have to do this yourself or use a monorepo uitlity to automate the process.
+2. Running `npm install` after linking **will remove the links**
 
 ## Packages
 
@@ -202,11 +203,12 @@ npm run make:application
 npm run package:discover
 ```
 
-> Notes:
-> 1. Each time you add/remove (or modify the metadata) a package you need to run `npm run package:discover` to update the global package manifest.
-> 2. Package name **must be unique**.
-> 3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
-> 4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
+*Notes*:
+
+1. Each time you add/remove (or modify the metadata) a package you need to run `npm run package:discover` to update the global package manifest.
+2. Package name **must be unique**.
+3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
+4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
 
 ### Next steps
 
