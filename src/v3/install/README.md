@@ -72,6 +72,8 @@ Now open [http://localhost:8000](http://localhost:8000) in your browser to launc
 
 ## Upgrade
 
-To upgrade, use `npm update` or `npm install package@version` to manually update a selection of packages.
-
 You can list outdated packages with `npm outdated`.
+
+To upgrade, use `npm update`.
+
+> Releases uses [semantic versioning](https://semver.org/) so if an update has breaking changes the `npm update` command will not upgrade to the latest release. You'll have to do it manually by using `npm install <package>@^<version>`.
