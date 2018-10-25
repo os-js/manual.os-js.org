@@ -167,10 +167,10 @@ You can set up your own HTTP routes using the internal APIs:
 
 ### Client
 
-Create the endpoint URL, then use the `request()` method:
+Create the endpoint URL, then use the `request()` method (a wrapper around `fetch()`):
 
 ```javascript
-const response = await proc.request('/hello-world');
+const response = await proc.request('/hello-world', {method: 'post'});
 console.log(response);
 ```
 
