@@ -4,6 +4,12 @@ description: OS.js v3 Migraion Guide
 
 # Migration Guide
 
+## 3.0.0 - October 25th 2018
+
+The `Application#request` method is now the same as `Core#request` except that the first argument always resolves to an application URL.
+
+See https://manual.os-js.org/v3/api/osjs-client/class/src/application.js~Application.html#instance-method-request
+
 ## 3.0.0 - August 26th 2018
 
 Please update your `src/cli/index.js` file:
