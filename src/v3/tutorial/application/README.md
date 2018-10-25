@@ -170,8 +170,7 @@ You can set up your own HTTP routes using the internal APIs:
 Create the endpoint URL, then use the `request()` method:
 
 ```javascript
-const endpoint = proc.resource('/hello-world');
-const response = await proc.request(endpoint);
+const response = await proc.request('/hello-world');
 console.log(response);
 ```
 
@@ -197,7 +196,7 @@ You can also spawn WebSockets on the internal server and bind it to your applica
 Create an instance of `Websokcet` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
 
 ```javascript
-const ws = proc.socket(); // Defaults to '/socket'
+const ws = proc.socket(); // Defaults to '/socket' (first argument)
 
 ws.on('message', ev => console.log('got data', ev.data));
 ws.on('close', () => console.log('closed'));
