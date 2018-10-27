@@ -10,6 +10,8 @@ In your `webpack.config.js` file in the installation directory, remove the `excl
 
 See patch https://github.com/os-js/OS.js/commit/9ca2614f87535e4e7b3bb192fc20d7ab102929bc
 
+*You also need to run `npm install @osjs/gui@^4.0.0`*
+
 ## 3.0.0 - October 25th 2018
 
 The `Application#request` method is now the same as `Core#request` except that the first argument always resolves to an application URL.
