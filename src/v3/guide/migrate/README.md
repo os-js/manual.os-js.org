@@ -6,11 +6,9 @@ description: OS.js v3 Migraion Guide
 
 ## 3.0.0 - October 26th 2018
 
-In your `webpack.config.js` file in the installation directory, remove the `exclude` section from CSS and JS (babel) loaders.
+Run `npm install @osjs/gui@^4.0.0` to get the latest GUI package release.
 
-See patch https://github.com/os-js/OS.js/commit/9ca2614f87535e4e7b3bb192fc20d7ab102929bc
-
-*You also need to run `npm install @osjs/gui@^4.0.0`*
+Optionally see [this patch](https://github.com/os-js/OS.js/commit/1380d4b98048dee2d7e95b9dddbf9af323f5fdab) to help optimize production builds. The mini css extract plugin was splitting up files into chunks incorrectly (so this was disabled).
 
 ## 3.0.0 - October 25th 2018
 
