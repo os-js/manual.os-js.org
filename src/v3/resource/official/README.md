@@ -44,6 +44,7 @@ description: OS.js v3 Official Resources
 * https://github.com/os-js/osjs-htmlviewer-application
 * https://github.com/os-js/osjs-pdfreader-application
 * https://github.com/os-js/osjs-xpra-application
+* https://github.com/os-js/osjs-vnc-application
 
 ## Themes
 
