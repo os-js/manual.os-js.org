@@ -81,11 +81,12 @@ The VFS responds with file statistics in some cases, containing:
 
 ## Encoding
 
-By default, files are read as `ArrayBuffer`, but you can specify any of these types:
+By default, files are read as `string`, but you can specify any of these types:
 
 * `string` - A `UTF-8` encoded string
 * `uri` - A `base64` encoded resource link
-* `blob` - A `Blob`
+* `blob` - A `Blob`,
+* `arraybuffer` - An `ArrayBuffer`
 
 ## Custom VFS Adapter
 
