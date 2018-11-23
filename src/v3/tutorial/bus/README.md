@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Bus Tutorial
+full_title: Bus Tutorial
 ---
 
 # Bus Tutorial

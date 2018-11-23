@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Settings Tutorial
+full_title: Settings Tutorial
 ---
 
 # Settings Tutorial

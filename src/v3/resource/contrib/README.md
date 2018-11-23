@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Contributed Resources
+full_title: Contributed Resources
 ---
 
 # Contributed Resources

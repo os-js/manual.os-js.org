@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Locale Tutorial
+full_title: Locale Tutorial
 ---
 
 # Locale Tutorial

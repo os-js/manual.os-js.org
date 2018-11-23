@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Drag-and-Drop Tutorial
+full_title: Drag-and-Drop Tutorial
 ---
 
 # Drag-and-Drop Tutorial

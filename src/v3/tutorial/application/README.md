@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Application Tutorial
+full_title: Application Tutorial
 ---
 
 # Application Tutorial

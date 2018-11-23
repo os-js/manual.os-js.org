@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Window Tutorial
+full_title: Window Tutorial
 ---
 
 # Window Tutorial

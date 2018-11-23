@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Notification Tutorial
+full_title: Notification Tutorial
 ---
 
 # Notification Tutorial

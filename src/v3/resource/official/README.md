@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Official Resources
+full_title: Official Resources
 ---
 
 # Official Resources

@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Remote Debugging Guide
+full_title: Remote Debuggin Guide
 ---
 
 # Remote Debugging Guide

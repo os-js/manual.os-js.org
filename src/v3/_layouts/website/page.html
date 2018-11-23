@@ -1,10 +1,12 @@
 {% extends template.self %}
 
+{% block title %}{% if page.full_title %}{{ page.full_title }} · {{ super() }}{% else %}{{ page.title }} · {{ super() }}{% endif %}{% endblock %}
+
 {% block head %}
   {{ super() }}
 
   <link rel="publisher" href="https://plus.google.com/101576798387217383063" />
-  <link rel="icon" type="image/x-icon" href="gitbook/images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
 {% endblock %}
 

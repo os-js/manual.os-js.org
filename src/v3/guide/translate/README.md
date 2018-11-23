@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Translation Guide
+full_title: Translation Guide
 ---
 
 # Translation Guide

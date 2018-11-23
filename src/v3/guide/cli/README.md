@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 CLI Guide
+full_title: CLI Guide
 ---
 
 # CLI guide

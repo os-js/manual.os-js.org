@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Service Provider Tutorial
+full_title: Service Provider Tutorial
 ---
 
 # Service Provider Tutorial

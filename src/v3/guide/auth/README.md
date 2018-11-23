@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Authentication Guide
+full_title: Authentication Guide
 ---
 
 # Authentication Guide

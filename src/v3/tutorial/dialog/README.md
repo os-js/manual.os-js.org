@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Dialog Tutorial
+full_title: Dialog Tutorial
 ---
 
 # Dialog Tutorial

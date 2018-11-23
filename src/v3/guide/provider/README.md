@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Service Provider Guide
+full_title: Service Provider Guide
 ---
 
 # Service Provider Guide

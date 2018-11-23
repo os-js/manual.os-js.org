@@ -1,8 +1,9 @@
 ---
 description: OS.js v3 Authentication Tutorial
+full_title: Authentication Tutorial
 ---
 
-# Auth Tutorial
+# Authentication Tutorial
 
 This tutorial will show you how to create your own authentication adapter.
 

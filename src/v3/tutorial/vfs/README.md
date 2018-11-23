@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 VFS Tutorial
+full_title: VFS Tutorial
 ---
 
 # VFS Tutorial

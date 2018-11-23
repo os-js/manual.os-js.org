@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 GUI Tutorial
+full_title: GUI Tutorial
 ---
 
 # GUI Tutorial

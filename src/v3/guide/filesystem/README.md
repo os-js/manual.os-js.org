@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Filesystem Guide
+full_title: Filesystem Guide
 ---
 
 # Filesystem Guide

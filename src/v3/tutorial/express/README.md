@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Express Tutorial
+full_title: Express Tutorial
 ---
 
 # Express Tutorial

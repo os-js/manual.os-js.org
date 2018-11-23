@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Theme Tutorial
+full_title: Theme Tutorial
 ---
 
 # Theme Tutorial

@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Tray Tutorial
+full_title: Tray Tutorial
 ---
 
 # Tray Tutorial

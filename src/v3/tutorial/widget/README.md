@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Widget Tutorial
+full_title: Widget Tutorial
 ---
 
 # Widget Tutorial

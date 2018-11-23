@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Panel Tutorial
+full_title: Panel Tutorial
 ---
 
 # Panel Item Tutorial

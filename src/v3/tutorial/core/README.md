@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Core Tutorial
+full_title: Core Tutorial
 ---
 
 # Core Tutorial

@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 IFrame Guide
+full_title: IFrame Guide
 ---
 
 # IFrame Application Guide
