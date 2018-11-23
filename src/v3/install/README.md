@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Installation Manual
+full_title: Installation
 ---
 
 # Installation

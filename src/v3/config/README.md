@@ -1,5 +1,6 @@
 ---
 description: OS.js v3 Configuration Manual
+full_title: Configuration
 ---
 
 # Configuration
