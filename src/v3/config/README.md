@@ -53,6 +53,8 @@ See [filesystem guide](../guide/filesystem/README.md)
 | public                              | `/dist`             | The dist directory                                                |
 | morgan                              | `tiny`              | Morgan logging mode                                               |
 | ws.port                             | `<auto>`            | WebSocket port (defaults to upgrade)                              |
+| express.maxFieldsSize               | `20971520`          | HTTP Max POST form/fields size in bytes                           |
+| express.maxFileSize                 | `209715200`         | HTTP Max POST file upload size in bytes                           |
 | session.store.module                | `connect-loki`      | HTTP Session storage                                              |
 | session.options.name                | `osjs.sid`          | HTTP Session cookie name                                          |
 | session.options.secret              | `osjs`              | HTTP Session secret                                               |
