@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Login Guide
+description: A guide on how to customize the login interface
 full_title: Login Guide
 ---
 

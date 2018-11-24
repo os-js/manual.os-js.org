@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Theme Tutorial
+description: This tutorial will demonstrate how to create your own theme(s).
 full_title: Theme Tutorial
 ---
 
@@ -15,13 +15,17 @@ The theme authentication service provides some API methods:
 const theme = core.make('osjs/theme');
 theme.resource('file'); // Gets an URI to a theme resource (current theme)
 theme.icon('name'); // Gets an URI to a icon theme image (current theme)
+
+const sounds = core.make('osjs/sounds');
+sounds.resouce('file'); // Gets an URI to a sound theme resource (current theme)
+sounds.play('file'); // Plays a sound
 ```
 
 ## Creation
 
-A theme consists of a set of icons and styles. It is installed as a package (just as applications).
+A theme consists of a set of icons, styles and sounds. It is installed as a package (just as applications).
 
-Use the [official standard theme](https://github.com/os-js/osjs-standard-theme) or [official standard icons](https://github.com/os-js/osjs-gnome-icons) as a base or as a template.
+Use the [official standard theme](https://github.com/os-js/osjs-standard-theme), [official standard icons](https://github.com/os-js/osjs-gnome-icons) or [official standard sounds](https://github.com/os-js/osjs-freedesktop-sounds) as a base or as a template.
 
 > Please note that if you're making a copy of the standard theme, all the scripts and dependencies must remain intact from the original `package.json` file.
 
@@ -35,6 +39,7 @@ The `metadata.json` file describes your theme:
 {
   "type": "theme",
   //"type": "icons",
+  //"type": "sounds",
 
   // The unique name
   "name": "MyTheme",
@@ -73,4 +78,9 @@ The `@osjs/standard-theme` package is a good starting place if you want to make 
 
 ## Icons
 
-The icons follow the [GNOME Icon naming spec](https://developer.gnome.org/icon-naming-spec/) and are by default in `48x48` png format.
+The icons follow the [Freedesktop Icon naming spesification](https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html) and are by default in `48x48` png format.
+
+## Sounds
+
+The sounds follow the [Freedesktop Sound naming spesification](http://0pointer.de/public/sound-naming-spec.html) and are privded in both Ogg and MP3 formats.
+

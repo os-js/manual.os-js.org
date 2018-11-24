@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Clipboard Tutorial
+description: This tutorial shows you how to interact with the clipboard.
 full_title: Clipboard Tutorial
 ---
 

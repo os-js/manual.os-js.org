@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Settings Tutorial
+description: This tutorial will show you how to manage settings, and how to create your own settings adapter.
 full_title: Settings Tutorial
 ---
 

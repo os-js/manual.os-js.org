@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Drag-and-Drop Tutorial
+description: This tutorial explains how to use the Drag-and-Drop (DnD) APIs.
 full_title: Drag-and-Drop Tutorial
 ---
 

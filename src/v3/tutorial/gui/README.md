@@ -1,12 +1,11 @@
 ---
-description: OS.js v3 GUI Tutorial
+description: This turorial goes over how to create reactive UIs using components.
 full_title: GUI Tutorial
 ---
 
 # GUI Tutorial
 
 This turorial goes over how to create reactive UIs using components.
-
 
 ## Usage
 

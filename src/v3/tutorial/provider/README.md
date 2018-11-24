@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Service Provider Tutorial
+description: This tutorial will explain how to create and use a service provider.
 full_title: Service Provider Tutorial
 ---
 

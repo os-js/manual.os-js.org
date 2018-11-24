@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Migraion Guide
+description: A guide for migrating to newer version of OS.js v3.
 full_title: Migraion Guide
 ---
 

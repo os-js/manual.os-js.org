@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Installation Manual
+description: This article will explain the installation and upgrade procedures.
 full_title: Installation
 ---
 

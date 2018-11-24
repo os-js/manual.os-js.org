@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Embedding Guide
+description: A guide on how to embed OS.js v3
 full_title: Embedding Guide
 ---
 

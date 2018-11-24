@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Authentication Guide
+description: A guide for customizing authentication.
 full_title: Authentication Guide
 ---
 

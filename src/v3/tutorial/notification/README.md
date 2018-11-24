@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Notification Tutorial
+description: This tutorial demonstrates how to create a new notification.
 full_title: Notification Tutorial
 ---
 

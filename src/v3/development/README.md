@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Development Manual
+description: An introduction into development and related utilities
 ---
 
 # Development

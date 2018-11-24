@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Widget Tutorial
+description: This tutorial shows you how to create and register your own widgets.
 full_title: Widget Tutorial
 ---
 

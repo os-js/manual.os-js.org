@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Application Tutorial
+description: This tutorial will show you how to create an application and use some of the functionalities.
 full_title: Application Tutorial
 ---
 

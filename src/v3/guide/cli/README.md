@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 CLI Guide
+description: A guide for using and extending the CLI
 full_title: CLI Guide
 ---
 

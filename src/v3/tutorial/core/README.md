@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Core Tutorial
+description: This tutorial shows you how to interact with the core.
 full_title: Core Tutorial
 ---
 

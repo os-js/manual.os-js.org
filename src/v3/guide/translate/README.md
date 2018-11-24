@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Translation Guide
+description: A guide for translating libraries and packages
 full_title: Translation Guide
 ---
 

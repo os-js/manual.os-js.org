@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Settings Guide
+description: A guide on customizing settings adapters
 full_title: Settings Guide
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Panel Tutorial
+description: This tutorial shows you how to create and register your own panel items.
 full_title: Panel Tutorial
 ---
 

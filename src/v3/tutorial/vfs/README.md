@@ -1,11 +1,11 @@
 ---
-description: OS.js v3 VFS Tutorial
+description: This tutorial shows you how to interact with and extend the virtual filesystems.
 full_title: VFS Tutorial
 ---
 
 # VFS Tutorial
 
-This tutorial shows you how to create and interact with the virtual filesystems.
+This tutorial shows you how to interact with and extend the virtual filesystems.
 
 The Virtual Filesystem (VFS) provides methods to use and manipulate local (or remote) filesystems.
 

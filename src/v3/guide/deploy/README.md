@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Deployment Guide
+description: A guide for deploying OS.js v3
 full_title: Deployment Guide
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Frameworks Guide
+description: A guide on how to use different frameworks within OS.js v3
 full_title: Frameworks Guide
 ---
 

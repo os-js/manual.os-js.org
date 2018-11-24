@@ -1,11 +1,11 @@
 ---
-description: OS.js v3 Bus Tutorial
+description: This tutorial will show you how to use a Bus (or EventEmitter).
 full_title: Bus Tutorial
 ---
 
 # Bus Tutorial
 
-This tutorial will show you how to use a Bus.
+This tutorial will show you how to use a Bus (or EventEmitter).
 
 > A bus (event handler/event dispatcher) provides methods to assign and emit events.
 
@@ -15,7 +15,7 @@ This tutorial will show you how to use a Bus.
 To create your own bus use the provided service:
 
 ```javascript
-const bus = core.make('osjs/event-handler');
+const bus = core.make('osjs/event-emitter');
 bus.on('greet', (who) => console.log(`Hello ${who}!`));
 bus.emit('greeet', 'world');
 ```
@@ -104,7 +104,7 @@ const windowFactory = (proc, bus) => {
 // This is where we set up a bus for sentralized event handling.
 const register = (core, args, options, metadata) => {
   const proc = core.make('osjs/application', {args, options, metadata});
-  const bus = core.make('osjs/event-handler', 'SomeOptionalBusName');
+  const bus = core.make('osjs/event-emitter', 'SomeOptionalBusName');
   const factory = windowFactory(proc, bus);
 
   // Proxy the 'greet' event onto the main window if found.

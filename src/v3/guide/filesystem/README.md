@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Filesystem Guide
+description: A guide on how to customize the virtual filesystem
 full_title: Filesystem Guide
 ---
 

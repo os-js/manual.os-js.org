@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 IFrame Guide
+description: A guide on how to create Iframe applications in OS.js v3
 full_title: IFrame Guide
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Locale Tutorial
+description: This tutorial explains how to use the localization APIs.
 full_title: Locale Tutorial
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Window Tutorial
+description: This tutorial shows you how to create and interact with Windows.
 full_title: Window Tutorial
 ---
 

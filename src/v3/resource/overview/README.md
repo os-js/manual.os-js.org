@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Overview
+description: A brief overview on the internals of OS.js v3.
 full_title: Overview
 ---
 

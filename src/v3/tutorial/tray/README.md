@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Tray Tutorial
+description: This tutorial demonstrates how to create and manage tray icons.
 full_title: Tray Tutorial
 ---
 
