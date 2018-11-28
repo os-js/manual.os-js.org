@@ -14,6 +14,8 @@ This manual contains instructions, developer information, general resources, tut
 
 > v3 is scheduled for release this summer/fall. See the [TODO](https://gist.github.com/andersevenrud/ebfc22ef75c6686cc2d9a6e1191a8405) list for current goal. This version is fully usable with only some quality of life features missing.
 
+To try it out, check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please note that this might be down for maintainence at times, or running an unstable version.*
+
 ![ScreenShot](https://www.os-js.org/screenshot.png)
 
 ---

@@ -23,6 +23,8 @@ You can run a demo using Docker without checkout out any source-code:
 docker run -p 8000:8000 osjs/osjs:v3
 ```
 
+Or check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please note that this might be down for maintainence at times, or running an unstable version.*
+
 ## Setup
 
 Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing in a production environment.
