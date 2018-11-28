@@ -27,3 +27,16 @@ If you're using this in a application, you probably want to destroy it when the 
 ```javascript
 proc.on('destroy', () => entry.destroy());
 ```
+
+To update the tray entry:
+
+```javascript
+const entry = core.make('osjs/tray', {
+  title: 'My Tray Icon'
+});
+
+// Takes the same arguments as creation
+tray.update({
+  title: 'My Tray Icon, but updated'
+});
+```
