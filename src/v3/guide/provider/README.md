@@ -17,6 +17,10 @@ npm install --save some-provider
 
 > Please note, on `node` you should use `require` instead of `import/export`.
 
+<!-- -->
+
+> [info] If you're adding client-side service provider, you need to rebuild your distro with `npm run build`.
+
 ```javascript
 import provider from 'some-provider';
 
