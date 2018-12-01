@@ -42,13 +42,15 @@ cd OS.js
 
 To install locally you have to run a couple of commands to set up your distribution:
 
+> [info] It is recommended that you run `npm update` after `npm install` to ensure that you're running the latest version of all dependencies.
+
 ```bash
 # Install dependencies
 npm install
 
 # Optionally install extra packages:
 # For a list of packages see https://manual.os-js.org/v3/resource/official/
-npm install --save @osjs/example-application
+npm install --save --production @osjs/example-application
 
 # Discover installed packages
 npm run package:discover
