@@ -5,13 +5,15 @@ full_title: Contributed Resources
 
 # Contributed Resources
 
-If you want to submit your contribution, contact me by email or join the [Gitter](https://gitter.im/os-js/OS.js) chatroom.
+If you want to submit your contribution, contact me by email, join the [Gitter](https://gitter.im/os-js/OS.js) chatroom or send a pull-request.
+
+> [info] These packages are provided by community members, so if you have any issues with these, make sure to create an issue in the appropriate Github project(s).
 
 ## Applications
 
-* https://github.com/SpaceboyRoss01/OS.js-twilioclient-application - A Twilio Client
 * https://github.com/SpaceboyRoss01/os.js-gba-application - A Gameboy Advanced Emulator
 * https://github.com/SpaceboyRoss01/osjs-nes-application - A NES Emulator
+* https://github.com/SpaceboyRoss01/OS.js-twilioclient-application - A Twilio Client
 
 ## Providers
 
