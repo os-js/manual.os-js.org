@@ -69,11 +69,21 @@ You can add mountpoints by updating your configuration files:
     mountpoints: [{
       name: 'temp',
       label: 'Temporary Files',
-      adapter: 'system' // You can leave this out as 'system' is default
+      adapter: 'system', // You can leave this out as 'system' is default
+      attributes: {}
      }]
    }
 }
 ```
+
+Available attributes:
+
+| Name          | Type      | Default   | Description                                   |
+| ------------- | --------- | --------- | --------------------------------------------- |
+| `visibility`  | `string`  | `global`  | Visibility in gui (`global` or `restricted`)  |
+| `enabled`     | `boolean` | `true`    | Enable                                        |
+| `searchable`  | `boolean` | `true`    | If this mountpoint can be searched            |
+| `readOnly`    | `boolean` | `false`   | Don't allow writing                           |
 
 #### Server
 
@@ -90,6 +100,14 @@ You can add mountpoints by updating your configuration files:
   }
 }
 ```
+
+Available attributes:
+
+| Name          | Type      | Default   | Description                                       |
+| ------------- | --------- | --------- | ------------------------------------------------- |
+| `root`        | `string`  | n/a       | When using the 'system' adapter this is the root  |
+| `searchable`  | `boolean` | `true`    | If this mountpoint can be searched                |
+| `readOnly`    | `boolean` | `false`   | Don't allow writing                               |
 
 ### Assigning Groups
 
