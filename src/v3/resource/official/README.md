@@ -16,62 +16,62 @@ full_title: Official Resources
 
 ## Modules
 
-* https://github.com/os-js/osjs-client
-* https://github.com/os-js/osjs-gui
-* https://github.com/os-js/osjs-dialogs
-* https://github.com/os-js/osjs-common
-* https://github.com/os-js/osjs-server
-* https://github.com/os-js/osjs-cli
-* https://github.com/os-js/osjs-panels
-* https://github.com/os-js/osjs-widgets
+* https://github.com/os-js/osjs-client - Main client
+* https://github.com/os-js/osjs-gui - GUI components
+* https://github.com/os-js/osjs-dialogs - Dialogs
+* https://github.com/os-js/osjs-common - Core Base
+* https://github.com/os-js/osjs-server - Server
+* https://github.com/os-js/osjs-cli - CLI and utilities
+* https://github.com/os-js/osjs-panels - Panels and Panel items
+* https://github.com/os-js/osjs-widgets - Widgets
 
 ## Examples
 
-* https://github.com/os-js/osjs-example-provider
-* https://github.com/os-js/osjs-example-application
-* https://github.com/os-js/osjs-example-iframe-application
+* https://github.com/os-js/osjs-example-provider - A basic Service Provider example
+* https://github.com/os-js/osjs-example-application - A basic Application package example
+* https://github.com/os-js/osjs-example-iframe-application - A basic iframe Application package example
 
 ## Applications
 
-* https://github.com/os-js/osjs-settings-application
-* https://github.com/os-js/osjs-xterm-application
-* https://github.com/os-js/osjs-textpad-application
-* https://github.com/os-js/osjs-draw-application
-* https://github.com/os-js/osjs-ace-application
-* https://github.com/os-js/osjs-strophejs-application
-* https://github.com/os-js/osjs-filemanager-application
-* https://github.com/os-js/osjs-preview-application
-* https://github.com/os-js/osjs-musicplayer-application
-* https://github.com/os-js/osjs-htmlviewer-application
-* https://github.com/os-js/osjs-pdfreader-application
-* https://github.com/os-js/osjs-xpra-application
-* https://github.com/os-js/osjs-vnc-application
+* https://github.com/os-js/osjs-settings-application - Manage OS.js settings
+* https://github.com/os-js/osjs-xterm-application - Connect to a remote SSH sesssion with Xterm
+* https://github.com/os-js/osjs-textpad-application - Edit text files
+* https://github.com/os-js/osjs-draw-application - Simple draw application
+* https://github.com/os-js/osjs-ace-application - Edit text and source code with Ace
+* https://github.com/os-js/osjs-strophejs-application - Chat via XMPP
+* https://github.com/os-js/osjs-filemanager-application - Manage and organize files
+* https://github.com/os-js/osjs-preview-application - View image and video files
+* https://github.com/os-js/osjs-musicplayer-application - Play music files
+* https://github.com/os-js/osjs-htmlviewer-application - View HTML files
+* https://github.com/os-js/osjs-pdfreader-application - View PDF files
+* https://github.com/os-js/osjs-xpra-application - Connect and stream desktop via remote VNC server
+* https://github.com/os-js/osjs-vnc-application - Connect and stream applications via remote Xpra server
 
 ## Themes
 
-* https://github.com/os-js/osjs-standard-theme
-* https://github.com/os-js/osjs-standard-dark-theme
-* https://github.com/os-js/osjs-gnome-icons
+* https://github.com/os-js/osjs-standard-theme - The standard OS.js theme
+* https://github.com/os-js/osjs-standard-dark-theme - A dark variation of the standard OS.js theme
+* https://github.com/os-js/osjs-gnome-icons - The standard OS.js icon set (Gnome)
+* https://github.com/os-js/osjs-freedesktop-sounds - The standard OS.js sound set (Freedesktop)
 
 ## Authentication
 
-* https://github.com/os-js/osjs-database-auth
-* https://github.com/os-js/osjs-sqlite-auth
-* https://github.com/os-js/osjs-pam-auth
+* https://github.com/os-js/osjs-database-auth - Authenticate users via a database
+* https://github.com/os-js/osjs-pam-auth - Authenticate users via PAM
 
 ## Settings
 
-* https://github.com/os-js/osjs-database-settings
+* https://github.com/os-js/osjs-database-settings - Store settings in a database
 
 ## Filesystem
 
-* https://github.com/os-js/osjs-gdrive-adapter
-* https://github.com/os-js/osjs-webdav-adapter
+* https://github.com/os-js/osjs-gdrive-adapter - Connect to remove Google Drive
+* https://github.com/os-js/osjs-webdav-adapter - Connect to remote WebDAV drives
 
 ## CLI
 
-* https://github.com/os-js/osjs-json-config-cli
+* https://github.com/os-js/osjs-json-config-cli - Manage settings via JSON
 
 ## Providers
 
-* https://github.com/os-js/osjs-gapi-provider
+* https://github.com/os-js/osjs-gapi-provider - Adds Google API features to the API
