@@ -14,6 +14,8 @@ This tutorial will show you how to use a Bus (or EventEmitter).
 
 To create your own bus use the provided service:
 
+> [info] Your `Window` and `Application` instances extends the EventEmitter. So you can use this as your bus(es), but please consider using event names with a namespace, ex: `mynamespace:event-name` to avoid conflicting with internal events.
+
 ```javascript
 // Basic usage
 const bus = core.make('osjs/event-emitter');
