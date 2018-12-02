@@ -15,9 +15,21 @@ This tutorial will show you how to use a Bus (or EventEmitter).
 To create your own bus use the provided service:
 
 ```javascript
+// Basic usage
 const bus = core.make('osjs/event-emitter');
 bus.on('greet', (who) => console.log(`Hello ${who}!`));
 bus.emit('greeet', 'world');
+
+// To register a subscriber that only fires once
+bus.on('greet', (who) => console.log(`Hello ${who}! But only once`));
+
+// To unregister an event
+const event = () => console.log('My event');
+bus.on('foo', event);
+bus.off('foo', event);
+
+// To unregister all events
+bus.off('foo');
 ```
 
 ## Advanced Example
