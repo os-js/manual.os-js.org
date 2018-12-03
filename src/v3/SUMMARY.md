@@ -131,3 +131,5 @@
   * [Customizing Login](guide/login/README.md)
   * [Embedding](guide/embed/README.md)
   * [Remote Debugging](guide/remotedebug/README.md)
+* Hosting
+  * [EvenNode](guide/hosting/evennode/README.md)
