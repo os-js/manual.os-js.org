@@ -13,6 +13,7 @@ full_title: Official Resources
 * [osjs-dialogs](https://manual.os-js.org/v3/api/osjs-dialogs/)
 * [osjs-panels](https://manual.os-js.org/v3/api/osjs-panels/)
 * [osjs-server](https://manual.os-js.org/v3/api/osjs-server/)
+* [osjs-event-emitter](https://manual.os-js.org/v3/api/osjs-event-emitter/)
 
 ## Modules
 
@@ -24,6 +25,7 @@ full_title: Official Resources
 * https://github.com/os-js/osjs-cli - CLI and utilities
 * https://github.com/os-js/osjs-panels - Panels and Panel items
 * https://github.com/os-js/osjs-widgets - Widgets
+* https://github.com/os-js/osjs-event-emitter - The EventEmitter (or Bus) implementation
 
 ## Examples
 
