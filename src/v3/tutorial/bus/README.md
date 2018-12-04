@@ -23,7 +23,7 @@ bus.on('greet', (who) => console.log(`Hello ${who}!`));
 bus.emit('greeet', 'world');
 
 // To register a subscriber that only fires once
-bus.on('greet', (who) => console.log(`Hello ${who}! But only once`));
+bus.once('greet', (who) => console.log(`Hello ${who}! But only once`));
 
 // To unregister an event
 const event = () => console.log('My event');
