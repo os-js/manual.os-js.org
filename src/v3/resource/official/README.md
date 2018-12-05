@@ -46,8 +46,8 @@ full_title: Official Resources
 * https://github.com/os-js/osjs-musicplayer-application - Play music files
 * https://github.com/os-js/osjs-htmlviewer-application - View HTML files
 * https://github.com/os-js/osjs-pdfreader-application - View PDF files
-* https://github.com/os-js/osjs-xpra-application - Connect and stream desktop via remote VNC server
-* https://github.com/os-js/osjs-vnc-application - Connect and stream applications via remote Xpra server
+* https://github.com/os-js/osjs-xpra-application - Connect and stream applications via remote Xpra server
+* https://github.com/os-js/osjs-vnc-application - Connect and stream desktop via remote VNC server
 
 ## Themes
 
