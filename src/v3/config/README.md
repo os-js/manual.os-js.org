@@ -19,13 +19,10 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 | ------------------------------- | --------------------- | -------------------------------------------------------- |
 | development                     | `<auto>`              | Enable development mode                                  |
 | standalone                      | `false`               | Enable standalone mode                                   |
-| public                          | `<auto>`              | Root public path for resolving urls                      |
 | login.username                  | `demo`                | Default login username                                   |
 | login.password                  | `demo`                | Default login password                                   |
-| ws.protocol                     | `<auto>`              | WebSocket protocol                                       |
-| ws.port                         | `<auto>`              | WebSocket port                                           |
-| ws.hostname                     | `<auto>`              | WebSocket hostname                                       |
-| ws.path                         | `<auto>`              | WebSocket path                                           |
+| http.public                     | `<auto>`              | Root public path for resolving urls                      |
+| ws.uri                          | `<auto>`              | WebSocket connection uri                                 |
 | auth.login.username             | `demo`                | Default login username                                   |
 | auth.login.password             | `demo`                | Default login password                                   |
 | search.enabled                  | `true`                | Enable searching feature                                 |
