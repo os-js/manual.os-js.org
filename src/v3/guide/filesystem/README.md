@@ -53,6 +53,8 @@ A mountpoint is an object that defines a name, label and which adapter to use. Y
 
 An example would be the provided `osjs` mountpoint that resolves to `{root}/dist` (where "root" is the OS.js path) via the `system` adapter.
 
+> [info] By default the system adapter will resolve home directories in the `vfs/` folder of your installation. You can change this behavior by modifying `vfs.root` in [server config](../../config/README.md#server)
+
 ### Adding Mountpoints
 
 You can add mountpoints by updating your configuration files:

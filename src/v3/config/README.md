@@ -59,6 +59,7 @@ See [filesystem guide](../guide/filesystem/README.md)
 | session.options.saveUninitialized   | `false`             | HTTP Save uninitialized sessions                                  |
 | session.options.cookie.secure       | `<auto>`            | HTTP Secure cookie                                                |
 | session.options.cookie.maxAge       | `<auto>`            | HTTP cookie lifetime                                              |
+| vfs.root                            | `<auto>`            | VFS Root path (defaults to OS.js vfs/ directory)                  |
 
 ### Proxies
 
