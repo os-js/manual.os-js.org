@@ -133,3 +133,5 @@
   * [Remote Debugging](guide/remotedebug/README.md)
 * Hosting
   * [EvenNode](guide/hosting/evennode/README.md)
+* Integrations
+  * [sentry.io](guide/integration/sentry/README.md)
