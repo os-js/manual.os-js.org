@@ -53,6 +53,7 @@ full_title: Official Resources
 
 * https://github.com/os-js/osjs-standard-theme - The standard OS.js theme
 * https://github.com/os-js/osjs-standard-dark-theme - A dark variation of the standard OS.js theme
+* https://github.com/os-js/osjs-windows8-theme - A windows 8 like style theme
 * https://github.com/os-js/osjs-gnome-icons - The standard OS.js icon set (Gnome)
 * https://github.com/os-js/osjs-freedesktop-sounds - The standard OS.js sound set (Freedesktop)
 
