@@ -142,10 +142,10 @@ The server also has some extra methods:
 
 ```javascript
 // Broadcast an event to all connected users (WebSocket)
-core.broadcast('event-name', {foo: 'bar'})
+core.broadcast('event-name', ['1', '2', '3'])
 
 // Broadcast an event to a set of users
-core.broadcast('event-name', {foo: 'bar'}, ws => {
+core.broadcast('event-name', ['1', '2', '3'], ws => {
   //The original 'req' containing session etc
   //ws.upgradeReq
 
@@ -161,6 +161,14 @@ const ws = core.ws;
 // Session server
 const session = core.session;
 ```
+
+> [info] You can listen for broadcast events in the client with
+
+```
+// Client-side example:
+core.on('event-name', (a, b, c) => console.log(a, b, c)) // => 1 2 3
+```
+
 #### Events
 
 * `init => ()` - Main init
