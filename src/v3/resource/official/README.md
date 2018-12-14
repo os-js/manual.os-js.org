@@ -78,3 +78,10 @@ full_title: Official Resources
 ## Providers
 
 * https://github.com/os-js/osjs-gapi-provider - Adds Google API features to the API
+
+## Misc
+
+Look thorugh the codepen collections for inspirations and examples:
+
+* https://codepen.io/collection/DqmrWo/
+* https://codepen.io/collection/AybmNa/
