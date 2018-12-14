@@ -50,13 +50,15 @@ proc.createWindow(/* ... */)
 Use the provided GUI module:
 
 ```javascript
-import {Button} from '@osjs/gui';
+import {Box, BoxContainer, Button} from '@osjs/gui';
 
-const createView = (state, actions) => h('div', {}, [
-  h('div', {}, String(state.counter)),
+const createView = (state, actions) => h(Box, {}, [
+  h(BoxContainer, {}, String(state.counter)),
   h(Button, {onclick: () => actions.increment(), label: 'Increment counter'})
 ]);
 ```
+
+[](codepen://andersevenrud/Xodjmy?height=400&theme=0)
 
 ### JSX
 
@@ -202,6 +204,8 @@ h(Box, {grow: 1, shrink: 1}, [
 ])
 ```
 
+[](codepen://andersevenrud/pqybGW?height=400&theme=0)
+
 ### Basic Layout, continued
 
 Same as above, but contained within an outer `Box` with a `Menubar` and `Statusbar`
@@ -219,6 +223,9 @@ h(Box, {grow: 1, shrink: 1}, [
   h(Statusbar, {}, 'Some status here')
 ])
 ```
+
+[](codepen://andersevenrud/pqyEzp?height=400&theme=0)
+
 
 ### Using Inputs
 
@@ -240,6 +247,8 @@ app({
   ]);
 }, document.body);
 ```
+
+[](codepen://andersevenrud/zyqKYM?height=400&theme=0)
 
 ### Using ListView
 
@@ -275,3 +284,5 @@ app({
   ])
 }, document.body);
 ```
+
+[](codepen://andersevenrud/vvGXOO?height=400&theme=0)

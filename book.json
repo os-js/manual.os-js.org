@@ -3,7 +3,7 @@
   "author": "Anders Evenrud <andersevenrud@gmail.com>",
   "language": "en",
   "title": "OS.js v3 Manual",
-  "plugins": ["sitemap", "adsense", "alerts", "edit-link", "ga"],
+  "plugins": ["sitemap", "adsense", "alerts", "edit-link", "ga", "codepen"],
   "pluginsConfig": {
     "sitemap": {
       "hostname": "https://manual.os-js.org",
