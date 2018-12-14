@@ -160,10 +160,13 @@ All components uses Flexbox and supports the following props:
 
 All fields have extended events that passes on the current value:
 
+
 ```
 onchange: (event, value) => {}
 oninput: (event, value) => {}
 ```
+
+> [info] All inputs use the standard DOM spesification for attributes. So for checkboxes etc, use `checked` instead of `value`.
 
 | Name                | Description                                 | Custom Props                    |
 | ------------------- | ------------------------------------------- | ------------------------------- |
