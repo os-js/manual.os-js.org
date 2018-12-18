@@ -86,3 +86,18 @@ It is also recommended that you run `npm run package:discover` afterwards.
 **Make sure to read the [migration guide](../guide/deploy/README.md) before you update for any special notices.**
 
 > Releases uses [semantic versioning](https://semver.org/) so if an update has breaking changes the `npm update` command will not upgrade to the latest release. You'll have to do it manually by using `npm install <package>@^<version>`.
+
+## Remove Packages
+
+Depending on how you installed your package(s), this is the procedure:
+
+1. `npm remove packagename` or `rm -rf src/packages/PackageName`
+2. `npm run package:discover`
+
+You can also disable a package in a couple of different ways:
+
+1. In `src/cli/index.js` add an array with package names, ex `disabled: ['Draw']`
+2. In your package `metadata.json` file add `""disabled": true`
+3. Rename the package directory to end in `.disabled`, ex: `MyApplication.disabled`
+
+After using one of these methods, run `npm run package:discover`
