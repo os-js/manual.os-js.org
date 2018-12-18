@@ -17,6 +17,7 @@
   * [Demo](install/README.md#demo)
   * [Setup](install/README.md#setup)
   * [Upgrade](install/README.md#upgrade)
+  * [Remove Packages](install/README.md#remove-packages)
 * Configure
   * [Client](config/README.md#client)
   * [Server](config/README.md#server)
