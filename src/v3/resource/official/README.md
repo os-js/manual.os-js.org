@@ -50,6 +50,7 @@ full_title: Official Resources
 * https://github.com/os-js/osjs-vnc-application - Connect and stream desktop via remote VNC server
 * https://github.com/os-js/osjs-writer-application - Read and Write rich documents
 * https://github.com/os-js/osjs-epub-application - View ePUB documents (ebooks)
+* https://github.com/os-js/osjs-webodf-application - View ODF documents
 
 ## Themes
 
