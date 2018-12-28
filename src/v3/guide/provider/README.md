@@ -5,7 +5,7 @@ full_title: Service Provider Guide
 
 # Service Provider Guide
 
-OS.js provides options for customizing the settings storage.
+Service Providers are the main way to provide features and extensions for OS.js.
 
 ## Installation
 
