@@ -149,6 +149,9 @@ core.broadcast('event-name', ['1', '2', '3'], ws => {
   //The original 'req' containing session etc
   //ws.upgradeReq
 
+  //The original session data
+  //ws._osjs_client
+
   return true;
 });
 
