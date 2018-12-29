@@ -142,10 +142,10 @@ The server also has some extra methods:
 
 ```javascript
 // Broadcast an event to all connected users (WebSocket)
-core.broadcast('event-name', ['1', '2', '3'])
+core.broadcast('event-name', [1, 2, 3])
 
 // Broadcast an event to a set of users
-core.broadcast('event-name', ['1', '2', '3'], ws => {
+core.broadcast('event-name', [1, 2, 3], ws => {
   //The original 'req' containing session etc
   //ws.upgradeReq
 
@@ -154,6 +154,12 @@ core.broadcast('event-name', ['1', '2', '3'], ws => {
 
   return true;
 });
+
+// Broadcast to all alias but with expanded arguments:
+core.broadcastAll('event-name', 1, 2 , 3);
+
+// Broadcast to a s spesific user with expanded arguments:
+core.broadcastAll('username', 'event-name', 1, 2 , 3);
 
 // Express server
 const app = core.app;
