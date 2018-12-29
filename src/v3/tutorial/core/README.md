@@ -79,8 +79,11 @@ OSjs.url();
 #### Client Events
 
 * `init => ()` - Main init
-* `osjs/core:start => ()` - Core start
-* `osjs/core:started => ()` - Core started
+* `osjs/core:boot => ()` - Core boot (before providers has inited)
+* `osjs/core:booted => ()` - Core booted (after provders has inited)
+* `osjs/core:start => ()` - Core start (before providers has started)
+* `osjs/core:started => ()` - Core started (after providers has started)
+* `osjs/core:logged-in => ()` - User successfully logged in
 * `osjs/core:connect => ()` - Connection established
 * `osjs/core:disconnect => ()` - Connection lost
 * `osjs/core:destroy => ()` - Core destroy
