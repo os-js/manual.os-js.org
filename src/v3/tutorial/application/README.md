@@ -188,11 +188,44 @@ core.app.post(endpoint, (req, res) => {
 
 ## WebSockets
 
-You can also spawn WebSockets on the internal server and bind it to your application:
+You can use WebSockets in a couple of different ways.
+
+### Core Socket Connection
+
+The easiest way to use websockets is to use the core websocket connection. This will not create a new connection, but rather use the main client websocket connection as a proxy.
+
+This is also most efficient in terms of bandwidth usage and server processing costs (depending on scale).
+
+#### Client
+
+In your application script:
+
+```javascript
+proc.on('ws:message', params => console.log(params)); // => ['Pong']
+proc.send('Ping');
+```
+
+#### Server
+
+In your server script, use the `onmessage` method:
+
+```javascript
+module.exports = (core, proc) => ({
+  onmessage: (ws, respond, params) => {
+    if (params[0] === 'Ping') {
+      respond('Pong');
+    }
+  }
+});
+```
+
+### Custom Socket Connection
+
+You can also spawn **new** WebSockets on the internal server and bind it to your application.
 
 > Application endpoints are resolved as `/apps/{name}/{endpoint}`
 
-### Client
+#### Client
 
 Create an instance of `Websokcet` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
 
@@ -206,7 +239,7 @@ ws.send('data'); // Sends data
 ws.close(); // Closes socket
 ```
 
-### Server
+#### Server
 
 In your server script, create a matching endpoint with Express:
 
