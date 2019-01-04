@@ -88,3 +88,13 @@ module.exports = {
   ]
 };
 ```
+
+## Disabling packages
+
+You can disable a package in a couple of different ways:
+
+1. In `src/cli/index.js` add an array with package names, ex `disabled: ['Draw']`
+2. In your package `metadata.json` file add `""disabled": true`
+3. Rename the package directory to end in `.disabled`, ex: `MyApplication.disabled`
+
+After using one of these methods, run `npm run package:discover`

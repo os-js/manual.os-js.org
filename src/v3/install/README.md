@@ -94,10 +94,4 @@ Depending on how you installed your package(s), this is the procedure:
 1. `npm remove packagename` or `rm -rf src/packages/PackageName`
 2. `npm run package:discover`
 
-You can also disable a package in a couple of different ways:
-
-1. In `src/cli/index.js` add an array with package names, ex `disabled: ['Draw']`
-2. In your package `metadata.json` file add `""disabled": true`
-3. Rename the package directory to end in `.disabled`, ex: `MyApplication.disabled`
-
-After using one of these methods, run `npm run package:discover`
+You can also [disable packages](../guide/cli/README.md#disabling-packages).
