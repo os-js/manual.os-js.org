@@ -17,6 +17,43 @@ Most of the visuals are provided by Service Providers. You can replace these to 
 
 See your `src/client/index.js` bootstrap file for provider registration and `src/client/index.scss` for the related imported stylesheets.
 
+### Overriding default desktop styles
+
+Since some of the styles can be configured by a user at runtime, some styles are defined in the [client configuration](https://github.com/os-js/osjs-client/blob/master/src/config.js) (see `desktop` section), like desktop and panels.
+
+You can override these by [adding it](../../config/README.md#client) to your `src/client/config.js` file and modifying the values.
+
+> [info] Note, that if users have already customized their settings, the changes to the default configuration won't affect the users. In an [upcoming patch](https://github.com/os-js/osjs-client/issues/52) it will be able to migrate these changes.
+
+Example:
+
+```javascript
+module.exports = {
+  desktop: {
+    settings: {
+      font: 'Roboto',
+      theme: 'StandardTheme',
+      sounds: 'FreedesktopSounds',
+      icons: 'GnomeIcons',
+      panels: [{
+        position: 'top',
+        items: [
+          {name: 'menu'},
+          {name: 'windows'},
+          {name: 'tray'},
+          {name: 'clock'}
+        ]
+      }],
+      background: {
+        src: require('./wallpaper.png'),  /* src/client/wallpaper.png */
+        color: '#000',
+        style: 'cover'
+      }
+    }
+  }
+};
+```
+
 ## Themes
 
 By default all of the visuals are defined by Themes in the form of Styles, Icons and Sounds.
@@ -26,6 +63,19 @@ If you want a completely customized experience you should look into these.
 ## Stylesheets
 
 The stylesheet in `src/client/index.scss` is for you to customize. You can include or add your own styles here as you see fit.
+
+### Overriding default initial styles
+
+By using this file you can override the default styles like the background, wallpaper, etc. Example:
+
+```css
+body {
+  background-color: #000;
+  background-image: url('./wallpaper.png'); /* src/client/wallpaper.png */
+}
+```
+
+> [info] The "initial" styles is what is displayed *before* the user has logged in.
 
 ## Window Styles
 
