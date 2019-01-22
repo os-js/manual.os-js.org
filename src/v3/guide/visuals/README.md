@@ -23,7 +23,7 @@ Since some of the styles can be configured by a user at runtime, some styles are
 
 You can override these by [adding it](../../config/README.md#client) to your `src/client/config.js` file and modifying the values.
 
-> [info] Note, that if users have already customized their settings, the changes to the default configuration won't affect the users. In an [upcoming patch](https://github.com/os-js/osjs-client/issues/52) it will be able to migrate these changes.
+> [info] Note, that if users have already customized their settings, the changes to the default configuration won't affect the users. In an [upcoming patch](https://github.com/os-js/osjs-client/issues/52) it will be able to migrate these changes. By default the settings are stored in the browser (`localStorage`) so you can clear these easily.
 
 Example:
 
