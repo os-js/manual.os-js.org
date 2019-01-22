@@ -192,9 +192,9 @@ You can use WebSockets in a couple of different ways.
 
 ### Core Socket Connection
 
-The easiest way to use websockets is to use the core websocket connection. This will not create a new connection, but rather use the main client websocket connection as a proxy.
+The easiest way to use websockets is to use the core websocket connection.
 
-This is also most efficient in terms of bandwidth usage and server processing costs (depending on scale).
+This will not create a new connection, but rather use the main client websocket connection as a proxy, which comes with some limitations, but is great for adding basic interactions.
 
 #### Client
 
