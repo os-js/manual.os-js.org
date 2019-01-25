@@ -9,6 +9,10 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 
 > [info] These packages are provided by community members, so if you have any issues with these, make sure to create an issue in the appropriate Github project(s).
 
+## Implementations
+
+* https://bluelightos.github.io/ - OS.js running as a Linux distribution
+
 ## Applications
 
 * https://github.com/SpaceboyRoss01/os.js-gba-application - A Gameboy Advanced Emulator
