@@ -39,6 +39,29 @@ routeAuthenticated('GET', '/ping', respond, ['admin']);
 
 > NOTE: If you want to add routes in the `index.js` distro file, use the `.on('init')` event on the core instance.
 
+## General
+
+You can call any method on the express instance with:
+
+> [info] For routes it is recommended that you use the methods described above.
+
+```javascript
+const {call} = core.make('osjs/express');
+call.use(/* global middleware */);
+call.get(/* get route */);
+```
+
+## Inject middleware to route handler
+
+To inject middleware into the route handler (`route()` and `routeAuthenticated()`), use the following service:
+
+```javascript
+const {middleware} = core.make('osjs/express');
+
+middleware(true, (req, res, next) => {}); // routeAuthenticated()
+middleware(false, (req, res, next) => {}); // route()
+```
+
 ## Sessions
 
 You can access the session via `req.session`.
