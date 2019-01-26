@@ -39,7 +39,7 @@ routeAuthenticated('GET', '/ping', respond, ['admin']);
 
 > NOTE: If you want to add routes in the `index.js` distro file, use the `.on('init')` event on the core instance.
 
-## General
+### Express calls
 
 You can call any method on the express instance with:
 
@@ -47,11 +47,11 @@ You can call any method on the express instance with:
 
 ```javascript
 const {call} = core.make('osjs/express');
-call.use(/* global middleware */);
-call.get(/* get route */);
+call('use', (req, res, next) => {}); // global middleware
+call('get', (req, res) => {}); // GET route
 ```
 
-## Inject middleware to route handler
+### Inject middleware to route handler
 
 To inject middleware into the route handler (`route()` and `routeAuthenticated()`), use the following service:
 
