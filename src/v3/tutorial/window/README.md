@@ -45,6 +45,14 @@ win.render($content => $content.appendChild(
 * `attributes` A set of attributes
 * `state` Default state
 
+Example:
+
+```javascript
+proc.createWindow({
+  title: 'My Window'
+})
+```
+
 ## Attributes
 
 * `gravity: string` - Where to place the window (ex: `center`)
@@ -61,14 +69,19 @@ win.render($content => $content.appendChild(
 * `position: object` - Default position object with `top/left`
 * `minDimension: object` - Minimum dimension object with `width/height`
 * `maxDimension: object` - Maximum dimension object with `width/height`
+* `visibility: string` - Set to `restricted` to hide from the panels, etc.
 
-## Events
-
-You can listen on events with:
+Example:
 
 ```javascript
-win.on('event-name', (...args) => console.log(...args));
+proc.createWindow({
+  attributes: {
+    ontop: true
+  }
+})
 ```
+
+## Events
 
 * `moved => (position, win)` - After movement completes
 * `resized => (dimension, win)` - After resize completes
@@ -89,6 +102,12 @@ win.on('event-name', (...args) => console.log(...args));
 * `keypress => (ev, win)` - On "keypress"
 * `keydown => (ev, win)` - On "keydown"
 * `keyup => (ev, win)` - On "keyup"
+
+You can listen on events with:
+
+```javascript
+win.on('event-name', (...args) => console.log(...args));
+```
 
 ## Methods
 
