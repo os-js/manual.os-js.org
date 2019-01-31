@@ -70,6 +70,7 @@ proc.createWindow({
 * `minDimension: object` - Minimum dimension object with `width/height`
 * `maxDimension: object` - Maximum dimension object with `width/height`
 * `visibility: string` - Set to `restricted` to hide from the panels, etc.
+* `clamp: boolean` - Clamps window position to the viewport if it overflows (default)
 
 Example:
 
@@ -80,6 +81,10 @@ proc.createWindow({
   }
 })
 ```
+
+> [info] You can define initial window position and dimension by using a float between `0.0 - 1.0`. Example: `{position: {left: 0.5, top: 0.5}}`.
+
+> You
 
 ## Events
 
