@@ -92,19 +92,53 @@ server {
 
 Create a new virtual host file or replace the default one provided by your OS:
 
-> Requires the modules `rewrite` `proxy` and `http_proxy`
+> Requires the modules `rewrite` `proxy` and `proxy_http`
 
 ```apache
 <VirtualHost *:80>
   ServerName osjs.test
+
   ProxyPass / http://localhost:8000/
   ProxyPassReverse / http://localhost:8000/
   ProxyPreserveHost On
+
   RewriteEngine on
   RewriteCond %{HTTP:UPGRADE} ^WebSocket$ [NC]
   RewriteCond %{HTTP:CONNECTION} Upgrade$ [NC]
   RewriteRule .* ws://localhost:8000%{REQUEST_URI} [P]
 </VirtualHost>
+```
+
+*Please note that on some apache versionis HTTP connection does not work for Websockets*, and you might have to reconfigure your client to use a dedicated connection path:
+
+> Requires the module `proxy_wstunnel`
+
+```apache
+<VirtualHost *:80>
+  ServerName osjs.test
+
+  <Location />
+    ProxyPreserveHost On
+    ProxyPass http://localhost:8000
+    ProxyPassReverse http://localhost:8000
+  </Location>
+
+  <Location /ws>
+    ProxyPreserveHost On
+    ProxyPass ws://localhost:8000
+    ProxyPassReverse ws://localhost:8000
+  </Location>
+</VirtualHost>
+```
+
+Then set your websocket path to `/ws` in `src/client/config.js`:
+
+```javascript
+module.exports = {
+  ws: {
+    uri: '/ws'
+  }
+};
 ```
 
 ## Session
