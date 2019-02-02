@@ -11,6 +11,7 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 
 ## Implementations
 
+* https://github.com/andersevenrud/osjs-debian - OS.js in a debian package
 * https://bluelightos.github.io/ - OS.js running as a Linux distribution
 
 ## Applications
