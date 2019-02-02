@@ -92,7 +92,7 @@ server {
 
 Create a new virtual host file or replace the default one provided by your OS:
 
-> Requires the modules `rewrite` `proxy` and `proxy_http`
+> [info] Requires the modules `rewrite` `proxy` and `proxy_http`
 
 ```apache
 <VirtualHost *:80>
@@ -109,9 +109,9 @@ Create a new virtual host file or replace the default one provided by your OS:
 </VirtualHost>
 ```
 
-*Please note that on some apache versionis HTTP connection does not work for Websockets*, and you might have to reconfigure your client to use a dedicated connection path:
+*Please note that on some apache versions HTTP connection upgrades does not work for Websockets*, and you might have to reconfigure your client to use a dedicated connection path:
 
-> Requires the module `proxy_wstunnel`
+> [info] Requires the modules `proxy`, `proxy_wstunnel` and `proxy_http`
 
 ```apache
 <VirtualHost *:80>
