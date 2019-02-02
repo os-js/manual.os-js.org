@@ -116,18 +116,11 @@ Create a new virtual host file or replace the default one provided by your OS:
 ```apache
 <VirtualHost *:80>
   ServerName osjs.test
+  ProxyPass /ws ws://localhost:8000/
+  ProxyPassReverse /ws ws://localhost:8000/
 
-  <Location />
-    ProxyPreserveHost On
-    ProxyPass http://localhost:8000
-    ProxyPassReverse http://localhost:8000
-  </Location>
-
-  <Location /ws>
-    ProxyPreserveHost On
-    ProxyPass ws://localhost:8000
-    ProxyPassReverse ws://localhost:8000
-  </Location>
+  ProxyPass / http://localhost:8000/
+  ProxyPassReverse / http://localhost:8000/
 </VirtualHost>
 ```
 
