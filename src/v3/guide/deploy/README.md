@@ -116,6 +116,8 @@ Create a new virtual host file or replace the default one provided by your OS:
 ```apache
 <VirtualHost *:80>
   ServerName osjs.test
+  
+  ProxyPreserveHost On
   ProxyPass /ws ws://localhost:8000/
   ProxyPassReverse /ws ws://localhost:8000/
 
@@ -133,6 +135,8 @@ module.exports = {
   }
 };
 ```
+Rebuild your client afterwards:
+```npm build run```
 
 ## Session
 
