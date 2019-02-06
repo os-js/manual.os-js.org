@@ -7,20 +7,47 @@ full_title: Authentication Guide
 
 OS.js provides options for customizing the authentication procedure.
 
-Two adapters are provided by default:
+By default the client is set up to automatically log in with a "demo user" account and the server responds to any authentication request successfully.
 
-* `server` (default)
-* `localStorage`
+This functionality can be changed by configuration and using a different *adapter*
 
-> NOTE: By default the client is set up to log in with the `demo` account. To disable this behavior, modify your `src/client/config.js` file. See [configuration article](../config/README.md) for more information.
+These are the available client adapters:
+
+* `server` - Authenticate via the server (default)
+* `localStorage` - Null authentication (used in standalone mode)
+
+And these are the available server adaters:
+
+* `null` - Accepts any authentication request (default)
+* [pam](https://github.com/os-js/osjs-pam-auth) - Log in via host PAM (unix only)
+* [database](https://github.com/os-js/osjs-database-auth) - Log in via a database
+
+## Removing automatic login
+
+In your `src/client/config.js` file either comment out or remove this section entirely:
+
+```javascript
+{
+  auth: {
+    login: {
+      username: 'demo',
+      password: 'demo'
+    }
+  }
+}
+```
 
 ## Configuring adapter
 
-See [official resource list](/resource/official/README.md) for provided adapters.
+Adapters are listed in the [official resource list](/resource/official/README.md) and above.
 
 > The README file of the module should provide more specific examples.
 
 > See [provider guide](../provider/README.md) for more information about provider setup.
+
+> If you have sensitive information in your configuration, consider using [dotenv](https://github.com/motdotla/dotenv).
+
+Modifying the adapter requires changing the `AuthServiceProvider` options:
 
 ### Client
 
@@ -31,11 +58,11 @@ import customAdapter from 'custom-adapter';
 
 core.register(AuthServiceProvider, {
   args: {
-    adapter: customAdapter
+    adapter: customAdapter,
+    config: { /* Your configuration here */}
   }
 });
 ```
-
 
 ### Server
 
@@ -44,28 +71,8 @@ const customAdapter = require('custom-adapter');
 
 core.register(AuthServiceProvider, {
   args: {
-    adapter: customAdapter
-  }
-});
-```
-
-## Configure adapter settings
-
-The `config` parameter is passed on from your service provider registration:
-
-```javascript
-core.register(AuthServiceProvider, {
-  args: {
-    adapter: customAdapter
+    adapter: customAdapter,
     config: { /* Your configuration here */}
   }
 });
 ```
-
-If you have sensitive information in your configuration, consider using [dotenv](https://github.com/motdotla/dotenv).
-
-## Blacklisting applications
-
-If you return an array of application names in the property `blacklist` from the login, you can hide applications from a user.
-
-This can be configured via the authentication adapter you're using.
