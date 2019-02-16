@@ -93,16 +93,17 @@
   * [Usage](tutorial/auth/README.md#usage)
   * [User Information](tutorial/auth/README.md#user-information)
   * [Custom Authentication Adapter](tutorial/auth/README.md#custom-authentication-adapter)
-* Misc
+* Desktop
   * [Panel Item](tutorial/panel/README.md)
   * [Widget](tutorial/widget/README.md)
-  * [Localization](tutorial/locale/README.md)
   * [Notification](tutorial/notification/README.md)
   * [Tray](tutorial/tray/README.md)
+* Misc
+  * [Core](tutorial/core/README.md)
+  * [Localization](tutorial/locale/README.md)
   * [Bus](tutorial/bus/README.md)
   * [Clipboard](tutorial/clipboard/README.md)
   * [Drag-and-Drop](tutorial/dnd/README.md)
-  * [Core](tutorial/core/README.md)
 
 ### Guides
 
