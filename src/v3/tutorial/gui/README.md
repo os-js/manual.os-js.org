@@ -60,7 +60,7 @@ const createView = (state, actions) => h(Box, {}, [
 
 [](codepen://andersevenrud/Xodjmy?height=400&theme=0)
 
-### JSX
+## JSX
 
 You can also use JSX syntax instead of the programmatic approach.
 

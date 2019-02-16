@@ -69,6 +69,7 @@
 * [GUI](tutorial/gui/README.md)
   * [Usage](tutorial/gui/README.md#usage)
   * [Basic Example](tutorial/gui/README.md#basic-example)
+  * [JSX](tutorial/gui/README.md#jsx)
   * [Contextmenu](tutorial/gui/README.md#contextmenu)
   * [Components](tutorial/gui/README.md#components)
 * [Service Provider](tutorial/provider/README.md)
