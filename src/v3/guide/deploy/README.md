@@ -109,7 +109,7 @@ Create a new virtual host file or replace the default one provided by your OS:
 </VirtualHost>
 ```
 
-*Please note that on some apache versions HTTP connection upgrades does not work for Websockets*, and you might have to reconfigure your client to use a dedicated connection path:
+*Please note that on some apache versions HTTP connection upgrades does not work for Websockets* (connection issues like dropouts, etc.), and you might have to reconfigure your client to use a dedicated connection path:
 
 > [info] Requires the modules `proxy`, `proxy_wstunnel` and `proxy_http`
 
@@ -125,6 +125,8 @@ Create a new virtual host file or replace the default one provided by your OS:
 ```
 
 Then set your websocket path to `/ws` in `src/client/config.js`:
+
+> [info] Remember to rebuild your client afterwards with `npm run build`
 
 ```javascript
 module.exports = {
