@@ -33,8 +33,7 @@ This is an example on how to establish communication in your iframe:
 
       // Listen from messages from OS.js Application
       window.addEventListener('message', function(ev) {
-        const message = ev.data;
-        console.warn('Message from OS.js', message)
+        console.warn('Message from OS.js', ev.data);
       });
 
       // Send an example message
