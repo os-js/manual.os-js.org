@@ -104,6 +104,7 @@
   * [Bus](tutorial/bus/README.md)
   * [Clipboard](tutorial/clipboard/README.md)
   * [Drag-and-Drop](tutorial/dnd/README.md)
+  * [IFrames](tutorial/iframe/README.md)
 
 ### Guides
 
@@ -130,7 +131,6 @@
   * [Filesystem](guide/filesystem/README.md)
 * Misc
   * [Translation](guide/translate/README.md)
-  * [IFrame Application](guide/iframe/README.md)
   * [Visuals](guide/visuals/README.md)
   * [Customizing Login](guide/login/README.md)
   * [Embedding](guide/embed/README.md)

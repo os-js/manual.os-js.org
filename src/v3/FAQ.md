@@ -61,7 +61,7 @@ Anything that can use these technologies can technically run on this platform.
 
 ## Q: How do I add an existing web application ?
 
-The easiest way to add an existing web application is to to [create a new application](tutorial/application/README.md#creation) and simply use an iframe.
+The easiest way to add an existing web application is to to [create a new application](tutorial/application/README.md#creation) and simply use an [iframe](tutorial/iframe/README.md).
 
 This way you can leave your entire codebase intact and just load it as you would normally, but within a Window.
 
