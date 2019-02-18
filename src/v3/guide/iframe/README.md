@@ -19,31 +19,20 @@ This is an example on how to establish communication in your iframe:
   <body>
     <h1>Hello World</h1>
     <script>
-      // Collects our URL arguments attached from OS.js app
-      const s = window.location.search;
-      const argv = s.slice(s.indexOf('?') + 1)
-        .split('&')
-        .reduce((carry, hash) => {
-          const [key, value] = hash.split('=');
-          return Object.assign({
-            [key]: value
-          }, carry);
-        }, {});
-
       // Global function to send a message to OS.js Application
       function sendMessage() {
         top.postMessage({
           name: 'osjs/iframe:message',
           params: [{
-            pid: parseInt(argv.pid, 10),
-            wid: parseInt(argv.wid, 10),
+            pid: parseInt(window.location.search.match(/pid=([^&]*)/)[1], 10),
+            wid: parseInt(window.location.search.match(/wid=([^&]*)/)[1], 10),
             args: Array.prototype.slice.call(arguments)
           }]
         }, '*');
       }
 
       // Listen from messages from OS.js Application
-      window.addEventListener('message', (ev) => {
+      window.addEventListener('message', function(ev) {
         const message = ev.data;
         console.warn('Message from OS.js', message)
       });
