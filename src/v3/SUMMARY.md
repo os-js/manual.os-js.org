@@ -130,6 +130,7 @@
   * [Filesystem](guide/filesystem/README.md)
 * Misc
   * [Translation](guide/translate/README.md)
+  * [IFrame Application](guide/iframe/README.md)
   * [Visuals](guide/visuals/README.md)
   * [Customizing Login](guide/login/README.md)
   * [Embedding](guide/embed/README.md)
