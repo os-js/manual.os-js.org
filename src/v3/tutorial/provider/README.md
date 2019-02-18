@@ -36,10 +36,15 @@ class ServiceProvider
     return [];
   }
 
+  /* An optional list of dependant services */
+  depends() {
+    return [];
+  }
+
   /* Initialize your services */
   async init() {}
 
-  /* Start your services */
+  /* Start your services. Runs after all services has been init-ed */
   start() {}
 
   /* Clean up */
