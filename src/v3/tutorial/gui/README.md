@@ -5,7 +5,7 @@ full_title: GUI Tutorial
 
 # GUI Tutorial
 
-This turorial goes over how to create reactive UIs using components.
+This tutorial goes over how to create reactive UIs using components.
 
 ## Usage
 
