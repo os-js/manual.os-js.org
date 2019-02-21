@@ -3,7 +3,7 @@ description: A tutorial on how to create Iframe applications in OS.js v3
 full_title: IFrame Tutorial
 ---
 
-# IFrame Application Turorial
+# IFrame Application Tutorial
 
 You can use the [official example Iframe package](https://github.com/os-js/osjs-example-iframe-application) as a boilerplate for your project.
 
