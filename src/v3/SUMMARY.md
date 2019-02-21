@@ -85,6 +85,8 @@
 * [Express](tutorial/express/README.md)
   * [Usage](tutorial/express/README.md#usage)
   * [Routes](tutorial/express/README.md#routes)
+  * [Raw Routes](tutorial/express/README.md#raw-routes)
+  * [Middleware and Extensions](tutorial/express/README.md#middleware-and-extensions)
   * [Sessions](tutorial/express/README.md#sessions)
 * [Settings](tutorial/settings/README.md)
   * [Usage](tutorial/settings/README.md#usage)
