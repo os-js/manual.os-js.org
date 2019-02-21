@@ -85,7 +85,7 @@ In your `src/server/index.js` file:
 const something = require('library');
 
 const osjs = new Core(config, {});
-osjs.use(something);
+osjs.app.use(something);
 ```
 
 ### Using Service Provider
