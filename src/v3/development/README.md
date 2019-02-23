@@ -24,6 +24,12 @@ This article will walk you through the development process of OS.js modules and 
     1. [npm](#npm)
     2. [git](#git)
 
+For prototyping solutions you can use the following templates for online development environments:
+
+* https://codesandbox.io/s/w6vrvzo03l
+* https://codepen.io/andersevenrud/pen/bzowQX
+* https://codepen.io/andersevenrud/pen/EGKNxV
+
 ## Introduction
 
 **Before beginning read the [overview article](../resource/overview/README.md).** You also need to familiarize yourself with the following technologies:

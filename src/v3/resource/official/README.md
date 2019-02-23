@@ -86,7 +86,8 @@ full_title: Official Resources
 
 ## Misc
 
-Look thorugh the codepen collections for inspirations and examples:
+A curated list of examples for inspiration:
 
 * https://codepen.io/collection/DqmrWo/
 * https://codepen.io/collection/AybmNa/
+* https://codesandbox.io/u/andersevenrud/sandboxes
