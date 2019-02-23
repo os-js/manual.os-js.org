@@ -150,6 +150,13 @@ proc.on('event-name', (...args) => console.log(...args));
 * `destroy-window => (win, proc)` - When window is destroyed
 * `attention => (args, options)` - Signal when a new instance of a singleton application is launched
 
+To broadcast events to your application use:
+
+```javascript
+core.broadcast('ApplicationName', 'event-name', 1, 2, 3)
+proc.on('event-name', (...args) => console.log(...args)); // => 1, 2, 3
+```
+
 ## Resources
 
 You can get an URL to any resource bundled with your application using the resource method:
