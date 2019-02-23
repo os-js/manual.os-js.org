@@ -75,11 +75,7 @@ https://gist.github.com/andersevenrud/637ef06e47aa32a96a06789b36d9a623
 
 ### Hosted within OS.js
 
-You can also host the content from OS.js by using webpack. The following package contains an example on how to do that:
-
-https://github.com/os-js/osjs-example-iframe-application
-
-> This package also includes examples on how to do messaging between the iframe and the OS.js instance, but you can ignore this if you don't need it.
+See the [iframes](tutorial/iframe/README.md).
 
 ## Q: Can I upgrade from v2 ?
 
