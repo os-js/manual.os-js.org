@@ -75,7 +75,7 @@ https://gist.github.com/andersevenrud/637ef06e47aa32a96a06789b36d9a623
 
 ### Hosted within OS.js
 
-See the [iframes](tutorial/iframe/README.md).
+See the [iframes tutorial](tutorial/iframe/README.md).
 
 ## Q: Can I upgrade from v2 ?
 
