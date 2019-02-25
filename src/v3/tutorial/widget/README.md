@@ -12,7 +12,7 @@ This tutorial shows you how to create and register your own widgets.
 ## Custom Widget
 
 ```javascript
-import {Panel} from '@osjs/panels';
+import {Widget} from '@osjs/widgets';
 
 export default class MyWidget extends Widget {
 
