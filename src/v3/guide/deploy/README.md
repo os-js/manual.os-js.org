@@ -17,7 +17,7 @@ This is the general checklist for setting up OS.js in a production environment:
 2. Disable [development mode](#configuration).
 3. Make an [optimized](#building) build.
 4. Set up a [reverse-proxy](#reverse-proxy).
-5. Use a process manager like [PM2](http://pm2.keymetrics.io/) to manage your server processes.
+5. Set [process management](#process-management).
 
 ## Building
 
@@ -134,6 +134,34 @@ module.exports = {
     uri: '/ws'
   }
 };
+```
+
+## Process Management
+
+You can use a process manager like [PM2](http://pm2.keymetrics.io/) to keep your server alive.
+
+### systemd
+
+You can also use systemd to keep a single instance of the node server alive. It will start on boot and restart on crashes etc.
+
+> [info] This assumes that you are running OS.js as a dedicated `osjs` host user and it is installed in `/opt/osjs`. You can change this as you see fit.
+
+```
+[Unit]
+Description=OS.js Node Server
+Documentation=https://manual.os-js.org
+After=network.target
+
+[Service]
+Environment=NODE_ENV=production
+Type=simple
+User=osjs
+ExecStart=node /opt/osjs/src/server/index.js
+Restart=on-failure
+WorkingDirectory=/opt/osjs
+
+[Install]
+WantedBy=multi-user.target
 ```
 
 ## Session
