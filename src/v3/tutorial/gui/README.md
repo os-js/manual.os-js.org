@@ -71,13 +71,13 @@ Then in your `.babelrc` file:
 ```json
 {
   "presets": [
-    "@babel/preset-env",
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
     ["@babel/plugin-transform-react-jsx", {
       "pragma": "h"
     }]
-  ],
-  "plugins": [
-    "@babel/plugin-transform-runtime"
   ]
 }
 ```
