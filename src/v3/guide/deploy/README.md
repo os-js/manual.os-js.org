@@ -7,7 +7,7 @@ full_title: Deployment Guide
 
 Follow the regular installation guide to set up your OS.js installation.
 
-This article contains instructions and recommendations for deploying your OS.js instance on a production environment.
+This article contains instructions and recommendations for deploying your OS.js instance in a production environment.
 
 ## Checklist
 
@@ -109,7 +109,7 @@ Create a new virtual host file or replace the default one provided by your OS:
 </VirtualHost>
 ```
 
-*Please note that on some apache versions HTTP connection upgrades does not work for Websockets* (connection issues like dropouts, etc.), and you might have to reconfigure your client to use a dedicated connection path:
+*Please note that on some apache versions HTTP connection upgrades do not work for Websockets* (connection issues like dropouts, etc.), and you might have to reconfigure your client to use a dedicated connection path:
 
 > [info] Requires the modules `proxy`, `proxy_wstunnel` and `proxy_http`
 
@@ -201,7 +201,7 @@ You can also run the client and server separately (even physically), with some e
 
 > Note that if you're hosting on different hostnames, you have to set up CORS. [Example for nginx](https://enable-cors.org/server_nginx.html).
 
-Serve the `dist/` directory where your client is, and on the server, just run with the normal `npm run serve` command or methods described above.
+Serve the `dist/` directory where your client is, and on the server, just run with the normal `npm run serve` command or with the methods described above.
 
 In this example we configure:
 
@@ -210,7 +210,7 @@ In this example we configure:
 
 ```javascript
 // src/client/config.js
-// By default all of these settings are detected with the URL youre using to visit OS.js
+// By default all of these settings are detected with the URL you're using to visit OS.js
 
 {
   // HTTP Requests
