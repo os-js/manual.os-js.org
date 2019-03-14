@@ -27,10 +27,10 @@ const service = core.make('namespace/service');
 // Registers a new ServiceProvicer class
 core.register(SomeServiceProvider, {/* registration options */});
 
-// Registers a new singleton factory for serice
+// Registers a new singleton factory for service
 core.singleton('namespace/service', () => new SomeService());
 
-// Registers a new instance factory for serice
+// Registers a new instance factory for service
 core.instance('namespace/service', () => new SomeService());
 
 // Checks if given service exists
@@ -79,10 +79,10 @@ OSjs.url();
 #### Client Events
 
 * `init => ()` - Main init
-* `osjs/core:boot => ()` - Core boot (before providers has inited)
-* `osjs/core:booted => ()` - Core booted (after provders has inited)
-* `osjs/core:start => ()` - Core start (before providers has started)
-* `osjs/core:started => ()` - Core started (after providers has started)
+* `osjs/core:boot => ()` - Core boot (before providers have inited)
+* `osjs/core:booted => ()` - Core booted (after providers have inited)
+* `osjs/core:start => ()` - Core start (before providers have started)
+* `osjs/core:started => ()` - Core started (after providers have started)
 * `osjs/core:logged-in => ()` - User successfully logged in
 * `osjs/core:connect => ()` - Connection established
 * `osjs/core:disconnect => ()` - Connection lost
@@ -161,7 +161,7 @@ core.broadcast('event-name', [1, 2, 3], ws => {
 // Broadcast to all alias but with expanded arguments:
 core.broadcastAll('event-name', 1, 2 , 3);
 
-// Broadcast to a s spesific user with expanded arguments:
+// Broadcast to a specific user, with expanded arguments:
 core.broadcastAll('username', 'event-name', 1, 2 , 3);
 
 // Express server
