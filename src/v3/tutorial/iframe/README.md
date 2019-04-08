@@ -5,11 +5,19 @@ full_title: IFrame Tutorial
 
 # IFrame Application Tutorial
 
-You can use the [official example Iframe package](https://github.com/os-js/osjs-example-iframe-application) as a boilerplate for your project.
+This tutorial will show you how to create an [application](../application/README.md) with an iframe window.
 
-This example adds bi-directional communication so you can message between your iframe and OS.js.
+## Creation
 
-## Iframe Application Source
+To generate a new package using the example via CLI run `npm run make:iframe-application`.
+
+> The created package will have a basic Babel and Webpack setup based on [official example](https://github.com/os-js/osjs-example-iframe-application).
+
+<!-- -->
+
+> For general information about development see [development article](../../development/README.md).
+
+## Bi-directional communication
 
 This is an example on how to establish communication in your iframe:
 
