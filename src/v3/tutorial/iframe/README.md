@@ -9,9 +9,9 @@ This tutorial will show you how to create an [application](../application/README
 
 ## Creation
 
-To generate a new package using the example via CLI run `npm run make:iframe-application`.
+To create a new application package, run the following command inside your OS.js installation: `npm run make:iframe-application`.
 
-> The created package will have a basic Babel and Webpack setup based on [official example](https://github.com/os-js/osjs-example-iframe-application).
+> The created application will be placed in `src/packages` (by default) and is based on the [official example](https://github.com/os-js/osjs-example-iframe-application).
 
 <!-- -->
 

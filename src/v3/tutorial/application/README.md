@@ -9,9 +9,9 @@ This tutorial will show you how to create an application and use some of the fun
 
 ## Creation
 
-To generate a new package using the example via CLI run `npm run make:application`.
+To create a new application package, run the following command inside your OS.js installation: `npm run make:application`.
 
-> The created package will have a basic Babel + Webpack, SASS and ESLint/Stylelint setup based on  [official example](https://github.com/os-js/osjs-example-application).
+> The created application will be placed in `src/packages` (by default) and is based on the [official example](https://github.com/os-js/osjs-example-application).
 
 <!-- -->
 
