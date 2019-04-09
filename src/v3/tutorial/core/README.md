@@ -89,6 +89,7 @@ OSjs.url();
 * `osjs/core:destroy => ()` - Core destroy
 * `osjs/application:launch => (name, args, options)` - Application pre-launch
 * `osjs/application:launched => (name, app)` - Application launched
+* `osjs/application:*:launched => (app)` - Application launched (`*` is metadata name)
 * `osjs/application:create => (app)` - Application create
 * `osjs/application:destroy => (app)` - Application destroy
 * `osjs/window:create => (win)` - Window create
@@ -101,7 +102,7 @@ OSjs.url();
 * `osjs/fs:unmount => ()` - Filesystem unmounted
 * `osjs/settings:save => ()` - Settings saved
 * `osjs/settings:load => ()` - Settings loaded
-* `osjs/vfs:* => (...args)` - VFS Method call
+* `osjs/vfs:* => (...args)` - VFS Method call (`*` is method name)
 * `osjs/tray:create => (entry)` - Tray entry created
 * `osjs/tray:remove => (entry)` - Tray entry removed
 * `osjs/tray:update => (entries)` - Tray entry updated
@@ -195,3 +196,5 @@ These are the default provided services and their signatures:
 * `init => ()` - Main init
 * `osjs/core:start => ()` - Core start
 * `osjs/core:started => ()` - Core started
+* `osjs/core:ping => (req)` - User pinged the server
+* `osjs/core:vfs:watch:change => ({mountpoint, target, type})` - VFS watch trigger
