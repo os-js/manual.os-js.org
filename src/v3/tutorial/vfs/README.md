@@ -114,3 +114,24 @@ module.exports = (core) => ({
   readdir: vfs => (path) => Promise.resolve([])
 });
 ```
+
+## Server API
+
+You can interact with the VFS on the server-side as well, but it works slightly different.
+
+> [info] API with interface that resembles the client is in progress.
+
+```javascript
+core vfs = core.make('osjs/vfs');
+
+// Gets the real filesystem path of a file in the VFS
+// NOTE: This does not work for filesystems that is not a mountpoint or physical drive
+const realPath = vfs.realpath('home:/filename', {username: 'osjs'});
+
+// Gets the mime type of a real filesystem file path
+const mimeType = vfs.mime(realPath);
+
+// Performs a VFS operation based on a HTTP action
+vfs.request('readdir', req, res)
+  .then(result => {})
+```

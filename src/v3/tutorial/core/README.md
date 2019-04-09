@@ -181,6 +181,15 @@ const session = core.session;
 core.on('event-name', (a, b, c) => console.log(a, b, c)) // => 1 2 3
 ```
 
+#### Server Services
+
+These are the default provided services and their signatures:
+
+* `osjs/express => ()` - APIs for [Express](../express/README.md)
+* `osjs/packages => ()` - APIs for Packages
+* `osjs/vfs => ()` - APIs for [VFS](../vfs/README.md#server-api)
+* `osjs/fs => ()` - APIs for Filesystem interaction
+
 #### Events
 
 * `init => ()` - Main init
