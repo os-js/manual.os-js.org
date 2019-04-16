@@ -32,6 +32,8 @@ full_title: Official Resources
 * https://github.com/os-js/osjs-example-provider - A basic Service Provider example
 * https://github.com/os-js/osjs-example-application - A basic Application package example
 * https://github.com/os-js/osjs-example-iframe-application - A basic iframe Application package example
+* https://github.com/os-js/osjs-example-react-application - A basic React application
+* https://github.com/os-js/osjs-example-vue-application - A basic Vue application
 
 ## Applications
 
