@@ -66,6 +66,7 @@ full_title: Official Resources
 
 * https://github.com/os-js/osjs-database-auth - Authenticate users via a database
 * https://github.com/os-js/osjs-pam-auth - Authenticate users via PAM
+* https://github.com/os-js/osjs-auth0-auth - Auth0 (OAuth) adapter
 
 ## Settings
 
