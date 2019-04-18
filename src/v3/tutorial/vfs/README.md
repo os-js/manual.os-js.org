@@ -134,4 +134,8 @@ const mimeType = vfs.mime(realPath);
 // Performs a VFS operation based on a HTTP action
 vfs.request('readdir', req, res)
   .then(result => {})
+
+// Performs a VFS operation directly
+vfs.call({method: 'readdir', user: {username: 'demo'}}, 'home:/')
+  .then(result => {})
 ```
