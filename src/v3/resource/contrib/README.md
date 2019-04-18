@@ -26,10 +26,6 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 * https://github.com/andersevenrud/osjs-pm2-provider - Adds PM2 metrics
 * https://github.com/SpaceboyRoss01/OS.js-hardware-serviceprovider - Get system information via `systeminformation`
 
-## Authentication
-
-* https://github.com/andersevenrud/osjs-auth0-auth - Auth0 OAuth adapters
-
 ## Filesystem
 
 * https://github.com/SpaceboyRoss01/osjs-devices-adapter - Adds all hardware devices to a root mountpoint
