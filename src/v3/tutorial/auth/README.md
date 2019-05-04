@@ -58,7 +58,7 @@ In this example we only allow the user `anders` with the password `evenrud`.
 > Please note that the OS.js client expects to receive an JSON object with at least `{id, username}`.
 
 ```javascript
-module.exports = (core, config) => ({
+const myAdapter = (core, config) => ({
   login: (req, res) => {
     const {username, password} = req.body;
 
@@ -73,6 +73,8 @@ module.exports = (core, config) => ({
     return Promise.resolve(true);
   }
 });
+
+module.exports = myAdapter;
 ```
 
 #### Blacklisting applications
