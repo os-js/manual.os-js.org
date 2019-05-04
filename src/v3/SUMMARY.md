@@ -137,6 +137,7 @@
   * [Visuals](guide/visuals/README.md)
   * [Customizing Login](guide/login/README.md)
   * [Embedding](guide/embed/README.md)
+  * [Standalone](guide/standalone/README.md)
   * [Remote Debugging](guide/remotedebug/README.md)
 * Hosting
   * [EvenNode](guide/hosting/evennode/README.md)
