@@ -9,7 +9,7 @@ This tutorial shows you how to create and register your own panel items.
 
 > Panel Items are containers placed inside a Panel.
 
-OS.js uses [Hyperapp v1](https://hyperapp.js.org/) for its panel items by default.
+OS.js uses [Hyperapp v1](https://github.com/jorgebucaran/hyperapp/tree/V1) for its panel items by default.
 
 ## Custom Panel Item
 
