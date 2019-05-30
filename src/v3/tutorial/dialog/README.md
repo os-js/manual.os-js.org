@@ -100,7 +100,7 @@ core.make('osjs/dialogs')
 
 ## GUI
 
-By default OS.js uses Hyperapp for the dialog GUI, but you can use whatever you want in the render callback.
+By default OS.js uses Hyperapp v1 for the dialog GUI, but you can use whatever you want in the render callback.
 
 The buttons will be created for you based on the options you provided:
 
