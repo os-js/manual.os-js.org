@@ -13,12 +13,13 @@ OS.js uses [Hyperapp](https://hyperapp.js.org/) for its panel items by default.
 
 ## Custom Panel Item
 
-The default Panel Service provider allows you to add (or override) panel items:
+To create your own panel item, extend the PanelItem class provided by the panels package.
 
 ```javascript
 import {PanelItem} from '@osjs/panels';
+import {h} from 'hyperapp';
 
-class MyPanelItem extends PanelItem {
+export class MyPanelItem extends PanelItem {
   render(state, actions) {
     return super.render('my-panel-item', [
       h('span', {}, 'Hello World!')
@@ -29,8 +30,11 @@ class MyPanelItem extends PanelItem {
 
 ### Registration
 
+#### Static
+
+In the client bootstrap file (`src/client/index.js`) you can give the Panel Service Provider a set of items.
+
 ```javascript
-// Static
 osjs.register(PanelServiceProvider, {
   args: {
     registry: {
@@ -38,7 +42,47 @@ osjs.register(PanelServiceProvider, {
     }
   }
 });
+```
 
-// Runtime
+#### Runtime
+
+It is also possible to register panel items on runtime.
+
+```javascript
 osjs.make('osjs/panels').register('my-panel-item', MyPanelItem);
+```
+
+### Usage
+
+To add the new item as a default entry, you have to modify your client settings.
+
+> [info] You might have to clear your settings (by default localStorage) in order for this to take effect.
+
+First, force your client (`src/client/index.js`) to load panel items from your configuration file.
+
+```javascript
+const osjs = new Core(config, {
+  omit: ['desktop.settings.panels']
+});
+```
+
+Then update the configuration file (`src/client/config.js`) with new desktop panel settings:
+
+```javascript
+module.exports = {
+  desktop: {
+    settings: {
+      panels: [{
+        position: 'top',
+        items: [
+          {name: 'menu'},
+          {name: 'windows'},
+          {name: 'my-panel-item'}, // Your panel item name
+          {name: 'tray'},
+          {name: 'clock'}
+        ]
+      }]
+    }
+  }
+}
 ```
