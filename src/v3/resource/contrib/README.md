@@ -30,6 +30,6 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 
 * https://github.com/SpaceboyRoss01/osjs-devices-adapter - Adds all hardware devices to a root mountpoint
 
-## Community chat
+## Community
 
-* Matrix channel (use riot.im/app to join it ) : https://matrix.to/#/!lxLFDpQJHZtqePeIUK:matrix.org?via=matrix.org - Chat protocol for the person which don't want to user Gitter. Linked to Gitter official channel.
+* https://matrix.to/#/!lxLFDpQJHZtqePeIUK:matrix.org?via=matrix.org - Matrix channel linked to Gitter. Users without Github accounts can use this service as an alternative with a client like https://riot.im/app.
