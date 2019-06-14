@@ -76,6 +76,7 @@ full_title: Official Resources
 
 * https://github.com/os-js/osjs-gdrive-adapter - Connect to remove Google Drive
 * https://github.com/os-js/osjs-webdav-adapter - Connect to remote WebDAV drives
+* https://github.com/os-js/osjs-ftp-adapter - Connect to FTP
 
 ## CLI
 
