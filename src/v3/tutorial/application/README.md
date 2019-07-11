@@ -234,7 +234,7 @@ You can also spawn **new** WebSockets on the internal server and bind it to your
 
 #### Client
 
-Create an instance of `Websokcet` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
+Create an instance of `Websocket` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
 
 ```javascript
 const ws = proc.socket(); // Defaults to '/socket' (first argument)
