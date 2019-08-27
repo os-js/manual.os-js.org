@@ -163,7 +163,7 @@ core.broadcast('event-name', [1, 2, 3], ws => {
 core.broadcastAll('event-name', 1, 2 , 3);
 
 // Broadcast to a specific user, with expanded arguments:
-core.broadcastAll('username', 'event-name', 1, 2 , 3);
+core.broadcastUser('username', 'event-name', 1, 2 , 3);
 
 // Express server
 const app = core.app;
