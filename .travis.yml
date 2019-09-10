@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '8'
 addons:
-  ssh_known_hosts: os-js.org
+  ssh_known_hosts: manual.os-js.org
 cache: npm
 install:
   - npm install -g gitbook gitbook-cli
@@ -26,6 +26,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist/* anders@os-js.org:/data/manual/travis/
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist/* anders@manual.os-js.org:manual/travis/
   on:
     branch: master
