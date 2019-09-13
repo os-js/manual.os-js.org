@@ -57,6 +57,7 @@ full_title: Official Resources
 ## Games
 
 * https://github.com/os-js/osjs-wolfenstein3d-application
+* https://github.com/os-js/osjs-tetris-application
 
 ## Themes
 
