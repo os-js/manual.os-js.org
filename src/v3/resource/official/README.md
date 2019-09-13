@@ -54,6 +54,10 @@ full_title: Official Resources
 * https://github.com/os-js/osjs-epub-application - View ePUB documents (ebooks)
 * https://github.com/os-js/osjs-webodf-application - View ODF documents
 
+## Games
+
+* https://github.com/os-js/osjs-wolfenstein3d-application
+
 ## Themes
 
 * https://github.com/os-js/osjs-standard-theme - The standard OS.js theme
