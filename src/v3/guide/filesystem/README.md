@@ -80,12 +80,14 @@ You can add mountpoints by updating your configuration files:
 
 Available attributes:
 
-| Name          | Type      | Default   | Description                                   |
-| ------------- | --------- | --------- | --------------------------------------------- |
-| `visibility`  | `string`  | `global`  | Visibility in gui (`global` or `restricted`)  |
-| `enabled`     | `boolean` | `true`    | Enable                                        |
-| `searchable`  | `boolean` | `true`    | If this mountpoint can be searched            |
-| `readOnly`    | `boolean` | `false`   | Don't allow writing                           |
+| Name           | Type       | Default   | Description                                   |
+| -------------- | ---------- | --------- | --------------------------------------------- |
+| `visibility`   | `string`   | `global`  | Visibility in gui (`global` or `restricted`)  |
+| `enabled`      | `boolean`  | `true`    | Enable                                        |
+| `searchable`   | `boolean`  | `true`    | If this mountpoint can be searched            |
+| `readOnly`     | `boolean`  | `false`   | Don't allow writing                           |
+| `groups`       | `string[]` | `[]`      | List of groups that can use the mountpoint    |
+| `strictGroups` | `boolean`  | `true`    | All groups must match                         |
 
 #### Server
 
@@ -105,11 +107,13 @@ Available attributes:
 
 Available attributes:
 
-| Name          | Type      | Default   | Description                                       |
-| ------------- | --------- | --------- | ------------------------------------------------- |
-| `root`        | `string`  | n/a       | When using the 'system' adapter this is the root  |
-| `searchable`  | `boolean` | `true`    | If this mountpoint can be searched                |
-| `readOnly`    | `boolean` | `false`   | Don't allow writing                               |
+| Name           | Type       | Default   | Description                                       |
+| -------------- | ---------- | --------- | ------------------------------------------------- |
+| `root`         | `string`   | n/a       | When using the 'system' adapter this is the root  |
+| `searchable`   | `boolean`  | `true`    | If this mountpoint can be searched                |
+| `readOnly`     | `boolean`  | `false`   | Don't allow writing                               |
+| `groups`       | `string[]` | `[]`      | List of groups that can use the mountpoint        |
+| `strictGroups` | `boolean`  | `true`    | All groups must match                             |
 
 ### Assigning Groups
 

@@ -23,6 +23,8 @@ You can retrieve the Express server and all other related instances via the `cor
 You can use the provided methods to set up routes from your Applications and Service Providers:
 
 > [info] If you're adding routes in your service provider using this API, use the `start()` method in your provider.
+ 
+> [info] Note that the last argument int `routeAuthenticated` (strict group check argument) defaults to `auth.requireAllGroups` configuration option.
 
 ```javascript
 const {route, routeAuthenticated} = core.make('osjs/express');
@@ -35,8 +37,11 @@ route('GET', '/ping', respond);
 // Same as above, except requires user to be authenticated
 routeAuthenticated('GET', '/ping', respond);
 
-// Same as above, but also requires user to belong to given groups
+// Same as above, but also requires user to belong to *some* given groups (see note above)
 routeAuthenticated('GET', '/ping', respond, ['admin']);
+
+// Same as above, but also requires user to belong to *all* given groups
+routeAuthenticated('GET', '/ping', respond, ['admin'], true);
 ```
 
 ### Inject middleware to route handler

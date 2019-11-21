@@ -50,6 +50,9 @@ The `metadata.json` file describes your application and contains a list of files
   // Lock down to users with given groups
   "groups": [],
 
+  // User needs to belong to all groups defined (default)
+  "strictGroups": true,
+
   // A map of localized titles
   "title": {
     "en_EN": "My Application"
