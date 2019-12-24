@@ -231,13 +231,15 @@ module.exports = (core, proc) => ({
 
 ### Custom Socket Connection
 
-You can also spawn **new** WebSockets on the internal server and bind it to your application.
+You can also create new WebSocket connection connections.
 
 > Application endpoints are resolved as `/apps/{name}/{endpoint}`
 
 #### Client
 
 Create an instance of `Websocket` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
+
+> Note that sockets automatically closes when application is destroyed.
 
 ```javascript
 const ws = proc.socket(); // Defaults to '/socket' (first argument)
@@ -253,10 +255,11 @@ ws.close(); // Closes socket
 
 In your server script, create a matching endpoint with Express:
 
+> You can get the core websocket server via `core.wss`. You can add properties to the `ws` object in the `app.ws()` method filter out the list of clients from `wss.clients`.
+
 ```javascript
 const endpoint = proc.resource('/socket');
 core.app.ws(endpoint, (ws, req) => {
-  // Spawned
   ws.on('message', msg => console.log(msg)); // Message
   ws.on('close', () => console.log('closed')); // Closed
   ws.send('data'); // Sends data
