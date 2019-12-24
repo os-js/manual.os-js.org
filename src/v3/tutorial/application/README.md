@@ -231,7 +231,7 @@ module.exports = (core, proc) => ({
 
 ### Custom Socket Connection
 
-You can also create new WebSocket connection connections.
+You can also create new WebSocket connections.
 
 > Application endpoints are resolved as `/apps/{name}/{endpoint}`
 
