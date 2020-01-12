@@ -66,7 +66,7 @@ You can also use JSX syntax instead of the programmatic approach.
 
 First: `npm install --save-dev @babel/plugin-transform-react-jsx`
 
-Then in your `.babelrc` file:
+Then in your `.babelrc` (or `babel` in `package.json`) file:
 
 ```json
 {

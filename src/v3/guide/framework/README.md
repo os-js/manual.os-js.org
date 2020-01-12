@@ -19,7 +19,7 @@ Install these dependencies (inside the application source folder):
 npm install --save-dev @babel/core @babel/preset-react react react-dom
 ```
 
-Then, add the following to your `.babelrc` file:
+Then, add the following to your `.babelrc` (or `babel` in `package.json`) file:
 
 ```json
 {
@@ -64,7 +64,7 @@ Install these dependencies (inside the application source folder):
 npm install --save-dev babel-preset-vue vue vue-loader vue-template-compiler webpack
 ```
 
-Then, add the following to your `.babelrc` file:
+Then, add the following to your `.babelrc` (or `babel` in `package.json`) file:
 
 ```json
 {

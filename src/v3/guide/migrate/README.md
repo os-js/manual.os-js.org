@@ -63,7 +63,7 @@ https://github.com/os-js/osjs-example-application
 The steps are as follows:
 
 * Set up `files`, `devDependencies` and `dependencies` and `scripts` in `package.json`.
-* Copy the `.babelrc` file.
+* Copy the `.babelrc` file (or `babel` in `package.json`).
 * Copy the `webpack.config.js` file and make any appropriate changes.
 * Make sure `files` in `metadata.json` matches the bundled output.
 * Run `npm run build` to see if it builds
