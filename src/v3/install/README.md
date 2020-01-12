@@ -69,7 +69,6 @@ Now open [http://localhost:8000](http://localhost:8000) in your browser to launc
 A Docker setup is also provided (mainly aimed at development). It performs all the necessary steps for you:
 
 ```bash
-cp .env.example .env
 docker-compose up
 ```
 
