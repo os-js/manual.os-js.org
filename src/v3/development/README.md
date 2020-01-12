@@ -68,13 +68,12 @@ docker-compose exec osjs npm run watch
 
 ### Testing
 
-Use the provided `.eslintrc` and `.stylelint` files to keep consistent code styles.
-
 All official packages provides running one or more of these tasks:
 
 * `npm run eslint` - ESLint pass
 * `npm run stylelint` - Stylelint pass
-* `npm run test` - Jest unit tests
+* `npm run test` - Jest unit tests (in some cases might run all tests)
+* `npm run jest` - Jest unit tests (in some cases instead of 'test' above)
 
 ## Building
 
