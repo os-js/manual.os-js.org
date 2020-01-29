@@ -30,7 +30,7 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 | desktop.settings.theme          | `Standard`            | Standard style theme                                     |
 | desktop.settings.icons          | `Gnome`               | Standard icon theme                                      |
 | desktop.settings.sounds         | `FreedesktopSounds`   | Standard sound theme                                     |
-| desktop.settings.background.src | `require(...)`        | Standard wallpaper                                       |
+| desktop.settings.background.src | Internal              | Standard wallpaper                                       |
 | locale.language                 | `en_EN`               | Default language                                         |
 | vfs.defaultPath                 | `osjs:/`              | Default and fallback path for VFS                        |
 

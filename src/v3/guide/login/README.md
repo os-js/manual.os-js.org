@@ -94,13 +94,15 @@ You can also add a logo via configuration and customize via CSS:
 
 ![Login Logo Example](example2.png)
 
-```json
+```javascript
+import logo from '../logo.png';
+
 {
   auth: {
     ui: {
       logo: {
         position: 'top', // top, bottom, left, right
-        src: require('../logo.png')
+        src: logo
       }
     }
   }

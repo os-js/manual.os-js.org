@@ -28,6 +28,9 @@ You can override these by [adding it](../../config/README.md#client) to your `sr
 Example:
 
 ```javascript
+/* src/client/wallpaper.png */
+import wallpaper from './wallpaper.png';
+
 module.exports = {
   desktop: {
     settings: {
@@ -45,7 +48,7 @@ module.exports = {
         ]
       }],
       background: {
-        src: require('./wallpaper.png'),  /* src/client/wallpaper.png */
+        src: wallpaper,
         color: '#000',
         style: 'cover'
       }
