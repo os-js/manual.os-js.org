@@ -70,10 +70,10 @@ docker-compose exec osjs npm run watch
 
 All official packages provides running one or more of these tasks:
 
+* `npm run test` - Run all tests and linters
 * `npm run eslint` - ESLint pass
 * `npm run stylelint` - Stylelint pass
-* `npm run test` - Jest unit tests (in some cases might run all tests)
-* `npm run jest` - Jest unit tests (in some cases instead of 'test' above)
+* `npm run jest` - Jest unit tests
 
 ## Building
 
