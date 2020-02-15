@@ -50,7 +50,7 @@ npm install
 
 # Optionally install extra packages:
 # For a list of packages see https://manual.os-js.org/v3/resource/official/
-npm install --save --production @osjs/example-application
+npm install @osjs/example-application
 
 # Discover installed packages
 npm run package:discover
