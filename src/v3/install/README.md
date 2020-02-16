@@ -34,7 +34,7 @@ Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan 
 Clone the base repository (or download a compressed version of latest release):
 
 ```bash
-git clone -b v3 --single-branch https://github.com/os-js/OS.js.git
+git clone -b master --single-branch https://github.com/os-js/OS.js.git
 cd OS.js
 ```
 
