@@ -2,7 +2,7 @@
   "root": "src/v3",
   "author": "Anders Evenrud <andersevenrud@gmail.com>",
   "language": "en",
-  "title": "OS.js v3 Manual",
+  "title": "OS.js Web Desktop Manual",
   "plugins": ["sitemap", "adsense", "alerts", "edit-link", "ga", "codepen"],
   "pluginsConfig": {
     "sitemap": {

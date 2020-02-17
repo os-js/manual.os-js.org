@@ -1,20 +1,19 @@
 ---
-description: OS.js v3 Manual - Resources, Instructions, Tutorials and Guides.
+description: OS.js v3 Web Desktop Manual
 ---
 
 # OS.js Manual
 
-**OS.js** is a desktop environment that runs in a browser with fully-fledged window manager, application APIs, GUI toolkit, filesystem abstractions and much more.
+**OS.js** is a web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.
 
 Can be installed on all platform and runs in any modern web browser.
 
-This manual contains instructions, developer information, general resources, tutorials and guides.
-
-> **If you're looking for the legacy v2 manual [follow this link](https://manual.os-js.org/v2/).**
+This manual contains tutorials, articles, resources, developer information and guides on how to use OS.js.
 
 To try it out, check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please note that this might be down for maintainence at times, or running an unstable version.*
 
 ![ScreenShot](https://www.os-js.org/screenshot.png)
+
 
 ---
 
