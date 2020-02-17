@@ -31,26 +31,19 @@ NODE_ENV=production npm run serve
 
 ## Legacy Browsers
 
-To support browsers like IE10 and upward, you have to install the following dependencies:
+To support browsers like IE11 and upward, you have to install the following dependencies:
 
 ```bash
-npm install --save-dev @babel/polyill element-remove whatwg-fetch
+npm install --save-dev core-js regenerator-runtime element-remove whatwg-fetch
 ```
 
-Then modify your `webpack.config.js` entry:
+Then modify your `src/client/index.js` file and add this to the top:
 
 ```javascript
-module.exports = {
-   entry: {
-     osjs: [
-      '@babel/polyfill',
-      'whatwg-fetch',
-      'element-remove',
-       path.resolve(__dirname, 'src/client/index.js'),
-       path.resolve(__dirname, 'src/client/index.scss')
-     ]
-  }
-};
+import 'core-js/stable';
+import 'element-remove';
+import 'whatwg-fetch';
+import 'regenerator-runtime/runtime';
 ```
 
 ## Reverse Proxy
