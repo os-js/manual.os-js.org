@@ -10,6 +10,26 @@
 
 {% endblock %}
 
+{% block book_inner %}
+    {% include "website/header.html" %}
+
+    <div class="page-wrapper" tabindex="-1" role="main">
+        <div class="page-inner">
+            {% block search_results %}
+                <section class="normal markdown-section">
+                {% block page %}
+                {{ page.content|safe }}
+                {% endblock %}
+
+                <div style="text-align:center; font-size:80%;padding:2em;color:#aaa;">
+                  OS.js Web Desktop - &copy; Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+                </div>
+                </section>
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
 {% block book_body %}
   {{ super() }}
 {% endblock %}
