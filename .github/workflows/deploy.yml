@@ -5,6 +5,7 @@ on:
       - master
 jobs:
   build:
+    if: github.actor == 'andersevenrud' || github.actor ==  'os-js'
     name: Build and deploy
     runs-on: ubuntu-latest
     steps:
