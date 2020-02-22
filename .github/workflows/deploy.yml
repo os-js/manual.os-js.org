@@ -1,0 +1,41 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '8.x'
+      - name: Global dependencies
+        run: sudo npm install -g gitbook-cli
+      - name: Local dependencies
+        run: npm install
+      - name: Build v3
+        run: gitbook build
+      - name: Build v2
+        run: node index.js
+      - name: Build dist
+        run: |
+          mkdir dist
+          cp public/*.* dist/
+          cp -r _metalsmith dist/v2
+          cp -r _book dist/v3
+          echo "${{ secrets.GA_CONTENTS }}" > "dist/${{ secrets.GA_FILENAME }}"
+          echo "${{ secrets.GA_CONTENTS }}" > "dist/v2/${{ secrets.GA_FILENAME }}"
+          echo "${{ secrets.GA_CONTENTS }}" > "dist/v2/${{ secrets.GA_FILENAME }}"
+      - name: Deploy
+        uses: AEnterprise/rsync-deploy@v1.0
+        env:
+          DEPLOY_KEY: ${{ secrets.RSYNC_SSH_KEY }}
+          ARGS: "-r --delete-after --quiet"
+          SERVER_PORT: ${{ secrets.RSYNC_SSH_PORT }}
+          FOLDER: "./dist/*"
+          SERVER_IP: ${{ secrets.RSYNC_SSH_IP }}
+          USERNAME: ${{ secrets.RSYNC_SSH_USERNAME }}
+          SERVER_DESTINATION: ${{ secrets.RSYNC_SSH_PATH }}
