@@ -38,7 +38,7 @@ full_title: Official Resources
 ## Applications
 
 * https://github.com/os-js/osjs-settings-application - Manage OS.js settings
-* https://github.com/os-js/osjs-xterm-application - Connect to a remote SSH sesssion with Xterm
+* https://github.com/os-js/osjs-xterm-application - Connect to a remote SSH session with Xterm
 * https://github.com/os-js/osjs-textpad-application - Edit text files
 * https://github.com/os-js/osjs-draw-application - Simple draw application
 * https://github.com/os-js/osjs-ace-application - Edit text and source code with Ace
@@ -79,7 +79,7 @@ full_title: Official Resources
 
 ## Filesystem
 
-* https://github.com/os-js/osjs-gdrive-adapter - Connect to remove Google Drive
+* https://github.com/os-js/osjs-gdrive-adapter - Connect to remote Google Drive
 * https://github.com/os-js/osjs-webdav-adapter - Connect to remote WebDAV drives
 * https://github.com/os-js/osjs-ftp-adapter - Connect to FTP
 
