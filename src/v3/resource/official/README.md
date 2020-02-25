@@ -85,6 +85,7 @@ full_title: Official Resources
 
 ## CLI
 
+* https://github.com/andersevenrud/osjs-build-parallel-cli - Build multiple solutions at once (parallel support)
 * https://github.com/os-js/osjs-json-config-cli - Manage settings via JSON
 
 ## Providers

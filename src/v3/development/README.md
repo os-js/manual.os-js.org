@@ -84,8 +84,6 @@ All official packages provides running one or more of these tasks:
 
 As described above, building is done using [Webpack](#webpack).
 
-If you need to build multiple packages in parallel you can use the **experimental** [build-parallel-cli](https://github.com/andersevenrud/osjs-build-parallel-cli) CLI extension.
-
 ### Environment
 
 Using the required tools (above) you can set up a development environment in a couple of minutes.
