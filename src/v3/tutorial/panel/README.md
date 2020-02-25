@@ -72,7 +72,15 @@ To add the new item as a default entry, you have to modify your client settings.
 
 > [info] You might have to clear your settings (by default localStorage) in order for this to take effect.
 
-Update the configuration file (`src/client/config.js`) with new desktop panel settings:
+First, force your client (`src/client/index.js`) to load panel items from your configuration file.
+
+```javascript
+const osjs = new Core(config, {
+  omit: ['desktop.settings.panels']
+});
+```
+
+Then update the configuration file (`src/client/config.js`) with new desktop panel settings:
 
 ```javascript
 module.exports = {
