@@ -84,6 +84,8 @@ All official packages provides running one or more of these tasks:
 
 As described above, building is done using [Webpack](#webpack).
 
+If you need to build multiple packages in parallel you can use the **experimental** [build-parallel-cli](https://github.com/andersevenrud/osjs-build-parallel-cli) CLI extension.
+
 ### Environment
 
 Using the required tools (above) you can set up a development environment in a couple of minutes.
@@ -192,6 +194,7 @@ npm link @osjs/client
 
 1. Using `npm link` will not link its dependencies. You have to do this yourself or use a monorepo uitlity to automate the process.
 2. Running `npm install` after linking **will remove the links**
+3. You can use [lerna](https://github.com/lerna/lerna) if you're managing a monorepo.
 
 ## Packages
 
