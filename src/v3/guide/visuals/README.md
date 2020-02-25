@@ -72,7 +72,7 @@ The stylesheet in `src/client/index.scss` is for you to customize. You can inclu
 By using this file you can override the default styles like the background, wallpaper, etc. Example:
 
 ```css
-body {
+.osjs-root {
   background-color: #000;
   background-image: url('./wallpaper.png'); /* src/client/wallpaper.png */
 }
