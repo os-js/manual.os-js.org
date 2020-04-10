@@ -38,9 +38,13 @@ Since requests cannot be made you have to add the package manifest to your confi
 Edit your `src/client/config.js` file and add the following setting:
 
 ```javscript
-{
+// Import the compiled package metadata
+import metadata from '../../dist/metadata.json';
+
+export default {
+  // Append this to your config
   packages: {
-    metadata: require('../../dist/metadata.json')
+    metadata
   }
 }
 ```
