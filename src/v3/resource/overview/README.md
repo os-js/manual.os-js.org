@@ -21,7 +21,7 @@ Client-side scripts are transpiled with [Babel](https://babeljs.io/) and bundled
 
 If you're not familiar with ES6 modules, you should read about the [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) and [`export`](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export) statements.
 
-The server-side scripts runs on node v8.x+, but uses `require` instead of `import/export`.
+The server-side scripts runs on node 10+, but uses `require` instead of `import/export`.
 
 ## Distribution
 
@@ -65,7 +65,7 @@ You can read more about the standard provided services in the [Core Tutorial](..
 
 ## Server
 
-The server runs on [Node.js](https://nodejs.org/) (v8.x or later) on [Express](https://expressjs.com/).
+The server runs on [Node.js](https://nodejs.org/) (version 10 or later) on [Express](https://expressjs.com/).
 
 Most of the features in the client are provided by [service providers](../../guide/provider/README.md).
 
