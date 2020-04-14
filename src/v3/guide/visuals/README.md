@@ -158,3 +158,25 @@ osjs.register(CoreServiceProvider, {
 ```
 
 Use the `WindowBehavior` class in `@osjs/client` as your base class to extend these feautres.
+
+## Splash screen
+
+To customize the initial splash screen you can override the internal class in your `src/client/index.js` file:
+
+```javascript
+import {Core, Splash} from '@osjs/client';
+
+class CustomSplash extends Splash {
+  init() {
+    // This is the default, you can override this
+    this.$loading
+      .appendChild(document.createTextNode('Loading...'));
+  }
+}
+
+// In your bootstrap add an option to a callback
+// to point to the new splash instance.
+new Core(config, {
+  splash: core => new CustomSplash(core)
+});
+```
