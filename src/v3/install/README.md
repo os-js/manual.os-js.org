@@ -17,7 +17,7 @@ Runs in any modern web browser.
 
 ## Demo
 
-You can run a demo using Docker without checkout out any source-code:
+You can run a demo using Docker without checking out any source-code:
 
 ```bash
 docker run -p 8000:8000 osjs/osjs:v3
