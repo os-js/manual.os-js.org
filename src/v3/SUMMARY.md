@@ -114,7 +114,7 @@
 * [CLI](guide/cli/README.md)
   * [Commands](guide/cli/README.md#ommands)
   * [Server Arguments](guide/cli/README.md#server-arguments)
-  * [Custom Taks](guide/cli/README.md#custom-tasks)
+  * [Custom Tasks](guide/cli/README.md#custom-tasks)
 * [Deployment](guide/deploy/README.md)
   * [Checklist](guide/deploy/README.md#checklist)
   * [Bulding](guide/deploy/README.md#building)
