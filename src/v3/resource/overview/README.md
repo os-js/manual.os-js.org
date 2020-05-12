@@ -25,11 +25,9 @@ The server-side scripts runs on node 10+, but uses `require` instead of `import/
 
 ## Distribution
 
-The [OS.js repository](https://github.com/os-js/OS.js) is the main codebase that builds and bundles all of the components together.
+The [OS.js repository](https://github.com/os-js/OS.js) contains a boilerplate you can use to build and bundle your own distributions.
 
-This is the standard layout for an OS.js distribution source:
-
-> You can change this as you see fit, because all of the actual OS.js codebase is provided separately with `npm` packages.
+It comes with the following structure, that you can modify as you see fit:
 
 ```text
 webpack.config.js        Webpack building configuration

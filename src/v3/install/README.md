@@ -7,6 +7,8 @@ full_title: Installation
 
 Installation is done in a few simple steps and only takes a couple of minutes.
 
+> **[warning] Do not run OS.js as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
+
 ## Requirements
 
 The only dependency is `node 10` or later and `git` is recommended.
@@ -29,9 +31,9 @@ Or check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please 
 
 Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing in a production environment.
 
-> **[warning] Do not use "sudo" or an administrator user for the setup procedure.**
+> **[info] The official repository is intended for you to use as a boilerplate to create your own distributions of OS.js. You can safely remove any files beloning to git afterwards if you used git, as well as modify the structure and included files as you see fit.**
 
-Clone the base repository (or download a compressed version of latest release):
+Clone the official boilerplate repository (or download a compressed version of latest release):
 
 ```bash
 git clone -b master --single-branch https://github.com/os-js/OS.js.git
