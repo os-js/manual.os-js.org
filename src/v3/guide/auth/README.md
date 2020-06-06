@@ -16,7 +16,7 @@ These are the available client adapters:
 * `server` - Authenticate via the server (default)
 * `localStorage` - Null authentication (used in standalone mode)
 
-And these are the available server adaters:
+And these are the available server adapters:
 
 * `null` - Accepts any authentication request (default)
 * [pam](https://github.com/os-js/osjs-pam-auth) - Log in via host PAM (unix only)
