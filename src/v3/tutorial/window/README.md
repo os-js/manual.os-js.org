@@ -63,6 +63,7 @@ proc.createWindow({
 * `maximizable: boolean` - Set if window can be minimized
 * `minimizable: boolean` - Set if window can be maximized
 * `sessionable: boolean` - Set if window can be saved in session
+* `droppable: boolean` - Set if window can receive drop events
 * `closeable: boolean` - Set if window can be closed
 * `header: boolean` - Header visibility
 * `controls: boolean` - Header controls visibility (min/max/close buttons)
