@@ -27,6 +27,8 @@ You can drop the `dist/` contents into any directory that is hosted by any web s
 
 Services and providers that does not interact with the OS.js backend will work as expected.
 
+> [info] If your method of transfer does not resolve symlinks in the `dist/` directory (results in packages not loading), run `npm run package:discover -- --copy` to make a build without symlinks.
+
 ## Without webserver
 
 You can launch OS.js from `file://` (i.e. just opening the html file in `dist/`) by modifying the client configuration.
