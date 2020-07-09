@@ -102,7 +102,8 @@ OSjs.url();
 * `osjs/fs:unmount => ()` - Filesystem unmounted
 * `osjs/settings:save => ()` - Settings saved
 * `osjs/settings:load => ()` - Settings loaded
-* `osjs/vfs:* => (...args)` - VFS Method call (`*` is method name)
+* `osjs/vfs:* => (...args)` - VFS Method call started (`*` is method name)
+* `osjs/vfs:*:done => (...args)` - VFS Method call finished (`*` is method name)
 * `osjs/tray:create => (entry)` - Tray entry created
 * `osjs/tray:remove => (entry)` - Tray entry removed
 * `osjs/tray:update => (entries)` - Tray entry updated
