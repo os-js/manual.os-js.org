@@ -29,7 +29,7 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 ## Filesystem
 
 * https://github.com/SpaceboyRoss01/osjs-devices-adapter - Adds all hardware devices to a root mountpoint
-* https://github.com/BurnaSmartLab/osjs-monster-adapter - An Adapter for os.js to work with swift saio object storage.
+* https://github.com/BurnaSmartLab/osjs-monster-adapter - Swift saio object storage VFS adapter 
 
 ## Community
 
