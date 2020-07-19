@@ -114,6 +114,7 @@ export default class MyWidget extends Widget {
 
 ```javascript
 import {WidgetServiceProvider} from '@osjs/widgets';
+import MyWidget from 'path/to/MyWidget';
 
 osjs.register(WidgetServiceProvider, {
   args: {
