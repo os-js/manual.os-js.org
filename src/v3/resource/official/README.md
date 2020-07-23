@@ -3,17 +3,7 @@ description: OS.js v3 Official Resources
 full_title: Official Resources
 ---
 
-# Official Resources
-
-# API Documentation
-
-* [osjs-common](https://manual.os-js.org/v3/api/osjs-common/)
-* [osjs-client](https://manual.os-js.org/v3/api/osjs-client/)
-* [osjs-gui](https://manual.os-js.org/v3/api/osjs-gui/)
-* [osjs-dialogs](https://manual.os-js.org/v3/api/osjs-dialogs/)
-* [osjs-panels](https://manual.os-js.org/v3/api/osjs-panels/)
-* [osjs-server](https://manual.os-js.org/v3/api/osjs-server/)
-* [osjs-event-emitter](https://manual.os-js.org/v3/api/osjs-event-emitter/)
+# Official packages
 
 ## Modules
 

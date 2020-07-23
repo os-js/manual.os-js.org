@@ -82,3 +82,9 @@ See the [iframes tutorial](tutorial/iframe/README.md).
 No. OS.js v3 is not compatible with the v2 APIs.
 
 If you developed your v2 applications using iframes or custom frameworks, *transitioning* to v3 is possible.
+
+## Q: Is there a matrix channel ?
+
+Yes. There's an unofficial resource for this:
+
+https://matrix.to/#/!lxLFDpQJHZtqePeIUK:matrix.org?via=matrix.org - Matrix channel linked to Gitter. Users without Github accounts can use this service as an alternative with a client like https://riot.im/app.

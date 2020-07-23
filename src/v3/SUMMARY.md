@@ -8,8 +8,8 @@
 ### Resources
 
 * [Overview](resource/overview/README.md)
-* [Official](resource/official/README.md)
-* [Contributions](resource/contrib/README.md)
+* [Official packages](resource/official/README.md)
+* [Contributed packages](resource/contrib/README.md)
 
 ### Getting Started
 

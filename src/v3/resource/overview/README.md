@@ -13,6 +13,16 @@ This article gives a brief overview of all of the different components that make
 
 *Simplified diagram of components and their relation.*
 
+## API Documentation
+
+* [osjs-common](https://manual.os-js.org/v3/api/osjs-common/)
+* [osjs-client](https://manual.os-js.org/v3/api/osjs-client/)
+* [osjs-gui](https://manual.os-js.org/v3/api/osjs-gui/)
+* [osjs-dialogs](https://manual.os-js.org/v3/api/osjs-dialogs/)
+* [osjs-panels](https://manual.os-js.org/v3/api/osjs-panels/)
+* [osjs-server](https://manual.os-js.org/v3/api/osjs-server/)
+* [osjs-event-emitter](https://manual.os-js.org/v3/api/osjs-event-emitter/)
+
 ## Source-code
 
 All of the source is written in [ES6+](http://es6-features.org/).

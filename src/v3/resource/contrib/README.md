@@ -1,9 +1,9 @@
 ---
-description: OS.js v3 Contributed Resources
-full_title: Contributed Resources
+description: OS.js v3 Contributed Packages
+full_title: Contributed Packages
 ---
 
-# Contributed Resources
+# Contributed Packages
 
 If you want to submit your contribution, contact me by email, join the [Gitter](https://gitter.im/os-js/OS.js) chatroom or send a pull-request.
 
@@ -31,6 +31,3 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 * https://github.com/SpaceboyRoss01/osjs-devices-adapter - Adds all hardware devices to a root mountpoint
 * https://github.com/BurnaSmartLab/osjs-monster-adapter - OpenStack Swift object storage VFS adapter 
 
-## Community
-
-* https://matrix.to/#/!lxLFDpQJHZtqePeIUK:matrix.org?via=matrix.org - Matrix channel linked to Gitter. Users without Github accounts can use this service as an alternative with a client like https://riot.im/app.
