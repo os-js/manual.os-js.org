@@ -21,6 +21,12 @@ Auto-generated documentation for the source code is located in the following loc
 
 ## Online Examples
 
+For prototyping solutions you can use the following templates for online development environments:
+
+* https://codesandbox.io/s/w6vrvzo03l
+* https://codepen.io/andersevenrud/pen/bzowQX
+* https://codepen.io/andersevenrud/pen/EGKNxV
+
 A curated list of online examples for inspiration:
 
 * https://codepen.io/collection/DqmrWo/
