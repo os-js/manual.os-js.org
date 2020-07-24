@@ -17,9 +17,15 @@ To create a new application package, run the following command inside your OS.js
 
 > For general information about development see [development article](../../development/README.md).
 
+<!-- -->
+
+> Remember to run `npm run package:discover` after you generate a package to make it available.
+
 ## Bi-directional communication
 
-This is an example on how to establish communication in your iframe:
+In many cases you probably won't need to establish communication outside of your iframe, but this is an example on how to do it.
+
+### Frame implementation
 
 ```html
 <!DOCTYPE html>
@@ -51,9 +57,7 @@ This is an example on how to establish communication in your iframe:
 </html>
 ```
 
-## OS.js Application Source
-
-On the OS.js-side you can use the following events:
+### Application implementation
 
 ```javascript
 proc.createWindow({dimension: {width: 400, height: 400}})
