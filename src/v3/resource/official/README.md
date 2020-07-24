@@ -83,11 +83,3 @@ full_title: Official Resources
 * https://github.com/os-js/osjs-gapi-provider - Adds Google API features to the API
 * https://github.com/os-js/osjs-proc-provider - Adds support for spawning processes and pseudo terminals
 * https://github.com/os-js/osjs-wireless-tools-provider - Adds support for wireless-tools
-
-## Misc
-
-A curated list of examples for inspiration:
-
-* https://codepen.io/collection/DqmrWo/
-* https://codepen.io/collection/AybmNa/
-* https://codesandbox.io/u/andersevenrud/sandboxes
