@@ -16,6 +16,9 @@ To create a new application package, run the following command inside your OS.js
 <!-- -->
 
 > For general information about development see [development article](../../development/README.md).
+<!-- -->
+
+> Remember to run `npm run package:discover` after you generate a package to make it available.
 
 ## Metadata
 
@@ -81,6 +84,9 @@ The `metadata.json` file describes your application and contains a list of files
 > Available categories by default are: development, science, games, graphics, network, multimedia, office, system, utilities and other
 
 > Singleton applications will receive the `attention` event when another instance is dropped from launching.
+<!-- -->
+
+> Remember to run `npm run package:discover` after you change your metadata.
 
 ### npm
 
