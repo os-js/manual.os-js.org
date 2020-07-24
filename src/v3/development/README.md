@@ -71,12 +71,14 @@ All official packages provides running one or more of these tasks:
 
 ## Building
 
-All official packages provides running one or more of these tasks:
+All official packages and modules provides running one or more of these tasks:
 
 * `npm run build` Build changes once
 * `npm run watch` Watch and build changes automatically
 
 As described above, building is done using [Webpack](#webpack).
+
+> [info] Note that by default packages have their own independent build setup, so you need to run the commands inside the package directory, not your installation directory.
 
 ### Environment
 

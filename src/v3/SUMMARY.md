@@ -7,7 +7,7 @@
 
 ### Resources
 
-* [Overview](resource/overview/README.md)
+* [Architecture and overview](resource/overview/README.md)
 * [Documentation and examples](resource/docs/README.md)
 * [Official packages](resource/official/README.md)
 * [Contributed packages](resource/contrib/README.md)
