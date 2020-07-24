@@ -1,6 +1,6 @@
 ---
-description: OS.js v3 Official Resources
-full_title: Official Resources
+description: OS.js v3 Official Packages
+full_title: Official Packages
 ---
 
 # Official packages
