@@ -59,8 +59,6 @@ Official projects are scoped with `@osjs/<project>-<suffix>`.
 
 These are the deafult provided commands for performing build actions:
 
-> [info] Note that packages are built separately from your distribution/installation by default. Make sure to run the build commands in the correct directory.
-
 * `npm run build` Build changes once
 * `npm run watch` Watch and build changes automatically
 
@@ -98,10 +96,13 @@ By default, the packages provided by the OS.js repository are installed via `npm
 
 Run `npm run make:application` to create a new [application package](../tutorial/application/README.md) package from a wizard using the standard template:
 
-> *Theme templates currently not provided, use the theme repositories a starting point.* Note that you have to manually install the dependencies and build the package afterwards.
+> [info] Note that packages are built separately from your distribution/installation by default. Make sure to run the build commands in the correct directory.
 
 ```bash
+# Create a new application from template
 npm run make:application
+
+# Discover all packages to make it visible in the client
 npm run package:discover
 ```
 
@@ -109,6 +110,7 @@ npm run package:discover
 
 1. Each time you add/remove (or modify the metadata) a package you need to run `npm run package:discover` to update the global package manifest.
 2. Package name **must be unique**.
+3. *Theme templates currently not provided, use the theme repositories a starting point.* Note that you have to manually install the dependencies and build the package afterwards.
 
 ### Next steps
 
