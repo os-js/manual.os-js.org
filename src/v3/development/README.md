@@ -6,23 +6,15 @@ description: An introduction into development and related utilities
 
 This article will walk you through the development process of OS.js modules and packages.
 
+This article contains instructions to develop
+
 1. [Introduction](#introduction)
-    1. [Webpack](#webpack)
-    2. [Docker](#docker)
-    3. [Testing](#testing)
-2. [Bulding](#building)
-    1. [Environment](#environment)
-    2. [Server](#server)
-3. [Naming](#naming)
-4. [Modules](#modules)
-    1. [Replacement](#replacement)
-    2. [Linking](#linking)
-5. [Packages](#packages)
-    1. [Next steps](#next-steps)
-6. [Contributing](#contributing)
-7. [Publishing](#publishing)
-    1. [npm](#npm)
-    2. [git](#git)
+2. [Notices](#notices)
+3. [Naming conventions](#naming-conventions)
+4. [Building](#building)
+5. [Testing](#testing)
+6. [Developing Modules](#developing-modules)
+7. [Developing Packages](#developing-packages)
 
 ## Introduction
 
@@ -36,65 +28,19 @@ This article will walk you through the development process of OS.js modules and 
 * [npm](https://docs.npmjs.com/)
 * [git](https://git-scm.com/)
 
-### Webpack
+## Notices
 
-OS.js uses Webpack 4 for building and bundling by default with Babel 7 and Sass CSS.
+If you're using docker-compose for your environment, you have to execute CLI commands within the Docker image context. Example:
 
-These are some of the plugins and loaders used throughout codebases:
-
-* [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
-* [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin)
-* [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
-* [optimize-css-assets-webpack-plugin](https://github.com/NMFR/optimize-css-assets-webpack-plugin)
-* [babel-loader](https://github.com/babel/babel-loader)
-* [file-loader](https://github.com/webpack-contrib/file-loader)
-* [sass-loader](https://github.com/webpack-contrib/sass-loader)
-* [css-loader](https://github.com/webpack-contrib/css-loader)
-
-### Docker
-
-If you're using Docker, you do your work normally on the local filesystem, but when performing commands and tasks related to building and dependency management, you have to run them within the context of the container:
-
-```
-# Watch for changes
+```shell
 docker-compose exec osjs npm run watch
 ```
 
-### Testing
+If you want to publish a module or package, look at the [publish guide](../guide/publish/README.md).
 
-All official packages provides running one or more of these tasks:
+## Naming conventions
 
-* `npm run test` - Run all tests and linters
-* `npm run eslint` - ESLint pass
-* `npm run stylelint` - Stylelint pass
-* `npm run jest` - Jest unit tests
-
-## Building
-
-All official packages and modules provides running one or more of these tasks:
-
-* `npm run build` Build changes once
-* `npm run watch` Watch and build changes automatically
-
-As described above, building is done using [Webpack](#webpack).
-
-> [info] Note that by default packages have their own independent build setup, so you need to run the commands inside the package directory, not your installation directory.
-
-### Environment
-
-Using the required tools (above) you can set up a development environment in a couple of minutes.
-
-Make sure to set the `NODE_ENV=production` environmental variable if you're compiling for a production environment.
-
-By default the configurations are set to development mode, which will reload your applications and stylesheets whenever the distribution is rebuilt.
-
-### Server
-
-You can launch the server with [nodemon](http://nodemon.io/) to automatically reload upon changes as the `npm run watch` tasks does not apply here.
-
-## Naming
-
-OS.js has a format for naming projects:
+The following list contains the naming convention for modules and packages (in `git` and `npm`):
 
 * `osjs-<project>-application` - Application package
 * `osjs-<project>-provider` -  Service Provider module
@@ -109,11 +55,33 @@ OS.js has a format for naming projects:
 
 Official projects are scoped with `@osjs/<project>-<suffix>`.
 
-## Modules
+## Building
 
-The OS.js client and server are split up into several modules provided by `npm packages` (see `package.json`).
+These are the deafult provided commands for performing build actions:
 
-You can place your own modules inside the `src/` if you don't want to work with npm.
+> [info] Note that packages are built separately from your distribution/installation by default. Make sure to run the build commands in the correct directory.
+
+* `npm run build` Build changes once
+* `npm run watch` Watch and build changes automatically
+
+To produce a production build, prefix your command with ex: `NODE_ENV=production npm run <task>`.
+
+## Testing
+
+These are the default provided commands for performing test actions:
+
+> [info] Note that packages are built separately from your distribution/installation by default. Make sure to run the build commands in the correct directory.
+
+* `npm run test` - Run all tests and linters
+* `npm run eslint` - ESLint pass
+* `npm run stylelint` - Stylelint pass
+* `npm run jest` - Jest unit tests
+
+## Developing Modules
+
+The OS.js client and server are split up into several modules provided by `npm` packages (see `package.json`).
+
+To override these modules follow the [modules guide](../guide/modules/README.md).
 
 To make your own module(s), you can use the CLI Wizard:
 
@@ -122,75 +90,7 @@ To make your own module(s), you can use the CLI Wizard:
 * `npm run make:settings` - See [Settings Tutorial](../tutorial/settings/README.md)
 * `npm run make:vfs` - See [VFS Tutorial](../tutorial/vfs/README.md)
 
-
-If you want to modify the official modules (which are installed via `npm`) you have two choices which are explained in detail below:
-
-1. Replace the module by checking out local source-code
-2. Override module with local source-code using `npm link`
-
-### Replacement
-
-Your first option is to simply replace the `import` statements in your bootstrap scripts.
-
-Example:
-
-```bash
-# In your OS.js installation
-cd src/
-git clone https://github.com/os-js/osjs-client
-cd osjs-client
-npm install
-```
-
-```javascript
-// In `src/client/index.js` replace this:
-import {/* some code here */} from '@osjs/client';
-
-// With:
-import {/* some code here */} from '../osjs-client/index.js';
-```
-
-### Linking
-
-With the `npm link` feature you *override* the paths in `node_modules/` and link them to the actual source-code instead of the distributed builds.
-
-> **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
-
-Assuming you've already installed OS.js, this is an example of how you set up linking:
-
-```bash
-#
-# Somewhere in your filesystem (or use src/ directory)
-#
-
-# First check out the code of package @osjs/client
-git clone https://github.com/os-js/osjs-client
-cd osjs-client
-
-# Install required dependencies
-npm install
-
-# Build source (or `npm run watch` in while developing to automatically rebuild)
-npm run build
-
-# Then register the package in npm
-npm link
-
-#
-# In your OS.js root directory
-#
-
-# Subscribe to the npm registered package
-npm link @osjs/client
-```
-
-*Notes*:
-
-1. Using `npm link` will not link its dependencies. You have to do this yourself or use a monorepo uitlity to automate the process.
-2. Running `npm install` after linking **will remove the links**
-3. You can use [lerna](https://github.com/lerna/lerna) if you're managing a monorepo.
-
-## Packages
+## Developing Packages
 
 By default, the packages provided by the OS.js repository are installed via `npm` (`node_modules/`), but the directory `src/packages` can also be used. To set up custom package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
 
@@ -209,8 +109,6 @@ npm run package:discover
 
 1. Each time you add/remove (or modify the metadata) a package you need to run `npm run package:discover` to update the global package manifest.
 2. Package name **must be unique**.
-3. The `package:discover` task creates a file named `packages.json` and creates symlinks inside the `dist/{apps|themes}` directories to `{package}/dist`.
-4. OS.js expects you to output your bundles etc. in  a directory called `dist/` (which is default in Webpack).
 
 ### Next steps
 
@@ -222,68 +120,3 @@ If you're developing an application, these are the relevant articles in order:
 2. [Application Tutorial](../tutorial/application/README.md)
 3. [Window Tutorial](../tutorial/window/README.md)
 3. [GUI Tutorial](../tutorial/gui/README.md)
-
-## Contributing
-
-Using the documentation above, you have everything you need to make changes.
-
-> [info] To submit changes into the official repositories need a [github](https://github.com) account.
-
-This is the basic workflow for making submissions:
-
-* [Fork](https://help.github.com/articles/fork-a-repo/) the repository you want to make changes to
-* Clone repository
-* *Create a new branch* (from up-to-date `master`)
-* **Test your work** (see above)
-* Commit your work
-* Create a [pull request](https://help.github.com/articles/about-pull-requests/)
-
-It is important to write [good commit messages](https://github.com/erlang/otp/wiki/writing-good-commit-messages), having a clean git history and using the provided linter configurations. This saves a lot of time when reviewing the work and things gets merged faster.
-
-## Publishing
-
-It is recommended that you distribute your modules and packages in a compiled form.
-
-The official npm packages does this and delivers the files in a `dist/` directory.
-
-Using `NODE_ENV=production` is recommended to avoid bloat and allow for proper tree-shaking, etc.
-
-You can distribute the sources in addition, but it all depends on the target (ES vs commonjs etc).
-
-### npm
-
-This is a typical setup of `package.json` that distributes only the runtime files and metadata.
-
-```json
-{
-  "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "test": "jest",
-    "eslint": "eslint *.js",
-    "stylelint": "stylelint index.scss src/**/*.scss",
-    "prepublishOnly": "npm run test && npm run eslint && npm run stylelint && rm ./dist/* && NODE_ENV=production npm run build"
-  },
-
-  "files": [
-    "dist/",
-    "server.js",
-    "metadata.json"
-  ],
-
-  // These are not required for packages
-  "main": "dist/main.js",
-  "style": "dist/main.css"
-}
-```
-
-This ensures that all your tests are valid before you publish your final pack.
-
-You can run `tar tvf $(npm pack)` to confirm what files are published before actually running `npm publish`.
-
-### git
-
-You can also distribute via git, where everything in the npm section above still applies.
-
-A disadvantage using git for deployment is that you have to create a specific branch to avoid users downloading unwanted files and sources.
-

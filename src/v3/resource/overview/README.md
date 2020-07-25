@@ -72,7 +72,7 @@ See the [official resources](../official/README.md) for a list of available modu
 
 ## Packages
 
-Packages also come in several types. 
+Packages also come in several types.
 
 * [Application](../../tutorial/application/README.md)
 * [Iframe Application](../../tutorial/iframe/README.md) (same as above, but different template)
@@ -94,3 +94,17 @@ dist/                    Build output
 
 See the [official resources](../official/README.md) for a list of available packages.
 
+# Webpack
+
+Webpack is used to build and bundle the distribution, modules and packages.
+
+These are some of the plugins and loaders used throughout codebases:
+
+* [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
+* [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin)
+* [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
+* [optimize-css-assets-webpack-plugin](https://github.com/NMFR/optimize-css-assets-webpack-plugin)
+* [babel-loader](https://github.com/babel/babel-loader)
+* [file-loader](https://github.com/webpack-contrib/file-loader)
+* [sass-loader](https://github.com/webpack-contrib/sass-loader)
+* [css-loader](https://github.com/webpack-contrib/css-loader)

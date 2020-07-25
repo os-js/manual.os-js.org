@@ -26,12 +26,12 @@
   * [Caveats](config/README.md#caveats)
 * Development
   * [Introduction](development/README.md#introduction)
+  * [Notices](development/README.md#notices)
+  * [Naming conventions](development/README.md#naming-conventions)
   * [Building](development/README.md#building)
-  * [Naming](development/README.md#naming)
-  * [Modules](development/README.md#modules)
-  * [Packages](development/README.md#packages)
-  * [Contributing](development/README.md#contributing)
-  * [Publishing](development/README.md#publishing)
+  * [Testing](development/README.md#testing)
+  * [Developing Modules](development/README.md#developing-modules)
+  * [Developing Packages](development/README.md#developing-packages)
 
 ### Tutorials
 
@@ -134,6 +134,8 @@
   * [Settings](guide/settings/README.md)
   * [Filesystem](guide/filesystem/README.md)
 * Misc
+  * [Override modules](guide/modules/README.md)
+  * [Publishing](guide/publish/README.md)
   * [Translation](guide/translate/README.md)
   * [Visuals](guide/visuals/README.md)
   * [Customizing Login](guide/login/README.md)
