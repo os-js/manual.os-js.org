@@ -21,12 +21,13 @@ This article contains instructions to develop
 **Before beginning read the [overview article](../resource/overview/README.md).** You also need to familiarize yourself with the following technologies:
 
 * [ES6](https://github.com/lukehoban/es6features)
-* [Sass CSS](https://sass-lang.com/)
+* [Sass](https://sass-lang.com/)
 * [Webpack](https://webpack.js.org/)
 * [Babel](https://babeljs.io/)
 * [Nodejs](https://nodejs.org/en/)
 * [npm](https://docs.npmjs.com/)
-* [git](https://git-scm.com/)
+* [git](https://git-scm.com/) (optional)
+* [docker](https://www.docker.com/) (optional)
 
 ## Notices
 
@@ -41,6 +42,8 @@ If you want to publish a module or package, look at the [publish guide](../guide
 ## Naming conventions
 
 The following list contains the naming convention for modules and packages (in `git` and `npm`):
+
+> [warning] Names are unique
 
 * `osjs-<project>-application` - Application package
 * `osjs-<project>-provider` -  Service Provider module
@@ -92,11 +95,15 @@ To make your own module(s), you can use the CLI Wizard:
 
 By default, the packages provided by the OS.js repository are installed via `npm` (`node_modules/`), but the directory `src/packages` can also be used. To set up custom package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
 
-> Packages installed in `node_modules/` always have the lowest priority, and discovery paths are prioritized by their order. This way you can replace officially installed packages without removing them from `package.json`.
+> Packages installed in `node_modules/` always have the lowest priority, and discovery paths are prioritized by their order. This way you can replace officially installed packages without managing them via `npm`.
 
-Run `npm run make:application` to create a new [application package](../tutorial/application/README.md) package from a wizard using the standard template:
+Run `npm run make:application` to create a new [application package](../tutorial/application/README.md) package from a wizard using the standard template. Or an [Iframe application](../tutorial/iframe/README.md) with `npm run make:iframe-application`.
 
 > [info] Note that packages are built separately from your distribution/installation by default. Make sure to run the build commands in the correct directory.
+
+<!-- -->
+
+> [info] Each time you modify the metadata of a package you need to run `npm run package:discover` to update the global package manifest.
 
 ```bash
 # Create a new application from template
@@ -105,12 +112,6 @@ npm run make:application
 # Discover all packages to make it visible in the client
 npm run package:discover
 ```
-
-*Notes*:
-
-1. Each time you add/remove (or modify the metadata) a package you need to run `npm run package:discover` to update the global package manifest.
-2. Package name **must be unique**.
-3. *Theme templates currently not provided, use the theme repositories a starting point.* Note that you have to manually install the dependencies and build the package afterwards.
 
 ### Next steps
 

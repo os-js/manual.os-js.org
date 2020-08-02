@@ -58,7 +58,7 @@ The `metadata.json` file describes your theme:
 
 ### npm
 
-Please note that your `package.json` file that your application is published with contains this section for the package discovery to work:
+Please note that your `package.json` file that your theme is published with contains this section for the package discovery to work:
 
 ```json
 {
