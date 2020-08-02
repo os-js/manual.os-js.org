@@ -37,8 +37,6 @@ If you're using docker-compose for your environment, you have to execute CLI com
 docker-compose exec osjs npm run watch
 ```
 
-If you want to publish a module or package, look at the [publish guide](../guide/publish/README.md).
-
 ## Naming conventions
 
 The following list contains the naming convention for modules and packages (in `git` and `npm`):
@@ -57,6 +55,8 @@ The following list contains the naming convention for modules and packages (in `
 * `osjs-<project>` - Core modules
 
 Official projects are scoped with `@osjs/<project>-<suffix>`.
+
+If you want to publish a module or package, look at the [publish guide](../guide/publish/README.md).
 
 ## Building
 
