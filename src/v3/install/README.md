@@ -7,8 +7,6 @@ full_title: Installation
 
 Installation is done in a few simple steps and only takes a couple of minutes.
 
-> **[warning] Do not run OS.js as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
-
 ## Requirements
 
 The only dependency is `node 10` or later and `git` is recommended.
@@ -45,6 +43,10 @@ cd OS.js
 To install locally you have to run a couple of commands to set up your distribution:
 
 > [info] It is recommended that you run `npm update` after `npm install` to ensure that you're running the latest version of all dependencies.
+
+<!-- -->
+
+> **[warning] Do not run OS.js as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
 
 ```bash
 # Install dependencies
