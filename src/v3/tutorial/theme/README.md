@@ -29,7 +29,7 @@ Use the [official standard theme](https://github.com/os-js/osjs-standard-theme),
 
 > Please note that if you're making a copy of the standard theme, all the scripts and dependencies must remain intact from the original `package.json` file.
 
-> You can use the standard theme(s) as your base and customize it to your linking, just like `@osjs/standard-dark-theme`
+> See `@osjs/standard-dark-theme` for an example of how to extend the standard theme.
 
 ## Metadata
 
