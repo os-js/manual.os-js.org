@@ -52,7 +52,13 @@ The `metadata.json` file describes your theme:
   // A map of localized descriptions
   "description": {
     "en_EN": "My Theme"
-  }
+  },
+
+  // Load these files when launching (usually generated with Webpack)
+  "files": [
+    "main.js",
+    "main.css"
+  ]
 }
 ```
 
