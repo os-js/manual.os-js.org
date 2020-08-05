@@ -17,6 +17,8 @@ You can check out sources of a module inside your distribution/installation and 
 
 First do a checkout of the module sources:
 
+> Note that you don't have to use git in this case. You can also download and extract an archived version.
+
 ```bash
 # In your OS.js installation
 cd src/
@@ -67,6 +69,8 @@ Mostly useful if you have a large development environment (multiple distros and 
 > **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
 Assuming you've already installed OS.js, this is an example of how you set up linking:
+
+> Note that you don't have to use git in this case. You can also download and extract an archived version.
 
 ```bash
 # Somewhere outside your installation
