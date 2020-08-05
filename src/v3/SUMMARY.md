@@ -14,17 +14,17 @@
 
 ### Getting Started
 
-* Installation
+* [Installation](install/README.md)
   * [Requirements](install/README.md#requirements)
   * [Demo](install/README.md#demo)
   * [Setup](install/README.md#setup)
   * [Upgrade](install/README.md#upgrade)
   * [Remove Packages](install/README.md#remove-packages)
-* Configure
+* [Configure](config/README.md)
   * [Client](config/README.md#client)
   * [Server](config/README.md#server)
   * [Caveats](config/README.md#caveats)
-* Development
+* [Development](development/README.md)
   * [Introduction](development/README.md#introduction)
   * [Notices](development/README.md#notices)
   * [Naming conventions](development/README.md#naming-conventions)
