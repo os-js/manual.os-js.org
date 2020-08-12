@@ -17,9 +17,9 @@ Installation is done in a few simple steps and only takes a couple of minutes.
 
 ## Requirements
 
-The only dependency is `node 10` or later and `git` is recommended.
+The only dependency is **Node 10** or later and *git* as an optional recommendation.
 
-A node Docker setup is also provided so you don't need to have node installed locally (or want to have an isolated environment).
+**Docker** supported so you don't have to install node onto your system.
 
 Runs in any modern web browser.
 
@@ -39,7 +39,7 @@ Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan 
 
 > **[info] The official repository is intended for you to use as a boilerplate to create your own distributions of OS.js. You can safely remove any files beloning to git afterwards if you used git, as well as modify the structure and included files as you see fit.**
 
-Clone the official boilerplate repository (or download a compressed version of latest release):
+Clone the official boilerplate repository (or download a [compressed version](https://github.com/os-js/OS.js/releases) of latest release):
 
 ```bash
 git clone -b master --single-branch https://github.com/os-js/OS.js.git

@@ -27,6 +27,8 @@ Server runs on [Express](https://expressjs.com/) and [Node.js](https://nodejs.or
 
 Features are implemented via [service providers](../../guide/provider/README.md) so you can extend, replace or remove most features on your own.
 
+[Docker](https://www.docker.com/) is supported out of the box.
+
 ![Overview Diagram](overview.png)
 
 > *Simplified diagram of components and their relation.*
