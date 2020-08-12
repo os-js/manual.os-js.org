@@ -7,6 +7,14 @@ full_title: Installation
 
 Installation is done in a few simple steps and only takes a couple of minutes.
 
+1. [Requirements](#requirements)
+2. [Demo](#demo)
+3. [Setup](#setup)
+    1. [Manual Setup](#manual-setup)
+    2. [Docker Setup](#docker-setup)
+4. [Upgrade](#upgrade)
+5. [Remove Packages](#remove-packages)
+
 ## Requirements
 
 The only dependency is `node 10` or later and `git` is recommended.
@@ -37,6 +45,8 @@ Clone the official boilerplate repository (or download a compressed version of l
 git clone -b master --single-branch https://github.com/os-js/OS.js.git
 cd OS.js
 ```
+
+You can now proceed with using one of two methods: [Manual](#manual-setup) or [Docker](#docker-setup).
 
 ### Manual Setup
 
@@ -78,6 +88,8 @@ docker-compose up
 
 Now open [http://localhost:8000](http://localhost:8000) in your browser to launch OS.js.
 
+> [info] Note that when running under this environment; all internal CLI commands have to be executed within the docker context, ex: `docker-compose exec osjs npm <command>`.
+
 ## Upgrade
 
 You can list outdated packages with `npm outdated`.
@@ -86,7 +98,7 @@ To upgrade, use `npm update`.
 
 It is also recommended that you run `npm run package:discover` afterwards.
 
-**Make sure to read the [migration guide](../guide/deploy/README.md) before you update for any special notices.**
+**Make sure to read the [migration guide](../guide/migrate/README.md) before you update for any special notices.**
 
 > Releases uses [semantic versioning](https://semver.org/) so if an update has breaking changes the `npm update` command will not upgrade to the latest release. You'll have to do it manually by using `npm install <package>@^<version>`.
 
