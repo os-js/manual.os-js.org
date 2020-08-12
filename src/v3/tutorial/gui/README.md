@@ -24,9 +24,14 @@ This tutorial goes over how to create reactive UIs using components.
 
 ## Usage
 
-OS.js uses [Hyperapp v1](https://github.com/jorgebucaran/hyperapp/tree/V1) for its GUI components by default.
+OS.js by default uses **[Hyperapp v1](https://github.com/jorgebucaran/hyperapp/tree/V1)** for creating reactive state based user interfaces.
 
 *This does not mean that you are restricted to usage of Hyperapp. You can use [React](../../guide/framework/README.md#react), [Vue](../../guide/framework/README.md#vue) or anything you like.*
+
+Hyperapp is based on a Virtual DOM implementation making it similar to other reactive frameworks except that state is centralized (stateless components) and uses a more functional approach.
+Look up the official documentation (linked above) for a deeper dive of the inner workings.
+
+If you're familiar with frameworks similar to React, you can use the [JSX syntax](#jsx) for a more familiar experience.
 
 ## Basic Example
 
@@ -40,23 +45,23 @@ const createView = (state, actions) => h('div', {}, [
   h('button', {type: 'button', onclick: () => actions.increment()}, 'Increment counter')
 ]);
 
-const createApp = (proc, win, $content) => {
+const createApp = ($content) => {
   app({
     counter: 0
   }, {
     increment: () => state => ({counter: state.counter + 1})
   }, createView, $content);
 };
-
-// ...
-win.render($content => createApp(proc, win, $content));
-
-// Or if you've chained your calls when creating the window:
-
-proc.createWindow(/* ... */)
-  .render(($content, win) => createApp(proc, win, $content));
-// ...
 ```
+
+If you want to use this in your [Application](../application/README.md#windows), you can simply change your rendering call:
+
+```javascript
+const win = proc.createWindow(/* ... */)
+win.render($content => createApp($content));
+```
+
+You can of course insert this into any arbitrary DOM element.
 
 ### Using Components
 
