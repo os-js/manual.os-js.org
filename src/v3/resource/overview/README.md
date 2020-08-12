@@ -31,6 +31,17 @@ Features are implemented via [service providers](../../guide/provider/README.md)
 
 > *Simplified diagram of components and their relation.*
 
+These are the standard used core libraries:
+
+* https://github.com/os-js/osjs-common - Base (used in both client & server)
+* https://github.com/os-js/osjs-client - Client
+* https://github.com/os-js/osjs-server - Server
+* https://github.com/os-js/osjs-cli - CLI utilities
+* https://github.com/os-js/osjs-gui - GUI components
+* https://github.com/os-js/osjs-dialogs - GUI Dialogs
+* https://github.com/os-js/osjs-panels - GUI Panels
+* https://github.com/os-js/osjs-event-emitter - EventEmitter implementation
+
 ## Distribution (installation)
 
 The [OS.js repository](https://github.com/os-js/OS.js) contains a boilerplate you can use to build and bundle your own distributions and installations.
@@ -57,17 +68,6 @@ src/                     Sources
     cli/
         index.js         CLI bootstrap script
 ```
-
-These are the standard used core libraries:
-
-* https://github.com/os-js/osjs-common - Base (used in both client & server)
-* https://github.com/os-js/osjs-client - Client
-* https://github.com/os-js/osjs-server - Server
-* https://github.com/os-js/osjs-cli - CLI utilities
-* https://github.com/os-js/osjs-gui - GUI components
-* https://github.com/os-js/osjs-dialogs - GUI Dialogs
-* https://github.com/os-js/osjs-panels - GUI Panels
-* https://github.com/os-js/osjs-event-emitter - EventEmitter implementation
 
 ## Modules
 
