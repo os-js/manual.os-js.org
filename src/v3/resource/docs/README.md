@@ -9,7 +9,7 @@ You can find the majority of documentation in this manual.
 
 ## API Documentation
 
-Auto-generated documentation for the source code is located in the following locations:
+You can find auto-generated documentation for the common core modules here:
 
 * [osjs-common](https://manual.os-js.org/v3/api/osjs-common/)
 * [osjs-client](https://manual.os-js.org/v3/api/osjs-client/)
