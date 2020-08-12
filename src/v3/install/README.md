@@ -52,11 +52,7 @@ You can now proceed with using one of two methods: [Manual](#manual-setup) or [D
 
 To install locally you have to run a couple of commands to set up your distribution:
 
-> [info] It is recommended that you run `npm update` after `npm install` to ensure that you're running the latest version of all dependencies.
-
-<!-- -->
-
-> **[warning] Do not run OS.js as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
+> **[warning] Do not run any of thse commands as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
 
 ```bash
 # Install dependencies
@@ -82,13 +78,13 @@ Now open [http://localhost:8000](http://localhost:8000) in your browser to launc
 
 A Docker setup is also provided (mainly aimed at development). It performs all the necessary steps for you:
 
+> [info] Note that when running under this environment; all internal CLI commands have to be executed within the docker context, ex: `docker-compose exec osjs npm <command>`.
+
 ```bash
 docker-compose up
 ```
 
 Now open [http://localhost:8000](http://localhost:8000) in your browser to launch OS.js.
-
-> [info] Note that when running under this environment; all internal CLI commands have to be executed within the docker context, ex: `docker-compose exec osjs npm <command>`.
 
 ## Upgrade
 
