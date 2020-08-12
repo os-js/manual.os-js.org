@@ -26,7 +26,7 @@ This tutorial goes over how to create reactive UIs using components.
 
 OS.js uses [Hyperapp v1](https://github.com/jorgebucaran/hyperapp/tree/V1) for its GUI components by default.
 
-*This does not mean that you are restricted to usage of Hyperapp. You can use React, Vue or anything you like.*
+*This does not mean that you are restricted to usage of Hyperapp. You can use [React](../../guide/framework/README.md#react), [Vue](../../guide/framework/README.md#vue) or anything you like.*
 
 ## Basic Example
 
