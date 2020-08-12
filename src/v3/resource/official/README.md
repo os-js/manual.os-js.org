@@ -1,9 +1,9 @@
 ---
-description: OS.js v3 Official Packages
-full_title: Official Packages
+description: OS.js v3 Official Extensions
+full_title: Official Extensions
 ---
 
-# Official packages
+# Official Extensions
 
 ## Modules
 

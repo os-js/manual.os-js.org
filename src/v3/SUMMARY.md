@@ -9,8 +9,8 @@
 
 * [Architecture and overview](resource/overview/README.md)
 * [Documentation and examples](resource/docs/README.md)
-* [Official packages](resource/official/README.md)
-* [Contributed packages](resource/contrib/README.md)
+* [Official extensions](resource/official/README.md)
+* [Contributed extensions](resource/contrib/README.md)
 
 ### Getting Started
 

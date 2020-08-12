@@ -1,9 +1,9 @@
 ---
-description: OS.js v3 Contributed Packages
-full_title: Contributed Packages
+description: OS.js v3 Contributed Extensions
+full_title: Contributed Extensions
 ---
 
-# Contributed Packages
+# Contributed Extensions
 
 If you want to submit your contribution, contact me by email, join the [Gitter](https://gitter.im/os-js/OS.js) chatroom or send a pull-request.
 
