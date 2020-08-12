@@ -35,11 +35,9 @@ Or check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please 
 
 ## Setup
 
-Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing in a production environment.
+Clone the official boilerplate repository (or download a [compressed version](https://github.com/os-js/OS.js/releases) of latest release):
 
 > **[info] The official repository is intended for you to use as a boilerplate to create your own distributions of OS.js. You can safely remove any files beloning to git afterwards if you used git, as well as modify the structure and included files as you see fit.**
-
-Clone the official boilerplate repository (or download a [compressed version](https://github.com/os-js/OS.js/releases) of latest release):
 
 ```bash
 git clone -b master --single-branch https://github.com/os-js/OS.js.git
@@ -47,6 +45,8 @@ cd OS.js
 ```
 
 You can now proceed with using one of two methods: [Manual](#manual-setup) or [Docker](#docker-setup).
+
+Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan on installing in a production environment.
 
 ### Manual Setup
 
