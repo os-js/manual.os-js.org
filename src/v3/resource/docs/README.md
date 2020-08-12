@@ -19,6 +19,14 @@ Auto-generated documentation for the source code is located in the following loc
 * [osjs-server](https://manual.os-js.org/v3/api/osjs-server/)
 * [osjs-event-emitter](https://manual.os-js.org/v3/api/osjs-event-emitter/)
 
+## Example Packages
+
+* https://github.com/os-js/osjs-example-provider - A basic Service Provider example
+* https://github.com/os-js/osjs-example-application - A basic Application package example
+* https://github.com/os-js/osjs-example-iframe-application - A basic iframe Application package example
+* https://github.com/os-js/osjs-example-react-application - A basic React application
+* https://github.com/os-js/osjs-example-vue-application - A basic Vue application
+
 ## Online Examples
 
 For prototyping solutions you can use the following templates for online development environments:

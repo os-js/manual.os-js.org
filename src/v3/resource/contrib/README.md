@@ -11,8 +11,8 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 
 ## Implementations
 
-* https://github.com/andersevenrud/osjs-debian - OS.js in a debian package
-* https://bluelightos.github.io/ - OS.js running as a Linux distribution
+* https://github.com/andersevenrud/osjs-debian - OS.js on debian
+* https://github.com/emberliteOS - Bespoke implementation
 
 ## Applications
 
@@ -31,3 +31,6 @@ If you want to submit your contribution, contact me by email, join the [Gitter](
 * https://github.com/SpaceboyRoss01/osjs-devices-adapter - Adds all hardware devices to a root mountpoint
 * https://github.com/BurnaSmartLab/osjs-monster-adapter - OpenStack Swift object storage VFS adapter 
 
+## CLI
+
+* https://github.com/andersevenrud/osjs-build-parallel-cli - Build multiple solutions at once (parallel support)

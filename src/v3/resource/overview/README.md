@@ -31,7 +31,7 @@ Features are implemented via [service providers](../../guide/provider/README.md)
 
 > *Simplified diagram of components and their relation.*
 
-## Distribution
+## Distribution (installation)
 
 The [OS.js repository](https://github.com/os-js/OS.js) contains a boilerplate you can use to build and bundle your own distributions and installations.
 
@@ -58,6 +58,17 @@ src/                     Sources
         index.js         CLI bootstrap script
 ```
 
+These are the standard used core libraries:
+
+* https://github.com/os-js/osjs-common - Base (used in both client & server)
+* https://github.com/os-js/osjs-client - Client
+* https://github.com/os-js/osjs-server - Server
+* https://github.com/os-js/osjs-cli - CLI utilities
+* https://github.com/os-js/osjs-gui - GUI components
+* https://github.com/os-js/osjs-dialogs - GUI Dialogs
+* https://github.com/os-js/osjs-panels - GUI Panels
+* https://github.com/os-js/osjs-event-emitter - EventEmitter implementation
+
 ## Modules
 
 Modules come in several forms and provides ways to extend base functionality.
@@ -68,7 +79,7 @@ Modules come in several forms and provides ways to extend base functionality.
 * [Settings adapter](../../guide/settings/README.md)
 * [Filesystem adapter](../../guide/filesystem/README.md)
 
-See the [official resources](../official/README.md) for a list of available modules.
+See the [official extensions](../official/README.md) for a list of available modules.
 
 ## Packages
 
@@ -92,7 +103,7 @@ node_modules/            Dependencies (npm package)
 dist/                    Build output
 ```
 
-See the [official resources](../official/README.md) for a list of available packages.
+See the [official extensions](../official/README.md) for a list of available packages.
 
 # Webpack
 
