@@ -98,7 +98,7 @@ core.make('osjs/dialogs')
   .render(callbackRender);
 ```
 
-## GUI
+## UI Customization
 
 By default OS.js uses Hyperapp v1 for the dialog GUI, but you can use whatever you want in the render callback.
 

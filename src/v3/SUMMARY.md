@@ -60,7 +60,7 @@
   * [Custom Dialog](tutorial/dialog/README.md#custom-dialog)
   * [Registration](tutorial/dialog/README.md#registration)
   * [Programmatic](tutorial/dialog/README.md#programmatic)
-  * [GUI](tutorial/dialog/README.md#gui)
+  * [UI customization](tutorial/dialog/README.md#ui-customization)
 * [GUI](tutorial/gui/README.md)
   * [Usage](tutorial/gui/README.md#usage)
   * [Basic Example](tutorial/gui/README.md#basic-example)
