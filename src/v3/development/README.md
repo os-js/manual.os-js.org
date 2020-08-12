@@ -86,10 +86,10 @@ To override these modules follow the [modules guide](../guide/modules/README.md)
 
 To make your own module(s), you can use the CLI Wizard:
 
-* `npm run make:provider` - See [Service Provider Tutorial](../tutorial/provider/README.md)
-* `npm run make:auth` - See [Authentication Tutorial](../tutorial/auth/README.md)
-* `npm run make:settings` - See [Settings Tutorial](../tutorial/settings/README.md)
-* `npm run make:vfs` - See [VFS Tutorial](../tutorial/vfs/README.md)
+* `npm run make:provider` - Service Provider - See [Service Provider Tutorial](../tutorial/provider/README.md)
+* `npm run make:auth` - Authentication Adapter - See [Authentication Tutorial](../tutorial/auth/README.md)
+* `npm run make:settings` - Settings Adapter - See [Settings Tutorial](../tutorial/settings/README.md)
+* `npm run make:vfs` - VFS Adapter - See [VFS Tutorial](../tutorial/vfs/README.md)
 
 ## Developing Packages
 
