@@ -91,6 +91,8 @@ To make your own module(s), you can use the CLI Wizard:
 * `npm run make:settings` - Settings Adapter - See [Settings Tutorial](../tutorial/settings/README.md)
 * `npm run make:vfs` - VFS Adapter - See [VFS Tutorial](../tutorial/vfs/README.md)
 
+For custom CLI tasks see [CLI Guide](../guide/cli/#custom-tasks)
+
 ## Developing Packages
 
 Packages are usually installed via `npm` (within `node_modules`) but can also be placed into `src/packages`. To set up custom package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
