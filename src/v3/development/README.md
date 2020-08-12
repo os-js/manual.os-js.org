@@ -31,6 +31,8 @@ This article contains instructions to develop
 
 ## Notices
 
+By default extensions (packages, modules, etc) are built separately from your distribution/installation. Make sure to run commands inside the **correct directory!**
+
 If you're using docker-compose for your environment, you have to execute CLI commands within the Docker image context. Example:
 
 ```shell
@@ -71,8 +73,6 @@ To produce a production build, prefix your command with ex: `NODE_ENV=production
 
 These are the default provided commands for performing test actions:
 
-> [info] Note that packages are built separately from your distribution/installation by default. Make sure to run the build commands in the correct directory.
-
 * `npm run test` - Run all tests and linters
 * `npm run eslint` - ESLint pass
 * `npm run stylelint` - Stylelint pass
@@ -93,17 +93,11 @@ To make your own module(s), you can use the CLI Wizard:
 
 ## Developing Packages
 
-By default, the packages provided by the OS.js repository are installed via `npm` (`node_modules/`), but the directory `src/packages` can also be used. To set up custom package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
+Packages are usually installed via `npm` (within `node_modules`) but can also be placed into `src/packages`. To set up custom package discovery paths, see [CLI Guide](../guide/cli/README.md#custom-package-discovery-paths).
 
-> Packages installed in `node_modules/` always have the lowest priority, and discovery paths are prioritized by their order. This way you can replace officially installed packages without managing them via `npm`.
+> [info] Packages installed in `node_modules/` always have the lowest priority, and discovery paths are prioritized by their order (ascending). This means you can replace `npm` installed packages without removing them from `package.json` itself.
 
 Run `npm run make:application` to create a new [application package](../tutorial/application/README.md) package from a wizard using the standard template. Or an [Iframe application](../tutorial/iframe/README.md) with `npm run make:iframe-application`.
-
-> [info] Note that packages are built separately from your distribution/installation by default. Make sure to run the build commands in the correct directory.
-
-<!-- -->
-
-> [info] Each time you modify the metadata of a package you need to run `npm run package:discover` to update the global package manifest.
 
 ```bash
 # Create a new application from template
@@ -112,6 +106,8 @@ npm run make:application
 # Discover all packages to make it visible in the client
 npm run package:discover
 ```
+
+> [info] Each time you modify the metadata of a package you need to run `npm run package:discover` to update the global package manifest.
 
 ### Next steps
 
