@@ -19,7 +19,7 @@ Installation is done in a few simple steps and only takes a couple of minutes.
 
 The only dependency is **[Node 10](https://nodejs.org/en/)** or later and *[git](https://git-scm.com/)* as an optional recommendation.
 
-**[Docker](https://www.docker.com/)** supported so you don't have to install node onto your system.
+**[Docker](https://www.docker.com/)** is supported so you don't have to install node onto your system.
 
 Runs in any modern web browser.
 
