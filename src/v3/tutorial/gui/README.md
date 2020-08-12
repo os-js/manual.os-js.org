@@ -7,6 +7,21 @@ full_title: GUI Tutorial
 
 This tutorial goes over how to create reactive UIs using components.
 
+1. [Usage](#usage)
+2. [Basic Example](#basic-example)
+    * [Using Components](#using-components)
+3. [JSX](#jsx)
+4. [Contextmenu](#contextmenu)
+5. [Components](#components)
+    * [Containers](#containers)
+    * [Fields](#fields)
+6. [Component Examples](#component-examples)
+    * [Basic Layout](#basic-layout)
+    * [Basic Layout, continued](#basic-layout-continued)
+    * [Using Inputs](#using-inputs)
+    * [Using ListView](#using-listview)
+
+
 ## Usage
 
 OS.js uses [Hyperapp v1](https://github.com/jorgebucaran/hyperapp/tree/V1) for its GUI components by default.
@@ -62,7 +77,7 @@ const createView = (state, actions) => h(Box, {}, [
 
 ## JSX
 
-You can also use JSX syntax instead of the programmatic approach.
+You can also use JSX syntax (like React) instead of the pragma (`h()`) approach.
 
 First: `npm install --save-dev @babel/plugin-transform-react-jsx`
 
@@ -82,7 +97,7 @@ Then in your `package.json`s `babel` section:
 }
 ```
 
-and then in your source:
+and then in your source you can now do the following:
 
 ```javascript
 const createView = (state, actions) => (

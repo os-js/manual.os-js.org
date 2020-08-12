@@ -67,6 +67,7 @@
   * [JSX](tutorial/gui/README.md#jsx)
   * [Contextmenu](tutorial/gui/README.md#contextmenu)
   * [Components](tutorial/gui/README.md#components)
+  * [Component Examples](tutorial/gui/README.md#component-examples)
 * [Service Provider](tutorial/provider/README.md)
   * [Usage](tutorial/provider/README.md#usage)
   * [Custom Service Provider](tutorial/provider/README.md#custom-service-provider)
