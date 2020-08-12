@@ -94,9 +94,9 @@ To upgrade, use `npm update`.
 
 It is also recommended that you run `npm run package:discover` afterwards.
 
-**Make sure to read the [migration guide](../guide/migrate/README.md) before you update for any special notices.**
-
-> Releases uses [semantic versioning](https://semver.org/) so if an update has breaking changes the `npm update` command will not upgrade to the latest release. You'll have to do it manually by using `npm install <package>@^<version>`.
+> Releases uses [semantic versioning](https://semver.org/) so if an update has breaking changes the `npm update` command will not upgrade to the latest release.
+> You'll have to do it manually by using `npm install <package>@^<version>`.
+> **Make sure to read the [migration guide](../guide/migrate/README.md) before you update for any special notices.**
 
 ## Remove Packages
 
