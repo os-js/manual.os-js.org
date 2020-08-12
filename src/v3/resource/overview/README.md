@@ -44,6 +44,8 @@ These are the standard used core libraries:
 * https://github.com/os-js/osjs-panels - GUI Panels
 * https://github.com/os-js/osjs-event-emitter - EventEmitter implementation
 
+All source-code follows the [semantic versioning spesification](https://semver.org/).
+
 ## Distribution (installation)
 
 The [OS.js repository](https://github.com/os-js/OS.js) contains a boilerplate you can use to build and bundle your own distributions and installations.
