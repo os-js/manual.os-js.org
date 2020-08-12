@@ -54,7 +54,7 @@ The following list contains the naming convention for modules and packages (in `
 * `osjs-<project>-cli` - CLI Plugin
 * `osjs-<project>` - Core modules
 
-Official projects are scoped with `@osjs/<project>-<suffix>`.
+Official projects are scoped with `@osjs/<project>-<suffix>` when published onto npmjs.
 
 If you want to publish a module or package, look at the [publish guide](../guide/publish/README.md).
 
