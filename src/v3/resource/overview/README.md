@@ -11,7 +11,7 @@ This article gives a brief overview of all of the different components that make
 
 ## Codebase
 
-All of the source is written in [ES6+](http://es6-features.org/). Dependencies are managed with `npm`.
+All of the source is written in [ES6+](http://es6-features.org/). Dependencies are managed with [npm](https://docs.npmjs.com/).
 
 Client-side scripts are written with [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) and [`export`](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export), transpiled with [Babel](https://babeljs.io/) and bundled with [Webpack](https://webpack.js.org/).
 
