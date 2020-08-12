@@ -5,7 +5,7 @@ full_title: Contributed Extensions
 
 # Contributed Extensions
 
-If you want to submit your contribution, contact me by email, join the [Gitter](https://gitter.im/os-js/OS.js) chatroom or send a pull-request.
+If you want to submit your contribution, contact me by [email](mailto:contrib@os-js.org), join the [Gitter chatroom](https://gitter.im/os-js/OS.js) or create a [pull-request](https://github.com/os-js/manual.os-js.org/pulls).
 
 > [info] These packages are provided by community members, so if you have any issues with these, make sure to create an issue in the appropriate Github project(s).
 
