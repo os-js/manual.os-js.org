@@ -195,9 +195,13 @@ console.log(response);
 
 In your server script, create a matching endpoint with Express:
 
+> You can access POST body data via `req.body` and GET parameters via `req.query`.
+
 ```javascript
+const {routeAuthenticated} = core.make('osjs/express');
 const endpoint = proc.resource('/hello-world');
-core.app.post(endpoint, (req, res) => {
+
+routeAuthenticated('POST', endpoint, (req, res) => {
   res.json({result: 'Hello World'});
 });
 ```
