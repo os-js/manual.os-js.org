@@ -48,13 +48,15 @@ import 'regenerator-runtime/runtime';
 
 ## Reverse Proxy
 
-To make OS.js available via port `80/http` (or for SSL `443/https`) you have to configure a webserver as a reverse-proxy.
+To make OS.js available via port `80/http` (or for SSL `443/https`) it is adviced to configure a webserver as a reverse-proxy
+instead of exposing the OS.js node server directly to the internet (or intranet).
 
-> Notes:
-> 1. It is *not* recommended to reconfigure the OS.js server to run on either of these ports as this will impede performance and stability.
-> 2. This guide assumes you have `osjs.test` set up as your hostname. Make sure this resolves in your DNS and/or hosts file.
-> 3. You can create your own [self-signed certificates](https://github.com/FiloSottile/mkcert) if you want to use SSL/HTTPS.
-> 4. The node server cannot be reconfigured to run on HTTPS or HTTP2. You can however configure your reverse-proxy to handle this.
+Before proceeding note the following:
+
+1. It is *not* recommended to reconfigure the OS.js server to run on either of these ports as this will impede performance and stability.
+2. This guide assumes you have `osjs.test` set up as your hostname. Make sure this resolves in your DNS and/or hosts file.
+3. You can create your own [self-signed certificates](https://github.com/FiloSottile/mkcert) if you want to use SSL/HTTPS.
+4. In production you should terminate SSL (HTTPS) on your reverse-proxy (ex. nginx), not the node server!
 
 ### nginx
 
