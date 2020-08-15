@@ -6,34 +6,24 @@ description: An introduction into development and related utilities
 
 This article will walk you through the development process of OS.js modules and packages.
 
-This article contains instructions to develop
-
 1. [Introduction](#introduction)
-2. [Notices](#notices)
-3. [Naming conventions](#naming-conventions)
-4. [Building](#building)
-5. [Testing](#testing)
-6. [Developing Modules](#developing-modules)
-7. [Developing Packages](#developing-packages)
+2. [Naming conventions](#naming-conventions)
+3. [Building](#building)
+4. [Testing](#testing)
+5. [Developing Modules](#developing-modules)
+6. [Developing Packages](#developing-packages)
 
 ## Introduction
 
-**Before beginning read the [overview article](../resource/overview/README.md).** You also need to familiarize yourself with the following technologies:
+Before beginning read the [overview article](../resource/overview/README.md) to familiarize yourself with the
+architecture and involved technologies.
 
-* [ES6](https://github.com/lukehoban/es6features)
-* [Sass](https://sass-lang.com/)
-* [Webpack](https://webpack.js.org/)
-* [Babel](https://babeljs.io/)
-* [Nodejs](https://nodejs.org/en/)
-* [npm](https://docs.npmjs.com/)
-* [git](https://git-scm.com/) (optional)
-* [docker](https://www.docker.com/) (optional)
+With a standard [intallation](../install/README.md) you get a fully working development environment out of the box.
 
-## Notices
+> [info] Note that by default package extensions (applications, themes, etc.) are built separately from your distribution/installation.
+> Make sure to run commands inside the **correct directory**
 
-By default extensions (packages, modules, etc) are built separately from your distribution/installation. Make sure to run commands inside the **correct directory!**
-
-If you're using docker-compose for your environment, you have to execute CLI commands within the Docker image context. Example:
+If you're using Docker (`docker-compose`) for your environment, you have to execute CLI commands within the Docker image context. Example:
 
 ```shell
 docker-compose exec osjs npm run watch

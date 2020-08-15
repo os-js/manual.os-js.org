@@ -13,9 +13,14 @@ This article gives a brief overview of all of the different components that make
 
 All of the source is written in [ES6+](http://es6-features.org/). Dependencies are managed with [npm](https://docs.npmjs.com/).
 
-Client-side scripts are written with [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) and [`export`](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export), transpiled with [Babel](https://babeljs.io/) and bundled with [Webpack](https://webpack.js.org/).
+Client-side scripts are written as [ECMAScript Modules (ESM)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules),
+transpiled with [Babel](https://babeljs.io/) and CSS is written in [Sass](https://sass-lang.com/). Finally bundled with [Webpack](#webpack).
 
-The server-side scripts are written with CommonJS and runs purely on Nodejs.
+The server-side scripts are written as [CommonJS Modules](https://nodejs.org/docs/latest/api/modules.html) and runs purely on [Nodejs](https://nodejs.org/en/).
+
+Dependencies are managed with [npm](https://docs.npmjs.com/).
+
+[Docker](https://www.docker.com/) is supported.
 
 ## Overview
 
@@ -26,8 +31,6 @@ The client can run independently from the server, but the server provides a lot 
 Server runs on [Express](https://expressjs.com/) and [Nodejs](https://nodejs.org/) (version 10 or later)
 
 Features are implemented via [service providers](../../guide/provider/README.md) so you can extend, replace or remove most features on your own.
-
-[Docker](https://www.docker.com/) is supported out of the box.
 
 ![Overview Diagram](overview.png)
 
@@ -111,7 +114,7 @@ See the [official extensions](../official/README.md) for a list of available pac
 
 # Webpack
 
-Webpack is used to build and bundle the distribution, modules and packages.
+[Webpack](https://webpack.js.org/) is used to build and bundle the distribution, modules and packages.
 
 These are some of the plugins and loaders used throughout codebases:
 

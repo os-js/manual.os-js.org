@@ -26,7 +26,6 @@
   * [Caveats](config/README.md#caveats)
 * [Development](development/README.md)
   * [Introduction](development/README.md#introduction)
-  * [Notices](development/README.md#notices)
   * [Naming conventions](development/README.md#naming-conventions)
   * [Building](development/README.md#building)
   * [Testing](development/README.md#testing)
