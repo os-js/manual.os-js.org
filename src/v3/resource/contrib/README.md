@@ -11,7 +11,7 @@ If you want to submit your contribution, contact me by [email](mailto:contrib@os
 
 ## Implementations
 
-* https://github.com/andersevenrud/osjs-debian - OS.js on debian
+* https://github.com/andersevenrud/osjs-debian - OS.js on Debian
 * https://github.com/emberliteOS - Bespoke implementation
 
 ## Applications

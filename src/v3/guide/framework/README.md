@@ -118,7 +118,7 @@ proc.createWindow({})
 
 To load generic libraries etc. (like jQuery) into OS.js you have two alternatives.
 
-> [warning] Please note that using libraries optimized for bundling is recomended (`import` or `require` in your distro or packages), as some libraries older might pollute the global namespaces and/or styles. Also, including libraries that attach to the global namespace might cause issues when loading different versions.
+> [warning] Please note that using libraries optimized for bundling is recommended (`import` or `require` in your distro or packages), as some libraries older might pollute the global namespaces and/or styles. Also, including libraries that attach to the global namespace might cause issues when loading different versions.
 
 ### Global
 

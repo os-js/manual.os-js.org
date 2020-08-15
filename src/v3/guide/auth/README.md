@@ -19,7 +19,7 @@ These are the available client adapters:
 And these are the available server adapters:
 
 * `null` - Accepts any authentication request (default)
-* [pam](https://github.com/os-js/osjs-pam-auth) - Log in via host PAM (unix only)
+* [PAM](https://github.com/os-js/osjs-pam-auth) - Log in via host PAM (UNIX only)
 * [database](https://github.com/os-js/osjs-database-auth) - Log in via a database
 
 ## Removing automatic login

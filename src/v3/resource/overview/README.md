@@ -15,7 +15,7 @@ All of the source is written in [ES6+](http://es6-features.org/). Dependencies a
 
 Client-side scripts are written with [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) and [`export`](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export), transpiled with [Babel](https://babeljs.io/) and bundled with [Webpack](https://webpack.js.org/).
 
-The server-side scripts are written with CommonJS and runs purely on nodejs.
+The server-side scripts are written with CommonJS and runs purely on Nodejs.
 
 ## Overview
 
@@ -23,7 +23,7 @@ OS.js is a modular Web Desktop framework that consists of two parts: a client an
 
 The client can run independently from the server, but the server provides a lot of features like persistent settings, authentication and backend filesystems.
 
-Server runs on [Express](https://expressjs.com/) and [Node.js](https://nodejs.org/) (version 10 or later)
+Server runs on [Express](https://expressjs.com/) and [Nodejs](https://nodejs.org/) (version 10 or later)
 
 Features are implemented via [service providers](../../guide/provider/README.md) so you can extend, replace or remove most features on your own.
 

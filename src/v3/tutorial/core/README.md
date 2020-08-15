@@ -79,8 +79,8 @@ OSjs.url();
 #### Client Events
 
 * `init => ()` - Main init
-* `osjs/core:boot => ()` - Core boot (before providers have inited)
-* `osjs/core:booted => ()` - Core booted (after providers have inited)
+* `osjs/core:boot => ()` - Core boot (before providers have initialized)
+* `osjs/core:booted => ()` - Core booted (after providers have initialized)
 * `osjs/core:start => ()` - Core start (before providers have started)
 * `osjs/core:started => ()` - Core started (after providers have started)
 * `osjs/core:logged-in => ()` - User successfully logged in
@@ -116,7 +116,7 @@ These are the default provided services and their signatures:
 
 * `osjs/application => (data)` - Creates a new [Application](../application/README.md) [instance](https://manual.os-js.org/v3/api/osjs-client/class/src/application.js~Application.html)
 * `osjs/window => (options)` - Creates a new [Window](../window/README.md) [instance](https://manual.os-js.org/v3/api/osjs-client/class/src/window.js~Window.html)
-* `osjs/event-handler => (name)` - Creates a new [EventHandler](../bus/README.md) [instance](https://manual.os-js.org/v3/api/osjs-common/class/src/event-handler.js~EventHandler.html)
+* `osjs/event-handler => (name)` - Creates a new [EventEmitter](../bus/README.md) [instance](https://manual.os-js.org/v3/api/osjs-common/class/src/event-handler.js~EventHandler.html)
 * `osjs/websocket => (...args)` - Creates a new [WebSocket](../application/README.md#websockets) [instance](https://manual.os-js.org/v3/api/osjs-client/class/src/websocket.js~Websocket.html)
 * `osjs/notification => (options?)` - Creates a new [Notification](../notification/README.md) entry
 * `osjs/tray => (options?)` - Creates a new [Tray](../tray/README.md) entry

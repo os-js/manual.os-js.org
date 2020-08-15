@@ -48,7 +48,7 @@ import 'regenerator-runtime/runtime';
 
 ## Reverse Proxy
 
-To make OS.js available via port `80/http` (or for SSL `443/https`) it is adviced to configure a webserver as a reverse-proxy
+To make OS.js available via port `80/http` (or for SSL `443/https`) it is advised to configure a webserver as a reverse-proxy
 instead of exposing the OS.js node server directly to the internet (or intranet).
 
 Before proceeding note the following:
@@ -119,7 +119,7 @@ Create a new virtual host file or replace the default one provided by your OS:
 </VirtualHost>
 ```
 
-Then set your websocket path to `/ws` in `src/client/config.js`:
+Then set your Websocket path to `/ws` in `src/client/config.js`:
 
 > [info] Remember to rebuild your client afterwards with `npm run build`
 

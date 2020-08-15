@@ -212,9 +212,9 @@ You can use WebSockets in a couple of different ways.
 
 ### Core Socket Connection
 
-The easiest way to use websockets is to use the core websocket connection.
+The easiest way to use Websockets is to use the core Websocket connection.
 
-This will not create a new connection, but rather use the main client websocket connection as a proxy, which comes with some limitations, but is great for adding basic interactions.
+This will not create a new connection, but rather use the main client Websocket connection as a proxy, which comes with some limitations, but is great for adding basic interactions.
 
 #### Client
 
@@ -265,7 +265,7 @@ ws.close(); // Closes socket
 
 In your server script, create a matching endpoint with Express:
 
-> You can get the core websocket server via `core.wss`. You can add properties to the `ws` object in the `app.ws()` method filter out the list of clients from `wss.clients`.
+> You can get the core Websocket server via `core.wss`. You can add properties to the `ws` object in the `app.ws()` method filter out the list of clients from `wss.clients`.
 
 ```javascript
 const endpoint = proc.resource('/socket');

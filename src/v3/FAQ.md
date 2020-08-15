@@ -16,7 +16,7 @@ Send an email to hello@os-js.org or check out the [following links](https://gith
 
 The best way is to create an issue on Github. Read [this issue](https://github.com/os-js/OS.js/issues/705) for more information.
 
-You can also contact me via methods listed above, but an issue is prefered.
+You can also contact me via methods listed above, but an issue is preferred.
 
 ## Q: How can I get started with development ?
 
@@ -75,13 +75,13 @@ https://gist.github.com/andersevenrud/637ef06e47aa32a96a06789b36d9a623
 
 ### Hosted within OS.js
 
-See the [iframes tutorial](tutorial/iframe/README.md).
+See the [IFrames tutorial](tutorial/iframe/README.md).
 
 ## Q: Can I upgrade from v2 ?
 
 No. OS.js v3 is not compatible with the v2 APIs.
 
-If you developed your v2 applications using iframes or custom frameworks, *transitioning* to v3 is possible.
+If you developed your v2 applications using IFrames or custom frameworks, *transitioning* to v3 is possible.
 
 ## Q: Is there a matrix channel ?
 

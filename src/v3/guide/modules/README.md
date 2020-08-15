@@ -60,11 +60,11 @@ npm install --save file:src/osjs-client
 
 With the `npm link` feature you override the paths in `node_modules/` and link them to the actual source-code instead of the distributed builds.
 
-Mostly useful if you have a large development environment (multiple distros and test setups, etc) that does not rely on [git submodules](#git-submodules). This has some chaveats:
+Mostly useful if you have a large development environment (multiple distros and test setup, etc) that does not rely on [git submodules](#git-submodules). This has some caveats:
 
 1. Using `npm link` will not deep-link dependencies
 2. Running `npm install` after linking **will reset the links** to the original npmjs sources
-3. Without a tool like [lerna](https://github.com/lerna/lerna) managing a huge codebase might be a bit of a pain of linking is used througout
+3. Without a tool like [lerna](https://github.com/lerna/lerna) managing a huge codebase might be a bit of a pain of linking is used throughout
 
 > **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 

@@ -143,9 +143,9 @@ This works just as above, except it is global and added to your `src/client/conf
 }
 ```
 
-## Window Behavior
+## Window Behaviour
 
-To customize the window behavior (movement, interactions, etc.), provide your own instance via the service provider:
+To customize the window behaviour (movement, interactions, etc.), provide your own instance via the service provider:
 
 In your `src/client/index.js` bootstrap file, modify the core provider:
 
@@ -157,7 +157,7 @@ osjs.register(CoreServiceProvider, {
 });
 ```
 
-Use the `WindowBehavior` class in `@osjs/client` as your base class to extend these feautres.
+Use the `WindowBehavior` class in `@osjs/client` as your base class to extend these features.
 
 ## Splash screen
 

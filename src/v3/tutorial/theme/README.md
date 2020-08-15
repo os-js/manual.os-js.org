@@ -88,5 +88,5 @@ The icons follow the [Freedesktop Icon naming spesification](https://specificati
 
 ## Sounds
 
-The sounds follow the [Freedesktop Sound naming spesification](http://0pointer.de/public/sound-naming-spec.html) and are privded in both Ogg and MP3 formats.
+The sounds follow the [Freedesktop Sound naming spesification](http://0pointer.de/public/sound-naming-spec.html) and are prided in both Ogg and MP3 formats.
 

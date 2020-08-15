@@ -9,7 +9,7 @@ full_title: Migration Guide
 
 Run `npm install @osjs/gui@^4.0.0` to get the latest GUI package release.
 
-Optionally see [this patch](https://github.com/os-js/OS.js/commit/1380d4b98048dee2d7e95b9dddbf9af323f5fdab) to help optimize production builds. The mini css extract plugin was splitting up files into chunks incorrectly (so this was disabled).
+Optionally see [this patch](https://github.com/os-js/OS.js/commit/1380d4b98048dee2d7e95b9dddbf9af323f5fdab) to help optimize production builds. The mini CSS extract plugin was splitting up files into chunks incorrectly (so this was disabled).
 
 ## 3.0.0 - October 25th 2018
 

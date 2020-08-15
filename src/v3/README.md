@@ -10,7 +10,7 @@ Can be installed on all platform and runs in any modern web browser.
 
 This manual contains tutorials, articles, resources, developer information and guides on how to use OS.js.
 
-To try it out, check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please note that this might be down for maintainence at times, or running an unstable version.*
+To try it out, check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please note that this might be down for maintenance at times, or running an unstable version.*
 
 ![ScreenShot](https://www.os-js.org/screenshot.png)
 

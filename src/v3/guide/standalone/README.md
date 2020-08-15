@@ -5,7 +5,7 @@ full_title: Standalone Mode
 
 # Standalone Mode Guide
 
-You can run OS.js in standalone mode, whic does not require the backend to work.
+You can run OS.js in standalone mode, which does not require the backend to work.
 
 This has some limitations described below.
 

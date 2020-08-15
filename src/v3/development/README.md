@@ -62,7 +62,7 @@ If you want to publish a module or package, look at the [publish guide](../guide
 
 ## Building
 
-These are the deafult provided commands for performing build actions:
+These are the default provided commands for performing build actions:
 
 * `npm run build` Build changes once
 * `npm run watch` Watch and build changes automatically

@@ -31,7 +31,7 @@ You can run a demo using Docker without checking out any source-code:
 docker run -p 8000:8000 osjs/osjs:v3
 ```
 
-Or check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please note that this might be down for maintainence at times, or running an unstable version.*
+Or check out the [official v3 online demo](https://demo.os-js.org/v3/). *Please note that this might be down for maintenance at times, or running an unstable version.*
 
 ## Setup
 
@@ -56,7 +56,7 @@ Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan 
 
 To install locally you have to run a couple of commands to set up your distribution:
 
-> **[warning] Do not run any of thse commands as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
+> **[warning] Do not run any of these commands as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
 
 ```bash
 # Install dependencies
