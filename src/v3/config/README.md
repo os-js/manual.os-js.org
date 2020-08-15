@@ -49,6 +49,9 @@ See [filesystem guide](../guide/filesystem/README.md)
 | port                                | `8000`              | Server port                                                       |
 | public                              | `/dist`             | The dist directory                                                |
 | morgan                              | `tiny`              | Morgan logging mode                                               |
+| https.enabled                       | `false`             | Run server in HTTPS mode                                          |
+| https.options.key                   | `null`              | Key PEM file contents (`string` or `Buffer`)                      |
+| https.options.cert                  | `null`              | Key Certificate file  contents (`string` or `Buffer`)             |
 | ws.port                             | `<auto>`            | WebSocket port (defaults to upgrade)                              |
 | auth.defaultGroups                  | `[]`                | Default set of user groups to assign                              |
 | express.maxFieldsSize               | `20971520`          | HTTP Max POST form/fields size in bytes                           |
