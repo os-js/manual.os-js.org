@@ -7,8 +7,6 @@ full_title: Architecture and overview
 
 This article gives a brief overview of all of the different components that makes up OS.js.
 
-**See [development](../../development/README.md) for a more in-depth look at the development process.**
-
 ## Codebase
 
 All of the source is written in [ES6+](http://es6-features.org/). Dependencies are managed with [npm](https://docs.npmjs.com/).
@@ -17,10 +15,6 @@ Client-side scripts are written as [ECMAScript Modules (ESM)](https://developer.
 transpiled with [Babel](https://babeljs.io/) and CSS is written in [Sass](https://sass-lang.com/). Finally bundled with [Webpack](#webpack).
 
 The server-side scripts are written as [CommonJS Modules](https://nodejs.org/docs/latest/api/modules.html) and runs purely on [Nodejs](https://nodejs.org/en/).
-
-Dependencies are managed with [npm](https://docs.npmjs.com/).
-
-[Docker](https://www.docker.com/) is supported.
 
 ## Overview
 
@@ -31,6 +25,8 @@ The client can run independently from the server, but the server provides a lot 
 Server runs on [Express](https://expressjs.com/) and [Nodejs](https://nodejs.org/) (version 10 or later)
 
 Features are implemented via [service providers](../../guide/provider/README.md) so you can extend, replace or remove most features on your own.
+
+[Docker](https://www.docker.com/) is supported out of the box.
 
 ![Overview Diagram](overview.png)
 
@@ -56,6 +52,7 @@ The [OS.js repository](https://github.com/os-js/OS.js) contains a boilerplate yo
 It comes with the following structure, that you can modify as you see fit:
 
 ```text
+docker-compose.yml       Docker Compose configuration
 webpack.config.js        Webpack building configuration
 package.json             Dependency definitions
 node_modules/            Dependencies (npm package)
