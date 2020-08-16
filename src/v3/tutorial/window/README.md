@@ -7,7 +7,7 @@ full_title: Window Tutorial
 
 This tutorial shows you how to create and interact with Windows.
 
-Windows are floating containers that you can use to render any content. See [GUI](../gui/README.md) tutorial on how to design content using OS.js GUI libraries.
+Windows are floating containers that you can use to render any content.
 
 ![Example](example.png)
 
@@ -27,13 +27,18 @@ const win = core.make('osjs/window', options)
 
 ## Render
 
-Use the provided render method to put content into your Window:
+Use the provided render method to put content into your Window via a DOM element.
+
+> [info] This DOM element is the root of the contents allowing you to use anything from
+> plain HTML as strings to advanced frameworks.
 
 ```javascript
 win.render($content => $content.appendChild(
   document.createTextNode('Hello World!')
 ));
 ```
+
+See [GUI tutorial](../gui/README.md) on how to use the design user interfaces with the official component libraries.official GUI Component libraries.
 
 ## Options
 

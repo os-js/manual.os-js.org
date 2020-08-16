@@ -22,7 +22,9 @@ To create a new application package, run the following command inside your OS.js
 
 ## Metadata
 
-The `metadata.json` file describes your application and contains a list of files that is required to load the application.
+The `metadata.json` file describes your application and contains a list of files that is required to load the it.
+
+> Remember to run `npm run package:discover` after you change your metadata.
 
 ```json
 {
@@ -31,7 +33,8 @@ The `metadata.json` file describes your application and contains a list of files
   // The unique name
   "name": "MyApplication",
 
-  // What category this application belongs to
+  // What category this application belongs to (defaults ot "other"):
+  // development, science, games, graphics, network, multimedia, office, system, utilities and other
   "category": null,
 
   // Automatically start on boot
@@ -81,13 +84,6 @@ The `metadata.json` file describes your application and contains a list of files
 }
 ```
 
-> Available categories by default are: development, science, games, graphics, network, multimedia, office, system, utilities and other
-
-> Singleton applications will receive the `attention` event when another instance is dropped from launching.
-<!-- -->
-
-> Remember to run `npm run package:discover` after you change your metadata.
-
 ### npm
 
 Please note that your `package.json` file that your application is published with contains this section for the package discovery to work:
@@ -134,7 +130,7 @@ module.exports = (core, proc) => ({
 
 ## Windows
 
-To create a new `Window` instance:
+To create a new [Window](../window/README.md) instance:
 
 ```javascript
 const win = proc.createWindow({title: 'My Window'})
@@ -165,6 +161,10 @@ To broadcast events to your application use:
 core.broadcast('ApplicationName', 'event-name', 1, 2, 3)
 proc.on('event-name', (...args) => console.log(...args)); // => 1, 2, 3
 ```
+
+Singleton applications will receive the `attention` event when another instance is dropped from launching.
+
+For internal events, see [Core Tutorial](../core/README.md)
 
 ## Resources
 

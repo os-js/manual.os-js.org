@@ -98,16 +98,3 @@ npm run make:application
 # Discover all packages to make it visible in the client
 npm run package:discover
 ```
-
-> [info] Each time you modify the metadata of a package you need to run `npm run package:discover` to update the global package manifest.
-
-### Next steps
-
-Now that you have your package set up, look at the Tutorial section in the menu on how to proceed with implementing features.
-
-If you're developing an application, these are the relevant articles in order:
-
-1. [Core Tutorial](../tutorial/core/README.md)
-2. [Application Tutorial](../tutorial/application/README.md)
-3. [Window Tutorial](../tutorial/window/README.md)
-3. [GUI Tutorial](../tutorial/gui/README.md)

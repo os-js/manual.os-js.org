@@ -33,7 +33,9 @@ Use the [official standard theme](https://github.com/os-js/osjs-standard-theme),
 
 ## Metadata
 
-The `metadata.json` file describes your theme:
+The `metadata.json` file describes your theme and contains a list of files that is required to load it.
+
+> Remember to run `npm run package:discover` after you change your metadata.
 
 ```json
 {
