@@ -45,7 +45,7 @@ cd OS.js
 ```
 
 > Use any (GUI) application you want to clone or download & extract the boilerplate onto your system instead of performing the commands above.
-> Note that the rest of the process is usually done via the terminal (or command-line), so make surer that you're inside the installation directory
+> Note that the rest of the process is usually done via the terminal (or command-line), so make sure that you're inside the installation directory
 > before proceeding.
 
 You can now proceed with using one of two methods: [Manual](#manual-setup) or [Docker](#docker-setup).
@@ -54,7 +54,7 @@ Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan 
 
 ### Manual Setup
 
-To install locally you have to run a couple of commands to set up your distribution:
+To install you have to run a couple of commands to set up your distribution:
 
 > **[warning] Do not run any of these commands as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
 
