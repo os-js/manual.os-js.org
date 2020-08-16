@@ -28,7 +28,7 @@ OS.js by default uses **[Hyperapp v1](https://github.com/jorgebucaran/hyperapp/t
 
 *This does not mean that you are restricted to usage of Hyperapp. You can use [React](../../guide/framework/README.md#react), [Vue](../../guide/framework/README.md#vue) or anything you like.*
 
-Hyperapp is based on a Virtual DOM implementation making it similar to other reactive frameworks except that state is centralized (stateless components) and uses a more functional approach.
+Hyperapp is based a tiny framework for building hypertext applications. It's component based and uses a Virtual DOM, making it similar to other reactive frameworks in usage and operation.
 Look up the official documentation (linked above) for a deeper dive of the inner workings.
 
 If you're familiar with frameworks similar to React, you can use the [JSX syntax](#jsx) for a more familiar experience.
@@ -65,9 +65,9 @@ You can of course insert this into any arbitrary DOM element.
 
 ### Using Components
 
-![Basic Example](example-2.png)
+A [standard component library](https://manual.os-js.org/v3/api/osjs-gui/) for Hyperapp is officially provided.
 
-Use the provided GUI module:
+![Basic Example](example-2.png)
 
 ```javascript
 import {Box, BoxContainer, Button} from '@osjs/gui';
