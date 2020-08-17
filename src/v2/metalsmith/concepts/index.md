@@ -21,7 +21,7 @@ You can manipulate the settings by changing the supplied files, adding your own,
 
 Please note that Arrays are not merged together.
 
-For more information [look in the configuration manual](/v2/configuration).
+For more information [look in the configuration manual](/configuration).
 
 ## Client
 
@@ -64,7 +64,7 @@ All packages has a metadata file (`metadata.json`) that contains information abo
 
 The package metadata files are built into a final *manifest file* that the client uses to populate its Package Manager.
 
-For more information [look in the packages manual](/v2/packages).
+For more information [look in the packages manual](/packages).
 
 ## Overlays
 
@@ -74,4 +74,4 @@ An overlay is organized just like in `src/` and will be loaded into the build/co
 
 An example overlay [is available on Github](https://github.com/andersevenrud/osjs-example-overlay).
 
-For more information on configuration [look in the configuration manual](/v2/configuration/#adding-overlays).
+For more information on configuration [look in the configuration manual](/configuration/#adding-overlays).

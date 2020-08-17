@@ -18,12 +18,12 @@ $ node osjs build:config
 
 ## PAM
 
-[PAM](/v2/configuration/authenticator/pam/) is the main way of using Linux authentication system.
+[PAM](/configuration/authenticator/pam/) is the main way of using Linux authentication system.
 
 ## Shadow
 
-[Shadow](/v2/configuration/authenticator/shadow/) is an alternate way of using Linux authentication system.
+[Shadow](/configuration/authenticator/shadow/) is an alternate way of using Linux authentication system.
 
 ## Database
 
-[Database](/v2/configuration/authenticator/database/) allows for authentication via a Database.
+[Database](/configuration/authenticator/database/) allows for authentication via a Database.

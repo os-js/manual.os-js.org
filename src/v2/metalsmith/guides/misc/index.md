@@ -9,7 +9,7 @@ This page documents other modules in OS.js.
 
 ## Dialogs
 
-Just extend the `core/dialog` class and put it into `window.OSjs.Dialogs`. You can do this in your package or using a preload (see [configuration](/v2/configuration/#adding-preloads).
+Just extend the `core/dialog` class and put it into `window.OSjs.Dialogs`. You can do this in your package or using a preload (see [configuration](/configuration/#adding-preloads).
 
 ```javascript
 class SomeCoolDialog extends Dialog {}
