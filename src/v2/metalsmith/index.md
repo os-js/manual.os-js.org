@@ -30,4 +30,4 @@ Can be installed on any platform and runs in any modern web browser (IE10+).
 
 Then head over to the [installation documentation](/v2/installation). It only takes a few minutes to set up via a few simple commands.
 
-If you don't want to install it, there is a [demo](https://demo.os-js.org/) online.
+If you don't want to install it, there is a [LEGACY demo](https://demo-legacy.os-js.org/) online.
