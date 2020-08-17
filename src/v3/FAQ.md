@@ -43,7 +43,7 @@ Using windows explorer, enter the OS.js installation directory and press `ALT+D`
 
 ## Q: Can I make changes to your software ?
 
-Yes. This project is open-source and [licensed](https://github.com/os-js/OS.js/blob/v3/LICENSE) under BSD-2-clause which allows you to modify and distribute the software.
+Yes. This project is open-source and [licensed](https://github.com/os-js/OS.js/blob/LICENSE) under BSD-2-clause which allows you to modify and distribute the software.
 
 If you want to contribute changes back to the community, look at "How do I contribute" above.
 

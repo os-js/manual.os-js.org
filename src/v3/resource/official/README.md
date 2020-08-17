@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Official Extensions
+description: OS.js Official Extensions
 full_title: Official Extensions
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: A brief overview on the internals of OS.js v3.
+description: A brief overview on the internals of OS.js.
 full_title: Architecture and overview
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Web Desktop Manual
+description: OS.js Web Desktop Manual
 ---
 
 # OS.js Manual
@@ -26,5 +26,5 @@ To try it out, check out the [official online demo](https://demo.os-js.org/). *P
 
 * [Join the community chatrooms](https://gitter.im/os-js/OS.js)
 * [Join the community forums](https://community.os-js.org/)
-* [Github repository](https://github.com/os-js/OS.js/tree/v3/)
+* [Github repository](https://github.com/os-js/OS.js/)
 * [Github organization](https://github.com/os-js)

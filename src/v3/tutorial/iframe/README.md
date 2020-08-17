@@ -1,5 +1,5 @@
 ---
-description: A tutorial on how to create Iframe applications in OS.js v3
+description: A tutorial on how to create Iframe applications in OS.js
 full_title: IFrame Tutorial
 ---
 

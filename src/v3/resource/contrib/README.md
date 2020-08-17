@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Contributed Extensions
+description: OS.js Contributed Extensions
 full_title: Contributed Extensions
 ---
 

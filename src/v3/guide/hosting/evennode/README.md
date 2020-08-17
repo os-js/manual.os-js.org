@@ -1,5 +1,5 @@
 ---
-description: A guide on how to set up OS.js v3 on EvenNode
+description: A guide on how to set up OS.js on EvenNode
 full_title: EvenNode Hosting Guide
 ---
 

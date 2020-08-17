@@ -1,5 +1,5 @@
 ---
-description: OS.js v3 Documentation and examples
+description: OS.js Documentation and examples
 full_title: Documentation and examples
 ---
 
@@ -11,13 +11,13 @@ You can find the majority of documentation in this manual.
 
 You can find auto-generated documentation for the common core modules here:
 
-* [osjs-common](https://manual.os-js.org/v3/api/osjs-common/)
-* [osjs-client](https://manual.os-js.org/v3/api/osjs-client/)
-* [osjs-gui](https://manual.os-js.org/v3/api/osjs-gui/)
-* [osjs-dialogs](https://manual.os-js.org/v3/api/osjs-dialogs/)
-* [osjs-panels](https://manual.os-js.org/v3/api/osjs-panels/)
-* [osjs-server](https://manual.os-js.org/v3/api/osjs-server/)
-* [osjs-event-emitter](https://manual.os-js.org/v3/api/osjs-event-emitter/)
+* [osjs-common](https://manual.os-js.org/api/osjs-common/)
+* [osjs-client](https://manual.os-js.org/api/osjs-client/)
+* [osjs-gui](https://manual.os-js.org/api/osjs-gui/)
+* [osjs-dialogs](https://manual.os-js.org/api/osjs-dialogs/)
+* [osjs-panels](https://manual.os-js.org/api/osjs-panels/)
+* [osjs-server](https://manual.os-js.org/api/osjs-server/)
+* [osjs-event-emitter](https://manual.os-js.org/api/osjs-event-emitter/)
 
 ## Example Packages
 

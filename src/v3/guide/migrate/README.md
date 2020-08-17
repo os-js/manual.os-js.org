@@ -1,5 +1,5 @@
 ---
-description: A guide for migrating to newer version of OS.js v3.
+description: A guide for migrating to newer version of OS.js.
 full_title: Migration Guide
 ---
 
@@ -15,7 +15,7 @@ Optionally see [this patch](https://github.com/os-js/OS.js/commit/1380d4b98048de
 
 The `Application#request` method is now the same as `Core#request` except that the first argument always resolves to an application URL.
 
-See https://manual.os-js.org/v3/api/osjs-client/class/src/application.js~Application.html#instance-method-request
+See https://manual.os-js.org/api/osjs-client/class/src/application.js~Application.html#instance-method-request
 
 ## 3.0.0 - August 26th 2018
 
@@ -85,4 +85,4 @@ Congratulations. You've migrated your application :)
 
 There is no backward compatibility for v2 applications. All APIs have been rewritten and architecture has changed.
 
-If you've made applications using third-party libraries, you can refactor to run on v3.
+If you've made applications using third-party libraries, you can refactor to run on v3+.

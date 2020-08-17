@@ -1,5 +1,5 @@
 ---
-description: How to configure OS.js v3 client and server
+description: How to configure OS.js client and server
 full_title: Configuration
 ---
 
