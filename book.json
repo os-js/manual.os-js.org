@@ -7,7 +7,7 @@
   "pluginsConfig": {
     "sitemap": {
       "hostname": "https://manual.os-js.org",
-      "path": "/v3"
+      "path": "/"
     },
     "adsense": {
       "client": "ca-pub-6145716264521226",
