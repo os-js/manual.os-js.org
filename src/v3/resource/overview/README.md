@@ -114,7 +114,7 @@ See the [official extensions](../official/README.md) for a list of available pac
 
 [Webpack](https://webpack.js.org/) is used to build and bundle the distribution, modules and packages.
 
-These are some of the plugins and loaders used throughout codebases:
+These are some of the plugins and loaders used throughout codebases (mostly via the [dev meta package](https://github.com/os-js/osjs-dev-meta)):
 
 * [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 * [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin)
