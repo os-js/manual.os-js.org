@@ -26,7 +26,7 @@ handlebars.registerHelper('pathClass', function(str) {
 var i = Metalsmith(_path.resolve(__dirname, 'src/v2'))
   .metadata({
     sitename: "OS.js",
-    siteurl: "https://manual.os-js.org/",
+    siteurl: "https://manual-legacy.os-js.org/",
     description: "OS.js"
   })
   .source(_path.resolve(__dirname, 'src/v2/metalsmith'))
@@ -47,7 +47,7 @@ var i = Metalsmith(_path.resolve(__dirname, 'src/v2'))
     engine: 'handlebars'
   }))
   .use(sitemap({
-    hostname: "https://manual.os-js.org/v2",
+    hostname: "https://manual-legacy.os-js.org/v2",
     omitIndex: true
   }));
 
