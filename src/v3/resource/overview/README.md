@@ -54,6 +54,7 @@ It comes with the following structure, that you can modify as you see fit:
 
 ```text
 docker-compose.yml       Docker Compose configuration
+entrypoint.sh            Docker execution entrypoint
 webpack.config.js        Webpack building configuration
 package.json             Dependency definitions
 node_modules/            Dependencies (npm package)
