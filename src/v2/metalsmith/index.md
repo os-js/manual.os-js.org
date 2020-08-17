@@ -18,7 +18,7 @@ Other documentation you might find interesting:
 
 **This manual is for v2.1. If you're looking for a manual for v2.0 it is on [github in markdown format](https://github.com/os-js/legacy-manual)**
 
-**[Go here for OS.js v3 manual](https://manual.os-js.org/v3)**
+**[Go here for OS.js latest manual](https://manual.os-js.org/)**
 
 ## What is this ?
 
