@@ -63,7 +63,7 @@ To install you have to run a couple of commands to set up your distribution:
 npm install
 
 # Optionally install extra packages:
-# For a list of packages see https://manual.os-js.org/v3/resource/official/
+# For a list of packages see https://manual.os-js.org/resource/official/
 npm install @osjs/example-application
 
 # Discover installed packages
