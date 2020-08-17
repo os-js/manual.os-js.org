@@ -41,8 +41,8 @@ These are the standard used core libraries:
 * https://github.com/os-js/osjs-gui - GUI components
 * https://github.com/os-js/osjs-dialogs - GUI Dialogs
 * https://github.com/os-js/osjs-panels - GUI Panels
-* https://github.com/os-js/osjs-dev-meta - Development meta npm packages
 * https://github.com/os-js/osjs-event-emitter - EventEmitter implementation
+* https://github.com/os-js/osjs-dev-meta - Development dependencies
 
 All source-code follows the [semantic versioning spesification](https://semver.org/).
 
