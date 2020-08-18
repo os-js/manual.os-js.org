@@ -35,8 +35,8 @@ Features are implemented via [service providers](../../guide/provider/README.md)
 These are the standard used core libraries:
 
 * https://github.com/os-js/osjs-common - Base (used in both client & server)
-* https://github.com/os-js/osjs-client - Client
-* https://github.com/os-js/osjs-server - Server
+* https://github.com/os-js/osjs-client - Client Core & Services
+* https://github.com/os-js/osjs-server - Server Core & Services
 * https://github.com/os-js/osjs-cli - CLI utilities
 * https://github.com/os-js/osjs-gui - GUI components
 * https://github.com/os-js/osjs-dialogs - GUI Dialogs
