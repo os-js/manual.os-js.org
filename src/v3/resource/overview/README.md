@@ -16,6 +16,8 @@ transpiled with [Babel](https://babeljs.io/) and CSS is written in [Sass](https:
 
 The server-side scripts are written as [CommonJS Modules](https://nodejs.org/docs/latest/api/modules.html) and runs purely on [Nodejs](https://nodejs.org/en/).
 
+Testing is done with [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) and [Jest](https://jestjs.io/).
+
 ## Overview
 
 OS.js is a modular Web Desktop framework that consists of two parts: a client and a server.
@@ -24,11 +26,7 @@ The client can run independently from the server, but the server provides a lot 
 
 Server runs on [Express](https://expressjs.com/) and [Nodejs](https://nodejs.org/) (version 10 or later)
 
-Testing is done with [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) and [Jest](https://jestjs.io/).
-
 Features are implemented via [service providers](../../guide/provider/README.md) so you can extend, replace or remove most features on your own.
-
-[Docker](https://www.docker.com/) is supported out of the box.
 
 ![Overview Diagram](overview.png)
 
