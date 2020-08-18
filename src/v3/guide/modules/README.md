@@ -13,7 +13,7 @@ This article demonstrates three different methods of overriding npm packages in 
 
 ## Local checkout
 
-You can check out sources of a module inside your distribution/installation and then modify the bootstrap script imports to easily override modules for development purposes.
+You can check out sources of a module inside your installation/distribution and then modify the bootstrap script imports to easily override modules for development purposes.
 
 First do a checkout of the module sources:
 
@@ -43,7 +43,7 @@ import {/* some code here */} from '../osjs-client/index.js';
 
 This is basically the same as [linking](#linking), except that it's managed with git [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules), and not npm package installations.
 
-A good option if you want to maintain your own distribution without having to modify any of the bootstrap scripts.
+A good option if you want to maintain your own installation/distribution without having to modify any of the bootstrap scripts.
 
 ```bash
 # In your OS.js root directory, set up the submodule

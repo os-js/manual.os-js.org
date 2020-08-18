@@ -48,9 +48,9 @@ These are the standard used core libraries:
 
 All source-code follows the [semantic versioning spesification](https://semver.org/).
 
-## Distribution (installation)
+## Installation (Distribution)
 
-The [OS.js repository](https://github.com/os-js/OS.js) contains a boilerplate you can use to build and bundle your own distributions and installations.
+The [OS.js repository](https://github.com/os-js/OS.js) contains a boilerplate you can use to build and bundle your own installations and distributions.
 
 It comes with the following structure, that you can modify as you see fit:
 
@@ -115,7 +115,7 @@ See the [official extensions](../official/README.md) for a list of available pac
 
 # Webpack
 
-[Webpack](https://webpack.js.org/) is used to build and bundle the distribution, modules and packages.
+[Webpack](https://webpack.js.org/) is used to build and bundle the installation/distribution, modules and packages.
 
 These are some of the plugins and loaders used throughout codebases (mostly via the [dev meta package](https://github.com/os-js/osjs-dev-meta)):
 

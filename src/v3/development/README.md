@@ -20,7 +20,7 @@ architecture and involved technologies.
 
 With a standard [intallation](../install/README.md) you get a fully working development environment out of the box.
 
-> [info] Note that by default package extensions (applications, themes, etc.) are built separately from your distribution/installation.
+> [info] Note that by default package extensions (applications, themes, etc.) are built separately from your installation/distribution.
 > Make sure to run commands inside the **correct directory**
 
 If you're using Docker (`docker-compose`) for your environment, you have to execute CLI commands within the Docker image context. Example:

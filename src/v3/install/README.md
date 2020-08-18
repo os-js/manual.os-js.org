@@ -37,7 +37,7 @@ Or check out the [official online demo](https://demo.os-js.org/). *Please note t
 
 Clone the official boilerplate [repository](https://github.com/os-js/OS.js) (or download and extract a [compressed version](https://github.com/os-js/OS.js/releases) of latest release).
 
-> **[info] The official repository is intended for you to use as a boilerplate to create your own distributions of OS.js. You can safely remove the `.git` directory afterwards if you used git, as well as modify the structure and included files as you see fit.**
+> **[info] The official repository is intended for you to use as a boilerplate to create your own installations/distributions of OS.js. You can safely remove the `.git` directory afterwards if you used git, as well as modify the structure and included files as you see fit.**
 
 ```bash
 git clone -b master --single-branch https://github.com/os-js/OS.js.git
@@ -54,7 +54,7 @@ Make sure to read the [deployment guide](../guide/deploy/README.md) if you plan 
 
 ### Manual Setup
 
-To install you have to run a couple of commands to set up your distribution:
+To install you have to run a couple of commands to set up your installations/distribution:
 
 > **[warning] Do not run any of these commands as a "sudo" or "admin" user. This can cause issues with file permissions as might leave you open to security vulnerabilities.**
 
