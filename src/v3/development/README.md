@@ -64,9 +64,9 @@ To produce a production build, prefix your command with ex: `NODE_ENV=production
 These are the default provided commands for performing test actions:
 
 * `npm run test` - Run all tests and linters
-* `npm run eslint` - ESLint pass
-* `npm run stylelint` - Stylelint pass
-* `npm run jest` - Jest unit tests
+* `npm run eslint` - [ESLint](https://eslint.org/) pass
+* `npm run stylelint` - [Stylelint](https://stylelint.io/) pass
+* `npm run jest` - [Jest](https://jestjs.io/) unit tests
 
 ## Developing Modules
 

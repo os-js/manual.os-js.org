@@ -24,6 +24,8 @@ The client can run independently from the server, but the server provides a lot 
 
 Server runs on [Express](https://expressjs.com/) and [Nodejs](https://nodejs.org/) (version 10 or later)
 
+Testing is done with [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) and [Jest](https://jestjs.io/).
+
 Features are implemented via [service providers](../../guide/provider/README.md) so you can extend, replace or remove most features on your own.
 
 [Docker](https://www.docker.com/) is supported out of the box.
@@ -43,6 +45,8 @@ These are the standard used core libraries:
 * https://github.com/os-js/osjs-panels - GUI Panels
 * https://github.com/os-js/osjs-event-emitter - EventEmitter implementation
 * https://github.com/os-js/osjs-dev-meta - Development dependencies
+* https://github.com/os-js/eslint-config - ESLint configuration
+* https://github.com/os-js/stylelint-config - Stylelint configuration
 
 All source-code follows the [semantic versioning spesification](https://semver.org/).
 
