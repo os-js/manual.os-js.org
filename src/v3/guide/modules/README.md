@@ -15,17 +15,16 @@ This article demonstrates three different methods of overriding npm packages in 
 
 The first option is to override the modules from within your installation/distribution.
 
-> Note that you don't have to use git in this case. You can also download and extract an archived version.
+> [info] Note that you don't have to use git in this case. You can also download and extract an archived version.
 
 ```bash
-# In your OS.js installation
-cd src/
-git clone https://github.com/os-js/osjs-client
-cd osjs-client
+# Then inside the OS.js root directory
+git clone https://github.com/os-js/osjs-client src/osjs-client
+cd src/osjs-client
 npm install
 npm run build
 
-# Then back inside the root directory
+# Then back inside the OS.js root directory
 npm install --save file:src/osjs-client
 npm run build
 ```
@@ -41,36 +40,40 @@ cd src/osjs-client
 npm install
 npm run build
 
-# Then back inside the root directory
+# Then back inside the OS.js root directory
 npm install --save file:src/osjs-client
 npm run build
 ```
 
 ## Linking
 
-With the `npm link` feature you override the paths in `node_modules/` from any directory on your computer. Useful if you don't plan on distributing your sorces like in [local checkout](#local-checkout) or [Git submodules](#git-submodules).
+With the `npm link` feature you override the paths inside `node_modules/` by linking them from anywhere on your filesystem.
+
+Workflow is similar to [local checkout](#local-checkout) or [Git submodules](#git-submodules), except that `package.json` does not reference local packages.
+
+Useful when maintaining a large set of overrided packages in a monorepo.
 
 > **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
+
+<!-- -->
+
+> [info] Note that you don't have to use git in this case. You can also download and extract an archived version.
 
 This comes with a few gotchas:
 
 1. Using `npm link` will not deep-link dependencies
 2. Running `npm install` after linking **will reset the links** to the original npmjs sources
-3. Without a tool like [lerna](https://github.com/lerna/lerna) managing a huge codebase might be a bit of a pain of linking is used throughout
-
-Assuming you've already installed OS.js, this is an example of how you set up linking:
-
-> Note that you don't have to use git in this case. You can also download and extract an archived version.
+3. Tools like [lerna](https://github.com/lerna/lerna) solves the issues above for you.
 
 ```bash
-# Somewhere outside your installation
+# In any location or from within your monorepo (ex `packages/`)
 git clone https://github.com/os-js/osjs-client
 cd osjs-client
 npm install
 npm run build
 npm link
 
-# Then inside the OS.js root directory
+# Then back inside the OS.js root directory
 npm link @osjs/client
 npm run build
 ```
