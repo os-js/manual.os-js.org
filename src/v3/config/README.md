@@ -101,3 +101,21 @@ const osjs = new Core(config, {
   omit: ['ws.port']
 });
 ```
+
+## Dotenv
+
+You can provide configuration via a dotenv (`.env`) file to make make it dynamic.
+
+This applies to both the client and the server
+
+```
+OSJS_STANDALONE=true
+```
+
+And in your `src/client/config.js` file:
+
+```javascript
+{
+  standalone: process.env.OSJS_STANDALONE === 'true'
+}
+```
