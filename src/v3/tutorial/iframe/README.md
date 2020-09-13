@@ -40,14 +40,17 @@ This allows you to interact with the underlying OS.js APIs and services from an 
   <body>
     <h1>Hello World</h1>
     <script>
-      // Global function to send a message to OS.js Core that forwards it
-      // to the correct application/window.
+      // Store the application and window ID we added to the iframe source
+      var pid = parseInt(window.location.search.match(/pid=([^&]*)/)[1], 10);
+      var wid = parseInt(window.location.search.match(/wid=([^&]*)/)[1], 10);
+
+      // Global function to send a message to OS.js Core that forwards it to the correct application/window.
       function sendMessage() {
         top.postMessage({
           name: 'osjs/iframe:message',
           params: [{
-            pid: parseInt(window.location.search.match(/pid=([^&]*)/)[1], 10),
-            wid: parseInt(window.location.search.match(/wid=([^&]*)/)[1], 10),
+            pid: pid,
+            wid: wid,
             args: Array.prototype.slice.call(arguments)
           }]
         }, '*');
