@@ -68,6 +68,12 @@ export default class MyWidget extends Widget {
       onclick: () => console.log('Hello!')
     }];
   }
+
+  static metadata(core) {
+    return {
+      title: 'A title for your widget'
+    };
+  }
 }
 ```
 
