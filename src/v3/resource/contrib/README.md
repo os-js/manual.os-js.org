@@ -31,6 +31,9 @@ If you want to submit your contribution, contact me by [email](mailto:contrib@os
 * https://github.com/SpaceboyRoss01/osjs-devices-adapter - Adds all hardware devices to a root mountpoint
 * https://github.com/BurnaSmartLab/osjs-monster-adapter - OpenStack Swift object storage VFS adapter 
 
+## Widgets
+* https://github.com/BurnaSmartLab/osjs-grafana-widget - A widget to show Grafana data in multiple charts
+
 ## CLI
 
 * https://github.com/andersevenrud/osjs-build-parallel-cli - Build multiple solutions at once (parallel support)
