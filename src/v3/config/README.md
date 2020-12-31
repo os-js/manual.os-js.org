@@ -13,6 +13,20 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 
 > [info] Using `NODE_ENV=production` will disable any development features that are enabled by default.
 
+## Caveats
+
+By default all of your settings are *merged* into the default configuration from
+the client/server configuration.
+
+To override for example an array instead of appending to it,
+update your bootstrap with the following:
+
+```javascript
+const osjs = new Core(config, {
+  omit: ['vfs.mountpoints']
+});
+```
+
 ## Client
 
 | Key                               | Default value         | Description                                              |
@@ -33,10 +47,6 @@ You can find the configuration files (by default) in `src/client/config.js` and 
 | `desktop.settings.background.src` | Internal              | Standard wallpaper                                       |
 | `locale.language`                 | `en_EN`               | Default language                                         |
 | `vfs.defaultPath`                 | `osjs:/`              | Default and fallback path for VFS                        |
-
-### Filesystems
-
-See [filesystem guide](../guide/filesystem/README.md)
 
 ## Server
 
@@ -77,30 +87,11 @@ You can add proxies via the configuration. See [`express-http-proxy`](https://gi
     options: {}
   }]
 }
-
 ```
 
-### Filesystems
+## Filesystems
 
 See [filesystem guide](../guide/filesystem/README.md)
-
-# Caveats
-
-By default all of your settings are *merged* into the default configuration from the libraries.
-In some cases you might want to force certain entries in the tree to override completely.
-
-You can do this by providing the following option in your bootstrap file:
-
-```javascript
-const osjs = new Core(config, {
-  // 'ws' will *always* be read from your 'config' instead of the
-  // internal one, including *every* sub-item(s).
-  omit: ['ws'],
-
-  // You can resolve via the dot notation
-  omit: ['ws.port']
-});
-```
 
 ## Dotenv
 
@@ -108,7 +99,7 @@ You can provide configuration via a dotenv (`.env`) file to make make it dynamic
 
 This applies to both the client and the server
 
-```
+```config
 OSJS_STANDALONE=true
 ```
 

@@ -7,45 +7,7 @@ full_title: Filesystem Guide
 
 OS.js uses an URI for filesystem paths.
 
-> ` name:/path#fragment`
-
-## Adapters
-
-A *Adapter* is a module that makes the actual requests on behalf of OS.js APIs.
-
-An example is the included `system` which uses the APIs provided by the server, which uses the underlying node `fs` module to provide a filesystem via the underlying OS.
-
-### Adding Adapters
-
-You can add custom adapters via the VFS service provider:
-
-#### Client
-
-```javascript
-import customAdapter from 'custom-adapter';
-
-osjs.register(VFSServiceProvider, {
-  args: {
-    adapters: {
-      custom: customAdapter
-    }
-  }
-});
-```
-
-#### Server
-
-```javascript
-const customAdapter = require('custom-adapter');
-
-osjs.register(VFSServiceProvider, {
-  args: {
-    adapters: {
-      webdav: customAdapter
-    }
-  }
-});
-```
+> `name:/path#fragment`
 
 ## Mountpoints
 
@@ -142,4 +104,42 @@ Example configuration (server):
     }]
   }
 }
+```
+
+## Adapters
+
+A *Adapter* is a module that makes the actual requests on behalf of OS.js APIs.
+
+An example is the included `system` which uses the APIs provided by the server, which uses the underlying node `fs` module to provide a filesystem via the underlying OS.
+
+### Adding Adapters
+
+You can add custom adapters via the VFS service provider:
+
+#### Client
+
+```javascript
+import customAdapter from 'custom-adapter';
+
+osjs.register(VFSServiceProvider, {
+  args: {
+    adapters: {
+      custom: customAdapter
+    }
+  }
+});
+```
+
+#### Server
+
+```javascript
+const customAdapter = require('custom-adapter');
+
+osjs.register(VFSServiceProvider, {
+  args: {
+    adapters: {
+      webdav: customAdapter
+    }
+  }
+});
 ```
