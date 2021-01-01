@@ -38,6 +38,9 @@ const exists = core.has('namespace/service');
 
 // Subscribe to an event
 core.on('event-name', () => {});
+
+// Send an event to the server
+core.send('event-name', 1, 2, 3);
 ```
 
 ### Client
@@ -178,7 +181,7 @@ const session = core.session;
 
 > [info] You can listen for broadcast events in the client with
 
-```
+```javascript
 // Client-side example:
 core.on('event-name', (a, b, c) => console.log(a, b, c)) // => 1 2 3
 ```
