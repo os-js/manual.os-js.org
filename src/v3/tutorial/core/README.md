@@ -38,9 +38,6 @@ const exists = core.has('namespace/service');
 
 // Subscribe to an event
 core.on('event-name', () => {});
-
-// Send an event to the server
-core.send('event-name', 1, 2, 3);
 ```
 
 ### Client
@@ -62,6 +59,9 @@ core.open({path: 'home://image.png', mime: 'image/png'});
 
 // Gets user data
 const user = core.getUser();
+
+// Send an event to the server
+core.send('event-name', 1, 2, 3);
 ```
 
 #### Global 'OSjs' namespace
