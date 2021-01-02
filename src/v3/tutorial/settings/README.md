@@ -70,14 +70,14 @@ To generate a new adapter using the example via CLI run `npm run make:settings`.
 
 ```javascript
 const myAdapter = (core, options) => ({
-  save: values => {
+  save: async (values) => {
     // Create your own request here with 'values' settings
-    return Promise.resolve(true);
+    return true;
   },
 
-  load: () => {
+  load: async () => {
     // Create your own request here and return settings
-    return Promise.resolve({})
+    return {};
   }
 });
 
@@ -88,13 +88,13 @@ export default myAdapter;
 
 ```javascript
 module.exports = (core, options) => ({
-  save: (req, res) => {
+  save: async (req, res) => {
     // req.body has all settings from client
-    return Promise.resolve(true);
+    return true;
   },
-  load: (req, res) => {
+  load: async (req, res) => {
     // return all settings for user here
-    return Promis.resolve({});
+    return {};
   }
 });
 ```

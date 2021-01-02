@@ -103,7 +103,7 @@ To generate a new adapter using the example via CLI run `npm run make:vfs`.
 
 ```javascript
 const adapter = (core) => ({
-  readdir: (path, options) => Promise.resolve([])
+  readdir: async (path, options) => ([])
 });
 
 export default adapter;
@@ -113,7 +113,7 @@ export default adapter;
 
 ```javascript
 module.exports = (core) => ({
-  readdir: vfs => (path) => Promise.resolve([])
+  readdir: vfs => async (path) => ([])
 });
 ```
 

@@ -37,14 +37,14 @@ To generate a new adapter using the example via CLI run `npm run make:auth`.
 
 ```javascript
 const myAdapter = (core, config) => ({
-  login: values => {
+  login: async (values) => {
     // You can transform the form values from login here if you want
-    return Promise.resolve(values);
+    return values;
   },
 
-  logout: () => {
+  logout: async () => {
     // And perform special operations on logout
-    return Promise.resolve(true);
+    return true;
   }
 });
 
@@ -59,18 +59,18 @@ In this example we only allow the user `anders` with the password `evenrud`.
 
 ```javascript
 const myAdapter = (core, config) => ({
-  login: (req, res) => {
+  async login: (req, res) => {
     const {username, password} = req.body;
 
     if (username === 'anders' && password === 'evenrud') {
-      return Promise.resolve({id: 666, username, groups: ['admin']});
+      return {id: 666, username, groups: ['admin']};
     }
 
-    return Promise.resolve(false);
+    return false;
   },
 
-  logout: (req, res) => {
-    return Promise.resolve(true);
+  logout: async (req, res) => {
+    return true;
   }
 });
 
