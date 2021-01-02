@@ -98,3 +98,29 @@ module.exports = (core, options) => ({
   }
 });
 ```
+
+## Using classes
+
+You can also use class pattern for your adapter:
+
+```javascript
+class MySettingsAdapter {
+  constructor(core, options) {
+    this.core = core;
+    this.options = options;
+  }
+
+  async save(values) {
+    return true;
+  }
+
+  async load() {
+    return {};
+  }
+}
+
+// or for server: module.exports = function()
+export default function(core, options) {
+  return new MySettingsAdapter(core, options);
+}
+```

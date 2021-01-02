@@ -105,6 +105,8 @@ To generate a new adapter using the example via CLI run `npm run make:vfs`.
 const adapter = (core) => ({
   readdir: (path, options) => Promise.resolve([])
 });
+
+export default adapter;
 ```
 
 ### Server

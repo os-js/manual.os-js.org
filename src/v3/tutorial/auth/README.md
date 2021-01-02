@@ -82,3 +82,29 @@ module.exports = myAdapter;
 If you return an array of application names in the property `blacklist` from the login, you can hide applications from a user.
 
 This can be configured via the authentication adapter you're using.
+
+## Using classes
+
+You can also use class pattern for your adapter:
+
+```javascript
+class MyAuthAdapter {
+  constructor(core, config) {
+    this.core = core;
+    this.options = options;
+  }
+
+  async login(values) {
+    return values;
+  }
+
+  async logout() {
+    return true;
+  }
+}
+
+// or for server: module.exports = function()
+export default function(core, options) {
+  return new MyAuthAdapter(core, options);
+}
+```
