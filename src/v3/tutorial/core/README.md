@@ -202,5 +202,5 @@ These are the default provided services and their signatures:
 * `osjs/core:started => ()` - Core started
 * `osjs/core:ping => (req)` - User pinged the server
 * `osjs/core:vfs:watch:change => ({mountpoint, target, type})` - VFS watch trigger
-* `osjs/core:logged-in => (user)` - User logged in
-* `osjs/core:logging-out => (user)` - User is logging out
+* `osjs/core:logged-in => (session)` - User logged in
+* `osjs/core:logging-out => (session)` - User is logging out
