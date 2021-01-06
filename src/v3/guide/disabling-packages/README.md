@@ -63,9 +63,9 @@ export default {
   packages: {
     permissions: {
       Draw: {
-        // The `strictGroups` property when set to `true` will check that *all*
-        // the groups match, and not just some.
-        strictGroups: false,
+        // The `strictGroups` property when set to `false` will check that *some*
+        // the groups match, and not *all*.
+        strictGroups: true,
 
         groups: ['a', 'b', 'c']
       }
@@ -79,12 +79,12 @@ export default {
 If you're a package developer, you can also add an array of groups to your
 the `metadata.json` file. Example:
 
-> [info] The `strictGroups` property when set to `true` will check that *all*
-> the groups match, and not just some.
+> [info] The `strictGroups` property when set to `false` will check that *some*
+> the groups match, and not *all*.
 
 ```json
 {
-  "strictGroups": false,
+  "strictGroups": true,
   "groups": ["a", "b", "c"]
 }
 ```
