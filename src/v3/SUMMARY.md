@@ -118,7 +118,6 @@
   * [Commands](guide/cli/README.md#ommands)
   * [Server Arguments](guide/cli/README.md#server-arguments)
   * [Custom Tasks](guide/cli/README.md#custom-tasks)
-  * [Disabling Packages](guide/cli/README.md#disabling-packages)
 * [Deployment](guide/deploy/README.md)
   * [Checklist](guide/deploy/README.md#checklist)
   * [Building](guide/deploy/README.md#building)
@@ -138,6 +137,7 @@
   * [Filesystem](guide/filesystem/README.md)
 * Misc
   * [Override modules](guide/modules/README.md)
+  * [Disabling Packages](guide/disabling-packages/README.md)
   * [Publishing](guide/publish/README.md)
   * [Translation](guide/translate/README.md)
   * [Visuals](guide/visuals/README.md)

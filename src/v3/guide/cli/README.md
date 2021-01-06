@@ -88,16 +88,3 @@ module.exports = {
   ]
 };
 ```
-
-## Disabling packages
-
-You can disable a package in a couple of different ways:
-
-1. In `src/cli/index.js` add an array with package names, ex `disabled: ['Draw']`
-2. In your package `metadata.json` file add `""disabled": true`
-3. Rename the package directory to end in `.disabled`, ex: `MyApplication.disabled`
-4. Since `@osjs/client@3.2.1` You can use the client onfiguration entry `packages.hidden`
-to hide packages (including themes) from being available from the UI. This is purely a way to hide packages,
-not disable them entirely.
-
-After using one of these methods, run `npm run package:discover`

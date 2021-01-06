@@ -109,4 +109,4 @@ Depending on how you installed your package(s), this is the procedure:
 1. `npm remove packagename` or `rm -rf src/packages/PackageName`
 2. `npm run package:discover`
 
-You can also [disable packages](../guide/cli/README.md#disabling-packages).
+You can also [disable packages](../guide/disabling-packages/README.md).
