@@ -7,20 +7,10 @@ full_title: Authentication Guide
 
 OS.js provides options for customizing the authentication procedure.
 
-By default the client is set up to automatically log in with a "demo user" account and the server responds to any authentication request successfully.
+By default the client is set up to automatically log in with a "demo user"
+account and the server responds to any authentication request successfully.
 
-This functionality can be changed by configuration and using a different *adapter*
-
-These are the available client adapters:
-
-* `server` - Authenticate via the server (default)
-* `localStorage` - Null authentication (used in standalone mode)
-
-And these are the available server adapters:
-
-* `null` - Accepts any authentication request (default)
-* [PAM](https://github.com/os-js/osjs-pam-auth) - Log in via host PAM (UNIX only)
-* [database](https://github.com/os-js/osjs-database-auth) - Log in via a database
+This functionality can be changed by configuration and using a different *[#configuring-adapter](adapter)*
 
 ## Removing automatic login
 
@@ -51,13 +41,17 @@ Modifying the adapter requires changing the `AuthServiceProvider` options:
 
 ### Client
 
-You can set up a custom client adapter to modify the requests etc.:
+To change the client-side authentication adapter, modify your bootstrap file `src/client/index.js`.
 
 ```javascript
 import customAdapter from 'custom-adapter';
 
 core.register(AuthServiceProvider, {
   args: {
+    // Default
+    adapter: 'server',
+
+    // Custom
     adapter: customAdapter,
     config: { /* Your configuration here */}
   }
@@ -65,6 +59,8 @@ core.register(AuthServiceProvider, {
 ```
 
 ### Server
+
+To change the server-side authentication adapter, modify your bootstrap file `src/server/index.js`.
 
 ```javascript
 const customAdapter = require('custom-adapter');
