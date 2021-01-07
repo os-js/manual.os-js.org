@@ -66,8 +66,9 @@ core.register(MyService, {
 })
 ```
 
-Load order can also be set by setting up a dependency chain. If your service provide on other services
-services, you must define this so that the core always loads things in the correct order.
+Load order can also be set by creating a dependency chain. If your service provider
+depends on other services, you must define this so that the core always loads
+things in the correct order.
 
 These can be either set in the service provider:
 
