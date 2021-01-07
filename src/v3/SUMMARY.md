@@ -24,7 +24,7 @@
   * [Caveats](config/README.md#caveats)
   * [Client](config/README.md#client)
   * [Server](config/README.md#server)
-  * [Filesystem](config/README.md#filesystem)
+  * [Filesystems](config/README.md#filesystems)
   * [Dotenv](config/README.md#dotenv)
 * [Development](development/README.md)
   * [Introduction](development/README.md#introduction)
