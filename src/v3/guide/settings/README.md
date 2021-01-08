@@ -23,7 +23,7 @@ See [official resource list](/resource/official/README.md) for provided adapter.
 ### Client
 
 ```javascript
-core.register(SettingsServiceProvider, {
+osjs.register(SettingsServiceProvider, {
   args: {
     adapter: 'server'
   }
@@ -35,7 +35,7 @@ core.register(SettingsServiceProvider, {
 ```javascript
 const customAdapter = require('custom-adapter');
 
-core.register(SettingsServiceProvider, {
+osjs.register(SettingsServiceProvider, {
   args: {
     adapter: customAdapter
   }
@@ -50,14 +50,14 @@ You can use the provided 'fs' adapter to store settings on a filesystem:
 
 ```javascript
 // client
-core.register(SettingsServiceProvider, {
+osjs.register(SettingsServiceProvider, {
   args: {
     adapter: 'server'
   }
 });
 
 // server
-core.register(SettingsServiceProvider, {
+osjs.register(SettingsServiceProvider, {
   args: {
     adapter: 'fs',
   }
@@ -69,7 +69,7 @@ core.register(SettingsServiceProvider, {
 The `config` parameter is passed on from your service provider registration:
 
 ```javascript
-core.register(SettingsServiceProvider, {
+osjs.register(SettingsServiceProvider, {
   args: {
     adapter: customAdapter
     config: { /* Your configuration here */}

@@ -46,7 +46,7 @@ To change the client-side authentication adapter, modify your bootstrap file `sr
 ```javascript
 import customAdapter from 'custom-adapter';
 
-core.register(AuthServiceProvider, {
+osjs.register(AuthServiceProvider, {
   args: {
     // Default
     adapter: 'server',
@@ -65,7 +65,7 @@ To change the server-side authentication adapter, modify your bootstrap file `sr
 ```javascript
 const customAdapter = require('custom-adapter');
 
-core.register(AuthServiceProvider, {
+osjs.register(AuthServiceProvider, {
   args: {
     adapter: customAdapter,
     config: { /* Your configuration here */}

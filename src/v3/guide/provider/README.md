@@ -31,7 +31,7 @@ it within the `src/` directory of your installation.
 ```javascript
 import MyService from 'some-provider'
 
-core.register(MyService)
+osjs.register(MyService)
 ```
 
 ### Configuring
@@ -41,7 +41,7 @@ You can pass on arguments to the constructor of the Service Provider.
 > This is the *second* argument in the `constructor()`.
 
 ```javascript
-core.register(MyService, {
+osjs.register(MyService, {
   args: {
     foo: 'bar'
   }
@@ -61,7 +61,7 @@ this stage, set the `before` parameter when you register a service:
 
 
 ```javascript
-core.register(MyService, {
+osjs.register(MyService, {
   before: true
 })
 ```
@@ -83,7 +83,7 @@ class MyService {
 Or you can defined them in your bootstrap:
 
 ```javascript
-core.register(MyService, {
+osjs.register(MyService, {
   depends: ['osjs/core']
 })
 ```
