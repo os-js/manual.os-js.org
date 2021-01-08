@@ -186,7 +186,8 @@ To set the session store, update your configuration:
 
 ## Scaling
 
-The OS.js server is *stateless*, so you can scale this over many instances as long as you share the [session](#session) data.
+By default the server uses server-side session storage and can be [shared across instances](#session).
+Stateless is supported, but requires custom middleware and authentication adapters.
 
 This can be achieved using Redis or any non-local session storage module (default is local filesystem).
 
