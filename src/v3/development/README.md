@@ -18,7 +18,7 @@ This article will walk you through the development process of OS.js modules and 
 Before beginning read the [overview article](../resource/overview/README.md) to familiarize yourself with the
 architecture and involved technologies.
 
-With a standard [intallation](../install/README.md) you get a fully working development environment out of the box.
+With a standard [installation](../install/README.md) you get a fully working development environment out of the box.
 
 > [info] Note that by default package extensions (applications, themes, etc.) are built separately from your installation/distribution.
 > Make sure to run commands inside the **correct directory**

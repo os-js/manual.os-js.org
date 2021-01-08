@@ -31,7 +31,7 @@ npm run build
 
 ## Git submodules
 
-Same as above, except that the overrided modules are kept in separate repositories using Git [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+Same as above, except that the overridden modules are kept in separate repositories using Git [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ```bash
 # In your OS.js root directory, set up the submodule
@@ -51,7 +51,7 @@ With the `npm link` feature you override the paths inside `node_modules/` by lin
 
 Workflow is similar to [local checkout](#local-checkout) or [Git submodules](#git-submodules), except that `package.json` does not reference local packages.
 
-Useful when maintaining a large set of overrided packages in a monorepo.
+Useful when maintaining a large set of overridden packages in a monorepo.
 
 > **[warning] It is highly recommended that you either manage your node installation with [nvm](https://github.com/creationix/nvm) or [modify you npm setup](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to prevent permission errors when using the npm link feature.**
 
