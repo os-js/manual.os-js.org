@@ -118,13 +118,15 @@ And `server.js` for the server:
 
 ```javascript
 module.exports = (core, proc) => ({
-  init: async () => {
+  async init() {
     // Register your routes etc here
   },
-  start: () => {
+
+  async start() {
     // Any arbitrary stuff here
   },
-  destroy: () => {
+
+  destroy() {
     // Stop your stuff when server goes down
   }
 });
