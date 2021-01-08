@@ -5,7 +5,13 @@ full_title: Frameworks Guide
 
 # Frameworks Guide
 
-> Please note that mixing UI frameworks is not recommended. So, if you've set up your application with JSX for Hyperapp, this might conflict.
+This guide shows you how to use some popular frameworks "natively" in OS.js.
+
+If you want to run your application completely sandboxed, see
+[IFrame application](../../tutorial/iframe/README.md) tutorial.
+
+> [info] Since a OS.js window render methods gives you access to
+> the DOM you are free to use any framework or library as you see fit.
 
 ## React
 
@@ -114,7 +120,7 @@ proc.createWindow({})
   });
 ```
 
-## Misc
+## Other
 
 To load generic libraries etc. (like jQuery) into OS.js you have two alternatives.
 
