@@ -86,7 +86,8 @@ The `metadata.json` file describes your application and contains a list of files
 
 ### npm
 
-Please note that your `package.json` file that your application is published with contains this section for the package discovery to work:
+Please note that your `package.json` file that your application is published with
+contains this section for the package discovery to work:
 
 ```json
 {
@@ -156,7 +157,7 @@ proc.on('event-name', (...args) => console.log(...args));
 * `destroy-window => (win, proc)` - When window is destroyed
 * `attention => (args, options)` - Signal when a new instance of a singleton application is launched
 
-To broadcast events to your application use:
+To broadcast events to all running applications you can use:
 
 ```javascript
 core.broadcast('ApplicationName', 'event-name', 1, 2, 3)
@@ -215,7 +216,9 @@ You can use WebSockets in a couple of different ways.
 
 The easiest way to use Websockets is to use the core Websocket connection.
 
-This will not create a new connection, but rather use the main client Websocket connection as a proxy, which comes with some limitations, but is great for adding basic interactions.
+This will not create a new connection, but rather use the main client Websocket
+connection as a proxy, which comes with some limitations, but is great for adding
+basic interactions.
 
 #### Client
 
@@ -248,7 +251,8 @@ You can also create new WebSocket connections.
 
 #### Client
 
-Create an instance of `Websocket` with `socket()`, which is just a wrapper around regular WebSocket instance with `on/off/emit` for handing events:
+Create an instance of `Websocket` with `socket()`, which is just a wrapper around
+regular WebSocket instance with `on/off/emit` for handing events:
 
 > Note that sockets automatically closes when application is destroyed.
 
@@ -283,24 +287,21 @@ core.app.ws(endpoint, (ws, req) => {
 Applications also supports [settings](/tutorial/settings/README.md) storage:
 
 ```javascript
-// Sets a setting
-proc.settings.foo = 'Custom setting';
-
-// Gets a setting
-console.log(proc.settings.foo)
-
-// Saves settings
-proc.saveSettings() // Promise
-
 // Set default settings
+import osjs from 'osjs'; // Webpack external. Same as 'window.OSjs'
 import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
+osjs.register(applicationName, (core, args, options, metadata) => {
   options.settings = {
     foo: 'Default setting'
   };
 
-  // ...
+  // Gets a setting
+  console.log(proc.settings.foo)
+
+  // Sets a setting.
+  proc.settings.foo = 'Custom setting';
+  proc.saveSettings() // Save settings -> Promise
 });
 ```
 
@@ -314,12 +315,16 @@ When an application is launched, it might contain arguments:
 // Launch application with arguments
 core.run('MyApplication', {
   foo: 'My custom argument'
-})
+});
+```
 
-// Retrieve arguments in application
+Retrieve arguments in application:
+
+```javascript
+import osjs from 'osjs'; // Webpack external. Same as 'window.OSjs'
 import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
+osjs.register(applicationName, (core, args, options, metadata) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   console.log(proc.args); // 'foo' will be set
@@ -330,18 +335,20 @@ OSjs.make('osjs/packages').register(applicationName, (core, args, options, metad
 
 ## Session
 
-The `args` property (see above) is stored in the session, so you can use this to save your application state whenever the user logs out:
+The `args` property (see above) is stored in the session, so you can use this to
+save your application state whenever the user logs out:
 
 ```javascript
+import osjs from 'osjs'; // Webpack external. Same as 'window.OSjs'
 import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
+osjs.register(applicationName, (core, args, options, metadata) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   // Arguments launched with your application, including session:
   console.log(proc.args.session); // Only set if the application was saved and restored
 
-  // Sets an argument that will be loaded on restore
+  // Sets an argument that will be loaded on restore.
   proc.args.session = 'hello session!';
 
   return proc;
