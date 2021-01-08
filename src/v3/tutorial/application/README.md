@@ -172,12 +172,22 @@ For internal events, see [Core Tutorial](../core/README.md)
 
 ## Resources
 
-You can get an URL to any resource bundled with your application using the resource method:
+You can get an URL to any resource bundled with your application using
+the resource method:
 
 > Application resources are resolved as `/apps/{name}/{resource}`
 
 ```javascript
 const url = proc.resource('/image.png');
+```
+
+Or via webpack with:
+
+> [info] This requires you to use [file-loader](https://webpack.js.org/loaders/file-loader/)
+> in your webpack configuration.
+
+```javascript
+import resource from './resource.ext';
 ```
 
 ## HTTP Requests
