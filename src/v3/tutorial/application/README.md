@@ -101,9 +101,10 @@ Please note that your `package.json` file that your application is published wit
 Typically `index.js`:
 
 ```javascript
+import osjs from 'osjs'; // Webpack external. Same as 'window.OSjs'
 import {name as applicationName} from './metadata.json';
 
-OSjs.make('osjs/packages').register(applicationName, (core, args, options, metadata) => {
+osjs.register(applicationName, (core, args, options, metadata) => {
   const proc = core.make('osjs/application', {args, options, metadata});
 
   // Create your windows etc here
