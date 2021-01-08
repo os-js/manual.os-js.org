@@ -38,7 +38,8 @@ win.render($content => $content.appendChild(
 ));
 ```
 
-See [GUI tutorial](../gui/README.md) on how to use the design user interfaces with the official component libraries.official GUI Component libraries.
+See [GUI tutorial](../gui/README.md) on how to use the design user interfaces with
+the official reactive GUI component library.
 
 ## Options
 
