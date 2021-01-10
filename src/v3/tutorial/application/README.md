@@ -24,7 +24,7 @@ To create a new application package, run the following command inside your OS.js
 
 The `metadata.json` file describes your application and contains a list of files that is required to load the it.
 
-> Remember to run `npm run package:discover` after you change your metadata.
+> [info] Remember to run `npm run package:discover` after you change your metadata.
 
 ```json
 {
@@ -175,7 +175,7 @@ For internal events, see [Core Tutorial](../core/README.md)
 You can get an URL to any resource bundled with your application using
 the resource method:
 
-> Application resources are resolved as `/apps/{name}/{resource}`
+> [info] Application resources are resolved as `/apps/{name}/{resource}`
 
 ```javascript
 const url = proc.resource('/image.png');
@@ -194,7 +194,7 @@ import resource from './resource.ext';
 
 You can set up your own HTTP routes using the internal APIs:
 
-> Application endpoints are resolved as `/apps/{name}/{endpoint}`
+> [info] Application endpoints are resolved as `/apps/{name}/{endpoint}`
 
 ### Client
 
@@ -209,7 +209,7 @@ console.log(response);
 
 In your server script, create a matching endpoint with Express:
 
-> You can access POST body data via `req.body` and GET parameters via `req.query`.
+> [info] You can access POST body data via `req.body` and GET parameters via `req.query`.
 
 ```javascript
 const {routeAuthenticated} = core.make('osjs/express');
@@ -259,7 +259,7 @@ module.exports = (core, proc) => ({
 
 You can also create new WebSocket connections.
 
-> Application endpoints are resolved as `/apps/{name}/{endpoint}`
+> [info] Application endpoints are resolved as `/apps/{name}/{endpoint}`
 
 #### Client
 
@@ -282,7 +282,9 @@ ws.close(); // Closes socket
 
 In your server script, create a matching endpoint with Express:
 
-> You can get the core Websocket server via `core.wss`. You can add properties to the `ws` object in the `app.ws()` method filter out the list of clients from `wss.clients`.
+> [info] You can get the core Websocket server via `core.wss`. You can add
+> properties to the `ws` object in the `app.ws()` method filter out the
+> list of clients from `wss.clients`.
 
 ```javascript
 const endpoint = proc.resource('/socket');
@@ -321,7 +323,8 @@ osjs.register(applicationName, (core, args, options, metadata) => {
 
 When an application is launched, it might contain arguments:
 
-> NOTE: If your application was launched with a file associated to an assigned MIME, the `file` property will be added automatically to the `args` object.
+> [info] If your application was launched with a file associated to an assigned
+> MIME, the `file` property will be added automatically to the `args` object.
 
 ```javascript
 // Launch application with arguments
@@ -374,5 +377,3 @@ Sessions are normally only saved when a user logs out, but you can force this ac
 ```javascript
 core.make('osjs/session').save(); // Promise
 ```
-
-> Sessions are stored via the `Settings` API.
