@@ -1,24 +1,38 @@
 ---
-description: This tutorial will show you how to use a middleware.
+description: This tutorial will show you how to use middleware.
 full_title: Middleware Tutorial
 ---
 
 # Middleware Tutorial
 
-This tutorial will show you how to use a middleware. A middleware is used when an application wants to provide a way for other applications to change its behavior.
+This tutorial will show you how to use middleware.
+
+Applications can register middleware to provide features and change the behavior of other applications.
 
 ## Usage
 
+Register a callback to middleware defined by a group name:
+
 ```javascript
-// To add a callback to a middleware group
-core.make('osjs/middleware').add('middleware-group-name', middlewareCallback);
-// OR
+const middlewareFunction = () => {};
+core.make('osjs/middleware')
+  .add('middleware-group-name', middlewareCallback);
+```
+
+Alternatively you can the global registration function:
+
+```javascript
 import osjs from 'osjs';
 
+const middlewareFunction = () => {};
 osjs.middleware('middleware-group-name', middlewareCallback);
+```
 
-// To get the list of callbacks in a middleware group
-const middlewareCallbacks = core.make('osjs/middleware').get('middleware-group-name');
+To get the list of registered middleware from a group:
+
+```javascript
+const middlewareCallbacks = core.make('osjs/middleware')
+  .get('middleware-group-name'); // => [middlewareFunction]
 ```
 
 ## Example
@@ -27,21 +41,11 @@ In an application like a virus scanner we need to add a "Scan" option in the con
 
 ![Example](example.png)
 
-The [File Manager application](https://github.com/os-js/osjs-filemanager-application) should
-provide a way for other applications to add to its edit/context menu. So, it uses a middleware group for its edit/context menu.
-```javascript
-// File Manager when rendering edit/context menu
-const items = core.make('osjs/middleware').get('osjs/filemanager:menu:edit');
+The [File Manager application](https://github.com/os-js/osjs-filemanager-application) uses middleware to construct the edit (context) menu.
 
-const middlewarePromises = items.map(fn => fn({file, isContextMenu}));
-const middlewareValues = await Promise.all(middlewarePromises);
+You can add your own callbacks to this middleware if you need to for example launch your own application from this menu with the selected file as an argument. The middleware group name the File Manager exposes for this is `osjs/filemanager:menu:edit`.
 
-const middlewareItems = middlewareValues.filter(items => items instanceof Array);
-
-// It adds the items in the `middlewareItems` element to the context/edit menu
-```
-
-To add a callback to this group before launching our application, we need to create a file in our application, that loads on boot.
+To add your own menu entries with this middleware, you first have to change your package metadata:
 
 ```json
 // metadata.json in our application
@@ -55,7 +59,7 @@ To add a callback to this group before launching our application, we need to cre
 }
 ```
 
-Also, we need to change the webpack config and add `middleware.js` as a separate entry.
+Then change the webpack config and add `middleware.js` as a new entry:
 
 ```javascript
 entry: {
@@ -64,7 +68,7 @@ entry: {
 }
 ```
 
-Now, we can use the middleware group in `middleware.js` and add our callback that returns our extra menu options.
+Now the middleware can be added in the `middleware.js` file. In this example a callback is added to provide extra menu options based on options from the other application:
 
 ```javascript
 import osjs from 'osjs';
@@ -75,7 +79,7 @@ osjs.middleware('osjs/filemanager:menu:edit', async (({file, isContextMenu}) => 
   if (isContextMenu) {
     // Add this item only in context menu
     return [{
-      label: 'Scan',
+      label: 'Open in my application',
       disabled: !file || !file.isFile,
       onclick: () => osjs.run('my-app-name', {file})
     }];
