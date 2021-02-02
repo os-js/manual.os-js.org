@@ -107,6 +107,7 @@
   * [Core](tutorial/core/README.md)
   * [Localization](tutorial/locale/README.md)
   * [Bus](tutorial/bus/README.md)
+  * [Middleware](tutorial/middleware/README.md)
   * [Clipboard](tutorial/clipboard/README.md)
   * [Drag-and-Drop](tutorial/dnd/README.md)
   * [IFrames](tutorial/iframe/README.md)

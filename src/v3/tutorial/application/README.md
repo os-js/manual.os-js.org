@@ -22,7 +22,7 @@ To create a new application package, run the following command inside your OS.js
 
 ## Metadata
 
-The `metadata.json` file describes your application and contains a list of files that is required to load the it.
+The `metadata.json` file describes your application and contains a list of files that is required to load on application launch or on boot.
 
 > [info] Remember to run `npm run package:discover` after you change your metadata.
 
@@ -76,10 +76,15 @@ The `metadata.json` file describes your application and contains a list of files
     "^video\/(.*)"
   ],
 
-  // Load these files when launching (usually generated with Webpack)
+  // Load these files (usually generated with Webpack)
   "files": [
+    // Load files on application launch
     "main.js",
-    "main.css"
+    "main.css",
+    // Equivalent to passing simple string "/path/to/file.js"
+    {"filename": "/path/to/file.js", "type": "preload"},
+    // Load file on boot
+    {"filename": "/path/to/file.js", "type": "background"}
   ]
 }
 ```
