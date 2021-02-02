@@ -37,10 +37,6 @@ const middlewareCallbacks = core.make('osjs/middleware')
 
 ## Example
 
-In an application like a virus scanner we need to add a "Scan" option in the context menu of files in the [File Manager application](https://github.com/os-js/osjs-filemanager-application) that opens the scanner application.
-
-![Example](example.png)
-
 The [File Manager application](https://github.com/os-js/osjs-filemanager-application) uses middleware to construct the edit (context) menu.
 
 You can add your own callbacks to this middleware if you need to for example launch your own application from this menu with the selected file as an argument. The middleware group name the File Manager exposes for this is `osjs/filemanager:menu:edit`.
