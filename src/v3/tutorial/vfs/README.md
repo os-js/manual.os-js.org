@@ -25,7 +25,7 @@ console.log(list);
 * `readdir(file) => stat[]` - Reads given directory (see [stat](#stat))
 * `search(root, pattern) => stat[]` - Reads given root directory and searches for a pattern (regexp or wildchar)
 * `readfile(file, type) => *type` - Reads given file (see [encoding](#encoding))
-* `writefile(file, data) => boolean` - Writes to given file
+* `writefile(file, data) => number` - Writes to given file (returns file size if possible)
 * `copy(src, dst) => boolean` - Copy given file/directory
 * `rename(src, dst) => boolean` - Rename or move given file/directory
 * `mkdir(file) => boolean` - Creates given directory
