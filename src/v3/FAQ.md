@@ -85,6 +85,6 @@ If you developed your v2 applications using IFrames or custom frameworks, *trans
 
 ## Q: Is there a matrix channel ?
 
-Yes. There's an unofficial resource for this:
+Gitter can now be used via Matrix officially:
 
-https://matrix.to/#/!lxLFDpQJHZtqePeIUK:matrix.org?via=matrix.org - Matrix channel linked to Gitter. Users without Github accounts can use this service as an alternative with a client like https://riot.im/app.
+https://matrix.to/#/#os-js_OS.js:gitter.im?utm_source=gitter
