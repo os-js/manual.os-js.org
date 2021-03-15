@@ -127,14 +127,14 @@ core.make('osjs/contextmenu', {
   }, {
     label: 'Sub items',
     items: [{
-      label: 'Sub item'
+      label: 'Sub item',
       onclick: ev => console.log('Clicked sub item')
     }, {
-      label: 'Check item 1'
+      label: 'Check item 1',
       checked: true,
       onclick: ev => console.log('Clicked sub item')
     }, {
-      label: 'Check item 2'
+      label: 'Check item 2',
       checked: true,
       onclick: ev => console.log('Clicked sub item')
     }]
