@@ -14,17 +14,20 @@ To try it out, check out the [official online demo](https://demo.os-js.org/). *P
 
 ![ScreenShot](https://www.os-js.org/screenshot.png)
 
-
----
-
-[![Community](https://img.shields.io/badge/join-community-green.svg)](https://community.os-js.org/)
-[![Donate](https://img.shields.io/badge/liberapay-donate-yellowgreen.svg)](https://liberapay.com/os-js/)
-[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=andersevenrud%40gmail%2ecom&lc=NO&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
-[![Support](https://img.shields.io/badge/patreon-support-orange.svg)](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)
-
----
+## Links
 
 * [Join the community chatrooms](https://gitter.im/os-js/OS.js)
 * [Join the community forums](https://community.os-js.org/)
 * [Github repository](https://github.com/os-js/OS.js/)
 * [Github organization](https://github.com/os-js)
+
+## Donate
+
+* [OpenCollective](https://opencollective.com/osjs)
+* [Librepay](https://liberapay.com/os-js/)
+* [Paypal](https://paypal.me/andersevenrud)
+* [Patreon](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)
+* [Github sponsorship](https://github.com/sponsors/andersevenrud)
+* Bitcoin: bc1q8wd9e9xlppr7nft09n4guz89j0cp9gepl606s0
+
+<img src="wallet.png" alt="bitcoin qr code" width="177" height="177" />
