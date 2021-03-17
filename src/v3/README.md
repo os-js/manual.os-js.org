@@ -4,15 +4,13 @@ description: OS.js Web Desktop Manual
 
 # OS.js Manual
 
-**OS.js** is a web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.
+OS.js is an open-source web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.
 
-Can be installed on all platform and runs in any modern web browser.
+**Try it yourself in the [official online demo](https://demo.os-js.org/).**
 
-This manual contains tutorials, articles, resources, developer information and guides on how to use OS.js.
+![Screenshot](https://www.os-js.org/screenshot.png)
 
-To try it out, check out the [official online demo](https://demo.os-js.org/). *Please note that this might be down for maintenance at times, or running an unstable version.*
-
-![ScreenShot](https://www.os-js.org/screenshot.png)
+<iframe src="https://www.youtube.com/embed/bDlbblG4FsE" allowfullscreen style="width: 100%;height: 300px;"></iframe>
 
 ## Links
 

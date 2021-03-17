@@ -1,6 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
+* [Links](README.md#links)
+* [Donate](README.md#donate)
 * [FAQ](FAQ.md)
 
 ----
