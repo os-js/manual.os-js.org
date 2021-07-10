@@ -19,6 +19,7 @@ If you want to submit your contribution, contact me by [email](mailto:contrib@os
 * https://github.com/SpaceboyRoss01/os.js-gba-application - A Gameboy Advanced Emulator
 * https://github.com/SpaceboyRoss01/osjs-nes-application - A NES Emulator
 * https://github.com/SpaceboyRoss01/OS.js-twilioclient-application - A Twilio Client
+* https://github.com/BurnaSmartLab/osjs-office-collabora - Office
 
 ## Providers
 
