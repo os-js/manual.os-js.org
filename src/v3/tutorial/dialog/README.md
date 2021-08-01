@@ -93,34 +93,12 @@ const callbackValue = dialog => 'My value';
 // Same as demonstrated in Usage
 const callbackButton = (button, value) => {};
 
-// The window.render() callback
-const callbackRender = ($content, dialogWindow, dialog) => {};
+// The window.render() wrapper callback
+const callbackRender = ($innerContent, dialogWindow, dialog) => {};
 
 core.make('osjs/dialogs')
   .create(options, callbackValue, callbackButton);
-  .render(callbackRender);
-```
-
-## UI Customization
-
-By default OS.js uses Hyperapp v1 for the dialog GUI, but you can use whatever you want in the render callback.
-
-The buttons will be created for you based on the options you provided:
-
-```javascript
-// Render method
-$content => {
-  app({
-    // state
-  }, {
-    // actions
-  }, (state, actions) => {
-    // For programatic usage, replace 'this' with 'dialog'
-    return this.createView([
-      // your virtual dom here
-    ]);
-  }, $content);
-}
+  .renderCustom(callbackRender);
 ```
 
 Available buttons are:
@@ -131,4 +109,34 @@ Available buttons are:
 * `yes`
 * `no`
 
-You can add your own by giving strings not found in the list above.
+You can add your own by giving strings not found in the list above, or an object:
+
+```javascript
+{
+  label: string,     // Button label
+  name: string,      // The name that is used in the callback function
+  positive?: boolean // Example a "yes" is positive, while "no" is not
+                     // Used for intitial focus resolver
+}
+```
+
+## Using `@osjs/gui` components
+
+Use the `.render()` callback instead of `.renderCustom()` to hook into the base renderer.
+
+This allows you to extend the internal dialog view with `.createView()`:
+
+```javascript
+import {app, h} from 'hyperapp';
+import {ComponentName} from '@osjs/gui';
+
+dialog.render($content => {
+  app({
+    // state
+  }, {
+    // actions
+  }, (state, actions) => dialog.createView([
+    h(ComponentName)
+  ]), $content);
+})
+```
