@@ -302,7 +302,7 @@ app({
   // Creates a new component based on the state and actions created
   const MyListView = listView.component(state.mylistview, actions.mylistview);
 
-  h(Box, {grow: 1, shrink: 1}, [
+  return h(Box, {grow: 1, shrink: 1}, [
     h(MyListView, {box: {grow: 1, shrink: 1}})
   ])
 }, document.body);
