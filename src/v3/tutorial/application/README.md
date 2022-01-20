@@ -297,7 +297,7 @@ core.app.ws(endpoint, (ws, req) => {
   ws.on('message', msg => console.log(msg)); // Message
   ws.on('close', () => console.log('closed')); // Closed
   ws.send('data'); // Sends data
-  ws.close(); // Cloese socket
+  ws.close(); // Closes socket
 });
 ```
 
