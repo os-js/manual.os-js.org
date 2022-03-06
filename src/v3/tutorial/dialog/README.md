@@ -97,7 +97,7 @@ const callbackButton = (button, value) => {};
 const callbackRender = ($innerContent, dialogWindow, dialog) => {};
 
 core.make('osjs/dialogs')
-  .create(options, callbackValue, callbackButton);
+  .create(options, callbackValue, callbackButton)
   .renderCustom(callbackRender);
 ```
 
