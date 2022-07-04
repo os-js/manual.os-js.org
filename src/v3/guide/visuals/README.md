@@ -87,7 +87,8 @@ If you want to simply customize the already provided styles on a window, you can
 > [info] The CSS class is on the root window element.
 
 When constructing a window, provide the following option(s):
-```
+
+```javascript
 {
   id: 'MyWindowId',
   attributes: {
@@ -120,7 +121,7 @@ Add the styles to your client stylesheet file (see above).
 
 When constructing a window, provide the following option:
 
-```javasctipt
+```javascript
 {
   // Using a string:
   template: '<div>Your HTML content here</div>',
