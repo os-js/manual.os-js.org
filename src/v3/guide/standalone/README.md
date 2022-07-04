@@ -13,7 +13,7 @@ Edit your `src/client/config.js` file and add the following setting:
 
 > [info] Remember to rebuild with `npm run build` after you modify the configuration.
 
-```javscript
+```javascript
 {
   standalone: true
 }
@@ -39,7 +39,7 @@ Since requests cannot be made you have to add the package manifest to your confi
 
 Edit your `src/client/config.js` file and add the following setting:
 
-```javscript
+```javascript
 // Import the compiled package metadata
 import metadata from '../../dist/metadata.json';
 
