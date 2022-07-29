@@ -1,10 +1,11 @@
 name: Deploy
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
 jobs:
-  build:
+  deploy:
     if: github.actor == 'andersevenrud' || github.actor ==  'os-js'
     name: Build and deploy
     runs-on: ubuntu-latest
@@ -14,29 +15,62 @@ jobs:
         with:
           node-version: '8.x'
       - name: Global dependencies
-        run: sudo npm install -g gitbook-cli
+        run: |
+          npm install -g \
+          esdoc \
+          esdoc-node \
+          esdoc-standard-plugin \
+          esdoc-publish-html-plugin \
+          esdoc-lint-plugin \
+          esdoc-coverage-plugin \
+          esdoc-accessor-plugin \
+          esdoc-type-inference-plugin \
+          esdoc-external-ecmascript-plugin \
+          esdoc-brand-plugin \
+          esdoc-undocumented-identifier-plugin \
+          esdoc-unexported-identifier-plugin \
+          esdoc-integrate-test-plugin \
+          esdoc-integrate-manual-plugin \
+          esdoc-ecmascript-proposal-plugin
       - name: Local dependencies
         run: npm install
-      - name: Build v3
-        run: gitbook build
-      - name: Build v2
-        run: node index.js
-      - name: Build dist
+      - name: Build manual
+        run: npx gitbook build
+      - name: Build API documentation
         run: |
-          mkdir dist
-          cp public/*.* dist/
-          cp -r _metalsmith dist/v2
-          cp -r _book dist/v3
+          mkdir repos
+          cd repos
+          git clone --depth=1 https://github.com/os-js/osjs-client.git
+          (cd osjs-client && esdoc)
+          git clone --depth=1 https://github.com/os-js/osjs-common.git
+          (cd osjs-common && esdoc)
+          git clone --depth=1 https://github.com/os-js/osjs-dialogs.git
+          (cd osjs-dialogs && esdoc)
+          git clone --depth=1 https://github.com/os-js/osjs-event-emitter.git
+          (cd osjs-event-emitter && esdoc)
+          git clone --depth=1 https://github.com/os-js/osjs-gui.git
+          (cd osjs-gui && esdoc)
+          git clone --depth=1 https://github.com/os-js/osjs-panels.git
+          (cd osjs-panels && esdoc)
+          git clone --depth=1 https://github.com/os-js/osjs-server.git
+          (cd osjs-server && esdoc)
+          git clone --depth=1 https://github.com/os-js/osjs-widgets.git
+          (cd osjs-widgets && esdoc)
+      - name: Create dist
+        run: |
+          mkdir -p dist/api
           echo "${{ secrets.GA_CONTENTS }}" > "dist/${{ secrets.GA_FILENAME }}"
-          echo "${{ secrets.GA_CONTENTS }}" > "dist/v2/${{ secrets.GA_FILENAME }}"
-          echo "${{ secrets.GA_CONTENTS }}" > "dist/v2/${{ secrets.GA_FILENAME }}"
+          cp -r _book/* dist/
+          cp -r repos/osjs-client/doc dist/api/osjs-client
+          cp -r repos/osjs-common/doc dist/api/osjs-common
+          cp -r repos/osjs-dialogs/doc dist/api/osjs-dialogs
+          cp -r repos/osjs-event-emitter/doc dist/api/osjs-event-emitter
+          cp -r repos/osjs-gui/doc dist/api/osjs-gui
+          cp -r repos/osjs-panels/doc dist/api/osjs-panels
+          cp -r repos/osjs-server/doc dist/api/osjs-server
+          cp -r repos/osjs-widgets/doc dist/api/osjs-widgets
       - name: Deploy
-        uses: AEnterprise/rsync-deploy@v1.0
-        env:
-          DEPLOY_KEY: ${{ secrets.RSYNC_SSH_KEY }}
-          ARGS: "-r --delete-after --quiet"
-          SERVER_PORT: ${{ secrets.RSYNC_SSH_PORT }}
-          FOLDER: "./dist/*"
-          SERVER_IP: ${{ secrets.RSYNC_SSH_IP }}
-          USERNAME: ${{ secrets.RSYNC_SSH_USERNAME }}
-          SERVER_DESTINATION: ${{ secrets.RSYNC_SSH_PATH }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
