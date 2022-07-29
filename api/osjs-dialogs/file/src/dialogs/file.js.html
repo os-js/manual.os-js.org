@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/dialogs/file.js | OS.js Dialog API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Dialog API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Dialog API"><meta property="twitter:description" content="OS.js Dialog API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialog.js~Dialog.html">Dialog</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#dialogs">dialogs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/alert.js~AlertDialog.html">AlertDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/choice.js~ChoiceDialog.html">ChoiceDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/color.js~ColorDialog.html">ColorDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/confirm.js~ConfirmDialog.html">ConfirmDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/default-application.js~DefaultApplicationDialog.html">DefaultApplicationDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/file.js~FileDialog.html">FileDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/font.js~FontDialog.html">FontDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/progress.js~ProgressDialog.html">ProgressDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/prompt.js~PromptDialog.html">PromptDialog</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/dialogs/file.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+import {h, app} from &apos;hyperapp&apos;;
+import Dialog from &apos;../dialog&apos;;
+import {
+  TextField,
+  SelectField,
+  listView
+} from &apos;@osjs/gui&apos;;
+
+const getMountpoint = str =&gt; str
+  .split(&apos;:&apos;)[0] + &apos;:/&apos;;
+
+const getMountpoints = core =&gt; core.make(&apos;osjs/fs&apos;)
+  .mountpoints(true)
+  .filter(mount =&gt; {
+    return !(mount.attributes.readOnly &amp;&amp; mount.attributes.visibility === &apos;restricted&apos;);
+  })
+  .reduce((mounts, iter) =&gt; Object.assign(mounts, {
+    [iter.root]: iter.label
+  }), {});
+
+/**
+ * Default OS.js File Dialog
+ */
+export default class FileDialog extends Dialog {
+
+  /**
+   * Constructor
+   * @param {Core} core OS.js Core reference
+   * @param {Object} args Arguments given from service creation
+   * @param {String} [args.title] Dialog title
+   * @param {String} [args.type=&apos;open&apos;] Dialog type (open/save)
+   * @param {String} [args.path] Current path
+   * @param {String} [args.filetype=&apos;file&apos;] Dialog filetype (file/directory)
+   * @param {String} [args.filename] Current filename
+   * @param {String[]} [args.mime] Mime filter
+   * @param {Function} callback The callback function
+   */
+  constructor(core, args, callback) {
+    args = Object.assign({}, {
+      title: null,
+      type: &apos;open&apos;,
+      filetype: &apos;file&apos;,
+      path: core.config(&apos;vfs.defaultPath&apos;),
+      filename: null,
+      mime: []
+    }, args);
+
+    if (typeof args.path === &apos;string&apos;) {
+      args.path = {path: args.path};
+    }
+
+    try {
+      args.path = Object.assign({
+        isDirectory: true,
+        filename: args.path.path.split(&apos;:/&apos;)[1].split(&apos;/&apos;).pop() || &apos;&apos;
+      }, args.path);
+    } catch (e) {
+      console.warn(e);
+    }
+
+    const _ = core.make(&apos;osjs/locale&apos;).translate;
+    const title = args.title
+      ? args.title
+      : (args.type === &apos;open&apos; ? _(&apos;LBL_OPEN&apos;) : _(&apos;LBL_SAVE&apos;));
+
+    super(core, args, {
+      className: &apos;file&apos;,
+      window: {
+        title,
+        attributes: {
+          resizable: true
+        },
+        dimension: {
+          width: 400,
+          height: 400
+        }
+      },
+      buttons: [&apos;ok&apos;, &apos;cancel&apos;]
+    }, callback);
+  }
+
+  render(options) {
+    const getFileIcon = file =&gt; this.core.make(&apos;osjs/fs&apos;).icon(file);
+    const startingLocation = this.args.path;
+
+    super.render(options, ($content) =&gt; {
+      const a = app({
+        mount: startingLocation ? getMountpoint(startingLocation.path) : null,
+        filename: this.args.filename,
+        listview: listView.state({
+          columns: [{
+            label: &apos;Name&apos;
+          }, {
+            label: &apos;Type&apos;
+          }, {
+            label: &apos;Size&apos;
+          }]
+        }),
+        buttons: {
+          ok: this.args.filetype === &apos;directory&apos;
+            ? true
+            : !!this.args.filename
+        }
+      }, {
+        _readdir: ({path, files}) =&gt; (state, actions) =&gt; {
+          const listview = state.listview;
+          listview.selectedIndex = -1;
+          listview.rows = files.map(file =&gt; ({
+            columns: [{
+              label: file.filename,
+              icon: getFileIcon(file)
+            }, file.mime, file.humanSize],
+            data: file
+          }));
+
+          return {path, listview};
+        },
+
+        setButtonState: btn =&gt; state =&gt; ({
+          buttons: Object.assign({}, state.buttons, btn)
+        }),
+
+        setMountpoint: mount =&gt; (state, actions) =&gt; {
+          actions.setPath({path: mount});
+
+          return {mount};
+        },
+
+        setPath: file =&gt; async (state, actions) =&gt; {
+          const files = await this.core.make(&apos;osjs/vfs&apos;)
+            .readdir(file, {
+              filter: (item) =&gt; {
+                if (this.args.filetype === &apos;directory&apos;) {
+                  return item.isDirectory === true;
+                } else if (this.args.mime.length) {
+                  return item.mime
+                    ? this.args.mime.some(test =&gt; (new RegExp(test)).test(item.mime))
+                    : true;
+                }
+
+                return true;
+              }
+            });
+
+          this.args.path = file;
+
+          actions._readdir({path: file.path, files});
+
+          if (this.args.filetype === &apos;file&apos;) {
+            actions.setButtonState({ok: this.args.type === &apos;save&apos; ? !!this.args.filename : false});
+          }
+        },
+
+        setFilename: filename =&gt; state =&gt; ({filename}),
+
+        listview: listView.actions({
+          select: ({data}) =&gt; {
+            a.setFilename(data.isFile ? data.filename : null);
+            this.value = data.isFile ? data : null;
+
+            if (this.args.filetype === &apos;file&apos; &amp;&amp; data.isFile) {
+              a.setButtonState({ok: true});
+            }
+          },
+          activate: ({data, ev}) =&gt; {
+            if (data.isDirectory) {
+              a.setFilename(null);
+              a.setPath(data);
+            } else {
+              this.value = data.isFile ? data : null;
+              this.emitCallback(this.getPositiveButton(), ev, true);
+            }
+          },
+        })
+      }, (state, actions) =&gt; this.createView([
+        h(SelectField, {
+          choices: getMountpoints(this.core),
+          onchange: (ev, val) =&gt; a.setMountpoint(val),
+          value: state.mount
+        }),
+        h(listView.component(Object.assign({
+          box: {grow: 1, shrink: 1}
+        }, state.listview), actions.listview)),
+        h(TextField, {
+          placeholder: &apos;Filename&apos;,
+          value: state.filename,
+          onenter: (ev, value) =&gt; this.emitCallback(this.getPositiveButton(), ev, true),
+          oninput: (ev) =&gt; {
+            const filename = ev.target.value;
+            actions.setButtonState({ok: !!filename});
+            actions.setFilename(filename);
+          },
+          box: {
+            style: {display: this.args.type === &apos;save&apos; ? null : &apos;none&apos;}
+          }
+        })
+      ], state), $content);
+
+      a.setPath(startingLocation);
+    });
+  }
+
+  emitCallback(name, ev, close = false) {
+    if (this.calledBack) {
+      return;
+    }
+
+    const file = this.getValue();
+    const next = () =&gt; super.emitCallback(name, ev, close);
+    const isSave = this.args.type === &apos;save&apos;;
+    const buttonCancel = name === &apos;cancel&apos;;
+    const hasVfs = this.core.has(&apos;osjs/vfs&apos;);
+
+    const confirm = callback =&gt; this.core.make(&apos;osjs/dialog&apos;, &apos;confirm&apos;, {
+      message: `Do you want to overwrite ${file.path}?`
+    }, {
+      parent: this.win,
+      attributes: {modal: true}
+    }, (btn) =&gt; {
+      if (btn === &apos;yes&apos;) {
+        callback();
+      }
+    });
+
+    if (file &amp;&amp; isSave &amp;&amp; hasVfs &amp;&amp; !buttonCancel) {
+      this.core
+        .make(&apos;osjs/vfs&apos;)
+        .exists(file)
+        .then(exists =&gt; {
+          if (exists) {
+            confirm(() =&gt; next());
+          } else {
+            next();
+          }
+        })
+        .catch(error =&gt; {
+          console.error(error);
+          next();
+        });
+    } else {
+      next();
+    }
+  }
+
+  getValue() {
+    if (this.args.type === &apos;save&apos;) {
+      const {path} = this.args.path;
+      const filename = this.win.$content.querySelector(&apos;input[type=text]&apos;)
+        .value;
+
+      return filename
+        ? Object.assign({}, this.args.path, {
+          filename,
+          path: path.replace(/\/?$/, &apos;/&apos;) + filename
+        })
+        : undefined;
+    } else {
+      if (this.args.filetype === &apos;directory&apos;) {
+        return this.args.path;
+      }
+    }
+
+    return super.getValue();
+  }
+
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

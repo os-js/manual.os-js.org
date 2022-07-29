@@ -1,0 +1,3989 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/components/Box.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A flexbox\n * @param {BoxProperties} props Properties\n * @param {string} [props.orientation='horizontal'] Box orientation\n * @param {h[]} children Children\n */\nexport const Box = (props, children) =>\n  h(Element, Object.assign({\n    orientation: 'horizontal'\n  }, props, {\n    class: ['osjs-gui-box', props.class],\n  }), children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Box.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "Box",
+    "memberof": "src/components/Box.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Box.js~Box",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Box.js",
+    "importStyle": "{Box}",
+    "description": "A flexbox",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'horizontal'",
+        "defaultRaw": "'horizontal'",
+        "name": "props.orientation",
+        "description": "Box orientation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/components/BoxContainer.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A flexbox container\n * @param {BoxProperties} props Properties\n * @param {string} [props.orientation='vertical'] Box orientation\n * @param {h[]} children Children\n */\nexport const BoxContainer = (props, children) =>\n  h(Element, Object.assign({}, props, {\n    class: ['osjs-gui-box-container', props.class]\n  }), children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/BoxContainer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "BoxContainer",
+    "memberof": "src/components/BoxContainer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/BoxContainer.js~BoxContainer",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/BoxContainer.js",
+    "importStyle": "{BoxContainer}",
+    "description": "A flexbox container",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'vertical'",
+        "defaultRaw": "'vertical'",
+        "name": "props.orientation",
+        "description": "Box orientation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/components/BoxStyled.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A styled flexbox container\n * @param {BoxProperties} props Properties\n * @param {h[]} children Children\n */\nexport const BoxStyled = (props, children) =>\n  h(Element, Object.assign({}, props, {\n    class: ['osjs-gui-box-styled', props.class]\n  }), children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/BoxStyled.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "BoxStyled",
+    "memberof": "src/components/BoxStyled.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/BoxStyled.js~BoxStyled",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/BoxStyled.js",
+    "importStyle": "{BoxStyled}",
+    "description": "A styled flexbox container",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/components/Button.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Icon} from './Icon';\nimport {createField} from '../element';\n\n/**\n * A button\n * @param {Object} props Properties\n * @param {string} [props.icon] Icon source\n * @param {string} [props.label] Use this as label instead of children\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const Button = (props = {}, children = []) =>\n  createField('button', props, {\n  }, (fieldProps) => {\n    const inner = [];\n    if (props.icon) {\n      inner.push(h(Icon, props.icon));\n    }\n\n    if (typeof props.label === 'string') {\n      inner.push(h('span', {class: 'osjs-label'}, props.label));\n    }\n\n    return h('button', fieldProps, [\n      ...inner,\n      ...children\n    ]);\n  });\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Button.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "Button",
+    "memberof": "src/components/Button.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Button.js~Button",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Button.js",
+    "importStyle": "{Button}",
+    "description": "A button",
+    "lineNumber": 43,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.icon",
+        "description": "Icon source"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.label",
+        "description": "Use this as label instead of children"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
+    "name": "src/components/Element.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\n\n/**\n * Elemet Box definition\n * @property {string} [class] Container class name\n * @property {number} [grow] Flexbox grow value\n * @property {number} [shrink] Flexbox shrink value\n * @property {number|string} [basis] Flexbox basis value\n * @property {string} [align] Flexbox alignItems value\n * @property {string} [justify] Flexbox justifyContent value\n * @property {number|string} [padding] Margin\n * @property {number|string} [margin] Margin\n * @property {string} [key] Hyperapp element key\n * @property {Function} [oncreate] Hyperapp oncreate function\n * @property {Function} [onupdate] Hyperapp onupdate function\n * @property {Function} [ondestroy] Hyperapp ondestroy function\n * @typedef BoxProperties\n */\n\nconst unitValue = (value, unset) => typeof value === 'number'\n  ? `${value}px`\n  : (value === false ? unset : value);\n\nconst boxPropNames = {\n  grow: value => ({flexGrow: value}),\n  shrink: value => ({flexShrink: value}),\n  basis: value => ({flexBasis: unitValue(value, 'auto')}),\n  align: value => ({alignItems: value}),\n  justify: value => ({justifyContent: value}),\n  padding: value => ({margin: unitValue(value, '0')}),\n  margin: value => ({margin: unitValue(value, '0')})\n};\n\n/**\n * A generic OS.js GUI container\n * @param {Object} props Properties\n * @param {h[]} children Children\n */\nexport const Element = (props, children = []) => {\n  const givenClassNames = props.class instanceof Array\n    ? props.class\n    : [props.class];\n\n  const classNames = [\n    'osjs-gui',\n    ...givenClassNames\n  ];\n\n  if (props.orientation) {\n    classNames.push('osjs-gui-' + props.orientation);\n  }\n\n  const defaultStyle = typeof props.style === 'string'\n    ? {}\n    : Object.assign({}, props.style || {});\n\n  const style = Object.keys(props).reduce((result, prop) => {\n    const value = boxPropNames[prop]\n      ? boxPropNames[prop](props[prop])\n      : undefined;\n\n    return Object.assign({}, result, value);\n  }, defaultStyle);\n\n  return h('div', {\n    oncreate: props.oncreate,\n    ondestroy: props.ondestroy,\n    class: classNames.filter(s => !!s).join(' '),\n    style\n  }, children);\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Element.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 57,
+    "kind": "typedef",
+    "name": "BoxProperties",
+    "memberof": "src/components/Element.js",
+    "static": true,
+    "longname": "src/components/Element.js~BoxProperties",
+    "access": "public",
+    "description": "Elemet Box definition",
+    "lineNumber": 50,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "class",
+        "description": "Container class name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "grow",
+        "description": "Flexbox grow value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "shrink",
+        "description": "Flexbox shrink value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "basis",
+        "description": "Flexbox basis value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "align",
+        "description": "Flexbox alignItems value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "justify",
+        "description": "Flexbox justifyContent value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "padding",
+        "description": "Margin"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number",
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "margin",
+        "description": "Margin"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "key",
+        "description": "Hyperapp element key"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "oncreate",
+        "description": "Hyperapp oncreate function"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "onupdate",
+        "description": "Hyperapp onupdate function"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "ondestroy",
+        "description": "Hyperapp ondestroy function"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ],
+      "optional": false,
+      "name": "BoxProperties"
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "boxPropNames",
+    "memberof": "src/components/Element.js",
+    "static": true,
+    "longname": "src/components/Element.js~boxPropNames",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Element.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"grow\": *, \"shrink\": *, \"basis\": *, \"align\": *, \"justify\": *, \"padding\": *, \"margin\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "Element",
+    "memberof": "src/components/Element.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Element.js~Element",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Element.js",
+    "importStyle": "{Element}",
+    "description": "A generic OS.js GUI container",
+    "lineNumber": 69,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/components/Expander.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\nimport nestable from 'hyperapp-nestable';\n\nconst view = (state, actions) => (props, children) => {\n  return h(Element, Object.assign({}, props.box || {}, {\n    class: ['osjs-gui-expander-wrapper']\n  }), [\n    h('div', {\n      class: 'osjs-gui-expander-header',\n      onclick: ev => actions.ontoggle({\n        ev,\n        active: !state.active,\n        ontoggle: props.ontoggle\n      })\n    }, [\n      h('div', {\n        class: 'osjs-gui-expander-header-icon',\n        'data-active': String(state.active)\n      }),\n      h('div', {\n        class: 'osjs-gui-expander-header-label'\n      }, props.label)\n    ]),\n    h('div', {\n      class: 'osjs-gui-expander-content',\n      style: {\n        display: state.active === false ? 'none' : undefined\n      }\n    }, children)\n  ]);\n};\n\nconst inner = nestable({\n  active: true\n}, {\n  init: props => ({\n    ative: props.active !== false\n  }),\n  ontoggle: ({ev, active, ontoggle}) => {\n    const cb = ontoggle || function() {};\n    cb(ev, active);\n    return {active};\n  }\n}, view, 'div');\n\n/**\n * A status bar\n * @param {Object} props Properties\n * @param {boolean} [props.active] Active state\n * @param {Function} [props.ontoggle] Toggle callback => (ev, active)\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const Expander = (props, children) =>\n  h(inner, Object.assign({}, props, {\n    class: 'osjs-gui osjs-gui-expander'\n  }), children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Expander.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "view",
+    "memberof": "src/components/Expander.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Expander.js~view",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Expander.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "inner",
+    "memberof": "src/components/Expander.js",
+    "static": true,
+    "longname": "src/components/Expander.js~inner",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Expander.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 64,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "Expander",
+    "memberof": "src/components/Expander.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Expander.js~Expander",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Expander.js",
+    "importStyle": "{Expander}",
+    "description": "A status bar",
+    "lineNumber": 85,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.active",
+        "description": "Active state"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.ontoggle",
+        "description": "Toggle callback => (ev, active)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/components/Icon.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\n\n/**\n * An icon\n * @param {Object} props Properties\n * @param {string} props.src Icon src\n * @param {string} [props.name] Icon name\n * @param {h[]} children Children\n */\nexport const Icon = (props, children) => {\n  const i = props && typeof props === 'object'\n    ? props.src\n    : props;\n\n  const n = props && typeof props === 'object'\n    ? props.name\n    : undefined;\n\n  return h('i', {\n    'data-icon': n,\n    class: 'osjs-icon',\n    style: {\n      backgroundImage: typeof props === 'string' ? `url(${i})` : undefined\n    }\n  });\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Icon.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "Icon",
+    "memberof": "src/components/Icon.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Icon.js~Icon",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Icon.js",
+    "importStyle": "{Icon}",
+    "description": "An icon",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.src",
+        "description": "Icon src"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.name",
+        "description": "Icon name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/components/IconView.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {doubleTap} from '../utils';\nimport {Element} from './Element';\nimport {Icon} from './Icon';\n\nconst tapper = doubleTap();\n\nexport const IconViewEntry = (entry, index, props) => () => {\n  const icon = entry.icon || {name: 'application-x-executable'};\n  const selected = props.selectedIndex === index;\n\n  return h('div', {\n    class: 'osjs-gui-icon-view-entry' + (selected ? ' osjs__active' : ''),\n    ontouchstart: (ev) => tapper(ev, () => props.onactivate({data: entry.data, index, ev})),\n    ondblclick: (ev) => props.onactivate({data: entry.data, index, ev}),\n    onclick: (ev) => props.onselect({data: entry.data, index, ev}),\n    oncontextmenu: (ev) => props.oncontextmenu({data: entry.data, index, ev}),\n    oncreate: (el) => props.oncreate({data: entry.data, index, el})\n  }, [\n    h('div', {class: 'osjs__container'}, [\n      h('div', {class: 'osjs__image'}, [\n        h(Icon, icon)\n      ]),\n      h('div', {class: 'osjs__label'}, [\n        h('span', {}, entry.label)\n      ])\n    ])\n  ]);\n};\n\nexport const IconView = (props) => {\n  const inner = h('div', {\n    class: 'osjs-gui-icon-view-wrapper',\n    oncreate: el => (el.scrollTop = props.scrollTop),\n    onupdate: el => {\n      if (props.selectedIndex < 0) {\n        el.scrollTop = props.scrollTop;\n      }\n    }\n  }, props.entries.map((entry, index) => {\n    return h(IconViewEntry(entry, index, props));\n  }));\n\n  return h(Element, Object.assign({\n    class: 'osjs-gui-icon-view'\n  }, props.box || {}), inner);\n};\n\nexport const iconView = ({\n  component: (state, actions) => {\n    const newProps = Object.assign({\n      entries: [],\n      onselect: ({data, index, ev}) => {\n        actions.select({data, index, ev});\n        actions.setSelectedIndex(index);\n      },\n      onactivate: ({data, index, ev}) => {\n        actions.activate({data, index, ev});\n        actions.setSelectedIndex(-1);\n      },\n      oncontextmenu: ({data, index, ev}) => {\n        actions.select({data, index, ev});\n        actions.contextmenu({data, index, ev});\n        actions.setSelectedIndex(index);\n      },\n      oncreate: (args) => {\n        actions.created(args);\n      }\n    }, state);\n\n    return (props = {}) => IconView(Object.assign(newProps, props));\n  },\n\n  state: state => Object.assign({\n    selectedIndex: -1,\n    scrollTop: 0\n  }, state),\n\n  actions: actions => Object.assign({\n    select: () => () => ({}),\n    activate: () => () => ({}),\n    contextmenu: () => () => ({}),\n    created: () => () => ({}),\n    setEntries: entries => () => ({entries}),\n    setScrollTop: scrollTop => state => ({scrollTop}),\n    setSelectedIndex: selectedIndex => state => ({selectedIndex}),\n  }, actions || {})\n});\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/IconView.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "tapper",
+    "memberof": "src/components/IconView.js",
+    "static": true,
+    "longname": "src/components/IconView.js~tapper",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/IconView.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "IconViewEntry",
+    "memberof": "src/components/IconView.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/IconView.js~IconViewEntry",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/IconView.js",
+    "importStyle": "{IconViewEntry}",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entry",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "index",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "IconView",
+    "memberof": "src/components/IconView.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/IconView.js~IconView",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/IconView.js",
+    "importStyle": "{IconView}",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "params": [
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "iconView",
+    "memberof": "src/components/IconView.js",
+    "static": true,
+    "longname": "src/components/IconView.js~iconView",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/IconView.js",
+    "importStyle": "{iconView}",
+    "description": null,
+    "lineNumber": 79,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"component\": *, \"state\": *, \"actions\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/components/Iframe.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {filteredProps} from '../utils';\nimport {Element} from './Element';\n\n/**\n * A iframe\n * @param {Object} props Properties\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const Iframe = (props, children = []) =>\n  h(Element, Object.assign({}, props.box || {}, {\n    class: ['osjs-gui-iframe', props.class]\n  }), [\n    h('iframe', Object.assign({\n      frameborder: 0\n    }, filteredProps(props, ['box']))),\n    ...children\n  ]);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Iframe.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "Iframe",
+    "memberof": "src/components/Iframe.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Iframe.js~Iframe",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Iframe.js",
+    "importStyle": "{Iframe}",
+    "description": "A iframe",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/components/Image.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\n\n/**\n * A image\n * @param {Object} props Properties\n * @param {String} props.src The image source\n * @param {String} [props.alt] The image alternate text\n * @param {number} [props.width] Image width\n * @param {number} [props.height] Image height\n * @param {Function} [props.onload] On loaded data event\n * @param {Function} [props.oncreate] Hyperapp oncreate function\n * @param {Function} [props.onupdate] Hyperapp onupdate function\n * @param {Function} [props.ondestroy] Hyperapp ondestroy function\n */\nexport const Image = (props, children) =>\n  h('div', {\n    class: 'osjs-gui osjs-gui-image',\n    style: {\n      width: props.width ? String(props.width) + 'px' : undefined,\n      height: props.height ? String(props.height) + 'px' : undefined\n    }\n  }, h('img', props));\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Image.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "Image",
+    "memberof": "src/components/Image.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Image.js~Image",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Image.js",
+    "importStyle": "{Image}",
+    "description": "A image",
+    "lineNumber": 45,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.src",
+        "description": "The image source"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.alt",
+        "description": "The image alternate text"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.width",
+        "description": "Image width"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.height",
+        "description": "Image height"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.onload",
+        "description": "On loaded data event"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.oncreate",
+        "description": "Hyperapp oncreate function"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.onupdate",
+        "description": "Hyperapp onupdate function"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.ondestroy",
+        "description": "Hyperapp ondestroy function"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "src/components/Label.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A label element\n * @param {Object} props Properties\n * @param {string} [props.text] Label Text\n * @param {string} [props.placement] Placement\n * @param {string} [props.for] The \"for\" attribute\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const Label = (props = {}, children = []) => {\n  const placement = props.placement || 'top';\n  const text = props.text || '';\n\n  const elementProps = Object.assign({\n    class: ['osjs-gui-field-label', 'osjs-gui-field-label-on-' + placement]\n  }, props.box || {});\n\n  return h(Element, elementProps, [\n    h('label', {for: props.for}, text),\n    children\n  ]);\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Label.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "Label",
+    "memberof": "src/components/Label.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Label.js~Label",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Label.js",
+    "importStyle": "{Label}",
+    "description": "A label element",
+    "lineNumber": 43,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.text",
+        "description": "Label Text"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.placement",
+        "description": "Placement"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.for",
+        "description": "The \"for\" attribute"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "file",
+    "name": "src/components/ListView.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {filteredProps, doubleTap} from '../utils';\nimport {Element} from './Element';\nimport {Icon} from './Icon';\n\nconst tapper = doubleTap();\n\nconst createView = props => {\n  let debounceScroll;\n\n  const cols = (paneIndex) => (row, rowIndex) => {\n    const col = row.columns[paneIndex] || {};\n    const selected = props.selectedIndex === rowIndex;\n    const colIcon = col.icon ? h(Icon, col.icon) : null;\n    const children = [h('span', {}, [typeof col === 'object' ? col.label : col])];\n\n    if (colIcon) {\n      children.unshift(colIcon);\n    }\n\n    return h('div', {\n      key: row.key,\n      'data-has-icon': col.icon ? true : undefined,\n      class: 'osjs-gui-list-view-cell' + (selected ? ' osjs__active' : ''),\n      ontouchstart: (ev) => tapper(ev, () => props.onactivate({data: row.data, index: rowIndex, ev})),\n      ondblclick: (ev) => props.onactivate({data: row.data, index: rowIndex, ev}),\n      onclick: (ev) => props.onselect({data: row.data, index: rowIndex, ev}),\n      oncontextmenu: (ev) => props.oncontextmenu({data: row.data, index: rowIndex, ev}),\n      oncreate: (el) => props.oncreate({data: row.data, index: rowIndex, el})\n    }, children);\n  };\n\n  const pane = (index, col) => h('div', {\n    class: 'osjs-gui-list-view-pane',\n    style: col.style || {}\n  }, [\n    h('div', {\n      class: 'osjs-gui-list-view-header',\n      style: {\n        display: props.hideColumns ? 'none' : undefined\n      }\n    }, h('span', {}, typeof col === 'object' ? col.label : col)),\n    h('div', {\n      class: 'rows',\n      'data-zebra': String(props.zebra)\n    }, props.rows.map(cols(index)))\n  ]);\n\n  return h('div', {\n    class: 'osjs-gui-list-view-wrapper',\n    onscroll: ev => {\n      debounceScroll = clearTimeout(debounceScroll);\n      debounceScroll = setTimeout(() => {\n        props.onscroll(ev);\n      }, 100);\n    },\n    oncreate: el => (el.scrollTop = props.scrollTop),\n    onupdate: el => {\n      if (props.selectedIndex < 0) {\n        el.scrollTop = props.scrollTop;\n      }\n    }\n  }, props.columns.map((c, i) => pane(i, c)));\n};\n\nexport const ListView = props => h(Element, Object.assign({\n  class: 'osjs-gui-list-view'\n}, props.box || {}), createView(filteredProps(props, ['box'])));\n\nexport const listView = ({\n  component: (state, actions) => {\n    const newProps = Object.assign({\n      zebra: true,\n      columns: [],\n      rows: [],\n      onselect: ({data, index, ev}) => {\n        actions.select({data, index, ev});\n        actions.setSelectedIndex(index);\n      },\n      onactivate: ({data, index, ev}) => {\n        actions.activate({data, index, ev});\n        actions.setSelectedIndex(-1);\n      },\n      oncontextmenu: ({data, index, ev}) => {\n        actions.select({data, index, ev});\n        actions.contextmenu({data, index, ev});\n        actions.setSelectedIndex(index);\n      },\n      oncreate: (args) => {\n        actions.created(args);\n      },\n      onscroll: (ev) => {\n        actions.scroll(ev);\n      }\n    }, state);\n\n    return (props = {}) => ListView(Object.assign(newProps, props));\n  },\n\n  state: state => Object.assign({\n    selectedIndex: -1,\n    scrollTop: 0\n  }, state),\n\n  actions: actions => Object.assign({\n    select: () => () => ({}),\n    activate: () => () => ({}),\n    contextmenu: () => () => ({}),\n    created: () => () => ({}),\n    scroll: () => state => state,\n    setRows: rows => ({rows}),\n    setColumns: columns => ({columns}),\n    setScrollTop: scrollTop => state => ({scrollTop}),\n    setSelectedIndex: selectedIndex => state => ({selectedIndex})\n  }, actions || {})\n});\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/ListView.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "tapper",
+    "memberof": "src/components/ListView.js",
+    "static": true,
+    "longname": "src/components/ListView.js~tapper",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/ListView.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "createView",
+    "memberof": "src/components/ListView.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/ListView.js~createView",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/ListView.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "ListView",
+    "memberof": "src/components/ListView.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/ListView.js~ListView",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/ListView.js",
+    "importStyle": "{ListView}",
+    "description": null,
+    "lineNumber": 96,
+    "undocument": true,
+    "params": [
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "listView",
+    "memberof": "src/components/ListView.js",
+    "static": true,
+    "longname": "src/components/ListView.js~listView",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/ListView.js",
+    "importStyle": "{listView}",
+    "description": null,
+    "lineNumber": 100,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"component\": *, \"state\": *, \"actions\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "file",
+    "name": "src/components/Menu.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Icon} from './Icon';\n\nconst ul = (props, children = [], level = 0) => {\n\n  const label = child => {\n    const children = [];\n\n    if (child.type === 'checkbox' || typeof child.checked === 'boolean') {\n      children.push(h('span', {\n        class: 'osjs-gui-menu-checkbox ' + (child.checked ? 'active' : '')\n      }));\n    } else if (child.icon) {\n      children.push(h(Icon, child.icon));\n    }\n\n    children.push(h('span', {}, child.label));\n\n    return children;\n  };\n\n  const inner = (props, child) => {\n    if (typeof child.element === 'function') {\n      return child.element();\n    }\n\n    const className = child.type === 'separator'\n      ? 'osjs-gui-menu-separator'\n      : 'osjs-gui-menu-label ' + (child.disabled ? 'osjs__disabled' : '');\n\n    const children = [\n      h('span', {class: className}, label(child))\n    ];\n\n    if (child.items) {\n      children.push(ul(props, child.items, level + 1));\n    }\n\n    return children;\n  };\n\n  return h('ul', {\n    class: ''\n  }, children.map(\n    child => h('li', {\n      class: 'osjs-gui-menu-entry'\n    }, [\n      h('div', {\n        class: 'osjs-gui-menu-container',\n        'data-has-image': child.icon ? true : undefined,\n        'data-has-children': child.items ? true : undefined,\n        onmouseover: child.items ? props.onshow : undefined,\n        ontouchend: child.items ? props.onshow : undefined,\n        onclick: (ev) => {\n          if (child.items) {\n            return;\n          }\n\n          if (child.onclick) {\n            child.onclick(child, ev);\n          }\n\n          if (props.onclick) {\n            props.onclick(child, ev, child);\n          }\n        }\n      }, inner(props, child))\n    ])\n  ));\n};\n\n/**\n * Menu tree\n * @property {String} label Label\n * @property {String} [icon] Icon source\n * @property {Boolean} [disabled] Disabled state\n * @property {Boolean} [closeable] Disable close on click\n * @property {Function} [element] A callback that returns a virtual DOM element (ex. Hyperapp)\n * @property {Function} onclick Click callback\n * @property {MenuItems} [items] Child items\n * @typedef MenuItems\n */\n\n/**\n * A menu\n * @param {Object} props Properties\n * @param {Boolean} [props.visible=true] Visible property\n * @param {Object} [posprops.ition] Position\n * @param {MenuItems} [props.menu] Menu items\n */\nexport const Menu = (props) => h('div', {\n  id: 'osjs-context-menu',\n  className: 'osjs-gui osjs-gui-menu',\n  oncreate: props.oncreate,\n  onupdate: props.onupdate,\n  style: {\n    display: props.visible !== false ? 'block' : 'none',\n    top: props.position ? String(props.position.top) + 'px' : 0,\n    left: props.position ? String(props.position.left) + 'px' : 0\n  }\n}, ul(props, props.menu));\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Menu.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "ul",
+    "memberof": "src/components/Menu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Menu.js~ul",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Menu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "children",
+        "optional": true,
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [],
+        "defaultValue": "[]"
+      },
+      {
+        "name": "level",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "typedef",
+    "name": "MenuItems",
+    "memberof": "src/components/Menu.js",
+    "static": true,
+    "longname": "src/components/Menu.js~MenuItems",
+    "access": "public",
+    "description": "Menu tree",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "label",
+        "description": "Label"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "icon",
+        "description": "Icon source"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "disabled",
+        "description": "Disabled state"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "closeable",
+        "description": "Disable close on click"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "element",
+        "description": "A callback that returns a virtual DOM element (ex. Hyperapp)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "onclick",
+        "description": "Click callback"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "MenuItems"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "items",
+        "description": "Child items"
+      }
+    ],
+    "type": {
+      "types": [
+        "*"
+      ],
+      "optional": false,
+      "name": "MenuItems"
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "Menu",
+    "memberof": "src/components/Menu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Menu.js~Menu",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Menu.js",
+    "importStyle": "{Menu}",
+    "description": "A menu",
+    "lineNumber": 121,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "true",
+        "defaultRaw": true,
+        "name": "props.visible",
+        "description": "Visible property"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "posprops.ition",
+        "description": "Position"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "MenuItems"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.menu",
+        "description": "Menu items"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/components/Menubar.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A menubar item\n * @param {Object} props Properties\n * @param {h[]} children Children\n */\nexport const MenubarItem = (props, children = []) => {\n  const {onclick, data} = props;\n\n  return h('div', {\n    onclick: (ev) => {\n      if (typeof onclick === 'function') {\n        const parentNode = ev.target.parentNode;\n        const index = Array.prototype.indexOf.call(parentNode.children, ev.target);\n\n        onclick(ev, data || {}, index);\n      }\n    }\n  }, h('span', {}, children));\n};\n\n/**\n * A menubar container\n * @param {BoxProperties} [props] Box Properties\n * @param {MenubarItem[]} [props.items] Array of object\n * @param {h[]} children Children\n */\nexport const Menubar = (props, children = []) =>\n  h(Element, Object.assign({}, props, {\n    class: ['osjs-gui-menubar', props.class]\n  }), [\n    ...(props.items || []).map(item => h(MenubarItem, {\n      data: item.data,\n      onclick: (item.onclick || props.onclick)\n    }, item.label)),\n    ...children\n  ]);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Menubar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "MenubarItem",
+    "memberof": "src/components/Menubar.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Menubar.js~MenubarItem",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Menubar.js",
+    "importStyle": "{MenubarItem}",
+    "description": "A menubar item",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "Menubar",
+    "memberof": "src/components/Menubar.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Menubar.js~Menubar",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Menubar.js",
+    "importStyle": "{Menubar}",
+    "description": "A menubar container",
+    "lineNumber": 60,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "MenubarItem[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.items",
+        "description": "Array of object"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/components/Panes.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport nestable from 'hyperapp-nestable';\nimport {Element} from './Element';\n\nconst onmousedown = (ev, actions, orientation) => {\n  const {target, clientX, clientY} = ev;\n  const pane = target.previousSibling;\n  const {offsetWidth, offsetHeight} = pane;\n  const index = Array.from(target.parentNode.children).indexOf(pane);\n  const maxWidth = pane.parentNode.offsetWidth * 0.8;\n  const maxHeight = pane.parentNode.offsetHeight * 0.8;\n\n  if (index < 0) {\n    return;\n  }\n\n  const mousemove = ev => {\n    ev.preventDefault();\n\n    let size = orientation === 'vertical' ? offsetWidth : offsetHeight;\n\n    if (orientation === 'vertical') {\n      const diffX = ev.clientX - clientX;\n      size = Math.min(maxWidth, size + diffX);\n    } else {\n      const diffY = ev.clientY - clientY;\n      size = Math.min(maxHeight, size + diffY);\n    }\n\n    actions.setSize({index, size});\n  };\n\n  const mouseup = ev => {\n    ev.preventDefault();\n    document.removeEventListener('mousemove', mousemove);\n    document.removeEventListener('mouseup', mouseup);\n  };\n\n  ev.preventDefault();\n  document.addEventListener('mousemove', mousemove);\n  document.addEventListener('mouseup', mouseup);\n};\n\nconst panes = (state, actions, children, orientation) => {\n  const spacers = Array(Math.ceil(children.length / 2))\n    .fill(null)\n    .map(() => h('div', {\n      class: 'osjs-gui-panes-spacer',\n      onmousedown: ev => onmousedown(ev, actions, orientation)\n    }));\n\n  const child = (c, i) => {\n    const w = state.sizes[i] ? String(state.sizes[i]) + 'px' : undefined;\n\n    return h('div', {\n      class: 'osjs-gui-panes-pane',\n      style: {\n        flex: w ? `0 0 ${w}` : w\n      }\n    }, c);\n  };\n\n  return children\n    .map(child)\n    .map((v, i) => [v, spacers[i]])\n    .reduce((a, b) => a.concat(b))\n    .filter(v => typeof v !== 'undefined');\n};\n\nconst view = (state, actions) => (props, children) => {\n  const orientation = props.orientation || 'vertical';\n\n  return h(Element, {\n    orientation,\n    class: 'osjs-gui-panes-inner'\n  }, panes(state, actions, children, orientation));\n};\n\nconst inner = nestable({\n  sizes: []\n}, {\n  init: props => ({sizes: props.sizes || [150]}),\n  setSize: ({index, size}) => state => {\n    const sizes = [].concat(state.sizes);\n    sizes[index] = size;\n    return {sizes};\n  }\n}, view, 'div');\n\n/**\n * Resizable panes\n * @param {Object} props Properties\n * @param {string} [props.orientation='vertical'] Pane orientation\n * @param {number[]} [props.sizes] Pane sizes\n * @param {h[]} children Children\n */\nexport const Panes = (props, children) => h(inner, {\n  class: 'osjs-gui-panes'\n}, children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Panes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "function",
+    "name": "onmousedown",
+    "memberof": "src/components/Panes.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Panes.js~onmousedown",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Panes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ev",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "orientation",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "panes",
+    "memberof": "src/components/Panes.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Panes.js~panes",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Panes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 74,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "children",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "orientation",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "function",
+    "name": "view",
+    "memberof": "src/components/Panes.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Panes.js~view",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Panes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 100,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "inner",
+    "memberof": "src/components/Panes.js",
+    "static": true,
+    "longname": "src/components/Panes.js~inner",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Panes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 109,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "Panes",
+    "memberof": "src/components/Panes.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Panes.js~Panes",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Panes.js",
+    "importStyle": "{Panes}",
+    "description": "Resizable panes",
+    "lineNumber": 127,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'vertical'",
+        "defaultRaw": "'vertical'",
+        "name": "props.orientation",
+        "description": "Pane orientation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.sizes",
+        "description": "Pane sizes"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/components/Progressbar.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A progress bar\n * @param {Object} props Properties\n * @param {number} [props.value] The value (percentage)\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const Progressbar = (props, children = []) => {\n  let value = typeof props.value === 'number'\n    ? Math.min(100, Math.max(0, Math.abs(props.value)))\n    : 0;\n\n  const c = h('div', {class: 'osjs-gui-progressbar-wrapper'}, [\n    h('div', {\n      className: 'osjs-gui-progressbar-value',\n      style: {\n        width: String(value) + '%'\n      }\n    }),\n    h('div', {\n      className: 'osjs-gui-progressbar-label',\n    }, [\n      h('span', {}, [\n        String(value) + '%'\n      ])\n    ])\n  ]);\n\n  return h(Element, Object.assign({}, props.box || {}, {\n    class: ['osjs-gui-progressbar', props.class]\n  }), [\n    c,\n    ...children\n  ]);\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Progressbar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "function",
+    "name": "Progressbar",
+    "memberof": "src/components/Progressbar.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Progressbar.js~Progressbar",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Progressbar.js",
+    "importStyle": "{Progressbar}",
+    "description": "A progress bar",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.value",
+        "description": "The value (percentage)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/components/RangeField.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {createField} from '../element';\n\n/**\n * A range field\n * @param {Object} props Properties\n * @param {string} [props.min] Minimum value\n * @param {string} [props.max] Maximum value\n * @param {string} [props.value] Value\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const RangeField = (props = {}, children = []) =>\n  createField('range-field', props, {\n    type: 'range'\n  }, (fieldProps) => h('input', fieldProps));\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/RangeField.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "RangeField",
+    "memberof": "src/components/RangeField.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/RangeField.js~RangeField",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/RangeField.js",
+    "importStyle": "{RangeField}",
+    "description": "A range field",
+    "lineNumber": 43,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.min",
+        "description": "Minimum value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.max",
+        "description": "Maximum value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.value",
+        "description": "Value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/components/SelectField.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {createField} from '../element';\n\n/**\n * A text field\n * @param {Object} props Properties\n * @param {string} [props.value] Value\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const SelectField = (props = {}, children = []) => {\n\n  const getChoices = choices => choices instanceof Array\n    ? choices.map(value => typeof value === 'object' ? value : {value, label: value})\n    : Object.keys(props.choices || {})\n      .map(value => ({value, label: props.choices[value]}));\n\n  const choices = getChoices(props.choices)\n    .map(({value, label}) => {\n      return h('option', {\n        value,\n        selected: props.value === value\n      }, label);\n    });\n\n  const getValue = ev => [ev.target.value, ev.target.textContent];\n  const createSelect = fieldProps => h('div', {}, h('select', fieldProps, [\n    ...choices,\n    ...children\n  ]));\n\n  return createField('select-field', props, {\n    selectedIndex: undefined\n  }, createSelect, getValue);\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/SelectField.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "SelectField",
+    "memberof": "src/components/SelectField.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/SelectField.js~SelectField",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/SelectField.js",
+    "importStyle": "{SelectField}",
+    "description": "A text field",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.value",
+        "description": "Value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/components/Statusbar.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A status bar\n * @param {Object} props Properties\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const Statusbar = (props, children) =>\n  h(Element, Object.assign({}, props.box || {}, {\n    class: ['osjs-gui-statusbar', props.class]\n  }), children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Statusbar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "Statusbar",
+    "memberof": "src/components/Statusbar.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Statusbar.js~Statusbar",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Statusbar.js",
+    "importStyle": "{Statusbar}",
+    "description": "A status bar",
+    "lineNumber": 40,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/components/Tabs.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport nestable from 'hyperapp-nestable';\n\nconst headers = ({labels, onchange, oncontextmenu}, state, actions) => (labels || [])\n  .map((label, index) => h('div', {\n    class: state.selectedIndex === index ? 'osjs__active' : '',\n    oncontextmenu: ev => {\n      (oncontextmenu || function() {})(ev, index, label);\n    },\n    onclick: ev => {\n      actions.setSelectedIndex(index);\n      (onchange || function() {})(ev, index, label);\n    }\n  }, h('span', {}, label)));\n\nconst panes = (state, children) => children\n  .map((child, index) => h('div', {\n    class: state.selectedIndex === index ? 'osjs__active' : ''\n  }, child));\n\nconst view = nestable({\n  selectedIndex: 0\n}, {\n  init: props => ({\n    selectedIndex: props.selectedIndex || 0\n  }),\n  setSelectedIndex: selectedIndex => state => ({selectedIndex})\n}, (state, actions) => (props, children) => h('div', {\n  class: 'osjs-gui-tabs-wrapper'\n}, [\n  h('div', {class: 'osjs-gui-tabs-header'}, headers(props, state, actions)),\n  h('div', {class: 'osjs-gui-tabs-panes'}, panes(state, children))\n]), 'div');\n\n/**\n * A tab container\n * @param {Object} props Properties\n * @param {String[]} props.labels Labels\n * @param {h[]} children Tabs\n */\nexport const Tabs = (props, children) => h(view, Object.assign({\n  class: 'osjs-gui osjs-gui-tabs ' + (props.class || '')\n}, props), children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Tabs.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "function",
+    "name": "headers",
+    "memberof": "src/components/Tabs.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Tabs.js~headers",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Tabs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"labels\": *, \"onchange\": *, \"oncontextmenu\": *}"
+        ],
+        "defaultRaw": {
+          "labels": null,
+          "onchange": null,
+          "oncontextmenu": null
+        },
+        "defaultValue": "{\"labels\":null,\"onchange\":null,\"oncontextmenu\":null}"
+      },
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "function",
+    "name": "panes",
+    "memberof": "src/components/Tabs.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Tabs.js~panes",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Tabs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "children",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "view",
+    "memberof": "src/components/Tabs.js",
+    "static": true,
+    "longname": "src/components/Tabs.js~view",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Tabs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "function",
+    "name": "Tabs",
+    "memberof": "src/components/Tabs.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Tabs.js~Tabs",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Tabs.js",
+    "importStyle": "{Tabs}",
+    "description": "A tab container",
+    "lineNumber": 71,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.labels",
+        "description": "Labels"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Tabs"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 108,
+    "kind": "file",
+    "name": "src/components/TextField.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {createField} from '../element';\n\n/**\n * A text field\n * @param {Object} props Properties\n * @param {string} [props.value] Value\n * @param {string} [props.type=text] Type\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const TextField = (props = {}, children = []) =>\n  createField('text-field', props, {\n    autocomplete: 'off',\n    autocorrect: 'off',\n    autocapitalize: 'off',\n    spellcheck: 'false',\n    type: 'text'\n  }, (fieldProps) => h('input', fieldProps));\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/TextField.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "TextField",
+    "memberof": "src/components/TextField.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/TextField.js~TextField",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/TextField.js",
+    "importStyle": "{TextField}",
+    "description": "A text field",
+    "lineNumber": 42,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.value",
+        "description": "Value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "text",
+        "defaultRaw": "text",
+        "name": "props.type",
+        "description": "Type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "src/components/TextareaField.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {createField} from '../element';\n\n/**\n * A text field\n * @param {Object} props Properties\n * @param {string} [props.value] Value\n * @param {number} [props.rows=4] Number of rows\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const TextareaField = (props = {}, children = []) =>\n  createField('textarea-field', props, {\n    rows: 4\n  }, (fieldProps) => h('textarea', fieldProps, children));\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/TextareaField.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "function",
+    "name": "TextareaField",
+    "memberof": "src/components/TextareaField.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/TextareaField.js~TextareaField",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/TextareaField.js",
+    "importStyle": "{TextareaField}",
+    "description": "A text field",
+    "lineNumber": 42,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.value",
+        "description": "Value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "4",
+        "defaultRaw": 4,
+        "name": "props.rows",
+        "description": "Number of rows"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 112,
+    "kind": "file",
+    "name": "src/components/ToggleField.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {createField} from '../element';\n\n/*\n * Parses option value\n */\nconst parseValue = value => {\n  try {\n    return JSON.parse(value);\n  } catch (e) {\n    return value;\n  }\n};\n\n/**\n * A text field\n * @param {Object} props Properties\n * @param {string} [props.checked] Value\n * @param {string} [props.type=checkbox] Type\n * @param {BoxProperties} [props.box] Box Properties\n * @param {h[]} children Children\n */\nexport const ToggleField = (props = {}, children = []) =>\n  createField('toggle-field', props, {\n    type: 'checkbox',\n    checked: false\n  }, (fieldProps) => h('label', {\n\n  }, [\n    h('input', fieldProps),\n    h('span', {\n      class: 'osjs-toggle-input'\n    }),\n    h('span', {\n      class: 'osjs-toggle-label'\n    }, [\n      props.label || '',\n      ...children\n    ])\n  ]), ev => [props.type === 'radio'\n    ? parseValue(ev.target.value)\n    : !!ev.target.checked]);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/ToggleField.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 113,
+    "kind": "function",
+    "name": "parseValue",
+    "memberof": "src/components/ToggleField.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/ToggleField.js~parseValue",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/ToggleField.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "function",
+    "name": "ToggleField",
+    "memberof": "src/components/ToggleField.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/ToggleField.js~ToggleField",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/ToggleField.js",
+    "importStyle": "{ToggleField}",
+    "description": "A text field",
+    "lineNumber": 53,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.checked",
+        "description": "Value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "checkbox",
+        "defaultRaw": "checkbox",
+        "name": "props.type",
+        "description": "Type"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.box",
+        "description": "Box Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 115,
+    "kind": "file",
+    "name": "src/components/Toolbar.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport {Element} from './Element';\n\n/**\n * A toolbar\n * @desc Contains entries with spacing\n * @param {BoxProperties} props Properties\n * @param {string} [props.orientation='vertical'] Box orientation\n * @param {h[]} children Children\n */\nexport const Toolbar = (props, children) =>\n  h(Element, Object.assign({\n    orientation: 'vertical'\n  }, props, {\n    class: ['osjs-gui-toolbar', props.class]\n  }), children);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Toolbar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "Toolbar",
+    "memberof": "src/components/Toolbar.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Toolbar.js~Toolbar",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Toolbar.js",
+    "importStyle": "{Toolbar}",
+    "description": "Contains entries with spacing",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "BoxProperties"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'vertical'",
+        "defaultRaw": "'vertical'",
+        "name": "props.orientation",
+        "description": "Box orientation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "h[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Children"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "src/components/Video.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\n\nconst sources = list => list.map(item => h('source', item));\n\nconst isTrue = v => typeof v === 'undefined' || v === true;\n\n/**\n * A video\n * @param {Object} props Properties\n * @param {String} [props.class] Append this className\n * @param {Object} [props.style] CSS Style object\n * @param {String} props.src The video source\n * @param {number} [props.width] Video width\n * @param {number} [props.height] Video height\n * @param {String} [props.poster] Poster image source\n * @param {Boolean} [props.loop] Loop video\n * @param {Boolean} [props.autoplay] Autoplay video\n * @param {Boolean} [props.controls] Show controls\n * @param {Function} [props.onloadeddata] On loaded data event\n */\nexport const Video = (props, children) =>\n  h('div', {\n    class: 'osjs-gui osjs-gui-video',\n    style: {\n      width: props.width ? String(props.width) + 'px' : undefined,\n      height: props.height ? String(props.height) + 'px' : undefined\n    }\n  }, [\n    h('video', {\n      src: props.src,\n      width: props.width,\n      height: props.height,\n      poster: props.poster,\n      loop: props.loop ? 'loop' : undefined,\n      muted: props.muted ? 'muted' : undefined,\n      controls: isTrue(props.controls) ? 'controls' : undefined,\n      autoplay: isTrue(props.autoplay) ? 'autoplay' : undefined,\n      onloadeddata: props.onload,\n      oncreate: props.oncreate,\n      onupdate: props.onupdate,\n      ondestroy: props.ondestroy\n    }, sources(props.sources || []))\n  ]);\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/components/Video.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "sources",
+    "memberof": "src/components/Video.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Video.js~sources",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Video.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "params": [
+      {
+        "name": "list",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "isTrue",
+    "memberof": "src/components/Video.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Video.js~isTrue",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/components/Video.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "v",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "function",
+    "name": "Video",
+    "memberof": "src/components/Video.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Video.js~Video",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/components/Video.js",
+    "importStyle": "{Video}",
+    "description": "A video",
+    "lineNumber": 51,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.class",
+        "description": "Append this className"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.style",
+        "description": "CSS Style object"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.src",
+        "description": "The video source"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.width",
+        "description": "Video width"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.height",
+        "description": "Video height"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.poster",
+        "description": "Poster image source"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.loop",
+        "description": "Loop video"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.autoplay",
+        "description": "Autoplay video"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.controls",
+        "description": "Show controls"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "props.onloadeddata",
+        "description": "On loaded data event"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 121,
+    "kind": "file",
+    "name": "src/contextmenu.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport {Menu} from './components/Menu';\n\n/*\n * Makes sure sub-menus stays within viewport\n */\nconst clampSubMenu = (root, ev) => {\n  let ul = ev.target.querySelector('ul');\n  if (!ul) {\n    return;\n  }\n\n  // FIXME: Safari reports wrong item\n  if (ul.classList.contains('osjs-gui-menu-container')) {\n    ul = ul.parentNode.parentNode;\n  }\n\n  if (!ul || !ul.offsetParent) {\n    return;\n  }\n\n  ul.classList.remove('clamp-right');\n\n  const rect = ul.getBoundingClientRect();\n  if (rect.right > root.offsetWidth) {\n    ul.classList.add('clamp-right');\n  }\n};\n\n/*\n * Makes sure menu stays within viewport\n */\nconst clampMenu = (root, el, currentPosition) => {\n  const result = {};\n  const bottom = currentPosition.top + el.offsetHeight;\n  const right = currentPosition.left + el.offsetWidth;\n  const offY = root.offsetHeight - currentPosition.top;\n  const offX = root.offsetWidth - currentPosition.left;\n  const overflowRight = right > root.offsetWidth;\n  const overflowBottom = bottom > root.offsetHeight;\n\n  if (overflowBottom) {\n    if (root.offsetHeight > el.offsetHeight) {\n      result.top = root.offsetHeight - el.offsetHeight - offY;\n    }\n  }\n\n  if (overflowRight) {\n    result.left = root.offsetWidth - el.offsetWidth - offX;\n  }\n\n  return (overflowBottom || overflowRight) ? result : null;\n};\n\n/*\n * Context Menu view\n */\nconst view = callback => (props, actions) => h(Menu, {\n  position: props.position,\n  visible: props.visible,\n  menu: props.menu,\n  onclick: callback,\n  onshow: actions.onshow\n});\n\nconst timeout = fn => {\n  fn();\n  return setTimeout(fn, 100);\n};\n\n/**\n * ContextMenu Class\n *\n * @desc Handles a Menu/ContextMenu globally for OS.js\n */\nexport class ContextMenu {\n\n  constructor(core) {\n    this.core = core;\n    this.callback = () => {};\n    this.actions = null;\n    this.$element = document.createElement('div');\n  }\n\n  destroy() {\n    this.callback = null;\n    this.actions = null;\n  }\n\n  /**\n   * Initializes the Menu Hyperapp\n   */\n  init() {\n    let clampTimeout;\n\n    this.$element.className = 'osjs-system-context-menu';\n    this.core.$root.appendChild(this.$element);\n\n    let isActive = false;\n\n    this.actions = app({\n      visible: false,\n      menu: [],\n      position: {\n        top: 0,\n        left: 0\n      }\n    }, {\n      clamp: (el) => props => {\n        el = el || document.querySelector('#osjs-context-menu');\n        clearTimeout(clampTimeout);\n\n        if (el) {\n          const root = this.core.$root;\n          const newPosition = clampMenu(root, el, props.position);\n          if (newPosition) {\n            return {position: newPosition};\n          }\n        }\n\n        return {};\n      },\n      onshow: (ev) => props => {\n        clampTimeout = timeout(() => clampSubMenu(this.core.$root, ev));\n      },\n      show: (options) => (props, actions) => {\n        let {menu, position, toggle} = options;\n        if (toggle && isActive) {\n          return actions.hide();\n        } else if (position instanceof Event) {\n          position = {left: position.clientX, top: position.clientY};\n        } else if (position instanceof Element) {\n          const box = position.getBoundingClientRect();\n          position = {\n            left: box.left,\n            top: box.top + box.height\n          };\n        }\n\n        this.callback = (child, ev, iter) => {\n          if (options.callback) {\n            options.callback(child, ev);\n          }\n\n          if (iter.closeable !== false) {\n            actions.hide();\n          }\n        };\n\n        isActive = true;\n        this.onclose = options.onclose;\n\n        timeout(() => actions.clamp());\n\n        return {\n          visible: true,\n          menu: menu || [],\n          position: position || {top: 0, left: 0}\n        };\n      },\n      hide: () => props => {\n        if (isActive) {\n          setTimeout(() => (isActive = false), 0);\n        }\n        if (this.onclose) {\n          this.onclose();\n        }\n        this.onclose = null;\n        this.callback = null;\n\n        return {visible: false};\n      }\n    }, view((...args) => {\n      if (!this.core.destroyed) {\n        if (this.callback) {\n          this.callback(...args);\n        }\n      }\n    }), this.$element);\n  }\n\n  /**\n   * Show the menu\n   */\n  show(...args) {\n    return this.actions ? this.actions.show(...args) : null;\n  }\n\n  /**\n   * Hide the menu\n   */\n  hide(...args) {\n    return this.actions ? this.actions.hide(...args) : null;\n  }\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/contextmenu.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 122,
+    "kind": "function",
+    "name": "clampSubMenu",
+    "memberof": "src/contextmenu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/contextmenu.js~clampSubMenu",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/contextmenu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "params": [
+      {
+        "name": "root",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ev",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "function",
+    "name": "clampMenu",
+    "memberof": "src/contextmenu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/contextmenu.js~clampMenu",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/contextmenu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 63,
+    "undocument": true,
+    "params": [
+      {
+        "name": "root",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "el",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "currentPosition",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "function",
+    "name": "view",
+    "memberof": "src/contextmenu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/contextmenu.js~view",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/contextmenu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 88,
+    "undocument": true,
+    "params": [
+      {
+        "name": "callback",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "function",
+    "name": "timeout",
+    "memberof": "src/contextmenu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/contextmenu.js~timeout",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/contextmenu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 96,
+    "undocument": true,
+    "params": [
+      {
+        "name": "fn",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "class",
+    "name": "ContextMenu",
+    "memberof": "src/contextmenu.js",
+    "static": true,
+    "longname": "src/contextmenu.js~ContextMenu",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/contextmenu.js",
+    "importStyle": "{ContextMenu}",
+    "description": "Handles a Menu/ContextMenu globally for OS.js",
+    "lineNumber": 106,
+    "interface": false
+  },
+  {
+    "__docId__": 127,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 108,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#core",
+    "access": "public",
+    "description": null,
+    "lineNumber": 109,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "member",
+    "name": "callback",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#callback",
+    "access": "public",
+    "description": null,
+    "lineNumber": 110,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "member",
+    "name": "actions",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#actions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 111,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "member",
+    "name": "$element",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#$element",
+    "access": "public",
+    "description": null,
+    "lineNumber": 112,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#destroy",
+    "access": "public",
+    "description": null,
+    "lineNumber": 115,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#init",
+    "access": "public",
+    "description": "Initializes the Menu Hyperapp",
+    "lineNumber": 123,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 138,
+    "kind": "member",
+    "name": "onclose",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#onclose",
+    "access": "public",
+    "description": null,
+    "lineNumber": 181,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "method",
+    "name": "show",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#show",
+    "access": "public",
+    "description": "Show the menu",
+    "lineNumber": 215,
+    "params": [
+      {
+        "name": "args",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 142,
+    "kind": "method",
+    "name": "hide",
+    "memberof": "src/contextmenu.js~ContextMenu",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/contextmenu.js~ContextMenu#hide",
+    "access": "public",
+    "description": "Hide the menu",
+    "lineNumber": 222,
+    "params": [
+      {
+        "name": "args",
+        "types": [
+          "...*"
+        ],
+        "spread": true
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 143,
+    "kind": "file",
+    "name": "src/element.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\nimport {h} from 'hyperapp';\nimport {filteredProps} from './utils';\nimport {Element} from './components/Element';\n\n/**\n * Creates a new field Element wrapper\n * @param {String} name Field name\n * @param {Object} props Field props\n * @param {Function} cb Callback to create inner element => (props)\n * @param {Function} cb Callback to get value => (event)\n */\nexport const createField = (name, props, defaultProps, cb, cbInput) => {\n  const oninput = props.oninput || function() {};\n  const onchange = props.onchange || function() {};\n  const onkeydown = props.onkeydown || function() {};\n\n  const getValue = cbInput || (ev => [ev.target.value]);\n  const fieldProps = Object.assign(\n    {\n      oninput: ev => oninput(ev, ...getValue(ev)),\n      onchange: ev => onchange(ev, ...getValue(ev)),\n      onkeydown: ev => {\n        if (ev.keyCode === 13 && props.onenter) {\n          props.onenter(ev, ...getValue(ev));\n        }\n        onkeydown(ev);\n      }\n    },\n    defaultProps,\n    filteredProps(props, ['choices', 'label', 'box', 'oninput', 'onchange'])\n  );\n\n  return h(Element, Object.assign({}, props.box || {}, {\n    class: 'osjs-gui-field osjs-gui-' + name\n  }), cb(fieldProps));\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/element.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 144,
+    "kind": "function",
+    "name": "createField",
+    "memberof": "src/element.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/element.js~createField",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/element.js",
+    "importStyle": "{createField}",
+    "description": "Creates a new field Element wrapper",
+    "lineNumber": 41,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Field name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Field props"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cb",
+        "description": "Callback to create inner element => (props)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cb",
+        "description": "Callback to get value => (event)"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/provider.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {ContextMenu} from './contextmenu.js';\n\n/*\n * Check if a target allows for context menu\n */\nconst validContextMenuTarget = ev => {\n  const target = ev.target;\n  let isValid = target.tagName === 'TEXTAREA';\n  if (!isValid && target.tagName === 'INPUT') {\n    isValid = ['text', 'password', 'number', 'email'].indexOf(target.type) !== -1;\n  }\n\n  return isValid;\n};\n\n/**\n * OS.js GUI Service Provider\n *\n * @desc Provides wrapper services around GUI features\n */\nexport class GUIServiceProvider {\n\n  constructor(core) {\n    this.core = core;\n    this.contextmenu = new ContextMenu(core);\n  }\n\n  destroy() {\n    const menu = document.getElementById('osjs-context-menu');\n    if (menu) {\n      menu.remove();\n    }\n\n    this.contextmenu.destroy();\n  }\n\n  async init() {\n    const contextmenuApi = {\n      show: (...args) => this.contextmenu.show(...args),\n      hide: (...args) => this.contextmenu.hide(...args)\n    };\n\n    this.core.instance('osjs/contextmenu', (...args) => {\n      if (args.length) {\n        return contextmenuApi.show(...args);\n      }\n\n      return contextmenuApi;\n    });\n\n    this.core.$root.addEventListener('contextmenu', (ev) => {\n      if (validContextMenuTarget(ev)) {\n        return;\n      }\n\n      ev.stopPropagation();\n      ev.preventDefault();\n    });\n  }\n\n  start() {\n    const callback = ev => {\n      const menu = document.getElementById('osjs-context-menu');\n      const hit = menu && menu.contains(ev.target);\n\n      if (!hit && this.contextmenu) {\n        this.contextmenu.hide();\n      }\n    };\n\n    this.core.$root.addEventListener('click', callback, true);\n    this.core.once('destroy', () => {\n      this.core.$root.removeEventListener('click', callback, true);\n    });\n\n    this.contextmenu.init();\n  }\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/provider.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 146,
+    "kind": "function",
+    "name": "validContextMenuTarget",
+    "memberof": "src/provider.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/provider.js~validContextMenuTarget",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/gui/src/provider.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ev",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "class",
+    "name": "GUIServiceProvider",
+    "memberof": "src/provider.js",
+    "static": true,
+    "longname": "src/provider.js~GUIServiceProvider",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/provider.js",
+    "importStyle": "{GUIServiceProvider}",
+    "description": "Provides wrapper services around GUI features",
+    "lineNumber": 51,
+    "interface": false
+  },
+  {
+    "__docId__": 148,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/provider.js~GUIServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~GUIServiceProvider#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/provider.js~GUIServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~GUIServiceProvider#core",
+    "access": "public",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "member",
+    "name": "contextmenu",
+    "memberof": "src/provider.js~GUIServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~GUIServiceProvider#contextmenu",
+    "access": "public",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/provider.js~GUIServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~GUIServiceProvider#destroy",
+    "access": "public",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/provider.js~GUIServiceProvider",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/provider.js~GUIServiceProvider#init",
+    "access": "public",
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/provider.js~GUIServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~GUIServiceProvider#start",
+    "access": "public",
+    "description": null,
+    "lineNumber": 91,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "file",
+    "name": "src/umd.js",
+    "content": "/**\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport '../index.scss';\nexport * from '../index.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/umd.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 155,
+    "kind": "file",
+    "name": "src/utils.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\n/**\n * Filter an object based on keys\n * @param {Object} props Props\n * @param {String[]} filterKeys List of keys to filter\n * @return {Object}\n */\nexport const filteredProps = (props, filterKeys) => {\n  const keys = Object.keys(props);\n  const filter = k => filterKeys.indexOf(k) === -1;\n\n  return keys\n    .filter(filter)\n    .reduce((result, k) => Object.assign({\n      [k]: props[k]\n    }, result), {});\n};\n\n/**\n * Creates a double-tap event handler\n * @param {number} [timeout=250] Timeout\n * @return {Function} Handler with => (ev, cb)\n */\nexport const doubleTap = (timeout = 250) => {\n  let tapped = false;\n  let timer;\n\n  return (ev, cb) => {\n    timer = clearTimeout(timer);\n    timer = setTimeout(() => (tapped = false), timeout);\n\n    if (tapped) {\n      ev.preventDefault();\n      return cb(ev);\n    }\n\n    tapped = true;\n\n    return false;\n  };\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/src/utils.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 156,
+    "kind": "function",
+    "name": "filteredProps",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~filteredProps",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/utils.js",
+    "importStyle": "{filteredProps}",
+    "description": "Filter an object based on keys",
+    "lineNumber": 37,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "Props"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "filterKeys",
+        "description": "List of keys to filter"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "function",
+    "name": "doubleTap",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~doubleTap",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/gui/src/utils.js",
+    "importStyle": "{doubleTap}",
+    "description": "Creates a double-tap event handler",
+    "lineNumber": 53,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "250",
+        "defaultRaw": 250,
+        "name": "timeout",
+        "description": "Timeout"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Function"
+      ],
+      "spread": false,
+      "description": "Handler with => (ev, cb)"
+    }
+  },
+  {
+    "kind": "index",
+    "content": "<p align=\"center\">\n  <img alt=\"OS.js Logo\" src=\"https://raw.githubusercontent.com/os-js/gfx/master/logo-big.png\" />\n</p>\n\n[OS.js](https://www.os-js.org/) is an [open-source](https://raw.githubusercontent.com/os-js/OS.js/master/LICENSE) web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.\n\n[![Support](https://img.shields.io/badge/patreon-support-orange.svg)](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)\n[![Support](https://img.shields.io/badge/opencollective-donate-red.svg)](https://opencollective.com/osjs)\n[![Donate](https://img.shields.io/badge/liberapay-donate-yellowgreen.svg)](https://liberapay.com/os-js/)\n[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/andersevenrud)\n\n# OS.js GUI Module\n\nThis is the main client GUI component module of OS.js.\n\nContains all components and adapters for the default UIs.\n\n## Development\n\nThis package has two build targets: `UMD` and `ES`.\n\nUMD is built with Webpack via `npm run build` (or `npm run watch`), and ES via `npm run build:esm` (or `npm run watch:esm`).\n\nThe OS.js distribution uses the UMD build to load *stylesheets*, and everything else uses ES modules to load components, service providers etc.\n\nSo effectively you need to run both in order for this to work while developing.\n\n*The UMD javascript bundle is currently only used for environments like Codepen.*\n\n## Contribution\n\n* **Sponsor on [Github](https://github.com/sponsors/andersevenrud)**\n* **Become a [Patreon](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)**\n* **Support on [Open Collective](https://opencollective.com/osjs)**\n* [Contribution Guide](https://github.com/os-js/OS.js/blob/master/CONTRIBUTING.md)\n\n## Documentation\n\nSee the [Official Manuals](https://manual.os-js.org/) for articles, tutorials and guides.\n\n## Links\n\n* [Official Chat](https://gitter.im/os-js/OS.js)\n* [Community Forums and Announcements](https://community.os-js.org/)\n* [Homepage](https://os-js.org/)\n* [Twitter](https://twitter.com/osjsorg) ([author](https://twitter.com/andersevenrud))\n* [Facebook](https://www.facebook.com/os.js.org)\n* [Docker Hub](https://hub.docker.com/u/osjs/)\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@osjs/gui\",\n  \"version\": \"4.1.0\",\n  \"description\": \"OS.js GUI\",\n  \"module\": \"dist/esm.js\",\n  \"main\": \"dist/main.js\",\n  \"style\": \"dist/main.css\",\n  \"scripts\": {\n    \"test\": \"npm run eslint && npm run stylelint\",\n    \"eslint\": \"eslint index.js 'src/**/*.js'\",\n    \"build\": \"webpack\",\n    \"build:esm\": \"rollup -c\",\n    \"watch\": \"webpack --watch\",\n    \"watch:esm\": \"rollup -c --watch\",\n    \"stylelint\": \"stylelint index.scss src/**/*.scss\",\n    \"prepublishOnly\": \"npm run test && rm ./dist/* && NODE_ENV=production npm run build && npm run build:esm\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/os-js/osjs-gui.git\"\n  },\n  \"keywords\": [\n    \"osjs\"\n  ],\n  \"files\": [\n    \"dist/esm.js\",\n    \"dist/esm.js.map\",\n    \"dist/main.js\",\n    \"dist/main.js.map\",\n    \"dist/main.css\",\n    \"dist/main.css.map\",\n    \"CHANGELOG.md\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"dependencies\": {\n    \"hyperapp\": \"^1.2.10\",\n    \"hyperapp-nestable\": \"^1.0.0\"\n  },\n  \"devDependencies\": {\n    \"@osjs/dev-meta\": \"^2.1.0\",\n    \"rollup\": \"^1.32.1\",\n    \"rollup-plugin-babel\": \"^4.4.0\",\n    \"rollup-plugin-babel-minify\": \"^9.1.1\",\n    \"rollup-plugin-commonjs\": \"^10.1.0\",\n    \"rollup-plugin-node-resolve\": \"^5.2.0\",\n    \"rollup-plugin-uglify\": \"^6.0.4\"\n  },\n  \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\",\n  \"license\": \"BSD-2-Clause\",\n  \"bugs\": {\n    \"url\": \"https://github.com/os-js/osjs-gui/issues\"\n  },\n  \"homepage\": \"https://github.com/os-js/osjs-gui#readme\",\n  \"eslintConfig\": {\n    \"env\": {\n      \"browser\": true,\n      \"node\": true\n    },\n    \"parserOptions\": {\n      \"sourceType\": \"module\"\n    },\n    \"extends\": \"@osjs/eslint-config\"\n  },\n  \"stylelint\": {\n    \"extends\": \"@osjs/stylelint-config\"\n  },\n  \"babel\": {\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"modules\": false\n        }\n      ]\n    ],\n    \"plugins\": [\n      \"@babel/plugin-transform-runtime\"\n    ]\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./doc\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\",\n        \"option\": {\n          \"brand\": {\n            \"title\": \"OS.js GUI API\",\n            \"description\": \"OS.js GUI API Documentation\",\n            \"repository\": \"https://github.com/os-js/osjs-core\",\n            \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\"\n          },\n          \"lint\": {\n            \"enable\": false\n          },\n          \"coverage\": {\n            \"enable\": false\n          },\n          \"undocumentIdentifier\": {\n            \"enable\": false\n          }\n        }\n      },\n      {\n        \"name\": \"esdoc-publish-html-plugin\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-gui/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

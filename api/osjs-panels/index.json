@@ -1,0 +1,1954 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/items/clock.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport PanelItem from '../panel-item';\n\n/**\n * Clock\n *\n * @desc Clock Panel Item\n */\nexport default class ClockPanelItem extends PanelItem {\n\n  init() {\n    const {format} = this.core.make('osjs/locale');\n    const date = () => format(new Date(), 'longTime');\n\n    if (this.inited) {\n      return;\n    }\n\n    const actions = super.init({\n      time: date()\n    }, {\n      increment: () => state => {\n        return {time: date()};\n      }\n    });\n\n    this.interval = setInterval(() => {\n      actions.increment();\n    }, 1000);\n  }\n\n  destroy() {\n    this.interval = clearInterval(this.interval);\n    super.destroy();\n  }\n\n  render(state, actions) {\n    return super.render('clock', [\n      h('span', {}, state.time)\n    ]);\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/items/clock.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "ClockPanelItem",
+    "memberof": "src/items/clock.js",
+    "static": true,
+    "longname": "src/items/clock.js~ClockPanelItem",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/items/clock.js",
+    "importStyle": "ClockPanelItem",
+    "description": "Clock Panel Item",
+    "lineNumber": 39,
+    "interface": false,
+    "extends": [
+      "src/panel-item.js~PanelItem"
+    ]
+  },
+  {
+    "__docId__": 50,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/items/clock.js~ClockPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/clock.js~ClockPanelItem#init",
+    "access": "public",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "name": "interval",
+    "memberof": "src/items/clock.js~ClockPanelItem",
+    "static": false,
+    "longname": "src/items/clock.js~ClockPanelItem#interval",
+    "access": "public",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/items/clock.js~ClockPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/clock.js~ClockPanelItem#destroy",
+    "access": "public",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/items/clock.js~ClockPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/clock.js~ClockPanelItem#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/items/menu.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport PanelItem from '../panel-item';\nimport * as languages from '../locales';\nimport defaultIcon from '../logo-blue-32x32.png';\n\nconst sortBy = fn => (a, b) => -(fn(a) < fn(b)) || +(fn(a) > fn(b));\nconst sortByLabel = iter => String(iter.label).toLowerCase();\n\nconst makeTree = (core, icon, __) => {\n  const configuredCategories = core.config('application.categories');\n  const locale = core.make('osjs/locale');\n\n  const getIcon = (m, fallbackIcon) => m.icon\n    ? (m.icon.match(/^(https?:)\\//)\n      ? m.icon\n      : core.url(m.icon, {}, m))\n    : fallbackIcon;\n\n  const getTitle = (item) => locale\n    .translatableFlat(item.title, item.name);\n\n  const getCategory = (cat) => locale\n    .translate(cat);\n\n  const createCategory = c => ({\n    icon: c.icon ? {name: c.icon} : icon,\n    label: getCategory(c.label),\n    items: []\n  });\n\n  const createItem = m => ({\n    icon: getIcon(m, icon),\n    label: getTitle(m),\n    data: {\n      name: m.name\n    }\n  });\n\n  const createCategoryTree = (metadata) => {\n    const categories = {};\n\n    metadata\n      .filter(m => m.hidden !== true)\n      .forEach((m) => {\n        const cat = Object.keys(configuredCategories).find(c => c === m.category) || 'other';\n        const found = configuredCategories[cat];\n\n        if (!categories[cat]) {\n          categories[cat] = createCategory(found);\n        }\n\n        categories[cat].items.push(createItem(m));\n      });\n\n    Object.keys(categories).forEach(k => {\n      categories[k].items.sort(sortBy(sortByLabel));\n    });\n\n    const result = Object.values(categories);\n    result.sort(sortBy(sortByLabel));\n\n    return result;\n  };\n\n  const createFlatMenu = (metadata) => {\n    const pinned = [\n      ...core.config('application.pinned', [])\n      // TODO: User configurable pinned items\n    ];\n\n    const items = metadata\n      .filter(m => pinned.indexOf(m.name) !== -1)\n      .map(createItem);\n\n    if (items.length) {\n      items.sort(sortBy(sortByLabel));\n      return [\n        {type: 'separator'},\n        ...items\n      ];\n    }\n\n    return [];\n  };\n\n  const createSystemMenu = () => ([{\n    type: 'separator'\n  }, {\n    icon,\n    label: __('LBL_SAVE_AND_LOG_OUT'),\n    data: {\n      action: 'saveAndLogOut'\n    }\n  }, {\n    icon,\n    label: __('LBL_LOG_OUT'),\n    data: {\n      action: 'logOut'\n    }\n  }]);\n\n  return (metadata) => {\n    const categories = createCategoryTree(metadata);\n    const flat = createFlatMenu(metadata);\n    const system = createSystemMenu();\n\n    return [\n      ...categories,\n      ...flat,\n      ...system\n    ];\n  };\n};\n\n/**\n * Menu\n *\n * @desc Menu Panel Item\n */\nexport default class MenuPanelItem extends PanelItem {\n\n  render(state, actions) {\n    const _ = this.core.make('osjs/locale').translate;\n    const __ = this.core.make('osjs/locale').translatable(languages);\n    const icon = this.options.icon || defaultIcon;\n\n    const logout = async (save) => {\n      if (save) {\n        await this.core.make('osjs/session').save();\n      }\n\n      this.core.make('osjs/auth').logout();\n    };\n\n    const makeMenu = makeTree(this.core, icon, __);\n\n    const onclick = (ev) => {\n      const packages = this.core.make('osjs/packages')\n        .getPackages(m => (!m.type || m.type === 'application'));\n\n      this.core.make('osjs/contextmenu').show({\n        menu: makeMenu([].concat(packages)),\n        position: ev.target,\n        callback: (item) => {\n          const {name, action} = item.data || {};\n\n          if (name) {\n            this.core.run(name);\n          } else if (action === 'saveAndLogOut') {\n            logout(true);\n          } else if (action === 'logOut') {\n            logout(false);\n          }\n        },\n        toggle: true\n      });\n    };\n\n    const onmenuopen = () => {\n      const els = Array.from(this.panel.$element.querySelectorAll('.osjs-panel-item[data-name=\"menu\"]'));\n      els.forEach(el => el.querySelector('.osjs-panel-item--icon').click());\n    };\n\n    this.core.on('osjs/desktop:keybinding:open-application-menu', onmenuopen);\n    this.on('destroy', () => this.core.off('osjs/desktop:keybinding:open-application-menu', onmenuopen));\n\n    return super.render('menu', [\n      h('div', {\n        onclick,\n        className: 'osjs-panel-item--clickable osjs-panel-item--icon'\n      }, [\n        h('img', {\n          src: icon,\n          alt: _('LBL_MENU')\n        }),\n        h('span', {}, _('LBL_MENU'))\n      ])\n    ]);\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/items/menu.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "sortBy",
+    "memberof": "src/items/menu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/items/menu.js~sortBy",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/panels/src/items/menu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "params": [
+      {
+        "name": "fn",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "sortByLabel",
+    "memberof": "src/items/menu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/items/menu.js~sortByLabel",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/panels/src/items/menu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "params": [
+      {
+        "name": "iter",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "makeTree",
+    "memberof": "src/items/menu.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/items/menu.js~makeTree",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/panels/src/items/menu.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "params": [
+      {
+        "name": "core",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "icon",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "__",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "class",
+    "name": "MenuPanelItem",
+    "memberof": "src/items/menu.js",
+    "static": true,
+    "longname": "src/items/menu.js~MenuPanelItem",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/items/menu.js",
+    "importStyle": "MenuPanelItem",
+    "description": "Menu Panel Item",
+    "lineNumber": 150,
+    "interface": false,
+    "extends": [
+      "src/panel-item.js~PanelItem"
+    ]
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/items/menu.js~MenuPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/menu.js~MenuPanelItem#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 152,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/items/tray.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport PanelItem from '../panel-item';\n\n/**\n * Tray\n *\n * @desc Tray Panel Item\n */\nexport default class TrayPanelItem extends PanelItem {\n\n  init() {\n    if (this.inited) {\n      return;\n    }\n\n    const actions = super.init({\n      tray: this.core.make('osjs/tray').list()\n    }, {\n      setTray: tray => state => ({tray})\n    });\n\n    this.core.on('osjs/tray:update', list => actions.setTray(list));\n  }\n\n  render(state, actions) {\n    const child = entry => h('div', {\n      onclick: ev => entry.onclick(ev, entry),\n      oncontextmenu: ev => entry.oncontextmenu(ev, entry),\n      className: 'osjs-panel-item--clickable osjs-panel-item--icon'\n    }, h('img', {\n      src: entry.icon,\n      title: entry.title\n    }));\n\n    return super.render('tray', state.tray.map(child));\n  }\n\n}\n\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/items/tray.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "class",
+    "name": "TrayPanelItem",
+    "memberof": "src/items/tray.js",
+    "static": true,
+    "longname": "src/items/tray.js~TrayPanelItem",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/items/tray.js",
+    "importStyle": "TrayPanelItem",
+    "description": "Tray Panel Item",
+    "lineNumber": 39,
+    "interface": false,
+    "extends": [
+      "src/panel-item.js~PanelItem"
+    ]
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/items/tray.js~TrayPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/tray.js~TrayPanelItem#init",
+    "access": "public",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/items/tray.js~TrayPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/tray.js~TrayPanelItem#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/items/windows.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport PanelItem from '../panel-item';\nimport * as languages from '../locales';\n\nconst mapWindow = win => {\n  return {\n    wid: win.wid,\n    icon: win.state.icon,\n    title: win.state.title,\n    focused: win.state.focused,\n    attributes: Object.assign({}, win.attributes),\n    state: Object.assign({}, win.state),\n    raise: () => {\n      win.raise();\n      win.focus();\n    },\n    restore: () => win.restore(),\n    maximize: () => win.maximize(),\n    minimize: () => win.minimize(),\n    close: () => win.close()\n  };\n};\n\n/**\n * Window List\n *\n * @desc Window List Panel Item. Also displays launching applications.\n */\nexport default class WindowsPanelItem extends PanelItem {\n\n  init() {\n    if (this.inited) {\n      return;\n    }\n\n    const filterVisibility = win => typeof win.attributes.visibility === 'undefined' ||\n      win.attributes.visibility === 'global';\n\n    const actions = super.init({\n      launchers: [],\n      windows: this.core.make('osjs/windows').list()\n        .filter(win => win.inited || win.rendered)\n        .filter(filterVisibility)\n        .map(mapWindow)\n    }, {\n      add: win => state => {\n        const found = state.windows.find(w => w.wid === win.wid);\n        if (found) {\n          return state;\n        }\n\n        const windows = state.windows\n          .concat([win])\n          .filter(win => !win.inited || !win.rendered)\n          .filter(filterVisibility);\n\n        return {windows};\n      },\n\n      remove: win => ({windows}) => {\n        const foundIndex = windows.findIndex(w => w.wid === win.wid);\n        if (foundIndex !== -1) {\n          windows.splice(foundIndex, 1);\n\n          return {windows};\n        }\n\n        return {};\n      },\n\n      change: win => state => {\n        const windows = state.windows;\n        const foundIndex = state.windows.findIndex(w => w.wid === win.wid);\n        if (foundIndex !== -1) {\n          windows[foundIndex] = win;\n        }\n\n        return {windows};\n      },\n\n      addLauncher: name => state => ({launchers: [...state.launchers, name]}),\n\n      removeLauncher: name => state => {\n        const foundIndex = state.launchers.findIndex(n => n === name);\n        const launchers = [...state.launchers];\n        if (foundIndex !== -1) {\n          launchers.splice(foundIndex, 1);\n        }\n\n        return {launchers};\n      }\n    });\n\n    const onlaunch = (name) => actions.addLauncher(name);\n    const onlaunched = (name) => actions.removeLauncher(name);\n    const ondestroy = (win) => actions.remove(mapWindow(win));\n    const oncreate = (win) => actions.add(mapWindow(win));\n    const onchange = (win) => actions.change(mapWindow(win));\n\n    this.core.on('osjs/application:launch', onlaunch);\n    this.core.on('osjs/application:launched', onlaunched);\n    this.core.on('osjs/window:destroy', ondestroy);\n    this.core.on('osjs/window:render', oncreate);\n    this.core.on('osjs/window:change', onchange);\n\n    this.on('destroy', () => {\n      this.core.off('osjs/application:launch', onlaunch);\n      this.core.off('osjs/application:launched', onlaunched);\n      this.core.off('osjs/window:destroy', ondestroy);\n      this.core.off('osjs/window:render', oncreate);\n      this.core.off('osjs/window:change', onchange);\n    });\n  }\n\n  render(state, actions) {\n    const __ = this.core.has('osjs/locale')\n      ? this.core.make('osjs/locale').translatable(languages)\n      : s => s;\n\n    const windows = state.windows.map(w => h('div', {\n      'data-has-image': w.icon ? true : undefined,\n      'data-focused': w.focused ? 'true' : 'false',\n      'data-minimized': w.state.minimized ? 'true' : 'false',\n      onclick: () => w.raise(),\n      oncontextmenu: ev => {\n        const _ = this.core.make('osjs/locale').translate;\n\n        ev.stopPropagation();\n        ev.preventDefault();\n        this.core.make('osjs/contextmenu').show({\n          position: ev.target,\n          menu: [\n            {\n              label: w.state.maximized ? _('LBL_RESTORE') : _('LBL_MAXIMIZE'),\n              onclick: () => w.attributes.maximizable ? (w.state.maximized ? w.restore() : w.maximize()) : null,\n              disabled: !w.attributes.maximizable\n            },\n            {\n              label: w.state.minimized ? _('LBL_RAISE') : _('LBL_MINIMIZE'),\n              onclick: () => w.attributes.minimizable ? (w.state.minimized ? w.raise() : w.minimize()) : null,\n              disabled: !w.attributes.minimizable\n            },\n            {type: 'separator'},\n            {\n              label: _('LBL_CLOSE'),\n              onclick: () => w.attributes.closeable ? w.close() : null,\n              disabled: !w.attributes.closeable\n            }\n          ]\n        });\n      },\n      className: 'osjs-panel-item--clickable osjs-panel-item--icon'\n    }, [\n      h('img', {\n        src: w.icon,\n        alt: w.title || '(window)',\n      }),\n      h('span', {}, w.title || '(window)'),\n    ]));\n\n    const special = state.launchers.map(name => h('div', {\n    }, h('span', {}, __('LBL_LAUNCHING', name))));\n\n    const children = [...windows, ...special];\n\n    return super.render('windows', children);\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/items/windows.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "mapWindow",
+    "memberof": "src/items/windows.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/items/windows.js~mapWindow",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/panels/src/items/windows.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "win",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"wid\": *, \"icon\": *, \"title\": *, \"focused\": *, \"attributes\": *, \"state\": *, \"raise\": *, \"restore\": *, \"maximize\": *, \"minimize\": *, \"close\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "class",
+    "name": "WindowsPanelItem",
+    "memberof": "src/items/windows.js",
+    "static": true,
+    "longname": "src/items/windows.js~WindowsPanelItem",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/items/windows.js",
+    "importStyle": "WindowsPanelItem",
+    "description": "Window List Panel Item. Also displays launching applications.",
+    "lineNumber": 59,
+    "interface": false,
+    "extends": [
+      "src/panel-item.js~PanelItem"
+    ]
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/items/windows.js~WindowsPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/windows.js~WindowsPanelItem#init",
+    "access": "public",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/items/windows.js~WindowsPanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/items/windows.js~WindowsPanelItem#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 145,
+    "undocument": true,
+    "params": [
+      {
+        "name": "state",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "actions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "file",
+    "name": "src/locales.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n *          Nguyễn Anh Khoa <khoaakt@gmail.com>\n            Julien Gomes Dias <abld@abld.info>\n            Filip Š <projects@filips.si>\n            Matheus Felipe <matheusfelipeog@gmail.com>\n * @licence Simplified BSD License\n */\n\n\nexport const de_DE = {\n  LBL_PANEL_ALL: 'Panel hinzufügen',\n  LBL_PANEL_REMOVE: 'Panel entfernen',\n  LBL_PANELITEM_ADD: 'Panelelemente hinzufügen',\n  LBL_PANELITEM_REMOVE: 'Panelelemente entfernen',\n  LBL_PANEL_POSITION: 'Panel-Position',\n  LBL_SAVE_AND_LOG_OUT: 'Session speichern & Abmelden',\n  LBL_LOG_OUT: 'Abmelden'\n};\n\nexport const en_EN = {\n  LBL_PANEL_ALL: 'Add panel',\n  LBL_PANEL_REMOVE: 'Remove panel',\n  LBL_PANELITEM_ADD: 'Add panelitem',\n  LBL_PANELITEM_REMOVE: 'Remove panelitem',\n  LBL_PANEL_POSITION: 'Panel Position',\n  LBL_SAVE_AND_LOG_OUT: 'Save Session & Log Out',\n  LBL_LOG_OUT: 'Log Out',\n  LBL_LAUNCHING: 'Launching \\'{0}\\''\n};\n\nexport const sv_SE = {\n  LBL_PANEL_ALL: 'Lägg till panel',\n  LBL_PANEL_REMOVE: 'Ta bort panel',\n  LBL_PANELITEM_ADD: 'Lägg till panelobjekt',\n  LBL_PANELITEM_REMOVE: 'Ta bort panelobjekt',\n  LBL_PANEL_POSITION: 'Panelposition',\n  LBL_SAVE_AND_LOG_OUT: 'Spara session och logga ut',\n  LBL_LOG_OUT: 'logga ut',\n  LBL_LAUNCHING: 'Startar \\'{0}\\''\n};\n\nexport const fr_FR = {\n  LBL_PANEL_ALL: 'Ajouter le panneau',\n  LBL_PANEL_REMOVE: 'Supprimer le panneau',\n  LBL_PANELITEM_ADD: 'Ajouter des éléments au panneau',\n  LBL_PANELITEM_REMOVE: 'Supprimer des éléments au panneau',\n  LBL_PANEL_POSITION: 'La position du panneau',\n  LBL_SAVE_AND_LOG_OUT: 'Sauvegarder la session et se déconnecter',\n  LBL_LOG_OUT: 'Se déconnecter'\n};\n\nexport const nb_NO = {\n  LBL_PANEL_ALL: 'Legg til panel',\n  LBL_PANEL_REMOVE: 'Fjern panel',\n  LBL_PANELITEM_ADD: 'Legg til panelobjekt',\n  LBL_PANELITEM_REMOVE: 'Fjern panelobjekt',\n  LBL_PANEL_POSITION: 'Panelposisjon',\n  LBL_SAVE_AND_LOG_OUT: 'Lagre Sessjon & Logg Ut',\n  LBL_LOG_OUT: 'Logg Ut',\n  LBL_LAUNCHING: 'Laster \\'{0}\\''\n};\n\nexport const sl_SI = {\n  LBL_PANEL_ALL: 'Dodaj ploščo',\n  LBL_PANEL_REMOVE: 'Odstrani ploščo',\n  LBL_PANELITEM_ADD: 'Dodaj element plošče',\n  LBL_PANELITEM_REMOVE: 'Odstrani element plošče',\n  LBL_PANEL_POSITION: 'Položaj plošče',\n  LBL_SAVE_AND_LOG_OUT: 'Shranitev seje & Odjava',\n  LBL_LOG_OUT: 'Odjava'\n};\n\nexport const vi_VN = {\n  LBL_PANEL_ALL: 'Thêm panel',\n  LBL_PANEL_REMOVE: 'Xóa panel',\n  LBL_PANELITEM_ADD: 'Thêm mục panel',\n  LBL_PANELITEM_REMOVE: 'Xóa mục panel',\n  LBL_PANEL_POSITION: 'Vị trí panel',\n  LBL_SAVE_AND_LOG_OUT: 'Lưu phiên & Đăng xuất',\n  LBL_LOG_OUT: 'Đăng xuất',\n  LBL_LAUNCHING: 'Đang khởi động \\'{0}\\''\n};\n\nexport const pt_BR = {\n  LBL_PANEL_ALL: 'Adicionar painel',\n  LBL_PANEL_REMOVE: 'Remover painel',\n  LBL_PANELITEM_ADD: 'Adicionar item ao painel',\n  LBL_PANELITEM_REMOVE: 'Remover item do painel',\n  LBL_PANEL_POSITION: 'Posição do painel',\n  LBL_SAVE_AND_LOG_OUT: 'Salvar sessão & Sair',\n  LBL_LOG_OUT: 'Sair',\n  LBL_LAUNCHING: 'Lançamento \\'{0}\\''\n};\n\nexport const tr_TR = {\n  LBL_PANEL_ALL: 'Panel ekle',\n  LBL_PANEL_REMOVE: 'Paneli sil',\n  LBL_PANELITEM_ADD: 'Panel nesnesi ekle',\n  LBL_PANELITEM_REMOVE: 'Panel nesnesini sil',\n  LBL_PANEL_POSITION: 'Panel Konumu',\n  LBL_SAVE_AND_LOG_OUT: 'Oturumu Kaydet & Çıkış Yap',\n  LBL_LOG_OUT: 'Çıkış Yap',\n  LBL_LAUNCHING: 'Başlatılıyor \\'{0}\\''\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/locales.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "de_DE",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~de_DE",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{de_DE}",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "en_EN",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~en_EN",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{en_EN}",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string, \"LBL_LAUNCHING\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "sv_SE",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~sv_SE",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{sv_SE}",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string, \"LBL_LAUNCHING\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "fr_FR",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~fr_FR",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{fr_FR}",
+    "description": null,
+    "lineNumber": 68,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "nb_NO",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~nb_NO",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{nb_NO}",
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string, \"LBL_LAUNCHING\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "sl_SI",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~sl_SI",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{sl_SI}",
+    "description": null,
+    "lineNumber": 89,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "vi_VN",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~vi_VN",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{vi_VN}",
+    "description": null,
+    "lineNumber": 99,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string, \"LBL_LAUNCHING\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "pt_BR",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~pt_BR",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{pt_BR}",
+    "description": null,
+    "lineNumber": 110,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string, \"LBL_LAUNCHING\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "tr_TR",
+    "memberof": "src/locales.js",
+    "static": true,
+    "longname": "src/locales.js~tr_TR",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/locales.js",
+    "importStyle": "{tr_TR}",
+    "description": null,
+    "lineNumber": 121,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"LBL_PANEL_ALL\": string, \"LBL_PANEL_REMOVE\": string, \"LBL_PANELITEM_ADD\": string, \"LBL_PANELITEM_REMOVE\": string, \"LBL_PANEL_POSITION\": string, \"LBL_SAVE_AND_LOG_OUT\": string, \"LBL_LOG_OUT\": string, \"LBL_LAUNCHING\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/panel-item.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {app, h} from 'hyperapp';\nimport {EventEmitter} from '@osjs/event-emitter';\n\n/**\n * OS.js Panel Item\n * @see {Panel}\n */\nexport default class PanelItem extends EventEmitter {\n\n  /**\n   * Create panel item\n   *\n   * @param {Core} core Core reference\n   * @param {Panel} panel Panel reference\n   * @param {Object} options Options\n   */\n  constructor(core, panel, options = {}) {\n    super('Panel');\n\n    this.core = core;\n    this.panel = panel;\n    this.options = options;\n    this.state = {};\n    this.actions = {};\n    this.inited = false;\n  }\n\n  /**\n   * Destroy panel item\n   */\n  destroy() {\n    this.emit('destroy', this);\n  }\n\n  /**\n   * Initializes panel item\n   * @param {Object} state State\n   * @param {Object} actions Actions\n   * @return {Object} Bound actions\n   */\n  init(state = {}, actions = {}) {\n    if (this.inited) {\n      return false;\n    }\n\n    this.inited = true;\n    this.emit('init', this);\n\n    return app(state, actions, (state, actions) => {\n      return this.render(state, actions);\n    }, this.panel.$element);\n  }\n\n  /**\n   * Renders the panel item\n   * @param {String} name The panel item virtual name\n   * @param {Object[]} children The panel item children\n   * @return {Node} A *virtual* node\n   */\n  render(name, children = []) {\n    return h('div', {\n      className: 'osjs-panel-item',\n      'data-name': name\n    }, children);\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/panel-item.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "class",
+    "name": "PanelItem",
+    "memberof": "src/panel-item.js",
+    "static": true,
+    "longname": "src/panel-item.js~PanelItem",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/panel-item.js",
+    "importStyle": "PanelItem",
+    "description": "OS.js Panel Item",
+    "see": [
+      "{Panel}"
+    ],
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "@osjs/event-emitter~EventEmitter"
+    ]
+  },
+  {
+    "__docId__": 82,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/panel-item.js~PanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#constructor",
+    "access": "public",
+    "description": "Create panel item",
+    "lineNumber": 47,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Panel"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "panel",
+        "description": "Panel reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "Options"
+      }
+    ]
+  },
+  {
+    "__docId__": 83,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/panel-item.js~PanelItem",
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#core",
+    "access": "public",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "member",
+    "name": "panel",
+    "memberof": "src/panel-item.js~PanelItem",
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#panel",
+    "access": "public",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "member",
+    "name": "options",
+    "memberof": "src/panel-item.js~PanelItem",
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#options",
+    "access": "public",
+    "description": null,
+    "lineNumber": 52,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/panel-item.js~PanelItem",
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "name": "actions",
+    "memberof": "src/panel-item.js~PanelItem",
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#actions",
+    "access": "public",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "member",
+    "name": "inited",
+    "memberof": "src/panel-item.js~PanelItem",
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#inited",
+    "access": "public",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/panel-item.js~PanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#destroy",
+    "access": "public",
+    "description": "Destroy panel item",
+    "lineNumber": 61,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 90,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/panel-item.js~PanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#init",
+    "access": "public",
+    "description": "Initializes panel item",
+    "lineNumber": 71,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "state",
+        "description": "State"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "actions",
+        "description": "Actions"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "Bound actions"
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/panel-item.js~PanelItem",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel-item.js~PanelItem#render",
+    "access": "public",
+    "description": "Renders the panel item",
+    "lineNumber": 90,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "The panel item virtual name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "The panel item children"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Node"
+      ],
+      "spread": false,
+      "description": "A *virtual* node"
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "src/panel.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport PanelItem from './panel-item';\nimport * as languages from './locales';\nimport {EventEmitter} from '@osjs/event-emitter';\n\n/**\n * Panel\n *\n * @desc Base Panel Class\n */\nexport default class Panel extends EventEmitter {\n\n  /**\n   * Create panel\n   *\n   * @param {Core} core Core reference\n   * @param {Object} options Options\n   */\n  constructor(core, options = {}) {\n    super('Panel');\n\n    this.core = core;\n    this.options = Object.assign({}, {\n      ontop: true,\n      position: 'top',\n      contextmenu: true,\n      items: []\n    }, options);\n\n    this.items = [];\n    this.inited = false;\n    this.destroyed = false;\n    this.$element = null;\n\n    this.options.items\n      .forEach(({name, options}) => {\n        const c = core.make('osjs/panels').get(name);\n        this.addItem(new c(this.core, this, options || {}));\n      });\n  }\n\n  /**\n   * Destroys the panel\n   */\n  destroy() {\n    if (this.destroyed) {\n      return;\n    }\n\n    this.items = this.items.filter(item => {\n      try {\n        item.destroy();\n      } catch (e) {\n        console.warn(e);\n      }\n      return false;\n    });\n\n    this.destroyed = true;\n    this.inited = false;\n    this.emit('destroy');\n    this.core.emit('osjs/panel:destroy', this);\n\n    this.$element.remove();\n    this.$element = null;\n  }\n\n  /**\n   * Initializes the panel\n   */\n  init() {\n    if (this.inited) {\n      return;\n    }\n    this.destroyed = false;\n    this.inited = true;\n\n    const _ = this.core.make('osjs/locale').translate;\n    const __ = this.core.make('osjs/locale').translatable(languages);\n\n    this.$element = document.createElement('div');\n    this.$element.classList.add('osjs-panel');\n    this.$element.classList.add('osjs__contextmenu');\n    this.$element.addEventListener('contextmenu', ev => {\n      ev.preventDefault();\n\n      const disabled = this.core.config('desktop.lock') ||\n        this.core.config('desktop.disablePanelContextMenu');\n\n      if (disabled) {\n        return;\n      }\n\n      this.core.make('osjs/contextmenu').show({\n        position: ev,\n        menu: [{\n          label: __('LBL_PANEL_POSITION'),\n          items: [{\n            label: _('LBL_TOP'),\n            onclick: () => this.setPosition('top')\n          }, {\n            label: _('LBL_BOTTOM'),\n            onclick: () => this.setPosition('bottom')\n          }]\n        }]\n      });\n    });\n    this.$element.setAttribute('data-position', this.options.position);\n    this.$element.setAttribute('data-ontop', String(this.options.ontop));\n\n    this.core.$root.appendChild(this.$element);\n\n    this.items.forEach(item => item.init());\n\n    this.emit('create');\n  }\n\n  /**\n   * Add an item to the panel\n   * @param {PanelItem} item The panel item instance\n   */\n  addItem(item) {\n    if (!(item instanceof PanelItem)) {\n      throw new TypeError('Invalid panel item specified');\n    }\n\n    this.items.push(item);\n\n    if (this.inited) {\n      item.init();\n    }\n  }\n\n  setPosition(position) {\n    this.options.position = position;\n\n    return this.core.make('osjs/panels').save()\n      .then(() => {\n        const desktop = this.core.make('osjs/desktop');\n        return desktop.applySettings();\n      });\n  }\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/panel.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "class",
+    "name": "Panel",
+    "memberof": "src/panel.js",
+    "static": true,
+    "longname": "src/panel.js~Panel",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/panel.js",
+    "importStyle": "Panel",
+    "description": "Base Panel Class",
+    "lineNumber": 40,
+    "interface": false,
+    "extends": [
+      "@osjs/event-emitter~EventEmitter"
+    ]
+  },
+  {
+    "__docId__": 95,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/panel.js~Panel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel.js~Panel#constructor",
+    "access": "public",
+    "description": "Create panel",
+    "lineNumber": 48,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "Options"
+      }
+    ]
+  },
+  {
+    "__docId__": 96,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/panel.js~Panel",
+    "static": false,
+    "longname": "src/panel.js~Panel#core",
+    "access": "public",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "options",
+    "memberof": "src/panel.js~Panel",
+    "static": false,
+    "longname": "src/panel.js~Panel#options",
+    "access": "public",
+    "description": null,
+    "lineNumber": 52,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 98,
+    "kind": "member",
+    "name": "items",
+    "memberof": "src/panel.js~Panel",
+    "static": false,
+    "longname": "src/panel.js~Panel#items",
+    "access": "public",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "member",
+    "name": "inited",
+    "memberof": "src/panel.js~Panel",
+    "static": false,
+    "longname": "src/panel.js~Panel#inited",
+    "access": "public",
+    "description": null,
+    "lineNumber": 60,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "member",
+    "name": "destroyed",
+    "memberof": "src/panel.js~Panel",
+    "static": false,
+    "longname": "src/panel.js~Panel#destroyed",
+    "access": "public",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "member",
+    "name": "$element",
+    "memberof": "src/panel.js~Panel",
+    "static": false,
+    "longname": "src/panel.js~Panel#$element",
+    "access": "public",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/panel.js~Panel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel.js~Panel#destroy",
+    "access": "public",
+    "description": "Destroys the panel",
+    "lineNumber": 74,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 107,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/panel.js~Panel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel.js~Panel#init",
+    "access": "public",
+    "description": "Initializes the panel",
+    "lineNumber": 100,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 111,
+    "kind": "method",
+    "name": "addItem",
+    "memberof": "src/panel.js~Panel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel.js~Panel#addItem",
+    "access": "public",
+    "description": "Add an item to the panel",
+    "lineNumber": 151,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "PanelItem"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "item",
+        "description": "The panel item instance"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "setPosition",
+    "memberof": "src/panel.js~Panel",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/panel.js~Panel#setPosition",
+    "access": "public",
+    "description": null,
+    "lineNumber": 163,
+    "undocument": true,
+    "params": [
+      {
+        "name": "position",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "src/provider.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\nimport Panel from './panel';\nimport WindowsPanelItem from './items/windows';\nimport TrayPanelItem from './items/tray';\nimport ClockPanelItem from './items/clock';\nimport MenuPanelItem from './items/menu';\n\n/**\n * Panel Service Provider\n *\n * @desc Provides methods to handle panels on a desktop in OS.js\n */\nexport default class PanelServiceProvider {\n\n  constructor(core, args = {}) {\n    this.core = core;\n    this.panels = [];\n    this.inited = false;\n    this.registry = Object.assign({\n      menu: MenuPanelItem,\n      windows: WindowsPanelItem,\n      tray: TrayPanelItem,\n      clock: ClockPanelItem\n    }, args.registry || {});\n  }\n\n  destroy() {\n    this.inited = false;\n    this.panels.forEach(panel => panel.destroy());\n    this.panels = [];\n  }\n\n  async init() {\n    this.core.singleton('osjs/panels', () => ({\n      register: (name, classRef) => {\n        if (this.registry[name]) {\n          console.warn('Overwriting previously registered panel item', name);\n        }\n\n        this.registry[name] = classRef;\n      },\n\n      removeAll: () => {\n        this.panels.forEach(p => p.destroy());\n        this.panels = [];\n      },\n\n      remove: (panel) => {\n        const index = typeof panel === 'number'\n          ? panel\n          : this.panels.findIndex(p => p === panel);\n\n        if (index >= 0) {\n          this.panels[index].destroy();\n          this.panels.splice(index, 1);\n        }\n      },\n\n      create: (options) => {\n        const panel = new Panel(this.core, options);\n\n        this.panels.push(panel);\n\n        panel.on('destroy', () => this.core.emit('osjs/panel:destroy', panel, this.panels));\n        panel.on('create', () => setTimeout(() => {\n          this.core.emit('osjs/panel:create', panel, this.panels);\n        }, 1));\n\n        if (this.inited) {\n          panel.init();\n        }\n      },\n\n      save: () => {\n        const settings = this.core.make('osjs/settings');\n        const panels = this.panels.map(panel => panel.options);\n\n        return Promise.resolve(settings.set('osjs/desktop', 'panels', panels))\n          .then(() => settings.save());\n      },\n\n      get: (name) => this.registry[name]\n    }));\n  }\n\n  start() {\n    this.inited = true;\n    this.panels.forEach(p => p.init());\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/src/provider.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "class",
+    "name": "PanelServiceProvider",
+    "memberof": "src/provider.js",
+    "static": true,
+    "longname": "src/provider.js~PanelServiceProvider",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/panels/src/provider.js",
+    "importStyle": "PanelServiceProvider",
+    "description": "Provides methods to handle panels on a desktop in OS.js",
+    "lineNumber": 41,
+    "interface": false
+  },
+  {
+    "__docId__": 115,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#core",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "member",
+    "name": "panels",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#panels",
+    "access": "public",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "member",
+    "name": "inited",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#inited",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "member",
+    "name": "registry",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#registry",
+    "access": "public",
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#destroy",
+    "access": "public",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#init",
+    "access": "public",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/provider.js~PanelServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~PanelServiceProvider#start",
+    "access": "public",
+    "description": null,
+    "lineNumber": 114,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "<p align=\"center\">\n  <img alt=\"OS.js Logo\" src=\"https://raw.githubusercontent.com/os-js/gfx/master/logo-big.png\" />\n</p>\n\n[OS.js](https://www.os-js.org/) is an [open-source](https://raw.githubusercontent.com/os-js/OS.js/master/LICENSE) web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.\n\n[![Support](https://img.shields.io/badge/patreon-support-orange.svg)](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)\n[![Support](https://img.shields.io/badge/opencollective-donate-red.svg)](https://opencollective.com/osjs)\n[![Donate](https://img.shields.io/badge/liberapay-donate-yellowgreen.svg)](https://liberapay.com/os-js/)\n[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/andersevenrud)\n\n# OS.js Panels module\n\nThis is the Panels module for OS.js.\n\n## Contribution\n\n* **Sponsor on [Github](https://github.com/sponsors/andersevenrud)**\n* **Become a [Patreon](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)**\n* **Support on [Open Collective](https://opencollective.com/osjs)**\n* [Contribution Guide](https://github.com/os-js/OS.js/blob/master/CONTRIBUTING.md)\n\n## Documentation\n\nSee the [Official Manuals](https://manual.os-js.org/) for articles, tutorials and guides.\n\n## Links\n\n* [Official Chat](https://gitter.im/os-js/OS.js)\n* [Community Forums and Announcements](https://community.os-js.org/)\n* [Homepage](https://os-js.org/)\n* [Twitter](https://twitter.com/osjsorg) ([author](https://twitter.com/andersevenrud))\n* [Facebook](https://www.facebook.com/os.js.org)\n* [Docker Hub](https://hub.docker.com/u/osjs/)\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@osjs/panels\",\n  \"version\": \"3.0.32\",\n  \"description\": \"OS.js Panels\",\n  \"main\": \"dist/main.js\",\n  \"module\": \"dist/main.js\",\n  \"style\": \"dist/main.css\",\n  \"files\": [\n    \"dist/main.js\",\n    \"dist/main.js.map\",\n    \"dist/main.css\",\n    \"dist/main.css.map\",\n    \"dist/*.png\",\n    \"CHANGELOG.md\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"scripts\": {\n    \"test\": \"npm run eslint && npm run stylelint\",\n    \"build\": \"webpack\",\n    \"watch\": \"webpack --watch\",\n    \"eslint\": \"eslint index.js 'src/**/*.js'\",\n    \"stylelint\": \"stylelint index.scss src/**/*.scss\",\n    \"prepublishOnly\": \"npm run test && rm ./dist/* && NODE_ENV=production npm run build\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/os-js/osjs-panels.git\"\n  },\n  \"keywords\": [\n    \"osjs\"\n  ],\n  \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\",\n  \"license\": \"BSD-2-Clause\",\n  \"dependencies\": {\n    \"@osjs/event-emitter\": \"^1.0.10\",\n    \"hyperapp\": \"^1.2.10\"\n  },\n  \"devDependencies\": {\n    \"@osjs/dev-meta\": \"^2.1.0\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/os-js/osjs-panels/issues\"\n  },\n  \"homepage\": \"https://github.com/os-js/osjs-panels#readme\",\n  \"eslintConfig\": {\n    \"env\": {\n      \"browser\": true,\n      \"node\": true\n    },\n    \"parserOptions\": {\n      \"sourceType\": \"module\"\n    },\n    \"extends\": \"@osjs/eslint-config\"\n  },\n  \"stylelint\": {\n    \"extends\": \"@osjs/stylelint-config\"\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"plugins\": [\n      \"@babel/plugin-transform-runtime\"\n    ]\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./doc\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\",\n        \"option\": {\n          \"brand\": {\n            \"title\": \"OS.js Panel API\",\n            \"description\": \"OS.js Panel API Documentation\",\n            \"repository\": \"https://github.com/os-js/osjs-core\",\n            \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\"\n          },\n          \"lint\": {\n            \"enable\": false\n          },\n          \"coverage\": {\n            \"enable\": false\n          },\n          \"undocumentIdentifier\": {\n            \"enable\": false\n          }\n        }\n      },\n      {\n        \"name\": \"esdoc-publish-html-plugin\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-panels/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

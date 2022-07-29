@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/auth.js | OS.js Server API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Server API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Server API"><meta property="twitter:description" content="OS.js Server API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/auth.js~Auth.html">Auth</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core.js~Core.html">Core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/filesystem.js~Filesystem.html">Filesystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/package.js~Package.html">Package</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/packages.js~Packages.html">Packages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/settings.js~Settings.html">Settings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CoreBase">CoreBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthAdapter">AuthAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthOptions">AuthOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthUserProfile">AuthUserProfile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapter">FilesystemAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapterMap">FilesystemAdapterMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemCallOptions">FilesystemCallOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemOptions">FilesystemOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Mountpoint">Mountpoint</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageMetadata">PackageMetadata</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageOptions">PackageOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackagesOptions">PackagesOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsAdapter">SettingsAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsOptions">SettingsOptions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-auth">adapters/auth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-settings">adapters/settings</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fs">fs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-vfs">adapters/vfs</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-system">system</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#providers">providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/auth.js~AuthServiceProvider.html">AuthServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/core.js~CoreServiceProvider.html">CoreServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/packages.js~PackageServiceProvider.html">PackageServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/settings.js~SettingsServiceProvider.html">SettingsServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/vfs.js~VFSServiceProvider.html">VFSServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServiceProvider">ServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMountpointPermission">checkMountpointPermission</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createError">createError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPrefix">getPrefix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mountpointResolver">mountpointResolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFields">parseFields</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sanitize">sanitize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-streamFromRequest">streamFromRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateGroups">validateGroups</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-errorCodes">errorCodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-methodArguments">methodArguments</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/auth.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+const fs = require(&apos;fs-extra&apos;);
+const pathLib = require(&apos;path&apos;);
+const consola = require(&apos;consola&apos;);
+const logger = consola.withTag(&apos;Auth&apos;);
+const nullAdapter = require(&apos;./adapters/auth/null.js&apos;);
+
+/**
+ * TODO: typedef
+ * @typedef {Object} AuthAdapter
+ */
+
+/**
+ * Authentication User Profile
+ * @typedef {Object} AuthUserProfile
+ * @property {number} id
+ * @property {string} username
+ * @property {string} name
+ * @property {string[]} groups
+ */
+
+/**
+ * Authentication Service Options
+ * @typedef {Object} AuthOptions
+ * @property {AuthAdapter} [adapter]
+ * @property {string[]} [requiredGroups]
+ * @property {string[]} [denyUsers]
+ */
+
+/**
+ * Authentication Handler
+ */
+class Auth {
+
+  /**
+   * Creates a new instance
+   * @param {Core} core Core instance reference
+   * @param {AuthOptions} [options={}] Service Provider arguments
+   */
+  constructor(core, options = {}) {
+    const {requiredGroups, denyUsers} = core.configuration.auth;
+
+    /**
+     * @type {Core}
+     */
+    this.core = core;
+
+    /**
+     * @type {AuthOptions}
+     */
+    this.options = {
+      adapter: nullAdapter,
+      requiredGroups,
+      denyUsers,
+      ...options
+    };
+
+    /**
+     * @type {AuthAdapter}
+     */
+    this.adapter = nullAdapter(core, this.options.config);
+
+    try {
+      this.adapter = this.options.adapter(core, this.options.config);
+    } catch (e) {
+      this.core.logger.warn(e);
+    }
+  }
+
+  /**
+   * Destroys instance
+   */
+  destroy() {
+    if (this.adapter.destroy) {
+      this.adapter.destroy();
+    }
+  }
+
+  /**
+   * Initializes adapter
+   * @return {Promise&lt;boolean&gt;}
+   */
+  async init() {
+    if (this.adapter.init) {
+      return this.adapter.init();
+    }
+
+    return true;
+  }
+
+  /**
+   * Performs a login request
+   * @param {Request} req HTTP request
+   * @param {Response} res HTTP response
+   * @return {Promise&lt;undefined&gt;}
+   */
+  async login(req, res) {
+    const result = await this.adapter.login(req, res);
+
+    if (result) {
+      const profile = this.createUserProfile(req.body, result);
+
+      if (profile &amp;&amp; this.checkLoginPermissions(profile)) {
+        await this.createHomeDirectory(profile, req, res);
+        req.session.user = profile;
+        req.session.save(() =&gt; {
+          this.core.emit(&apos;osjs/core:logged-in&apos;, Object.freeze({
+            ...req.session
+          }));
+
+          res.status(200).json(profile);
+        });
+        return;
+      }
+    }
+
+    res.status(403)
+      .json({error: &apos;Invalid login or permission denied&apos;});
+  }
+
+  /**
+   * Performs a logout request
+   * @param {Request} req HTTP request
+   * @param {Response} res HTTP response
+   * @return {Promise&lt;undefined&gt;}
+   */
+  async logout(req, res) {
+    this.core.emit(&apos;osjs/core:logging-out&apos;, Object.freeze({
+      ...req.session
+    }));
+
+    await this.adapter.logout(req, res);
+
+    try {
+      req.session.destroy();
+    } catch (e) {
+      logger.warn(e);
+    }
+
+    res.json({});
+  }
+
+  /**
+   * Performs a register request
+   * @param {Request} req HTTP request
+   * @param {Response} res HTTP response
+   * @return {Promise&lt;undefined&gt;}
+   */
+  async register(req, res) {
+    if (this.adapter.register) {
+      const result = await this.adapter.register(req, res);
+
+      return res.json(result);
+    }
+
+    return res.status(403)
+      .json({error: &apos;Registration unavailable&apos;});
+  }
+
+  /**
+   * Checks if login is allowed for this user
+   * @param {AuthUserProfile} profile User profile
+   * @return {boolean}
+   */
+  checkLoginPermissions(profile) {
+    const {requiredGroups, denyUsers} = this.options;
+
+    if (denyUsers.indexOf(profile.username) !== -1) {
+      return false;
+    }
+
+    if (requiredGroups.length &gt; 0) {
+      const passes = requiredGroups.every(name =&gt; {
+        return profile.groups.indexOf(name) !== -1;
+      });
+
+      return passes;
+    }
+
+    return true;
+  }
+
+  /**
+   * Creates user profile object
+   * @param {object} fields Input fields
+   * @param {object} result Login result
+   * @return {AuthUserProfile|boolean}
+   */
+  createUserProfile(fields, result) {
+    const ignores = [&apos;password&apos;];
+    const required = [&apos;username&apos;, &apos;id&apos;];
+    const template = {
+      id: 0,
+      username: fields.username,
+      name: fields.username,
+      groups: this.core.config(&apos;auth.defaultGroups&apos;, [])
+    };
+
+    const missing = required
+      .filter(k =&gt; typeof result[k] === &apos;undefined&apos;);
+
+    if (missing.length) {
+      logger.warn(&apos;Missing user attributes&apos;, missing);
+    } else {
+      const values = Object.keys(result)
+        .filter(k =&gt; ignores.indexOf(k) === -1)
+        .reduce((o, k) =&gt; ({...o, [k]: result[k]}), {});
+
+      return {...template, ...values};
+    }
+
+    return false;
+  }
+
+  /**
+   * Tries to create home directory for a user
+   * @param {AuthUserProfile} profile User profile
+   * @return {Promise&lt;undefined&gt;}
+   */
+  async createHomeDirectory(profile) {
+    const vfs = this.core.make(&apos;osjs/vfs&apos;);
+    const template = this.core.config(&apos;vfs.home.template&apos;, []);
+
+    if (typeof template === &apos;string&apos;) {
+      // If the template is a string, it is a path to a directory
+      // that should be copied to the user&apos;s home directory
+      const root = await vfs.realpath(&apos;home:/&apos;, profile);
+
+      await fs.copy(template, root, {overwrite: false});
+    } else if (Array.isArray(template)) {
+      await this.createHomeDirectoryFromArray(template, vfs, profile);
+    }
+  }
+
+  /**
+   * If the template is an array, it is a list of files that should be copied
+   * to the user&apos;s home directory
+   * @param {Object[]} template Array of objects with a specified path,
+   * optionally with specified content but defaulting to an empty string
+   * @param {VFSServiceProvider} vfs An instance of the virtual file system
+   * @param {AuthUserProfile} profile User profile
+   */
+  async createHomeDirectoryFromArray(template, vfs, profile) {
+    for (const file of template) {
+      try {
+        const {path, contents = &apos;&apos;} = file;
+        const shortcutsFile = await vfs.realpath(`home:/${path}`, profile);
+        const dir = pathLib.dirname(shortcutsFile);
+
+        if (!await fs.pathExists(shortcutsFile)) {
+          await fs.ensureDir(dir);
+          await fs.writeFile(shortcutsFile, contents);
+        }
+      } catch (e) {
+        console.warn(`There was a problem writing &apos;${file.path}&apos; to the home directory template`);
+        console.error(&apos;ERROR:&apos;, e);
+      }
+    }
+  }
+}
+
+module.exports = Auth;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

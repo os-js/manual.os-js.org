@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/items/windows.js | OS.js Panel API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Panel API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Panel API"><meta property="twitter:description" content="OS.js Panel API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/panel-item.js~PanelItem.html">PanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/panel.js~Panel.html">Panel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/provider.js~PanelServiceProvider.html">PanelServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#items">items</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/clock.js~ClockPanelItem.html">ClockPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/menu.js~MenuPanelItem.html">MenuPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/tray.js~TrayPanelItem.html">TrayPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/windows.js~WindowsPanelItem.html">WindowsPanelItem</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/items/windows.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+import {h} from &apos;hyperapp&apos;;
+import PanelItem from &apos;../panel-item&apos;;
+import * as languages from &apos;../locales&apos;;
+
+const mapWindow = win =&gt; {
+  return {
+    wid: win.wid,
+    icon: win.state.icon,
+    title: win.state.title,
+    focused: win.state.focused,
+    attributes: Object.assign({}, win.attributes),
+    state: Object.assign({}, win.state),
+    raise: () =&gt; {
+      win.raise();
+      win.focus();
+    },
+    restore: () =&gt; win.restore(),
+    maximize: () =&gt; win.maximize(),
+    minimize: () =&gt; win.minimize(),
+    close: () =&gt; win.close()
+  };
+};
+
+/**
+ * Window List
+ *
+ * @desc Window List Panel Item. Also displays launching applications.
+ */
+export default class WindowsPanelItem extends PanelItem {
+
+  init() {
+    if (this.inited) {
+      return;
+    }
+
+    const filterVisibility = win =&gt; typeof win.attributes.visibility === &apos;undefined&apos; ||
+      win.attributes.visibility === &apos;global&apos;;
+
+    const actions = super.init({
+      launchers: [],
+      windows: this.core.make(&apos;osjs/windows&apos;).list()
+        .filter(win =&gt; win.inited || win.rendered)
+        .filter(filterVisibility)
+        .map(mapWindow)
+    }, {
+      add: win =&gt; state =&gt; {
+        const found = state.windows.find(w =&gt; w.wid === win.wid);
+        if (found) {
+          return state;
+        }
+
+        const windows = state.windows
+          .concat([win])
+          .filter(win =&gt; !win.inited || !win.rendered)
+          .filter(filterVisibility);
+
+        return {windows};
+      },
+
+      remove: win =&gt; ({windows}) =&gt; {
+        const foundIndex = windows.findIndex(w =&gt; w.wid === win.wid);
+        if (foundIndex !== -1) {
+          windows.splice(foundIndex, 1);
+
+          return {windows};
+        }
+
+        return {};
+      },
+
+      change: win =&gt; state =&gt; {
+        const windows = state.windows;
+        const foundIndex = state.windows.findIndex(w =&gt; w.wid === win.wid);
+        if (foundIndex !== -1) {
+          windows[foundIndex] = win;
+        }
+
+        return {windows};
+      },
+
+      addLauncher: name =&gt; state =&gt; ({launchers: [...state.launchers, name]}),
+
+      removeLauncher: name =&gt; state =&gt; {
+        const foundIndex = state.launchers.findIndex(n =&gt; n === name);
+        const launchers = [...state.launchers];
+        if (foundIndex !== -1) {
+          launchers.splice(foundIndex, 1);
+        }
+
+        return {launchers};
+      }
+    });
+
+    const onlaunch = (name) =&gt; actions.addLauncher(name);
+    const onlaunched = (name) =&gt; actions.removeLauncher(name);
+    const ondestroy = (win) =&gt; actions.remove(mapWindow(win));
+    const oncreate = (win) =&gt; actions.add(mapWindow(win));
+    const onchange = (win) =&gt; actions.change(mapWindow(win));
+
+    this.core.on(&apos;osjs/application:launch&apos;, onlaunch);
+    this.core.on(&apos;osjs/application:launched&apos;, onlaunched);
+    this.core.on(&apos;osjs/window:destroy&apos;, ondestroy);
+    this.core.on(&apos;osjs/window:render&apos;, oncreate);
+    this.core.on(&apos;osjs/window:change&apos;, onchange);
+
+    this.on(&apos;destroy&apos;, () =&gt; {
+      this.core.off(&apos;osjs/application:launch&apos;, onlaunch);
+      this.core.off(&apos;osjs/application:launched&apos;, onlaunched);
+      this.core.off(&apos;osjs/window:destroy&apos;, ondestroy);
+      this.core.off(&apos;osjs/window:render&apos;, oncreate);
+      this.core.off(&apos;osjs/window:change&apos;, onchange);
+    });
+  }
+
+  render(state, actions) {
+    const __ = this.core.has(&apos;osjs/locale&apos;)
+      ? this.core.make(&apos;osjs/locale&apos;).translatable(languages)
+      : s =&gt; s;
+
+    const windows = state.windows.map(w =&gt; h(&apos;div&apos;, {
+      &apos;data-has-image&apos;: w.icon ? true : undefined,
+      &apos;data-focused&apos;: w.focused ? &apos;true&apos; : &apos;false&apos;,
+      &apos;data-minimized&apos;: w.state.minimized ? &apos;true&apos; : &apos;false&apos;,
+      onclick: () =&gt; w.raise(),
+      oncontextmenu: ev =&gt; {
+        const _ = this.core.make(&apos;osjs/locale&apos;).translate;
+
+        ev.stopPropagation();
+        ev.preventDefault();
+        this.core.make(&apos;osjs/contextmenu&apos;).show({
+          position: ev.target,
+          menu: [
+            {
+              label: w.state.maximized ? _(&apos;LBL_RESTORE&apos;) : _(&apos;LBL_MAXIMIZE&apos;),
+              onclick: () =&gt; w.attributes.maximizable ? (w.state.maximized ? w.restore() : w.maximize()) : null,
+              disabled: !w.attributes.maximizable
+            },
+            {
+              label: w.state.minimized ? _(&apos;LBL_RAISE&apos;) : _(&apos;LBL_MINIMIZE&apos;),
+              onclick: () =&gt; w.attributes.minimizable ? (w.state.minimized ? w.raise() : w.minimize()) : null,
+              disabled: !w.attributes.minimizable
+            },
+            {type: &apos;separator&apos;},
+            {
+              label: _(&apos;LBL_CLOSE&apos;),
+              onclick: () =&gt; w.attributes.closeable ? w.close() : null,
+              disabled: !w.attributes.closeable
+            }
+          ]
+        });
+      },
+      className: &apos;osjs-panel-item--clickable osjs-panel-item--icon&apos;
+    }, [
+      h(&apos;img&apos;, {
+        src: w.icon,
+        alt: w.title || &apos;(window)&apos;,
+      }),
+      h(&apos;span&apos;, {}, w.title || &apos;(window)&apos;),
+    ]));
+
+    const special = state.launchers.map(name =&gt; h(&apos;div&apos;, {
+    }, h(&apos;span&apos;, {}, __(&apos;LBL_LAUNCHING&apos;, name))));
+
+    const children = [...windows, ...special];
+
+    return super.render(&apos;windows&apos;, children);
+  }
+
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

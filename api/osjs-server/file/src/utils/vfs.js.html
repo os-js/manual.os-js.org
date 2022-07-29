@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/utils/vfs.js | OS.js Server API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Server API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Server API"><meta property="twitter:description" content="OS.js Server API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/auth.js~Auth.html">Auth</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core.js~Core.html">Core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/filesystem.js~Filesystem.html">Filesystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/package.js~Package.html">Package</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/packages.js~Packages.html">Packages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/settings.js~Settings.html">Settings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CoreBase">CoreBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthAdapter">AuthAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthOptions">AuthOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthUserProfile">AuthUserProfile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapter">FilesystemAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapterMap">FilesystemAdapterMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemCallOptions">FilesystemCallOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemOptions">FilesystemOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Mountpoint">Mountpoint</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageMetadata">PackageMetadata</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageOptions">PackageOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackagesOptions">PackagesOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsAdapter">SettingsAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsOptions">SettingsOptions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-auth">adapters/auth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-settings">adapters/settings</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fs">fs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-vfs">adapters/vfs</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-system">system</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#providers">providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/auth.js~AuthServiceProvider.html">AuthServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/core.js~CoreServiceProvider.html">CoreServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/packages.js~PackageServiceProvider.html">PackageServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/settings.js~SettingsServiceProvider.html">SettingsServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/vfs.js~VFSServiceProvider.html">VFSServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServiceProvider">ServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMountpointPermission">checkMountpointPermission</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createError">createError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPrefix">getPrefix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mountpointResolver">mountpointResolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFields">parseFields</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sanitize">sanitize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-streamFromRequest">streamFromRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateGroups">validateGroups</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-errorCodes">errorCodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-methodArguments">methodArguments</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/utils/vfs.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+const fs = require(&apos;fs-extra&apos;);
+const url = require(&apos;url&apos;);
+const sanitizeFilename = require(&apos;sanitize-filename&apos;);
+const formidable = require(&apos;formidable&apos;);
+const {Stream} = require(&apos;stream&apos;);
+
+/**
+ * A map of error codes
+ */
+const errorCodes = {
+  ENOENT: 404,
+  EACCES: 401
+};
+
+/**
+ * Gets prefix of a VFS path
+ */
+const getPrefix = path =&gt; String(path).split(&apos;:&apos;)[0];
+
+/**
+ * Sanitizes a path
+ */
+const sanitize = filename =&gt; {
+  const [name, str] = (filename.replace(/\/+/g, &apos;/&apos;)
+    .match(/^([\w-_]+):+(.*)/) || [])
+    .slice(1);
+
+  const sane = str.split(&apos;/&apos;)
+    .map(s =&gt; sanitizeFilename(s))
+    .join(&apos;/&apos;)
+    .replace(/\/+/g, &apos;/&apos;);
+
+  return name + &apos;:&apos; + sane;
+};
+
+/**
+ * Gets the stream from a HTTP request
+ */
+const streamFromRequest = req =&gt; {
+  const isStream = req.files.upload instanceof Stream;
+  return isStream
+    ? req.files.upload
+    : fs.createReadStream(req.files.upload.path);
+};
+
+const validateAll = (arr, compare, strict = true) =&gt; arr[strict ? &apos;every&apos; : &apos;some&apos;](g =&gt; compare.indexOf(g) !== -1);
+
+/**
+ * Validates array groups
+ */
+const validateNamedGroups = (groups, userGroups, strict) =&gt; {
+  const namedGroups = groups
+    .filter(g =&gt; typeof g === &apos;string&apos;);
+
+  return namedGroups.length
+    ? validateAll(namedGroups, userGroups, strict)
+    : true;
+};
+
+/**
+ * Validates matp of groups based on method:[group,...]
+ */
+const validateMethodGroups = (groups, userGroups, method, strict) =&gt; {
+  const methodGroups = groups
+    .find(g =&gt; typeof g === &apos;string&apos; ? false : (method in g));
+
+  return methodGroups
+    ? validateAll(methodGroups[method], userGroups, strict)
+    : true;
+};
+
+/**
+ * Validates groups
+ */
+const validateGroups = (userGroups, method, mountpoint, strict) =&gt; {
+  const groups = mountpoint.attributes.groups || [];
+  if (groups.length) {
+    const namedValid = validateNamedGroups(groups, userGroups, strict);
+    const methodValid = validateMethodGroups(groups, userGroups, method, strict);
+
+    return namedValid &amp;&amp; methodValid;
+  }
+
+  return true;
+};
+
+/**
+ * Checks permissions for given mountpoint
+ */
+const checkMountpointPermission = (req, res, method, readOnly, strict) =&gt; {
+  const userGroups = req.session.user.groups;
+
+  return ({mount}) =&gt; {
+    if (readOnly) {
+      const {attributes, name} = mount;
+
+      if (attributes.readOnly) {
+        const failed = typeof readOnly === &apos;function&apos;
+          ? getPrefix(readOnly(req, res)) === name
+          : readOnly;
+
+        if (failed) {
+          return Promise.reject(createError(403, `Mountpoint &apos;${name}&apos; is read-only`));
+        }
+      }
+    }
+
+    if (validateGroups(userGroups, method, mount, strict)) {
+      return Promise.resolve(true);
+    }
+
+    return Promise.reject(createError(403, `Permission was denied for &apos;${method}&apos; in &apos;${mount.name}&apos;`));
+  };
+};
+
+/**
+ * Creates a new custom Error
+ */
+const createError = (code, message) =&gt; {
+  const e = new Error(message);
+  e.code = code;
+  return e;
+};
+
+/**
+ * Resolves a mountpoint
+ */
+const mountpointResolver = core =&gt; async (path) =&gt; {
+  const {adapters, mountpoints} = core.make(&apos;osjs/vfs&apos;);
+  const prefix = getPrefix(path);
+  const mount = mountpoints.find(m =&gt; m.name === prefix);
+
+  if (!mount) {
+    throw createError(403, `Mountpoint not found for &apos;${prefix}&apos;`);
+  }
+
+  const adapter = await (mount.adapter
+    ? adapters[mount.adapter]
+    : adapters.system);
+
+  return Object.freeze({mount, adapter});
+};
+
+/*
+ * Assembles a given object query
+ */
+const assembleQueryData = (data) =&gt; {
+  const entries = Object
+    .entries(data)
+    .map(([k, v]) =&gt; {
+      try {
+        return [k, JSON.parse(v)];
+      } catch (e) {
+        return [k, v];
+      }
+    });
+
+  return Object.fromEntries(entries);
+};
+
+/*
+ * Parses URL Body
+ */
+const parseGet = req =&gt; {
+  const {query} = url.parse(req.url, true);
+  const assembledQuery = assembleQueryData(query);
+  return Promise.resolve({fields: assembledQuery, files: {}});
+};
+
+/*
+ * Parses Json Body
+ */
+const parseJson = req =&gt; {
+  const isJson = req.headers[&apos;content-type&apos;] &amp;&amp;
+    req.headers[&apos;content-type&apos;].indexOf(&apos;application/json&apos;) !== -1;
+
+  if (isJson) {
+    return {fields: req.body, files: {}};
+  }
+
+  return false;
+};
+
+/*
+ * Parses Form Body
+ */
+const parseFormData = (req, {maxFieldsSize, maxFileSize}) =&gt; {
+  const form = new formidable.IncomingForm();
+  form.maxFieldsSize = maxFieldsSize;
+  form.maxFileSize = maxFileSize;
+
+  return new Promise((resolve, reject) =&gt; {
+    form.parse(req, (err, fields, files) =&gt; {
+      return err ? reject(err) : resolve({fields, files});
+    });
+  });
+};
+
+/**
+ * Middleware for handling HTTP requests
+ */
+const parseFields = config =&gt; (req, res) =&gt; {
+  if ([&apos;get&apos;, &apos;head&apos;].indexOf(req.method.toLowerCase()) !== -1) {
+    return Promise.resolve(parseGet(req));
+  }
+
+  const json = parseJson(req);
+  if (json) {
+    return Promise.resolve(json);
+  }
+
+  return parseFormData(req, config);
+};
+
+/**
+ * A map of methods and their arguments.
+ * Used for direct access via API
+ */
+const methodArguments = {
+  realpath: [&apos;path&apos;],
+  exists: [&apos;path&apos;],
+  stat: [&apos;path&apos;],
+  readdir: [&apos;path&apos;],
+  readfile: [&apos;path&apos;],
+  writefile: [&apos;path&apos;, upload =&gt; ({upload})],
+  mkdir: [&apos;path&apos;],
+  unlink: [&apos;path&apos;],
+  touch: [&apos;path&apos;],
+  search: [&apos;root&apos;, &apos;pattern&apos;],
+  copy: [&apos;from&apos;, &apos;to&apos;],
+  rename: [&apos;from&apos;, &apos;to&apos;]
+};
+
+module.exports = {
+  mountpointResolver,
+  createError,
+  checkMountpointPermission,
+  validateGroups,
+  streamFromRequest,
+  sanitize,
+  getPrefix,
+  parseFields,
+  errorCodes,
+  methodArguments,
+  assembleQueryData
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

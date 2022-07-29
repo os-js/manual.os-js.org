@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/core.js | OS.js Server API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Server API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Server API"><meta property="twitter:description" content="OS.js Server API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/auth.js~Auth.html">Auth</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core.js~Core.html">Core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/filesystem.js~Filesystem.html">Filesystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/package.js~Package.html">Package</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/packages.js~Packages.html">Packages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/settings.js~Settings.html">Settings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CoreBase">CoreBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthAdapter">AuthAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthOptions">AuthOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthUserProfile">AuthUserProfile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapter">FilesystemAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapterMap">FilesystemAdapterMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemCallOptions">FilesystemCallOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemOptions">FilesystemOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Mountpoint">Mountpoint</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageMetadata">PackageMetadata</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageOptions">PackageOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackagesOptions">PackagesOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsAdapter">SettingsAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsOptions">SettingsOptions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-auth">adapters/auth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-settings">adapters/settings</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fs">fs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-vfs">adapters/vfs</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-system">system</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#providers">providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/auth.js~AuthServiceProvider.html">AuthServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/core.js~CoreServiceProvider.html">CoreServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/packages.js~PackageServiceProvider.html">PackageServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/settings.js~SettingsServiceProvider.html">SettingsServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/vfs.js~VFSServiceProvider.html">VFSServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServiceProvider">ServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMountpointPermission">checkMountpointPermission</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createError">createError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPrefix">getPrefix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mountpointResolver">mountpointResolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFields">parseFields</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sanitize">sanitize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-streamFromRequest">streamFromRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateGroups">validateGroups</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-errorCodes">errorCodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-methodArguments">methodArguments</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/core.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+const fs = require(&apos;fs-extra&apos;);
+const http = require(&apos;http&apos;);
+const https = require(&apos;https&apos;);
+const path = require(&apos;path&apos;);
+const morgan = require(&apos;morgan&apos;);
+const express = require(&apos;express&apos;);
+const minimist = require(&apos;minimist&apos;);
+const deepmerge = require(&apos;deepmerge&apos;);
+const consola = require(&apos;consola&apos;);
+const {CoreBase} = require(&apos;@osjs/common&apos;);
+const {argvToConfig, createSession, createWebsocket, parseJson} = require(&apos;./utils/core.js&apos;);
+const {defaultConfiguration} = require(&apos;./config.js&apos;);
+const logger = consola.withTag(&apos;Core&apos;);
+
+let _instance;
+
+/**
+ * OS.js Server Core
+ */
+class Core extends CoreBase {
+
+  /**
+   * Creates a new instance
+   * @param {Object} cfg Configuration tree
+   * @param {Object} [options] Options
+   */
+  constructor(cfg, options = {}) {
+    options = {
+      argv: process.argv.splice(2),
+      root: process.cwd(),
+      ...options
+    };
+
+    const argv = minimist(options.argv);
+    const val = k =&gt; argvToConfig[k](parseJson(argv[k]));
+    const keys = Object.keys(argvToConfig).filter(k =&gt; Object.prototype.hasOwnProperty.call(argv, k));
+    const argvConfig = keys.reduce((o, k) =&gt; {
+      logger.info(`CLI argument &apos;--${k}&apos; overrides`, val(k));
+      return {...o, ...deepmerge(o, val(k))};
+    }, {});
+
+    super(defaultConfiguration, deepmerge(cfg, argvConfig), options);
+
+    this.logger = consola.withTag(&apos;Internal&apos;);
+
+    /**
+     * @type {Express}
+     */
+    this.app = express();
+
+    if (!this.configuration.public) {
+      throw new Error(&apos;The public option is required&apos;);
+    }
+
+    /**
+     * @type {http.Server|https.Server}
+     */
+    this.httpServer = this.config(&apos;https.enabled&apos;)
+      ? https.createServer(this.config(&apos;https.options&apos;), this.app)
+      : http.createServer(this.app);
+
+    /**
+     * @type {object}
+     */
+    this.session = createSession(this.app, this.configuration);
+
+    /**
+     * @type {object}
+     */
+    this.ws = createWebsocket(this.app, this.configuration, this.session, this.httpServer);
+
+    /**
+     * @type {object}
+     */
+    this.wss = this.ws.getWss();
+
+    _instance = this;
+  }
+
+  /**
+   * Destroys the instance
+   * @param {Function} [done] Callback when done
+   * @return {Promise&lt;undefined&gt;}
+   */
+  async destroy(done = () =&gt; {}) {
+    if (this.destroyed) {
+      return;
+    }
+
+    this.emit(&apos;osjs/core:destroy&apos;);
+
+    logger.info(&apos;Shutting down...&apos;);
+
+    if (this.wss) {
+      this.wss.close();
+    }
+
+    const finish = (error) =&gt; {
+      if (error) {
+        logger.error(error);
+      }
+
+      if (this.httpServer) {
+        this.httpServer.close(done);
+      } else {
+        done();
+      }
+    };
+
+    try {
+      await super.destroy();
+      finish();
+    } catch (e) {
+      finish(e);
+    }
+  }
+
+  /**
+   * Starts the server
+   * @return {Promise&lt;boolean&gt;}
+   */
+  async start() {
+    if (!this.started) {
+      logger.info(&apos;Starting services...&apos;);
+
+      await super.start();
+
+      logger.success(&apos;Initialized!&apos;);
+
+      await this.listen();
+    }
+
+    return true;
+  }
+
+  /**
+   * Initializes the server
+   * @return {Promise&lt;boolean&gt;}
+   */
+  async boot() {
+    if (this.booted) {
+      return true;
+    }
+
+    this.emit(&apos;osjs/core:start&apos;);
+
+    if (this.configuration.logging) {
+      this.wss.on(&apos;connection&apos;, (c) =&gt; {
+        logger.log(&apos;WebSocket connection opened&apos;);
+        c.on(&apos;close&apos;, () =&gt; logger.log(&apos;WebSocket connection closed&apos;));
+      });
+
+      if (this.configuration.morgan) {
+        this.app.use(morgan(this.configuration.morgan));
+      }
+    }
+
+
+    logger.info(&apos;Initializing services...&apos;);
+
+    await super.boot();
+    this.emit(&apos;init&apos;);
+    await this.start();
+    this.emit(&apos;osjs/core:started&apos;);
+
+    return true;
+  }
+
+  /**
+   * Opens HTTP server
+   */
+  async listen() {
+    const httpPort = this.config(&apos;port&apos;);
+    const httpHost = this.config(&apos;bind&apos;);
+    const wsPort = this.config(&apos;ws.port&apos;) || httpPort;
+    const pub = this.config(&apos;public&apos;);
+    const session = path.basename(path.dirname(this.config(&apos;session.store.module&apos;)));
+    const dist = pub.replace(process.cwd(), &apos;&apos;);
+    const secure = this.config(&apos;https.enabled&apos;, false);
+    const proto = prefix =&gt; `${prefix}${secure ? &apos;s&apos; : &apos;&apos;}://`;
+    const host = port =&gt; `${httpHost}:${port}`;
+
+    logger.info(&apos;Opening server connection&apos;);
+
+    const checkFile = path.join(pub, this.configuration.index);
+    if (!fs.existsSync(checkFile)) {
+      logger.warn(&apos;Missing files in &quot;dist/&quot; directory. Did you forget to run &quot;npm run build&quot; ?&apos;);
+    }
+
+    return new Promise((resolve, reject) =&gt; {
+      try {
+        this.httpServer.listen(httpPort, httpHost, (e) =&gt; {
+          if (e) {
+            reject(e);
+          } else {
+            logger.success(`Using &apos;${session}&apos; sessions`);
+            logger.success(`Serving &apos;${dist}&apos;`);
+            logger.success(`WebSocket listening on ${proto(&apos;ws&apos;)}${host(wsPort)}`);
+            logger.success(`Server listening on ${proto(&apos;http&apos;)}${host(httpPort)}`);
+            resolve();
+          }
+        });
+      } catch (e) {
+        reject(e);
+      }
+    });
+  }
+
+  /**
+   * Broadcast given event to client
+   * @param {string} name Event name
+   * @param {Array} params A list of parameters to send to client
+   * @param {Function} [filter] A function to filter clients
+   */
+  broadcast(name, params, filter) {
+    filter = filter || (() =&gt; true);
+
+    if (this.ws) {
+      this.wss.clients // This is a Set
+        .forEach(client =&gt; {
+          if (!client._osjs_client) {
+            return;
+          }
+
+          if (filter(client)) {
+            client.send(JSON.stringify({
+              params,
+              name
+            }));
+          }
+        });
+    }
+  }
+
+  /**
+   * Broadcast given event to all clients
+   * @param {string} name Event name
+   * @param {Array} ...params A list of parameters to send to client
+   */
+  broadcastAll(name, ...params) {
+    return this.broadcast(name, params);
+  }
+
+  /**
+   * Broadcast given event to client filtered by username
+   * @param {String} username Username to send to
+   * @param {string} name Event name
+   * @param {Array} ...params A list of parameters to send to client
+   */
+  broadcastUser(username, name, ...params) {
+    return this.broadcast(name, params, client =&gt; {
+      return client._osjs_client.username === username;
+    });
+  }
+
+  /**
+   * Gets the server instance
+   * @return {Core}
+   */
+  static getInstance() {
+    return _instance;
+  }
+}
+
+module.exports = Core;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/dialog.js | OS.js Dialog API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Dialog API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Dialog API"><meta property="twitter:description" content="OS.js Dialog API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialog.js~Dialog.html">Dialog</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#dialogs">dialogs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/alert.js~AlertDialog.html">AlertDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/choice.js~ChoiceDialog.html">ChoiceDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/color.js~ColorDialog.html">ColorDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/confirm.js~ConfirmDialog.html">ConfirmDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/default-application.js~DefaultApplicationDialog.html">DefaultApplicationDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/file.js~FileDialog.html">FileDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/font.js~FontDialog.html">FontDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/progress.js~ProgressDialog.html">ProgressDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/prompt.js~PromptDialog.html">PromptDialog</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/dialog.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+import {h} from &apos;hyperapp&apos;;
+import merge from &apos;deepmerge&apos;;
+import plain from &apos;is-plain-object&apos;;
+import {Box, Button, Toolbar} from &apos;@osjs/gui&apos;;
+
+let dialogCount = 0;
+
+/*
+ * Default button attributes
+ */
+const defaultButtons = (_) =&gt; ({
+  ok: {label: _(&apos;LBL_OK&apos;), positive: true},
+  close: {label: _(&apos;LBL_CLOSE&apos;)},
+  cancel: {label: _(&apos;LBL_CANCEL&apos;)},
+  yes: {label: _(&apos;LBL_YES&apos;), positive: true},
+  no: {label: _(&apos;LBL_NO&apos;)}
+});
+
+/*
+ * Creates a button from name
+ */
+const defaultButton = (n, _) =&gt; {
+  const defs = defaultButtons(_);
+  if (defs[n]) {
+    return Object.assign({}, {
+      name: n
+    }, defs[n]);
+  }
+
+  return {label: n, name: n};
+};
+
+/*
+ * Creates options
+ */
+const createOptions = (options, args) =&gt;
+  merge({
+    id: null,
+    className: &apos;unknown&apos;,
+    defaultValue: null,
+    buttons: [],
+    sound: null,
+    window: {
+      id: options.id || &apos;Dialog_&apos; + String(dialogCount),
+      title: &apos;Dialog&apos;,
+      attributes: {
+        gravity: &apos;center&apos;,
+        resizable: false,
+        maximizable: false,
+        minimizable: false,
+        sessionable: false,
+        classNames: [
+          &apos;osjs-dialog&apos;,
+          `osjs-${options.className || &apos;unknown&apos;}-dialog`
+        ],
+        minDimension: {
+          width: 300,
+          height: 100
+        },
+      }
+    }
+  }, options, {
+    isMergeableObject: plain
+  });
+
+/**
+ * OS.js default Dialog implementation
+ *
+ * Creates a Window with predefined content and actions(s)
+ */
+export default class Dialog {
+
+  /**
+   * Constructor
+   * @param {Core} core OS.js Core reference
+   * @param {Object} args Arguments given from service creation
+   * @param {Object} options Dialog options (including Window)
+   * @param {Object} [options.defaultValue] Default callback value
+   * @param {Function} callback The callback function
+   */
+  constructor(core, args, options, callback) {
+    this.core = core;
+    this.args = args;
+    this.callback = callback || function() {};
+    this.options = createOptions(options, args);
+    this.win = null;
+    this.value = undefined;
+    this.calledBack = false;
+
+    const _ = core.make(&apos;osjs/locale&apos;).translate;
+
+    this.buttons = this.options.buttons.map(n =&gt;
+      typeof n === &apos;string&apos;
+        ? defaultButton(n, _)
+        : {
+          label: n.label || &apos;button&apos;,
+          name: n.name || &apos;unknown&apos;
+        });
+
+    dialogCount++;
+  }
+
+  /**
+   * Destroys the dialog
+   */
+  destroy() {
+    if (this.win) {
+      this.win.destroy();
+    }
+
+    this.win = null;
+    this.callback = null;
+  }
+
+  /**
+   * Renders the dialog
+   * @param {Function} cb Callback from window
+   */
+  render(options, cb) {
+    const opts = merge(this.options.window || {}, options, {
+      isMergeableObject: plain
+    });
+
+    this.win = this.core.make(&apos;osjs/window&apos;, opts);
+
+    this.win.on(&apos;keydown&apos;, (ev, win) =&gt; {
+      if (ev.keyCode === 27) {
+        this.emitCallback(this.getNegativeButton(), null, true);
+      }
+    });
+
+    this.win.on(&apos;dialog:button&apos;, (name, ev) =&gt; {
+      this.emitCallback(name, ev, true);
+    });
+
+    this.win.on(&apos;destroy&apos;, () =&gt; {
+      this.emitCallback(&apos;destroy&apos;);
+    });
+
+    this.win.on(&apos;close&apos;, () =&gt; {
+      this.emitCallback(&apos;cancel&apos;, undefined, true);
+    });
+
+    this.win.on(&apos;render&apos;, () =&gt; {
+      // this.win.resizeFit();
+      this.win.focus();
+
+      const focusButton = this.getNegativeButton();
+      const btn = focusButton ? this.win.$content.querySelector(`button[name=${focusButton}]`) : null;
+      if (btn) {
+        btn.focus();
+      }
+
+      this.playSound();
+    });
+
+    this.win.init();
+    this.win.render(cb);
+    this.win.focus();
+
+    return this;
+  }
+
+  /**
+   * Creates the default view
+   * @param {Object[]} children Child nodes
+   * @param {Object} [state] Pass on application state (mainly used for buttons)
+   * @return {Object} Virtual dom node
+   */
+  createView(children, state = {}) {
+    return h(Box, {grow: 1, shrink: 1}, [
+      ...children,
+      h(Toolbar, {class: &apos;osjs-dialog-buttons&apos;}, [
+        ...this.createButtons(state.buttons || {})
+      ])
+    ]);
+  }
+
+  /**
+   * Gets the button (virtual) DOM elements
+   * @param {Object} [states] Button states
+   * @return {Object[]} Virtual dom node children list
+   */
+  createButtons(states = {}) {
+    const onclick = (n, ev) =&gt; {
+      this.win.emit(&apos;dialog:button&apos;, n, ev);
+    };
+
+    return this.buttons.map(b =&gt; h(Button, Object.assign({}, {
+      disabled: states[b.name] === false,
+      onclick: ev =&gt; onclick(b.name, ev)
+    }, b)));
+  }
+
+  /**
+   * Emits the callback
+   * @param {String} name Button or action name
+   * @param {Event} [ev] Browser event reference
+   * @param {Boolean} [close=false] Close dialog
+   */
+  emitCallback(name, ev, close = false) {
+    if (this.calledBack) {
+      return;
+    }
+    this.calledBack = true;
+
+    console.debug(&apos;Callback in dialog&apos;, name, ev, close);
+
+    this.callback(name, this.getValue(), ev);
+
+    if (close) {
+      this.destroy();
+    }
+  }
+
+  /**
+   */
+  playSound() {
+    if (this.core.has(&apos;osjs/sounds&apos;)) {
+      const snd = this.options.sound;
+      if (snd) {
+        this.core.make(&apos;osjs/sounds&apos;).play(snd);
+
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Gets the first positive button
+   * @return {String|undefined}
+   */
+  getPositiveButton() {
+    const found = this.buttons.find(b =&gt; b.positive === true);
+    return found ? found.name : null;
+  }
+
+  /**
+   * Gets the first negative button
+   * @return {String|undefined}
+   */
+  getNegativeButton() {
+    const found = this.buttons.find(b =&gt; !b.positive);
+    return found ? found.name : null;
+  }
+
+  /**
+   * Gets the dialog result value
+   * @return {*}
+   */
+  getValue() {
+    return typeof this.value === &apos;undefined&apos;
+      ? this.options.defaultValue
+      : this.value;
+  }
+
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

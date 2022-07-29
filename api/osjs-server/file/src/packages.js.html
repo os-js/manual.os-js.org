@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/packages.js | OS.js Server API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Server API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Server API"><meta property="twitter:description" content="OS.js Server API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/auth.js~Auth.html">Auth</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core.js~Core.html">Core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/filesystem.js~Filesystem.html">Filesystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/package.js~Package.html">Package</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/packages.js~Packages.html">Packages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/settings.js~Settings.html">Settings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CoreBase">CoreBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthAdapter">AuthAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthOptions">AuthOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthUserProfile">AuthUserProfile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapter">FilesystemAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapterMap">FilesystemAdapterMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemCallOptions">FilesystemCallOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemOptions">FilesystemOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Mountpoint">Mountpoint</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageMetadata">PackageMetadata</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageOptions">PackageOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackagesOptions">PackagesOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsAdapter">SettingsAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsOptions">SettingsOptions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-auth">adapters/auth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-settings">adapters/settings</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fs">fs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-vfs">adapters/vfs</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-system">system</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#providers">providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/auth.js~AuthServiceProvider.html">AuthServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/core.js~CoreServiceProvider.html">CoreServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/packages.js~PackageServiceProvider.html">PackageServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/settings.js~SettingsServiceProvider.html">SettingsServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/vfs.js~VFSServiceProvider.html">VFSServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServiceProvider">ServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMountpointPermission">checkMountpointPermission</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createError">createError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPrefix">getPrefix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mountpointResolver">mountpointResolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFields">parseFields</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sanitize">sanitize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-streamFromRequest">streamFromRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateGroups">validateGroups</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-errorCodes">errorCodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-methodArguments">methodArguments</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/packages.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+const fs = require(&apos;fs-extra&apos;);
+const fg = require(&apos;fast-glob&apos;);
+const path = require(&apos;path&apos;);
+const Package = require(&apos;./package.js&apos;);
+const consola = require(&apos;consola&apos;);
+const logger = consola.withTag(&apos;Packages&apos;);
+
+const relative = filename =&gt; filename.replace(process.cwd(), &apos;&apos;);
+
+const readOrDefault = filename =&gt; fs.existsSync(filename)
+  ? fs.readJsonSync(filename)
+  : [];
+
+/**
+ * Package Service Options
+ * @typedef {Object} PackagesOptions
+ * @property {string} [manifestFile] Manifest filename
+ * @property {string} [discoveredFile] Discovery output file
+ */
+
+/**
+ * OS.js Package Management
+ */
+class Packages {
+
+  /**
+   * Create new instance
+   * @param {Core} core Core reference
+   * @param {PackagesOptions} [options] Instance options
+   */
+  constructor(core, options = {}) {
+    /**
+     * @type {Core}
+     */
+    this.core = core;
+
+    /**
+     * @type {Package[]}
+     */
+    this.packages = [];
+
+    this.hotReloading = {};
+
+    /**
+     * @type {PackagesOptions}
+     */
+    this.options = {
+      manifestFile: null,
+      discoveredFile: null,
+      ...options
+    };
+  }
+
+  /**
+   * Initializes packages
+   */
+  init() {
+    this.core.on(&apos;osjs/application:socket:message&apos;, (ws, ...params) =&gt; {
+      this.handleMessage(ws, params);
+    });
+
+    return this.load();
+  }
+
+  /**
+   * Loads package manager
+   * @return {Promise&lt;boolean&gt;}
+   */
+  load() {
+    return this.createLoader()
+      .then(packages =&gt; {
+        this.packages = this.packages.concat(packages);
+
+        return true;
+      });
+  }
+
+  /**
+   * Loads all packages
+   * @return {Promise&lt;Package[]&gt;}
+   */
+  createLoader() {
+    let result = [];
+    const {discoveredFile, manifestFile} = this.options;
+    const discovered = readOrDefault(discoveredFile);
+    const manifest = readOrDefault(manifestFile);
+    const sources = discovered.map(d =&gt; path.join(d, &apos;metadata.json&apos;));
+
+    logger.info(&apos;Using package discovery file&apos;, relative(discoveredFile));
+    logger.info(&apos;Using package manifest file&apos;, relative(manifestFile));
+
+    const stream = fg.stream(sources, {
+      extension: false,
+      brace: false,
+      deep: 1,
+      case: false
+    });
+
+    stream.on(&apos;error&apos;, error =&gt; logger.error(error));
+    stream.on(&apos;data&apos;, filename =&gt; {
+      result.push(this.loadPackage(filename, manifest));
+    });
+
+    return new Promise((resolve, reject) =&gt; {
+      stream.once(&apos;end&apos;, () =&gt; {
+        Promise.all(result)
+          .then(result =&gt; result.filter(iter =&gt; !!iter.handler))
+          .then(resolve)
+          .catch(reject);
+      });
+    });
+  }
+
+  /**
+   * When a package dist has changed
+   * @param {Package} pkg Package instance
+   */
+  onPackageChanged(pkg) {
+    clearTimeout(this.hotReloading[pkg.metadata.name]);
+
+    this.hotReloading[pkg.metadata.name] = setTimeout(() =&gt; {
+      logger.debug(&apos;Sending reload signal for&apos;, pkg.metadata.name);
+      this.core.broadcast(&apos;osjs/packages:package:changed&apos;, [pkg.metadata.name]);
+    }, 500);
+  }
+
+  /**
+   * Loads package data
+   * @param {string} filename Filename
+   * @param {PackageMetadata} manifest Manifest
+   * @return {Promise&lt;Package&gt;}
+   */
+  loadPackage(filename, manifest) {
+    const done = (pkg, error) =&gt; {
+      if (error) {
+        logger.warn(error);
+      }
+
+      return Promise.resolve(pkg);
+    };
+
+    return fs.readJson(filename)
+      .then(metadata =&gt; {
+        const pkg = new Package(this.core, {
+          filename,
+          metadata
+        });
+
+        return this.initializePackage(pkg, manifest, done);
+      });
+  }
+
+  /**
+   * Initializes a package
+   * @return {Promise&lt;Package&gt;}
+   */
+  initializePackage(pkg, manifest, done) {
+    if (pkg.validate(manifest)) {
+      logger.info(`Loading ${relative(pkg.script)}`);
+
+      try {
+        if (this.core.configuration.development) {
+          pkg.watch(() =&gt; {
+            this.onPackageChanged(pkg);
+          });
+        }
+
+        return pkg.init()
+          .then(() =&gt; done(pkg))
+          .catch(e =&gt; done(pkg, e));
+      } catch (e) {
+        return done(pkg, e);
+      }
+    }
+
+    return done(pkg);
+  }
+
+  /**
+   * Starts packages
+   */
+  start() {
+    this.packages.forEach(pkg =&gt; pkg.start());
+  }
+
+  /**
+   * Destroys packages
+   * @return {Promise&lt;undefined&gt;}
+   */
+  async destroy() {
+    await Promise.all(this.packages.map(pkg =&gt; pkg.destroy()));
+
+    this.packages = [];
+  }
+
+  /**
+   * Handles an incoming message and signals an application
+   *
+   * This will call the &apos;onmessage&apos; event in your application server script
+   *
+   * @param {WebSocket} ws Websocket Connection client
+   * @param {Array} params A list of incoming parameters
+   */
+  handleMessage(ws, params) {
+    const {pid, name, args} = params[0];
+    const found = this.packages.findIndex(({metadata}) =&gt; metadata.name === name);
+
+    if (found !== -1) {
+      const {handler} = this.packages[found];
+      if (handler &amp;&amp; typeof handler.onmessage === &apos;function&apos;) {
+        const respond = (...respondParams) =&gt; ws.send(JSON.stringify({
+          name: &apos;osjs/application:socket:message&apos;,
+          params: [{
+            pid,
+            args: respondParams
+          }]
+        }));
+
+        handler.onmessage(ws, respond, args);
+      }
+    }
+  }
+}
+
+module.exports = Packages;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

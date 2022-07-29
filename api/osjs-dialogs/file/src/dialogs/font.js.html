@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/dialogs/font.js | OS.js Dialog API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Dialog API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Dialog API"><meta property="twitter:description" content="OS.js Dialog API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialog.js~Dialog.html">Dialog</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#dialogs">dialogs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/alert.js~AlertDialog.html">AlertDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/choice.js~ChoiceDialog.html">ChoiceDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/color.js~ColorDialog.html">ColorDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/confirm.js~ConfirmDialog.html">ConfirmDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/default-application.js~DefaultApplicationDialog.html">DefaultApplicationDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/file.js~FileDialog.html">FileDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/font.js~FontDialog.html">FontDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/progress.js~ProgressDialog.html">ProgressDialog</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/dialogs/prompt.js~PromptDialog.html">PromptDialog</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/dialogs/font.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+import {h, app} from &apos;hyperapp&apos;;
+import Dialog from &apos;../dialog&apos;;
+import {
+  Toolbar,
+  SelectField,
+  TextareaField
+} from &apos;@osjs/gui&apos;;
+
+/**
+ * Default OS.js Font Dialog
+ */
+export default class FontDialog extends Dialog {
+
+  /**
+   * Constructor
+   * @param {Core} core OS.js Core reference
+   * @param {Object} args Arguments given from service creation
+   * @param {number} [args.minSize=6] Minimum size
+   * @param {number} [args.maxSize] Maximum size
+   * @param {string} [args.unit=px] Unit
+   * @param {string} [args.name] Initial font name
+   * @param {number} [args.size] Initial font size
+   * @param {string} [args.text] What text to preview
+   * @param {string[]} [args.controls] What controls to show
+   * @param {string[]} [args.fonts] List of fonts
+   * @param {Function} callback The callback function
+   */
+  constructor(core, args, callback) {
+    args = Object.assign({}, {
+      title: &apos;Choose Font&apos;,
+      minSize: 6,
+      maxSize: 48,
+      unit: &apos;px&apos;,
+      name: &apos;Roboto&apos;,
+      size: 10,
+      style: &apos;regular&apos;,
+      text: &apos;The quick brown fox jumps over the lazy dog&apos;,
+      controls: [&apos;size&apos;, &apos;name&apos;, &apos;style&apos;],
+      fonts: [
+        &apos;Roboto&apos;,
+        &apos;arial&apos;,
+        &apos;sans-serif&apos;,
+        &apos;monospace&apos;
+      ]
+    }, args);
+
+    super(core, args, {
+      className: &apos;info&apos;,
+      window: {
+        title: args.title,
+        attributes: {
+          minDimension: {
+            width: 400,
+            height: 200
+          }
+        }
+      },
+      buttons: [&apos;ok&apos;, &apos;cancel&apos;]
+    }, callback);
+
+    this.value = {
+      name: this.args.name,
+      size: this.args.size,
+      style: this.args.style
+    };
+  }
+
+  render(options) {
+    const fontSizes = Array(this.args.maxSize - this.args.minSize)
+      .fill(0)
+      .map((v, i) =&gt; this.args.minSize + i)
+      .reduce((o, i) =&gt; Object.assign(o, {[i]: i}), {});
+
+    const fontNames = this.args.fonts
+      .reduce((o, i) =&gt; {
+        const k = i.toLowerCase();
+        return Object.assign(o, {[k]: i});
+      }, {});
+
+    const fontStyles = {
+      &apos;regular&apos;: &apos;Regular&apos;,
+      &apos;bold&apos;: &apos;Bold&apos;,
+      &apos;italic&apos;: &apos;Italic&apos;
+    };
+
+    const initialState = Object.assign({}, this.value);
+    const initialActions = {
+      setSize: size =&gt; state =&gt; {
+        this.value.size = size;
+        return {size};
+      },
+      setFont: name =&gt; state =&gt; {
+        this.value.name = name;
+        return {name};
+      },
+      setStyle: style =&gt; state =&gt; {
+        this.value.style = style;
+        return {style};
+      }
+    };
+
+    super.render(options, ($content) =&gt; {
+      app(initialState, initialActions, (state, actions) =&gt; this.createView([
+        h(Toolbar, {}, [
+          h(SelectField, {
+            box: {grow: 1, style: {display: this.args.controls.indexOf(&apos;size&apos;) !== -1 ? &apos;flex&apos; : &apos;none&apos;}},
+            value: state.size,
+            choices: fontSizes,
+            onchange: (ev, v) =&gt; actions.setSize(v)
+          }),
+          h(SelectField, {
+            box: {grow: 1, style: {display: this.args.controls.indexOf(&apos;name&apos;) !== -1 ? &apos;flex&apos; : &apos;none&apos;}},
+            value: state.name.toLowerCase(),
+            choices: fontNames,
+            onchange: (ev, v) =&gt; actions.setFont(v)
+          }),
+          h(SelectField, {
+            box: {grow: 1, style: {display: this.args.controls.indexOf(&apos;style&apos;) !== -1 ? &apos;flex&apos; : &apos;none&apos;}},
+            value: state.size,
+            choices: fontStyles,
+            onchange: (ev, v) =&gt; actions.setStyle(v)
+          })
+        ]),
+        h(TextareaField, {
+          box: {grow: 1},
+          value: this.args.text,
+          style: {
+            fontFamily: state.name,
+            fontSize: `${state.size}${this.args.unit}`,
+            fontWeight: state.style === &apos;bold&apos; ? &apos;bold&apos; : &apos;normal&apos;,
+            fontStyle: state.style !== &apos;bold&apos; ? state.style : &apos;normal&apos;,
+            height: &apos;4rem&apos;,
+            overflow: &apos;hidden&apos;,
+            whiteSpace: &apos;nowrap&apos;
+          }
+        })
+      ]), $content);
+    });
+  }
+
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

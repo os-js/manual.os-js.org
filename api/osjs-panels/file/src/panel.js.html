@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/panel.js | OS.js Panel API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Panel API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Panel API"><meta property="twitter:description" content="OS.js Panel API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/panel-item.js~PanelItem.html">PanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/panel.js~Panel.html">Panel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/provider.js~PanelServiceProvider.html">PanelServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#items">items</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/clock.js~ClockPanelItem.html">ClockPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/menu.js~MenuPanelItem.html">MenuPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/tray.js~TrayPanelItem.html">TrayPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/windows.js~WindowsPanelItem.html">WindowsPanelItem</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/panel.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+import PanelItem from &apos;./panel-item&apos;;
+import * as languages from &apos;./locales&apos;;
+import {EventEmitter} from &apos;@osjs/event-emitter&apos;;
+
+/**
+ * Panel
+ *
+ * @desc Base Panel Class
+ */
+export default class Panel extends EventEmitter {
+
+  /**
+   * Create panel
+   *
+   * @param {Core} core Core reference
+   * @param {Object} options Options
+   */
+  constructor(core, options = {}) {
+    super(&apos;Panel&apos;);
+
+    this.core = core;
+    this.options = Object.assign({}, {
+      ontop: true,
+      position: &apos;top&apos;,
+      contextmenu: true,
+      items: []
+    }, options);
+
+    this.items = [];
+    this.inited = false;
+    this.destroyed = false;
+    this.$element = null;
+
+    this.options.items
+      .forEach(({name, options}) =&gt; {
+        const c = core.make(&apos;osjs/panels&apos;).get(name);
+        this.addItem(new c(this.core, this, options || {}));
+      });
+  }
+
+  /**
+   * Destroys the panel
+   */
+  destroy() {
+    if (this.destroyed) {
+      return;
+    }
+
+    this.items = this.items.filter(item =&gt; {
+      try {
+        item.destroy();
+      } catch (e) {
+        console.warn(e);
+      }
+      return false;
+    });
+
+    this.destroyed = true;
+    this.inited = false;
+    this.emit(&apos;destroy&apos;);
+    this.core.emit(&apos;osjs/panel:destroy&apos;, this);
+
+    this.$element.remove();
+    this.$element = null;
+  }
+
+  /**
+   * Initializes the panel
+   */
+  init() {
+    if (this.inited) {
+      return;
+    }
+    this.destroyed = false;
+    this.inited = true;
+
+    const _ = this.core.make(&apos;osjs/locale&apos;).translate;
+    const __ = this.core.make(&apos;osjs/locale&apos;).translatable(languages);
+
+    this.$element = document.createElement(&apos;div&apos;);
+    this.$element.classList.add(&apos;osjs-panel&apos;);
+    this.$element.classList.add(&apos;osjs__contextmenu&apos;);
+    this.$element.addEventListener(&apos;contextmenu&apos;, ev =&gt; {
+      ev.preventDefault();
+
+      const disabled = this.core.config(&apos;desktop.lock&apos;) ||
+        this.core.config(&apos;desktop.disablePanelContextMenu&apos;);
+
+      if (disabled) {
+        return;
+      }
+
+      this.core.make(&apos;osjs/contextmenu&apos;).show({
+        position: ev,
+        menu: [{
+          label: __(&apos;LBL_PANEL_POSITION&apos;),
+          items: [{
+            label: _(&apos;LBL_TOP&apos;),
+            onclick: () =&gt; this.setPosition(&apos;top&apos;)
+          }, {
+            label: _(&apos;LBL_BOTTOM&apos;),
+            onclick: () =&gt; this.setPosition(&apos;bottom&apos;)
+          }]
+        }]
+      });
+    });
+    this.$element.setAttribute(&apos;data-position&apos;, this.options.position);
+    this.$element.setAttribute(&apos;data-ontop&apos;, String(this.options.ontop));
+
+    this.core.$root.appendChild(this.$element);
+
+    this.items.forEach(item =&gt; item.init());
+
+    this.emit(&apos;create&apos;);
+  }
+
+  /**
+   * Add an item to the panel
+   * @param {PanelItem} item The panel item instance
+   */
+  addItem(item) {
+    if (!(item instanceof PanelItem)) {
+      throw new TypeError(&apos;Invalid panel item specified&apos;);
+    }
+
+    this.items.push(item);
+
+    if (this.inited) {
+      item.init();
+    }
+  }
+
+  setPosition(position) {
+    this.options.position = position;
+
+    return this.core.make(&apos;osjs/panels&apos;).save()
+      .then(() =&gt; {
+        const desktop = this.core.make(&apos;osjs/desktop&apos;);
+        return desktop.applySettings();
+      });
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

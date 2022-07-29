@@ -1,0 +1,2311 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>IFrame Tutorial - OS.js Web Desktop Manual</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="A tutorial on how to create Iframe applications in OS.js">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Anders Evenrud <andersevenrud@gmail.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+  
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../guide/migrate/" />
+    
+    
+    <link rel="prev" href="../dnd/" />
+    
+
+
+  <link rel="publisher" href="https://plus.google.com/101576798387217383063" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+
+    </head>
+    <body>
+        
+  
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../#links">
+            
+                    
+                    Links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../">
+            
+                <a href="../../#donate">
+            
+                    
+                    Donate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../FAQ.html">
+            
+                <a href="../../FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Resources</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../resource/overview/">
+            
+                <a href="../../resource/overview/">
+            
+                    
+                    Architecture and overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../resource/docs/">
+            
+                <a href="../../resource/docs/">
+            
+                    
+                    Documentation and examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../resource/official/">
+            
+                <a href="../../resource/official/">
+            
+                    
+                    Official extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../resource/contrib/">
+            
+                <a href="../../resource/contrib/">
+            
+                    
+                    Contributed extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../install/">
+            
+                <a href="../../install/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../install/">
+            
+                <a href="../../install/#requirements">
+            
+                    
+                    Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../install/">
+            
+                <a href="../../install/#demo">
+            
+                    
+                    Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../install/">
+            
+                <a href="../../install/#setup">
+            
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../install/">
+            
+                <a href="../../install/#upgrade">
+            
+                    
+                    Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../../install/">
+            
+                <a href="../../install/#remove-packages">
+            
+                    
+                    Remove Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../config/">
+            
+                <a href="../../config/">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../config/">
+            
+                <a href="../../config/#caveats">
+            
+                    
+                    Caveats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../config/">
+            
+                <a href="../../config/#client">
+            
+                    
+                    Client
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../config/">
+            
+                <a href="../../config/#server">
+            
+                    
+                    Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../../config/">
+            
+                <a href="../../config/#filesystems">
+            
+                    
+                    Filesystems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../../config/">
+            
+                <a href="../../config/#dotenv">
+            
+                    
+                    Dotenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../development/">
+            
+                <a href="../../development/">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../development/">
+            
+                <a href="../../development/#introduction">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../../development/">
+            
+                <a href="../../development/#naming-conventions">
+            
+                    
+                    Naming conventions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../../development/">
+            
+                <a href="../../development/#building">
+            
+                    
+                    Building
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../../development/">
+            
+                <a href="../../development/#testing">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../../development/">
+            
+                <a href="../../development/#developing-modules">
+            
+                    
+                    Developing Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="../../development/">
+            
+                <a href="../../development/#developing-packages">
+            
+                    
+                    Developing Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorials</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../application/">
+            
+                <a href="../application/">
+            
+                    
+                    Application
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../application/">
+            
+                <a href="../application/#creation">
+            
+                    
+                    Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../application/">
+            
+                <a href="../application/#metadata">
+            
+                    
+                    Metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../application/">
+            
+                <a href="../application/#basic-example">
+            
+                    
+                    Basic Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../application/">
+            
+                <a href="../application/#windows">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../application/">
+            
+                <a href="../application/#events">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../application/">
+            
+                <a href="../application/#resources">
+            
+                    
+                    Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../application/">
+            
+                <a href="../application/#http-requests">
+            
+                    
+                    HTTP Requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../application/">
+            
+                <a href="../application/#websockets">
+            
+                    
+                    WebSockets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../application/">
+            
+                <a href="../application/#settings">
+            
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../application/">
+            
+                <a href="../application/#launch-arguments">
+            
+                    
+                    Launch Arguments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../application/">
+            
+                <a href="../application/#session">
+            
+                    
+                    Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../window/">
+            
+                <a href="../window/">
+            
+                    
+                    Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../window/">
+            
+                <a href="../window/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../window/">
+            
+                <a href="../window/#render">
+            
+                    
+                    Render
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../window/">
+            
+                <a href="../window/#options">
+            
+                    
+                    Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../window/">
+            
+                <a href="../window/#attributes">
+            
+                    
+                    Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.5" data-path="../window/">
+            
+                <a href="../window/#events">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.6" data-path="../window/">
+            
+                <a href="../window/#methods">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.7" data-path="../window/">
+            
+                <a href="../window/#media-queries">
+            
+                    
+                    Media Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../dialog/">
+            
+                <a href="../dialog/">
+            
+                    
+                    Dialog
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../dialog/">
+            
+                <a href="../dialog/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.2" data-path="../dialog/">
+            
+                <a href="../dialog/#custom-dialog">
+            
+                    
+                    Custom Dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.3" data-path="../dialog/">
+            
+                <a href="../dialog/#registration">
+            
+                    
+                    Registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.4" data-path="../dialog/">
+            
+                <a href="../dialog/#programmatic">
+            
+                    
+                    Programmatic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3.5" data-path="../dialog/">
+            
+                <a href="../dialog/#ui-customization">
+            
+                    
+                    UI customization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../gui/">
+            
+                <a href="../gui/">
+            
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../gui/">
+            
+                <a href="../gui/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="../gui/">
+            
+                <a href="../gui/#basic-example">
+            
+                    
+                    Basic Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.3" data-path="../gui/">
+            
+                <a href="../gui/#jsx">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.4" data-path="../gui/">
+            
+                <a href="../gui/#contextmenu">
+            
+                    
+                    Contextmenu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.5" data-path="../gui/">
+            
+                <a href="../gui/#components">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.6" data-path="../gui/">
+            
+                <a href="../gui/#component-examples">
+            
+                    
+                    Component Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../provider/">
+            
+                <a href="../provider/">
+            
+                    
+                    Service Provider
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="../provider/">
+            
+                <a href="../provider/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.2" data-path="../provider/">
+            
+                <a href="../provider/#custom-service-provider">
+            
+                    
+                    Custom Service Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5.3" data-path="../provider/">
+            
+                <a href="../provider/#basic-example">
+            
+                    
+                    Basic Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../theme/">
+            
+                <a href="../theme/">
+            
+                    
+                    Theme
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../theme/">
+            
+                <a href="../theme/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="../theme/">
+            
+                <a href="../theme/#creation">
+            
+                    
+                    Creation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="../theme/">
+            
+                <a href="../theme/#metadata">
+            
+                    
+                    Metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="../theme/">
+            
+                <a href="../theme/#styles">
+            
+                    
+                    Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.5" data-path="../theme/">
+            
+                <a href="../theme/#icons">
+            
+                    
+                    Icons
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../vfs/">
+            
+                <a href="../vfs/">
+            
+                    
+                    VFS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.7.1" data-path="../vfs/">
+            
+                <a href="../vfs/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.2" data-path="../vfs/">
+            
+                <a href="../vfs/#methods">
+            
+                    
+                    Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.3" data-path="../vfs/">
+            
+                <a href="../vfs/#stat">
+            
+                    
+                    Stat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.4" data-path="../vfs/">
+            
+                <a href="../vfs/#encoding">
+            
+                    
+                    Encoding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7.5" data-path="../vfs/">
+            
+                <a href="../vfs/#custom-vfs-adapter">
+            
+                    
+                    Custom VFS Adapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../express/">
+            
+                <a href="../express/">
+            
+                    
+                    Server (Express)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.8.1" data-path="../express/">
+            
+                <a href="../express/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.2" data-path="../express/">
+            
+                <a href="../express/#routes">
+            
+                    
+                    Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.3" data-path="../express/">
+            
+                <a href="../express/#raw-routes">
+            
+                    
+                    Raw Routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.4" data-path="../express/">
+            
+                <a href="../express/#middleware-and-extensions">
+            
+                    
+                    Middleware and Extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8.5" data-path="../express/">
+            
+                <a href="../express/#sessions">
+            
+                    
+                    Sessions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../settings/">
+            
+                <a href="../settings/">
+            
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.9.1" data-path="../settings/">
+            
+                <a href="../settings/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9.2" data-path="../settings/">
+            
+                <a href="../settings/#custom-settings-adapter">
+            
+                    
+                    Custom Settings Adapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../auth/">
+            
+                <a href="../auth/">
+            
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.10.1" data-path="../auth/">
+            
+                <a href="../auth/#usage">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10.2" data-path="../auth/">
+            
+                <a href="../auth/#user-information">
+            
+                    
+                    User Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10.3" data-path="../auth/">
+            
+                <a href="../auth/#custom-authentication-adapter">
+            
+                    
+                    Custom Authentication Adapter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" >
+            
+                <span>
+            
+                    
+                    Desktop
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.11.1" data-path="../panel/">
+            
+                <a href="../panel/">
+            
+                    
+                    Panel Item
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.2" data-path="../widget/">
+            
+                <a href="../widget/">
+            
+                    
+                    Widget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.3" data-path="../notification/">
+            
+                <a href="../notification/">
+            
+                    
+                    Notification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11.4" data-path="../tray/">
+            
+                <a href="../tray/">
+            
+                    
+                    Tray
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" >
+            
+                <span>
+            
+                    
+                    Misc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.12.1" data-path="../core/">
+            
+                <a href="../core/">
+            
+                    
+                    Core
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.2" data-path="../locale/">
+            
+                <a href="../locale/">
+            
+                    
+                    Localization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.3" data-path="../bus/">
+            
+                <a href="../bus/">
+            
+                    
+                    Bus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.4" data-path="../middleware/">
+            
+                <a href="../middleware/">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.5" data-path="../clipboard/">
+            
+                <a href="../clipboard/">
+            
+                    
+                    Clipboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12.6" data-path="../dnd/">
+            
+                <a href="../dnd/">
+            
+                    
+                    Drag-and-Drop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.12.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    IFrames
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Guides</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../guide/migrate/">
+            
+                <a href="../../guide/migrate/">
+            
+                    
+                    Migration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../guide/cli/">
+            
+                <a href="../../guide/cli/">
+            
+                    
+                    CLI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../guide/cli/">
+            
+                <a href="../../guide/cli/#ommands">
+            
+                    
+                    Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../guide/cli/">
+            
+                <a href="../../guide/cli/#server-arguments">
+            
+                    
+                    Server Arguments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../../guide/cli/">
+            
+                <a href="../../guide/cli/#custom-tasks">
+            
+                    
+                    Custom Tasks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/#checklist">
+            
+                    
+                    Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/#building">
+            
+                    
+                    Building
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/#legacy-browsers">
+            
+                    
+                    Legacy Browsers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/#reverse-proxy">
+            
+                    
+                    Reverse Proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.5" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/#process-management">
+            
+                    
+                    Process Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/#session">
+            
+                    
+                    Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7" data-path="../../guide/deploy/">
+            
+                <a href="../../guide/deploy/#scaling">
+            
+                    
+                    Scaling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../guide/framework/">
+            
+                <a href="../../guide/framework/">
+            
+                    
+                    Frameworks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../guide/framework/">
+            
+                <a href="../../guide/framework/#react">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../guide/framework/">
+            
+                <a href="../../guide/framework/#vue">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../guide/framework/">
+            
+                <a href="../../guide/framework/#misc">
+            
+                    
+                    Other
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" >
+            
+                <span>
+            
+                    
+                    Modules
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../../guide/provider/">
+            
+                <a href="../../guide/provider/">
+            
+                    
+                    Service Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../../guide/auth/">
+            
+                <a href="../../guide/auth/">
+            
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../../guide/settings/">
+            
+                <a href="../../guide/settings/">
+            
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.4" data-path="../../guide/filesystem/">
+            
+                <a href="../../guide/filesystem/">
+            
+                    
+                    Filesystem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" >
+            
+                <span>
+            
+                    
+                    Misc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.6.1" data-path="../../guide/modules/">
+            
+                <a href="../../guide/modules/">
+            
+                    
+                    Override modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.2" data-path="../../guide/disabling-packages/">
+            
+                <a href="../../guide/disabling-packages/">
+            
+                    
+                    Disabling Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.3" data-path="../../guide/publish/">
+            
+                <a href="../../guide/publish/">
+            
+                    
+                    Publishing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.4" data-path="../../guide/translate/">
+            
+                <a href="../../guide/translate/">
+            
+                    
+                    Translation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.5" data-path="../../guide/visuals/">
+            
+                <a href="../../guide/visuals/">
+            
+                    
+                    Visuals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.6" data-path="../../guide/login/">
+            
+                <a href="../../guide/login/">
+            
+                    
+                    Customizing Login
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.7" data-path="../../guide/embed/">
+            
+                <a href="../../guide/embed/">
+            
+                    
+                    Embedding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.8" data-path="../../guide/standalone/">
+            
+                <a href="../../guide/standalone/">
+            
+                    
+                    Standalone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6.9" data-path="../../guide/remotedebug/">
+            
+                <a href="../../guide/remotedebug/">
+            
+                    
+                    Remote Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" >
+            
+                <span>
+            
+                    
+                    Hosting
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.7.1" data-path="../../guide/hosting/evennode/">
+            
+                <a href="../../guide/hosting/evennode/">
+            
+                    
+                    EvenNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" >
+            
+                <span>
+            
+                    
+                    Integrations
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.8.1" data-path="../../guide/integration/sentry/">
+            
+                <a href="../../guide/integration/sentry/">
+            
+                    
+                    sentry.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+  
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >IFrames</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+  <h1 id="iframe-application-tutorial">IFrame Application Tutorial</h1>
+<p>This tutorial will show you how to create an <a href="../application/">application</a> with an iframe window.</p>
+<blockquote>
+<p>For general information about development see <a href="../../development/">development article</a>.</p>
+</blockquote>
+<h2 id="creation">Creation</h2>
+<p>To create a new application package, run the following command inside your OS.js installation: <code>npm run make:iframe-application</code>.</p>
+<p>The created application will be placed in <code>src/packages</code> (by default) and is based on the <a href="https://github.com/os-js/osjs-example-iframe-application" target="_blank">official example</a>.</p>
+<blockquote>
+<p>Remember to run <code>npm run package:discover</code> after you generate a package to make it available.</p>
+</blockquote>
+<h2 id="usage">Usage</h2>
+<p>This application simply opens up a Window and loads the content from <code>data/</code> via a IFrame.</p>
+<p>If you want to load remote content, simply remove this directory (optional) and modify the <code>index.js</code> file to fit your needs.</p>
+<blockquote>
+<p>[warning] Note that if you don&apos;t host the remote content yourself or if it&apos;s not hosted by a server/provider that allows for embedding,
+loading of remote content may fail due to security measures.</p>
+</blockquote>
+<h2 id="bi-directional-communication">Bi-directional communication</h2>
+<p>OS.js has an internal event listener that can intercept iframe messages and forward them to the Window the content was loaded from.</p>
+<p>This allows you to interact with the underlying OS.js APIs and services from an IFrame.</p>
+<h3 id="iframe-implementation">IFrame implementation</h3>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+      <span class="hljs-comment">// Store the application and window ID we added to the iframe source</span>
+      <span class="hljs-keyword">var</span> pid = <span class="hljs-built_in">parseInt</span>(<span class="hljs-built_in">window</span>.location.search.match(<span class="hljs-regexp">/pid=([^&amp;]*)/</span>)[<span class="hljs-number">1</span>], <span class="hljs-number">10</span>);
+      <span class="hljs-keyword">var</span> wid = <span class="hljs-built_in">parseInt</span>(<span class="hljs-built_in">window</span>.location.search.match(<span class="hljs-regexp">/wid=([^&amp;]*)/</span>)[<span class="hljs-number">1</span>], <span class="hljs-number">10</span>);
+
+      <span class="hljs-comment">// Global function to send a message to OS.js Core that forwards it to the correct application/window.</span>
+      <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sendMessage</span>(<span class="hljs-params"></span>) </span>{
+        top.postMessage({
+          name: <span class="hljs-string">&apos;osjs/iframe:message&apos;</span>,
+          params: [{
+            pid: pid,
+            wid: wid,
+            args: <span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>)
+          }]
+        }, <span class="hljs-string">&apos;*&apos;</span>);
+      }
+
+      <span class="hljs-comment">// Listen from messages from OS.js Application</span>
+      <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;message&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ev</span>) </span>{
+        <span class="hljs-comment">// We should get &quot;Pong&quot; here</span>
+        <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">&apos;Message from OS.js&apos;</span>, ev.data);
+      });
+
+      <span class="hljs-comment">// Send an example message</span>
+      sendMessage(<span class="hljs-string">&apos;Ping&apos;</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="application-implementation">Application implementation</h3>
+<pre><code class="lang-javascript">proc.createWindow({dimension: {width: <span class="hljs-number">400</span>, height: <span class="hljs-number">400</span>}})
+  .on(<span class="hljs-string">&apos;destroy&apos;</span>, () =&gt; proc.destroy())
+  .render(($content, win) =&gt; {
+    <span class="hljs-comment">// Add our process and window id to iframe URL</span>
+    <span class="hljs-keyword">const</span> suffix = <span class="hljs-string">`?pid=<span class="hljs-subst">${proc.pid}</span>&amp;wid=<span class="hljs-subst">${win.wid}</span>`</span>;
+
+    <span class="hljs-comment">// Create an iframe</span>
+    <span class="hljs-keyword">const</span> iframe = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;iframe&apos;</span>);
+    iframe.style.width = <span class="hljs-string">&apos;100%&apos;</span>;
+    iframe.style.height = <span class="hljs-string">&apos;100%&apos;</span>;
+    iframe.src = proc.resource(<span class="hljs-string">&apos;/data/index.html&apos;</span>) + suffix;
+    iframe.setAttribute(<span class="hljs-string">&apos;border&apos;</span>, <span class="hljs-string">&apos;0&apos;</span>);
+
+    <span class="hljs-comment">// Bind window events to iframe</span>
+    win.on(<span class="hljs-string">&apos;blur&apos;</span>, () =&gt; iframe.contentWindow.blur());
+    win.on(<span class="hljs-string">&apos;focus&apos;</span>, () =&gt; iframe.contentWindow.focus());
+
+    <span class="hljs-comment">// Create an even for posting messages to an iframe (for easy reuse)</span>
+    win.on(<span class="hljs-string">&apos;iframe:post&apos;</span>, msg =&gt; iframe.contentWindow.postMessage(msg, <span class="hljs-built_in">window</span>.location.href));
+
+    <span class="hljs-comment">// Listen for messages from iframe</span>
+    win.on(<span class="hljs-string">&apos;iframe:get&apos;</span>, msg =&gt; {
+      <span class="hljs-comment">// We should get &quot;Ping&quot; here</span>
+      <span class="hljs-built_in">console</span>.warn(<span class="hljs-string">&apos;Message from Iframe&apos;</span>, msg);
+
+      <span class="hljs-comment">// In this case we just send &quot;Pong&quot; back</span>
+      win.emit(<span class="hljs-string">&apos;iframe:post&apos;</span>, <span class="hljs-string">&apos;Pong&apos;</span>);
+    });
+
+    $content.appendChild(iframe);
+  });
+</code></pre>
+
+  <div style="text-align:center; font-size:80%;padding:2em;color:#aaa;">
+    OS.js Web Desktop - &copy; Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+  </div>
+
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../dnd/" class="navigation navigation-prev " aria-label="Previous page: Drag-and-Drop">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../guide/migrate/" class="navigation navigation-next " aria-label="Next page: Migration">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"A tutorial on how to create Iframe applications in OS.js","full_title":"IFrame Tutorial","title":"IFrames","level":"4.12.7","depth":2,"next":{"title":"Migration","level":"5.1","depth":1,"path":"guide/migrate/README.md","ref":"guide/migrate/README.md","articles":[]},"previous":{"title":"Drag-and-Drop","level":"4.12.6","depth":2,"path":"tutorial/dnd/README.md","ref":"tutorial/dnd/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","adsense","alerts","edit-link","ga","codepen"],"root":"src/v3","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"adsense":{"client":"ca-pub-6145716264521226","slot":"9888011596","format":"auto","element":".page-inner section","position":"top"},"codepen":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://manual.os-js.org","path":"/"},"alerts":{},"ga":{"configuration":"auto","token":"UA-90971004-4"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit this page","base":"https://github.com/os-js/manual.os-js.org/edit/master/src/v3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Anders Evenrud <andersevenrud@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"OS.js Web Desktop Manual","language":"en","gitbook":"*"},"file":{"path":"tutorial/iframe/README.md","mtime":"2022-07-29T23:39:39.689Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-29T23:40:52.542Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90971004-4', 'auto');
+    ga('send', 'pageview');
+
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'os-js/OS.js'
+    };
+  </script>
+
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-adsense/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-codepen/embed-codepen.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

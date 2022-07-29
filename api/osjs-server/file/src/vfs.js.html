@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/vfs.js | OS.js Server API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Server API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Server API"><meta property="twitter:description" content="OS.js Server API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/auth.js~Auth.html">Auth</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/core.js~Core.html">Core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/filesystem.js~Filesystem.html">Filesystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/package.js~Package.html">Package</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/packages.js~Packages.html">Packages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/settings.js~Settings.html">Settings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CoreBase">CoreBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthAdapter">AuthAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthOptions">AuthOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-AuthUserProfile">AuthUserProfile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapter">FilesystemAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemAdapterMap">FilesystemAdapterMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemCallOptions">FilesystemCallOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FilesystemOptions">FilesystemOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Mountpoint">Mountpoint</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageMetadata">PackageMetadata</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackageOptions">PackageOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-PackagesOptions">PackagesOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsAdapter">SettingsAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-SettingsOptions">SettingsOptions</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-auth">adapters/auth</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-settings">adapters/settings</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fs">fs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-null">null</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adapters-vfs">adapters/vfs</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-system">system</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#providers">providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/auth.js~AuthServiceProvider.html">AuthServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/core.js~CoreServiceProvider.html">CoreServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/packages.js~PackageServiceProvider.html">PackageServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/settings.js~SettingsServiceProvider.html">SettingsServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/providers/vfs.js~VFSServiceProvider.html">VFSServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServiceProvider">ServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkMountpointPermission">checkMountpointPermission</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createError">createError</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPrefix">getPrefix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mountpointResolver">mountpointResolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parseFields">parseFields</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sanitize">sanitize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-streamFromRequest">streamFromRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validateGroups">validateGroups</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-errorCodes">errorCodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-methodArguments">methodArguments</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/vfs.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+const fs = require(&apos;fs-extra&apos;);
+const path = require(&apos;path&apos;);
+const express = require(&apos;express&apos;);
+const {Stream} = require(&apos;stream&apos;);
+const {
+  mountpointResolver,
+  checkMountpointPermission,
+  streamFromRequest,
+  sanitize,
+  parseFields,
+  errorCodes
+} = require(&apos;./utils/vfs&apos;);
+
+const respondNumber = result =&gt; typeof result === &apos;number&apos; ? result : -1;
+const respondBoolean = result =&gt; typeof result === &apos;boolean&apos; ? result : !!result;
+const requestPath = req =&gt; ([sanitize(req.fields.path)]);
+const requestSearch = req =&gt; ([sanitize(req.fields.root), req.fields.pattern]);
+const requestCross = req =&gt; ([sanitize(req.fields.from), sanitize(req.fields.to)]);
+const requestFile = req =&gt; ([sanitize(req.fields.path), streamFromRequest(req)]);
+
+/*
+ * Parses the range request headers
+ */
+const parseRangeHeader = (range, size) =&gt; {
+  const [pstart, pend] = range.replace(/bytes=/, &apos;&apos;).split(&apos;-&apos;);
+  const start = parseInt(pstart, 10);
+  const end = pend ? parseInt(pend, 10) : undefined;
+  return [start, end];
+};
+
+/**
+ * A &quot;finally&quot; for our chain
+ */
+const onDone = (req, res) =&gt; {
+  if (req.files) {
+    for (let fieldname in req.files) {
+      fs.unlink(req.files[fieldname].path, () =&gt; ({}));
+    }
+  }
+};
+
+/**
+ * Wraps a vfs adapter request
+ */
+const wrapper = fn =&gt; (req, res, next) =&gt; fn(req, res)
+  .then(result =&gt; {
+    if (result instanceof Stream) {
+      result.pipe(res);
+    } else {
+      res.json(result);
+    }
+
+    onDone(req, res);
+  })
+  .catch(error =&gt; {
+    onDone(req, res);
+
+    next(error);
+  });
+
+/**
+ * Creates the middleware
+ */
+const createMiddleware = core =&gt; {
+  const parse = parseFields(core.config(&apos;express&apos;));
+
+  return (req, res, next) =&gt; parse(req, res)
+    .then(({fields, files}) =&gt; {
+      req.fields = fields;
+      req.files = files;
+
+      next();
+    })
+    .catch(error =&gt; {
+      core.logger.warn(error);
+      req.fields = {};
+      req.files = {};
+
+      next(error);
+    });
+};
+
+const createOptions = req =&gt; {
+  const options = req.fields.options;
+  const range = req.headers &amp;&amp; req.headers.range;
+  const session = {...req.session || {}};
+  let result = options || {};
+
+  if (typeof options === &apos;string&apos;) {
+    try {
+      result = JSON.parse(req.fields.options) || {};
+    } catch (e) {
+      // Allow to fall through
+    }
+  }
+
+  if (range) {
+    result.range = parseRangeHeader(req.headers.range);
+  }
+
+  return {
+    ...result,
+    session
+  };
+};
+
+// Standard request with only a target
+const createRequestFactory = findMountpoint =&gt; (getter, method, readOnly, respond) =&gt; async (req, res) =&gt; {
+  const options = createOptions(req);
+  const args = [...getter(req, res), options];
+
+  const found = await findMountpoint(args[0]);
+  if (method === &apos;search&apos;) {
+    if (found.mount.attributes &amp;&amp; found.mount.attributes.searchable === false) {
+      return [];
+    }
+  }
+
+  const {attributes} = found.mount;
+  const strict = attributes.strictGroups !== false;
+  const ranges = (!attributes.adapter || attributes.adapter === &apos;system&apos;) || attributes.ranges === true;
+  const vfsMethodWrapper = m =&gt; found.adapter[m]
+    ? found.adapter[m](found)(...args)
+    : Promise.reject(new Error(`Adapter does not support ${m}`));
+  const readstat = () =&gt; vfsMethodWrapper(&apos;stat&apos;).catch(() =&gt; ({}));
+  await checkMountpointPermission(req, res, method, readOnly, strict)(found);
+
+  const result = await vfsMethodWrapper(method);
+  if (method === &apos;readfile&apos;) {
+    const stat = await readstat();
+
+    if (ranges &amp;&amp; options.range) {
+      try {
+        if (stat.size) {
+          const size = stat.size;
+          const [start, end] = options.range;
+          const realEnd = end ? end : size - 1;
+          const chunksize = (realEnd - start) + 1;
+
+          res.writeHead(206, {
+            &apos;Content-Range&apos;: `bytes ${start}-${realEnd}/${size}`,
+            &apos;Accept-Ranges&apos;: &apos;bytes&apos;,
+            &apos;Content-Length&apos;: chunksize,
+            &apos;Content-Type&apos;: stat.mime
+          });
+        }
+      } catch (e) {
+        console.warn(&apos;Failed to send a ranged response&apos;, e);
+      }
+    } else if (stat.mime) {
+      res.append(&apos;Content-Type&apos;, stat.mime);
+    }
+
+    if (options.download) {
+      const filename = encodeURIComponent(path.basename(args[0]));
+      res.append(&apos;Content-Disposition&apos;, `attachment; filename*=utf-8&apos;&apos;${filename}`);
+    }
+  }
+
+  return respond ? respond(result) : result;
+};
+
+// Request that has a source and target
+const createCrossRequestFactory = findMountpoint =&gt; (getter, method, respond) =&gt; async (req, res) =&gt; {
+  const [from, to, options] = [...getter(req, res), createOptions(req)];
+
+  const srcMount = await findMountpoint(from);
+  const destMount = await findMountpoint(to);
+  const sameAdapter = srcMount.adapter === destMount.adapter;
+
+  const srcStrict = srcMount.mount.attributes.strictGroups !== false;
+  const destStrict = destMount.mount.attributes.strictGroups !== false;
+  await checkMountpointPermission(req, res, &apos;readfile&apos;, false, srcStrict)(srcMount);
+  await checkMountpointPermission(req, res, &apos;writefile&apos;, true, destStrict)(destMount);
+
+  if (sameAdapter) {
+    const result = await srcMount
+      .adapter[method](srcMount, destMount)(from, to, options);
+
+    return !!result;
+  }
+
+  // Simulates a copy/move
+  const stream = await srcMount.adapter
+    .readfile(srcMount)(from, options);
+
+  const result = await destMount.adapter
+    .writefile(destMount)(to, stream, options);
+
+  if (method === &apos;rename&apos;) {
+    await srcMount.adapter
+      .unlink(srcMount)(from, options);
+  }
+
+  return !!result;
+};
+
+/*
+ * VFS Methods
+ */
+const vfs = core =&gt; {
+  const findMountpoint = mountpointResolver(core);
+  const createRequest = createRequestFactory(findMountpoint);
+  const createCrossRequest = createCrossRequestFactory(findMountpoint);
+
+  // Wire up all available VFS events
+  return {
+    realpath: createRequest(requestPath, &apos;realpath&apos;, false),
+    exists: createRequest(requestPath, &apos;exists&apos;, false, respondBoolean),
+    stat: createRequest(requestPath, &apos;stat&apos;, false),
+    readdir: createRequest(requestPath, &apos;readdir&apos;, false),
+    readfile: createRequest(requestPath, &apos;readfile&apos;, false),
+    writefile: createRequest(requestFile, &apos;writefile&apos;, true, respondNumber),
+    mkdir: createRequest(requestPath, &apos;mkdir&apos;, true, respondBoolean),
+    unlink: createRequest(requestPath, &apos;unlink&apos;, true, respondBoolean),
+    touch: createRequest(requestPath, &apos;touch&apos;, true, respondBoolean),
+    search: createRequest(requestSearch, &apos;search&apos;, false),
+    copy: createCrossRequest(requestCross, &apos;copy&apos;),
+    rename: createCrossRequest(requestCross, &apos;rename&apos;)
+  };
+};
+
+/*
+ * Creates a new VFS Express router
+ */
+module.exports = core =&gt; {
+  const router = express.Router();
+  const methods = vfs(core);
+  const middleware = createMiddleware(core);
+  const {isAuthenticated} = core.make(&apos;osjs/express&apos;);
+  const vfsGroups = core.config(&apos;auth.vfsGroups&apos;, []);
+  const logEnabled = core.config(&apos;development&apos;);
+
+  // Middleware first
+  router.use(isAuthenticated(vfsGroups));
+  router.use(middleware);
+
+  // Then all VFS routes (needs implementation above)
+  router.get(&apos;/exists&apos;, wrapper(methods.exists));
+  router.get(&apos;/stat&apos;, wrapper(methods.stat));
+  router.get(&apos;/readdir&apos;, wrapper(methods.readdir));
+  router.get(&apos;/readfile&apos;, wrapper(methods.readfile));
+  router.post(&apos;/writefile&apos;, wrapper(methods.writefile));
+  router.post(&apos;/rename&apos;, wrapper(methods.rename));
+  router.post(&apos;/copy&apos;, wrapper(methods.copy));
+  router.post(&apos;/mkdir&apos;, wrapper(methods.mkdir));
+  router.post(&apos;/unlink&apos;, wrapper(methods.unlink));
+  router.post(&apos;/touch&apos;, wrapper(methods.touch));
+  router.post(&apos;/search&apos;, wrapper(methods.search));
+
+  // Finally catch promise exceptions
+  router.use((error, req, res, next) =&gt; {
+    // TODO: Better error messages
+    const code = typeof error.code === &apos;number&apos;
+      ? error.code
+      : (errorCodes[error.code] || 400);
+
+    if (logEnabled) {
+      console.error(error);
+    }
+
+    res.status(code)
+      .json({
+        error: error.toString(),
+        stack: logEnabled ? error.stack : undefined
+      });
+  });
+
+  return {router, methods};
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

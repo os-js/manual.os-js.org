@@ -1,0 +1,3092 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/dialog.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h} from 'hyperapp';\nimport merge from 'deepmerge';\nimport plain from 'is-plain-object';\nimport {Box, Button, Toolbar} from '@osjs/gui';\n\nlet dialogCount = 0;\n\n/*\n * Default button attributes\n */\nconst defaultButtons = (_) => ({\n  ok: {label: _('LBL_OK'), positive: true},\n  close: {label: _('LBL_CLOSE')},\n  cancel: {label: _('LBL_CANCEL')},\n  yes: {label: _('LBL_YES'), positive: true},\n  no: {label: _('LBL_NO')}\n});\n\n/*\n * Creates a button from name\n */\nconst defaultButton = (n, _) => {\n  const defs = defaultButtons(_);\n  if (defs[n]) {\n    return Object.assign({}, {\n      name: n\n    }, defs[n]);\n  }\n\n  return {label: n, name: n};\n};\n\n/*\n * Creates options\n */\nconst createOptions = (options, args) =>\n  merge({\n    id: null,\n    className: 'unknown',\n    defaultValue: null,\n    buttons: [],\n    sound: null,\n    window: {\n      id: options.id || 'Dialog_' + String(dialogCount),\n      title: 'Dialog',\n      attributes: {\n        gravity: 'center',\n        resizable: false,\n        maximizable: false,\n        minimizable: false,\n        sessionable: false,\n        classNames: [\n          'osjs-dialog',\n          `osjs-${options.className || 'unknown'}-dialog`\n        ],\n        minDimension: {\n          width: 300,\n          height: 100\n        },\n      }\n    }\n  }, options, {\n    isMergeableObject: plain\n  });\n\n/**\n * OS.js default Dialog implementation\n *\n * Creates a Window with predefined content and actions(s)\n */\nexport default class Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {Object} options Dialog options (including Window)\n   * @param {Object} [options.defaultValue] Default callback value\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, options, callback) {\n    this.core = core;\n    this.args = args;\n    this.callback = callback || function() {};\n    this.options = createOptions(options, args);\n    this.win = null;\n    this.value = undefined;\n    this.calledBack = false;\n\n    const _ = core.make('osjs/locale').translate;\n\n    this.buttons = this.options.buttons.map(n =>\n      typeof n === 'string'\n        ? defaultButton(n, _)\n        : {\n          label: n.label || 'button',\n          name: n.name || 'unknown'\n        });\n\n    dialogCount++;\n  }\n\n  /**\n   * Destroys the dialog\n   */\n  destroy() {\n    if (this.win) {\n      this.win.destroy();\n    }\n\n    this.win = null;\n    this.callback = null;\n  }\n\n  /**\n   * Renders the dialog\n   * @param {Function} cb Callback from window\n   */\n  render(options, cb) {\n    const opts = merge(this.options.window || {}, options, {\n      isMergeableObject: plain\n    });\n\n    this.win = this.core.make('osjs/window', opts);\n\n    this.win.on('keydown', (ev, win) => {\n      if (ev.keyCode === 27) {\n        this.emitCallback(this.getNegativeButton(), null, true);\n      }\n    });\n\n    this.win.on('dialog:button', (name, ev) => {\n      this.emitCallback(name, ev, true);\n    });\n\n    this.win.on('destroy', () => {\n      this.emitCallback('destroy');\n    });\n\n    this.win.on('close', () => {\n      this.emitCallback('cancel', undefined, true);\n    });\n\n    this.win.on('render', () => {\n      // this.win.resizeFit();\n      this.win.focus();\n\n      const focusButton = this.getNegativeButton();\n      const btn = focusButton ? this.win.$content.querySelector(`button[name=${focusButton}]`) : null;\n      if (btn) {\n        btn.focus();\n      }\n\n      this.playSound();\n    });\n\n    this.win.init();\n    this.win.render(cb);\n    this.win.focus();\n\n    return this;\n  }\n\n  /**\n   * Creates the default view\n   * @param {Object[]} children Child nodes\n   * @param {Object} [state] Pass on application state (mainly used for buttons)\n   * @return {Object} Virtual dom node\n   */\n  createView(children, state = {}) {\n    return h(Box, {grow: 1, shrink: 1}, [\n      ...children,\n      h(Toolbar, {class: 'osjs-dialog-buttons'}, [\n        ...this.createButtons(state.buttons || {})\n      ])\n    ]);\n  }\n\n  /**\n   * Gets the button (virtual) DOM elements\n   * @param {Object} [states] Button states\n   * @return {Object[]} Virtual dom node children list\n   */\n  createButtons(states = {}) {\n    const onclick = (n, ev) => {\n      this.win.emit('dialog:button', n, ev);\n    };\n\n    return this.buttons.map(b => h(Button, Object.assign({}, {\n      disabled: states[b.name] === false,\n      onclick: ev => onclick(b.name, ev)\n    }, b)));\n  }\n\n  /**\n   * Emits the callback\n   * @param {String} name Button or action name\n   * @param {Event} [ev] Browser event reference\n   * @param {Boolean} [close=false] Close dialog\n   */\n  emitCallback(name, ev, close = false) {\n    if (this.calledBack) {\n      return;\n    }\n    this.calledBack = true;\n\n    console.debug('Callback in dialog', name, ev, close);\n\n    this.callback(name, this.getValue(), ev);\n\n    if (close) {\n      this.destroy();\n    }\n  }\n\n  /**\n   */\n  playSound() {\n    if (this.core.has('osjs/sounds')) {\n      const snd = this.options.sound;\n      if (snd) {\n        this.core.make('osjs/sounds').play(snd);\n\n        return true;\n      }\n    }\n\n    return false;\n  }\n\n  /**\n   * Gets the first positive button\n   * @return {String|undefined}\n   */\n  getPositiveButton() {\n    const found = this.buttons.find(b => b.positive === true);\n    return found ? found.name : null;\n  }\n\n  /**\n   * Gets the first negative button\n   * @return {String|undefined}\n   */\n  getNegativeButton() {\n    const found = this.buttons.find(b => !b.positive);\n    return found ? found.name : null;\n  }\n\n  /**\n   * Gets the dialog result value\n   * @return {*}\n   */\n  getValue() {\n    return typeof this.value === 'undefined'\n      ? this.options.defaultValue\n      : this.value;\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialog.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "dialogCount",
+    "memberof": "src/dialog.js",
+    "static": true,
+    "longname": "src/dialog.js~dialogCount",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialog.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "defaultButtons",
+    "memberof": "src/dialog.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialog.js~defaultButtons",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialog.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "defaultButton",
+    "memberof": "src/dialog.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialog.js~defaultButton",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialog.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 52,
+    "undocument": true,
+    "params": [
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "_",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"label\": *, \"name\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "createOptions",
+    "memberof": "src/dialog.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialog.js~createOptions",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialog.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 66,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "args",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "class",
+    "name": "Dialog",
+    "memberof": "src/dialog.js",
+    "static": true,
+    "longname": "src/dialog.js~Dialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialog.js",
+    "importStyle": "Dialog",
+    "description": "OS.js default Dialog implementation\n\nCreates a Window with predefined content and actions(s)",
+    "lineNumber": 101,
+    "interface": false
+  },
+  {
+    "__docId__": 54,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 111,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "Dialog options (including Window)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.defaultValue",
+        "description": "Default callback value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#core",
+    "access": "public",
+    "description": null,
+    "lineNumber": 112,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "args",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#args",
+    "access": "public",
+    "description": null,
+    "lineNumber": 113,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "callback",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#callback",
+    "access": "public",
+    "description": null,
+    "lineNumber": 114,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "member",
+    "name": "options",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#options",
+    "access": "public",
+    "description": null,
+    "lineNumber": 115,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "member",
+    "name": "win",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#win",
+    "access": "public",
+    "description": null,
+    "lineNumber": 116,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 117,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "calledBack",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#calledBack",
+    "access": "public",
+    "description": null,
+    "lineNumber": 118,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "buttons",
+    "memberof": "src/dialog.js~Dialog",
+    "static": false,
+    "longname": "src/dialog.js~Dialog#buttons",
+    "access": "public",
+    "description": null,
+    "lineNumber": 122,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#destroy",
+    "access": "public",
+    "description": "Destroys the dialog",
+    "lineNumber": 136,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#render",
+    "access": "public",
+    "description": "Renders the dialog",
+    "lineNumber": 149,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "cb",
+        "description": "Callback from window"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "createView",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#createView",
+    "access": "public",
+    "description": "Creates the default view",
+    "lineNumber": 200,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "Child nodes"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "state",
+        "description": "Pass on application state (mainly used for buttons)"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "Virtual dom node"
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "createButtons",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#createButtons",
+    "access": "public",
+    "description": "Gets the button (virtual) DOM elements",
+    "lineNumber": 214,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "states",
+        "description": "Button states"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object[]"
+      ],
+      "spread": false,
+      "description": "Virtual dom node children list"
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "emitCallback",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#emitCallback",
+    "access": "public",
+    "description": "Emits the callback",
+    "lineNumber": 231,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Button or action name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Event"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "ev",
+        "description": "Browser event reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "false",
+        "defaultRaw": false,
+        "name": "close",
+        "description": "Close dialog"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "playSound",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#playSound",
+    "access": "public",
+    "description": "",
+    "lineNumber": 248,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "getPositiveButton",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#getPositiveButton",
+    "access": "public",
+    "description": "Gets the first positive button",
+    "lineNumber": 265,
+    "return": {
+      "nullable": null,
+      "types": [
+        "String",
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "getNegativeButton",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#getNegativeButton",
+    "access": "public",
+    "description": "Gets the first negative button",
+    "lineNumber": 274,
+    "return": {
+      "nullable": null,
+      "types": [
+        "String",
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "getValue",
+    "memberof": "src/dialog.js~Dialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialog.js~Dialog#getValue",
+    "access": "public",
+    "description": "Gets the dialog result value",
+    "lineNumber": 283,
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/dialogs/alert.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport {Box, TextareaField} from '@osjs/gui';\nimport Dialog from '../dialog';\n\n/**\n * Default OS.js Alert Dialog\n */\nexport default class AlertDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title='Alert'] Dialog title\n   * @param {String} [args.message=''] Dialog message\n   * @param {String} [args.type='info'] Alert type (info/warning/error)\n   * @param {String} [args.sound='bell'] Sound\n   * @param {Error|*} [args.error] When 'alert' type is set this error stack or message will appear in a textbox\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    args = Object.assign({}, {\n      title: 'Alert',\n      type: 'info',\n      message: ''\n    }, args);\n\n    if (typeof args.sound === 'undefined') {\n      args.sound = args.type === 'error' ? 'bell' : 'message';\n    }\n\n    super(core, args, {\n      className: 'alert',\n      sound: args.sound,\n      window: {\n        title: args.title,\n        attributes: {\n          ontop: args.type === 'error',\n          minDimension: {\n            width: 400,\n            height: 220\n          }\n        }\n      },\n      buttons: ['close']\n    }, callback);\n  }\n\n  render(options) {\n    super.render(options, ($content) => {\n      const children = [\n        h('div', {class: 'osjs-dialog-message'}, String(this.args.message))\n      ];\n\n      if (this.args.type === 'error') {\n        const {error} = this.args;\n        const msg = error instanceof Error\n          ? (error.stack ? error.stack : error)\n          : String(error);\n\n        children.push(h(TextareaField, {value: msg, readonly: true, placeholder: this.args.message}));\n      }\n\n      app({}, {}, (state, actions) => this.createView([\n        h(Box, {grow: 1}, children)\n      ]), $content);\n    });\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/alert.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "class",
+    "name": "AlertDialog",
+    "memberof": "src/dialogs/alert.js",
+    "static": true,
+    "longname": "src/dialogs/alert.js~AlertDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/alert.js",
+    "importStyle": "AlertDialog",
+    "description": "Default OS.js Alert Dialog",
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 78,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/alert.js~AlertDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/alert.js~AlertDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 51,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'Alert'",
+        "defaultRaw": "'Alert'",
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "''",
+        "defaultRaw": "''",
+        "name": "args.message",
+        "description": "Dialog message"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'info'",
+        "defaultRaw": "'info'",
+        "name": "args.type",
+        "description": "Alert type (info/warning/error)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'bell'",
+        "defaultRaw": "'bell'",
+        "name": "args.sound",
+        "description": "Sound"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Error",
+          "*"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.error",
+        "description": "When 'alert' type is set this error stack or message will appear in a textbox"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/alert.js~AlertDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/alert.js~AlertDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 79,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/dialogs/choice.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport {SelectField, Box} from '@osjs/gui';\nimport Dialog from '../dialog';\n\n/**\n * Default OS.js Choice Dialog\n */\nexport default class ChoiceDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title] Dialog title\n   * @param {String} [args.message] Dialog message\n   * @param {String} [args.value] Set default selected value\n   * @param {Map<String,*>} [args.choices] Choice map\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    args = Object.assign({}, {\n      title: 'Choice',\n      message: '',\n      value: undefined,\n      choices: {}\n    }, args);\n\n    super(core, args, {\n      className: 'alert',\n      window: {\n        title: args.title,\n        attributes: {\n          ontop: args.type === 'error'\n        },\n        dimension: {\n          width: 400,\n          height: 200\n        }\n      },\n      buttons: ['ok', 'close']\n    }, callback);\n\n    this.value = typeof args.value !== 'undefined'\n      ? this.args.value\n      : Object.keys(this.args.choices)[0];\n  }\n\n  render(options) {\n    super.render(options, ($content) => {\n      app({\n        current: this.value\n      }, {\n        setCurrent: current => state => {\n          this.value = current;\n\n          return {current};\n        }\n      }, (state, actions) => this.createView([\n        h(Box, {grow: 1}, [\n          h('div', {class: 'osjs-dialog-message'}, String(this.args.message)),\n          h(SelectField, {\n            choices: this.args.choices,\n            value: state.current,\n            onchange: (ev, val) => actions.setCurrent(val)\n          })\n        ])\n      ]), $content);\n    });\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/choice.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "class",
+    "name": "ChoiceDialog",
+    "memberof": "src/dialogs/choice.js",
+    "static": true,
+    "longname": "src/dialogs/choice.js~ChoiceDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/choice.js",
+    "importStyle": "ChoiceDialog",
+    "description": "Default OS.js Choice Dialog",
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 82,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/choice.js~ChoiceDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/choice.js~ChoiceDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 50,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.message",
+        "description": "Dialog message"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.value",
+        "description": "Set default selected value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Map<String,*>"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.choices",
+        "description": "Choice map"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 83,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialogs/choice.js~ChoiceDialog",
+    "static": false,
+    "longname": "src/dialogs/choice.js~ChoiceDialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 73,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/choice.js~ChoiceDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/choice.js~ChoiceDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/dialogs/color.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport Dialog from '../dialog';\nimport {\n  Box,\n  BoxContainer,\n  TextField,\n  RangeField\n} from '@osjs/gui';\n\n/*\n * Creates a palette canvas\n */\nconst createPalette = (width, height) => {\n  let gradient;\n\n  const canvas = document.createElement('canvas');\n  canvas.width = width;\n  canvas.height = height;\n\n  const ctx = canvas.getContext('2d');\n\n  gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0);\n  gradient.addColorStop(0,    'rgb(255,   0,   0)');\n  gradient.addColorStop(0.15, 'rgb(255,   0, 255)');\n  gradient.addColorStop(0.33, 'rgb(0,     0, 255)');\n  gradient.addColorStop(0.49, 'rgb(0,   255, 255)');\n  gradient.addColorStop(0.67, 'rgb(0,   255,   0)');\n  gradient.addColorStop(0.84, 'rgb(255, 255,   0)');\n  gradient.addColorStop(1,    'rgb(255,   0,   0)');\n\n  ctx.fillStyle = gradient;\n  ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);\n\n  gradient = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);\n  gradient.addColorStop(0,   'rgba(255, 255, 255, 1)');\n  gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0)');\n  gradient.addColorStop(0.5, 'rgba(0,     0,   0, 0)');\n  gradient.addColorStop(1,   'rgba(0,     0,   0, 1)');\n\n  ctx.fillStyle = gradient;\n  ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);\n\n  return canvas;\n};\n\n/*\n * Converts hex to its component values\n */\nconst hexToComponent = hex => {\n  const rgb = parseInt(hex.replace('#', ''), 16);\n  const val = {};\n  val.r = (rgb & (255 << 16)) >> 16;\n  val.g = (rgb & (255 << 8)) >> 8;\n  val.b = (rgb & 255);\n  return val;\n};\n\n/*\n * Convert component values into hex\n */\nconst componentToHex = ({r, g, b}) => {\n  const hex = [\n    parseInt(r, 10).toString(16),\n    parseInt(g, 10).toString(16),\n    parseInt(b, 10).toString(16)\n  ].map(i => String(i).length === 1 ? '0' + String(i) : i);\n\n  return '#' + hex.join('').toUpperCase();\n};\n\n/*\n * Gets the color of a clicked palette area\n */\nconst colorFromClick = (ev, canvas) => {\n  const {clientX, clientY} = ev;\n  const box = canvas.getBoundingClientRect();\n  const cx = clientX - box.x;\n  const cy = clientY - box.y;\n  const ctx = canvas.getContext('2d');\n  const {data} = ctx.getImageData(cx, cy, 1, 1);\n  const [r, g, b] = data;\n  const hex = componentToHex({r, g, b});\n  return {r, g, b, hex};\n};\n\n/**\n * Default OS.js Color Dialog\n */\nexport default class ColorDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title] Dialog title\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    super(core, args, {\n      className: 'color',\n      buttons: ['ok', 'cancel'],\n      window: {\n        title: args.title || 'Select Color',\n        attributes: {\n          minDimension: {\n            width: 500,\n            height: 260\n          }\n        }\n      }\n    }, callback);\n\n    this.value = {r: 0, g: 0, b: 0, hex: '#000000'};\n\n    let color = args.color;\n    if (color) {\n      if (typeof color === 'string') {\n        if (color.charAt(0) !== '#') {\n          color = '#' + color;\n        }\n\n        this.value = Object.assign({}, this.value, hexToComponent(args.color));\n        this.value.hex = args.color;\n      } else {\n        this.value = Object.assign({}, this.value, args.color);\n        this.value.hex = componentToHex(this.value);\n      }\n    }\n  }\n\n  render(options) {\n    super.render(options, ($content) => {\n      const canvas = createPalette(98, 98);\n      const initialState = Object.assign({}, this.value);\n      const initialActions = {\n        setColor: color => state => color,\n        setComponent: ({color, value}) => state => {\n          this.value[color] = value;\n          return {[color]: value};\n        },\n        updateHex: () => state => {\n          const hex = componentToHex(state);\n          this.value.hex = hex;\n          return {hex};\n        }\n      };\n\n      const rangeContainer = (c, v, actions) =>\n        h(Box, {orientation: 'vertical', align: 'center', padding: false}, [\n          h(Box, {shrink: 1}, h('div', {}, c.toUpperCase())),\n          h(RangeField, {\n            box: {grow: 1},\n            min: 0,\n            max: 255,\n            value: v,\n            oncreate: el => (el.value = v),\n            oninput: (ev, value) => {\n              actions.setComponent({color: c, value});\n              actions.updateHex();\n            }\n          }),\n          h(TextField, {\n            box: {shrink: 1, basis: '5em'},\n            value: String(v),\n            oninput: (ev, value) => {\n              actions.setComponent({color: c, value});\n              actions.updateHex();\n            }\n          })\n        ]);\n\n      const a = app(initialState, initialActions, (state, actions) => this.createView([\n        h(Box, {orientation: 'vertical', grow: 1, shrink: 1}, [\n          h(BoxContainer, {orientation: 'horizontal'}, [\n            h('div', {\n              class: 'osjs-gui-border',\n              style: {display: 'inline-block'},\n              oncreate: el => el.appendChild(canvas)\n            }),\n            h(TextField, {\n              value: state.hex,\n              style: {width: '100px', color: state.hex}\n            })\n          ]),\n          h(Box, {padding: false, grow: 1, shrink: 1}, [\n            rangeContainer('r', state.r, actions),\n            rangeContainer('g', state.g, actions),\n            rangeContainer('b', state.b, actions)\n          ])\n        ])\n      ]), $content);\n\n      canvas.addEventListener('click', ev => {\n        const color = colorFromClick(ev, canvas);\n        if (color) {\n          a.setColor(color);\n          a.updateHex();\n        }\n      });\n    });\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/color.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "createPalette",
+    "memberof": "src/dialogs/color.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialogs/color.js~createPalette",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialogs/color.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "params": [
+      {
+        "name": "width",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "height",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "hexToComponent",
+    "memberof": "src/dialogs/color.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialogs/color.js~hexToComponent",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialogs/color.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 79,
+    "undocument": true,
+    "params": [
+      {
+        "name": "hex",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "componentToHex",
+    "memberof": "src/dialogs/color.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialogs/color.js~componentToHex",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialogs/color.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 91,
+    "undocument": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"r\": *, \"g\": *, \"b\": *}"
+        ],
+        "defaultRaw": {
+          "r": null,
+          "g": null,
+          "b": null
+        },
+        "defaultValue": "{\"r\":null,\"g\":null,\"b\":null}"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "function",
+    "name": "colorFromClick",
+    "memberof": "src/dialogs/color.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialogs/color.js~colorFromClick",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialogs/color.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 104,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ev",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "canvas",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"r\": *, \"g\": *, \"b\": *, \"hex\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "class",
+    "name": "ColorDialog",
+    "memberof": "src/dialogs/color.js",
+    "static": true,
+    "longname": "src/dialogs/color.js~ColorDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/color.js",
+    "importStyle": "ColorDialog",
+    "description": "Default OS.js Color Dialog",
+    "lineNumber": 119,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 92,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/color.js~ColorDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/color.js~ColorDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 128,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 93,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialogs/color.js~ColorDialog",
+    "static": false,
+    "longname": "src/dialogs/color.js~ColorDialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 143,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"r\": *, \"g\": *, \"b\": *, \"hex\": string}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/color.js~ColorDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/color.js~ColorDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 161,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/dialogs/confirm.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport Dialog from '../dialog';\nimport {Box} from '@osjs/gui';\n\n/**\n * Default OS.js Confirm Dialog\n */\nexport default class ConfirmDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title] Dialog title\n   * @param {String} [args.message] Dialog message\n   * @param {Boolean} [args.yesno=true] Yes/No or Ok/Cancel\n   * @param {String[]} [args.buttons] Custom buttons\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    const yesno = typeof args.yesno === 'undefined' || args.yesno === true;\n\n    const buttons = args.buttons instanceof Array\n      ? args.buttons\n      : yesno ? ['yes', 'no'] : ['ok', 'cancel'];\n\n    super(core, args, {\n      className: 'confirm',\n      window: {\n        title: args.title || 'Confirm',\n        attributes: {\n          minDimension: {\n            height: 140\n          }\n        }\n      },\n      buttons\n    }, callback);\n  }\n\n  render(options) {\n    super.render(options, ($content) => {\n      app({}, {}, (state, actions) => this.createView([\n        h(Box, {grow: 1}, [\n          h('div', {class: 'osjs-dialog-message'}, String(this.args.message))\n        ])\n      ]), $content);\n    });\n  }\n\n}\n\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/confirm.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "class",
+    "name": "ConfirmDialog",
+    "memberof": "src/dialogs/confirm.js",
+    "static": true,
+    "longname": "src/dialogs/confirm.js~ConfirmDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/confirm.js",
+    "importStyle": "ConfirmDialog",
+    "description": "Default OS.js Confirm Dialog",
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 99,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/confirm.js~ConfirmDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/confirm.js~ConfirmDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 50,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.message",
+        "description": "Dialog message"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "true",
+        "defaultRaw": true,
+        "name": "args.yesno",
+        "description": "Yes/No or Ok/Cancel"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.buttons",
+        "description": "Custom buttons"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 100,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/confirm.js~ConfirmDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/confirm.js~ConfirmDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 71,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/dialogs/default-application.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport {SelectField, ToggleField, Box} from '@osjs/gui';\nimport Dialog from '../dialog';\n\n/**\n * Default OS.js DefaultApplication Dialog\n */\nexport default class DefaultApplicationDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title] Dialog title\n   * @param {String} [args.message] Dialog message\n   * @param {*} [args.checked] Default checked state\n   * @param {*} [args.value] Default value\n   * @param {Map<String,*>} [args.choices] DefaultApplication map\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    args = Object.assign({}, {\n      title: 'DefaultApplication',\n      message: '',\n      choices: {}\n    }, args);\n\n    super(core, args, {\n      className: 'alert',\n      window: {\n        title: args.title,\n        dimension: {\n          width: 400,\n          height: 200\n        }\n      },\n      buttons: ['ok', 'close']\n    }, callback);\n\n    this.value = {\n      value: args.value || Object.keys(this.args.choices)[0],\n      checked: args.checked === true\n    };\n\n  }\n\n  render(options) {\n    const setLocalState = (oldState, newState) => {\n      const state = Object.assign({}, oldState, newState);\n      this.value = state;\n      return state;\n    };\n\n    super.render(options, ($content) => {\n      app(this.value, {\n        setValue: value => state => setLocalState(state, {value}),\n        setChecked: checked => state => setLocalState(state, {checked})\n      }, (state, actions) => this.createView([\n        h(Box, {grow: 1}, [\n          h('div', {class: 'osjs-dialog-message'}, String(this.args.message)),\n          h(SelectField, {\n            choices: this.args.choices,\n            value: state.value,\n            onchange: (ev, val) => actions.setValue(val)\n          }),\n          h(ToggleField, {\n            label: this.args.label || 'Use as default',\n            checked: state.checked,\n            onchange: (ev, val) => actions.setChecked(val)\n          })\n        ])\n      ]), $content);\n    });\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/default-application.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "class",
+    "name": "DefaultApplicationDialog",
+    "memberof": "src/dialogs/default-application.js",
+    "static": true,
+    "longname": "src/dialogs/default-application.js~DefaultApplicationDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/default-application.js",
+    "importStyle": "DefaultApplicationDialog",
+    "description": "Default OS.js DefaultApplication Dialog",
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 103,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/default-application.js~DefaultApplicationDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/default-application.js~DefaultApplicationDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 51,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.message",
+        "description": "Dialog message"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.checked",
+        "description": "Default checked state"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.value",
+        "description": "Default value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Map<String,*>"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.choices",
+        "description": "DefaultApplication map"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 104,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialogs/default-application.js~DefaultApplicationDialog",
+    "static": false,
+    "longname": "src/dialogs/default-application.js~DefaultApplicationDialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 70,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"value\": *, \"checked\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/default-application.js~DefaultApplicationDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/default-application.js~DefaultApplicationDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 77,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "file",
+    "name": "src/dialogs/file.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport Dialog from '../dialog';\nimport {\n  TextField,\n  SelectField,\n  listView\n} from '@osjs/gui';\n\nconst getMountpoint = str => str\n  .split(':')[0] + ':/';\n\nconst getMountpoints = core => core.make('osjs/fs')\n  .mountpoints(true)\n  .filter(mount => {\n    return !(mount.attributes.readOnly && mount.attributes.visibility === 'restricted');\n  })\n  .reduce((mounts, iter) => Object.assign(mounts, {\n    [iter.root]: iter.label\n  }), {});\n\n/**\n * Default OS.js File Dialog\n */\nexport default class FileDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title] Dialog title\n   * @param {String} [args.type='open'] Dialog type (open/save)\n   * @param {String} [args.path] Current path\n   * @param {String} [args.filetype='file'] Dialog filetype (file/directory)\n   * @param {String} [args.filename] Current filename\n   * @param {String[]} [args.mime] Mime filter\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    args = Object.assign({}, {\n      title: null,\n      type: 'open',\n      filetype: 'file',\n      path: core.config('vfs.defaultPath'),\n      filename: null,\n      mime: []\n    }, args);\n\n    if (typeof args.path === 'string') {\n      args.path = {path: args.path};\n    }\n\n    try {\n      args.path = Object.assign({\n        isDirectory: true,\n        filename: args.path.path.split(':/')[1].split('/').pop() || ''\n      }, args.path);\n    } catch (e) {\n      console.warn(e);\n    }\n\n    const _ = core.make('osjs/locale').translate;\n    const title = args.title\n      ? args.title\n      : (args.type === 'open' ? _('LBL_OPEN') : _('LBL_SAVE'));\n\n    super(core, args, {\n      className: 'file',\n      window: {\n        title,\n        attributes: {\n          resizable: true\n        },\n        dimension: {\n          width: 400,\n          height: 400\n        }\n      },\n      buttons: ['ok', 'cancel']\n    }, callback);\n  }\n\n  render(options) {\n    const getFileIcon = file => this.core.make('osjs/fs').icon(file);\n    const startingLocation = this.args.path;\n\n    super.render(options, ($content) => {\n      const a = app({\n        mount: startingLocation ? getMountpoint(startingLocation.path) : null,\n        filename: this.args.filename,\n        listview: listView.state({\n          columns: [{\n            label: 'Name'\n          }, {\n            label: 'Type'\n          }, {\n            label: 'Size'\n          }]\n        }),\n        buttons: {\n          ok: this.args.filetype === 'directory'\n            ? true\n            : !!this.args.filename\n        }\n      }, {\n        _readdir: ({path, files}) => (state, actions) => {\n          const listview = state.listview;\n          listview.selectedIndex = -1;\n          listview.rows = files.map(file => ({\n            columns: [{\n              label: file.filename,\n              icon: getFileIcon(file)\n            }, file.mime, file.humanSize],\n            data: file\n          }));\n\n          return {path, listview};\n        },\n\n        setButtonState: btn => state => ({\n          buttons: Object.assign({}, state.buttons, btn)\n        }),\n\n        setMountpoint: mount => (state, actions) => {\n          actions.setPath({path: mount});\n\n          return {mount};\n        },\n\n        setPath: file => async (state, actions) => {\n          const files = await this.core.make('osjs/vfs')\n            .readdir(file, {\n              filter: (item) => {\n                if (this.args.filetype === 'directory') {\n                  return item.isDirectory === true;\n                } else if (this.args.mime.length) {\n                  return item.mime\n                    ? this.args.mime.some(test => (new RegExp(test)).test(item.mime))\n                    : true;\n                }\n\n                return true;\n              }\n            });\n\n          this.args.path = file;\n\n          actions._readdir({path: file.path, files});\n\n          if (this.args.filetype === 'file') {\n            actions.setButtonState({ok: this.args.type === 'save' ? !!this.args.filename : false});\n          }\n        },\n\n        setFilename: filename => state => ({filename}),\n\n        listview: listView.actions({\n          select: ({data}) => {\n            a.setFilename(data.isFile ? data.filename : null);\n            this.value = data.isFile ? data : null;\n\n            if (this.args.filetype === 'file' && data.isFile) {\n              a.setButtonState({ok: true});\n            }\n          },\n          activate: ({data, ev}) => {\n            if (data.isDirectory) {\n              a.setFilename(null);\n              a.setPath(data);\n            } else {\n              this.value = data.isFile ? data : null;\n              this.emitCallback(this.getPositiveButton(), ev, true);\n            }\n          },\n        })\n      }, (state, actions) => this.createView([\n        h(SelectField, {\n          choices: getMountpoints(this.core),\n          onchange: (ev, val) => a.setMountpoint(val),\n          value: state.mount\n        }),\n        h(listView.component(Object.assign({\n          box: {grow: 1, shrink: 1}\n        }, state.listview), actions.listview)),\n        h(TextField, {\n          placeholder: 'Filename',\n          value: state.filename,\n          onenter: (ev, value) => this.emitCallback(this.getPositiveButton(), ev, true),\n          oninput: (ev) => {\n            const filename = ev.target.value;\n            actions.setButtonState({ok: !!filename});\n            actions.setFilename(filename);\n          },\n          box: {\n            style: {display: this.args.type === 'save' ? null : 'none'}\n          }\n        })\n      ], state), $content);\n\n      a.setPath(startingLocation);\n    });\n  }\n\n  emitCallback(name, ev, close = false) {\n    if (this.calledBack) {\n      return;\n    }\n\n    const file = this.getValue();\n    const next = () => super.emitCallback(name, ev, close);\n    const isSave = this.args.type === 'save';\n    const buttonCancel = name === 'cancel';\n    const hasVfs = this.core.has('osjs/vfs');\n\n    const confirm = callback => this.core.make('osjs/dialog', 'confirm', {\n      message: `Do you want to overwrite ${file.path}?`\n    }, {\n      parent: this.win,\n      attributes: {modal: true}\n    }, (btn) => {\n      if (btn === 'yes') {\n        callback();\n      }\n    });\n\n    if (file && isSave && hasVfs && !buttonCancel) {\n      this.core\n        .make('osjs/vfs')\n        .exists(file)\n        .then(exists => {\n          if (exists) {\n            confirm(() => next());\n          } else {\n            next();\n          }\n        })\n        .catch(error => {\n          console.error(error);\n          next();\n        });\n    } else {\n      next();\n    }\n  }\n\n  getValue() {\n    if (this.args.type === 'save') {\n      const {path} = this.args.path;\n      const filename = this.win.$content.querySelector('input[type=text]')\n        .value;\n\n      return filename\n        ? Object.assign({}, this.args.path, {\n          filename,\n          path: path.replace(/\\/?$/, '/') + filename\n        })\n        : undefined;\n    } else {\n      if (this.args.filetype === 'directory') {\n        return this.args.path;\n      }\n    }\n\n    return super.getValue();\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/file.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 108,
+    "kind": "function",
+    "name": "getMountpoint",
+    "memberof": "src/dialogs/file.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialogs/file.js~getMountpoint",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialogs/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "params": [
+      {
+        "name": "str",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "getMountpoints",
+    "memberof": "src/dialogs/file.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/dialogs/file.js~getMountpoints",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/dialogs/src/dialogs/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "params": [
+      {
+        "name": "core",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "class",
+    "name": "FileDialog",
+    "memberof": "src/dialogs/file.js",
+    "static": true,
+    "longname": "src/dialogs/file.js~FileDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/file.js",
+    "importStyle": "FileDialog",
+    "description": "Default OS.js File Dialog",
+    "lineNumber": 54,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 111,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/file.js~FileDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/file.js~FileDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 68,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'open'",
+        "defaultRaw": "'open'",
+        "name": "args.type",
+        "description": "Dialog type (open/save)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.path",
+        "description": "Current path"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "'file'",
+        "defaultRaw": "'file'",
+        "name": "args.filetype",
+        "description": "Dialog filetype (file/directory)"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.filename",
+        "description": "Current filename"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.mime",
+        "description": "Mime filter"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/file.js~FileDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/file.js~FileDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 112,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialogs/file.js~FileDialog",
+    "static": false,
+    "longname": "src/dialogs/file.js~FileDialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 189,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "method",
+    "name": "emitCallback",
+    "memberof": "src/dialogs/file.js~FileDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/file.js~FileDialog#emitCallback",
+    "access": "public",
+    "description": null,
+    "lineNumber": 233,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "ev",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "close",
+        "optional": true,
+        "types": [
+          "boolean"
+        ],
+        "defaultRaw": false,
+        "defaultValue": "false"
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "method",
+    "name": "getValue",
+    "memberof": "src/dialogs/file.js~FileDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/file.js~FileDialog#getValue",
+    "access": "public",
+    "description": null,
+    "lineNumber": 275,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "src/dialogs/font.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport Dialog from '../dialog';\nimport {\n  Toolbar,\n  SelectField,\n  TextareaField\n} from '@osjs/gui';\n\n/**\n * Default OS.js Font Dialog\n */\nexport default class FontDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {number} [args.minSize=6] Minimum size\n   * @param {number} [args.maxSize] Maximum size\n   * @param {string} [args.unit=px] Unit\n   * @param {string} [args.name] Initial font name\n   * @param {number} [args.size] Initial font size\n   * @param {string} [args.text] What text to preview\n   * @param {string[]} [args.controls] What controls to show\n   * @param {string[]} [args.fonts] List of fonts\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    args = Object.assign({}, {\n      title: 'Choose Font',\n      minSize: 6,\n      maxSize: 48,\n      unit: 'px',\n      name: 'Roboto',\n      size: 10,\n      style: 'regular',\n      text: 'The quick brown fox jumps over the lazy dog',\n      controls: ['size', 'name', 'style'],\n      fonts: [\n        'Roboto',\n        'arial',\n        'sans-serif',\n        'monospace'\n      ]\n    }, args);\n\n    super(core, args, {\n      className: 'info',\n      window: {\n        title: args.title,\n        attributes: {\n          minDimension: {\n            width: 400,\n            height: 200\n          }\n        }\n      },\n      buttons: ['ok', 'cancel']\n    }, callback);\n\n    this.value = {\n      name: this.args.name,\n      size: this.args.size,\n      style: this.args.style\n    };\n  }\n\n  render(options) {\n    const fontSizes = Array(this.args.maxSize - this.args.minSize)\n      .fill(0)\n      .map((v, i) => this.args.minSize + i)\n      .reduce((o, i) => Object.assign(o, {[i]: i}), {});\n\n    const fontNames = this.args.fonts\n      .reduce((o, i) => {\n        const k = i.toLowerCase();\n        return Object.assign(o, {[k]: i});\n      }, {});\n\n    const fontStyles = {\n      'regular': 'Regular',\n      'bold': 'Bold',\n      'italic': 'Italic'\n    };\n\n    const initialState = Object.assign({}, this.value);\n    const initialActions = {\n      setSize: size => state => {\n        this.value.size = size;\n        return {size};\n      },\n      setFont: name => state => {\n        this.value.name = name;\n        return {name};\n      },\n      setStyle: style => state => {\n        this.value.style = style;\n        return {style};\n      }\n    };\n\n    super.render(options, ($content) => {\n      app(initialState, initialActions, (state, actions) => this.createView([\n        h(Toolbar, {}, [\n          h(SelectField, {\n            box: {grow: 1, style: {display: this.args.controls.indexOf('size') !== -1 ? 'flex' : 'none'}},\n            value: state.size,\n            choices: fontSizes,\n            onchange: (ev, v) => actions.setSize(v)\n          }),\n          h(SelectField, {\n            box: {grow: 1, style: {display: this.args.controls.indexOf('name') !== -1 ? 'flex' : 'none'}},\n            value: state.name.toLowerCase(),\n            choices: fontNames,\n            onchange: (ev, v) => actions.setFont(v)\n          }),\n          h(SelectField, {\n            box: {grow: 1, style: {display: this.args.controls.indexOf('style') !== -1 ? 'flex' : 'none'}},\n            value: state.size,\n            choices: fontStyles,\n            onchange: (ev, v) => actions.setStyle(v)\n          })\n        ]),\n        h(TextareaField, {\n          box: {grow: 1},\n          value: this.args.text,\n          style: {\n            fontFamily: state.name,\n            fontSize: `${state.size}${this.args.unit}`,\n            fontWeight: state.style === 'bold' ? 'bold' : 'normal',\n            fontStyle: state.style !== 'bold' ? state.style : 'normal',\n            height: '4rem',\n            overflow: 'hidden',\n            whiteSpace: 'nowrap'\n          }\n        })\n      ]), $content);\n    });\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/font.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "class",
+    "name": "FontDialog",
+    "memberof": "src/dialogs/font.js",
+    "static": true,
+    "longname": "src/dialogs/font.js~FontDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/font.js",
+    "importStyle": "FontDialog",
+    "description": "Default OS.js Font Dialog",
+    "lineNumber": 42,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 119,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/font.js~FontDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/font.js~FontDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 58,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "6",
+        "defaultRaw": 6,
+        "name": "args.minSize",
+        "description": "Minimum size"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.maxSize",
+        "description": "Maximum size"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "px",
+        "defaultRaw": "px",
+        "name": "args.unit",
+        "description": "Unit"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.name",
+        "description": "Initial font name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.size",
+        "description": "Initial font size"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.text",
+        "description": "What text to preview"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.controls",
+        "description": "What controls to show"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.fonts",
+        "description": "List of fonts"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 120,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialogs/font.js~FontDialog",
+    "static": false,
+    "longname": "src/dialogs/font.js~FontDialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 91,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"name\": *, \"size\": *, \"style\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/font.js~FontDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/font.js~FontDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 98,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "file",
+    "name": "src/dialogs/progress.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport Dialog from '../dialog';\nimport {Box, Progressbar} from '@osjs/gui';\n\n/**\n * Default OS.js Progress Dialog\n */\nexport default class ProgressDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title] Dialog title\n   * @param {String} [args.message] Dialog message\n   * @param {String} [args.status] Dialog status message\n   * @param {String} [args.progress] Initial progress value\n   * @param {String[]} [args.buttons] Override dialog buttons\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    super(core, args, {\n      className: 'progress',\n      buttons: args.buttons || ['cancel'],\n      window: {\n        title: args.title || 'Progress',\n        attributes: {\n          minDimension: {\n            width: 500,\n            height: 200\n          }\n        }\n      }\n    }, callback);\n\n    this.value = this.args.progress || 0;\n    this.status = this.args.status || '';\n    this.app = null;\n  }\n\n  render(options) {\n    super.render(options, ($content) => {\n      this.app = app({\n        progress: this.value,\n        status: this.status\n      }, {\n        setProgress: progress => state => ({progress}),\n        setStatus: status => state => ({status})\n      }, (state, actions) => this.createView([\n        h(Box, {grow: 1, shrink: 1}, [\n          h('div', {class: 'osjs-dialog-message'}, String(this.args.message)),\n          h('div', {class: 'osjs-dialog-status'}, String(state.status)),\n          h(Progressbar, {value: state.progress})\n        ])\n      ]), $content);\n    });\n  }\n\n  /**\n   * Set the progress value\n   * @param {Number} value A value between 0 and 100\n   */\n  setProgress(value) {\n    this.app.setProgress(value);\n  }\n\n  /**\n   * Set the status text\n   * @param {String} status Status text\n   */\n  setStatus(status) {\n    this.app.setStatus(status);\n  }\n\n}\n\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/progress.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 123,
+    "kind": "class",
+    "name": "ProgressDialog",
+    "memberof": "src/dialogs/progress.js",
+    "static": true,
+    "longname": "src/dialogs/progress.js~ProgressDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/progress.js",
+    "importStyle": "ProgressDialog",
+    "description": "Default OS.js Progress Dialog",
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 124,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/progress.js~ProgressDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/progress.js~ProgressDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 51,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.message",
+        "description": "Dialog message"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.status",
+        "description": "Dialog status message"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.progress",
+        "description": "Initial progress value"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.buttons",
+        "description": "Override dialog buttons"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 125,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialogs/progress.js~ProgressDialog",
+    "static": false,
+    "longname": "src/dialogs/progress.js~ProgressDialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 66,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "member",
+    "name": "status",
+    "memberof": "src/dialogs/progress.js~ProgressDialog",
+    "static": false,
+    "longname": "src/dialogs/progress.js~ProgressDialog#status",
+    "access": "public",
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "member",
+    "name": "app",
+    "memberof": "src/dialogs/progress.js~ProgressDialog",
+    "static": false,
+    "longname": "src/dialogs/progress.js~ProgressDialog#app",
+    "access": "public",
+    "description": null,
+    "lineNumber": 68,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/progress.js~ProgressDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/progress.js~ProgressDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 71,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "method",
+    "name": "setProgress",
+    "memberof": "src/dialogs/progress.js~ProgressDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/progress.js~ProgressDialog#setProgress",
+    "access": "public",
+    "description": "Set the progress value",
+    "lineNumber": 93,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "A value between 0 and 100"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 131,
+    "kind": "method",
+    "name": "setStatus",
+    "memberof": "src/dialogs/progress.js~ProgressDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/progress.js~ProgressDialog#setStatus",
+    "access": "public",
+    "description": "Set the status text",
+    "lineNumber": 101,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "status",
+        "description": "Status text"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 132,
+    "kind": "file",
+    "name": "src/dialogs/prompt.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {h, app} from 'hyperapp';\nimport Dialog from '../dialog';\nimport {Box, TextField} from '@osjs/gui';\n\n/**\n * Default OS.js Prompt Dialog\n */\nexport default class PromptDialog extends Dialog {\n\n  /**\n   * Constructor\n   * @param {Core} core OS.js Core reference\n   * @param {Object} args Arguments given from service creation\n   * @param {String} [args.title] Dialog title\n   * @param {String} [args.message] Dialog message\n   * @param {Function} callback The callback function\n   */\n  constructor(core, args, callback) {\n    super(core, Object.assign({}, {\n      value: '',\n      placeholder: '',\n    }, args), {\n      className: 'prompt',\n      buttons: ['ok', 'cancel'],\n      window: {\n        title: args.title || 'Prompt',\n        attributes: {\n          minDimension: {\n            width: 500,\n            height: 200\n          }\n        }\n      }\n    }, callback);\n\n    this.value = this.args.value;\n  }\n\n  render(options) {\n    super.render(options, ($content) => {\n      app({\n        value: this.args.value\n      }, {\n        setValue: value => state => {\n          this.value = value;\n          return {value};\n        }\n      }, (state, actions) => this.createView([\n        h(Box, {grow: 1, padding: false}, [\n          h(Box, {class: 'osjs-dialog-message'}, String(this.args.message)),\n          h(TextField, {\n            value: state.value,\n            placeholder: this.args.placeholder,\n            onenter: (ev, value) => {\n              actions.setValue(value);\n\n              this.emitCallback(this.getPositiveButton(), ev, true);\n            },\n            oninput: (ev, value) => actions.setValue(value)\n          })\n        ])\n      ]), $content);\n    });\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/dialogs/prompt.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 133,
+    "kind": "class",
+    "name": "PromptDialog",
+    "memberof": "src/dialogs/prompt.js",
+    "static": true,
+    "longname": "src/dialogs/prompt.js~PromptDialog",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/dialogs/prompt.js",
+    "importStyle": "PromptDialog",
+    "description": "Default OS.js Prompt Dialog",
+    "lineNumber": 38,
+    "interface": false,
+    "extends": [
+      "src/dialog.js~Dialog"
+    ]
+  },
+  {
+    "__docId__": 134,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/dialogs/prompt.js~PromptDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/prompt.js~PromptDialog#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 48,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "OS.js Core reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Arguments given from service creation"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.title",
+        "description": "Dialog title"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "args.message",
+        "description": "Dialog message"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "The callback function"
+      }
+    ]
+  },
+  {
+    "__docId__": 135,
+    "kind": "member",
+    "name": "value",
+    "memberof": "src/dialogs/prompt.js~PromptDialog",
+    "static": false,
+    "longname": "src/dialogs/prompt.js~PromptDialog#value",
+    "access": "public",
+    "description": null,
+    "lineNumber": 66,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/dialogs/prompt.js~PromptDialog",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/dialogs/prompt.js~PromptDialog#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 69,
+    "undocument": true,
+    "params": [
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "file",
+    "name": "src/provider.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport AlertDialog from './dialogs/alert';\nimport ConfirmDialog from './dialogs/confirm';\nimport PromptDialog from './dialogs/prompt';\nimport ProgressDialog from './dialogs/progress';\nimport ColorDialog from './dialogs/color';\nimport FontDialog from './dialogs/font';\nimport FileDialog from './dialogs/file';\nimport ChoiceDialog from './dialogs/choice';\nimport DefaultApplicationDialog from './dialogs/default-application';\nimport CustomDialog from './dialogs/custom';\n\nexport default class DialogServiceProvider {\n\n  constructor(core, args = {}) {\n    this.core = core;\n    this.registry = Object.assign({\n      alert: AlertDialog,\n      confirm: ConfirmDialog,\n      prompt: PromptDialog,\n      progress: ProgressDialog,\n      color: ColorDialog,\n      font: FontDialog,\n      file: FileDialog,\n      choice: ChoiceDialog,\n      defaultApplication: DefaultApplicationDialog\n    }, args.registry || {});\n  }\n\n  destroy() {\n  }\n\n  async init() {\n    this.core.instance('osjs/dialog', (name, args = {}, ...eargs) => {\n      const options = eargs.length > 1 ? eargs[0] : {};\n      const callback = eargs[eargs.length > 1 ? 1 : 0];\n\n      if (!this.registry[name]) {\n        throw new Error(`Dialog '${name}' does not exist`);\n      }\n\n      if (typeof callback !== 'function') {\n        throw new Error('Dialog requires a callback');\n      }\n\n      const instance = new this.registry[name](this.core, args, callback);\n      instance.render(options);\n      return instance;\n    });\n\n    this.core.singleton('osjs/dialogs', () => ({\n      create: (options, valueCallback, callback) => {\n        return new CustomDialog(this.core, options, valueCallback, callback);\n      },\n\n      register: (name, classRef) => {\n        if (this.registry[name]) {\n          console.warn('Overwriting previously registered dialog', name);\n        }\n\n        this.registry[name] = classRef;\n      }\n    }));\n  }\n\n  start() {\n  }\n\n}\n\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/src/provider.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 139,
+    "kind": "class",
+    "name": "DialogServiceProvider",
+    "memberof": "src/provider.js",
+    "static": true,
+    "longname": "src/provider.js~DialogServiceProvider",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/dialogs/src/provider.js",
+    "importStyle": "DialogServiceProvider",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/provider.js~DialogServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~DialogServiceProvider#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/provider.js~DialogServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~DialogServiceProvider#core",
+    "access": "public",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "member",
+    "name": "registry",
+    "memberof": "src/provider.js~DialogServiceProvider",
+    "static": false,
+    "longname": "src/provider.js~DialogServiceProvider#registry",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/provider.js~DialogServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~DialogServiceProvider#destroy",
+    "access": "public",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/provider.js~DialogServiceProvider",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/provider.js~DialogServiceProvider#init",
+    "access": "public",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 145,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/provider.js~DialogServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/provider.js~DialogServiceProvider#start",
+    "access": "public",
+    "description": null,
+    "lineNumber": 95,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "<p align=\"center\">\n  <img alt=\"OS.js Logo\" src=\"https://raw.githubusercontent.com/os-js/gfx/master/logo-big.png\" />\n</p>\n\n[OS.js](https://www.os-js.org/) is an [open-source](https://raw.githubusercontent.com/os-js/OS.js/master/LICENSE) web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.\n\n[![Support](https://img.shields.io/badge/patreon-support-orange.svg)](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)\n[![Support](https://img.shields.io/badge/opencollective-donate-red.svg)](https://opencollective.com/osjs)\n[![Donate](https://img.shields.io/badge/liberapay-donate-yellowgreen.svg)](https://liberapay.com/os-js/)\n[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/andersevenrud)\n\n# OS.js Dialogs module\n\nThis is the Dialogs module for OS.js\n\n## Contribution\n\n* **Sponsor on [Github](https://github.com/sponsors/andersevenrud)**\n* **Become a [Patreon](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)**\n* **Support on [Open Collective](https://opencollective.com/osjs)**\n* [Contribution Guide](https://github.com/os-js/OS.js/blob/master/CONTRIBUTING.md)\n\n## Documentation\n\nSee the [Official Manuals](https://manual.os-js.org/) for articles, tutorials and guides.\n\n## Links\n\n* [Official Chat](https://gitter.im/os-js/OS.js)\n* [Community Forums and Announcements](https://community.os-js.org/)\n* [Homepage](https://os-js.org/)\n* [Twitter](https://twitter.com/osjsorg) ([author](https://twitter.com/andersevenrud))\n* [Facebook](https://www.facebook.com/os.js.org)\n* [Docker Hub](https://hub.docker.com/u/osjs/)\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@osjs/dialogs\",\n  \"version\": \"3.1.2\",\n  \"description\": \"OS.js Dialogs\",\n  \"main\": \"dist/main.js\",\n  \"module\": \"dist/main.js\",\n  \"style\": \"dist/main.css\",\n  \"files\": [\n    \"dist/main.js\",\n    \"dist/main.js.map\",\n    \"dist/main.css\",\n    \"dist/main.css.map\",\n    \"CHANGELOG.md\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"scripts\": {\n    \"test\": \"npm run eslint && npm run stylelint\",\n    \"eslint\": \"eslint index.js 'src/**/*.js'\",\n    \"build\": \"webpack\",\n    \"watch\": \"webpack --watch\",\n    \"stylelint\": \"stylelint index.scss 'src/**/*.scss'\",\n    \"prepublishOnly\": \"npm run test && rm ./dist/* && NODE_ENV=production npm run build\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/os-js/osjs-dialogs.git\"\n  },\n  \"keywords\": [\n    \"osjs\"\n  ],\n  \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\",\n  \"license\": \"BSD-2-Clause\",\n  \"dependencies\": {\n    \"@osjs/gui\": \"^4.0.36\",\n    \"deepmerge\": \"^2.2.1\",\n    \"hyperapp\": \"^1.2.10\",\n    \"is-plain-object\": \"^2.0.4\"\n  },\n  \"devDependencies\": {\n    \"@osjs/dev-meta\": \"^2.1.0\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/os-js/osjs-dialogs/issues\"\n  },\n  \"homepage\": \"https://github.com/os-js/osjs-dialogs#readme\",\n  \"eslintConfig\": {\n    \"env\": {\n      \"browser\": true,\n      \"node\": true\n    },\n    \"parserOptions\": {\n      \"sourceType\": \"module\"\n    },\n    \"extends\": \"@osjs/eslint-config\"\n  },\n  \"stylelint\": {\n    \"extends\": \"@osjs/stylelint-config\"\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./doc\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\",\n        \"option\": {\n          \"brand\": {\n            \"title\": \"OS.js Dialog API\",\n            \"description\": \"OS.js Dialog API Documentation\",\n            \"repository\": \"https://github.com/os-js/osjs-core\",\n            \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\"\n          },\n          \"lint\": {\n            \"enable\": false\n          },\n          \"coverage\": {\n            \"enable\": false\n          },\n          \"undocumentIdentifier\": {\n            \"enable\": false\n          }\n        }\n      },\n      {\n        \"name\": \"esdoc-publish-html-plugin\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-dialogs/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

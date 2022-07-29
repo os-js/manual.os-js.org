@@ -1,0 +1,1422 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/core.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {resolveTreeByKey, providerHandler} from './utils.js';\nimport {EventEmitter} from '@osjs/event-emitter';\nimport merge from 'deepmerge';\nimport omitDeep from 'omit-deep';\n\n/**\n * Core\n *\n * @desc Main class for OS.js service providers and bootstrapping.\n */\nexport class CoreBase extends EventEmitter {\n\n  /**\n   * Create core instance\n   * @param {Object} defaultConfiguration Default configuration\n   * @param {Object} configuration Configuration given\n   * @param {Object} options Options\n   */\n  constructor(defaultConfiguration, configuration, options) {\n    super('Core');\n\n    // https://github.com/KyleAMathews/deepmerge#webpack-bug\n    const merger = merge.default ? merge.default : merge;\n    const omitted = omitDeep(defaultConfiguration, options.omit || []);\n\n    this.logger = console;\n    this.configuration = merger(omitted, configuration);\n    this.options = options;\n    this.booted = false;\n    this.started = false;\n    this.destroyed = false;\n    this.providers = providerHandler(this);\n  }\n\n  /**\n   * Destroy core instance\n   */\n  destroy() {\n    if (this.destroyed) {\n      return false;\n    }\n\n    this.booted = false;\n    this.destroyed = true;\n    this.started = false;\n\n    const promises = this.providers.destroy();\n\n    super.destroy();\n\n    return promises;\n  }\n\n  /**\n   * Boots up OS.js\n   */\n  boot() {\n    if (this.booted) {\n      return Promise.resolve(true);\n    }\n\n    this.started = false;\n    this.destroyed = false;\n    this.booted = true;\n\n    return this.providers.init(true)\n      .then(() => true);\n  }\n\n  /**\n   * Starts all core services\n   */\n  start() {\n    if (this.started) {\n      return Promise.resolve(true);\n    }\n\n    this.started = true;\n\n    return this.providers.init(false)\n      .then(() => true);\n  }\n\n  /**\n   * Gets a configuration entry by key\n   *\n   * @param {String} key The key to get the value from\n   * @param {*} [defaultValue] If result is undefined, return this instead\n   * @see {resolveTreeByKey}\n   * @return {*}\n   */\n  config(key, defaultValue) {\n    return key\n      ? resolveTreeByKey(this.configuration, key, defaultValue)\n      : Object.assign({}, this.configuration);\n  }\n\n  /**\n   * Register a service provider\n   *\n   * @param {Class} ref A class reference\n   * @param {Object} [options] Options for handling of provider\n   * @param {Boolean} [options.before] Load this provider early\n   * @param {Object} [options.args] Arguments to send to the constructor\n   */\n  register(ref, options = {}) {\n    this.providers.register(ref, options);\n  }\n\n  /**\n   * Register a instanciator provider\n   *\n   * @param {String} name Provider name\n   * @param {Function} callback Callback that returns an instance\n   */\n  instance(name, callback) {\n    this.providers.bind(name, false, callback);\n  }\n\n  /**\n   * Register a singleton provider\n   *\n   * @param {String} name Provider name\n   * @param {Function} callback Callback that returns an instance\n   */\n  singleton(name, callback) {\n    this.providers.bind(name, true, callback);\n  }\n\n  /**\n   * Create an instance of a provided service\n   *\n   * @param {String} name Service name\n   * @param {*} args Constructor arguments\n   * @return {*} An instance of a service\n   */\n  make(name, ...args) {\n    return this.providers.make(name, ...args);\n  }\n\n  /**\n   * Check if a service exists\n   * @param {String} name Provider name\n   * @return {Boolean}\n   */\n  has(name) {\n    return this.providers.has(name);\n  }\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-common/src/core.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "CoreBase",
+    "memberof": "src/core.js",
+    "static": true,
+    "longname": "src/core.js~CoreBase",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/common/src/core.js",
+    "importStyle": "{CoreBase}",
+    "description": "Main class for OS.js service providers and bootstrapping.",
+    "lineNumber": 41,
+    "interface": false,
+    "extends": [
+      "@osjs/event-emitter~EventEmitter"
+    ]
+  },
+  {
+    "__docId__": 50,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#constructor",
+    "access": "public",
+    "description": "Create core instance",
+    "lineNumber": 49,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "defaultConfiguration",
+        "description": "Default configuration"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "configuration",
+        "description": "Configuration given"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "Options"
+      }
+    ]
+  },
+  {
+    "__docId__": 51,
+    "kind": "member",
+    "name": "logger",
+    "memberof": "src/core.js~CoreBase",
+    "static": false,
+    "longname": "src/core.js~CoreBase#logger",
+    "access": "public",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "configuration",
+    "memberof": "src/core.js~CoreBase",
+    "static": false,
+    "longname": "src/core.js~CoreBase#configuration",
+    "access": "public",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "options",
+    "memberof": "src/core.js~CoreBase",
+    "static": false,
+    "longname": "src/core.js~CoreBase#options",
+    "access": "public",
+    "description": null,
+    "lineNumber": 58,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "booted",
+    "memberof": "src/core.js~CoreBase",
+    "static": false,
+    "longname": "src/core.js~CoreBase#booted",
+    "access": "public",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "started",
+    "memberof": "src/core.js~CoreBase",
+    "static": false,
+    "longname": "src/core.js~CoreBase#started",
+    "access": "public",
+    "description": null,
+    "lineNumber": 60,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "destroyed",
+    "memberof": "src/core.js~CoreBase",
+    "static": false,
+    "longname": "src/core.js~CoreBase#destroyed",
+    "access": "public",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "providers",
+    "memberof": "src/core.js~CoreBase",
+    "static": false,
+    "longname": "src/core.js~CoreBase#providers",
+    "access": "public",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#destroy",
+    "access": "public",
+    "description": "Destroy core instance",
+    "lineNumber": 68,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "boot",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#boot",
+    "access": "public",
+    "description": "Boots up OS.js",
+    "lineNumber": 87,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#start",
+    "access": "public",
+    "description": "Starts all core services",
+    "lineNumber": 103,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "config",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#config",
+    "access": "public",
+    "description": "Gets a configuration entry by key",
+    "see": [
+      "{resolveTreeByKey}"
+    ],
+    "lineNumber": 122,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "key",
+        "description": "The key to get the value from"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "defaultValue",
+        "description": "If result is undefined, return this instead"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "register",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#register",
+    "access": "public",
+    "description": "Register a service provider",
+    "lineNumber": 136,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Class"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ref",
+        "description": "A class reference"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options",
+        "description": "Options for handling of provider"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Boolean"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.before",
+        "description": "Load this provider early"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.args",
+        "description": "Arguments to send to the constructor"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "instance",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#instance",
+    "access": "public",
+    "description": "Register a instanciator provider",
+    "lineNumber": 146,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Provider name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "Callback that returns an instance"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "singleton",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#singleton",
+    "access": "public",
+    "description": "Register a singleton provider",
+    "lineNumber": 156,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Provider name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "callback",
+        "description": "Callback that returns an instance"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "make",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#make",
+    "access": "public",
+    "description": "Create an instance of a provided service",
+    "lineNumber": 167,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Service name"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "args",
+        "description": "Constructor arguments"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "An instance of a service"
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "has",
+    "memberof": "src/core.js~CoreBase",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/core.js~CoreBase#has",
+    "access": "public",
+    "description": "Check if a service exists",
+    "lineNumber": 176,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "Provider name"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/esdoc.js",
+    "content": "exports.onHandleCode = function(ev) {\n  ev.data.code = ev.data.code\n    .replace(/module\\.exports = /g, 'export default ')\n    .replace(/exports = /g, 'export default ');\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-common/src/esdoc.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "onHandleCode",
+    "memberof": "src/esdoc.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/esdoc.js~onHandleCode",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/common/src/esdoc.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ev",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "file",
+    "name": "src/service-provider.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\n/**\n * Service Provider Interface\n *\n * @desc Provides a basic Service Provider interface for OS.js\n *\n * @interface\n */\nexport class ServiceProvider {\n\n  /**\n   * Constructor\n   * @param {Core} core Core reference\n   */\n  constructor(core, options = {}) {\n    /**\n     * Core instance reference\n     * @type {Core}\n     */\n    this.core = core;\n    this.options = options;\n  }\n\n  /**\n   * A list of services this provider can create\n   * @return {string[]}\n   */\n  provides() {\n    return [];\n  }\n\n  /**\n   * A list of services this provider depends on\n   * @return {string[]}\n   */\n  depends() {\n    return [];\n  }\n\n  /**\n   * Initializes provider\n   */\n  async init() {\n  }\n\n  /**\n   * Starts provider\n   */\n  start() {\n  }\n\n  /**\n   * Destroys provider\n   */\n  destroy() {\n  }\n\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-common/src/service-provider.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 77,
+    "kind": "class",
+    "name": "ServiceProvider",
+    "memberof": "src/service-provider.js",
+    "static": true,
+    "longname": "src/service-provider.js~ServiceProvider",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/common/src/service-provider.js",
+    "importStyle": "{ServiceProvider}",
+    "description": "Provides a basic Service Provider interface for OS.js",
+    "lineNumber": 38,
+    "interface": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#constructor",
+    "access": "public",
+    "description": "Constructor",
+    "lineNumber": 44,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Core"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "core",
+        "description": "Core reference"
+      }
+    ]
+  },
+  {
+    "__docId__": 79,
+    "kind": "member",
+    "name": "core",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#core",
+    "access": "public",
+    "description": "Core instance reference",
+    "lineNumber": 49,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Core"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "member",
+    "name": "options",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#options",
+    "access": "public",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "provides",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#provides",
+    "access": "public",
+    "description": "A list of services this provider can create",
+    "lineNumber": 57,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string[]"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "depends",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#depends",
+    "access": "public",
+    "description": "A list of services this provider depends on",
+    "lineNumber": 65,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string[]"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "init",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#init",
+    "access": "public",
+    "description": "Initializes provider",
+    "lineNumber": 72,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#start",
+    "access": "public",
+    "description": "Starts provider",
+    "lineNumber": 78,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/service-provider.js~ServiceProvider",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/service-provider.js~ServiceProvider#destroy",
+    "access": "public",
+    "description": "Destroys provider",
+    "lineNumber": 84,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/utils.js",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @licence Simplified BSD License\n */\n\nimport {Graph, Node} from 'async-dependency-graph';\n\nexport const resolveTreeByKey = (tree, key, defaultValue) => {\n  let result;\n\n  try {\n    result = key\n      .split(/\\./g)\n      .reduce((result, key) => result[key], Object.assign({}, tree));\n  } catch (e) { /* noop */ }\n\n  return typeof result === 'undefined' ? defaultValue : result;\n};\n\nconst each = (list, method) => Promise.all(list.map(p => {\n  try {\n    return p.provider[method]();\n  } catch (e) {\n    return Promise.reject(e);\n  }\n}))\n  .catch(err => console.warn(err));\n\nexport const providerHandler = (core) => {\n  let instances = {};\n  let providers = [];\n  let registry = [];\n\n  const createGraph = (list, method) => {\n    const graph = new Graph();\n    const provides = list.map(p => typeof p.provider.provides === 'function' ? p.provider.provides() : []);\n    const dependsOnIndex = wants => provides.findIndex(arr => arr.some(a => wants.indexOf(a) !== -1));\n\n    list.forEach((p, i) => {\n      graph.addNode(new Node(String(i), () => {\n        try {\n          return Promise.resolve(p.provider[method]());\n        } catch (e) {\n          return Promise.reject(e);\n        }\n      }));\n    });\n\n    list.forEach((p, i) => {\n      const dependsOptions = p.options.depends instanceof Array\n        ? p.options.depends\n        : [];\n\n      const dependsInstance = typeof p.provider.depends === 'function'\n        ? p.provider.depends()\n        : [];\n\n      const depends = [...dependsOptions, ...dependsInstance];\n      if (depends.length > 0) {\n        const dindex = dependsOnIndex(depends);\n        if (dindex !== -1) {\n          graph.addDependency(String(i), String(dindex));\n        }\n      }\n    });\n\n    return graph.traverse()\n      .catch(e => console.warn(e));\n  };\n\n  const handle = list => createGraph(list, 'init')\n    .then(() => createGraph(list, 'start'));\n\n\n  const has = name => registry.findIndex(p => p.name === name) !== -1;\n\n  const destroy = () => {\n    const result = each(providers, 'destroy');\n\n    instances = {};\n    registry = [];\n\n    return result;\n  };\n\n  const init = (before) =>\n    handle(before\n      ? providers.filter(p => p.options.before)\n      : providers.filter(p => !p.options.before));\n\n  const register = (ref, options) => {\n    try {\n      providers.push({\n        provider: new ref(core, options.args),\n        options\n      });\n    } catch (e) {\n      console.error('Provider register error', e);\n    }\n  };\n\n  const bind = (name, singleton, callback) => {\n    core.logger.info('Provider binding', name);\n\n    registry.push({\n      singleton,\n      name,\n      make(...args) {\n        return callback(...args);\n      }\n    });\n  };\n\n  const make = (name, ...args) => {\n    const found = registry.find(p => p.name === name);\n    if (!found) {\n      throw new Error(`Provider '${name}' not found`);\n    }\n\n    if (!found.singleton) {\n      return found.make(...args);\n    }\n\n    if (!instances[name]) {\n      if (found) {\n        instances[name] = found.make(...args);\n      }\n    }\n\n    return instances[name];\n  };\n\n  return {register, init, bind, has, make, destroy};\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-common/src/utils.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "function",
+    "name": "resolveTreeByKey",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~resolveTreeByKey",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/common/src/utils.js",
+    "importStyle": "{resolveTreeByKey}",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "params": [
+      {
+        "name": "tree",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "key",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "defaultValue",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "each",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~each",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/common/src/utils.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "params": [
+      {
+        "name": "list",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "method",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "providerHandler",
+    "memberof": "src/utils.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils.js~providerHandler",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/common/src/utils.js",
+    "importStyle": "{providerHandler}",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "params": [
+      {
+        "name": "core",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"register\": *, \"init\": *, \"bind\": *, \"has\": *, \"make\": *, \"destroy\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "<p align=\"center\">\n  <img alt=\"OS.js Logo\" src=\"https://raw.githubusercontent.com/os-js/gfx/master/logo-big.png\" />\n</p>\n\n[OS.js](https://www.os-js.org/) is an [open-source](https://raw.githubusercontent.com/os-js/OS.js/master/LICENSE) web desktop platform with a window manager, application APIs, GUI toolkit, filesystem abstractions and much more.\n\n[![Support](https://img.shields.io/badge/patreon-support-orange.svg)](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)\n[![Support](https://img.shields.io/badge/opencollective-donate-red.svg)](https://opencollective.com/osjs)\n[![Donate](https://img.shields.io/badge/liberapay-donate-yellowgreen.svg)](https://liberapay.com/os-js/)\n[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/andersevenrud)\n\n# OS.js Common Modules\n\nContains the base core libraries used for both the server and client.\n\n## Contribution\n\n* **Sponsor on [Github](https://github.com/sponsors/andersevenrud)**\n* **Become a [Patreon](https://www.patreon.com/user?u=2978551&ty=h&u=2978551)**\n* **Support on [Open Collective](https://opencollective.com/osjs)**\n* [Contribution Guide](https://github.com/os-js/OS.js/blob/master/CONTRIBUTING.md)\n\n## Documentation\n\nSee the [Official Manuals](https://manual.os-js.org) for articles, tutorials and guides.\n\n## Links\n\n* [Official Chat](https://gitter.im/os-js/OS.js)\n* [Community Forums and Announcements](https://community.os-js.org/)\n* [Homepage](https://os-js.org/)\n* [Twitter](https://twitter.com/osjsorg) ([author](https://twitter.com/andersevenrud))\n* [Facebook](https://www.facebook.com/os.js.org)\n* [Docker Hub](https://hub.docker.com/u/osjs/)\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-common/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@osjs/common\",\n  \"version\": \"3.0.12\",\n  \"description\": \"OS.js Common Modules\",\n  \"main\": \"dist/main.js\",\n  \"module\": \"dist/main.js\",\n  \"typings\": \"index.d.ts\",\n  \"files\": [\n    \"index.d.ts\",\n    \"dist/main.js.map\",\n    \"dist/main.js\",\n    \"CHANGELOG.md\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"build\": \"webpack\",\n    \"watch\": \"webpack --watch\",\n    \"eslint\": \"eslint index.js 'src/**/*.js'\",\n    \"prepublishOnly\": \"npm run eslint && rm ./dist/* && NODE_ENV=production npm run build\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/os-js/osjs-common.git\"\n  },\n  \"keywords\": [\n    \"osjs\"\n  ],\n  \"dependencies\": {\n    \"@osjs/event-emitter\": \"^1.0.10\",\n    \"async-dependency-graph\": \"^1.1.4\",\n    \"deepmerge\": \"^4.2.2\",\n    \"omit-deep\": \"^0.3.0\"\n  },\n  \"devDependencies\": {\n    \"@osjs/dev-meta\": \"^2.0.0\"\n  },\n  \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\",\n  \"license\": \"BSD-2-Clause\",\n  \"bugs\": {\n    \"url\": \"https://github.com/os-js/osjs-common/issues\"\n  },\n  \"homepage\": \"https://github.com/os-js/osjs-common#readme\",\n  \"eslintConfig\": {\n    \"env\": {\n      \"browser\": true,\n      \"node\": true\n    },\n    \"parserOptions\": {\n      \"sourceType\": \"module\"\n    },\n    \"extends\": \"@osjs/eslint-config\"\n  },\n  \"babel\": {\n    \"sourceType\": \"unambiguous\",\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"plugins\": [\n      \"@babel/plugin-transform-runtime\"\n    ]\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./doc\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\",\n        \"option\": {\n          \"brand\": {\n            \"title\": \"OS.js Common API\",\n            \"description\": \"OS.js Common API Documentation\",\n            \"repository\": \"https://github.com/os-js/osjs-common\",\n            \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\"\n          },\n          \"lint\": {\n            \"enable\": false\n          },\n          \"coverage\": {\n            \"enable\": false\n          },\n          \"undocumentIdentifier\": {\n            \"enable\": false\n          }\n        }\n      },\n      {\n        \"name\": \"esdoc-publish-html-plugin\"\n      },\n      {\n        \"name\": \"./src/esdoc.js\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-common/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

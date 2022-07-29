@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/locales.js | OS.js Panel API</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="OS.js Panel API Documentation"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="OS.js Panel API"><meta property="twitter:description" content="OS.js Panel API Documentation"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/os-js/osjs-core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/panel-item.js~PanelItem.html">PanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/panel.js~Panel.html">Panel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/provider.js~PanelServiceProvider.html">PanelServiceProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#items">items</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/clock.js~ClockPanelItem.html">ClockPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/menu.js~MenuPanelItem.html">MenuPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/tray.js~TrayPanelItem.html">TrayPanelItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/items/windows.js~WindowsPanelItem.html">WindowsPanelItem</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/locales.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * OS.js - JavaScript Cloud/Web Desktop Platform
+ *
+ * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
+ *          Nguy&#x1EC5;n Anh Khoa &lt;khoaakt@gmail.com&gt;
+            Julien Gomes Dias &lt;abld@abld.info&gt;
+            Filip &#x160; &lt;projects@filips.si&gt;
+            Matheus Felipe &lt;matheusfelipeog@gmail.com&gt;
+ * @licence Simplified BSD License
+ */
+
+
+export const de_DE = {
+  LBL_PANEL_ALL: &apos;Panel hinzuf&#xFC;gen&apos;,
+  LBL_PANEL_REMOVE: &apos;Panel entfernen&apos;,
+  LBL_PANELITEM_ADD: &apos;Panelelemente hinzuf&#xFC;gen&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Panelelemente entfernen&apos;,
+  LBL_PANEL_POSITION: &apos;Panel-Position&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Session speichern &amp; Abmelden&apos;,
+  LBL_LOG_OUT: &apos;Abmelden&apos;
+};
+
+export const en_EN = {
+  LBL_PANEL_ALL: &apos;Add panel&apos;,
+  LBL_PANEL_REMOVE: &apos;Remove panel&apos;,
+  LBL_PANELITEM_ADD: &apos;Add panelitem&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Remove panelitem&apos;,
+  LBL_PANEL_POSITION: &apos;Panel Position&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Save Session &amp; Log Out&apos;,
+  LBL_LOG_OUT: &apos;Log Out&apos;,
+  LBL_LAUNCHING: &apos;Launching \&apos;{0}\&apos;&apos;
+};
+
+export const sv_SE = {
+  LBL_PANEL_ALL: &apos;L&#xE4;gg till panel&apos;,
+  LBL_PANEL_REMOVE: &apos;Ta bort panel&apos;,
+  LBL_PANELITEM_ADD: &apos;L&#xE4;gg till panelobjekt&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Ta bort panelobjekt&apos;,
+  LBL_PANEL_POSITION: &apos;Panelposition&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Spara session och logga ut&apos;,
+  LBL_LOG_OUT: &apos;logga ut&apos;,
+  LBL_LAUNCHING: &apos;Startar \&apos;{0}\&apos;&apos;
+};
+
+export const fr_FR = {
+  LBL_PANEL_ALL: &apos;Ajouter le panneau&apos;,
+  LBL_PANEL_REMOVE: &apos;Supprimer le panneau&apos;,
+  LBL_PANELITEM_ADD: &apos;Ajouter des &#xE9;l&#xE9;ments au panneau&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Supprimer des &#xE9;l&#xE9;ments au panneau&apos;,
+  LBL_PANEL_POSITION: &apos;La position du panneau&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Sauvegarder la session et se d&#xE9;connecter&apos;,
+  LBL_LOG_OUT: &apos;Se d&#xE9;connecter&apos;
+};
+
+export const nb_NO = {
+  LBL_PANEL_ALL: &apos;Legg til panel&apos;,
+  LBL_PANEL_REMOVE: &apos;Fjern panel&apos;,
+  LBL_PANELITEM_ADD: &apos;Legg til panelobjekt&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Fjern panelobjekt&apos;,
+  LBL_PANEL_POSITION: &apos;Panelposisjon&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Lagre Sessjon &amp; Logg Ut&apos;,
+  LBL_LOG_OUT: &apos;Logg Ut&apos;,
+  LBL_LAUNCHING: &apos;Laster \&apos;{0}\&apos;&apos;
+};
+
+export const sl_SI = {
+  LBL_PANEL_ALL: &apos;Dodaj plo&#x161;&#x10D;o&apos;,
+  LBL_PANEL_REMOVE: &apos;Odstrani plo&#x161;&#x10D;o&apos;,
+  LBL_PANELITEM_ADD: &apos;Dodaj element plo&#x161;&#x10D;e&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Odstrani element plo&#x161;&#x10D;e&apos;,
+  LBL_PANEL_POSITION: &apos;Polo&#x17E;aj plo&#x161;&#x10D;e&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Shranitev seje &amp; Odjava&apos;,
+  LBL_LOG_OUT: &apos;Odjava&apos;
+};
+
+export const vi_VN = {
+  LBL_PANEL_ALL: &apos;Th&#xEA;m panel&apos;,
+  LBL_PANEL_REMOVE: &apos;X&#xF3;a panel&apos;,
+  LBL_PANELITEM_ADD: &apos;Th&#xEA;m m&#x1EE5;c panel&apos;,
+  LBL_PANELITEM_REMOVE: &apos;X&#xF3;a m&#x1EE5;c panel&apos;,
+  LBL_PANEL_POSITION: &apos;V&#x1ECB; tr&#xED; panel&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;L&#x1B0;u phi&#xEA;n &amp; &#x110;&#x103;ng xu&#x1EA5;t&apos;,
+  LBL_LOG_OUT: &apos;&#x110;&#x103;ng xu&#x1EA5;t&apos;,
+  LBL_LAUNCHING: &apos;&#x110;ang kh&#x1EDF;i &#x111;&#x1ED9;ng \&apos;{0}\&apos;&apos;
+};
+
+export const pt_BR = {
+  LBL_PANEL_ALL: &apos;Adicionar painel&apos;,
+  LBL_PANEL_REMOVE: &apos;Remover painel&apos;,
+  LBL_PANELITEM_ADD: &apos;Adicionar item ao painel&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Remover item do painel&apos;,
+  LBL_PANEL_POSITION: &apos;Posi&#xE7;&#xE3;o do painel&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Salvar sess&#xE3;o &amp; Sair&apos;,
+  LBL_LOG_OUT: &apos;Sair&apos;,
+  LBL_LAUNCHING: &apos;Lan&#xE7;amento \&apos;{0}\&apos;&apos;
+};
+
+export const tr_TR = {
+  LBL_PANEL_ALL: &apos;Panel ekle&apos;,
+  LBL_PANEL_REMOVE: &apos;Paneli sil&apos;,
+  LBL_PANELITEM_ADD: &apos;Panel nesnesi ekle&apos;,
+  LBL_PANELITEM_REMOVE: &apos;Panel nesnesini sil&apos;,
+  LBL_PANEL_POSITION: &apos;Panel Konumu&apos;,
+  LBL_SAVE_AND_LOG_OUT: &apos;Oturumu Kaydet &amp; &#xC7;&#x131;k&#x131;&#x15F; Yap&apos;,
+  LBL_LOG_OUT: &apos;&#xC7;&#x131;k&#x131;&#x15F; Yap&apos;,
+  LBL_LAUNCHING: &apos;Ba&#x15F;lat&#x131;l&#x131;yor \&apos;{0}\&apos;&apos;
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
