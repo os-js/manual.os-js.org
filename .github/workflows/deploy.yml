@@ -5,16 +5,15 @@ on:
     branches:
       - master
 jobs:
-  deploy:
-    if: github.actor == 'andersevenrud' || github.actor ==  'os-js'
-    name: Build and deploy
+  build_api:
+    name: Build API
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: '8.x'
-      - name: Global dependencies
+      - name: Install dependencies
         run: |
           npm install -g \
           esdoc \
@@ -32,10 +31,6 @@ jobs:
           esdoc-integrate-test-plugin \
           esdoc-integrate-manual-plugin \
           esdoc-ecmascript-proposal-plugin
-      - name: Local dependencies
-        run: npm install
-      - name: Build manual
-        run: npx gitbook build
       - name: Build API documentation
         run: |
           mkdir repos
@@ -56,6 +51,46 @@ jobs:
           (cd osjs-server && esdoc)
           git clone --depth=1 https://github.com/os-js/osjs-widgets.git
           (cd osjs-widgets && esdoc)
+      - name: Upload data
+        uses: actions/upload-artifact@v3
+        with:
+          name: api
+          path: repos
+          retention-days: 1
+  build_manual:
+    name: Build Manual
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '8.x'
+      - name: Install dependencies
+        run: npm install
+      - name: Build manual
+        run: npx gitbook build
+      - name: Upload data
+        uses: actions/upload-artifact@v3
+        with:
+          name: manual
+          path: _book
+          retention-days: 1
+  deploy:
+    needs: [build_api, build_manual]
+    if: github.actor == 'andersevenrud' || github.actor ==  'os-js'
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download api data
+        uses: actions/download-artifact@v3
+        with:
+          name: api
+          path: repos
+      - name: Download manual data
+        uses: actions/download-artifact@v3
+        with:
+          name: manual
+          path: _book
       - name: Create dist
         run: |
           mkdir -p dist/api
