@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/os-js/manual.manual.os-js.org.git"
+    "url": "git+https://github.com/os-js/manual.os-js.org.git"
   },
   "keywords": [
     "os.js"
