@@ -81,6 +81,7 @@ jobs:
     name: Build and deploy
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Download api data
         uses: actions/download-artifact@v3
         with:
@@ -96,6 +97,7 @@ jobs:
           mkdir -p dist/api
           echo "${{ secrets.GA_CONTENTS }}" > "dist/${{ secrets.GA_FILENAME }}"
           cp -r _book/* dist/
+          cp -r shims/* dist/
           cp -r repos/osjs-client/doc dist/api/osjs-client
           cp -r repos/osjs-common/doc dist/api/osjs-common
           cp -r repos/osjs-dialogs/doc dist/api/osjs-dialogs
