@@ -198,6 +198,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@osjs/client/src/vfs.js~capabilities",
+    "function/index.html#static-function-capabilities",
+    "<span>capabilities</span> <span class=\"search-result-import-path\">@osjs/client/src/vfs.js</span>",
+    "function"
+  ],
+  [
     "@osjs/client/src/utils/locale.js~clientlocale",
     "variable/index.html#static-variable-clientLocale",
     "<span>clientLocale</span> <span class=\"search-result-import-path\">@osjs/client/src/utils/locale.js</span>",

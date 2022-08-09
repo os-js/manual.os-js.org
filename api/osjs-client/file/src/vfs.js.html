@@ -49,6 +49,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/websocket.js~Websocket.html">Websocket</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/window-behavior.js~WindowBehavior.html">WindowBehavior</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/window.js~Window.html">Window</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-capabilities">capabilities</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-copy">copy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-download">download</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exists">exists</a></span></span></li>
@@ -261,6 +262,9 @@ import {
  * @property {object} [stat]
  */
 
+// Cache the capability of each mount point
+let capabilityCache = {};
+
 // Makes sure our input paths are object(s)
 const pathToObject = path =&gt; ({
   id: null,
@@ -274,6 +278,26 @@ const handleDirectoryList = (path, options) =&gt; result =&gt;
       showHiddenFiles: options.showHiddenFiles !== false,
       filter: options.filter
     }));
+
+/**
+ * Get vfs capabilities
+ *
+ * @param {string|VFSFile} path The path of a file
+ * @param {VFSMethodOptions} [options] Options
+ * @return {Promise&lt;object[]&gt;} An object of capabilities
+ */
+export const capabilities = (adapter, mount) =&gt; (path, options = {}) =&gt; {
+  const cached = capabilityCache[mount.name];
+  if (cached) {
+    return Promise.resolve(cached);
+  }
+  return adapter.capabilities(pathToObject(path), options, mount)
+    .then(res =&gt; {
+      capabilityCache[mount.name] = res;
+      return res;
+    });
+};
+
 
 /**
  * Read a directory
@@ -336,7 +360,7 @@ export const rename = (adapter, mount) =&gt; (from, to, options = {}) =&gt;
   adapter.rename(pathToObject(from), pathToObject(to), options, mount);
 
 /**
- * Alias of &apos;readme&apos;
+ * Alias of &apos;rename&apos;
  * @param {string|VFSFile} from The source (from)
  * @param {string|VFSFile} to The destination (to)
  * @param {VFSMethodOptions} [options] Options

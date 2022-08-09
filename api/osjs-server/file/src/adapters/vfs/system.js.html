@@ -240,6 +240,18 @@ module.exports = (core) =&gt; {
     },
 
     /**
+     * Get filesystem capabilities
+     * @param {String} file The file path from client
+     * @param {Object} [options={}] Options
+     * @return {Object[]}
+     */
+    capabilities: vfs =&gt; (file, options = {}) =&gt;
+      Promise.resolve({
+        sort: false,
+        pagination: false
+      }),
+
+    /**
      * Checks if file exists
      * @param {String} file The file path from client
      * @param {Object} [options={}] Options

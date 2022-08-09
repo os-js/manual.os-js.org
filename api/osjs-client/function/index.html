@@ -49,6 +49,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/websocket.js~Websocket.html">Websocket</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/window-behavior.js~WindowBehavior.html">WindowBehavior</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/window.js~Window.html">Window</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-capabilities">capabilities</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-copy">copy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-download">download</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-exists">exists</a></span></span></li>
@@ -340,6 +341,35 @@
         
         
         <div data-ice="description"><p>Returns the navigator language</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-capabilities">capabilities</a></span></span><span class="code" data-ice="signature">(path: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="typedef/index.html#static-typedef-VFSFile">VFSFile</a></span>, options: <span><a href="typedef/index.html#static-typedef-VFSMethodOptions">VFSMethodOptions</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>&lt;<span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span><span>[]</span></span>&gt;</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get vfs capabilities</p>
 </div>
       </div>
     </td>
@@ -2076,11 +2106,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/adapters/vfs/system.js.html#lineNumber118">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/adapters/vfs/system.js.html#lineNumber120">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import adapter from &apos;<span><a href="file/src/adapters/vfs/system.js.html#lineNumber118">@osjs/client/src/adapters/vfs/system.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import adapter from &apos;<span><a href="file/src/adapters/vfs/system.js.html#lineNumber120">@osjs/client/src/adapters/vfs/system.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>System VFS adapter</p>
@@ -2356,6 +2386,87 @@ file watching</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-capabilities">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">capabilities</span><span class="code" data-ice="signature">(path: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="typedef/index.html#static-typedef-VFSFile">VFSFile</a></span>, options: <span><a href="typedef/index.html#static-typedef-VFSMethodOptions">VFSMethodOptions</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>&lt;<span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span><span>[]</span></span>&gt;</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber87">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {capabilities} from &apos;<span><a href="file/src/vfs.js.html#lineNumber87">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Get vfs capabilities</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">path</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="typedef/index.html#static-typedef-VFSFile">VFSFile</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The path of a file</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">options</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-VFSMethodOptions">VFSMethodOptions</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>Options</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span>&lt;<span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span><span>[]</span></span>&gt;</td>
+          <td class="return-desc" data-ice="returnDescription"><p>An object of capabilities</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="static-function-copy">
     <span class="access" data-ice="access">public</span>
     
@@ -2367,11 +2478,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber124">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber147">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {copy} from &apos;<span><a href="file/src/vfs.js.html#lineNumber124">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {copy} from &apos;<span><a href="file/src/vfs.js.html#lineNumber147">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Copies a file or directory (move)</p>
@@ -3243,11 +3354,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber198">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber221">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {download} from &apos;<span><a href="file/src/vfs.js.html#lineNumber198">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {download} from &apos;<span><a href="file/src/vfs.js.html#lineNumber221">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Initiates a native browser download of the file</p>
@@ -3558,11 +3669,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber170">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber193">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {exists} from &apos;<span><a href="file/src/vfs.js.html#lineNumber170">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {exists} from &apos;<span><a href="file/src/vfs.js.html#lineNumber193">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Checks if path exists</p>
@@ -4707,11 +4818,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber152">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber175">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {mkdir} from &apos;<span><a href="file/src/vfs.js.html#lineNumber152">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {mkdir} from &apos;<span><a href="file/src/vfs.js.html#lineNumber175">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Creates a directory</p>
@@ -5087,11 +5198,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber84">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber107">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {readdir} from &apos;<span><a href="file/src/vfs.js.html#lineNumber84">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {readdir} from &apos;<span><a href="file/src/vfs.js.html#lineNumber107">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Read a directory</p>
@@ -5168,11 +5279,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber98">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber121">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {readfile} from &apos;<span><a href="file/src/vfs.js.html#lineNumber98">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {readfile} from &apos;<span><a href="file/src/vfs.js.html#lineNumber121">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Reads a file</p>
@@ -5257,11 +5368,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber134">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber157">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {rename} from &apos;<span><a href="file/src/vfs.js.html#lineNumber134">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {rename} from &apos;<span><a href="file/src/vfs.js.html#lineNumber157">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Renames a file or directory (move)</p>
@@ -5424,11 +5535,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber227">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber250">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {search} from &apos;<span><a href="file/src/vfs.js.html#lineNumber227">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {search} from &apos;<span><a href="file/src/vfs.js.html#lineNumber250">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Searches for files and folders</p>
@@ -5660,11 +5771,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber179">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber202">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {stat} from &apos;<span><a href="file/src/vfs.js.html#lineNumber179">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {stat} from &apos;<span><a href="file/src/vfs.js.html#lineNumber202">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Gets the stats of the file or directory</p>
@@ -5876,11 +5987,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber241">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber264">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {touch} from &apos;<span><a href="file/src/vfs.js.html#lineNumber241">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {touch} from &apos;<span><a href="file/src/vfs.js.html#lineNumber264">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Touches a file</p>
@@ -6335,11 +6446,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber161">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber184">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {unlink} from &apos;<span><a href="file/src/vfs.js.html#lineNumber161">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {unlink} from &apos;<span><a href="file/src/vfs.js.html#lineNumber184">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Removes a file or directory</p>
@@ -6415,11 +6526,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber189">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber212">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {url} from &apos;<span><a href="file/src/vfs.js.html#lineNumber189">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {url} from &apos;<span><a href="file/src/vfs.js.html#lineNumber212">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Gets an URL to a resource defined by file</p>
@@ -6639,11 +6750,11 @@ file watching</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber109">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/vfs.js.html#lineNumber132">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {writefile} from &apos;<span><a href="file/src/vfs.js.html#lineNumber109">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {writefile} from &apos;<span><a href="file/src/vfs.js.html#lineNumber132">@osjs/client/src/vfs.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Writes a file</p>

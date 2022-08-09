@@ -311,6 +311,7 @@ const vfs = core =&gt; {
 
   // Wire up all available VFS events
   return {
+    capabilities: createRequest(requestPath, &apos;capabilities&apos;, false),
     realpath: createRequest(requestPath, &apos;realpath&apos;, false),
     exists: createRequest(requestPath, &apos;exists&apos;, false, respondBoolean),
     stat: createRequest(requestPath, &apos;stat&apos;, false),
@@ -342,6 +343,7 @@ module.exports = core =&gt; {
   router.use(middleware);
 
   // Then all VFS routes (needs implementation above)
+  router.get(&apos;/capabilities&apos;, wrapper(methods.capabilities));
   router.get(&apos;/exists&apos;, wrapper(methods.exists));
   router.get(&apos;/stat&apos;, wrapper(methods.stat));
   router.get(&apos;/readdir&apos;, wrapper(methods.readdir));

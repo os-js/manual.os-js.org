@@ -1655,7 +1655,7 @@
     "__docId__": 93,
     "kind": "file",
     "name": "src/adapters/vfs/null.js",
-    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\n/**\n * Null VFS adapter\n * @param {Core} core Core reference\n * @param {object} [options] Adapter options\n */\nconst nullAdapter = ({\n  readdir: (path, options) => Promise.resolve([]),\n  readfile: (path, type, options) => Promise.resolve({body: new ArrayBuffer(), mime: 'application/octet-stream'}),\n  writefile: (path, data, options) => Promise.resolve(-1),\n  copy: (from, to, options) => Promise.resolve(false),\n  rename: (from, to, options) => Promise.resolve(false),\n  mkdir: (path, options) => Promise.resolve(false),\n  unlink: (path, options) => Promise.resolve(false),\n  exists: (path, options) => Promise.resolve(false),\n  stat: (path, options) => Promise.resolve({}),\n  url: (path, options) => Promise.resolve(null),\n  mount: options => Promise.resolve(true),\n  unmount: options => Promise.resolve(true),\n  search: (root, pattern, options) => Promise.resolve([]),\n  touch: (path, options) => Promise.resolve(false)\n});\n\nexport default nullAdapter;\n",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\n/**\n * Null VFS adapter\n * @param {Core} core Core reference\n * @param {object} [options] Adapter options\n */\nconst nullAdapter = ({\n  capabilities: (path, options) => Promise.resolve({}),\n  readdir: (path, options) => Promise.resolve([]),\n  readfile: (path, type, options) => Promise.resolve({body: new ArrayBuffer(), mime: 'application/octet-stream'}),\n  writefile: (path, data, options) => Promise.resolve(-1),\n  copy: (from, to, options) => Promise.resolve(false),\n  rename: (from, to, options) => Promise.resolve(false),\n  mkdir: (path, options) => Promise.resolve(false),\n  unlink: (path, options) => Promise.resolve(false),\n  exists: (path, options) => Promise.resolve(false),\n  stat: (path, options) => Promise.resolve({}),\n  url: (path, options) => Promise.resolve(null),\n  mount: options => Promise.resolve(true),\n  unmount: options => Promise.resolve(true),\n  search: (root, pattern, options) => Promise.resolve([]),\n  touch: (path, options) => Promise.resolve(false)\n});\n\nexport default nullAdapter;\n",
     "static": true,
     "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-client/src/adapters/vfs/null.js",
     "access": "public",
@@ -1699,7 +1699,7 @@
     ],
     "type": {
       "types": [
-        "{\"readdir\": *, \"readfile\": *, \"writefile\": *, \"copy\": *, \"rename\": *, \"mkdir\": *, \"unlink\": *, \"exists\": *, \"stat\": *, \"url\": *, \"mount\": *, \"unmount\": *, \"search\": *, \"touch\": *}"
+        "{\"capabilities\": *, \"readdir\": *, \"readfile\": *, \"writefile\": *, \"copy\": *, \"rename\": *, \"mkdir\": *, \"unlink\": *, \"exists\": *, \"stat\": *, \"url\": *, \"mount\": *, \"unmount\": *, \"search\": *, \"touch\": *}"
       ]
     }
   },
@@ -1707,7 +1707,7 @@
     "__docId__": 95,
     "kind": "file",
     "name": "src/adapters/vfs/system.js",
-    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nconst getters = ['exists', 'stat', 'readdir', 'readfile'];\n\nconst requester = core => (fn, body, type, options = {}) =>\n  core.request(`/vfs/${fn}`, {\n    body,\n    method: getters.indexOf(fn) !== -1 ? 'get' : 'post',\n    ...options\n  }, type)\n    .then(response => {\n      if (type === 'json') {\n        return {mime: 'application/json', body: response};\n      } else if (fn === 'writefile') {\n        return response.json();\n      }\n\n      const contentType = response.headers.get('content-type') || 'application/octet-stream';\n\n      return response.arrayBuffer().then(result => ({\n        mime: contentType,\n        body: result\n      }));\n    });\n\nconst methods = (core, request) => {\n  const passthrough = (name) => ({path}, options) =>\n    request(name, {path, options}, 'json')\n      .then(({body}) => body);\n\n  return {\n    readdir: ({path}, options) => request('readdir', {\n      path,\n      options,\n    }, 'json').then(({body}) => body),\n\n    readfile: ({path}, type, options) =>\n      request('readfile', {path, options}),\n\n    writefile: ({path}, data, options = {}) => {\n      const formData = new FormData();\n      formData.append('upload', data);\n      formData.append('path', path);\n      formData.append('options', options);\n\n      return request('writefile', formData, undefined, {\n        onProgress: options.onProgress,\n        xhr: !!options.onProgress\n      });\n    },\n\n    copy: (from, to, options) =>\n      request('copy', {from: from.path, to: to.path, options}, 'json').then(({body}) => body),\n\n    rename: (from, to, options) =>\n      request('rename', {from: from.path, to: to.path, options}, 'json').then(({body}) => body),\n\n    mkdir: passthrough('mkdir'),\n    unlink: passthrough('unlink'),\n    exists: passthrough('exists'),\n    stat: passthrough('stat'),\n\n    url: ({path}, options) => Promise.resolve(\n      core.url(`/vfs/readfile?path=${encodeURIComponent(path)}`)\n    ),\n\n    search: ({path}, pattern, options) =>\n      request('search', {root: path, pattern, options}, 'json')\n        .then(({body}) => body),\n\n    touch: ({path}, options) =>\n      request('touch', {path, options}, 'json').then(({body}) => body),\n\n    download: ({path}, options = {}) => {\n      const json = encodeURIComponent(JSON.stringify({download: true}));\n\n      return Promise.resolve(`/vfs/readfile?options=${json}&path=` + encodeURIComponent(path))\n        .then(url => {\n          return (options.target || window).open(url);\n        });\n    }\n  };\n};\n\n/**\n * System VFS adapter\n * @param {Core} core Core reference\n * @param {object} [options] Adapter options\n */\nconst adapter = (core) => {\n  const request = requester(core);\n\n  return methods(core, request);\n};\n\nexport default adapter;\n",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nconst getters = ['capabilities', 'exists', 'stat', 'readdir', 'readfile'];\n\nconst requester = core => (fn, body, type, options = {}) =>\n  core.request(`/vfs/${fn}`, {\n    body,\n    method: getters.indexOf(fn) !== -1 ? 'get' : 'post',\n    ...options\n  }, type)\n    .then(response => {\n      if (type === 'json') {\n        return {mime: 'application/json', body: response};\n      } else if (fn === 'writefile') {\n        return response.json();\n      }\n\n      const contentType = response.headers.get('content-type') || 'application/octet-stream';\n\n      return response.arrayBuffer().then(result => ({\n        mime: contentType,\n        body: result\n      }));\n    });\n\nconst methods = (core, request) => {\n  const passthrough = (name) => ({path}, options) =>\n    request(name, {path, options}, 'json')\n      .then(({body}) => body);\n\n  return {\n    capabilities: passthrough('capabilities'),\n\n    readdir: ({path}, options) => request('readdir', {\n      path,\n      options,\n    }, 'json').then(({body}) => body),\n\n    readfile: ({path}, type, options) =>\n      request('readfile', {path, options}),\n\n    writefile: ({path}, data, options = {}) => {\n      const formData = new FormData();\n      formData.append('upload', data);\n      formData.append('path', path);\n      formData.append('options', options);\n\n      return request('writefile', formData, undefined, {\n        onProgress: options.onProgress,\n        xhr: !!options.onProgress\n      });\n    },\n\n    copy: (from, to, options) =>\n      request('copy', {from: from.path, to: to.path, options}, 'json').then(({body}) => body),\n\n    rename: (from, to, options) =>\n      request('rename', {from: from.path, to: to.path, options}, 'json').then(({body}) => body),\n\n    mkdir: passthrough('mkdir'),\n    unlink: passthrough('unlink'),\n    exists: passthrough('exists'),\n    stat: passthrough('stat'),\n\n    url: ({path}, options) => Promise.resolve(\n      core.url(`/vfs/readfile?path=${encodeURIComponent(path)}`)\n    ),\n\n    search: ({path}, pattern, options) =>\n      request('search', {root: path, pattern, options}, 'json')\n        .then(({body}) => body),\n\n    touch: ({path}, options) =>\n      request('touch', {path, options}, 'json').then(({body}) => body),\n\n    download: ({path}, options = {}) => {\n      const json = encodeURIComponent(JSON.stringify({download: true}));\n\n      return Promise.resolve(`/vfs/readfile?options=${json}&path=` + encodeURIComponent(path))\n        .then(url => {\n          return (options.target || window).open(url);\n        });\n    }\n  };\n};\n\n/**\n * System VFS adapter\n * @param {Core} core Core reference\n * @param {object} [options] Adapter options\n */\nconst adapter = (core) => {\n  const request = requester(core);\n\n  return methods(core, request);\n};\n\nexport default adapter;\n",
     "static": true,
     "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-client/src/adapters/vfs/system.js",
     "access": "public",
@@ -1794,7 +1794,7 @@
     ],
     "return": {
       "types": [
-        "{\"readdir\": *, \"readfile\": *, \"writefile\": *, \"copy\": *, \"rename\": *, \"mkdir\": *, \"unlink\": *, \"exists\": *, \"stat\": *, \"url\": *, \"search\": *, \"touch\": *, \"download\": *}"
+        "{\"capabilities\": *, \"readdir\": *, \"readfile\": *, \"writefile\": *, \"copy\": *, \"rename\": *, \"mkdir\": *, \"unlink\": *, \"exists\": *, \"stat\": *, \"url\": *, \"search\": *, \"touch\": *, \"download\": *}"
       ]
     },
     "ignore": true
@@ -1813,7 +1813,7 @@
     "importPath": "@osjs/client/src/adapters/vfs/system.js",
     "importStyle": "adapter",
     "description": "System VFS adapter",
-    "lineNumber": 118,
+    "lineNumber": 120,
     "params": [
       {
         "nullable": null,
@@ -6462,7 +6462,7 @@
     "__docId__": 295,
     "kind": "file",
     "name": "src/filesystem.js",
-    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nimport * as VFS from './vfs';\nimport {EventEmitter} from '@osjs/event-emitter';\nimport {parseMountpointPrefix, filterMountByGroups, createWatchEvents} from './utils/vfs';\nimport defaultAdapter from './adapters/vfs/null';\nimport systemAdapter from './adapters/vfs/system';\nimport appsAdapter from './adapters/vfs/apps';\nimport logger from './logger';\nimport merge from 'deepmerge';\n\n/**\n * VFS Mountpoint attributes\n *\n * @typedef {Object} FilesystemMountpointAttributes\n * @property {string} [visibility='global'] Visibility in UI\n * @property {boolean} [local=true] Local filesystem ?\n * @property {boolean} [searchable=true] If can be searched\n * @property {boolean} [readOnly=false] Readonly\n */\n\n/**\n * VFS Mountpoint\n *\n * @typedef {Object} FilesystemMountpoint\n * @property {string} name Name\n * @property {string} label Label\n * @property {string} adapter Adater name\n * @property {string} [root] System adapter root\n * @property {boolean} [enabled=true] Enabled state\n * @property {FilesystemMountpointAttributes} [attributes] Attributes\n */\n\n/**\n * Filesystem Adapter Methods\n * TODO: typedef\n * @typedef {Object} FilesystemAdapterMethods\n * @property {Function} readdir\n * @property {Function} readfile\n * @property {Function} writefile\n * @property {Function} copy\n * @property {Function} move\n * @property {Function} rename\n * @property {Function} mkdir\n * @property {Function} unlink\n * @property {Function} exists\n * @property {Function} stat\n * @property {Function} url\n * @property {Function} download\n * @property {Function} search\n * @property {Function} touch\n */\n\n/**\n * @callback FilesystemAdapterWrapper\n * @return {FilesystemAdapterMethods}\n */\n\n/**\n * Filesystem Options\n *\n * @typedef {Object} FilesystemOptions\n * @property {{name: FilesystemAdapterWrapper}} [adapters] Adapter registry\n * @property {FilesystemMountpoint[]} [mounts] Mountpoints\n */\n\n/**\n * Filesystem Class that manages filesystems and adapters\n */\nexport default class Filesystem extends EventEmitter {\n\n  /**\n   * Create filesystem manager\n   *\n   * @param {Core} core Core reference\n   * @param {FilesystemOptions} [options] Options\n   */\n  constructor(core, options = {}) {\n    options = {\n      adapters: {},\n      mounts: [],\n      ...options\n    };\n\n    super('Filesystem');\n\n    /**\n     * Core instance reference\n     * @type {Core}\n     * @readonly\n     */\n    this.core = core;\n\n    /**\n     * Adapter registry\n     * @type {{name: FilesystemAdapterWrapper}}\n     * @readonly\n     */\n    this.adapters = {\n      system: systemAdapter,\n      apps: appsAdapter,\n      ...this.core.config('vfs.adapters', {}),\n      ...options.adapters\n    };\n\n    /**\n     * Mountpoints\n     * @type {FilesystemMountpoint[]}\n     */\n    this.mounts = [];\n\n    /**\n     * Options\n     * @type {FilesystemOptions}\n     */\n    this.options = {};\n\n    /**\n     * A wrapper for VFS method requests\n     * @type {{key: Function}}\n     * @readonly\n     */\n    this.proxy = Object.keys(VFS).reduce((result, method) => {\n      return {\n        [method]: (...args) => this._request(method, ...args),\n        ...result\n      };\n    }, {});\n  }\n\n  /**\n   * Mounts all configured mountpoints\n   * @param {boolean} [stopOnError=true] Stop on first error\n   * @return {Promise<boolean[]>}\n   */\n  mountAll(stopOnError = true) {\n    this.mounts = this._getConfiguredMountpoints();\n\n    const fn = m => stopOnError\n      ? this._mountpointAction(m)\n      : this._mountpointAction(m).catch(err => logger.warn('Error while mounting', m, err));\n\n    return Promise.all(this.mounts.map(fn));\n  }\n\n  /**\n   * Adds a new mountpoint\n   * @param {FilesystemMountpoint} props Mountpoint props\n   * @param {boolean} [automount=true] Automount after creation\n   * @return {Promise<boolean>}\n   */\n  addMountpoint(props, automount = true) {\n    const mount = this.createMountpoint(props);\n\n    this.mounts.push(mount);\n\n    if (automount) {\n      return this.mount(mount.name);\n    }\n\n    return Promise.resolve(true);\n  }\n\n  /**\n   * Mount given mountpoint\n   * @param {string|FilesystemMountpoint} m Mountpoint name or object\n   * @throws {Error} On invalid name or if already mounted\n   * @return {Promise<boolean>}\n   */\n  mount(m) {\n    if (typeof m === 'string') {\n      return this._mountAction(m, false);\n    }\n\n    return this.addMountpoint(m);\n  }\n\n  /**\n   * Unmount given filesystem\n   * @param {string} name Filesystem name\n   * @throws {Error} On invalid name or if already unmounted\n   * @return {Promise<boolean>}\n   */\n  unmount(name) {\n    return this._mountAction(name, true);\n  }\n\n  /**\n   * Internal wrapper for mounting/unmounting\n   *\n   * @private\n   * @param {FilesystemMountpoint} mountpoint The mountpoint\n   * @param {boolean} [unmount=false] If action is unmounting\n   * @return {Promise<boolean>}\n   */\n  _mountpointAction(mountpoint, unmount = false) {\n    const eventName = unmount ? 'unmounted' : 'mounted';\n    const coreEventName = unmount ? 'unmount' : 'mount';\n\n    return mountpoint._adapter[coreEventName]({}, mountpoint)\n      .then(result => {\n        if (result) {\n          mountpoint.mounted = !unmount;\n\n          this.emit(eventName, mountpoint);\n          this.core.emit('osjs/fs:' + coreEventName);\n        }\n\n        return result;\n      });\n  }\n\n  /**\n   * Internal wrapper for mounting/unmounting by name\n   *\n   * @private\n   * @param {string} name Mountpoint name\n   * @param {boolean} [unmount=false] If action is unmounting\n   * @return {Promise<boolean>}\n   */\n  _mountAction(name, unmount) {\n    return Promise.resolve(this.mounts.find(m => m.name === name))\n      .then(found => {\n        const _ = this.core.make('osjs/locale').translate;\n\n        // FIXME: Add already mounting state\n        if (!found) {\n          throw new Error(_('ERR_VFS_MOUNT_NOT_FOUND', name));\n        } else if (unmount && !found.mounted) {\n          throw new Error(_('ERR_VFS_MOUNT_NOT_MOUNTED', name));\n        } else if (!unmount && found.mounted) {\n          throw new Error(_('ERR_VFS_MOUNT_ALREADY_MOUNTED', name));\n        }\n\n        return this._mountpointAction(found, unmount);\n      });\n  }\n\n  /**\n   * Gets the proxy for VFS methods\n   * FIXME: Not correct type, but works for documentation atm\n   * @return {FilesystemAdapterMethods} A map of VFS functions\n   */\n  request() {\n    return this.proxy;\n  }\n\n  /**\n   * Perform a VFS method request\n   *\n   * @private\n   * @param {string} method VFS method name\n   * @param {*} ...args Arguments\n   * @return {*}\n   */\n  _request(method, ...args) {\n    const ev = `osjs/vfs:${method}`;\n\n    const done = (error) => {\n      this.core.emit(`${ev}:done`, ...args);\n\n      if (!error && this.core.config('vfs.watch')) {\n        const eva = createWatchEvents(method, args);\n        eva.forEach(([e, a]) => this.core.emit(e, a));\n      }\n    };\n\n    this.core.emit(ev, ...args);\n\n    return this._requestAction(method, ...args)\n      .then(result => {\n        done();\n        return result;\n      })\n      .catch(error => {\n        done(error);\n        throw error;\n      });\n  }\n\n  /**\n   * Request action wrapper\n   * @private\n   * @param {string} method\n   * @param {*} ...args Arguments\n   * @return {Promise<*>}\n   */\n  _requestAction(method, ...args) {\n    if (['rename', 'move', 'copy'].indexOf(method) !== -1) {\n      const [src, dest] = args;\n      const srcMount = this.getMountpointFromPath(src);\n      const destMount = this.getMountpointFromPath(dest);\n      const sameAdapter = srcMount.adapter === destMount.adapter;\n\n      if (!sameAdapter) {\n        return VFS.readfile(srcMount._adapter, srcMount)(src)\n          .then(ab => VFS.writefile(destMount._adapter, destMount)(dest, ab))\n          .then(result => {\n            return method === 'rename'\n              ? VFS.unlink(srcMount._adapter, srcMount)(src).then(() => result)\n              : result;\n          });\n      }\n    }\n\n    const [file] = args;\n    const mount = this.getMountpointFromPath(file);\n\n    return VFS[method](mount._adapter, mount)(...args);\n  }\n\n  /**\n   * Creates a new mountpoint based on given properties\n   * @param {FilesystemMountpoint} props Properties\n   * @return {FilesystemMountpoint}\n   */\n  createMountpoint(props) {\n    const name = props.adapter || this.core.config('vfs.defaultAdapter');\n    const adapter = {...defaultAdapter, ...this.adapters[name](this.core)};\n\n    const result = merge({\n      enabled: true,\n      mounted: false,\n      adapter: name,\n      attributes: {\n        visibility: 'global',\n        local: true,\n        searchable: true,\n        readOnly: false\n      }\n    }, props);\n\n    return {\n      _adapter: adapter,\n      label: name,\n      root: `${result.name || name}:/`,\n      ...result\n    };\n  }\n\n  /**\n   * Gets mountpoint from given path\n   * @param {string|VFSFile} file The file\n   * @return {FilesystemMountpoint|null}\n   */\n  getMountpointFromPath(file) {\n    const path = typeof file === 'string' ? file : file.path;\n    const prefix = parseMountpointPrefix(path);\n    const _ = this.core.make('osjs/locale').translate;\n\n    if (!prefix) {\n      throw new Error(_('ERR_VFS_PATH_FORMAT_INVALID', path));\n    }\n\n    const found = this.mounts.find(m => m.name === prefix);\n\n    if (!found) {\n      throw new Error(_('ERR_VFS_MOUNT_NOT_FOUND_FOR', `${prefix}:`));\n    }\n\n    return found;\n  }\n\n  /**\n   * Gets all mountpoints\n   * @return {FilesystemMountpoint[]}\n   */\n  getMounts(all = false) {\n    const user = this.core.getUser();\n    const theme = this.core.make('osjs/theme');\n    const icon = str => str\n      ? (typeof str === 'string' ? str : theme.icon(str.name))\n      : theme.icon('drive-harddisk');\n\n    return this.mounts\n      .filter(m => all || m.mounted)\n      .filter(m => m.enabled !== false)\n      .filter(m => {\n        const mg = m.attributes ? m.attributes.groups : [];\n        const ms = m.attributes ? m.attributes.strictGroups !== false : true;\n        return filterMountByGroups(user.groups)(mg, ms);\n      })\n      .map(m => ({\n        attributes: {...m.attributes},\n        icon: icon(m.icon),\n        name: m.name,\n        label: m.label,\n        root: m.root\n      }));\n  }\n\n  /**\n   * Gets configured mountpoints\n   * @return {FilesystemMountpoint[]}\n   */\n  _getConfiguredMountpoints() {\n    const list = [\n      ...this.core.config('vfs.mountpoints', []),\n      ...(this.options.mounts || [])\n    ];\n\n    return list\n      .map(mount => {\n        try {\n          return this.createMountpoint(mount);\n        } catch (e) {\n          logger.warn('Error while creating mountpoint', e);\n        }\n\n        return null;\n      })\n      .filter((mount, pos, arr) => {\n        const index = arr.findIndex(item => item.label === mount.label || item.root === mount.label);\n        if (index === pos) {\n          return true;\n        }\n\n        logger.warn('Removed duplicate mountpoint', mount);\n        return false;\n      })\n      .filter(mount => mount !== null);\n  }\n}\n",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nimport * as VFS from './vfs';\nimport {EventEmitter} from '@osjs/event-emitter';\nimport {parseMountpointPrefix, filterMountByGroups, createWatchEvents} from './utils/vfs';\nimport defaultAdapter from './adapters/vfs/null';\nimport systemAdapter from './adapters/vfs/system';\nimport appsAdapter from './adapters/vfs/apps';\nimport logger from './logger';\nimport merge from 'deepmerge';\n\n/**\n * VFS Mountpoint attributes\n *\n * @typedef {Object} FilesystemMountpointAttributes\n * @property {string} [visibility='global'] Visibility in UI\n * @property {boolean} [local=true] Local filesystem ?\n * @property {boolean} [searchable=true] If can be searched\n * @property {boolean} [readOnly=false] Readonly\n */\n\n/**\n * VFS Mountpoint\n *\n * @typedef {Object} FilesystemMountpoint\n * @property {string} name Name\n * @property {string} label Label\n * @property {string} adapter Adater name\n * @property {string} [root] System adapter root\n * @property {boolean} [enabled=true] Enabled state\n * @property {FilesystemMountpointAttributes} [attributes] Attributes\n */\n\n/**\n * Filesystem Adapter Methods\n * TODO: typedef\n * @typedef {Object} FilesystemAdapterMethods\n * @property {Function} capabilities\n * @property {Function} readdir\n * @property {Function} readfile\n * @property {Function} writefile\n * @property {Function} copy\n * @property {Function} move\n * @property {Function} rename\n * @property {Function} mkdir\n * @property {Function} unlink\n * @property {Function} exists\n * @property {Function} stat\n * @property {Function} url\n * @property {Function} download\n * @property {Function} search\n * @property {Function} touch\n */\n\n/**\n * @callback FilesystemAdapterWrapper\n * @return {FilesystemAdapterMethods}\n */\n\n/**\n * Filesystem Options\n *\n * @typedef {Object} FilesystemOptions\n * @property {{name: FilesystemAdapterWrapper}} [adapters] Adapter registry\n * @property {FilesystemMountpoint[]} [mounts] Mountpoints\n */\n\n/**\n * Filesystem Class that manages filesystems and adapters\n */\nexport default class Filesystem extends EventEmitter {\n\n  /**\n   * Create filesystem manager\n   *\n   * @param {Core} core Core reference\n   * @param {FilesystemOptions} [options] Options\n   */\n  constructor(core, options = {}) {\n    options = {\n      adapters: {},\n      mounts: [],\n      ...options\n    };\n\n    super('Filesystem');\n\n    /**\n     * Core instance reference\n     * @type {Core}\n     * @readonly\n     */\n    this.core = core;\n\n    /**\n     * Adapter registry\n     * @type {{name: FilesystemAdapterWrapper}}\n     * @readonly\n     */\n    this.adapters = {\n      system: systemAdapter,\n      apps: appsAdapter,\n      ...this.core.config('vfs.adapters', {}),\n      ...options.adapters\n    };\n\n    /**\n     * Mountpoints\n     * @type {FilesystemMountpoint[]}\n     */\n    this.mounts = [];\n\n    /**\n     * Options\n     * @type {FilesystemOptions}\n     */\n    this.options = {};\n\n    /**\n     * A wrapper for VFS method requests\n     * @type {{key: Function}}\n     * @readonly\n     */\n    this.proxy = Object.keys(VFS).reduce((result, method) => {\n      return {\n        [method]: (...args) => this._request(method, ...args),\n        ...result\n      };\n    }, {});\n  }\n\n  /**\n   * Mounts all configured mountpoints\n   * @param {boolean} [stopOnError=true] Stop on first error\n   * @return {Promise<boolean[]>}\n   */\n  mountAll(stopOnError = true) {\n    this.mounts = this._getConfiguredMountpoints();\n\n    const fn = m => stopOnError\n      ? this._mountpointAction(m)\n      : this._mountpointAction(m).catch(err => logger.warn('Error while mounting', m, err));\n\n    return Promise.all(this.mounts.map(fn));\n  }\n\n  /**\n   * Adds a new mountpoint\n   * @param {FilesystemMountpoint} props Mountpoint props\n   * @param {boolean} [automount=true] Automount after creation\n   * @return {Promise<boolean>}\n   */\n  addMountpoint(props, automount = true) {\n    const mount = this.createMountpoint(props);\n\n    this.mounts.push(mount);\n\n    if (automount) {\n      return this.mount(mount.name);\n    }\n\n    return Promise.resolve(true);\n  }\n\n  /**\n   * Mount given mountpoint\n   * @param {string|FilesystemMountpoint} m Mountpoint name or object\n   * @throws {Error} On invalid name or if already mounted\n   * @return {Promise<boolean>}\n   */\n  mount(m) {\n    if (typeof m === 'string') {\n      return this._mountAction(m, false);\n    }\n\n    return this.addMountpoint(m);\n  }\n\n  /**\n   * Unmount given filesystem\n   * @param {string} name Filesystem name\n   * @throws {Error} On invalid name or if already unmounted\n   * @return {Promise<boolean>}\n   */\n  unmount(name) {\n    return this._mountAction(name, true);\n  }\n\n  /**\n   * Internal wrapper for mounting/unmounting\n   *\n   * @private\n   * @param {FilesystemMountpoint} mountpoint The mountpoint\n   * @param {boolean} [unmount=false] If action is unmounting\n   * @return {Promise<boolean>}\n   */\n  _mountpointAction(mountpoint, unmount = false) {\n    const eventName = unmount ? 'unmounted' : 'mounted';\n    const coreEventName = unmount ? 'unmount' : 'mount';\n\n    return mountpoint._adapter[coreEventName]({}, mountpoint)\n      .then(result => {\n        if (result) {\n          mountpoint.mounted = !unmount;\n\n          this.emit(eventName, mountpoint);\n          this.core.emit('osjs/fs:' + coreEventName);\n        }\n\n        return result;\n      });\n  }\n\n  /**\n   * Internal wrapper for mounting/unmounting by name\n   *\n   * @private\n   * @param {string} name Mountpoint name\n   * @param {boolean} [unmount=false] If action is unmounting\n   * @return {Promise<boolean>}\n   */\n  _mountAction(name, unmount) {\n    return Promise.resolve(this.mounts.find(m => m.name === name))\n      .then(found => {\n        const _ = this.core.make('osjs/locale').translate;\n\n        // FIXME: Add already mounting state\n        if (!found) {\n          throw new Error(_('ERR_VFS_MOUNT_NOT_FOUND', name));\n        } else if (unmount && !found.mounted) {\n          throw new Error(_('ERR_VFS_MOUNT_NOT_MOUNTED', name));\n        } else if (!unmount && found.mounted) {\n          throw new Error(_('ERR_VFS_MOUNT_ALREADY_MOUNTED', name));\n        }\n\n        return this._mountpointAction(found, unmount);\n      });\n  }\n\n  /**\n   * Gets the proxy for VFS methods\n   * FIXME: Not correct type, but works for documentation atm\n   * @return {FilesystemAdapterMethods} A map of VFS functions\n   */\n  request() {\n    return this.proxy;\n  }\n\n  /**\n   * Perform a VFS method request\n   *\n   * @private\n   * @param {string} method VFS method name\n   * @param {*} ...args Arguments\n   * @return {*}\n   */\n  _request(method, ...args) {\n    const ev = `osjs/vfs:${method}`;\n\n    const done = (error) => {\n      this.core.emit(`${ev}:done`, ...args);\n\n      if (!error && this.core.config('vfs.watch')) {\n        const eva = createWatchEvents(method, args);\n        eva.forEach(([e, a]) => this.core.emit(e, a));\n      }\n    };\n\n    this.core.emit(ev, ...args);\n\n    return this._requestAction(method, ...args)\n      .then(result => {\n        done();\n        return result;\n      })\n      .catch(error => {\n        done(error);\n        throw error;\n      });\n  }\n\n  /**\n   * Request action wrapper\n   * @private\n   * @param {string} method\n   * @param {*} ...args Arguments\n   * @return {Promise<*>}\n   */\n  _requestAction(method, ...args) {\n    if (['rename', 'move', 'copy'].indexOf(method) !== -1) {\n      const [src, dest] = args;\n      const srcMount = this.getMountpointFromPath(src);\n      const destMount = this.getMountpointFromPath(dest);\n      const sameAdapter = srcMount.adapter === destMount.adapter;\n\n      if (!sameAdapter) {\n        return VFS.readfile(srcMount._adapter, srcMount)(src)\n          .then(ab => VFS.writefile(destMount._adapter, destMount)(dest, ab))\n          .then(result => {\n            return method === 'rename'\n              ? VFS.unlink(srcMount._adapter, srcMount)(src).then(() => result)\n              : result;\n          });\n      }\n    }\n\n    const [file] = args;\n    const mount = this.getMountpointFromPath(file);\n\n    return VFS[method](mount._adapter, mount)(...args);\n  }\n\n  /**\n   * Creates a new mountpoint based on given properties\n   * @param {FilesystemMountpoint} props Properties\n   * @return {FilesystemMountpoint}\n   */\n  createMountpoint(props) {\n    const name = props.adapter || this.core.config('vfs.defaultAdapter');\n    const adapter = {...defaultAdapter, ...this.adapters[name](this.core)};\n\n    const result = merge({\n      enabled: true,\n      mounted: false,\n      adapter: name,\n      attributes: {\n        visibility: 'global',\n        local: true,\n        searchable: true,\n        readOnly: false\n      }\n    }, props);\n\n    return {\n      _adapter: adapter,\n      label: name,\n      root: `${result.name || name}:/`,\n      ...result\n    };\n  }\n\n  /**\n   * Gets mountpoint from given path\n   * @param {string|VFSFile} file The file\n   * @return {FilesystemMountpoint|null}\n   */\n  getMountpointFromPath(file) {\n    const path = typeof file === 'string' ? file : file.path;\n    const prefix = parseMountpointPrefix(path);\n    const _ = this.core.make('osjs/locale').translate;\n\n    if (!prefix) {\n      throw new Error(_('ERR_VFS_PATH_FORMAT_INVALID', path));\n    }\n\n    const found = this.mounts.find(m => m.name === prefix);\n\n    if (!found) {\n      throw new Error(_('ERR_VFS_MOUNT_NOT_FOUND_FOR', `${prefix}:`));\n    }\n\n    return found;\n  }\n\n  /**\n   * Gets all mountpoints\n   * @return {FilesystemMountpoint[]}\n   */\n  getMounts(all = false) {\n    const user = this.core.getUser();\n    const theme = this.core.make('osjs/theme');\n    const icon = str => str\n      ? (typeof str === 'string' ? str : theme.icon(str.name))\n      : theme.icon('drive-harddisk');\n\n    return this.mounts\n      .filter(m => all || m.mounted)\n      .filter(m => m.enabled !== false)\n      .filter(m => {\n        const mg = m.attributes ? m.attributes.groups : [];\n        const ms = m.attributes ? m.attributes.strictGroups !== false : true;\n        return filterMountByGroups(user.groups)(mg, ms);\n      })\n      .map(m => ({\n        attributes: {...m.attributes},\n        icon: icon(m.icon),\n        name: m.name,\n        label: m.label,\n        root: m.root\n      }));\n  }\n\n  /**\n   * Gets configured mountpoints\n   * @return {FilesystemMountpoint[]}\n   */\n  _getConfiguredMountpoints() {\n    const list = [\n      ...this.core.config('vfs.mountpoints', []),\n      ...(this.options.mounts || [])\n    ];\n\n    return list\n      .map(mount => {\n        try {\n          return this.createMountpoint(mount);\n        } catch (e) {\n          logger.warn('Error while creating mountpoint', e);\n        }\n\n        return null;\n      })\n      .filter((mount, pos, arr) => {\n        const index = arr.findIndex(item => item.label === mount.label || item.root === mount.label);\n        if (index === pos) {\n          return true;\n        }\n\n        logger.warn('Removed duplicate mountpoint', mount);\n        return false;\n      })\n      .filter(mount => mount !== null);\n  }\n}\n",
     "static": true,
     "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-client/src/filesystem.js",
     "access": "public",
@@ -6627,6 +6627,16 @@
     "access": "public",
     "description": "Filesystem Adapter Methods\nTODO: typedef",
     "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "capabilities",
+        "description": ""
+      },
       {
         "nullable": null,
         "types": [
@@ -6827,7 +6837,7 @@
     "importPath": "@osjs/client/src/filesystem.js",
     "importStyle": "Filesystem",
     "description": "Filesystem Class that manages filesystems and adapters",
-    "lineNumber": 98,
+    "lineNumber": 99,
     "interface": false,
     "extends": [
       "@osjs/event-emitter~EventEmitter"
@@ -6844,7 +6854,7 @@
     "longname": "src/filesystem.js~Filesystem#constructor",
     "access": "public",
     "description": "Create filesystem manager",
-    "lineNumber": 106,
+    "lineNumber": 107,
     "params": [
       {
         "nullable": null,
@@ -6877,7 +6887,7 @@
     "longname": "src/filesystem.js~Filesystem#core",
     "access": "public",
     "description": "Core instance reference",
-    "lineNumber": 120,
+    "lineNumber": 121,
     "unknown": [
       {
         "tagName": "@readonly",
@@ -6902,7 +6912,7 @@
     "longname": "src/filesystem.js~Filesystem#adapters",
     "access": "public",
     "description": "Adapter registry",
-    "lineNumber": 127,
+    "lineNumber": 128,
     "unknown": [
       {
         "tagName": "@readonly",
@@ -6927,7 +6937,7 @@
     "longname": "src/filesystem.js~Filesystem#mounts",
     "access": "public",
     "description": "Mountpoints",
-    "lineNumber": 138,
+    "lineNumber": 139,
     "type": {
       "nullable": null,
       "types": [
@@ -6946,7 +6956,7 @@
     "longname": "src/filesystem.js~Filesystem#options",
     "access": "public",
     "description": "Options",
-    "lineNumber": 144,
+    "lineNumber": 145,
     "type": {
       "nullable": null,
       "types": [
@@ -6965,7 +6975,7 @@
     "longname": "src/filesystem.js~Filesystem#proxy",
     "access": "public",
     "description": "A wrapper for VFS method requests",
-    "lineNumber": 151,
+    "lineNumber": 152,
     "unknown": [
       {
         "tagName": "@readonly",
@@ -6992,7 +7002,7 @@
     "longname": "src/filesystem.js~Filesystem#mountAll",
     "access": "public",
     "description": "Mounts all configured mountpoints",
-    "lineNumber": 164,
+    "lineNumber": 165,
     "params": [
       {
         "nullable": null,
@@ -7027,7 +7037,7 @@
     "longname": "src/filesystem.js~Filesystem#addMountpoint",
     "access": "public",
     "description": "Adds a new mountpoint",
-    "lineNumber": 180,
+    "lineNumber": 181,
     "params": [
       {
         "nullable": null,
@@ -7072,7 +7082,7 @@
     "longname": "src/filesystem.js~Filesystem#mount",
     "access": "public",
     "description": "Mount given mountpoint",
-    "lineNumber": 198,
+    "lineNumber": 199,
     "params": [
       {
         "nullable": null,
@@ -7114,7 +7124,7 @@
     "longname": "src/filesystem.js~Filesystem#unmount",
     "access": "public",
     "description": "Unmount given filesystem",
-    "lineNumber": 212,
+    "lineNumber": 213,
     "params": [
       {
         "nullable": null,
@@ -7155,7 +7165,7 @@
     "longname": "src/filesystem.js~Filesystem#_mountpointAction",
     "access": "private",
     "description": "Internal wrapper for mounting/unmounting",
-    "lineNumber": 224,
+    "lineNumber": 225,
     "params": [
       {
         "nullable": null,
@@ -7200,7 +7210,7 @@
     "longname": "src/filesystem.js~Filesystem#_mountAction",
     "access": "private",
     "description": "Internal wrapper for mounting/unmounting by name",
-    "lineNumber": 249,
+    "lineNumber": 250,
     "params": [
       {
         "nullable": null,
@@ -7245,7 +7255,7 @@
     "longname": "src/filesystem.js~Filesystem#request",
     "access": "public",
     "description": "Gets the proxy for VFS methods\nFIXME: Not correct type, but works for documentation atm",
-    "lineNumber": 272,
+    "lineNumber": 273,
     "return": {
       "nullable": null,
       "types": [
@@ -7267,7 +7277,7 @@
     "longname": "src/filesystem.js~Filesystem#_request",
     "access": "private",
     "description": "Perform a VFS method request",
-    "lineNumber": 284,
+    "lineNumber": 285,
     "params": [
       {
         "nullable": null,
@@ -7310,7 +7320,7 @@
     "longname": "src/filesystem.js~Filesystem#_requestAction",
     "access": "private",
     "description": "Request action wrapper",
-    "lineNumber": 316,
+    "lineNumber": 317,
     "params": [
       {
         "nullable": null,
@@ -7353,7 +7363,7 @@
     "longname": "src/filesystem.js~Filesystem#createMountpoint",
     "access": "public",
     "description": "Creates a new mountpoint based on given properties",
-    "lineNumber": 345,
+    "lineNumber": 346,
     "params": [
       {
         "nullable": null,
@@ -7386,7 +7396,7 @@
     "longname": "src/filesystem.js~Filesystem#getMountpointFromPath",
     "access": "public",
     "description": "Gets mountpoint from given path",
-    "lineNumber": 374,
+    "lineNumber": 375,
     "params": [
       {
         "nullable": null,
@@ -7421,7 +7431,7 @@
     "longname": "src/filesystem.js~Filesystem#getMounts",
     "access": "public",
     "description": "Gets all mountpoints",
-    "lineNumber": 396,
+    "lineNumber": 397,
     "return": {
       "nullable": null,
       "types": [
@@ -7453,7 +7463,7 @@
     "longname": "src/filesystem.js~Filesystem#_getConfiguredMountpoints",
     "access": "private",
     "description": "Gets configured mountpoints",
-    "lineNumber": 424,
+    "lineNumber": 425,
     "return": {
       "nullable": null,
       "types": [
@@ -18052,7 +18062,7 @@
     "__docId__": 707,
     "kind": "file",
     "name": "src/vfs.js",
-    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nimport {\n  transformReaddir,\n  transformArrayBuffer,\n  createFileIter\n} from './utils/vfs';\n\n/**\n * VFS Method Options\n *\n * TODO: typedef\n * @typedef {Object} VFSMethodOptions\n */\n\n/**\n * VFS Download Options\n *\n * @typedef {Object} VFSDownloadOptions\n * @property {boolean} [readfile] Set to false to force backend fetch\n */\n\n/**\n * VFS File Object\n *\n * @typedef {Object} VFSFile\n * @property {string} path\n * @property {string} [filename]\n * @property {boolean} [isDirectory]\n * @property {boolean} [isFile]\n * @property {string} [mime]\n * @property {object} [stat]\n */\n\n// Makes sure our input paths are object(s)\nconst pathToObject = path => ({\n  id: null,\n  ...typeof path === 'string' ? {path} : path\n});\n\n// Handles directory listing result(s)\nconst handleDirectoryList = (path, options) => result =>\n  Promise.resolve(result.map(stat => createFileIter(stat)))\n    .then(result => transformReaddir(pathToObject(path), result, {\n      showHiddenFiles: options.showHiddenFiles !== false,\n      filter: options.filter\n    }));\n\n/**\n * Read a directory\n *\n * @param {string|VFSFile} path The path to read\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<object[]>} A list of files\n */\nexport const readdir = (adapter, mount) => (path, options = {}) =>\n  adapter.readdir(pathToObject(path), options, mount)\n    .then(handleDirectoryList(path, options));\n\n/**\n * Reads a file\n *\n * Available types are 'arraybuffer', 'blob', 'uri' and 'string'\n *\n * @param {string|VFSFile} path The path to read\n * @param {string} [type=string] Return this content type\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<ArrayBuffer>}\n */\nexport const readfile = (adapter, mount) => (path, type = 'string', options = {}) =>\n  adapter.readfile(pathToObject(path), type, options, mount)\n    .then(response => transformArrayBuffer(response.body, response.mime, type));\n\n/**\n * Writes a file\n * @param {string|VFSFile} path The path to write\n * @param {ArrayBuffer|Blob|string} data The data\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<number>} File size\n */\nexport const writefile = (adapter, mount) => (path, data, options = {}) => {\n  const binary = (data instanceof ArrayBuffer || data instanceof Blob)\n    ? data\n    : new Blob([data], {type: 'application/octet-stream'});\n\n  return adapter.writefile(pathToObject(path), binary, options, mount);\n};\n\n/**\n * Copies a file or directory (move)\n * @param {string|VFSFile} from The source (from)\n * @param {string|VFSFile} to The destination (to)\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const copy = (adapter, mount) => (from, to, options = {}) =>\n  adapter.copy(pathToObject(from), pathToObject(to), options, mount);\n\n/**\n * Renames a file or directory (move)\n * @param {string|VFSFile} from The source (from)\n * @param {string|VFSFile} to The destination (to)\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const rename = (adapter, mount) => (from, to, options = {}) =>\n  adapter.rename(pathToObject(from), pathToObject(to), options, mount);\n\n/**\n * Alias of 'readme'\n * @param {string|VFSFile} from The source (from)\n * @param {string|VFSFile} to The destination (to)\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const move = rename;\n\n/**\n * Creates a directory\n * @param {string|VFSFile} path The path to new directory\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const mkdir = (adapter, mount) => (path, options = {}) =>\n  adapter.mkdir(pathToObject(path), options, mount);\n\n/**\n * Removes a file or directory\n * @param {string|VFSFile} path The path to remove\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const unlink = (adapter, mount) => (path, options = {}) =>\n  adapter.unlink(pathToObject(path), options, mount);\n\n/**\n * Checks if path exists\n * @param {string|VFSFile} path The path to check\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const exists = (adapter, mount) => (path, options = {}) =>\n  adapter.exists(pathToObject(path), options, mount);\n\n/**\n * Gets the stats of the file or directory\n * @param {string|VFSFile} path The path to check\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<object>}\n */\nexport const stat = (adapter, mount) => (path, options = {}) =>\n  adapter.stat(pathToObject(path), options, mount)\n    .then(stat => createFileIter(stat));\n\n/**\n * Gets an URL to a resource defined by file\n * @param {string|VFSFile} path The file\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<string>}\n */\nexport const url = (adapter, mount) => (path, options = {}) =>\n  adapter.url(pathToObject(path), options, mount);\n\n/**\n * Initiates a native browser download of the file\n * @param {string|VFSFile} path The file\n * @param {VFSDownloadOptions} [options] Options\n * @return {Promise<any>}\n */\nexport const download = (adapter, mount) => (path, options = {}) =>\n  typeof adapter.download === 'function' && options.readfile !== true\n    ? adapter.download(pathToObject(path), options, mount)\n    : readfile(adapter)(path, 'blob')\n      .then(body => {\n        const filename = pathToObject(path).path.split('/').splice(-1)[0];\n        const url = window.URL.createObjectURL(body);\n\n        const a = document.createElement('a');\n        a.style.display = 'none';\n        a.href = url;\n        a.download = filename;\n        document.body.appendChild(a);\n\n        a.click();\n\n        setTimeout(() => {\n          window.URL.revokeObjectURL(url);\n          a.remove();\n        }, 1);\n      });\n\n/**\n * Searches for files and folders\n * @param {string|VFSFile} root The root\n * @param {string} pattern Search pattern\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<object[]>} A list of files\n */\nexport const search = (adapter, mount) => (root, pattern, options = {}) => {\n  if (mount.attributes && mount.attributes.searchable === false) {\n    return Promise.resolve([]);\n  }\n\n  return adapter.search(pathToObject(root), pattern, options, mount)\n    .then(handleDirectoryList(root, options));\n};\n\n/**\n * Touches a file\n * @param {string|VFSFile} path File path\n * @return {Promise<boolean>}\n */\nexport const touch = (adapter, mount) => (path, options = {}) =>\n  adapter.touch(pathToObject(path), options, mount);\n",
+    "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nimport {\n  transformReaddir,\n  transformArrayBuffer,\n  createFileIter\n} from './utils/vfs';\n\n/**\n * VFS Method Options\n *\n * TODO: typedef\n * @typedef {Object} VFSMethodOptions\n */\n\n/**\n * VFS Download Options\n *\n * @typedef {Object} VFSDownloadOptions\n * @property {boolean} [readfile] Set to false to force backend fetch\n */\n\n/**\n * VFS File Object\n *\n * @typedef {Object} VFSFile\n * @property {string} path\n * @property {string} [filename]\n * @property {boolean} [isDirectory]\n * @property {boolean} [isFile]\n * @property {string} [mime]\n * @property {object} [stat]\n */\n\n// Cache the capability of each mount point\nlet capabilityCache = {};\n\n// Makes sure our input paths are object(s)\nconst pathToObject = path => ({\n  id: null,\n  ...typeof path === 'string' ? {path} : path\n});\n\n// Handles directory listing result(s)\nconst handleDirectoryList = (path, options) => result =>\n  Promise.resolve(result.map(stat => createFileIter(stat)))\n    .then(result => transformReaddir(pathToObject(path), result, {\n      showHiddenFiles: options.showHiddenFiles !== false,\n      filter: options.filter\n    }));\n\n/**\n * Get vfs capabilities\n *\n * @param {string|VFSFile} path The path of a file\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<object[]>} An object of capabilities\n */\nexport const capabilities = (adapter, mount) => (path, options = {}) => {\n  const cached = capabilityCache[mount.name];\n  if (cached) {\n    return Promise.resolve(cached);\n  }\n  return adapter.capabilities(pathToObject(path), options, mount)\n    .then(res => {\n      capabilityCache[mount.name] = res;\n      return res;\n    });\n};\n\n\n/**\n * Read a directory\n *\n * @param {string|VFSFile} path The path to read\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<object[]>} A list of files\n */\nexport const readdir = (adapter, mount) => (path, options = {}) =>\n  adapter.readdir(pathToObject(path), options, mount)\n    .then(handleDirectoryList(path, options));\n\n/**\n * Reads a file\n *\n * Available types are 'arraybuffer', 'blob', 'uri' and 'string'\n *\n * @param {string|VFSFile} path The path to read\n * @param {string} [type=string] Return this content type\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<ArrayBuffer>}\n */\nexport const readfile = (adapter, mount) => (path, type = 'string', options = {}) =>\n  adapter.readfile(pathToObject(path), type, options, mount)\n    .then(response => transformArrayBuffer(response.body, response.mime, type));\n\n/**\n * Writes a file\n * @param {string|VFSFile} path The path to write\n * @param {ArrayBuffer|Blob|string} data The data\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<number>} File size\n */\nexport const writefile = (adapter, mount) => (path, data, options = {}) => {\n  const binary = (data instanceof ArrayBuffer || data instanceof Blob)\n    ? data\n    : new Blob([data], {type: 'application/octet-stream'});\n\n  return adapter.writefile(pathToObject(path), binary, options, mount);\n};\n\n/**\n * Copies a file or directory (move)\n * @param {string|VFSFile} from The source (from)\n * @param {string|VFSFile} to The destination (to)\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const copy = (adapter, mount) => (from, to, options = {}) =>\n  adapter.copy(pathToObject(from), pathToObject(to), options, mount);\n\n/**\n * Renames a file or directory (move)\n * @param {string|VFSFile} from The source (from)\n * @param {string|VFSFile} to The destination (to)\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const rename = (adapter, mount) => (from, to, options = {}) =>\n  adapter.rename(pathToObject(from), pathToObject(to), options, mount);\n\n/**\n * Alias of 'rename'\n * @param {string|VFSFile} from The source (from)\n * @param {string|VFSFile} to The destination (to)\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const move = rename;\n\n/**\n * Creates a directory\n * @param {string|VFSFile} path The path to new directory\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const mkdir = (adapter, mount) => (path, options = {}) =>\n  adapter.mkdir(pathToObject(path), options, mount);\n\n/**\n * Removes a file or directory\n * @param {string|VFSFile} path The path to remove\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const unlink = (adapter, mount) => (path, options = {}) =>\n  adapter.unlink(pathToObject(path), options, mount);\n\n/**\n * Checks if path exists\n * @param {string|VFSFile} path The path to check\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<boolean>}\n */\nexport const exists = (adapter, mount) => (path, options = {}) =>\n  adapter.exists(pathToObject(path), options, mount);\n\n/**\n * Gets the stats of the file or directory\n * @param {string|VFSFile} path The path to check\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<object>}\n */\nexport const stat = (adapter, mount) => (path, options = {}) =>\n  adapter.stat(pathToObject(path), options, mount)\n    .then(stat => createFileIter(stat));\n\n/**\n * Gets an URL to a resource defined by file\n * @param {string|VFSFile} path The file\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<string>}\n */\nexport const url = (adapter, mount) => (path, options = {}) =>\n  adapter.url(pathToObject(path), options, mount);\n\n/**\n * Initiates a native browser download of the file\n * @param {string|VFSFile} path The file\n * @param {VFSDownloadOptions} [options] Options\n * @return {Promise<any>}\n */\nexport const download = (adapter, mount) => (path, options = {}) =>\n  typeof adapter.download === 'function' && options.readfile !== true\n    ? adapter.download(pathToObject(path), options, mount)\n    : readfile(adapter)(path, 'blob')\n      .then(body => {\n        const filename = pathToObject(path).path.split('/').splice(-1)[0];\n        const url = window.URL.createObjectURL(body);\n\n        const a = document.createElement('a');\n        a.style.display = 'none';\n        a.href = url;\n        a.download = filename;\n        document.body.appendChild(a);\n\n        a.click();\n\n        setTimeout(() => {\n          window.URL.revokeObjectURL(url);\n          a.remove();\n        }, 1);\n      });\n\n/**\n * Searches for files and folders\n * @param {string|VFSFile} root The root\n * @param {string} pattern Search pattern\n * @param {VFSMethodOptions} [options] Options\n * @return {Promise<object[]>} A list of files\n */\nexport const search = (adapter, mount) => (root, pattern, options = {}) => {\n  if (mount.attributes && mount.attributes.searchable === false) {\n    return Promise.resolve([]);\n  }\n\n  return adapter.search(pathToObject(root), pattern, options, mount)\n    .then(handleDirectoryList(root, options));\n};\n\n/**\n * Touches a file\n * @param {string|VFSFile} path File path\n * @return {Promise<boolean>}\n */\nexport const touch = (adapter, mount) => (path, options = {}) =>\n  adapter.touch(pathToObject(path), options, mount);\n",
     "static": true,
     "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-client/src/vfs.js",
     "access": "public",
@@ -18188,6 +18198,33 @@
   {
     "__docId__": 711,
     "kind": "function",
+    "name": "pathToObject",
+    "memberof": "src/vfs.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/vfs.js~pathToObject",
+    "access": "public",
+    "export": false,
+    "importPath": "@osjs/client/src/vfs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "params": [
+      {
+        "name": "path",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 712,
+    "kind": "function",
     "name": "handleDirectoryList",
     "memberof": "src/vfs.js",
     "generator": false,
@@ -18199,7 +18236,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 70,
+    "lineNumber": 73,
     "undocument": true,
     "params": [
       {
@@ -18219,7 +18256,54 @@
     "ignore": true
   },
   {
-    "__docId__": 712,
+    "__docId__": 713,
+    "kind": "function",
+    "name": "capabilities",
+    "memberof": "src/vfs.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/vfs.js~capabilities",
+    "access": "public",
+    "export": true,
+    "importPath": "@osjs/client/src/vfs.js",
+    "importStyle": "{capabilities}",
+    "description": "Get vfs capabilities",
+    "lineNumber": 87,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string",
+          "VFSFile"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The path of a file"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "VFSMethodOptions"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options",
+        "description": "Options"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise<object[]>"
+      ],
+      "spread": false,
+      "description": "An object of capabilities"
+    }
+  },
+  {
+    "__docId__": 714,
     "kind": "function",
     "name": "readdir",
     "memberof": "src/vfs.js",
@@ -18232,7 +18316,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{readdir}",
     "description": "Read a directory",
-    "lineNumber": 84,
+    "lineNumber": 107,
     "params": [
       {
         "nullable": null,
@@ -18266,7 +18350,7 @@
     }
   },
   {
-    "__docId__": 713,
+    "__docId__": 715,
     "kind": "function",
     "name": "readfile",
     "memberof": "src/vfs.js",
@@ -18279,7 +18363,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{readfile}",
     "description": "Reads a file\n\nAvailable types are 'arraybuffer', 'blob', 'uri' and 'string'",
-    "lineNumber": 98,
+    "lineNumber": 121,
     "params": [
       {
         "nullable": null,
@@ -18325,7 +18409,7 @@
     }
   },
   {
-    "__docId__": 714,
+    "__docId__": 716,
     "kind": "function",
     "name": "writefile",
     "memberof": "src/vfs.js",
@@ -18338,7 +18422,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{writefile}",
     "description": "Writes a file",
-    "lineNumber": 109,
+    "lineNumber": 132,
     "params": [
       {
         "nullable": null,
@@ -18384,7 +18468,7 @@
     }
   },
   {
-    "__docId__": 715,
+    "__docId__": 717,
     "kind": "function",
     "name": "copy",
     "memberof": "src/vfs.js",
@@ -18397,7 +18481,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{copy}",
     "description": "Copies a file or directory (move)",
-    "lineNumber": 124,
+    "lineNumber": 147,
     "params": [
       {
         "nullable": null,
@@ -18442,7 +18526,7 @@
     }
   },
   {
-    "__docId__": 716,
+    "__docId__": 718,
     "kind": "function",
     "name": "rename",
     "memberof": "src/vfs.js",
@@ -18455,7 +18539,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{rename}",
     "description": "Renames a file or directory (move)",
-    "lineNumber": 134,
+    "lineNumber": 157,
     "params": [
       {
         "nullable": null,
@@ -18500,7 +18584,7 @@
     }
   },
   {
-    "__docId__": 717,
+    "__docId__": 719,
     "kind": "variable",
     "name": "move",
     "memberof": "src/vfs.js",
@@ -18510,8 +18594,8 @@
     "export": true,
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{move}",
-    "description": "Alias of 'readme'",
-    "lineNumber": 144,
+    "description": "Alias of 'rename'",
+    "lineNumber": 167,
     "params": [
       {
         "nullable": null,
@@ -18561,7 +18645,7 @@
     }
   },
   {
-    "__docId__": 718,
+    "__docId__": 720,
     "kind": "function",
     "name": "mkdir",
     "memberof": "src/vfs.js",
@@ -18574,7 +18658,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{mkdir}",
     "description": "Creates a directory",
-    "lineNumber": 152,
+    "lineNumber": 175,
     "params": [
       {
         "nullable": null,
@@ -18608,7 +18692,7 @@
     }
   },
   {
-    "__docId__": 719,
+    "__docId__": 721,
     "kind": "function",
     "name": "unlink",
     "memberof": "src/vfs.js",
@@ -18621,7 +18705,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{unlink}",
     "description": "Removes a file or directory",
-    "lineNumber": 161,
+    "lineNumber": 184,
     "params": [
       {
         "nullable": null,
@@ -18655,7 +18739,7 @@
     }
   },
   {
-    "__docId__": 720,
+    "__docId__": 722,
     "kind": "function",
     "name": "exists",
     "memberof": "src/vfs.js",
@@ -18668,7 +18752,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{exists}",
     "description": "Checks if path exists",
-    "lineNumber": 170,
+    "lineNumber": 193,
     "params": [
       {
         "nullable": null,
@@ -18702,7 +18786,7 @@
     }
   },
   {
-    "__docId__": 721,
+    "__docId__": 723,
     "kind": "function",
     "name": "stat",
     "memberof": "src/vfs.js",
@@ -18715,7 +18799,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{stat}",
     "description": "Gets the stats of the file or directory",
-    "lineNumber": 179,
+    "lineNumber": 202,
     "params": [
       {
         "nullable": null,
@@ -18749,7 +18833,7 @@
     }
   },
   {
-    "__docId__": 722,
+    "__docId__": 724,
     "kind": "function",
     "name": "url",
     "memberof": "src/vfs.js",
@@ -18762,7 +18846,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{url}",
     "description": "Gets an URL to a resource defined by file",
-    "lineNumber": 189,
+    "lineNumber": 212,
     "params": [
       {
         "nullable": null,
@@ -18796,7 +18880,7 @@
     }
   },
   {
-    "__docId__": 723,
+    "__docId__": 725,
     "kind": "function",
     "name": "download",
     "memberof": "src/vfs.js",
@@ -18809,7 +18893,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{download}",
     "description": "Initiates a native browser download of the file",
-    "lineNumber": 198,
+    "lineNumber": 221,
     "params": [
       {
         "nullable": null,
@@ -18843,7 +18927,7 @@
     }
   },
   {
-    "__docId__": 724,
+    "__docId__": 726,
     "kind": "function",
     "name": "search",
     "memberof": "src/vfs.js",
@@ -18856,7 +18940,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{search}",
     "description": "Searches for files and folders",
-    "lineNumber": 227,
+    "lineNumber": 250,
     "params": [
       {
         "nullable": null,
@@ -18900,7 +18984,7 @@
     }
   },
   {
-    "__docId__": 725,
+    "__docId__": 727,
     "kind": "function",
     "name": "touch",
     "memberof": "src/vfs.js",
@@ -18913,7 +18997,7 @@
     "importPath": "@osjs/client/src/vfs.js",
     "importStyle": "{touch}",
     "description": "Touches a file",
-    "lineNumber": 241,
+    "lineNumber": 264,
     "params": [
       {
         "nullable": null,
@@ -18937,7 +19021,7 @@
     }
   },
   {
-    "__docId__": 726,
+    "__docId__": 728,
     "kind": "file",
     "name": "src/websocket.js",
     "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nimport {EventEmitter} from '@osjs/event-emitter';\nimport logger from './logger';\n\nconst eventNames = ['open', 'close', 'message', 'error'];\n\n/**\n * Websocket options\n * @typedef {Object} WebsocketOptions\n * @property {boolean} [reconnect=true] Enable reconnection\n * @property {number} [interval=1000] Reconnect interval\n * @property {boolean} [open=true] Immediately open socket after creation\n */\n\n/**\n * Application Socket\n *\n * This is just an abstraction above the standard browser provided `WebSocket` class.\n * Since this class implements the EventHandler, use the `.on('event')` pattern instead of `.onevent`.\n */\nexport default class Websocket extends EventEmitter {\n\n  /**\n   * Create a new Websocket\n   * @param {string} name Instance name\n   * @param {string} uri Connection URI\n   * @param {WebsocketOptions} [options={}] Websocket options\n   */\n  constructor(name, uri, options = {}) {\n    logger.debug('Websocket::constructor()', name, uri);\n\n    super('Websocket@' + name);\n\n    /**\n     * Socket URI\n     * @type {string}\n     * @readonly\n     */\n    this.uri = uri;\n\n    /**\n     * If socket is closed\n     * @type {boolean}\n     */\n    this.closed = false;\n\n    /**\n     * If socket is connected\n     * @type {boolean}\n     */\n    this.connected = false;\n\n    /**\n     * If socket is connecting\n     * @type {boolean}\n     */\n    this.connecting = false;\n\n    /**\n     * If socket is reconnecting\n     * @type {boolean}\n     */\n    this.reconnecting = false;\n\n    /**\n     * If socket failed to connect\n     * @type {boolean}\n     */\n    this.connectfailed = false;\n\n    /**\n     * Options\n     * @type {WebsocketOptions}\n     * @readonly\n     */\n    this.options = {\n      reconnect: true,\n      interval: 1000,\n      open: true,\n      ...options\n    };\n\n    /**\n     * The Websocket\n     * @type {WebSocket}\n     */\n    this.connection = null;\n\n    this._attachEvents();\n\n    if (this.options.open) {\n      this.open();\n    }\n  }\n\n  /**\n   * Destroys the current connection\n   * @return {void}\n   * @private\n   */\n  _destroyConnection() {\n    if (!this.connection) {\n      return;\n    }\n\n    eventNames.forEach(name => {\n      this.connection[`on${name}`] = () => {};\n    });\n\n    this.reconnecting = clearInterval(this.reconnecting);\n    this.connection = null;\n  }\n\n  /**\n   * Attaches internal events\n   * @private\n   */\n  _attachEvents() {\n    this.on('open', ev => {\n      const reconnected = !!this.reconnecting;\n\n      this.connected = true;\n      this.reconnecting = false;\n      this.connectfailed = false;\n      this.reconnecting = clearInterval(this.reconnecting);\n\n      this.emit('connected', ev, reconnected);\n    });\n\n    this.on('close', ev => {\n      if (!this.connected && !this.connectfailed) {\n        this.emit('failed', ev);\n\n        this.connectfailed = true;\n      }\n\n      clearInterval(this.reconnecting);\n\n      this._destroyConnection();\n\n      this.connected = false;\n\n      if (this.options.reconnect) {\n        this.reconnecting = setInterval(() => {\n          if (!this.closed) {\n            this.open();\n          }\n        }, this.options.interval);\n      }\n\n      this.emit('disconnected', ev, this.closed);\n    });\n  }\n\n  /**\n   * Opens the connection\n   * @param {boolean} [reconnect=false] Force reconnection\n   */\n  open(reconnect = false) {\n    if (this.connection && !reconnect) {\n      return;\n    }\n\n    this._destroyConnection();\n\n    this.reconnecting = clearInterval(this.reconnecting);\n    this.connection = new WebSocket(this.uri);\n    this.closed = false;\n\n    eventNames.forEach(name => {\n      this.connection[`on${name}`] = (...args) => this.emit(name, ...args);\n    });\n  }\n\n  /**\n   * Wrapper for sending data\n   */\n  send(...args) {\n    return this.connection.send(...args);\n  }\n\n  /**\n   * Wrapper for closing\n   */\n  close(...args) {\n    this.closed = true;\n\n    return this.connection.close(...args);\n  }\n\n}\n",
@@ -18948,7 +19032,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 727,
+    "__docId__": 729,
     "kind": "variable",
     "name": "eventNames",
     "memberof": "src/websocket.js",
@@ -18969,7 +19053,7 @@
     "ignore": true
   },
   {
-    "__docId__": 728,
+    "__docId__": 730,
     "kind": "typedef",
     "name": "WebsocketOptions",
     "memberof": "src/websocket.js",
@@ -19024,7 +19108,7 @@
     }
   },
   {
-    "__docId__": 729,
+    "__docId__": 731,
     "kind": "class",
     "name": "Websocket",
     "memberof": "src/websocket.js",
@@ -19042,7 +19126,7 @@
     ]
   },
   {
-    "__docId__": 730,
+    "__docId__": 732,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/websocket.js~Websocket",
@@ -19089,7 +19173,7 @@
     ]
   },
   {
-    "__docId__": 731,
+    "__docId__": 733,
     "kind": "member",
     "name": "uri",
     "memberof": "src/websocket.js~Websocket",
@@ -19114,7 +19198,7 @@
     }
   },
   {
-    "__docId__": 732,
+    "__docId__": 734,
     "kind": "member",
     "name": "closed",
     "memberof": "src/websocket.js~Websocket",
@@ -19133,7 +19217,7 @@
     }
   },
   {
-    "__docId__": 733,
+    "__docId__": 735,
     "kind": "member",
     "name": "connected",
     "memberof": "src/websocket.js~Websocket",
@@ -19152,7 +19236,7 @@
     }
   },
   {
-    "__docId__": 734,
+    "__docId__": 736,
     "kind": "member",
     "name": "connecting",
     "memberof": "src/websocket.js~Websocket",
@@ -19171,7 +19255,7 @@
     }
   },
   {
-    "__docId__": 735,
+    "__docId__": 737,
     "kind": "member",
     "name": "reconnecting",
     "memberof": "src/websocket.js~Websocket",
@@ -19190,7 +19274,7 @@
     }
   },
   {
-    "__docId__": 736,
+    "__docId__": 738,
     "kind": "member",
     "name": "connectfailed",
     "memberof": "src/websocket.js~Websocket",
@@ -19209,7 +19293,7 @@
     }
   },
   {
-    "__docId__": 737,
+    "__docId__": 739,
     "kind": "member",
     "name": "options",
     "memberof": "src/websocket.js~Websocket",
@@ -19234,7 +19318,7 @@
     }
   },
   {
-    "__docId__": 738,
+    "__docId__": 740,
     "kind": "member",
     "name": "connection",
     "memberof": "src/websocket.js~Websocket",
@@ -19253,7 +19337,7 @@
     }
   },
   {
-    "__docId__": 739,
+    "__docId__": 741,
     "kind": "method",
     "name": "_destroyConnection",
     "memberof": "src/websocket.js~Websocket",
@@ -19275,7 +19359,7 @@
     "params": []
   },
   {
-    "__docId__": 742,
+    "__docId__": 744,
     "kind": "method",
     "name": "_attachEvents",
     "memberof": "src/websocket.js~Websocket",
@@ -19290,7 +19374,7 @@
     "return": null
   },
   {
-    "__docId__": 750,
+    "__docId__": 752,
     "kind": "method",
     "name": "open",
     "memberof": "src/websocket.js~Websocket",
@@ -19318,7 +19402,7 @@
     "return": null
   },
   {
-    "__docId__": 754,
+    "__docId__": 756,
     "kind": "method",
     "name": "send",
     "memberof": "src/websocket.js~Websocket",
@@ -19345,7 +19429,7 @@
     }
   },
   {
-    "__docId__": 755,
+    "__docId__": 757,
     "kind": "method",
     "name": "close",
     "memberof": "src/websocket.js~Websocket",
@@ -19372,7 +19456,7 @@
     }
   },
   {
-    "__docId__": 757,
+    "__docId__": 759,
     "kind": "file",
     "name": "src/window-behavior.js",
     "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\n\nimport {supportsPassive} from './utils/dom';\nimport {getEvent, matchKeyCombo} from './utils/input';\nimport {resizer, mover, getMediaQueryName, getCascadePosition} from './utils/windows';\n\nconst isPassive = supportsPassive();\nconst touchArg = isPassive ? {passive: true} : false;\n\n/*\n * Map of available \"actions\"\n */\nconst actionMap = {\n  maximize: (win) => win.maximize() ? null : win.restore(),\n  minimize: (win) => win.minimize(),\n  close: (win) => win.close()\n};\n\n/**\n * Default Window Behavior\n *\n * Controls certain events and their interaction with a window\n */\nexport default class WindowBehavior {\n  /**\n   * Create window behavior\n   *\n   * @param {Core} core Core reference\n   */\n  constructor(core) {\n    /**\n     * Core instance reference\n     * @type {Core}\n     * @readonly\n     */\n    this.core = core;\n\n    /**\n     * Last action\n     * @type {string}\n     */\n    this.lastAction = null;\n\n    /**\n     * LoFi DOM Element\n     * @type {Element}\n     * @readonly\n     */\n    this.$lofi = document.createElement('div');\n    this.$lofi.className = 'osjs-window-behavior-lofi';\n  }\n\n  /**\n   * Initializes window behavior\n   * @param {Window} win Window reference\n   */\n  init(win) {\n    const ontouchstart = ev => this.mousedown(ev, win);\n    const onmousedown = ev => this.mousedown(ev, win);\n    const onclick = ev => this.click(ev, win);\n    const ondblclick = ev => this.dblclick(ev, win);\n\n    const onicondblclick = ev => {\n      ev.stopPropagation();\n      ev.preventDefault();\n      this.iconDblclick(ev, win);\n    };\n\n    const oniconclick = ev => {\n      ev.stopPropagation();\n      ev.preventDefault();\n\n      this.iconClick(ev, win);\n    };\n\n    const ontrasitionend = ev => {\n      if (win) {\n        win.emit('transitionend');\n      }\n\n      this.core.emit('osjs/window:transitionend', ev, win);\n    };\n\n    win.$element.addEventListener('touchstart', ontouchstart, touchArg);\n    win.$element.addEventListener('mousedown', onmousedown);\n    win.$element.addEventListener('click', onclick);\n    win.$element.addEventListener('dblclick', ondblclick);\n    win.$element.addEventListener('transitionend', ontrasitionend);\n\n    if (win.$icon) {\n      win.$icon.addEventListener('dblclick', onicondblclick);\n      win.$icon.addEventListener('click', oniconclick);\n    }\n\n    win.on('resized,rendered', () => {\n      win.setState('media', getMediaQueryName(win));\n    });\n\n    win.on('destroy', () => {\n      if (win.$element) {\n        win.$element.removeEventListener('touchstart', ontouchstart, touchArg);\n        win.$element.removeEventListener('mousedown', onmousedown);\n        win.$element.removeEventListener('click', onclick);\n        win.$element.removeEventListener('dblclick', ondblclick);\n        win.$element.removeEventListener('transitionend', ontrasitionend);\n      }\n\n      if (win.$icon) {\n        win.$icon.removeEventListener('dblclick', onicondblclick);\n        win.$icon.removeEventListener('click', oniconclick);\n      }\n    });\n\n    const rect = {top: 0, left: 0};\n    const {top, left} = getCascadePosition(win, rect, win.state.position);\n    win.state.position.top = top;\n    win.state.position.left = left;\n    win.state.media = getMediaQueryName(win);\n  }\n\n  /**\n   * Handles Mouse Click Event\n   * @param {Event} ev Browser Event\n   * @param {Window} win Window reference\n   */\n  click(ev, win) {\n    if (this.lastAction) {\n      return;\n    }\n\n    const target = ev.target;\n    const hitButton = target.classList.contains('osjs-window-button');\n\n    if (hitButton) {\n      const action =  ev.target.getAttribute('data-action');\n      actionMap[action](win);\n    }\n  }\n\n  /**\n   * Handles Mouse Double Click Event\n   * @param {Event} ev Browser Event\n   * @param {Window} win Window reference\n   */\n  dblclick(ev, win) {\n    if (this.lastAction) {\n      return;\n    }\n\n    const target = ev.target;\n    const hitTitle = target.classList.contains('osjs-window-header');\n\n    if (hitTitle) {\n      if (win.state.maximized) {\n        win.restore();\n      } else if (win.state.minimized) {\n        win.raise();\n      } else {\n        win.maximize();\n      }\n    }\n  }\n\n  /**\n   * Handles Mouse Down Event\n   * @param {Event} ev Browser Event\n   * @param {Window} win Window reference\n   */\n  mousedown(ev, win) {\n    let attributeSet = false;\n\n    const {moveable, resizable} = win.attributes;\n    const {maximized} = win.state;\n    const {lofi, moveKeybinding} = this.core.config('windows');\n    const {clientX, clientY, touch, target} = getEvent(ev);\n\n    const checkMove = matchKeyCombo(moveKeybinding, ev)\n      ? win.$element.contains(target)\n      : target.classList.contains('osjs-window-header');\n\n    const rect = this.core.has('osjs/desktop')\n      ? this.core.make('osjs/desktop').getRect()\n      : {top: 0, left: 0};\n\n    const resize = target.classList.contains('osjs-window-resize')\n      ? resizer(win, target)\n      : null;\n\n    const move = checkMove\n      ? mover(win, {top: 0, left: 0})\n      : null;\n\n    let actionCallback;\n\n    const mousemove = (ev) => {\n      if (!isPassive) {\n        ev.preventDefault();\n      }\n\n      if (maximized || (!moveable && move) || (!resizable && resize)) {\n        return;\n      }\n\n      const transformedEvent = getEvent(ev);\n      const posX = resize ? Math.max(rect.left, transformedEvent.clientX) : transformedEvent.clientX;\n      const posY = resize ? Math.max(rect.top, transformedEvent.clientY) : transformedEvent.clientY;\n      const diffX = posX - clientX;\n      const diffY = posY - clientY;\n\n      if (resize) {\n        const {width, height, top, left} = resize(diffX, diffY);\n\n        actionCallback = () => {\n          win._setState('dimension', {width, height}, false);\n          win._setState('position', {top, left}, false);\n        };\n\n        if (lofi) {\n          this.$lofi.style.top = `${top}px`;\n          this.$lofi.style.left = `${left}px`;\n          this.$lofi.style.width = `${width}px`;\n          this.$lofi.style.height = `${height}px`;\n        } else {\n          actionCallback();\n        }\n\n        this.lastAction = 'resize';\n      } else if (move) {\n        const position = move(diffX, diffY);\n\n        actionCallback = () => {\n          win._setState('position', position, false);\n        };\n\n        if (lofi) {\n          this.$lofi.style.top = `${position.top}px`;\n          this.$lofi.style.left = `${position.left}px`;\n        } else {\n          actionCallback();\n        }\n\n        this.lastAction = 'move';\n      }\n\n      if (this.lastAction) {\n        win._setState(this.lastAction === 'move' ? 'moving' : 'resizing', true);\n\n        if (!attributeSet) {\n          this.core.$root.setAttribute('data-window-action', String(true));\n          attributeSet = true;\n        }\n      }\n    };\n\n    const mouseup = () => {\n      if (touch) {\n        document.removeEventListener('touchmove', mousemove, touchArg);\n        document.removeEventListener('touchend', mouseup, touchArg);\n      } else {\n        document.removeEventListener('mousemove', mousemove);\n        document.removeEventListener('mouseup', mouseup);\n      }\n\n      if (lofi) {\n        this.$lofi.remove();\n\n        if (actionCallback) {\n          actionCallback();\n        }\n\n        actionCallback = undefined;\n      }\n\n      if (this.lastAction === 'move') {\n        win.emit('moved', {...win.state.position}, win);\n        win._setState('moving', false);\n      } else if (this.lastAction === 'resize') {\n        win.emit('resized', {...win.state.dimension}, win);\n        win._setState('resizing', false);\n      }\n\n      this.core.$root.setAttribute('data-window-action', String(false));\n    };\n\n\n    if (!win.focus()) {\n      win.setNextZindex();\n    }\n\n    if (move || resize) {\n      if (touch) {\n        document.addEventListener('touchmove', mousemove, touchArg);\n        document.addEventListener('touchend', mouseup, touchArg);\n      } else {\n        document.addEventListener('mousemove', mousemove);\n        document.addEventListener('mouseup', mouseup);\n      }\n    }\n\n    this.lastAction = null;\n\n    if (this.core.has('osjs/contextmenu')) {\n      this.core.make('osjs/contextmenu').hide();\n    }\n\n    if (lofi) {\n      this.$lofi.style.zIndex = win.state.zIndex + 1;\n      this.$lofi.style.top = `${win.state.position.top}px`;\n      this.$lofi.style.left = `${win.state.position.left}px`;\n      this.$lofi.style.width = `${win.state.dimension.width}px`;\n      this.$lofi.style.height = `${win.state.dimension.height}px`;\n\n      if (!this.$lofi.parentNode) {\n        document.body.appendChild(this.$lofi);\n      }\n    }\n  }\n\n  /**\n   * Handles Icon Double Click Event\n   * @param {Event} ev Browser Event\n   * @param {Window} win Window reference\n   */\n  iconDblclick(ev, win) {\n    win.close();\n  }\n\n  /**\n   * Handles Icon Click Event\n   * @param {Event} ev Browser Event\n   * @param {Window} win Window reference\n   */\n  iconClick(ev, win) {\n    const {minimized, maximized} = win.state;\n    const {minimizable, maximizable, closeable} = win.attributes;\n    const _ = this.core.make('osjs/locale').translate;\n\n    this.core.make('osjs/contextmenu', {\n      position: ev,\n      menu: [{\n        label: minimized ? _('LBL_RAISE') : _('LBL_MINIMIZE'),\n        disabled: !minimizable,\n        onclick: () => minimized ? win.raise() : win.minimize()\n      }, {\n        label: maximized ? _('LBL_RESTORE') : _('LBL_MAXIMIZE'),\n        disabled: !maximizable,\n        onclick: () => maximized ? win.restore() : win.maximize()\n      }, {\n        label: _('LBL_CLOSE'),\n        disabled: !closeable,\n        onclick: () => win.close()\n      }]\n    });\n  }\n}\n",
@@ -19383,7 +19467,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 758,
+    "__docId__": 760,
     "kind": "variable",
     "name": "isPassive",
     "memberof": "src/window-behavior.js",
@@ -19404,7 +19488,7 @@
     "ignore": true
   },
   {
-    "__docId__": 759,
+    "__docId__": 761,
     "kind": "variable",
     "name": "touchArg",
     "memberof": "src/window-behavior.js",
@@ -19425,7 +19509,7 @@
     "ignore": true
   },
   {
-    "__docId__": 760,
+    "__docId__": 762,
     "kind": "variable",
     "name": "actionMap",
     "memberof": "src/window-behavior.js",
@@ -19446,7 +19530,7 @@
     "ignore": true
   },
   {
-    "__docId__": 761,
+    "__docId__": 763,
     "kind": "class",
     "name": "WindowBehavior",
     "memberof": "src/window-behavior.js",
@@ -19461,7 +19545,7 @@
     "interface": false
   },
   {
-    "__docId__": 762,
+    "__docId__": 764,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19486,7 +19570,7 @@
     ]
   },
   {
-    "__docId__": 763,
+    "__docId__": 765,
     "kind": "member",
     "name": "core",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19511,7 +19595,7 @@
     }
   },
   {
-    "__docId__": 764,
+    "__docId__": 766,
     "kind": "member",
     "name": "lastAction",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19530,7 +19614,7 @@
     }
   },
   {
-    "__docId__": 765,
+    "__docId__": 767,
     "kind": "member",
     "name": "$lofi",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19555,7 +19639,7 @@
     }
   },
   {
-    "__docId__": 766,
+    "__docId__": 768,
     "kind": "method",
     "name": "init",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19581,7 +19665,7 @@
     "return": null
   },
   {
-    "__docId__": 767,
+    "__docId__": 769,
     "kind": "method",
     "name": "click",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19617,7 +19701,7 @@
     "return": null
   },
   {
-    "__docId__": 768,
+    "__docId__": 770,
     "kind": "method",
     "name": "dblclick",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19653,7 +19737,7 @@
     "return": null
   },
   {
-    "__docId__": 769,
+    "__docId__": 771,
     "kind": "method",
     "name": "mousedown",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19689,7 +19773,7 @@
     "return": null
   },
   {
-    "__docId__": 773,
+    "__docId__": 775,
     "kind": "method",
     "name": "iconDblclick",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19725,7 +19809,7 @@
     "return": null
   },
   {
-    "__docId__": 774,
+    "__docId__": 776,
     "kind": "method",
     "name": "iconClick",
     "memberof": "src/window-behavior.js~WindowBehavior",
@@ -19761,7 +19845,7 @@
     "return": null
   },
   {
-    "__docId__": 775,
+    "__docId__": 777,
     "kind": "file",
     "name": "src/window.js",
     "content": "/*\n * OS.js - JavaScript Cloud/Web Desktop Platform\n *\n * Copyright (c) Anders Evenrud <andersevenrud@gmail.com>\n * All rights reserved.\n *\n * Redistribution and use in source and binary forms, with or without\n * modification, are permitted provided that the following conditions are met:\n *\n * 1. Redistributions of source code must retain the above copyright notice, this\n *    list of conditions and the following disclaimer\n * 2. Redistributions in binary form must reproduce the above copyright notice,\n *    this list of conditions and the following disclaimer in the documentation\n *    and/or other materials provided with the distribution\n *\n * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\n * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n *\n * @author  Anders Evenrud <andersevenrud@gmail.com>\n * @license Simplified BSD License\n */\nimport {EventEmitter} from '@osjs/event-emitter';\nimport {droppable} from './utils/dnd';\nimport {escapeHtml, createCssText, supportsTransition, getActiveElement} from './utils/dom';\nimport {\n  createAttributes,\n  createState,\n  createDOMAttributes,\n  createDOMStyles,\n  clampPosition,\n  renderCallback,\n  transformVectors,\n  positionFromGravity,\n  dimensionFromElement\n} from './utils/windows';\nimport logger from './logger';\n\n/**\n * Window dimension definition\n * @typedef {Object} WindowDimension\n * @property {number} width Width in pixels (or float for percentage in setters)\n * @property {number} height Height in pixels (or float for percentage in setters)\n */\n\n/**\n * Window position definition\n * @typedef {Object} WindowPosition\n * @property {number} left Left in pixels (or float for percentage in setters)\n * @property {number} top Top in pixels (or float for percentage in setters)\n */\n\n/**\n * Window session\n * @typedef {Object} WindowSession\n * @property {number} id\n * @property {boolean} maximized\n * @property {boolean} minimized\n * @property {WindowPosition} position\n * @property {WindowDimension} dimension\n */\n\n/**\n * Window attributes definition\n *\n * @typedef {Object} WindowAttributes\n * @property {string[]} [classNames=[]] A list of class names\n * @property {boolean} [ontop=false] If always on top\n * @property {string} [gravity] Gravity (center/top/left/right/bottom or any combination)\n * @property {boolean} [resizable=true] If resizable\n * @property {boolean} [focusable=true] If focusable\n * @property {boolean} [maximizable=true] If window if maximizable\n * @property {boolean} [minimizable=true] If minimizable\n * @property {boolean} [moveable=true] If moveable\n * @property {boolean} [closeable=true] If closeable\n * @property {boolean} [header=true] Show header\n * @property {boolean} [controls=true] Show controls\n * @property {string} [visibility=global] Global visibility, 'restricted' to hide from window lists etc.\n * @property {boolean} [clamp=true] Clamp the window position upon creation\n * @property {boolean} [droppable=true] If window should have the default drop action\n * @property {WindowDimension} [minDimension] Minimum dimension\n * @property {WindowDimension} [maxDimension] Maximum dimension\n * @property {{name: string}} [mediaQueries] A map of matchMedia to name\n */\n\n/**\n * Window state definition\n *\n * @typedef {Object} WindowState\n * @property {string} title Title\n * @property {string} icon Icon\n * @property {boolean} [moving=false] If moving\n * @property {boolean} [resizing=false] If resizing\n * @property {boolean} [loading=false] If loading\n * @property {boolean} [focused=false] If focused\n * @property {boolean} [maximized=false] If maximized\n * @property {boolean} [mimimized=false] If mimimized\n * @property {boolean} [modal=false] If modal to the parent\n * @property {number} [zIndex=10] The z-index (auto calculated)\n * @property {WindowPosition} [position] Position\n * @property {WindowDimension} [dimension] Dimension\n */\n\n/**\n * Window options definition\n *\n * @typedef {Object} WindowOptions\n * @property {string} id Window Id (not globaly unique)\n * @property {string} [title] Window Title\n * @property {string} [icon] Window Icon\n * @property {Window} [parent] The parent Window reference\n * @property {string|Function} [template] The Window HTML template (or function with signature (el, win) for programatic construction)\n * @property {Function} [ondestroy] A callback function when window destructs to interrupt the procedure\n * @property {WindowPosition|string} [position] Window position\n * @property {WindowDimension} [dimension] Window dimension\n * @property {WindowAttributes} [attributes] Apply Window attributes\n * @property {WindowState} [state] Apply Window state\n */\n\nlet windows = [];\nlet windowCount = 0;\nlet nextZindex = 1;\nlet lastWindow = null;\n\n/*\n * Default window template\n */\nconst TEMPLATE = `<div class=\"osjs-window-inner\">\n  <div class=\"osjs-window-header\">\n    <div class=\"osjs-window-icon\">\n      <div></div>\n    </div>\n    <div class=\"osjs-window-title\"></div>\n    <div class=\"osjs-window-button\" data-action=\"minimize\">\n      <div></div>\n    </div>\n    <div class=\"osjs-window-button\" data-action=\"maximize\">\n      <div></div>\n    </div>\n    <div class=\"osjs-window-button\" data-action=\"close\">\n      <div></div>\n    </div>\n  </div>\n  <div class=\"osjs-window-content\">\n  </div>\n  <div class=\"osjs-window-resize\" data-direction=\"n\"></div>\n  <div class=\"osjs-window-resize\" data-direction=\"nw\"></div>\n  <div class=\"osjs-window-resize\" data-direction=\"w\"></div>\n  <div class=\"osjs-window-resize\" data-direction=\"sw\"></div>\n  <div class=\"osjs-window-resize\" data-direction=\"s\"></div>\n  <div class=\"osjs-window-resize\" data-direction=\"se\"></div>\n  <div class=\"osjs-window-resize\" data-direction=\"e\"></div>\n  <div class=\"osjs-window-resize\" data-direction=\"ne\"></div>\n</div>`.replace(/\\n\\s+/g, '').trim();\n\n/**\n * Window Implementation\n */\nexport default class Window extends EventEmitter {\n\n  /**\n   * Create window\n   *\n   * @param {Core} core Core reference\n   * @param {WindowOptions} [options={}] Options\n   */\n  constructor(core, options = {}) {\n    options = {\n      id: null,\n      title: null,\n      parent: null,\n      template: null,\n      ondestroy: null,\n      attributes: {},\n      position: {},\n      dimension: {},\n      state: {},\n      ...options\n    };\n\n    logger.debug('Window::constructor()', options);\n\n    super('Window@' + options.id);\n\n    if (typeof options.position === 'string') {\n      options.attributes.gravity = options.position;\n      options.position = {};\n    }\n\n    /**\n     * The Window ID\n     * @type {string}\n     * @readonly\n     */\n    this.id = options.id;\n\n    /**\n     * The Window ID\n     * @type {Number}\n     * @readonly\n     */\n    this.wid = ++windowCount;\n\n    /**\n     * Parent Window reference\n     * @type {Window}\n     * @readonly\n     */\n    this.parent = options.parent;\n\n    /**\n     * Child windows (via 'parent')\n     * @type {Window[]}\n     */\n    this.children = [];\n\n    /**\n     * Core instance reference\n     * @type {Core}\n     * @readonly\n     */\n    this.core = core;\n\n    /**\n     * The window destruction state\n     * @type {boolean}\n     */\n    this.destroyed = false;\n\n    /**\n     * The window rendered state\n     * @type {boolean}\n     */\n    this.rendered = false;\n\n    /**\n     * The window was inited\n     * @type {boolean}\n     */\n    this.inited = false;\n\n    /**\n     * The window attributes\n     * @type {WindowAttributes}\n     */\n    this.attributes = createAttributes(options.attributes);\n\n    /**\n     * The window state\n     * @type {WindowState}\n     */\n    this.state = createState(options.state, options, this.attributes);\n\n    /**\n     * The window container\n     * @type {Element}\n     * @readonly\n     */\n    this.$element = document.createElement('div');\n\n    /**\n     * The content container\n     * @type {Element}\n     */\n    this.$content = null;\n\n    /**\n     * The header container\n     * @type {Element}\n     */\n    this.$header = null;\n\n    /**\n     * The icon container\n     * @type {Element}\n     */\n    this.$icon = null;\n\n    /**\n     * The title container\n     * @type {Element}\n     */\n    this.$title = null;\n\n    /**\n     * Internal variable to signal not to use default position\n     * given by user (used for restore)\n     * @private\n     * @type {boolean}\n     */\n    this._preventDefaultPosition = false;\n\n    /**\n     * Internal timeout reference used for triggering the loading\n     * overlay.\n     * @private\n     * @type {boolean}\n     */\n    this._loadingDebounce = null;\n\n    /**\n     * The window template\n     * @private\n     * @type {string|Function}\n     */\n    this._template = options.template;\n\n    /**\n     * Custom destructor callback\n     * @private\n     * @type {Function}\n     * @readonly\n     */\n    this._ondestroy = options.ondestroy || (() => true);\n\n    /**\n     * Last DOM update CSS text\n     * @private\n     * @type {string}\n     */\n    this._lastCssText = '';\n\n    /**\n     * Last DOM update data attributes\n     * @private\n     * @type {WindowAttributes}\n     */\n    this._lastAttributes = {};\n\n    windows.push(this);\n  }\n\n  /**\n   * Destroy window\n   */\n  destroy() {\n    if (this.destroyed) {\n      return;\n    }\n\n    if (typeof this._ondestroy === 'function' && this._ondestroy() === false) {\n      return;\n    }\n\n    this.destroyed = true;\n\n    logger.debug('Window::destroy()');\n\n    this.emit('destroy', this);\n    this.core.emit('osjs/window:destroy', this);\n\n    this.children.forEach(w => w.destroy());\n\n    if (this.$element) {\n      this.$element.remove();\n    }\n\n    if (lastWindow === this) {\n      lastWindow = null;\n    }\n\n    const foundIndex = windows.findIndex(w => w === this);\n    if (foundIndex !== -1) {\n      windows.splice(foundIndex, 1);\n    }\n\n    this.children = [];\n    this.parent = null;\n    this.$element = null;\n    this.$content = null;\n    this.$header = null;\n    this.$icon = null;\n    this.$title = null;\n\n    super.destroy();\n  }\n\n  /**\n   * Initialize window\n   */\n  init() {\n    if (this.inited) {\n      return this;\n    }\n\n    if (this.parent) {\n      // Assign the window if it is a child\n      this.on('destroy', () => {\n        const foundIndex = this.parent.children.findIndex(w => w === this);\n        if (foundIndex !== -1) {\n          this.parent.children.splice(foundIndex, 1);\n        }\n      });\n\n      this.parent.children.push(this);\n    }\n\n    this._initTemplate();\n    this._initBehavior();\n\n\n    this.inited = true;\n    this.emit('init', this);\n    this.core.emit('osjs/window:create', this);\n\n    return this;\n  }\n\n  /**\n   * Initializes window template\n   * @private\n   */\n  _initTemplate() {\n    const tpl = this.core.config('windows.template') || TEMPLATE;\n    if (this._template) {\n      this.$element.innerHTML = typeof this._template === 'function'\n        ? this._template(this, tpl)\n        : this._template;\n    } else {\n      this.$element.innerHTML = tpl;\n    }\n\n    this.$content = this.$element.querySelector('.osjs-window-content');\n    this.$header = this.$element.querySelector('.osjs-window-header');\n    this.$icon = this.$element.querySelector('.osjs-window-icon > div');\n    this.$title = this.$element.querySelector('.osjs-window-title');\n  }\n\n  /**\n   * Initializes window behavior\n   * @private\n   */\n  _initBehavior() {\n    // Transform percentages in dimension to pixels etc\n    if (this.core.has('osjs/desktop')) {\n      const rect = this.core.make('osjs/desktop').getRect();\n      const {dimension, position} = transformVectors(rect, this.state.dimension, this.state.position);\n      this.state.dimension = dimension;\n      this.state.position = position;\n    }\n\n    // Behavior\n    const behavior = this.core.make('osjs/window-behavior');\n    if (behavior) {\n      behavior.init(this);\n    }\n\n    // DnD functionality\n    if (this.attributes.droppable) {\n      const d = droppable(this.$element, {\n        ondragenter: (...args) => this.emit('dragenter', ...args, this),\n        ondragover: (...args) => this.emit('dragover', ...args, this),\n        ondragleave: (...args) => this.emit('dragleave', ...args, this),\n        ondrop: (...args) => this.emit('drop', ...args, this)\n      });\n\n      this.on('destroy', () => d.destroy());\n    }\n  }\n\n  /**\n   * Checks the modal state of the window upon render\n   * @private\n   */\n  _checkModal() {\n    // TODO: Global modal\n    if (this.parent) {\n      if (this.attributes.modal) {\n        this.on('render', () => this.parent.setState('loading', true));\n        this.on('destroy', () => this.parent.setState('loading', false));\n      }\n\n      this.on('destroy', () => this.parent.focus());\n    }\n  }\n\n  /**\n   * Sets the initial class names\n   * @private\n   */\n  _setClassNames() {\n    const classNames = ['osjs-window', ...this.attributes.classNames];\n    if (this.id) {\n      classNames.push(`Window_${this.id}`);\n    }\n\n    classNames.filter(val => !!val)\n      .forEach((val) => this.$element.classList.add(val));\n  }\n\n  /**\n   * Render window\n   * @param {Function} [callback] Callback when window DOM has been constructed\n   * @return {Window} this instance\n   */\n  render(callback = function() {}) {\n    if (this.rendered) {\n      return this;\n    } else if (!this.inited) {\n      this.init();\n    }\n\n    this._setClassNames();\n    this._updateButtons();\n    this._updateAttributes();\n    this._updateStyles();\n    this._updateTitle();\n    this._updateIconStyles();\n    this._updateHeaderStyles();\n    this._checkModal();\n\n    if (!this._preventDefaultPosition) {\n      this.gravitate(this.attributes.gravity);\n    }\n\n    // Clamp the initial window position to viewport\n    if (this.attributes.clamp) {\n      this.clampToViewport(false);\n    }\n\n    this.setNextZindex(true);\n\n    this.core.$contents.appendChild(this.$element);\n\n    renderCallback(this, callback);\n\n    this.rendered = true;\n\n    setTimeout(() => {\n      this.emit('render', this);\n      this.core.emit('osjs/window:render', this);\n    }, 1);\n\n    return this;\n  }\n\n  /**\n   * Close the window\n   * @return {boolean}\n   */\n  close() {\n    if (this.destroyed) {\n      return false;\n    }\n\n    this.emit('close', this);\n\n    this.destroy();\n\n    return true;\n  }\n\n  /**\n   * Focus the window\n   * @return {boolean}\n   */\n  focus() {\n    if (!this.state.minimized && this._toggleState('focused', true, 'focus')) {\n      this._focus();\n\n      return true;\n    }\n\n    return false;\n  }\n\n  /**\n   * Internal for focus\n   * @private\n   */\n  _focus() {\n    if (lastWindow && lastWindow !== this) {\n      lastWindow.blur();\n    }\n\n    lastWindow = this;\n\n    this.setNextZindex();\n  }\n\n  /**\n   * Blur (un-focus) the window\n   * @return {boolean}\n   */\n  blur() {\n    // Forces blur-ing of browser input element belonging to this window\n    const activeElement = getActiveElement(this.$element);\n    if (activeElement) {\n      activeElement.blur();\n    }\n\n    return this._toggleState('focused', false, 'blur');\n  }\n\n  /**\n   * Minimize (hide) the window\n   * @return {boolean}\n   */\n  minimize() {\n    if (this.attributes.minimizable) {\n      if (this._toggleState('minimized', true, 'minimize')) {\n        this.blur();\n\n        return true;\n      }\n    }\n\n    return false;\n  }\n\n  /**\n   * Raise (un-minimize) the window\n   * @return {boolean}\n   */\n  raise() {\n    return this._toggleState('minimized', false, 'raise');\n  }\n\n  /**\n   * Maximize the window\n   * @return {boolean}\n   */\n  maximize() {\n    if (this.attributes.maximizable) {\n      return this._maximize(true);\n    }\n\n    return false;\n  }\n\n  /**\n   * Restore (un-maximize) the window\n   * @return {boolean}\n   */\n  restore() {\n    return this._maximize(false);\n  }\n\n  /**\n   * Internal for Maximize or restore\n   * @private\n   * @param {boolean} toggle Maximize or restore\n   * @return {boolean}\n   */\n  _maximize(toggle) {\n    if (this._toggleState('maximized', toggle, toggle ? 'maximize' : 'restore')) {\n      const emit = () => this.emit('resized', {\n        width: this.$element ? this.$element.offsetWidth : -1,\n        height: this.$element ? this.$element.offsetHeight : -1\n      }, this);\n\n      if (supportsTransition()) {\n        this.once('transitionend', emit);\n      } else {\n        emit();\n      }\n\n      return true;\n    }\n\n    return false;\n  }\n\n  /**\n   * Resize to fit to current container\n   * @param {Element} [container] The DOM element to use\n   */\n  resizeFit(container) {\n    container = container || this.$content.firstChild;\n\n    if (container) {\n      const rect = this.core.has('osjs/desktop')\n        ? this.core.make('osjs/desktop').getRect()\n        : null;\n\n      const {width, height} = dimensionFromElement(this, rect, container);\n      if (!isNaN(width) && !isNaN(height)) {\n        this.setDimension({width, height});\n      }\n    }\n  }\n\n  /**\n   * Clamps the position to viewport\n   * @param {boolean} [update=true] Update DOM\n   */\n  clampToViewport(update = true) {\n    if (!this.core.has('osjs/desktop')) {\n      return;\n    }\n\n    const rect = this.core.make('osjs/desktop').getRect();\n\n    this.state.position = {\n      ...this.state.position,\n      ...clampPosition(rect, this.state)\n    };\n\n    if (update) {\n      this._updateStyles();\n    }\n  }\n\n  /**\n   * Set the Window icon\n   * @param {string} uri Icon URI\n   */\n  setIcon(uri) {\n    this.state.icon = uri;\n\n    this._updateIconStyles();\n  }\n\n  /**\n   * Set the Window title\n   * @param {string} title Title\n   */\n  setTitle(title) {\n    this.state.title = title || '';\n\n    this._updateTitle();\n\n    this.core.emit('osjs/window:change', this, 'title', title);\n  }\n\n  /**\n   * Set the Window dimension\n   * @param {WindowDimension} dimension The dimension\n   */\n  setDimension(dimension) {\n    const {width, height} = {...this.state.dimension, ...dimension || {}};\n\n    this.state.dimension.width = width;\n    this.state.dimension.height = height;\n\n    this._updateStyles();\n  }\n\n  /**\n   * Set the Window position\n   * @param {WindowPosition} position The position\n   * @param {boolean} [preventDefault=false] Prevents any future position setting in init procedure\n   */\n  setPosition(position, preventDefault = false) {\n    const {left, top} = {...this.state.position, ...position || {}};\n\n    this.state.position.top = top;\n    this.state.position.left = left;\n\n    if (preventDefault) {\n      this._preventDefaultPosition = true;\n    }\n\n    this._updateStyles();\n  }\n\n  /**\n   * Set the Window z index\n   * @param {Number} zIndex the index\n   */\n  setZindex(zIndex) {\n    this.state.zIndex = zIndex;\n    logger.debug('Window::setZindex()', zIndex);\n\n    this._updateStyles();\n  }\n\n  /**\n   * Sets the Window to next z index\n   * @param {boolean} [force] Force next index\n   */\n  setNextZindex(force) {\n    const setNext = force || this._checkNextZindex();\n\n    if (setNext) {\n      this.setZindex(nextZindex);\n      nextZindex++;\n    }\n  }\n\n  /**\n   * Set a state by value\n   * @param {string} name State name\n   * @param {*} value State value\n   * @param {boolean} [update=true] Update the DOM\n   * @see {WindowState}\n   */\n  setState(name, value, update = true) {\n    const set = () => this._setState(name, value, update);\n\n    // Allows for some \"grace time\" so the overlay does not\n    // \"blink\"\n    if (name === 'loading' && update) {\n      clearTimeout(this._loadingDebounce);\n\n      if (value === true) {\n        this._loadingDebounce = setTimeout(() => set(), 250);\n        return;\n      }\n    }\n\n    set();\n  }\n\n  /**\n   * Gravitates window towards a certain area\n   * @param {string} gravity Gravity\n   */\n  gravitate(gravity) {\n    if (!this.core.has('osjs/desktop')) {\n      return;\n    }\n\n    const rect = this.core.make('osjs/desktop').getRect();\n    const position = positionFromGravity(this, rect, gravity);\n\n    this.setPosition(position);\n  }\n\n  /**\n   * Gets a astate\n   * @return {*}\n   */\n  getState(n) {\n    const value = this.state[n];\n\n    return ['position', 'dimension', 'styles'].indexOf(n) !== -1\n      ? {...value}\n      : value;\n  }\n\n  /**\n   * Get a snapshot of the Window session\n   * @return {WindowSession}\n   */\n  getSession() {\n    return this.attributes.sessionable === false ? null : {\n      id: this.id,\n      maximized: this.state.maximized,\n      minimized: this.state.minimized,\n      position: {...this.state.position},\n      dimension: {...this.state.dimension}\n    };\n  }\n\n  /**\n   * Get a list of all windows\n   *\n   * @return {Window[]}\n   */\n  static getWindows() {\n    return windows;\n  }\n\n  /**\n   * Gets the lastly focused Window\n   * @return {Window}\n   */\n  static lastWindow() {\n    return lastWindow;\n  }\n\n  /**\n   * Internal method for setting state\n   * @private\n   * @param {string} name State name\n   * @param {*} value State value\n   * @param {boolean} [update=true] Update the DOM\n   * @param {boolean} [updateAll=true] Update the entire DOM\n   */\n  _setState(name, value, update = true) {\n    const oldValue = this.state[name];\n    this.state[name] = value;\n\n    if (update) {\n      if (oldValue !== value) {\n        logger.debug('Window::_setState()', name, value);\n      }\n\n      this._updateAttributes();\n      this._updateStyles();\n    }\n  }\n\n  /**\n   * Internal method for toggling state\n   * @private\n   * @param {string} name State name\n   * @param {any} value State value\n   * @param {string} eventName Name of event to emit\n   * @param {boolean} [update=true] Update the DOM\n   */\n  _toggleState(name, value, eventName, update = true) {\n    if (this.state[name] === value) {\n      return false;\n    }\n\n    logger.debug('Window::_toggleState()', name, value, eventName, update);\n\n    this.state[name] = value;\n    this.emit(eventName, this);\n    this.core.emit('osjs/window:change', this, name, value);\n\n    if (update) {\n      this._updateAttributes();\n    }\n\n    return true;\n  }\n\n  /**\n   * Check if we have to set next zindex\n   * @private\n   * @return {boolean}\n   */\n  _checkNextZindex() {\n    const {ontop} = this.attributes;\n    const {zIndex} = this.state;\n\n    const windexes = windows\n      .filter(w => w.attributes.ontop === ontop)\n      .filter(w => w.wid !== this.wid)\n      .map(w => w.state.zIndex);\n\n    const max = windexes.length > 0\n      ? Math.max.apply(null, windexes)\n      : 0;\n\n    return zIndex < max;\n  }\n\n  /*\n   * Updates window styles and attributes\n   * FIXME: Backward compability with themes\n   * @deprecated\n   */\n  _updateDOM() {\n    this._updateAttributes();\n    this._updateStyles();\n  }\n\n  /**\n   * Updates the window buttons in DOM\n   * @private\n   */\n  _updateButtons() {\n    const hideButton = action =>\n      this.$header.querySelector(`.osjs-window-button[data-action=${action}]`)\n        .style.display = 'none';\n\n    const buttonmap = {\n      maximizable: 'maximize',\n      minimizable: 'minimize',\n      closeable: 'close'\n    };\n\n    if (this.attributes.controls) {\n      Object.keys(buttonmap)\n        .forEach(key => {\n          if (!this.attributes[key]) {\n            hideButton(buttonmap[key]);\n          }\n        });\n    } else {\n      Array.from(this.$header.querySelectorAll('.osjs-window-button'))\n        .forEach(el => el.style.display = 'none');\n    }\n  }\n\n  /**\n   * Updates window title in DOM\n   * @private\n   */\n  _updateTitle() {\n    if (this.$title) {\n      const escapedTitle = escapeHtml(this.state.title);\n      if (this.$title.innerHTML !== escapedTitle) {\n        this.$title.innerHTML = escapedTitle;\n      }\n    }\n  }\n\n  /**\n   * Updates window icon decoration in DOM\n   * @private\n   */\n  _updateIconStyles() {\n    if (this.$icon) {\n      const iconSource = `url(${this.state.icon})`;\n      if (this.$icon.style.backgroundImage !== iconSource) {\n        this.$icon.style.backgroundImage = iconSource;\n      }\n    }\n  }\n\n  /**\n   * Updates window header decoration in DOM\n   * @private\n   */\n  _updateHeaderStyles() {\n    if (this.$header) {\n      const headerDisplay = this.attributes.header ? undefined : 'none';\n      if (this.$header.style.display !== headerDisplay) {\n        this.$header.style.display = headerDisplay;\n      }\n    }\n  }\n\n  /**\n   * Updates window data in DOM\n   * @private\n   */\n  _updateAttributes() {\n    if (this.$element) {\n      const attrs = createDOMAttributes(this.id, this.state, this.attributes);\n      const applyAttrs = Object.keys(attrs).filter(k => attrs[k] !== this._lastAttributes[k]);\n\n      if (applyAttrs.length > 0) {\n        applyAttrs.forEach(a => this.$element.setAttribute(`data-${a}`, String(attrs[a])));\n        this._lastAttributes = attrs;\n      }\n    }\n  }\n\n  /**\n   * Updates window style in DOM\n   * @private\n   */\n  _updateStyles() {\n    if (this.$element) {\n      const cssText = createCssText(createDOMStyles(this.state, this.attributes));\n      if (cssText !== this._lastCssText) {\n        this.$element.style.cssText = cssText;\n        this._lastCssText = cssText;\n      }\n    }\n  }\n}\n",
@@ -19772,7 +19856,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 776,
+    "__docId__": 778,
     "kind": "typedef",
     "name": "WindowDimension",
     "memberof": "src/window.js",
@@ -19811,7 +19895,7 @@
     }
   },
   {
-    "__docId__": 777,
+    "__docId__": 779,
     "kind": "typedef",
     "name": "WindowPosition",
     "memberof": "src/window.js",
@@ -19850,7 +19934,7 @@
     }
   },
   {
-    "__docId__": 778,
+    "__docId__": 780,
     "kind": "typedef",
     "name": "WindowSession",
     "memberof": "src/window.js",
@@ -19919,7 +20003,7 @@
     }
   },
   {
-    "__docId__": 779,
+    "__docId__": 781,
     "kind": "typedef",
     "name": "WindowAttributes",
     "memberof": "src/window.js",
@@ -20134,7 +20218,7 @@
     }
   },
   {
-    "__docId__": 780,
+    "__docId__": 782,
     "kind": "typedef",
     "name": "WindowState",
     "memberof": "src/window.js",
@@ -20289,7 +20373,7 @@
     }
   },
   {
-    "__docId__": 781,
+    "__docId__": 783,
     "kind": "typedef",
     "name": "WindowOptions",
     "memberof": "src/window.js",
@@ -20411,7 +20495,7 @@
     }
   },
   {
-    "__docId__": 782,
+    "__docId__": 784,
     "kind": "variable",
     "name": "windowCount",
     "memberof": "src/window.js",
@@ -20432,7 +20516,7 @@
     "ignore": true
   },
   {
-    "__docId__": 783,
+    "__docId__": 785,
     "kind": "variable",
     "name": "nextZindex",
     "memberof": "src/window.js",
@@ -20453,7 +20537,7 @@
     "ignore": true
   },
   {
-    "__docId__": 784,
+    "__docId__": 786,
     "kind": "variable",
     "name": "lastWindow",
     "memberof": "src/window.js",
@@ -20474,7 +20558,7 @@
     "ignore": true
   },
   {
-    "__docId__": 785,
+    "__docId__": 787,
     "kind": "variable",
     "name": "TEMPLATE",
     "memberof": "src/window.js",
@@ -20495,7 +20579,7 @@
     "ignore": true
   },
   {
-    "__docId__": 786,
+    "__docId__": 788,
     "kind": "class",
     "name": "Window",
     "memberof": "src/window.js",
@@ -20513,7 +20597,7 @@
     ]
   },
   {
-    "__docId__": 787,
+    "__docId__": 789,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/window.js~Window",
@@ -20550,7 +20634,7 @@
     ]
   },
   {
-    "__docId__": 788,
+    "__docId__": 790,
     "kind": "member",
     "name": "id",
     "memberof": "src/window.js~Window",
@@ -20575,7 +20659,7 @@
     }
   },
   {
-    "__docId__": 789,
+    "__docId__": 791,
     "kind": "member",
     "name": "wid",
     "memberof": "src/window.js~Window",
@@ -20600,7 +20684,7 @@
     }
   },
   {
-    "__docId__": 790,
+    "__docId__": 792,
     "kind": "member",
     "name": "parent",
     "memberof": "src/window.js~Window",
@@ -20625,7 +20709,7 @@
     }
   },
   {
-    "__docId__": 791,
+    "__docId__": 793,
     "kind": "member",
     "name": "children",
     "memberof": "src/window.js~Window",
@@ -20644,7 +20728,7 @@
     }
   },
   {
-    "__docId__": 792,
+    "__docId__": 794,
     "kind": "member",
     "name": "core",
     "memberof": "src/window.js~Window",
@@ -20669,7 +20753,7 @@
     }
   },
   {
-    "__docId__": 793,
+    "__docId__": 795,
     "kind": "member",
     "name": "destroyed",
     "memberof": "src/window.js~Window",
@@ -20688,7 +20772,7 @@
     }
   },
   {
-    "__docId__": 794,
+    "__docId__": 796,
     "kind": "member",
     "name": "rendered",
     "memberof": "src/window.js~Window",
@@ -20707,7 +20791,7 @@
     }
   },
   {
-    "__docId__": 795,
+    "__docId__": 797,
     "kind": "member",
     "name": "inited",
     "memberof": "src/window.js~Window",
@@ -20726,7 +20810,7 @@
     }
   },
   {
-    "__docId__": 796,
+    "__docId__": 798,
     "kind": "member",
     "name": "attributes",
     "memberof": "src/window.js~Window",
@@ -20745,7 +20829,7 @@
     }
   },
   {
-    "__docId__": 797,
+    "__docId__": 799,
     "kind": "member",
     "name": "state",
     "memberof": "src/window.js~Window",
@@ -20764,7 +20848,7 @@
     }
   },
   {
-    "__docId__": 798,
+    "__docId__": 800,
     "kind": "member",
     "name": "$element",
     "memberof": "src/window.js~Window",
@@ -20789,7 +20873,7 @@
     }
   },
   {
-    "__docId__": 799,
+    "__docId__": 801,
     "kind": "member",
     "name": "$content",
     "memberof": "src/window.js~Window",
@@ -20808,7 +20892,7 @@
     }
   },
   {
-    "__docId__": 800,
+    "__docId__": 802,
     "kind": "member",
     "name": "$header",
     "memberof": "src/window.js~Window",
@@ -20827,7 +20911,7 @@
     }
   },
   {
-    "__docId__": 801,
+    "__docId__": 803,
     "kind": "member",
     "name": "$icon",
     "memberof": "src/window.js~Window",
@@ -20846,7 +20930,7 @@
     }
   },
   {
-    "__docId__": 802,
+    "__docId__": 804,
     "kind": "member",
     "name": "$title",
     "memberof": "src/window.js~Window",
@@ -20865,7 +20949,7 @@
     }
   },
   {
-    "__docId__": 803,
+    "__docId__": 805,
     "kind": "member",
     "name": "_preventDefaultPosition",
     "memberof": "src/window.js~Window",
@@ -20884,7 +20968,7 @@
     }
   },
   {
-    "__docId__": 804,
+    "__docId__": 806,
     "kind": "member",
     "name": "_loadingDebounce",
     "memberof": "src/window.js~Window",
@@ -20903,7 +20987,7 @@
     }
   },
   {
-    "__docId__": 805,
+    "__docId__": 807,
     "kind": "member",
     "name": "_template",
     "memberof": "src/window.js~Window",
@@ -20923,7 +21007,7 @@
     }
   },
   {
-    "__docId__": 806,
+    "__docId__": 808,
     "kind": "member",
     "name": "_ondestroy",
     "memberof": "src/window.js~Window",
@@ -20948,7 +21032,7 @@
     }
   },
   {
-    "__docId__": 807,
+    "__docId__": 809,
     "kind": "member",
     "name": "_lastCssText",
     "memberof": "src/window.js~Window",
@@ -20967,7 +21051,7 @@
     }
   },
   {
-    "__docId__": 808,
+    "__docId__": 810,
     "kind": "member",
     "name": "_lastAttributes",
     "memberof": "src/window.js~Window",
@@ -20986,7 +21070,7 @@
     }
   },
   {
-    "__docId__": 809,
+    "__docId__": 811,
     "kind": "method",
     "name": "destroy",
     "memberof": "src/window.js~Window",
@@ -21001,7 +21085,7 @@
     "return": null
   },
   {
-    "__docId__": 818,
+    "__docId__": 820,
     "kind": "method",
     "name": "init",
     "memberof": "src/window.js~Window",
@@ -21020,7 +21104,7 @@
     }
   },
   {
-    "__docId__": 820,
+    "__docId__": 822,
     "kind": "method",
     "name": "_initTemplate",
     "memberof": "src/window.js~Window",
@@ -21035,7 +21119,7 @@
     "return": null
   },
   {
-    "__docId__": 825,
+    "__docId__": 827,
     "kind": "method",
     "name": "_initBehavior",
     "memberof": "src/window.js~Window",
@@ -21050,7 +21134,7 @@
     "return": null
   },
   {
-    "__docId__": 826,
+    "__docId__": 828,
     "kind": "method",
     "name": "_checkModal",
     "memberof": "src/window.js~Window",
@@ -21065,7 +21149,7 @@
     "return": null
   },
   {
-    "__docId__": 827,
+    "__docId__": 829,
     "kind": "method",
     "name": "_setClassNames",
     "memberof": "src/window.js~Window",
@@ -21080,7 +21164,7 @@
     "return": null
   },
   {
-    "__docId__": 828,
+    "__docId__": 830,
     "kind": "method",
     "name": "render",
     "memberof": "src/window.js~Window",
@@ -21113,7 +21197,7 @@
     }
   },
   {
-    "__docId__": 830,
+    "__docId__": 832,
     "kind": "method",
     "name": "close",
     "memberof": "src/window.js~Window",
@@ -21135,7 +21219,7 @@
     "params": []
   },
   {
-    "__docId__": 831,
+    "__docId__": 833,
     "kind": "method",
     "name": "focus",
     "memberof": "src/window.js~Window",
@@ -21157,7 +21241,7 @@
     "params": []
   },
   {
-    "__docId__": 832,
+    "__docId__": 834,
     "kind": "method",
     "name": "_focus",
     "memberof": "src/window.js~Window",
@@ -21172,7 +21256,7 @@
     "return": null
   },
   {
-    "__docId__": 833,
+    "__docId__": 835,
     "kind": "method",
     "name": "blur",
     "memberof": "src/window.js~Window",
@@ -21194,7 +21278,7 @@
     "params": []
   },
   {
-    "__docId__": 834,
+    "__docId__": 836,
     "kind": "method",
     "name": "minimize",
     "memberof": "src/window.js~Window",
@@ -21216,7 +21300,7 @@
     "params": []
   },
   {
-    "__docId__": 835,
+    "__docId__": 837,
     "kind": "method",
     "name": "raise",
     "memberof": "src/window.js~Window",
@@ -21238,7 +21322,7 @@
     "params": []
   },
   {
-    "__docId__": 836,
+    "__docId__": 838,
     "kind": "method",
     "name": "maximize",
     "memberof": "src/window.js~Window",
@@ -21260,7 +21344,7 @@
     "params": []
   },
   {
-    "__docId__": 837,
+    "__docId__": 839,
     "kind": "method",
     "name": "restore",
     "memberof": "src/window.js~Window",
@@ -21282,7 +21366,7 @@
     "params": []
   },
   {
-    "__docId__": 838,
+    "__docId__": 840,
     "kind": "method",
     "name": "_maximize",
     "memberof": "src/window.js~Window",
@@ -21315,7 +21399,7 @@
     }
   },
   {
-    "__docId__": 839,
+    "__docId__": 841,
     "kind": "method",
     "name": "resizeFit",
     "memberof": "src/window.js~Window",
@@ -21341,7 +21425,7 @@
     "return": null
   },
   {
-    "__docId__": 840,
+    "__docId__": 842,
     "kind": "method",
     "name": "clampToViewport",
     "memberof": "src/window.js~Window",
@@ -21369,7 +21453,7 @@
     "return": null
   },
   {
-    "__docId__": 841,
+    "__docId__": 843,
     "kind": "method",
     "name": "setIcon",
     "memberof": "src/window.js~Window",
@@ -21395,7 +21479,7 @@
     "return": null
   },
   {
-    "__docId__": 842,
+    "__docId__": 844,
     "kind": "method",
     "name": "setTitle",
     "memberof": "src/window.js~Window",
@@ -21421,7 +21505,7 @@
     "return": null
   },
   {
-    "__docId__": 843,
+    "__docId__": 845,
     "kind": "method",
     "name": "setDimension",
     "memberof": "src/window.js~Window",
@@ -21447,7 +21531,7 @@
     "return": null
   },
   {
-    "__docId__": 844,
+    "__docId__": 846,
     "kind": "method",
     "name": "setPosition",
     "memberof": "src/window.js~Window",
@@ -21485,7 +21569,7 @@
     "return": null
   },
   {
-    "__docId__": 846,
+    "__docId__": 848,
     "kind": "method",
     "name": "setZindex",
     "memberof": "src/window.js~Window",
@@ -21511,7 +21595,7 @@
     "return": null
   },
   {
-    "__docId__": 847,
+    "__docId__": 849,
     "kind": "method",
     "name": "setNextZindex",
     "memberof": "src/window.js~Window",
@@ -21537,7 +21621,7 @@
     "return": null
   },
   {
-    "__docId__": 848,
+    "__docId__": 850,
     "kind": "method",
     "name": "setState",
     "memberof": "src/window.js~Window",
@@ -21588,7 +21672,7 @@
     "return": null
   },
   {
-    "__docId__": 850,
+    "__docId__": 852,
     "kind": "method",
     "name": "gravitate",
     "memberof": "src/window.js~Window",
@@ -21614,7 +21698,7 @@
     "return": null
   },
   {
-    "__docId__": 851,
+    "__docId__": 853,
     "kind": "method",
     "name": "getState",
     "memberof": "src/window.js~Window",
@@ -21643,7 +21727,7 @@
     ]
   },
   {
-    "__docId__": 852,
+    "__docId__": 854,
     "kind": "method",
     "name": "getSession",
     "memberof": "src/window.js~Window",
@@ -21665,7 +21749,7 @@
     "params": []
   },
   {
-    "__docId__": 853,
+    "__docId__": 855,
     "kind": "method",
     "name": "getWindows",
     "memberof": "src/window.js~Window",
@@ -21687,7 +21771,7 @@
     "params": []
   },
   {
-    "__docId__": 854,
+    "__docId__": 856,
     "kind": "method",
     "name": "lastWindow",
     "memberof": "src/window.js~Window",
@@ -21709,7 +21793,7 @@
     "params": []
   },
   {
-    "__docId__": 855,
+    "__docId__": 857,
     "kind": "method",
     "name": "_setState",
     "memberof": "src/window.js~Window",
@@ -21769,7 +21853,7 @@
     "return": null
   },
   {
-    "__docId__": 856,
+    "__docId__": 858,
     "kind": "method",
     "name": "_toggleState",
     "memberof": "src/window.js~Window",
@@ -21831,7 +21915,7 @@
     }
   },
   {
-    "__docId__": 857,
+    "__docId__": 859,
     "kind": "method",
     "name": "_checkNextZindex",
     "memberof": "src/window.js~Window",
@@ -21853,7 +21937,7 @@
     "params": []
   },
   {
-    "__docId__": 858,
+    "__docId__": 860,
     "kind": "method",
     "name": "_updateDOM",
     "memberof": "src/window.js~Window",
@@ -21870,7 +21954,7 @@
     "ignore": true
   },
   {
-    "__docId__": 859,
+    "__docId__": 861,
     "kind": "method",
     "name": "_updateButtons",
     "memberof": "src/window.js~Window",
@@ -21885,7 +21969,7 @@
     "return": null
   },
   {
-    "__docId__": 860,
+    "__docId__": 862,
     "kind": "method",
     "name": "_updateTitle",
     "memberof": "src/window.js~Window",
@@ -21900,7 +21984,7 @@
     "return": null
   },
   {
-    "__docId__": 861,
+    "__docId__": 863,
     "kind": "method",
     "name": "_updateIconStyles",
     "memberof": "src/window.js~Window",
@@ -21915,7 +21999,7 @@
     "return": null
   },
   {
-    "__docId__": 862,
+    "__docId__": 864,
     "kind": "method",
     "name": "_updateHeaderStyles",
     "memberof": "src/window.js~Window",
@@ -21930,7 +22014,7 @@
     "return": null
   },
   {
-    "__docId__": 863,
+    "__docId__": 865,
     "kind": "method",
     "name": "_updateAttributes",
     "memberof": "src/window.js~Window",
@@ -21945,7 +22029,7 @@
     "return": null
   },
   {
-    "__docId__": 865,
+    "__docId__": 867,
     "kind": "method",
     "name": "_updateStyles",
     "memberof": "src/window.js~Window",
@@ -21969,7 +22053,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@osjs/client\",\n  \"version\": \"3.7.3\",\n  \"description\": \"OS.js client\",\n  \"main\": \"dist/main.js\",\n  \"style\": \"dist/main.css\",\n  \"typings\": \"index.d.ts\",\n  \"files\": [\n    \"index.d.ts\",\n    \"dist/main.js\",\n    \"dist/main.js.map\",\n    \"dist/main.css\",\n    \"dist/main.css.map\",\n    \"dist/*.png\",\n    \"CHANGELOG.md\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"scripts\": {\n    \"test\": \"npm run eslint && npm run stylelint && npm run jest\",\n    \"jest\": \"jest\",\n    \"coverage\": \"jest --coverage\",\n    \"eslint\": \"eslint index.js 'src/**/*.js'\",\n    \"build\": \"webpack\",\n    \"watch\": \"webpack --watch\",\n    \"stylelint\": \"stylelint index.scss src/**/*.scss\",\n    \"prepublishOnly\": \"npm run test && rm ./dist/* && NODE_ENV=production npm run build\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/os-js/osjs-client.git\"\n  },\n  \"keywords\": [\n    \"osjs\"\n  ],\n  \"dependencies\": {\n    \"@osjs/common\": \"^3.0.12\",\n    \"@osjs/event-emitter\": \"^1.0.10\",\n    \"css-mediaquery\": \"^0.1.2\",\n    \"dateformat\": \"^3.0.3\",\n    \"deepmerge\": \"^4.2.2\",\n    \"hyperapp\": \"^1.2.10\",\n    \"js-cookie\": \"^2.2.1\",\n    \"simplejsonconf\": \"^2.0.7\"\n  },\n  \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\",\n  \"license\": \"BSD-2-Clause\",\n  \"bugs\": {\n    \"url\": \"https://github.com/os-js/osjs-client/issues\"\n  },\n  \"homepage\": \"https://github.com/os-js/osjs-client#readme\",\n  \"devDependencies\": {\n    \"@osjs/dev-meta\": \"^2.1.0\"\n  },\n  \"eslintConfig\": {\n    \"env\": {\n      \"browser\": true,\n      \"node\": true\n    },\n    \"parserOptions\": {\n      \"sourceType\": \"module\"\n    },\n    \"extends\": \"@osjs/eslint-config\"\n  },\n  \"stylelint\": {\n    \"extends\": \"@osjs/stylelint-config\"\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"plugins\": [\n      \"@babel/plugin-transform-runtime\"\n    ]\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./doc\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\",\n        \"option\": {\n          \"brand\": {\n            \"title\": \"OS.js Core API\",\n            \"description\": \"OS.js Core API Documentation\",\n            \"repository\": \"https://github.com/os-js/osjs-core\",\n            \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\"\n          },\n          \"lint\": {\n            \"enable\": false\n          },\n          \"coverage\": {\n            \"enable\": false\n          },\n          \"undocumentIdentifier\": {\n            \"enable\": false\n          }\n        }\n      },\n      {\n        \"name\": \"esdoc-publish-html-plugin\"\n      },\n      {\n        \"name\": \"esdoc-ecmascript-proposal-plugin\",\n        \"option\": {\n          \"all\": true\n        }\n      }\n    ]\n  },\n  \"jest\": {\n    \"collectCoverage\": true,\n    \"testEnvironment\": \"jsdom\",\n    \"coverageReporters\": [\n      \"lcov\"\n    ],\n    \"setupFilesAfterEnv\": [\n      \"<rootDir>/__mocks__/setup.js\"\n    ],\n    \"moduleNameMapper\": {\n      \"^osjs$\": \"<rootDir>/__mocks__/core.js\",\n      \"^.+\\\\.scss$\": \"<rootDir>/__mocks__/null-module.js\",\n      \"^.+\\\\.(png|jpe?g|gif)$\": \"<rootDir>/__mocks__/null-module.js\"\n    },\n    \"coveragePathIgnorePatterns\": [\n      \"src/config.js\",\n      \"src/providers\",\n      \"/node_modules/\",\n      \"/locale/\"\n    ]\n  }\n}\n",
+    "content": "{\n  \"name\": \"@osjs/client\",\n  \"version\": \"3.8.1\",\n  \"description\": \"OS.js client\",\n  \"main\": \"dist/main.js\",\n  \"style\": \"dist/main.css\",\n  \"typings\": \"index.d.ts\",\n  \"files\": [\n    \"index.d.ts\",\n    \"dist/main.js\",\n    \"dist/main.js.map\",\n    \"dist/main.css\",\n    \"dist/main.css.map\",\n    \"dist/*.png\",\n    \"CHANGELOG.md\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"scripts\": {\n    \"test\": \"npm run eslint && npm run stylelint && npm run jest\",\n    \"jest\": \"jest\",\n    \"coverage\": \"jest --coverage\",\n    \"eslint\": \"eslint index.js 'src/**/*.js'\",\n    \"build\": \"webpack\",\n    \"watch\": \"webpack --watch\",\n    \"stylelint\": \"stylelint index.scss src/**/*.scss\",\n    \"prepublishOnly\": \"npm run test && rm ./dist/* && NODE_ENV=production npm run build\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/os-js/osjs-client.git\"\n  },\n  \"keywords\": [\n    \"osjs\"\n  ],\n  \"dependencies\": {\n    \"@osjs/common\": \"^3.0.12\",\n    \"@osjs/event-emitter\": \"^1.0.10\",\n    \"css-mediaquery\": \"^0.1.2\",\n    \"dateformat\": \"^3.0.3\",\n    \"deepmerge\": \"^4.2.2\",\n    \"hyperapp\": \"^1.2.10\",\n    \"js-cookie\": \"^2.2.1\",\n    \"simplejsonconf\": \"^2.0.7\"\n  },\n  \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\",\n  \"license\": \"BSD-2-Clause\",\n  \"bugs\": {\n    \"url\": \"https://github.com/os-js/osjs-client/issues\"\n  },\n  \"homepage\": \"https://github.com/os-js/osjs-client#readme\",\n  \"devDependencies\": {\n    \"@osjs/dev-meta\": \"^2.2.0\"\n  },\n  \"eslintConfig\": {\n    \"env\": {\n      \"browser\": true,\n      \"node\": true\n    },\n    \"parserOptions\": {\n      \"sourceType\": \"module\"\n    },\n    \"extends\": \"@osjs/eslint-config\"\n  },\n  \"stylelint\": {\n    \"extends\": \"@osjs/stylelint-config\"\n  },\n  \"babel\": {\n    \"presets\": [\n      \"@babel/preset-env\"\n    ],\n    \"plugins\": [\n      \"@babel/plugin-transform-runtime\"\n    ]\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./doc\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\",\n        \"option\": {\n          \"brand\": {\n            \"title\": \"OS.js Core API\",\n            \"description\": \"OS.js Core API Documentation\",\n            \"repository\": \"https://github.com/os-js/osjs-core\",\n            \"author\": \"Anders Evenrud <andersevenrud@gmail.com>\"\n          },\n          \"lint\": {\n            \"enable\": false\n          },\n          \"coverage\": {\n            \"enable\": false\n          },\n          \"undocumentIdentifier\": {\n            \"enable\": false\n          }\n        }\n      },\n      {\n        \"name\": \"esdoc-publish-html-plugin\"\n      },\n      {\n        \"name\": \"esdoc-ecmascript-proposal-plugin\",\n        \"option\": {\n          \"all\": true\n        }\n      }\n    ]\n  },\n  \"jest\": {\n    \"collectCoverage\": true,\n    \"testEnvironment\": \"jsdom\",\n    \"coverageReporters\": [\n      \"lcov\"\n    ],\n    \"setupFilesAfterEnv\": [\n      \"<rootDir>/__mocks__/setup.js\"\n    ],\n    \"moduleNameMapper\": {\n      \"^osjs$\": \"<rootDir>/__mocks__/core.js\",\n      \"^.+\\\\.scss$\": \"<rootDir>/__mocks__/null-module.js\",\n      \"^.+\\\\.(png|jpe?g|gif)$\": \"<rootDir>/__mocks__/null-module.js\"\n    },\n    \"coveragePathIgnorePatterns\": [\n      \"src/config.js\",\n      \"src/providers\",\n      \"/node_modules/\",\n      \"/locale/\"\n    ]\n  }\n}\n",
     "longname": "/home/runner/work/manual.os-js.org/manual.os-js.org/repos/osjs-client/package.json",
     "name": "package.json",
     "static": true,
