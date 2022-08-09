@@ -31,10 +31,6 @@ You can now serve `_book/`.
 * **Support on [Open Collective](https://opencollective.com/osjs)**
 * [Contribution Guide](https://github.com/os-js/OS.js/blob/master/CONTRIBUTING.md)
 
-## Documentation
-
-See the [Official Manuals](https://manual.os-js.org/v3/) for articles, tutorials and guides.
-
 ## Links
 
 * [Official Chat](https://gitter.im/os-js/OS.js)
