@@ -36,7 +36,7 @@ const entry = core.make('osjs/tray', {
 });
 
 // Takes the same arguments as creation
-tray.update({
+entry.update({
   title: 'My Tray Icon, but updated'
 });
 ```
