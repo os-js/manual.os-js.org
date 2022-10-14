@@ -118,6 +118,8 @@ export default class MyWidget extends Widget {
 
 ### Registration
 
+To bootstrap with pre-defined widgets:
+
 ```javascript
 import {WidgetServiceProvider} from '@osjs/widgets';
 import MyWidget from 'path/to/MyWidget';
@@ -129,4 +131,11 @@ osjs.register(WidgetServiceProvider, {
     }
   }
 });
+```
+
+Or alternatively on runtime:
+
+```javascript
+import MyWidget from 'path/to/MyWidget';
+core.make('osjs/widgets').register('my-widget', MyWidget);
 ```
