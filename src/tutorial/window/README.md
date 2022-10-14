@@ -46,8 +46,8 @@ the official reactive GUI component library.
 * `id` A unique identifier
 * `title` The title
 * `parent` Parent window instance
-* `position` An object with `top/left` for position or a string like `center` / `topleft`
-* `dimension` An object with `width/height` for dimension
+* `position: {top?: number, left?: nubmer} | string` Position object or a string (ex: `center`, `topleft`, `bottomright`, etc)
+* `dimension: {width?: number, height?: number}` Dimension object
 * `attributes` A set of attributes
 * `state` Default state
 
@@ -61,7 +61,7 @@ proc.createWindow({
 
 ## Attributes
 
-* `gravity: string` - Where to place the window (ex: `center`)
+* `gravity: string` - Where to place the window (ex: `center`, `topleft`, `bottomright`, etc)
 * `modal: boolean` - If a parent is provided it will be disabled until this window  closes
 * `ontop: boolean` - Place on-top of all other windows
 * `resizable: boolean` - Set if window can be resized
@@ -73,9 +73,9 @@ proc.createWindow({
 * `closeable: boolean` - Set if window can be closed
 * `header: boolean` - Header visibility
 * `controls: boolean` - Header controls visibility (min/max/close buttons)
-* `position: object` - Default position object with `top/left`
-* `minDimension: object` - Minimum dimension object with `width/height`
-* `maxDimension: object` - Maximum dimension object with `width/height`
+* `position: {top: number, left: number}` - Default position
+* `minDimension: {width: number, height: number}` - Minimum dimension
+* `maxDimension: {width: number, height: number}` - Maximum dimension
 * `visibility: string` - Set to `restricted` to hide from the panels, etc.
 * `clamp: boolean` - Clamps window position to the viewport if it overflows (default)
 
@@ -136,8 +136,8 @@ win.gravitate(string); // Gravitate toward direction
 win.resizeFit(node); // Resize to fit given DOM container
 win.setIcon(string); // Sets icon
 win.setTitle(string); // Sets title
-win.setPosition({top, left}); // Sets position
-win.setDimension({width, height}); // Sets dimension
+win.setPosition({top?, left?}); // Sets position
+win.setDimension({width?, height?}); // Sets dimension
 win.setZindex(number); // Sets z-index
 win.setNextZindex(); // Sets next z-index (move to top)
 ```
