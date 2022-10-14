@@ -2131,8 +2131,8 @@ the official reactive GUI component library.</p>
 <li><code>id</code> A unique identifier</li>
 <li><code>title</code> The title</li>
 <li><code>parent</code> Parent window instance</li>
-<li><code>position</code> An object with <code>top/left</code> for position or a string like <code>center</code> / <code>topleft</code></li>
-<li><code>dimension</code> An object with <code>width/height</code> for dimension</li>
+<li><code>position: {top?: number, left?: nubmer} | string</code> Position object or a string (ex: <code>center</code>, <code>topleft</code>, <code>bottomright</code>, etc)</li>
+<li><code>dimension: {width?: number, height?: number}</code> Dimension object</li>
 <li><code>attributes</code> A set of attributes</li>
 <li><code>state</code> Default state</li>
 </ul>
@@ -2143,7 +2143,7 @@ the official reactive GUI component library.</p>
 </code></pre>
 <h2 id="attributes">Attributes</h2>
 <ul>
-<li><code>gravity: string</code> - Where to place the window (ex: <code>center</code>)</li>
+<li><code>gravity: string</code> - Where to place the window (ex: <code>center</code>, <code>topleft</code>, <code>bottomright</code>, etc)</li>
 <li><code>modal: boolean</code> - If a parent is provided it will be disabled until this window  closes</li>
 <li><code>ontop: boolean</code> - Place on-top of all other windows</li>
 <li><code>resizable: boolean</code> - Set if window can be resized</li>
@@ -2155,9 +2155,9 @@ the official reactive GUI component library.</p>
 <li><code>closeable: boolean</code> - Set if window can be closed</li>
 <li><code>header: boolean</code> - Header visibility</li>
 <li><code>controls: boolean</code> - Header controls visibility (min/max/close buttons)</li>
-<li><code>position: object</code> - Default position object with <code>top/left</code></li>
-<li><code>minDimension: object</code> - Minimum dimension object with <code>width/height</code></li>
-<li><code>maxDimension: object</code> - Maximum dimension object with <code>width/height</code></li>
+<li><code>position: {top: number, left: number}</code> - Default position</li>
+<li><code>minDimension: {width: number, height: number}</code> - Minimum dimension</li>
+<li><code>maxDimension: {width: number, height: number}</code> - Maximum dimension</li>
 <li><code>visibility: string</code> - Set to <code>restricted</code> to hide from the panels, etc.</li>
 <li><code>clamp: boolean</code> - Clamps window position to the viewport if it overflows (default)</li>
 </ul>
@@ -2210,8 +2210,8 @@ win.gravitate(string); <span class="hljs-comment">// Gravitate toward direction<
 win.resizeFit(node); <span class="hljs-comment">// Resize to fit given DOM container</span>
 win.setIcon(string); <span class="hljs-comment">// Sets icon</span>
 win.setTitle(string); <span class="hljs-comment">// Sets title</span>
-win.setPosition({top, left}); <span class="hljs-comment">// Sets position</span>
-win.setDimension({width, height}); <span class="hljs-comment">// Sets dimension</span>
+win.setPosition({top?, left?}); <span class="hljs-comment">// Sets position</span>
+win.setDimension({width?, height?}); <span class="hljs-comment">// Sets dimension</span>
 win.setZindex(number); <span class="hljs-comment">// Sets z-index</span>
 win.setNextZindex(); <span class="hljs-comment">// Sets next z-index (move to top)</span>
 </code></pre>
@@ -2279,7 +2279,7 @@ win.setNextZindex(); <span class="hljs-comment">// Sets next z-index (move to to
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"description":"This tutorial shows you how to create and interact with Windows.","full_title":"Window Tutorial","title":"Window","level":"4.2","depth":1,"next":{"title":"Usage","level":"4.2.1","depth":2,"anchor":"#usage","path":"tutorial/window/README.md","ref":"tutorial/window/README.md#usage","articles":[]},"previous":{"title":"Session","level":"4.1.11","depth":2,"anchor":"#session","path":"tutorial/application/README.md","ref":"tutorial/application/README.md#session","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","adsense","alerts","edit-link","ga","codepen"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"adsense":{"client":"ca-pub-6145716264521226","slot":"9888011596","format":"auto","element":".page-inner section","position":"top"},"codepen":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://manual.os-js.org","path":"/"},"alerts":{},"ga":{"configuration":"auto","token":"UA-90971004-4"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit this page","base":"https://github.com/os-js/manual.os-js.org/edit/master/src"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Anders Evenrud <andersevenrud@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"OS.js Web Desktop Manual","language":"en","gitbook":"*"},"file":{"path":"tutorial/window/README.md","mtime":"2022-10-14T21:56:34.981Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-14T21:57:44.300Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"description":"This tutorial shows you how to create and interact with Windows.","full_title":"Window Tutorial","title":"Window","level":"4.2","depth":1,"next":{"title":"Usage","level":"4.2.1","depth":2,"anchor":"#usage","path":"tutorial/window/README.md","ref":"tutorial/window/README.md#usage","articles":[]},"previous":{"title":"Session","level":"4.1.11","depth":2,"anchor":"#session","path":"tutorial/application/README.md","ref":"tutorial/application/README.md#session","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","adsense","alerts","edit-link","ga","codepen"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"adsense":{"client":"ca-pub-6145716264521226","slot":"9888011596","format":"auto","element":".page-inner section","position":"top"},"codepen":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://manual.os-js.org","path":"/"},"alerts":{},"ga":{"configuration":"auto","token":"UA-90971004-4"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit this page","base":"https://github.com/os-js/manual.os-js.org/edit/master/src"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Anders Evenrud <andersevenrud@gmail.com>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"OS.js Web Desktop Manual","language":"en","gitbook":"*"},"file":{"path":"tutorial/window/README.md","mtime":"2022-10-14T22:34:40.721Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-14T22:35:50.310Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
