@@ -49,7 +49,7 @@ the official reactive GUI component library.
 * `position: {top?: number, left?: nubmer} | string` Position object or a string (ex: `center`, `topleft`, `bottomright`, etc)
 * `dimension: {width?: number, height?: number}` Dimension object
 * `attributes` A set of attributes
-* `state` Default state
+* `state: {maximized?: boolean, minimized?: boolean}` Default state
 
 Example:
 
