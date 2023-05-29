@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/utils/desktop.js | OS.js Core API</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/adapters/search/vfs.js | OS.js Core API</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -199,170 +199,36 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/utils/desktop.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
- * OS.js - JavaScript Cloud/Web Desktop Platform
- *
- * Copyright (c) Anders Evenrud &lt;andersevenrud@gmail.com&gt;
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice, this
- *    list of conditions and the following disclaimer
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- * @author  Anders Evenrud &lt;andersevenrud@gmail.com&gt;
- * @license Simplified BSD License
- */
+<div class="content" data-ice="content"><h1 data-ice="title">src/adapters/search/vfs.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import logger from &apos;../../logger&apos;;
 
-import logger from &apos;../logger&apos;;
-import {supportedMedia} from &apos;./dom&apos;;
-
-const imageDropMimes = [
-  &apos;image/png&apos;,
-  &apos;image/jpe?g&apos;,
-  &apos;image/webp&apos;,
-  &apos;image/gif&apos;,
-  &apos;image/svg(\\+xml)?&apos;
-];
-
-/**
- * Check if droppable data is a VFS type
- * @return {boolean}
- */
-export const validVfsDrop = data =&gt; data &amp;&amp; data.path;
-
-/**
- * Check if droppable data contains image
- * @return {boolean}
- */
-export const isDroppingImage = data =&gt; validVfsDrop(data) &amp;&amp;
-  imageDropMimes.some(re =&gt; !!data.mime.match(re));
-
-/**
- * Creates a set of styles based on background settings
- */
-export const applyBackgroundStyles = (core, background) =&gt; {
-  const {$root} = core;
-
-  const styles = {
-    backgroundRepeat: &apos;no-repeat&apos;,
-    backgroundPosition: &apos;50% 50%&apos;,
-    backgroundSize: &apos;auto&apos;,
-    backgroundColor: background.color,
-    backgroundImage: &apos;none&apos;
-  };
-
-  if (background.style === &apos;cover&apos; || background.style === &apos;contain&apos;) {
-    styles.backgroundSize = background.style;
-  } else if (background.style === &apos;repeat&apos;) {
-    styles.backgroundRepeat = &apos;repeat&apos;;
+export default class VFSSearchAdapter {
+  constructor(core) {
+    this.core = core;
   }
 
-  if (background.style !== &apos;color&apos;) {
-    if (background.src === undefined) {
-      styles.backgroundImage = undefined;
-    } else if (typeof background.src === &apos;string&apos;) {
-      styles.backgroundImage = `url(${background.src})`;
-    } else if (background.src) {
-      core.make(&apos;osjs/vfs&apos;)
-        .url(background.src)
-        .then(src =&gt; {
-          setTimeout(() =&gt; ($root.style.backgroundImage = `url(${src})`), 1);
-        })
-        .catch(error =&gt; logger.warn(&apos;Error while setting wallpaper from VFS&apos;, error));
-    }
+  destroy() {
   }
 
-  Object.keys(styles).forEach(k =&gt; ($root.style[k] = styles[k]));
-};
-
-/**
- * Creates a rectangle with the realestate panels takes up
- */
-export const createPanelSubtraction = (panel, panels) =&gt; {
-  const subtraction = {top: 0, left: 0, right: 0, bottom: 0};
-  const set = p =&gt; (subtraction[p.options.position] = p.$element.offsetHeight);
-
-  if (panels.length &gt; 0) {
-    panels.forEach(set);
-  } else {
-    // Backward compability
-    set(panel);
+  async init() {
   }
 
-  return subtraction;
-};
-
-export const isVisible = w =&gt; w &amp;&amp;
-  !w.getState(&apos;minimized&apos;) &amp;&amp;
-  w.getState(&apos;focused&apos;);
-
-/*
- * Resolves various resources
- * TODO: Move all of this (and related) stuff to a Theme class
- */
-export const resourceResolver = (core) =&gt; {
-  const media = supportedMedia();
-
-  const getThemeName = (type) =&gt; {
-    const defaultTheme = core.config(&apos;desktop.settings.&apos; + type);
-    return core.make(&apos;osjs/settings&apos;).get(&apos;osjs/desktop&apos;, type, defaultTheme);
-  };
-
-  const themeResource = path =&gt; {
-    const theme = getThemeName(&apos;theme&apos;);
-
-    return core.url(`themes/${theme}/${path}`); // FIXME: Use metadata ?
-  };
-
-  const getSoundThemeName = () =&gt; getThemeName(&apos;sounds&apos;);
-
-  const soundResource = path =&gt; {
-    if (!path.match(/\.([a-z]+)$/)) {
-      const defaultExtension = &apos;mp3&apos;;
-      const checkExtensions = [&apos;oga&apos;, &apos;mp3&apos;];
-      const found = checkExtensions.find(str =&gt; media.audio[str] === true);
-      const use = found || defaultExtension;
-
-      path += &apos;.&apos; + use;
-    }
-
-    const theme = getSoundThemeName();
-
-    return theme ? core.url(`sounds/${theme}/${path}`) : null; // FIXME: Use metadata ?
-  };
-
-  const soundsEnabled = () =&gt; !!getSoundThemeName();
-
-  const icon = (name) =&gt; {
-    name = name.replace(/\.(png|svg|gif)$/, &apos;&apos;);
-    const {getMetadataFromName} = core.make(&apos;osjs/packages&apos;);
-    const theme = getThemeName(&apos;icons&apos;);
-    const metadata = getMetadataFromName(theme) || {};
-    const iconDefinitions = metadata.icons || {};
-    const extension = iconDefinitions[name] || &apos;png&apos;;
-
-    return core.url(`icons/${theme}/icons/${name}.${extension}`);
-  };
-
-  return {themeResource, soundResource, soundsEnabled, icon};
-};
+  async search(pattern) {
+    const vfs = this.core.make(&apos;osjs/vfs&apos;);
+    const promises = this.core.make(&apos;osjs/fs&apos;)
+      .mountpoints()
+      .map(mount =&gt; `${mount.name}:/`)
+      .map(path =&gt; {
+        return vfs.search({path}, pattern)
+          .catch(error =&gt; {
+            logger.warn(&apos;Error while searching&apos;, error);
+            return [];
+          });
+      });
+    return Promise.all(promises)
+      .then(lists =&gt; [].concat(...lists));
+  }
+}
 </code></pre>
 
 </div>

@@ -388,7 +388,7 @@ module.exports = (core) =&gt; {
      * Searches for files and folders
      * @param {String} file The file path from client
      * @param {Object} [options={}] Options
-     * @return {boolean}
+     * @return {Promise&lt;Object&gt;}
      */
     search: vfs =&gt; (root, pattern, options = {}) =&gt;
       Promise.resolve(getRealPath(core, options.session, vfs.mount, root))

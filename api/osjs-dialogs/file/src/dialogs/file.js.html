@@ -173,7 +173,7 @@ export default class FileDialog extends Dialog {
           }]
         }),
         buttons: {
-          ok: this.args.filetype === &apos;directory&apos;
+          ok: this.args.type === &apos;open&apos; &amp;&amp; this.args.filetype === &apos;directory&apos;
             ? true
             : !!this.args.filename
         }
@@ -231,7 +231,9 @@ export default class FileDialog extends Dialog {
 
         listview: listView.actions({
           select: ({data}) =&gt; {
-            a.setFilename(data.isFile ? data.filename : null);
+            if (data.isFile) {
+              a.setFilename(data.filename);
+            }
             this.value = data.isFile ? data : null;
 
             if (this.args.filetype === &apos;file&apos; &amp;&amp; data.isFile) {
@@ -240,7 +242,6 @@ export default class FileDialog extends Dialog {
           },
           activate: ({data, ev}) =&gt; {
             if (data.isDirectory) {
-              a.setFilename(null);
               a.setPath(data);
             } else {
               this.value = data.isFile ? data : null;
@@ -258,7 +259,7 @@ export default class FileDialog extends Dialog {
           box: {grow: 1, shrink: 1}
         }, state.listview), actions.listview)),
         h(TextField, {
-          placeholder: &apos;Filename&apos;,
+          placeholder: this.args.filetype === &apos;directory&apos; ? &apos;Directory Name&apos; : &apos;File Name&apos;,
           value: state.filename,
           onenter: (ev, value) =&gt; this.emitCallback(this.getPositiveButton(), ev, true),
           oninput: (ev) =&gt; {

@@ -448,7 +448,7 @@ export default class Auth {
           logger.warn(&apos;Exception on login&apos;, e);
         }
 
-        this.ui.emit(&apos;login:error&apos;, &apos;Login failed&apos;);
+        this.ui.emit(&apos;login:error&apos;, &apos;Login failed&apos;, e);
         this.ui.emit(&apos;login:stop&apos;);
 
         return false;

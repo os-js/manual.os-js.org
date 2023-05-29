@@ -864,6 +864,12 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/adapters/search/vfs.js",
+    "file/src/adapters/search/vfs.js.html",
+    "src/adapters/search/vfs.js",
+    "file"
+  ],
+  [
     "src/adapters/settings/localstorage.js",
     "file/src/adapters/settings/localstorage.js.html",
     "src/adapters/settings/localstorage.js",
@@ -2379,6 +2385,12 @@ window.esdocSearchIndex = [
     "src/packages.js~packages#getcompatiblepackages",
     "class/src/packages.js~Packages.html#instance-method-getCompatiblePackages",
     "src/packages.js~Packages#getCompatiblePackages",
+    "method"
+  ],
+  [
+    "src/packages.js~packages#getmetadatafromname",
+    "class/src/packages.js~Packages.html#instance-method-getMetadataFromName",
+    "src/packages.js~Packages#getMetadataFromName",
     "method"
   ],
   [

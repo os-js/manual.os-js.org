@@ -231,7 +231,7 @@
  */
 import Window from &apos;./window&apos;;
 import createUI from &apos;./adapters/ui/search&apos;;
-import logger from &apos;./logger&apos;;
+import VFSSearchAdapter from &apos;./adapters/search/vfs&apos;;
 
 /**
  * Search Service
@@ -241,7 +241,7 @@ export default class Search {
    * Create Search instance
    * @param {Core} core Core reference
    */
-  constructor(core) {
+  constructor(core, options) {
     /**
      * Core instance reference
      * @type {Core}
@@ -267,6 +267,9 @@ export default class Search {
      * @readonly
      */
     this.$element = document.createElement(&apos;div&apos;);
+    const providedAdapters = options.adapters || [];
+    const useAdapters = [VFSSearchAdapter, ...providedAdapters];
+    this.adapters = useAdapters.map(A =&gt; new A(core));
   }
 
   /**
@@ -281,7 +284,7 @@ export default class Search {
   /**
    * Initializes Search Service
    */
-  init() {
+  async init() {
     const {icon} = this.core.make(&apos;osjs/theme&apos;);
     const _ = this.core.make(&apos;osjs/locale&apos;).translate;
 
@@ -290,7 +293,7 @@ export default class Search {
 
     this.core.make(&apos;osjs/tray&apos;).create({
       title: _(&apos;LBL_SEARCH_TOOLTOP&apos;, &apos;F3&apos;),
-      icon: icon(&apos;system-search.png&apos;)
+      icon: icon(&apos;system-search&apos;)
     }, () =&gt; this.show());
 
     this.ui = createUI(this.core, this.$element);
@@ -301,6 +304,7 @@ export default class Search {
         .then(results =&gt; this.ui.emit(&apos;success&apos;, results))
         .catch(error =&gt; this.ui.emit(&apos;error&apos;, error));
     });
+    await Promise.all(this.adapters.map(a =&gt; a.init()));
   }
 
   /**
@@ -308,21 +312,9 @@ export default class Search {
    * @param {string} pattern Search query
    * @return {Promise&lt;FileMetadata[]&gt;}
    */
-  search(pattern) {
-    const vfs = this.core.make(&apos;osjs/vfs&apos;);
-    const promises = this.core.make(&apos;osjs/fs&apos;)
-      .mountpoints()
-      .map(mount =&gt; `${mount.name}:/`)
-      .map(path =&gt; {
-        return vfs.search({path}, pattern)
-          .catch(error =&gt; {
-            logger.warn(&apos;Error while searching&apos;, error);
-            return [];
-          });
-      });
-
-    return Promise.all(promises)
-      .then(lists =&gt; [].concat(...lists));
+  async search(pattern) {
+    const results = await Promise.all(this.adapters.map(a =&gt; a.search(pattern)));
+    return results.flat(1);
   }
 
   /**

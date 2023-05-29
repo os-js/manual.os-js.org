@@ -375,7 +375,7 @@ const create = (options, login, startHidden, $container) =&gt; {
 
   ee.on(&apos;login:start&apos;, () =&gt; a.setLoading(true));
   ee.on(&apos;login:stop&apos;, () =&gt; a.setLoading(false));
-  ee.on(&apos;login:error&apos;, err =&gt; a.setError(err));
+  ee.on(&apos;login:error&apos;, (msg) =&gt; a.setError(msg));
 
   return ee;
 };

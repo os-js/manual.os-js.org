@@ -246,7 +246,7 @@ const createView = (core, fs, icon, _) =&gt; {
       index === i ? &apos;osjs__active&apos; : &apos;&apos;
     ].join(&apos; &apos;)
   }, [
-    h(&apos;img&apos;, {src: icon(fs.icon(r).name + &apos;.png&apos;)}),
+    h(&apos;img&apos;, {src: icon(fs.icon(r).name)}),
     h(&apos;span&apos;, {}, `${r.path} (${r.mime})`)
   ]));
 
