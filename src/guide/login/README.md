@@ -139,7 +139,7 @@ export default class MyCustomLogin extends Login {
     // Bind the events
     this.on('login:start', () => console.log('Currently trying to log in...'));
     this.on('login:stop', () => console.log('Login was aborted or stopped'));
-    this.on('login:error', err => console.error('An error occured while logging in', err));
+    this.on('login:error', (message, exception) => console.error('An error occured while logging in', message, exception));
 
     // To submit a login form (ex when you press a button):
     /*
