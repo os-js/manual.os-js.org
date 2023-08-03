@@ -46,7 +46,7 @@ These are the standard used core libraries:
 * https://github.com/os-js/eslint-config - ESLint configuration
 * https://github.com/os-js/stylelint-config - Stylelint configuration
 
-All source-code follows the [semantic versioning spesification](https://semver.org/).
+All source-code follows the [semantic versioning specification](https://semver.org/).
 
 ## Installation (Distribution)
 
