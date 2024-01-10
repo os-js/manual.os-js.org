@@ -72,7 +72,7 @@ const osjs = new Core(config, {
 | `session.options.resave`            | `false`             | HTTP Session re-save option                                       |
 | `session.options.saveUninitialized` | `false`             | HTTP Save uninitialized sessions                                  |
 | `session.options.cookie.secure`     | `<auto>`            | HTTP Secure cookie                                                |
-| `session.options.cookie.maxAge`     | `<auto>`            | HTTP cookie lifetime                                              |
+| `session.options.cookie.maxAge`     | `43200000`          | HTTP cookie lifetime (delete the old cookie to make it work)      |
 | `vfs.root`                          | `<auto>`            | VFS Root path (defaults to OS.js `vfs/` directory)                |
 
 ### Proxies
