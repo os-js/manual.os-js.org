@@ -55,7 +55,7 @@ const osjs = new Core(config, {
 | `development`                       | `<auto>`            | Enable development mode                                           |
 | `logging`                           | `true`              | Log HTTP requests                                                 |
 | `index`                             | `index.html`        | Index HTML file                                                   |
-| `hostname`                          | `localhost`         | Server hostname                                                   |
+| `bind`                              | `0.0.0.0`           | Server hostname                                                   |
 | `port`                              | `8000`              | Server port                                                       |
 | `public`                            | `/dist`             | The dist directory                                                |
 | `morgan`                            | `tiny`              | Morgan logging mode                                               |
